@@ -27,5 +27,5 @@ jobs:
         with:
           node-version: '14'
       - run: npm i -g @cloudbase/cli
-      - run: tcb login --apiKeyId ${{secrets.secretId}} --apiKey ${{secretKey}}
-      - run: cd public && tcb hosting deploy -e ${{secrets.envId}} --verbose
+      - run: tcb login --apiKeyId ${secrets.secretId} --apiKey ${secretKey}
+      - run: cd public && tcb hosting deploy -e ${secrets.envId} --verbose
