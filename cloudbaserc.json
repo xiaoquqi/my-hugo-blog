@@ -1,0 +1,17 @@
+{
+  "envId": "{{envId}}",
+  "framework": {
+    "plugins": {
+      "client": {
+        "use": "@cloudbase/framework-plugin-website",
+        "inputs": {
+          "installCommand": "",
+          "buildCommand": "",
+          "outputPath": "public",
+          "cloudPath": "",
+          "ignore": [".git", ".github", "node_modules", "cloudbaserc.js"]
+        }
+      }
+    }
+  }
+}
