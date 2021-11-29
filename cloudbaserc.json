@@ -1,5 +1,5 @@
 {
-  "envId": "{{envId}}",
+  "envId": "{{secrets.envId}}",
   "framework": {
     "plugins": {
       "client": {
