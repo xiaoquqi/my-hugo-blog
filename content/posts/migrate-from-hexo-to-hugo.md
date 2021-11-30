@@ -260,10 +260,10 @@ jobs:
 
 需要替换的secrets变量，需要在Github中进行创建。
 
-![](/images/static/images/2021-11-30-10-13-55.png)
+![](/images/2021-11-30-10-13-55.png)
 
 ## 总结
 
 到这里，我的全新Hugo样式的Blog已经发布上线，这是整体的效果，也欢迎大家经常访问我的博客——老孙正经胡说（https://sunqi.site）。
 
-![](/images/static/images/2021-11-30-10-15-29.png)
+![](/images/2021-11-30-10-15-29.png)
