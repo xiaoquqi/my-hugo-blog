@@ -1,5 +1,5 @@
 ---
-title: "将博客从Hexo迁移至Hexo"
+title: "将博客从Hexo迁移至Hugo"
 date: 2021-11-29T20:23:54+08:00
 draft: false
 ---
