@@ -3,6 +3,7 @@ title: OpenStack没落了吗？
 author: 孙琦(Ray)
 tags:
   - 趋势分析
+  - OpenStack
 categories: []
 date: 2020-04-29 21:20:00
 ---

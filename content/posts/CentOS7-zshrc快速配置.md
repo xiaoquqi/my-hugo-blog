@@ -3,6 +3,7 @@ title: CentOS7 zshrc快速配置
 author: 孙琦(Ray)
 tags:
   - 常用命令
+  - CentOS
 categories: []
 date: 2021-02-02 17:15:00
 ---

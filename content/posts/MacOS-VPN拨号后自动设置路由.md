@@ -3,6 +3,7 @@ title: MacOS VPN拨号后自动设置路由
 author: 孙琦(Ray)
 date: 2020-11-11 20:04:07
 tags:
+  - MacOS
 ---
 ## 目的
 

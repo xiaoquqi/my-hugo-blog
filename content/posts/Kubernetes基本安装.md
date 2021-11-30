@@ -3,6 +3,9 @@ title: Kubernetes All-in-One环境安装
 author: 孙琦(Ray)
 tags:
   - 常用命令
+  - Kubernetes
+  - K8S
+  - Docker
 categories: []
 date: 2020-07-31 09:38:00
 ---
