@@ -262,7 +262,34 @@ jobs:
 
 ![](/images/2021-11-30-10-13-55.png)
 
+### 添加评论系统
+
+LoveIt主题中支持多种评论系统，最终我使用的是valine，不过需要注册一个LeanCloud账号，建立一个开发板的应用程序后，再更新配置文件才行。
+
+![Lean Cloud](/images/2021-11-30-13-21-40.png)
+
+建立好应用后，在应用详情中找到”应用凭证“，获取相关鉴权信息。
+
+![](/images/2021-11-30-13-24-01.png)
+
+最后在Hugo config.toml中进行更新
+
+```
+[params.page.comment.valine]
+  enable = true
+  appId = "your_appId"
+  appKey = "your_appKey"
+  ......
+  serverURLs = "https://your_leancloud_url"
+```
+
+配置好的效果如下：
+
+![](/images/2021-11-30-13-28-35.png)
+
 ## 总结
+
+其实Hugo LoveIt中还提供了很多功能，暂未深入研究，也欢迎大家共同交流。
 
 到这里，我的全新Hugo样式的Blog已经发布上线，这是整体的效果，也欢迎大家经常访问我的博客——老孙正经胡说（https://sunqi.site）。
 
