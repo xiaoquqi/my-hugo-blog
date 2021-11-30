@@ -3,6 +3,7 @@ title: Mac iTerm2 zshrc快速配置
 author: 孙琦(Ray)
 tags:
   - 常用命令
+  - MacOS
 categories: []
 date: 2021-02-02 11:26:00
 ---
