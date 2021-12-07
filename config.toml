@@ -690,8 +690,9 @@ enableEmoji = true
 # Permalinks config (https://gohugo.io/content-management/urls/#permalinks)
 # Permalinks 配置 (https://gohugo.io/content-management/urls/#permalinks)
 [permalinks]
-  # posts = ":year/:month/:filename"
-  posts = "/:year/:month/:day/:slug/"
+  #posts = ":year/:month/:filename"
+  #posts = "/:year/:month/:day/:slug/"
+  posts = "/posts/:slug/"
 
   [frontmatter]
   date = [":filename", ":default", ":fileModTime"]

@@ -1,5 +1,8 @@
 ---
 title: Windows系统迁移上云后如何激活？
+slug: how-to-activiate-windows-after-cloud-migration
+aliases:
+  - /2021/11/19/windows%E7%B3%BB%E7%BB%9F%E8%BF%81%E7%A7%BB%E4%B8%8A%E4%BA%91%E5%90%8E%E5%A6%82%E4%BD%95%E6%BF%80%E6%B4%BB/
 author: 孙琦(Ray)
 date: 2021-11-19 08:06:32
 tags:
