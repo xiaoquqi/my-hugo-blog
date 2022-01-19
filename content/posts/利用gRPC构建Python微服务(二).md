@@ -1,14 +1,33 @@
 ---
-title: 利用gRPC构建Python微服务(二)
+title: 利用gRPC构建Python微服务(二)-gRPC基础
 slug: python-microservices-grpc-2
-date: 2022-01-19T17:33:00+08:00
-draft: true
+date: 2022-01-19T18:33:00+08:00
+draft: false
 author: Dan Hipschman/老孙正经胡说
+tags:
+  - Python
+  - 微服务
+  - 容器
+  - 云原生
+categories:
+  - 微服务
 ---
 
 在上一篇文章中，我们重点从理论层面上学习了微服务架构的基本概念以及与传统单体架构的区别和优势，感兴趣的同学，可以阅读老孙正经胡说的第一篇《利用gRPC构建Python微服务(一)》获取之前的内容。在本篇内容中，重点向大家介绍gRPC的一些基础概念以及相对REST的优劣势。
 
 <!-- more -->
+
+## 全文导航
+
+为了方便大家阅读，这里将全部目录进行一下索引，方便大家在老孙正经胡说(https://sunqi.site)中查看相关文章：
+
+* [利用gRPC构建Python微服务(一)——关于微服务](/posts/python-microservices-grpc-1/)
+* [利用gRPC构建Python微服务(二)——gRPC基础](/posts/python-microservices-grpc-2/)
+* [利用gRPC构建Python微服务(三)——实战Python gRPC](/posts/python-microservices-grpc-3/)
+* [利用gRPC构建Python微服务(四)——在Kubernetes中部署](/posts/python-microservices-grpc-4/)
+* [利用gRPC构建Python微服务(五)——微服务可观测性](/posts/python-microservices-grpc-5/)
+* [利用gRPC构建Python微服务(六)——Python gRPC最佳实践](/posts/python-microservices-grpc-6/)
+* [利用gRPC构建Python微服务(七)——AsyncIO和gRPC](/posts/python-microservices-grpc-7/)
 
 ## 微服务示例
 
@@ -110,5 +129,3 @@ gRPC内置了对流式请求和返回的支持。比基础HTTP连接更好的管
 严格来说，protocol buffers是将数据通过序列化方式在两个微服务之间传输。所以，protocol buffers和JSON或XML都是相似的方式组织数据。不同的是，protocol buffers拥有更严格的格式和更压缩的方式在网络上通讯。
 
 另外一方面，RPC架构应该被称为gRPC或者Google RPC。这很像HTTP。但正如上述所言，gRPC实际上是基于HTTP/2构建的。
-
-(未完待续)

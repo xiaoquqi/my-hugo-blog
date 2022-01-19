@@ -1,9 +1,16 @@
 ---
-title: 利用gRPC构建Python微服务(一)
+title: 利用gRPC构建Python微服务(一)——关于微服务
 slug: python-microservices-grpc-1
 date: 2022-01-19T17:33:00+08:00
 draft: false
 author: Dan Hipschman/老孙正经胡说
+tags:
+  - Python
+  - 微服务
+  - 容器
+  - 云原生
+categories:
+  - 微服务
 ---
 
 微服务架构目前仍然是一种主要的开发方式，笔者从2010年开始接触OpenStack，对OpenStack架构略有了解，于是在后期的产品研发中，沿用这一框架。但是随着项目的进行，也逐步发现了该框架中在实际应用中的缺陷，以及入门成本比较陡峭的问题。所以想结合gRPC思路，来分析一下是否有对现有框架优化的可能性。
@@ -13,6 +20,18 @@ author: Dan Hipschman/老孙正经胡说
 在完成了通篇的翻译工作后，不禁为作者的细致程度点赞，细节程度“令人发指”，这种匠人精神是值得国内的技术人员学习的。
 
 <!-- more -->
+
+## 全文导航
+
+为了方便大家阅读，这里将全部目录进行一下索引，方便大家在老孙正经胡说(https://sunqi.site)中查看相关文章：
+
+* [利用gRPC构建Python微服务(一)——关于微服务](/posts/python-microservices-grpc-1/)
+* [利用gRPC构建Python微服务(二)——gRPC基础](/posts/python-microservices-grpc-2/)
+* [利用gRPC构建Python微服务(三)——实战Python gRPC](/posts/python-microservices-grpc-3/)
+* [利用gRPC构建Python微服务(四)——在Kubernetes中部署](/posts/python-microservices-grpc-4/)
+* [利用gRPC构建Python微服务(五)——微服务可观测性](/posts/python-microservices-grpc-5/)
+* [利用gRPC构建Python微服务(六)——Python gRPC最佳实践](/posts/python-microservices-grpc-6/)
+* [利用gRPC构建Python微服务(七)——AsyncIO和gRPC](/posts/python-microservices-grpc-7/)
 
 ## 前言
 
@@ -92,5 +111,3 @@ buy_two_get_one_free_promo = true
 典型的硅谷创业周期都是从单体开始，以便企业能够快速迭代。公司可以雇佣更多的工程师后，可以考虑使用微服务架构，但是要注意选择合适的时间点。
 
 关于微服务架构与单体架构的平衡请参考《什么时候开始使用微服务架构》（[https://www.youtube.com/watch?v=GBTdnfD6s5Q](https://www.youtube.com/watch?v=GBTdnfD6s5Q)）
-
-(未完待续)
