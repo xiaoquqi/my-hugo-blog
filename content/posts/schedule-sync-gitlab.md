@@ -1,5 +1,6 @@
 ---
 title: Gitlab之间进行同步备份
+slug: schedule-sync-gitlab
 date: 2022-02-14T07:23:44+08:00
 draft: false
 author: 老孙正经胡说
