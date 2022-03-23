@@ -2,7 +2,7 @@
 title: Restic设计原理
 slug: restic-design
 date: 2022-03-23T07:40:36+08:00
-draft: true
+draft: false
 author: 老孙正经胡说
 tags:
   - restic
