@@ -9,3 +9,6 @@ hugo.linux
 
 *.lock
 *.bak
+
+*.swp
+*.swo
