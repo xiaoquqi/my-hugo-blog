@@ -1,5 +1,5 @@
 ---
-title: 老孙Go语言学习笔记-第零章
+title: 第零章 关于老孙Go语言学习笔记
 date: 2022-06-12T06:41:54+08:00
 slug: "old-sun-learning-go-notes-0"
 author: 老孙正经胡说
