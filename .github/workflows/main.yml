@@ -21,7 +21,7 @@ jobs:
         run: touch ~/.cos.yaml && ~/coscli config set --secret_id	${{secrets.secretId}} --secret_key {{secrets.secretKey}}
 
       - name: Set Tecent Object Storage Bucket
-        run: ~/coscli config add -b ${{secrets.bucket}} -r ap-beijing
+        run: ~/coscli config add -b sunqi-site-1254137673 -r ap-beijing
 
       - name: Setup Hugo	# 步骤名自取
         uses: peaceiris/actions-hugo@v2	# hugo官方提供的action，用于在任务环境中获取hugo
