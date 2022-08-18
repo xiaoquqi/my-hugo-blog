@@ -33,7 +33,7 @@ jobs:
         run: hugo --minify	# 使用hugo构建静态网页
 
       - name: Upload Static files to Tencent Object Storage
-        run:  ~/coscli sync public/ cos://${{secrets.bucket}}
+        run:  cd public && ~/coscli sync ./ cos://${{secrets.bucket}}
 
           #- uses: actions/setup-node@v2
           #  with:
