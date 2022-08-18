@@ -31,13 +31,13 @@ jobs:
       - run: cd public && tcb hosting deploy -e ${{secrets.envId}} --verbose
 
       - name: Install Tecent Object Storage CLI
-        run: curl -L https://github.com/tencentyun/coscli/releases/download/v0.12.0-beta/coscli-linux -o /coscli && chmod 755 /coscli
+        run: curl -L https://github.com/tencentyun/coscli/releases/download/v0.12.0-beta/coscli-linux -o ~/coscli && chmod 755 ~/coscli
 
       - name: Set Tecent Object Storage Auth
-        run: /coscli config set --secret_id	${{secrets.secretId}} --secret_key {{secrets.secretKey}}
+        run: ~/coscli config set --secret_id	${{secrets.secretId}} --secret_key {{secrets.secretKey}}
 
       - name: Set Tecent Object Storage Bucket
-        run: /coscli config add -b ${{secrets.bucket}} -r ap-beijing
+        run: ~/coscli config add -b ${{secrets.bucket}} -r ap-beijing
 
       - name: Upload Static files to Tencent Object Storage
-        run:  /coscli sync ~/public/ cos://${{secrets.bucket}}
+        run:  ~/coscli sync ~/public/ cos://${{secrets.bucket}}
