@@ -18,7 +18,7 @@ jobs:
         run: curl -L https://github.com/tencentyun/coscli/releases/download/v0.12.0-beta/coscli-linux -o ~/coscli && chmod 755 ~/coscli
 
       - name: Set Tecent Object Storage Auth
-        run: ~/coscli config set --secret_id	${{secrets.secretId}} --secret_key {{secrets.secretKey}}
+        run: touch ~/.cos.yaml && ~/coscli config set --secret_id	${{secrets.secretId}} --secret_key {{secrets.secretKey}}
 
       - name: Set Tecent Object Storage Bucket
         run: ~/coscli config add -b ${{secrets.bucket}} -r ap-beijing
