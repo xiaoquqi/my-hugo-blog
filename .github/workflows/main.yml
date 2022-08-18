@@ -14,22 +14,6 @@ jobs:
           submodules: true  # Fetch Hugo themes (true OR recursive) 获取submodule主题
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Setup Hugo	# 步骤名自取
-        uses: peaceiris/actions-hugo@v2	# hugo官方提供的action，用于在任务环境中获取hugo
-        with:
-          hugo-version: 'latest'	# 获取最新版本的hugo
-          # extended: true
-
-      - name: Build
-        run: hugo --minify	# 使用hugo构建静态网页
-
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-      - run: npm i -g @cloudbase/cli
-      - run: tcb login --apiKeyId ${{secrets.secretId}} --apiKey ${{secrets.secretKey}}
-      - run: cd public && tcb hosting deploy -e ${{secrets.envId}} --verbose
-
       - name: Install Tecent Object Storage CLI
         run: curl -L https://github.com/tencentyun/coscli/releases/download/v0.12.0-beta/coscli-linux -o ~/coscli && chmod 755 ~/coscli
 
@@ -39,5 +23,22 @@ jobs:
       - name: Set Tecent Object Storage Bucket
         run: ~/coscli config add -b ${{secrets.bucket}} -r ap-beijing
 
+      - name: Setup Hugo	# 步骤名自取
+        uses: peaceiris/actions-hugo@v2	# hugo官方提供的action，用于在任务环境中获取hugo
+        with:
+          hugo-version: 'latest'	# 获取最新版本的hugo
+          # extended: true
+
+      - name: Build
+        run: hugo --minify	# 使用hugo构建静态网页
+
       - name: Upload Static files to Tencent Object Storage
-        run:  ~/coscli sync ~/public/ cos://${{secrets.bucket}}
+        run:  ~/coscli sync public/ cos://${{secrets.bucket}}
+
+          #- uses: actions/setup-node@v2
+          #  with:
+          #    node-version: '14'
+          #- run: npm i -g @cloudbase/cli
+          #- run: tcb login --apiKeyId ${{secrets.secretId}} --apiKey ${{secrets.secretKey}}
+          #- run: cd public && tcb hosting deploy -e ${{secrets.envId}} --verbose
+
