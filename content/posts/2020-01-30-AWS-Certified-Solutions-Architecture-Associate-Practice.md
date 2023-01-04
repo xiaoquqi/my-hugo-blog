@@ -1,6 +1,6 @@
 ---
 title: 'AWS Certified Solutions Architecture Associate Practice'
-date: 2020-01-30 21:35:00
+date: 2022-03-30 21:35:00
 tags: [AWS, ACA Practice]
 ---
 

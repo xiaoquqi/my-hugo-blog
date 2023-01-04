@@ -4,7 +4,7 @@ author: 孙琦(Ray)
 tags:
   - Serverless
 categories: []
-date: 2021-02-10 21:55:00
+date: 2022-12-10 21:55:00
 ---
 这篇报告是2019年9月德勤基于AWS Serverless发布的一篇白皮书，原文叫《Determining the Total
 Cost of Ownership of Serverless Technologies when compared to Traditional Cloud》。本文就基于这篇文章提供的方法论，来分析一下Serverless模式的开发总成本。顺便比较一下国内各个云在Serverless架构下的成本。我们重点比较国内排名前三的云平台：阿里云、腾讯云和华为云。

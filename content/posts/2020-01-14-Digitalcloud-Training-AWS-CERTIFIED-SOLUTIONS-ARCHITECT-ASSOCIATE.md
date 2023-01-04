@@ -1,6 +1,6 @@
 ---
 title: '[Digitalcloud.Training]AWS CERTIFIED SOLUTIONS ARCHITECT ASSOCIATE'
-date: 2020-01-14 16:49:16
+date: 2022-03-14 16:49:16
 tags: [AWS, ACA Exam]
 ---
 

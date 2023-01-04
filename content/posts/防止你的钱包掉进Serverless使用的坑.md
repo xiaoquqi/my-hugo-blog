@@ -4,7 +4,7 @@ author: 孙琦(Ray)
 tags:
   - Serverless
 categories: []
-date: 2021-02-18 21:51:00
+date: 2022-12-18 21:51:00
 ---
 今天读到InfoQ一篇《应用上云2小时烧掉近50万，创始人：差点破产，简直噩梦》讲述了在使用Serverless方式开发时由于程序Bug导致快速的资源消耗，差点破产的经历。特意查询了英文原文，题目叫做《We Burnt $72K testing Firebase - Cloud Run and almost went Bankrupt》。我之前在使用函数计算时也有一次类似经历，所以写出来供大家参考，防止你的钱包掉进Serverless使用的坑。
 
