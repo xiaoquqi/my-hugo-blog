@@ -26,7 +26,7 @@ jobs:
       - name: Setup Hugo	# 步骤名自取
         uses: peaceiris/actions-hugo@v2	# hugo官方提供的action，用于在任务环境中获取hugo
         with:
-          hugo-version: 'latest'	# 获取最新版本的hugo
+          hugo-version: '0.106.0'	# 获取最新版本的hugo
           # extended: true
 
       - name: Build
