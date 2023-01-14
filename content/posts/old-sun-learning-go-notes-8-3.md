@@ -1,5 +1,5 @@
 ---
-title: 在Go语言中执行外部命令
+title: 8.3 在Go语言中执行外部命令
 date: 2023-01-05T20:01:41+08:00
 slug: "old-sun-learning-go-notes-8-3"
 author: 老孙正经胡说

@@ -1,5 +1,5 @@
 ---
-title: 在Go语言中构建命令行
+title: 8.2 在Go语言中构建命令行
 date: 2023-01-05T20:01:40+08:00
 slug: "old-sun-learning-go-notes-8-2"
 author: 老孙正经胡说
