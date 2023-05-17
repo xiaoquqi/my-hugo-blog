@@ -7,11 +7,16 @@
 # Format Handler:
 #
 #   1. Add emtpy line between paragraphs, not in ``````
-#   2. Convert yuque image to show in markdonw
+#   2. Download image into static path and fix image url
 
 import glob
 import re
+import os
 import sys
+from urllib.request import urlretrieve
+
+current_path = os.path.dirname(os.path.realpath(__file__))
+image_path = os.path.join(current_path, "..", "static/images")
 
 def usage():
     print("Usage: %s </path/to/your/filename>" % sys.argv[0])
@@ -22,6 +27,8 @@ if len(sys.argv) < 2:
     sys.exit(1)
 
 filename = sys.argv[1]
+
+image_prefix_name = os.path.splitext(os.path.basename(filename))[0]
 
 with open(filename, "r") as rfhd:
     lines = rfhd.readlines()
@@ -68,10 +75,23 @@ with open(filename, "r") as rfhd:
         # Replace image, by default the image url will be:
         # ![image.png](https://cdn.nlark.com/yuque/path/xxxx.png#REMOVED_PART
         if re.match(r"!\[(.*?)\].*yuque", line):
-            replace_pattern = re.compile(r"^(!\[(.*?)\]\(https://.*?\.(jpeg|jpg|gif|png))#.*$")
-            replace_image_line = replace_pattern.sub(r"\1", line.strip()) + ")\n\n"
+            #replace_pattern = re.compile(r"^(!\[(.*?)\]\(https://.*?\.(jpeg|jpg|gif|png))#.*$")
+            #replace_image_line = replace_pattern.sub(r"\1", line.strip()) + ")\n\n"
             #replace_image_line = replace_image_line.replace(r'(jpeg|jpg|gif|png)#(.*)+', 'png)', line)
+            find_pattern = re.compile(r'https://.*?\.(jpeg|jpg|gif|png)')
+            match = find_pattern.search(line)
+            image_url = match.group()
 
+            image_extname = os.path.splitext(os.path.basename(image_url))[1]
+
+            image_name = "%s-%s%s" % (image_prefix_name, str(index), image_extname)
+            save_path = os.path.join(image_path, image_name)
+            print(save_path)
+
+            print("Downloading image %s to %s..." % (image_url, save_path))
+            urlretrieve(image_url, save_path)
+
+            replace_image_line = "![%s](/images/%s)" % (image_name, image_name)
             print("Old image line: %s" % line)
             print("New image line: %s" % replace_image_line)
             lines[index] = replace_image_line
