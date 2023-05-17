@@ -91,7 +91,7 @@ with open(filename, "r") as rfhd:
             print("Downloading image %s to %s..." % (image_url, save_path))
             urlretrieve(image_url, save_path)
 
-            replace_image_line = "![%s](/images/%s)" % (image_name, image_name)
+            replace_image_line = "![%s](/images/%s)\n\n" % (image_name, image_name)
             print("Old image line: %s" % line)
             print("New image line: %s" % replace_image_line)
             lines[index] = replace_image_line

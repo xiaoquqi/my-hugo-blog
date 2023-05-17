@@ -46,13 +46,17 @@ ChatGPT可以扮演Linux终端、哲学家、品茶师或圣经翻译等多种�
 
 通过下面的截图，我们很清楚的看到ChatGPT帮助我们准确的翻译了英文，同时，利用上下文能力，你无须再发出相同的指令，只需要输入新的要翻译的语句，很高效的可以完成大批量翻译工作。
 
-![chatgpt-beginner-best-practice-32.png](/images/chatgpt-beginner-best-practice-32.png)## 技巧二：明确回复内容的使用目标
+![chatgpt-beginner-best-practice-32.png](/images/chatgpt-beginner-best-practice-32.png)
+
+## 技巧二：明确回复内容的使用目标
 
 明确文本使用的目标，例如，ChatGPT在输出文本作为博客文章、商店页面、LinkedIn帖子、推文、TikTok或YouTube脚本时会有很大的区别，这样ChatGPT能更有效的提供相关信息。例如：
 
 > 我需要一个有关ChatGPT机会和风险的抖音脚本。使用简短的句子。直接面向观众。要求使用幽默一些的语言，更容易理解
 
-![chatgpt-beginner-best-practice-37.png](/images/chatgpt-beginner-best-practice-37.png)## 技巧三：合理利用上下文，分批输出
+![chatgpt-beginner-best-practice-37.png](/images/chatgpt-beginner-best-practice-37.png)
+
+## 技巧三：合理利用上下文，分批输出
 
 ChatGPT不同于传统AI聊天机器人的一个显著特点就是对于上下文的理解能力，这样可以将一个超级大的问题，分成多次提问，多次返回，避免了由于模型的参数限制导致的输出不完整，最近流行的AutoGPT也是基于这样的思路实现的。
 
@@ -66,7 +70,13 @@ ChatGPT不同于传统AI聊天机器人的一个显著特点就是对于上下�
 > [输出]
 > ......
 
-![chatgpt-beginner-best-practice-49.png](/images/chatgpt-beginner-best-practice-49.png)![chatgpt-beginner-best-practice-50.png](/images/chatgpt-beginner-best-practice-50.png)![chatgpt-beginner-best-practice-51.png](/images/chatgpt-beginner-best-practice-51.png)## 技巧四：修改输出内容
+![chatgpt-beginner-best-practice-49.png](/images/chatgpt-beginner-best-practice-49.png)
+
+![chatgpt-beginner-best-practice-50.png](/images/chatgpt-beginner-best-practice-50.png)
+
+![chatgpt-beginner-best-practice-51.png](/images/chatgpt-beginner-best-practice-51.png)
+
+## 技巧四：修改输出内容
 
 利用ChatGPT的上下文能力，您还可以修改已经输出的内容，当然这不会覆盖之前的回答，只会在之前的基础上再作答，甚至一些基本替换操作都可以命令ChatGPT帮你完成。
 
@@ -74,27 +84,41 @@ ChatGPT不同于传统AI聊天机器人的一个显著特点就是对于上下�
 
 > 示例新浪微博： 将生成的文本分成多个推文。记住每个推文的最大长度为140个中文字符。使用简短的句子，不要将其跨越多个推文。以一致的编号方案开始推文。
 
-![chatgpt-beginner-best-practice-57.png](/images/chatgpt-beginner-best-practice-57.png)> 示例今日头条： 将生成的文本制作成今日头条帖子。请注意，最大长度为3000个字符。将文本的主要要点结构化为一个项目列表。以一个令人兴奋的引子句开始，以一个呼吁更多参与的行动结束。
+![chatgpt-beginner-best-practice-57.png](/images/chatgpt-beginner-best-practice-57.png)
 
-![chatgpt-beginner-best-practice-60.png](/images/chatgpt-beginner-best-practice-60.png)> 修改文本示例：
+> 示例今日头条： 将生成的文本制作成今日头条帖子。请注意，最大长度为3000个字符。将文本的主要要点结构化为一个项目列表。以一个令人兴奋的引子句开始，以一个呼吁更多参与的行动结束。
+
+![chatgpt-beginner-best-practice-60.png](/images/chatgpt-beginner-best-practice-60.png)
+
+> 修改文本示例：
 > 为以上内容生成标签
 > [回答]
 > 关键词格式为 #开头 关键词之间有逗号
 > [回答]
 
-![chatgpt-beginner-best-practice-67.png](/images/chatgpt-beginner-best-practice-67.png)## 技巧五：格式化输出
+![chatgpt-beginner-best-practice-67.png](/images/chatgpt-beginner-best-practice-67.png)
+
+## 技巧五：格式化输出
 
 默认情况下，ChatGPT以纯文本回复。但是，AI工具实际上使用Markdown标记语言处理格式，例如标题、粗体或斜体文本、有序（编号）或无序列表，甚至是表格。您可以使用这些功能来生成自己的文本。但是，在大多数情况下，ChatGPT本身不会想出这个想法，因此需要适当的格式提示。当然，您可以使用上下文来进行格式化。
 
 > 例如Markdown： 我需要一篇关于ChatGPT的博客文章。写一个标题、一个引语、一个副标题和一个段落。用Markdown格式化所有内容。
 
-![chatgpt-beginner-best-practice-72.png](/images/chatgpt-beginner-best-practice-72.png)> 例如按照表格输出：用表格展现ChatGPT不同模型的Token限制
+![chatgpt-beginner-best-practice-72.png](/images/chatgpt-beginner-best-practice-72.png)
 
-![chatgpt-beginner-best-practice-75.png](/images/chatgpt-beginner-best-practice-75.png)> 例如：用PlantUML语法生成一个用户登陆的时序图
+> 例如按照表格输出：用表格展现ChatGPT不同模型的Token限制
 
-![chatgpt-beginner-best-practice-78.png](/images/chatgpt-beginner-best-practice-78.png)我们在PlantUML在线编辑器上就能看到预览效果
+![chatgpt-beginner-best-practice-75.png](/images/chatgpt-beginner-best-practice-75.png)
 
-![chatgpt-beginner-best-practice-80.jpeg](/images/chatgpt-beginner-best-practice-80.jpeg)## 技巧六：指令提示
+> 例如：用PlantUML语法生成一个用户登陆的时序图
+
+![chatgpt-beginner-best-practice-78.png](/images/chatgpt-beginner-best-practice-78.png)
+
+我们在PlantUML在线编辑器上就能看到预览效果
+
+![chatgpt-beginner-best-practice-80.jpeg](/images/chatgpt-beginner-best-practice-80.jpeg)
+
+## 技巧六：指令提示
 
 如果您确实比较词穷，无法准确描述您的需求，我们可以反向让ChatGPT扮演提问者，反向向我们提问。例如：
 
@@ -103,7 +127,9 @@ ChatGPT不同于传统AI聊天机器人的一个显著特点就是对于上下�
 > 您的答案应该明确地格式化并针对ChatGPT交互进行优化。确保首先询问用户关于目标、所需结果以及可能需要的任何其他信息。
 > 请一条一条的提问。
 
-![chatgpt-beginner-best-practice-88.png](/images/chatgpt-beginner-best-practice-88.png)## 技巧七：文本制作脑图、PPT、架构图等
+![chatgpt-beginner-best-practice-88.png](/images/chatgpt-beginner-best-practice-88.png)
+
+## 技巧七：文本制作脑图、PPT、架构图等
 
 其实上面已经提到，利用ChatGPT可以很轻松的生成PlantUML时序图。同样，对于很多图形化的表达方式，为了更好的共享，都可以用文本来描述，那么这样就可以要求ChatGPT按照这种方式生成格式，我们直接在相关软件中导入即可完成。
 
@@ -111,23 +137,35 @@ ChatGPT不同于传统AI聊天机器人的一个显著特点就是对于上下�
 
 > 生成研发管理流程思维导图，使用markmap格式，生成内容包含在```
 
-![chatgpt-beginner-best-practice-94.jpeg](/images/chatgpt-beginner-best-practice-94.jpeg)接着我们把生成的内容倒入mindmap中：https://markmap.js.org/repl
+![chatgpt-beginner-best-practice-94.jpeg](/images/chatgpt-beginner-best-practice-94.jpeg)
 
-![chatgpt-beginner-best-practice-96.jpeg](/images/chatgpt-beginner-best-practice-96.jpeg)我们再来看一下mermaid的例子，例如：
+接着我们把生成的内容倒入mindmap中：https://markmap.js.org/repl
+
+![chatgpt-beginner-best-practice-96.jpeg](/images/chatgpt-beginner-best-practice-96.jpeg)
+
+我们再来看一下mermaid的例子，例如：
 
 > 使用mermaid生成一个用户登陆的流程图，生成的内容包含在```
 
-![chatgpt-beginner-best-practice-100.jpeg](/images/chatgpt-beginner-best-practice-100.jpeg)我们再讲生成的内容倒入到mermaid中(https://mermaid.live/edit)，注意粘贴后生成的```mermaid需要去掉。
+![chatgpt-beginner-best-practice-100.jpeg](/images/chatgpt-beginner-best-practice-100.jpeg)
 
-![chatgpt-beginner-best-practice-102.jpeg](/images/chatgpt-beginner-best-practice-102.jpeg)## 技巧八：一次性提示，模拟写作
+我们再讲生成的内容倒入到mermaid中(https://mermaid.live/edit)，注意粘贴后生成的```mermaid需要去掉。
+
+![chatgpt-beginner-best-practice-102.jpeg](/images/chatgpt-beginner-best-practice-102.jpeg)
+
+## 技巧八：一次性提示，模拟写作
 
 从上面的例子我们看到，我们对于ChatGPT的指令越清晰，就能得到更精准的答案，反之则会不尽如人意，这就是为什么同样是工具，个体在使用上产生差异的原因。有的时候，我们需要一些特定前提，让ChatGPT进行学习后，按照指定的格式进行输出。例如：
 
 > 以下列语言描述开发语言特点：例如：语言名称：Java 开发时间：xxxx年 需要编译：是 学习难度：中 运用广泛程度：广泛
 
-![chatgpt-beginner-best-practice-107.jpeg](/images/chatgpt-beginner-best-practice-107.jpeg)因为没有在指令中明确说明要输出哪些，所以第一次只给我们输出的一条，我们可以让ChatGPT继续输出相关内容
+![chatgpt-beginner-best-practice-107.jpeg](/images/chatgpt-beginner-best-practice-107.jpeg)
 
-![chatgpt-beginner-best-practice-109.jpeg](/images/chatgpt-beginner-best-practice-109.jpeg)## 技巧九：对已有内容的改写
+因为没有在指令中明确说明要输出哪些，所以第一次只给我们输出的一条，我们可以让ChatGPT继续输出相关内容
+
+![chatgpt-beginner-best-practice-109.jpeg](/images/chatgpt-beginner-best-practice-109.jpeg)
+
+## 技巧九：对已有内容的改写
 
 这种方式仍然是对上下文的应用，通过表明自己的观点和态度，引导ChatGPT优化或创造出更多的内容，提问的基本句式：
 
@@ -141,7 +179,11 @@ ChatGPT不同于传统AI聊天机器人的一个显著特点就是对于上下�
 - 问题二：非常好的观点，根据分析结果重写文本并加以改进
 
 
-![chatgpt-beginner-best-practice-118.jpeg](/images/chatgpt-beginner-best-practice-118.jpeg)![chatgpt-beginner-best-practice-119.jpeg](/images/chatgpt-beginner-best-practice-119.jpeg)## 技巧十：提问中使用明确的动词
+![chatgpt-beginner-best-practice-118.jpeg](/images/chatgpt-beginner-best-practice-118.jpeg)
+
+![chatgpt-beginner-best-practice-119.jpeg](/images/chatgpt-beginner-best-practice-119.jpeg)
+
+## 技巧十：提问中使用明确的动词
 
 从上述这些技巧来看，有一个共同的特点就是动词一定要明确，尽可能清晰地给ChatGPT明确的指令，尽量使用有意义的动词，例如：上面例子中，重写文本或者优化文本。另外，尽可能使用正向的表达，例如：要说“正式表达”，而不是“不要非正式表达”。
 
