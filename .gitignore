@@ -12,3 +12,5 @@ hugo.linux
 
 *.swp
 *.swo
+
+.cache
