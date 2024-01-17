@@ -1,9 +1,9 @@
 ---
-title: Github 2024-01-18 开源项目日报 Top10
-date: 2024-01-18T07:01:35+08:00
+title: Github 2024-01-18 Go开源项目日报 Top10
+date: 2024-01-18T07:11:42+08:00
 slug: github-trendings-today-20240118
 author: 老孙正经胡说
-image: /images/datatalksclub-data-engineering-zoomcamp-0.png
+image: /images/grpc-ecosystem-grpc-gateway-0.png
 tags:
   - github
   - trendings
@@ -12,21 +12,21 @@ tags:
   - 人
   - 项目
   - 和
-  - 语言
-  - 是
   - 开发
-  - 关注
-  - 贡献
+  - 语言
+  - 并
   - 创建
   - 周期
-  - 地址
-  - 库
-  - 类型
-  - 提供
   - 协议
-  - 使用
-  - 赚钱
-  - C++
+  - 关注
+  - 贡献
+  - 地址
+  - 是
+  - 类型
+  - 用于
+  - 工具
+  - 开源
+  - 中
 
 categories:
 
@@ -38,167 +38,165 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Jupyter Notebook项目 | 3 |
-| TypeScript项目 | 2 |
-| 非开发语言项目 | 2 |
-| Python项目 | 2 |
-| C++项目 | 1 |
+| Go项目 | 10 |
+| JavaScript项目 | 1 |
 
-## Angular CLI 文档资源
+## Trivy: 多功能安全扫描工具
 
-* 创建周期：3150 天
-* 开发语言：TypeScript
-* 协议类型：MIT License
-* Star数量：26465 个
-* Fork数量：12164 次
-* 关注人数：26465 人
-* 贡献人数：418 人
-* Open Issues数量：261 个
-* Github地址：https://github.com/angular/angular-cli.git
-* 项目首页: https://cli.angular.io
+* 创建周期：1743 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：20035 个
+* Fork数量：2008 次
+* 关注人数：20035 人
+* 贡献人数：345 人
+* Open Issues数量：202 个
+* Github地址：https://github.com/aquasecurity/trivy.git
+* 项目首页: https://aquasecurity.github.io/trivy
 
 
-Angular CLI 是一个用于 Angular 的命令行界面工具。该文档提供了有关如何开始使用 Angular CLI、学习其基础知识以及探索高级主题的资源。
+Trivy是一款全面而多功能的安全扫描工具，用于查找容器、Kubernetes、代码仓库、云等中的漏洞、配置错误、秘密和SBOM。它支持对容器镜像、文件系统、Git仓库、虚拟机镜像、Kubernetes和AWS进行扫描，并能够找到操作系统软件包、软件依赖、已知漏洞、基础设施即代码问题、敏感信息、秘密和软件许可证。Trivy支持多种流行的编程语言、操作系统和平台。
 
-## GPTs泄露提示收集
+## go-redis：与Uptrace一起监视Redis的Go客户端
 
-* 创建周期：68 天
-* Star数量：22975 个
-* Fork数量：3295 次
-* 关注人数：22975 人
-* 贡献人数：22 人
-* Open Issues数量：7 个
-* Github地址：https://github.com/linexjlin/GPTs.git
-
-
-该存储库收集了GPTs的泄露提示，提供了有关用于生成文本的提示类型的见解。
-
-## 数据工程Zoomcamp：免费课程
-
-* 创建周期：818 天
-* 开发语言：Jupyter Notebook
-* Star数量：18680 个
-* Fork数量：3977 次
-* 关注人数：18680 人
-* 贡献人数：86 人
-* Open Issues数量：23 个
-* Github地址：https://github.com/DataTalksClub/data-engineering-zoomcamp.git
+* 创建周期：4194 天
+* 开发语言：Go
+* 协议类型：BSD 2-Clause "Simplified" License
+* Star数量：18615 个
+* Fork数量：2240 次
+* 关注人数：18615 人
+* 贡献人数：270 人
+* Open Issues数量：204 个
+* Github地址：https://github.com/redis/go-redis.git
+* 项目首页: https://redis.uptrace.dev
 
 
-![](/images/datatalksclub-data-engineering-zoomcamp-0.png)
+Redis Go客户端go-redis是Go编程语言的Redis客户端。它由uptrace/uptrace维护，并可与Uptrace一起使用，Uptrace是一个支持分布式跟踪、度量和日志的开源APM工具。Uptrace可以监视应用程序并设置自动警报，通过电子邮件、Slack、Telegram等渠道接收通知。有一个OpenTelemetry示例可用于演示如何使用Uptrace监视go-redis。
 
-Data Engineering Zoomcamp是DataTalks.Club提供的免费课程，涵盖容器化、工作流编排、数据仓库、分析工程、批处理和流处理等主题。课程包括有关数据摄入和使用SQL进行流处理的研讨会，以及最终项目。
+## gRPC-Gateway: 将RESTful HTTP API转换为gRPC的工具
 
-## 开源个人理财应用 Maybe 的 React 原始版本
-
-* 创建周期：16 天
-* 开发语言：TypeScript
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：9764 个
-* Fork数量：679 次
-* 关注人数：9764 人
-* 贡献人数：13 人
-* Open Issues数量：21 个
-* Github地址：https://github.com/maybe-finance/maybe.git
-* 项目首页: https://maybe.co
-
-
-![](/images/maybe-finance-maybe-0.png)
-
-这是一个开源的个人理财应用，是之前已停用的个人理财应用Maybe的原始React应用。它使用了许多外部服务，如Plaid和Finicity，使其完全运行需要大量的工作。
-
-## Microsoft的C++标准库
-
-* 创建周期：1605 天
-* 开发语言：C++
-* 协议类型：Other
-* Star数量：9400 个
-* Fork数量：1413 次
-* 关注人数：9400 人
-* 贡献人数：186 人
-* Open Issues数量：493 个
-* Github地址：https://github.com/microsoft/STL.git
-
-
-Microsoft的C++标准库是微软C++标准库的官方存储库，它是MSVC工具集和Visual Studio IDE的一部分。存储库包括更改日志、状态图、Discord服务器以及有关如何贡献的信息。它目前正在迁移到GitHub，并专注于实施最新的C++工作草案，目标是符合性、性能、可用性和兼容性。该项目有特定的非目标，例如不在其他平台上移植和添加非标准扩展。
-
-## AI副业赚钱大合集
-
-* 创建周期：35 天
-* Star数量：5675 个
-* Fork数量：621 次
-* 关注人数：5675 人
-* 贡献人数：3 人
-* Open Issues数量：7 个
-* Github地址：https://github.com/bleedline/aimoneyhunter.git
-
-
-这是一个关于AI副业赚钱的大合集，收录了使用AI技术赚钱的各种方法，包括AI自媒体赚钱、AI图片赚钱、AI文案赚钱、AI音频赚钱等多个方面。内容主要围绕使用AI技术生成内容，获取流量或制作对应特定内容的产品进行销售。同时，也分享了一些关于程序员在AI方向上的创业选择的认知。如果对AI副业感兴趣，可以关注他们的公众号和Twitter，也可以访问他们的网站获取更多信息。
-
-## Surya: 多语言文档OCR工具包
-
-* 创建周期：7 天
-* 开发语言：Python
-* 协议类型：GNU General Public License v3.0
-* Star数量：2969 个
-* Fork数量：158 次
-* 关注人数：2969 人
-* 贡献人数：1 人
-* Open Issues数量：4 个
-* Github地址：https://github.com/VikParuchuri/surya.git
-
-
-Surya是一款多语言文档OCR工具包，提供准确的行级文本检测，并将很快提供文本识别、表格和图表检测。它旨在处理各种文档和语言，并以印度教太阳神命名，象征着普遍的视野。
-
-## Vanna: 用于SQL生成和相关功能的Python RAG框架
-
-* 创建周期：250 天
-* 开发语言：Jupyter Notebook
-* 协议类型：MIT License
-* Star数量：3183 个
-* Fork数量：159 次
-* 关注人数：3183 人
-* 贡献人数：6 人
-* Open Issues数量：18 个
-* Github地址：https://github.com/vanna-ai/vanna.git
-* 项目首页: https://vanna.ai/docs/
-
-
-![](/images/vanna-ai-vanna-0.png)
-
-Vanna是一个使用MIT许可的开源Python RAG（检索增强生成）框架，用于SQL生成和相关功能。
-
-## PhotoMaker: 定制逼真人类照片的开源项目
-
-* 创建周期：43 天
-* 开发语言：Jupyter Notebook
-* 协议类型：Other
-* Star数量：2455 个
-* Fork数量：174 次
-* 关注人数：2455 人
-* 贡献人数：3 人
-* Open Issues数量：43 个
-* Github地址：https://github.com/TencentARC/PhotoMaker.git
-* 项目首页: https://photo-maker.github.io/
-
-
-![](/images/tencentarc-photomaker-0.png)
-
-PhotoMaker 是一个专注于通过堆叠式 ID 嵌入来定制逼真人类照片的开源项目。它提供了论文、项目页面、模型卡片以及逼真和风格化照片生成的演示。
-
-## skfolio: Python投资组合优化库
-
-* 创建周期：35 天
-* 开发语言：Python
+* 创建周期：3212 天
+* 开发语言：Go
 * 协议类型：BSD 3-Clause "New" or "Revised" License
-* Star数量：469 个
-* Fork数量：33 次
-* 关注人数：469 人
-* 贡献人数：2 人
-* Open Issues数量：6 个
-* Github地址：https://github.com/skfolio/skfolio.git
-* 项目首页: https://skfolio.org
+* Star数量：16976 个
+* Fork数量：2252 次
+* 关注人数：16976 人
+* 贡献人数：345 人
+* Open Issues数量：130 个
+* Github地址：https://github.com/grpc-ecosystem/grpc-gateway.git
+* 项目首页: https://grpc-ecosystem.github.io/grpc-gateway/
 
 
-skfolio是一个建立在scikit-learn之上的Python投资组合优化库，提供了与scikit-learn兼容的统一接口和工具，用于构建、微调和交叉验证投资组合模型。它在开源3-Clause BSD许可下分发，并提供各种模型用于投资组合优化、预期收益估计、协方差估计、风险度量、优化特性、交叉验证和模型选择。该库还包括快速启动代码片段以供使用示例，并感谢其依赖的贡献者。
+![](/images/grpc-ecosystem-grpc-gateway-0.png)
+
+gRPC-Gateway 是一个工具，用于生成反向代理服务器，将 RESTful HTTP API 转换为 gRPC。它读取协议缓冲区服务定义，并根据服务定义中的 google.api.http 注释生成服务器，从而同时以 gRPC 和 RESTful 风格提供 API。
+
+## Migrate：Go语言编写的数据库迁移工具
+
+* 创建周期：2190 天
+* 开发语言：Go
+* 协议类型：Other
+* Star数量：13234 个
+* Fork数量：1284 次
+* 关注人数：13234 人
+* 贡献人数：207 人
+* Open Issues数量：312 个
+* Github地址：https://github.com/golang-migrate/migrate.git
+
+
+Migrate是一个用Go语言编写的开源项目，提供数据库迁移功能。它可以作为CLI工具使用，也可以作为库导入。Migrate从源中读取迁移并按正确顺序应用到数据库中。该项目保持数据库驱动程序的轻量级，并确保逻辑是无懈可击的。
+
+## Toxiproxy：模拟网络条件的开源框架
+
+* 创建周期：3423 天
+* 开发语言：Go
+* 协议类型：MIT License
+* Star数量：10031 个
+* Fork数量：434 次
+* 关注人数：10031 人
+* 贡献人数：61 人
+* Open Issues数量：87 个
+* Github地址：https://github.com/Shopify/toxiproxy.git
+* 项目首页: https://github.com/shopify/toxiproxy
+
+
+Toxiproxy是一个用于模拟网络条件的开源框架，专为测试、CI和开发环境而设计。它允许对连接进行确定性篡改，并支持随机混乱和定制化。它由用Go语言编写的TCP代理和通过HTTP与代理通信的客户端组成。Toxiproxy有助于通过测试证明应用程序没有单点故障，并自2014年10月以来在Shopify的开发和测试环境中得到成功使用。
+
+## 零分配JSON记录器
+
+* 创建周期：2442 天
+* 开发语言：Go
+* 协议类型：MIT License
+* Star数量：9307 个
+* Fork数量：533 次
+* 关注人数：9307 人
+* 贡献人数：140 人
+* Open Issues数量：143 个
+* Github地址：https://github.com/rs/zerolog.git
+
+
+zerolog包是一个专注于JSON输出的快速简单的记录器。它提供了一个独特的链接API，可以通过避免分配和反射来编写JSON（或CBOR）日志事件。Zerolog旨在提供出色的开发人员体验和令人惊叹的性能，利用了Uber的zap库开创的概念，并通过更简单的API和更好的性能将其推向了一个新的水平。它专注于高效的结构化日志记录，并提供了一个控制台写入器用于美观的日志记录。
+
+## Kubernetes Autoscaler存储库
+
+* 创建周期：2472 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：7384 个
+* Fork数量：3773 次
+* 关注人数：7384 人
+* 贡献人数：409 人
+* Open Issues数量：280 个
+* Github地址：https://github.com/kubernetes/autoscaler.git
+
+
+Kubernetes Autoscaler存储库包含用于Kubernetes的自动缩放相关组件。
+
+## Karpenter: Kubernetes节点自动缩放器
+
+* 创建周期：1288 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：5451 个
+* Fork数量：725 次
+* 关注人数：5451 人
+* 贡献人数：256 人
+* Open Issues数量：224 个
+* Github地址：https://github.com/aws/karpenter-provider-aws.git
+* 项目首页: https://karpenter.sh
+
+
+Karpenter 是一个开源的 Kubernetes 节点自动缩放器，旨在通过根据工作负载要求进行节点的预配和移除，从而提高效率和降低成本。
+
+## Kyverno: Kubernetes原生策略管理
+
+* 创建周期：1809 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：4777 个
+* Fork数量：718 次
+* 关注人数：4777 人
+* 贡献人数：262 人
+* Open Issues数量：330 个
+* Github地址：https://github.com/kyverno/kyverno.git
+* 项目首页: https://kyverno.io
+
+
+Kyverno是一个开源项目，提供Kubernetes原生的策略管理。它允许用户为在Kubernetes集群上运行的容器化应用程序定义和执行策略。
+
+## 分布式实时聊天平台项目
+
+* 创建周期：3 天
+* 开发语言：Go, JavaScript
+* Star数量：118 个
+* Fork数量：13 次
+* 关注人数：118 人
+* 贡献人数：1 人
+* Open Issues数量：0 个
+* Github地址：https://github.com/JoyalAJohney/Realtime-Distributed-Chat.git
+
+
+![](/images/joyalajohney-realtime-distributed-chat-0.png)
+
+这是一个包含前端（React.js）、后端（Go-Fiber）和基础设施（Terraform、CI/CD）代码的开源项目，用于构建分布式、实时、可扩展的消息平台。该项目旨在帮助开发人员学习系统设计并了解端到端项目开发。项目所有者还计划就各种功能撰写文章，例如配置nginx作为负载均衡的反向代理，实现用于HTTPS通信的TLS/SSL证书，以及使用Terraform设置基础设施。
 
