@@ -1,32 +1,32 @@
 ---
-title: Github 2024-01-19 开源项目日报 Top10
-date: 2024-01-19T07:01:18+08:00
+title: Github 2024-01-19 Java开源项目日报 Top10
+date: 2024-01-19T07:11:18+08:00
 slug: github-trendings-today-20240119
 author: 老孙正经胡说
-image: /images/justjavac-free-programming-books-zh_cn-0.png
+image: /images/provectus-kafka-ui-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 人
-  - 项目
   - 人数
-  - 语言
-  - 和
+  - 人
   - 开发
+  - 项目
   - 创建
-  - 关注
+  - 和
+  - 语言
   - 周期
+  - 关注
   - 贡献
   - 地址
-  - 提示
-  - 模型
-  - 类型
-  - 协议
-  - 是
-  - 赚钱
   - 开源
-  - 工程
+  - 协议
+  - 类型
+  - 是
+  - 微
+  - 服务
+  - 提供
+  - 用于
 
 categories:
 
@@ -38,165 +38,163 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 3 |
-| 非开发语言项目 | 3 |
-| Jupyter Notebook项目 | 2 |
+| Java项目 | 10 |
 | TypeScript项目 | 1 |
-| Kotlin项目 | 1 |
-| Vue项目 | 1 |
-| MDX项目 | 1 |
 
-## 免费编程中文书籍索引
+## JDK：Java开发的开源项目
 
-* 创建周期：3728 天
-* 协议类型：GNU General Public License v3.0
-* Star数量：107297 个
-* Fork数量：28154 次
-* 关注人数：107297 人
-* 贡献人数：117 人
-* Open Issues数量：29 个
-* Github地址：https://github.com/justjavac/free-programming-books-zh_CN.git
-* 项目首页: http://weibo.com/justjavac
+* 创建周期：1950 天
+* 开发语言：Java
+* 协议类型：GNU General Public License v2.0
+* Star数量：17652 个
+* Fork数量：5108 次
+* 关注人数：17652 人
+* 贡献人数：169 人
+* Open Issues数量：286 个
+* Github地址：https://github.com/openjdk/jdk.git
 
 
-![](/images/justjavac-free-programming-books-zh_cn-0.png)
+JDK是一个用于Java开发的开源项目。它为开发人员提供构建说明和文档。OpenJDK社区也参与了这个项目。
 
-这是一个免费的计算机编程类中文书籍索引，欢迎大家投稿。它包括了国外程序员在stackoverflow推荐的程序员必读书籍的中文版，stackoverflow上程序员应该阅读的非编程类书籍的中文版，以及github上流行的编程书籍索引。
+## Conductor: Netflix Announcement and Community Support
 
-## 语言模型提示工程指南
-
-* 创建周期：399 天
-* 开发语言：MDX
-* 协议类型：MIT License
-* Star数量：39719 个
-* Fork数量：3682 次
-* 关注人数：39719 人
-* 贡献人数：150 人
-* Open Issues数量：48 个
-* Github地址：https://github.com/dair-ai/Prompt-Engineering-Guide.git
-* 项目首页: https://www.promptingguide.ai/
-
-
-提示工程是一门新的学科，专注于开发和优化提示，以有效地利用语言模型进行各种应用和研究课题。它有助于理解大型语言模型的能力和局限性，并被研究人员用于改进语言模型在问题回答和算术推理等任务上的能力。开发人员使用提示工程来设计与语言模型和其他工具接口的有效提示技术。一个新的提示工程指南已经被创建，提供了与语言模型的提示工程相关的最新论文、学习指南、讲座、参考资料和工具。
-
-## GPTs泄露提示收集
-
-* 创建周期：68 天
-* Star数量：22975 个
-* Fork数量：3295 次
-* 关注人数：22975 人
-* 贡献人数：22 人
-* Open Issues数量：7 个
-* Github地址：https://github.com/linexjlin/GPTs.git
-
-
-该存储库收集了GPTs的泄露提示，提供了有关用于生成文本的提示类型的见解。
-
-## 让英语更易于理解的开源项目
-
-* 创建周期：1769 天
-* 开发语言：TypeScript
-* Star数量：14027 个
-* Fork数量：2566 次
-* 关注人数：14027 人
-* 贡献人数：36 人
-* Open Issues数量：39 个
-* Github地址：https://github.com/xiaolai/everyone-can-use-english.git
-
-
-一个旨在让英语对每个人都更加易于理解的开源项目。
-
-## AI副业赚钱大合集
-
-* 创建周期：35 天
-* Star数量：5675 个
-* Fork数量：621 次
-* 关注人数：5675 人
-* 贡献人数：3 人
-* Open Issues数量：7 个
-* Github地址：https://github.com/bleedline/aimoneyhunter.git
-
-
-这是一个关于AI副业赚钱的大合集，收录了使用AI技术赚钱的各种方法，包括AI自媒体赚钱、AI图片赚钱、AI文案赚钱、AI音频赚钱等多个方面。内容主要围绕使用AI技术生成内容，获取流量或制作对应特定内容的产品进行销售。同时，也分享了一些关于程序员在AI方向上的创业选择的认知。如果对AI副业感兴趣，可以关注他们的公众号和Twitter，也可以访问他们的网站获取更多信息。
-
-## PhotoMaker: 定制逼真人类照片的开源项目
-
-* 创建周期：43 天
-* 开发语言：Jupyter Notebook
-* 协议类型：Other
-* Star数量：2455 个
-* Fork数量：174 次
-* 关注人数：2455 人
-* 贡献人数：3 人
-* Open Issues数量：43 个
-* Github地址：https://github.com/TencentARC/PhotoMaker.git
-* 项目首页: https://photo-maker.github.io/
-
-
-![](/images/tencentarc-photomaker-0.png)
-
-PhotoMaker 是一个专注于通过堆叠式 ID 嵌入来定制逼真人类照片的开源项目。它提供了论文、项目页面、模型卡片以及逼真和风格化照片生成的演示。
-
-## TaskWeaver：面向代码的数据分析任务执行框架
-
-* 创建周期：130 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：3083 个
-* Fork数量：556 次
-* 关注人数：3083 人
-* 贡献人数：14 人
-* Open Issues数量：18 个
-* Github地址：https://github.com/microsoft/TaskWeaver.git
-* 项目首页: https://microsoft.github.io/TaskWeaver/
-
-
-TaskWeaver是一个面向代码的代理框架，可以无缝地规划和执行数据分析任务。它通过编码片段解释用户请求，并有效地协调各种插件（以函数的形式）以有状态地执行数据分析任务。
-
-## Mihon: 免费开源漫画阅读器
-
-* 创建周期：4 天
-* 开发语言：Kotlin
+* 创建周期：2599 天
+* 开发语言：Java
 * 协议类型：Apache License 2.0
-* Star数量：1974 个
-* Fork数量：57 次
-* 关注人数：1974 人
-* 贡献人数：194 人
-* Open Issues数量：88 个
-* Github地址：https://github.com/mihonapp/mihon.git
+* Star数量：12968 个
+* Fork数量：2353 次
+* 关注人数：12968 人
+* 贡献人数：233 人
+* Open Issues数量：165 个
+* Github地址：https://github.com/Netflix/conductor.git
 
 
-Mihon是一个适用于Android 8.0及以上版本的免费开源漫画阅读器。
+Conductor 是由 Netflix 创建的微服务编排引擎。然而，Netflix 宣布他们将于 2023 年 12 月 13 日停止维护 Conductor OSS 在 GitHub 上，并将专注于他们内部的 Conductor fork。尽管如此，Conductor 社区仍被鼓励继续开发该项目的替代分支。
 
-## 少样本语音克隆的高质量TTS模型训练
+## Quarkus: 超音速亚原子级Java
 
-* 创建周期：5 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：1779 个
-* Fork数量：180 次
-* 关注人数：1779 人
-* 贡献人数：11 人
-* Open Issues数量：32 个
-* Github地址：https://github.com/RVC-Boss/GPT-SoVITS.git
-
-
-该项目展示了如何使用仅1分钟的语音数据来训练高质量的文本到语音（TTS）模型，展示了少样本语音克隆。在提供的GitHub链接中有演示视频。
-
-## QAnything：本地知识库问答系统
-
-* 创建周期：16 天
-* 开发语言：Python, Vue
+* 创建周期：2023 天
+* 开发语言：Java
 * 协议类型：Apache License 2.0
-* Star数量：1331 个
-* Fork数量：129 次
-* 关注人数：1331 人
-* 贡献人数：4 人
-* Open Issues数量：20 个
-* Github地址：https://github.com/netease-youdao/QAnything.git
+* Star数量：12743 个
+* Fork数量：2460 次
+* 关注人数：12743 人
+* 贡献人数：391 人
+* Open Issues数量：2507 个
+* Github地址：https://github.com/quarkusio/quarkus.git
+* 项目首页: https://quarkus.io
 
 
-![](/images/netease-youdao-qanything-0.png)
+Quarkus是一个开源的Java框架，旨在实现超音速和亚原子级，为开发Java应用程序提供轻量且高性能的平台。
 
-QAnything是一个本地知识库问答系统，旨在支持各种文件格式和数据库，支持离线安装和使用。它使用户可以简单地放置任何本地存储的任何格式的文件，并获得准确、快速和可靠的答案。目前支持的格式包括PDF、Word、PPT、Markdown、Eml、TXT、图像、网页链接等，未来预计将支持更多格式。
+## Apache Kafka 管理的 Web 用户界面
+
+* 创建周期：1515 天
+* 开发语言：Java, TypeScript
+* 协议类型：Apache License 2.0
+* Star数量：7754 个
+* Fork数量：972 次
+* 关注人数：7754 人
+* 贡献人数：169 人
+* Open Issues数量：351 个
+* Github地址：https://github.com/provectus/kafka-ui.git
+
+
+![](/images/provectus-kafka-ui-0.png)
+
+这个开源项目为管理Apache Kafka提供了一个基于Web的用户界面，Apache Kafka是一个分布式流处理平台。它通过图形界面提供了一个方便的方式来监视和管理Kafka集群、主题和代理。
+
+## SeaTunnel: 下一代超高性能数据集成工具
+
+* 创建周期：2358 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：6941 个
+* Fork数量：1453 次
+* 关注人数：6941 人
+* 贡献人数：240 人
+* Open Issues数量：580 个
+* Github地址：https://github.com/apache/seatunnel.git
+* 项目首页: https://seatunnel.apache.org/
+
+
+![](/images/apache-seatunnel-0.png)
+
+SeaTunnel是一个开源的下一代超高性能、分布式、大规模数据集成工具，称为Apache SeaTunnel。
+
+## WireMock - API模拟测试工具
+
+* 创建周期：4485 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：5948 个
+* Fork数量：1398 次
+* 关注人数：5948 人
+* 贡献人数：209 人
+* Open Issues数量：375 个
+* Github地址：https://github.com/wiremock/wiremock.git
+* 项目首页: https://wiremock.org/
+
+
+WireMock是一个流行的开源工具，用于API模拟测试，每月下载量超过500万次。它有助于创建稳定的测试和开发环境，隔离不可靠的第三方，并模拟尚不存在的API。WireMock于2011年由Tom Akehurst作为Java库启动，现在跨越多种编程语言和技术堆栈。它可以作为库或客户端包装器在许多语言中运行，也可以作为独立服务器。WireMock有一个庞大的社区，并支持多种创建模拟API的方法，具有丰富的匹配系统和通过基于Handlebars的模板系统动态生成响应。
+
+## Apache NiFi：数据处理和分发的强大可靠系统
+
+* 创建周期：3325 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：4160 个
+* Fork数量：2579 次
+* 关注人数：4160 人
+* 贡献人数：313 人
+* Open Issues数量：30 个
+* Github地址：https://github.com/apache/nifi.git
+* 项目首页: https://nifi.apache.org/
+
+
+Apache NiFi是一个易于使用、强大和可靠的系统，用于处理和分发数据。
+
+## Conductor: 微服务编排引擎
+
+* 创建周期：42 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：1473 个
+* Fork数量：49 次
+* 关注人数：1473 人
+* 贡献人数：236 人
+* Open Issues数量：22 个
+* Github地址：https://github.com/conductor-oss/conductor.git
+* 项目首页: https://conductor-oss.org
+
+
+Conductor 是一个微服务编排引擎，最初由 Netflix 创建，用于协调微服务和事件。Conductor OSS 由 Orkes 的开发团队和开源社区的成员共同维护。
+
+## Spring Boot 微服务教程源代码
+
+* 创建周期：637 天
+* 开发语言：Java
+* Star数量：641 个
+* Fork数量：526 次
+* 关注人数：641 人
+* 贡献人数：1 人
+* Open Issues数量：11 个
+* Github地址：https://github.com/SaiUpadhyayula/spring-boot-microservices.git
+
+
+该存储库包含Spring Boot微服务教程的最新源代码。该教程可以在YouTube上观看。
+
+## 开源项目简介和安装指南
+
+* 创建周期：39 天
+* 开发语言：Java
+* Star数量：183 个
+* Fork数量：9 次
+* 关注人数：183 人
+* 贡献人数：1 人
+* Open Issues数量：5 个
+* Github地址：https://github.com/mainpropath/AI-SmartFuse-Framework.git
+
+
+这个开源项目提供了一个简要的介绍，安装指南和当前的主要功能。
 
