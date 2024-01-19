@@ -1,32 +1,32 @@
 ---
-title: Github 2024-01-20 开源项目日报 Top10
-date: 2024-01-20T07:01:20+08:00
+title: Github 2024-01-20 Rust开源项目日报 Top10
+date: 2024-01-20T07:11:43+08:00
 slug: github-trendings-today-20240120
 author: 老孙正经胡说
-image: /images/tencentarc-photomaker-0.png
+image: /images/tabbyml-tabby-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
   - 人数
   - 人
+  - 项目
   - 开发
+  - 和
   - 语言
   - 创建
+  - 是
   - 周期
   - 协议
   - 类型
   - 关注
   - 贡献
   - 地址
-  - 和
-  - 是
+  - 提供
+  - 上
   - 支持
-  - 使用
-  - 开源
-  - 演示
-  - 存储
+  - 可
+  - 可以
 
 categories:
 
@@ -38,173 +38,172 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 4 |
-| Jupyter Notebook项目 | 2 |
-| Lua项目 | 1 |
-| C++项目 | 1 |
-| PHP项目 | 1 |
-| Vue项目 | 1 |
-| 非开发语言项目 | 1 |
-| C项目 | 1 |
+| Rust项目 | 10 |
+| Go项目 | 1 |
 
-## PhotoMaker: 定制逼真人类照片的开源项目
+## 后现代模态文本编辑器
 
-* 创建周期：43 天
-* 开发语言：Jupyter Notebook
+* 创建周期：1328 天
+* 开发语言：Rust
+* 协议类型：Mozilla Public License 2.0
+* Star数量：27484 个
+* Fork数量：1993 次
+* 关注人数：27484 人
+* 贡献人数：424 人
+* Open Issues数量：1159 个
+* Github地址：https://github.com/helix-editor/helix.git
+* 项目首页: https://helix-editor.com
+
+
+一款用Rust编写的后现代模态文本编辑器，深受Kakoune和Neovim启发。它具有类似Vim的模态编辑、多重选择、内置语言服务器支持和智能的增量语法高亮。它主要是一个基于终端的编辑器，但旨在通过wgpu或skulpin探索自定义渲染器。
+
+## Fish - 用户友好的命令行shell
+
+* 创建周期：4272 天
+* 开发语言：Rust
 * 协议类型：Other
-* Star数量：2455 个
-* Fork数量：174 次
-* 关注人数：2455 人
-* 贡献人数：3 人
-* Open Issues数量：43 个
-* Github地址：https://github.com/TencentARC/PhotoMaker.git
-* 项目首页: https://photo-maker.github.io/
+* Star数量：23685 个
+* Fork数量：1835 次
+* 关注人数：23685 人
+* 贡献人数：396 人
+* Open Issues数量：456 个
+* Github地址：https://github.com/fish-shell/fish-shell.git
+* 项目首页: https://fishshell.com
 
 
-![](/images/tencentarc-photomaker-0.png)
+Fish是一个用户友好的命令行shell，适用于macOS、Linux和其他类Unix操作系统。它包括诸如语法高亮、输入时自动建议和精美的标签补全等功能，无需配置即可使用。详细的用户文档可在官方网站上找到。它可以通过Homebrew、MacPorts、fishshell.com的安装程序或独立应用程序安装在macOS上。也提供了各种Linux发行版的软件包。
 
-PhotoMaker 是一个专注于通过堆叠式 ID 嵌入来定制逼真人类照片的开源项目。它提供了论文、项目页面、模型卡片以及逼真和风格化照片生成的演示。
+## Tabby: 自托管的AI编码助手
 
-## Google Cloud 生成式人工智能存储库
+* 创建周期：310 天
+* 开发语言：Rust
+* 协议类型：Other
+* Star数量：15151 个
+* Fork数量：575 次
+* 关注人数：15151 人
+* 贡献人数：48 人
+* Open Issues数量：133 个
+* Github地址：https://github.com/TabbyML/tabby.git
+* 项目首页: https://tabby.tabbyml.com/
 
-* 创建周期：260 天
-* 开发语言：Jupyter Notebook
+
+![](/images/tabbyml-tabby-0.png)
+
+Tabby是一款自托管的AI编码助手，提供了一个开源和本地化的GitHub Copilot替代方案。它是自包含的，无需DBMS或云服务，提供了OpenAPI接口，易于与现有基础设施（例如云IDE）集成，并支持消费级GPU。
+
+## Rust编程语言存储库
+
+* 创建周期：2962 天
+* 开发语言：Rust
+* 协议类型：Other
+* Star数量：13633 个
+* Fork数量：3170 次
+* 关注人数：13633 人
+* 贡献人数：431 人
+* Open Issues数量：398 个
+* Github地址：https://github.com/rust-lang/book.git
+* 项目首页: https://doc.rust-lang.org/book/
+
+
+Rust编程语言存储库包含了该书的源代码，可打印版和在线版本均可获取。它可以与最新的Rust发布版本一起使用，并提供可下载的代码清单。
+
+## wgpu: 一个跨平台、安全的、纯Rust图形API
+
+* 创建周期：1955 天
+* 开发语言：Rust
 * 协议类型：Apache License 2.0
-* Star数量：4304 个
-* Fork数量：916 次
-* 关注人数：4304 人
-* 贡献人数：69 人
-* Open Issues数量：33 个
-* Github地址：https://github.com/GoogleCloudPlatform/generative-ai.git
-* 项目首页: https://cloud.google.com/vertex-ai/docs/generative-ai/learn/overview
+* Star数量：9935 个
+* Fork数量：749 次
+* 关注人数：9935 人
+* 贡献人数：393 人
+* Open Issues数量：696 个
+* Github地址：https://github.com/gfx-rs/wgpu.git
+* 项目首页: https://wgpu.rs
 
 
-![](/images/googlecloudplatform-generative-ai-0.png)
+wgpu是一个跨平台、安全的、纯Rust图形API，它可以在Vulkan、Metal、D3D12和OpenGL上本地运行，并在wasm上支持WebGL2和WebGPU。它基于WebGPU标准，是Firefox和Deno中WebGPU集成的核心。
 
-Google Cloud 生成式人工智能存储库包含笔记本、代码示例、示例应用程序和资源，演示如何使用、开发和管理使用 Vertex AI 在 Google Cloud 上的生成式人工智能工作流。
+## Kata Containers: 轻量级虚拟机与容器性能的安全性优势
 
-## 少样本语音克隆的高质量TTS模型训练
-
-* 创建周期：5 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：1779 个
-* Fork数量：180 次
-* 关注人数：1779 人
-* 贡献人数：11 人
-* Open Issues数量：32 个
-* Github地址：https://github.com/RVC-Boss/GPT-SoVITS.git
-
-
-该项目展示了如何使用仅1分钟的语音数据来训练高质量的文本到语音（TTS）模型，展示了少样本语音克隆。在提供的GitHub链接中有演示视频。
-
-## Ant 游戏引擎
-
-* 创建周期：2192 天
-* 开发语言：Lua, C++
-* 协议类型：MIT License
-* Star数量：1797 个
-* Fork数量：155 次
-* 关注人数：1797 人
-* 贡献人数：12 人
-* Open Issues数量：7 个
-* Github地址：https://github.com/ejoy/ant.git
-
-
-Ant 是由灵犀互娱开发的开源游戏引擎。现阶段仅将代码仓库公开，尚未正式发布。文档、示例等均待在 Wiki 上逐步完善。如有任何问题，可在 Discussions 发帖讨论。Issues 仅用于 Bug 跟踪，请不要在里面提问题。
-
-## QAnything：本地知识库问答系统
-
-* 创建周期：16 天
-* 开发语言：Python, Vue
+* 创建周期：2235 天
+* 开发语言：Rust, Go
 * 协议类型：Apache License 2.0
-* Star数量：1331 个
-* Fork数量：129 次
-* 关注人数：1331 人
-* 贡献人数：4 人
-* Open Issues数量：20 个
-* Github地址：https://github.com/netease-youdao/QAnything.git
+* Star数量：4572 个
+* Fork数量：1047 次
+* 关注人数：4572 人
+* 贡献人数：310 人
+* Open Issues数量：1375 个
+* Github地址：https://github.com/kata-containers/kata-containers.git
 
 
-![](/images/netease-youdao-qanything-0.png)
+Kata Containers 是一个旨在创建轻量级虚拟机（VMs）的开源项目，旨在提供容器的性能同时提供虚拟机的安全性优势。
 
-QAnything是一个本地知识库问答系统，旨在支持各种文件格式和数据库，支持离线安装和使用。它使用户可以简单地放置任何本地存储的任何格式的文件，并获得准确、快速和可靠的答案。目前支持的格式包括PDF、Word、PPT、Markdown、Eml、TXT、图像、网页链接等，未来预计将支持更多格式。
+## Aleo: 零知识应用的去中心化操作系统
 
-## 无人演示下的奥林匹克几何问题解决
-
-* 创建周期：103 天
-* 开发语言：Python
+* 创建周期：1434 天
+* 开发语言：Rust
 * 协议类型：Apache License 2.0
-* Star数量：1743 个
-* Fork数量：160 次
-* 关注人数：1743 人
-* 贡献人数：1 人
-* Open Issues数量：18 个
-* Github地址：https://github.com/google-deepmind/alphageometry.git
+* Star数量：3457 个
+* Fork数量：2594 次
+* 关注人数：3457 人
+* 贡献人数：71 人
+* Open Issues数量：111 个
+* Github地址：https://github.com/AleoHQ/snarkOS.git
+* 项目首页: http://snarkos.org
 
 
-该项目旨在解决奥林匹克几何问题，无需人类演示。它包括用于重现DDAR和AlphaGeometry的代码，这两个几何定理证明器是在《自然2024》论文中介绍的。
+![](/images/aleohq-snarkos-0.png)
 
-## InstantID：零-shot身份保留生成
+Aleo是一个为零知识（ZK）应用设计的去中心化操作系统。它提供了一个平台，用于安全、私密地构建和运行ZK应用。该项目包括一个命令行界面、开发指南以及详细的构建说明，用于运行Aleo节点、客户端和证明者。
 
-* 创建周期：40 天
+## Apache OpenDAL：数据访问层
+
+* 创建周期：705 天
+* 开发语言：Rust
 * 协议类型：Apache License 2.0
-* Star数量：995 个
-* Fork数量：21 次
-* 关注人数：995 人
-* 贡献人数：1 人
-* Open Issues数量：7 个
-* Github地址：https://github.com/InstantID/InstantID.git
-* 项目首页: https://instantid.github.io/
+* Star数量：2430 个
+* Fork数量：383 次
+* 关注人数：2430 人
+* 贡献人数：169 人
+* Open Issues数量：114 个
+* Github地址：https://github.com/apache/opendal.git
+* 项目首页: https://opendal.apache.org
 
 
-InstantID是一个专注于零-shot身份保留生成的开源项目，可在几秒钟内完成。该项目目前正在整理代码和预训练检查点，很快将可用，并鼓励用户通过为存储库加星来支持他们的工作。
+![](/images/apache-opendal-0.png)
 
-## Haier hOn: 未经授权使用服务通知
+Apache OpenDAL是一个数据访问层，可以让用户以统一的方式从各种存储服务中轻松高效地检索数据。它包括不同编程语言的库，以及应用程序和服务。
 
-* 创建周期：335 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：562 个
-* Fork数量：1555 次
-* 关注人数：562 人
-* 贡献人数：8 人
-* Open Issues数量：37 个
-* Github地址：https://github.com/Andre0512/hon.git
+## GlobalProtect-openconnect: 基于OpenConnect和Tauri的Linux VPN GUI
 
-
-Haier hOn是一个Home Assistant集成，支持Haier/Candy/Hoover家用电器，如洗衣机和空调，支持19种语言。然而，由于未经授权使用服务导致对公司造成重大经济损失，因此有一则通知称将在未来几天内撤下该项目。
-
-## 教育用途的微型K解释器
-
-* 创建周期：6 天
-* 开发语言：C
-* 协议类型：MIT License
-* Star数量：200 个
-* Fork数量：12 次
-* 关注人数：200 人
-* 贡献人数：3 人
-* Open Issues数量：1 个
-* Github地址：https://github.com/kparc/ksimple.git
+* 创建周期：1435 天
+* 开发语言：Rust
+* 协议类型：GNU General Public License v3.0
+* Star数量：986 个
+* Fork数量：104 次
+* 关注人数：986 人
+* 贡献人数：30 人
+* Open Issues数量：132 个
+* Github地址：https://github.com/yuezk/GlobalProtect-openconnect.git
 
 
-这是由Arthur Whitney设计的用于教育目的的微型K解释器。
+![](/images/yuezk-globalprotect-openconnect-0.png)
 
-## 公共假期计算器
+GlobalProtect-openconnect是基于OpenConnect和Tauri的Linux上的GlobalProtect VPN的GUI。它支持SSO身份验证方法，受gp-saml-gui启发。
 
-* 创建周期：8 天
-* 开发语言：PHP
-* 协议类型：MIT License
-* Star数量：148 个
-* Fork数量：143 次
-* 关注人数：148 人
-* 贡献人数：28 人
-* Open Issues数量：74 个
-* Github地址：https://github.com/spatie/holidays.git
-* 项目首页: https://spatie.be/open-source
+## Tailcall: 无代码高性能GraphQL后端解决方案
+
+* 创建周期：379 天
+* 开发语言：Rust
+* 协议类型：Apache License 2.0
+* Star数量：714 个
+* Fork数量：125 次
+* 关注人数：714 人
+* 贡献人数：45 人
+* Open Issues数量：78 个
+* Github地址：https://github.com/tailcallhq/tailcall.git
+* 项目首页: https://tailcall.run
 
 
-![](/images/spatie-holidays-0.png)
-
-这个开源软件包可以计算特定国家的公共假期。
+Tailcall是一个开源解决方案，用于构建高性能的GraphQL后端，提供了无代码开发的方法。
 
