@@ -1,32 +1,32 @@
 ---
-title: Github 2024-01-21 开源项目日报 Top10
-date: 2024-01-21T07:01:13+08:00
+title: Github 2024-01-21 php开源项目日报 Top10
+date: 2024-01-21T07:11:24+08:00
 slug: github-trendings-today-20240121
 author: 老孙正经胡说
-image: /images/byoungd-english-level-up-tips-0.png
+image: /images/laravel-framework-0.png
 tags:
   - github
   - trendings
   - 数量
   - 项目
+  - 和
   - 人数
   - 人
   - 开发
-  - 语言
   - 创建
-  - 周期
-  - 关注
-  - 贡献
-  - 地址
-  - 和
   - 是
+  - 语言
+  - 贡献
+  - 周期
   - 协议
   - 类型
-  - 语音
-  - 学习
-  - 模型
-  - 使用
-  - 中
+  - 关注
+  - 地址
+  - 提供
+  - 开源
+  - 框架
+  - 支持
+  - 电子商务
 
 categories:
 
@@ -38,164 +38,175 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 7 |
-| Cuda项目 | 1 |
-| HTML项目 | 1 |
-| Jupyter Notebook项目 | 1 |
-| 非开发语言项目 | 1 |
+| PHP项目 | 10 |
+| Blade项目 | 1 |
+| JavaScript项目 | 1 |
 
-## 高级英语学习指南
+## Laravel: 以优雅语法简化Web开发
 
-* 创建周期：2427 天
-* 开发语言：HTML
-* Star数量：31378 个
-* Fork数量：3697 次
-* 关注人数：31378 人
-* 贡献人数：22 人
-* Open Issues数量：22 个
-* Github地址：https://github.com/byoungd/English-level-up-tips.git
-* 项目首页: https://byoungd.github.io/English-level-up-tips/
-
-
-![](/images/byoungd-english-level-up-tips-0.png)
-
-一个高级的学习英语指南，可能会给你带来很多好处。
-
-## 应用机器学习
-
-* 创建周期：1296 天
+* 创建周期：4028 天
+* 开发语言：PHP
 * 协议类型：MIT License
-* Star数量：25417 个
-* Fork数量：3497 次
-* 关注人数：25417 人
-* 贡献人数：49 人
-* Open Issues数量：3 个
-* Github地址：https://github.com/eugeneyan/applied-ml.git
+* Star数量：30824 个
+* Fork数量：10526 次
+* 关注人数：30824 人
+* 贡献人数：383 人
+* Open Issues数量：27 个
+* Github地址：https://github.com/laravel/framework.git
+* 项目首页: https://laravel.com
 
 
-‘applied-ml’项目是一个由论文、文章和博客组成的策划收藏，着重于数据科学和机器学习在生产中的应用。它提供了关于问题框架、成功和不成功的机器学习技术、相关科学研究和参考资料、真实世界结果的见解，并提供了关于ML进展和应用的指南。
+![](/images/laravel-framework-0.png)
 
-## TaskWeaver：面向代码的数据分析任务执行框架
+Laravel是一个以其富有表现力和优雅的语法而闻名的Web应用程序框架。它旨在通过简化常见任务（如路由、依赖注入、会话和缓存存储、数据库模式迁移、后台作业处理和实时事件广播）使Web开发成为一种愉快和创造性的体验。它提供了平衡的易用性和功能强大性，适用于小型和大型应用。
 
-* 创建周期：130 天
-* 开发语言：Python
+## Symfony PHP框架和组件
+
+* 创建周期：5130 天
+* 开发语言：PHP
 * 协议类型：MIT License
-* Star数量：3083 个
-* Fork数量：556 次
-* 关注人数：3083 人
-* 贡献人数：14 人
-* Open Issues数量：18 个
-* Github地址：https://github.com/microsoft/TaskWeaver.git
-* 项目首页: https://microsoft.github.io/TaskWeaver/
+* Star数量：28999 个
+* Fork数量：9440 次
+* 关注人数：28999 人
+* 贡献人数：368 人
+* Open Issues数量：846 个
+* Github地址：https://github.com/symfony/symfony.git
+* 项目首页: https://symfony.com
 
 
-TaskWeaver是一个面向代码的代理框架，可以无缝地规划和执行数据分析任务。它通过编码片段解释用户请求，并有效地协调各种插件（以函数的形式）以有状态地执行数据分析任务。
+Symfony是用于Web和控制台应用程序的PHP框架，以及一组可重用的PHP组件。它被数千个Web应用程序和流行的PHP项目广泛使用。该框架遵循语义化版本控制，提供长期支持（LTS）版本，并具有可预测且适合业务的发布流程。Symfony 7.0得到了Shopware、Sulu和Les-Tilleuls.coop的支持。Shopware是一个由Symfony和Vue.js驱动的开放式无头商务平台，Sulu是Symfony开发人员的CMS，Les-Tilleuls.coop是一支提供专业服务的Symfony专家团队。该项目提供了全面的文档、支持性社区，并欢迎开发人员的贡献。安全漏洞可以按照特定程序进行报告，并且开发由Symfony核心团队领导并得到贡献者的支持。
 
-## 少样本语音克隆的高质量TTS模型训练
+## PHPUnit: PHP程序员的单元测试框架
 
-* 创建周期：5 天
-* 开发语言：Python
+* 创建周期：5141 天
+* 开发语言：PHP
+* 协议类型：BSD 3-Clause "New" or "Revised" License
+* Star数量：19460 个
+* Fork数量：2245 次
+* 关注人数：19460 人
+* 贡献人数：391 人
+* Open Issues数量：108 个
+* Github地址：https://github.com/sebastianbergmann/phpunit.git
+* 项目首页: https://phpunit.de/
+
+
+PHPUnit是面向程序员的PHP测试框架，遵循xUnit架构用于单元测试。
+
+## PhpSpreadsheet: 读写电子表格的纯PHP库
+
+* 创建周期：2772 天
+* 开发语言：PHP
 * 协议类型：MIT License
-* Star数量：1779 个
-* Fork数量：180 次
-* 关注人数：1779 人
-* 贡献人数：11 人
-* Open Issues数量：32 个
-* Github地址：https://github.com/RVC-Boss/GPT-SoVITS.git
+* Star数量：12750 个
+* Fork数量：3335 次
+* 关注人数：12750 人
+* 贡献人数：320 人
+* Open Issues数量：173 个
+* Github地址：https://github.com/PHPOffice/PhpSpreadsheet.git
+* 项目首页: https://phpspreadsheet.readthedocs.io
 
 
-该项目展示了如何使用仅1分钟的语音数据来训练高质量的文本到语音（TTS）模型，展示了少样本语音克隆。在提供的GitHub链接中有演示视频。
+PhpSpreadsheet是一个纯PHP库，提供了用于读写诸如Excel和LibreOffice Calc等各种电子表格文件格式的类。
 
-## 无人演示下的奥林匹克几何问题解决
+## Magento开源项目和Adobe Commerce
 
-* 创建周期：103 天
-* 开发语言：Python
-* 协议类型：Apache License 2.0
-* Star数量：1743 个
-* Fork数量：160 次
-* 关注人数：1743 人
-* 贡献人数：1 人
-* Open Issues数量：18 个
-* Github地址：https://github.com/google-deepmind/alphageometry.git
+* 创建周期：4435 天
+* 开发语言：PHP
+* 协议类型：Open Software License 3.0
+* Star数量：11083 个
+* Fork数量：9328 次
+* 关注人数：11083 人
+* 贡献人数：257 人
+* Open Issues数量：2518 个
+* Github地址：https://github.com/magento/magento2.git
+* 项目首页: http://www.magento.com
 
 
-该项目旨在解决奥林匹克几何问题，无需人类演示。它包括用于重现DDAR和AlphaGeometry的代码，这两个几何定理证明器是在《自然2024》论文中介绍的。
+![](/images/magento-magento2-0.png)
 
-## WhisperSpeech: 开源文本转语音系统
+Magento开源项目提供基本的电子商务功能，用于构建在线商店。建议使用Adobe Commerce作为完整的电子商务解决方案，其中包括优化的云架构、托管以及人工智能驱动的商品推广和分析。
 
-* 创建周期：341 天
-* 开发语言：Jupyter Notebook
+## Rector - 即时升级和自动重构
+
+* 创建周期：2381 天
+* 开发语言：PHP
 * 协议类型：MIT License
-* Star数量：2112 个
-* Fork数量：88 次
-* 关注人数：2112 人
-* 贡献人数：4 人
+* Star数量：7842 个
+* Fork数量：663 次
+* 关注人数：7842 人
+* 贡献人数：181 人
 * Open Issues数量：19 个
-* Github地址：https://github.com/collabora/WhisperSpeech.git
-* 项目首页: https://collabora.github.io/WhisperSpeech/
+* Github地址：https://github.com/rectorphp/rector.git
+* 项目首页: https://getrector.com
 
 
-![](/images/collabora-whisperspeech-0.png)
+Rector是一个开源工具，为PHP 5.3+代码提供即时升级和自动重构。它帮助升级和重构应用程序的PHP代码，在两个主要领域提供帮助。
 
-WhisperSpeech是一个通过颠倒Whisper而创建的开源文本转语音系统。它旨在成为强大且易于定制的，类似于Stable Diffusion但用于语音。该项目致力于使用经过适当许可的语音录音，并且所有代码都是开源的，可安全用于商业应用。目前，模型是在英语LibreLight数据集上训练的，但下一个版本计划支持多种语言。
+## Leantime: 面向非项目经理的开源项目管理系统
 
-## AlphaCodium: 从提示工程到流程工程
-
-* 创建周期：7 天
-* 开发语言：Python
+* 创建周期：3285 天
+* 开发语言：PHP, JavaScript
 * 协议类型：GNU Affero General Public License v3.0
-* Star数量：1111 个
-* Fork数量：74 次
-* 关注人数：1111 人
-* 贡献人数：3 人
-* Open Issues数量：0 个
-* Github地址：https://github.com/Codium-ai/AlphaCodium.git
-* 项目首页: https://www.codium.ai/products/alpha-codium/
+* Star数量：3789 个
+* Fork数量：515 次
+* 关注人数：3789 人
+* 贡献人数：110 人
+* Open Issues数量：216 个
+* Github地址：https://github.com/Leantime/leantime.git
+* 项目首页: https://leantime.io
 
 
-AlphaCodium是一个代码生成工具，在CodeContests中胜过大多数人类竞争对手。该工具涵盖了从提示工程到流程工程的内容，由CodiumAI的Tal Ridnik、Dedy Kredo和Itamar Friedman开发。
+Leantime是一种面向非项目经理的开源项目管理系统，专为患有注意力缺陷多动障碍（ADHD）、自闭症和阅读障碍的个体设计。它结合了战略、规划和执行，同时确保所有团队成员都能轻松使用。它是ClickUp、Monday或Asana的替代品，提供了类似Trello的简单性和类似Jira的丰富功能。
 
-## Haier hOn: 未经授权使用服务通知
+## osTicket: 开源支持票务系统
 
-* 创建周期：335 天
-* 开发语言：Python
+* 创建周期：3814 天
+* 开发语言：PHP
+* 协议类型：GNU General Public License v2.0
+* Star数量：2955 个
+* Fork数量：1604 次
+* 关注人数：2955 人
+* 贡献人数：109 人
+* Open Issues数量：1111 个
+* Github地址：https://github.com/osTicket/osTicket.git
+* 项目首页: osticket.com
+
+
+osTicket是一个开源的支持票务系统，将通过电子邮件、电话和基于网络的表单创建的询问无缝集成到一个简单易用的多用户网络界面中。它允许用户通过网站、电子邮件或电话创建工单，然后保存并分配给代理人进行解决。osTicket是一个经济实惠且用户友好的替代方案，可替代复杂的客户支持系统，因为它简单、轻巧、可靠、开源、基于网络且免费。
+
+## Lunar: 将现代无头电子商务功能引入Laravel
+
+* 创建周期：761 天
+* 开发语言：PHP, Blade
 * 协议类型：MIT License
-* Star数量：562 个
-* Fork数量：1555 次
-* 关注人数：562 人
-* 贡献人数：8 人
-* Open Issues数量：37 个
-* Github地址：https://github.com/Andre0512/hon.git
+* Star数量：1983 个
+* Fork数量：265 次
+* 关注人数：1983 人
+* 贡献人数：68 人
+* Open Issues数量：90 个
+* Github地址：https://github.com/lunarphp/lunar.git
+* 项目首页: https://lunarphp.io
 
 
-Haier hOn是一个Home Assistant集成，支持Haier/Candy/Hoover家用电器，如洗衣机和空调，支持19种语言。然而，由于未经授权使用服务导致对公司造成重大经济损失，因此有一则通知称将在未来几天内撤下该项目。
+![](/images/lunarphp-lunar-0.png)
 
-## Vision Mamba: 高效视觉表示学习与双向状态空间模型
+Lunar是一个开源软件包，将现代无头电子商务功能引入Laravel。它提供类似于Shopify和其他电子商务平台的Laravel软件包，允许用户使用预先构建的后端功能创建自己的商店。
 
-* 创建周期：6 天
-* 开发语言：Python, Cuda
-* Star数量：478 个
-* Fork数量：22 次
-* 关注人数：478 人
-* 贡献人数：4 人
-* Open Issues数量：6 个
-* Github地址：https://github.com/hustvl/Vim.git
+## 计算公共假期
 
-
-Vision Mamba是一个专注于使用双向状态空间模型进行高效视觉表示学习的开源项目。该项目最近在Arxiv上发布了一篇论文，计划很快发布代码和模型。
-
-## pyhOn项目即将停止
-
-* 创建周期：342 天
-* 开发语言：Python
+* 创建周期：9 天
+* 开发语言：PHP
 * 协议类型：MIT License
-* Star数量：282 个
-* Fork数量：1373 次
-* 关注人数：282 人
-* 贡献人数：5 人
-* Open Issues数量：4 个
-* Github地址：https://github.com/Andre0512/pyhOn.git
+* Star数量：188 个
+* Fork数量：149 次
+* 关注人数：188 人
+* 贡献人数：29 人
+* Open Issues数量：74 个
+* Github地址：https://github.com/spatie/holidays.git
+* 项目首页: https://spatie.be/open-source
 
 
-由于开发者违反了服务条款，pyhOn项目即将停止。该项目使用反向工程请求开发，与海尔公司没有官方关联。建议用户立即采取行动，因为该项目随时可能停止运行。
+![](/images/spatie-holidays-0.png)
+
+这个开源软件包可以计算特定国家的公共假期，帮助用户确定不用工作的日期。
 
