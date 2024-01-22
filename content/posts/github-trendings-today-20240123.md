@@ -1,32 +1,32 @@
 ---
-title: Github 2024-01-23 开源项目日报 Top9
-date: 2024-01-23T07:01:29+08:00
+title: Github 2024-01-23 Python开源项目日报 Top10
+date: 2024-01-23T07:11:26+08:00
 slug: github-trendings-today-20240123
 author: 老孙正经胡说
-image: /images/xtekky-gpt4free-0.png
+image: /images/donnemartin-system-design-primer-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
-  - 人数
   - 人
-  - 开发
+  - 人数
+  - 项目
   - 语言
+  - 开发
+  - 和
   - 创建
-  - 开源
-  - 周期
-  - 协议
   - 关注
+  - 周期
   - 贡献
   - 地址
-  - 和
-  - 类型
   - 是
+  - 协议
+  - 类型
+  - 使用
+  - 数据
   - 模型
-  - 提供
-  - 并
-  - 支持
+  - 工程
+  - 设计
 
 categories:
 
@@ -34,24 +34,53 @@ draft: false
 ---
 
 
-根据Github Trendings的统计，今日(2024-01-23统计)共有9个项目上榜。根据开发语言中项目的数量，汇总情况如下：
+根据Github Trendings的统计，今日(2024-01-23统计)共有10个项目上榜。根据开发语言中项目的数量，汇总情况如下：
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 3 |
-| Go项目 | 2 |
-| TypeScript项目 | 2 |
-| Dart项目 | 1 |
-| Jupyter Notebook项目 | 1 |
+| Python项目 | 10 |
 
-## gpt4free 语言模型集合改进计划
+## 系统设计指南
+
+* 创建周期：2507 天
+* 开发语言：Python
+* 协议类型：Other
+* Star数量：241693 个
+* Fork数量：42010 次
+* 关注人数：241693 人
+* 贡献人数：109 人
+* Open Issues数量：413 个
+* Github地址：https://github.com/donnemartin/system-design-primer.git
+
+
+![](/images/donnemartin-system-design-primer-0.png)
+
+系统设计指南是一个开源项目，帮助个人学习如何设计大规模系统并为系统设计面试做准备。它还包括Anki记忆卡，以便有效学习。
+
+## yt-dlp: 一个增强版的youtube-dl分支
+
+* 创建周期：1184 天
+* 开发语言：Python
+* 协议类型：The Unlicense
+* Star数量：64607 个
+* Fork数量：5309 次
+* 关注人数：64607 人
+* 贡献人数：385 人
+* Open Issues数量：1422 个
+* Github地址：https://github.com/yt-dlp/yt-dlp.git
+* 项目首页: https://discord.gg/H5MNcFW63r
+
+
+yt-dlp是youtube-dl的一个分支，具有额外的功能和修复，重点是添加新功能和补丁，同时与原始项目保持最新。它包括详细的安装说明，更新/发布文件，依赖关系，编译，使用和选项，配置，格式选择，修改元数据，插件，嵌入示例等。它还集成了SponsorBlock，用于标记/删除YouTube视频中的赞助部分，并更改了默认格式排序选项，以获得更高分辨率和更好的编解码器。
+
+## gpt4free存储库：强大语言模型的集合
 
 * 创建周期：300 天
 * 开发语言：Python
 * 协议类型：GNU General Public License v3.0
-* Star数量：51768 个
+* Star数量：51769 个
 * Fork数量：12716 次
-* 关注人数：51768 人
+* 关注人数：51769 人
 * 贡献人数：168 人
 * Open Issues数量：107 个
 * Github地址：https://github.com/xtekky/gpt4free.git
@@ -60,134 +89,116 @@ draft: false
 
 ![](/images/xtekky-gpt4free-0.png)
 
-官方 gpt4free 仓库是由 @hlohaus 维护，@xtekky 编写的强大语言模型集合。该项目欢迎用户反馈以进行改进，并提供了一个表单供用户提交建议。该项目旨在进行各种改进，如增强文档、提供视频教程、更新提供者状态列表、改进 Bing 包装器，并增强错误处理和兼容性。
+官方的gpt4free存储库是由@hlohaus维护，@xtekky编写的强大语言模型的集合。用户被鼓励通过反馈表提供改进建议。该项目旨在根据调查结果进行各种改进，包括增强文档、更新提供商状态列表、创建教程、改进包装器以及增强稳定性和兼容性。
 
-## n8n - 公平代码分发的工作流自动化工具
+## ChatGPT Telegram Bot: 重新定义聊天体验
 
-* 创建周期：1676 天
-* 开发语言：TypeScript
-* 协议类型：Other
-* Star数量：37259 个
-* Fork数量：4406 次
-* 关注人数：37259 人
-* 贡献人数：314 人
-* Open Issues数量：282 个
-* Github地址：https://github.com/n8n-io/n8n.git
-* 项目首页: https://n8n.io
-
-
-![](/images/n8n-io-n8n-0.png)
-
-n8n是一个免费的开源工作流自动化工具，采用公平代码分发模型。它允许用户轻松地在不同服务之间自动化任务，并且通过基于节点的方法，支持可扩展性，可见的源代码，自托管能力，以及对自定义函数、逻辑和应用程序的支持。
-
-## 初学者生成式人工智能课程
-
-* 创建周期：218 天
-* 开发语言：Jupyter Notebook
-* 协议类型：MIT License
-* Star数量：22909 个
-* Fork数量：14124 次
-* 关注人数：22909 人
-* 贡献人数：47 人
-* Open Issues数量：35 个
-* Github地址：https://github.com/microsoft/generative-ai-for-beginners.git
-
-
-《初学者生成式人工智能》是由微软云倡导者提供的12课程，教授构建生成式人工智能应用程序的基础知识。参与者将学习生成式人工智能原理和应用开发的关键方面，并有机会构建自己的生成式人工智能创业公司。
-
-## Reactive Resume: 免费开源简历生成器
-
-* 创建周期：1399 天
-* 开发语言：TypeScript
-* 协议类型：MIT License
-* Star数量：18136 个
-* Fork数量：1985 次
-* 关注人数：18136 人
-* 贡献人数：102 人
-* Open Issues数量：351 个
-* Github地址：https://github.com/AmruthPillai/Reactive-Resume.git
-* 项目首页: https://rxresu.me
-
-
-![](/images/amruthpillai-reactive-resume-0.png)
-
-Reactive Resume是一款免费的开源简历生成器，注重隐私、安全和定制化。它简化了创建、更新和分享简历的过程，完全安全、可定制、便携、开源，并永久免费。
-
-## 开源 Spotify 客户端：无需付费订阅，跨平台支持
-
-* 创建周期：1072 天
-* 开发语言：Dart
-* 协议类型：Other
-* Star数量：14808 个
-* Fork数量：588 次
-* 关注人数：14808 人
-* 贡献人数：42 人
-* Open Issues数量：231 个
-* Github地址：https://github.com/KRTirtho/spotube.git
-* 项目首页: https://spotube.krtirtho.dev/
-
-
-![](/images/krtirtho-spotube-0.png)
-
-这是一个开源的 Spotify 客户端，不需要付费订阅，也不使用 Electron。它适用于桌面和移动平台。该客户端提供了无广告、可下载的音轨、跨平台支持、小巧的体积、低数据使用量、匿名/访客登录、同步歌词、无遥测或用户数据收集、本地性能和开源/自由软件等功能。播放控制在本地进行，而不是在服务器上。建议通过观看/点赞/订阅艺术家的 YouTube 频道或在 Spotify 上点赞他们的音轨（或购买 Spotify Premium 订阅）来支持创作者。
-
-## Sing-box: 通用代理平台
-
-* 创建周期：572 天
-* 开发语言：Go
-* 协议类型：Other
-* Star数量：11016 个
-* Fork数量：1570 次
-* 关注人数：11016 人
-* 贡献人数：43 人
-* Open Issues数量：47 个
-* Github地址：https://github.com/SagerNet/sing-box.git
-* 项目首页: https://sing-box.sagernet.org/
-
-
-Sing-box是一个开源的通用代理平台。
-
-## 少样本语音克隆的高质量TTS模型训练
-
-* 创建周期：5 天
+* 创建周期：414 天
 * 开发语言：Python
 * 协议类型：MIT License
-* Star数量：1779 个
-* Fork数量：180 次
-* 关注人数：1779 人
-* 贡献人数：11 人
-* Open Issues数量：32 个
+* Star数量：4469 个
+* Fork数量：1561 次
+* 关注人数：4469 人
+* 贡献人数：17 人
+* Open Issues数量：76 个
+* Github地址：https://github.com/father-bot/chatgpt_telegram_bot.git
+
+
+![](/images/father-bot-chatgpt_telegram_bot-0.png)
+
+ChatGPT Telegram Bot是一个旨在将ChatGPT体验重新打造成Telegram Bot的开源项目，提供无延迟和无限制的聊天环境。用户可以部署自己的机器人，也可以使用提供的机器人。
+
+## 少样本语音克隆的高质量TTS模型
+
+* 创建周期：9 天
+* 开发语言：Python
+* 协议类型：MIT License
+* Star数量：4367 个
+* Fork数量：411 次
+* 关注人数：4367 人
+* 贡献人数：24 人
+* Open Issues数量：65 个
 * Github地址：https://github.com/RVC-Boss/GPT-SoVITS.git
 
 
-该项目展示了如何使用仅1分钟的语音数据来训练高质量的文本到语音（TTS）模型，展示了少样本语音克隆。在提供的GitHub链接中有演示视频。
+该项目专注于使用最少的语音数据来训练高质量的文本到语音（TTS）模型，实现少样本语音克隆。该项目的GitHub页面上提供了演示视频。
 
-## OpenGFW：灵活易用的Linux上GFW开源实现
+## Taipy: 数据科学家和机器学习工程师的生产就绪Web应用程序工具
 
-* 创建周期：41 天
-* 开发语言：Go
-* 协议类型：Mozilla Public License 2.0
-* Star数量：1966 个
-* Fork数量：118 次
-* 关注人数：1966 人
+* 创建周期：704 天
+* 开发语言：Python
+* 协议类型：Apache License 2.0
+* Star数量：4006 个
+* Fork数量：302 次
+* 关注人数：4006 人
+* 贡献人数：33 人
+* Open Issues数量：176 个
+* Github地址：https://github.com/Avaiga/taipy.git
+* 项目首页: https://www.taipy.io
+
+
+![](/images/avaiga-taipy-0.png)
+
+Taipy 是一个面向数据科学家和机器学习工程师设计的开源工具，可以快速将数据和AI算法转化为可投入生产的Web应用程序。它可以帮助构建Web应用程序，而无需学习新的语言或全栈框架，让用户专注于数据和AI算法，而不必担心开发和部署的复杂性。
+
+## TaskWeaver：代码优先的数据分析任务执行框架
+
+* 创建周期：134 天
+* 开发语言：Python
+* 协议类型：MIT License
+* Star数量：3620 个
+* Fork数量：596 次
+* 关注人数：3620 人
+* 贡献人数：14 人
+* Open Issues数量：25 个
+* Github地址：https://github.com/microsoft/TaskWeaver.git
+* 项目首页: https://microsoft.github.io/TaskWeaver/
+
+
+TaskWeaver是一个代码优先的代理框架，通过编码片段解释用户请求，并有效地协调各种插件形式的函数，以有状态地执行数据分析任务。
+
+## 使用AlphaCodium进行代码生成：从提示工程到流程工程
+
+* 创建周期：9 天
+* 开发语言：Python
+* 协议类型：GNU Affero General Public License v3.0
+* Star数量：1670 个
+* Fork数量：103 次
+* 关注人数：1670 人
+* 贡献人数：5 人
+* Open Issues数量：2 个
+* Github地址：https://github.com/Codium-ai/AlphaCodium.git
+* 项目首页: https://www.codium.ai
+
+
+该项目是论文《使用AlphaCodium进行代码生成：从提示工程到流程工程》的官方实现。它涉及代码生成中的提示工程和流程工程。
+
+## CamP Zip-NeRF: Google Research存储库的分支
+
+* 创建周期：4 天
+* 开发语言：Python
+* 协议类型：Apache License 2.0
+* Star数量：374 个
+* Fork数量：19 次
+* 关注人数：374 人
 * 贡献人数：1 人
-* Open Issues数量：9 个
-* Github地址：https://github.com/apernet/OpenGFW.git
+* Open Issues数量：7 个
+* Github地址：https://github.com/jonbarron/camp_zipnerf.git
 
 
-OpenGFW 是一个灵活、易于使用的开源 GFW 在 Linux 上的实现，旨在比真实的 GFW 更强大，并在家用路由器上提供网络主权。然而，该项目仍处于早期开发阶段，使用时需谨慎。该项目正在寻求贡献者，特别是帮助实现更多协议的分析器。
+CamP Zip-NeRF是Google Research存储库的一个分支，包含了两篇论文Zip-NeRF和CamP的JAX代码。它适用于那些不想下载更大的Google Research存储库的人。这些代码是用于研究目的，应相应地使用。
 
-## CREWAI 项目实验与 AI 代理人任务执行
+## CrewAI实验项目
 
 * 创建周期：10 天
 * 开发语言：Python
-* Star数量：203 个
+* Star数量：204 个
 * Fork数量：41 次
-* 关注人数：203 人
+* 关注人数：204 人
 * 贡献人数：1 人
 * Open Issues数量：3 个
 * Github地址：https://github.com/majacinka/crewai-experiments.git
 
 
-CREWAI 项目涉及对本地模型和通过 API 可用模型进行实验。作者描述了尝试了三个不同的项目，从简单到复杂，以便让一组 AI 代理人执行任务，如检查创业点子，利用 Google SERP 和 Reddit Scraper 制作 AI 通讯，以及开发电子邮件分类器。
+该项目涉及对本地模型以及通过API可用的模型进行实验，特别关注使用CrewAI来执行各种任务，例如检查创业点子，利用Google SERP和Reddit Scraper构建AI新闻简报，以及开发电子邮件分类器。
 
