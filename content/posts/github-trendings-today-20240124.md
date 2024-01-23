@@ -1,32 +1,32 @@
 ---
-title: Github 2024-01-24 开源项目日报 Top10
-date: 2024-01-24T07:01:26+08:00
+title: Github 2024-01-24 C开源项目日报 Top9
+date: 2024-01-24T07:11:35+08:00
 slug: github-trendings-today-20240124
 author: 老孙正经胡说
-image: /images/freecodecamp-freecodecamp-0.png
+image: /images/darkflippers-unleashed-firmware-0.png
 tags:
   - github
   - trendings
   - 数量
+  - 和
   - 项目
-  - 人
   - 人数
+  - 人
+  - 协议
   - 开发
   - 语言
   - 创建
-  - 开源
-  - 贡献
-  - 和
+  - 是
+  - 库
+  - 并
   - 周期
-  - 协议
+  - 类型
   - 关注
+  - 贡献
   - 地址
   - 提供
-  - 编程
-  - 类型
-  - 是
-  - 免费
-  - 使用
+  - 支持
+  - 开源
 
 categories:
 
@@ -34,183 +34,160 @@ draft: false
 ---
 
 
-根据Github Trendings的统计，今日(2024-01-24统计)共有10个项目上榜。根据开发语言中项目的数量，汇总情况如下：
+根据Github Trendings的统计，今日(2024-01-24统计)共有9个项目上榜。根据开发语言中项目的数量，汇总情况如下：
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| TypeScript项目 | 3 |
-| Dart项目 | 2 |
-| 非开发语言项目 | 2 |
-| Go项目 | 1 |
-| Rust项目 | 1 |
-| Shell项目 | 1 |
-| Dockerfile项目 | 1 |
-| Jupyter Notebook项目 | 1 |
-| JavaScript项目 | 1 |
+| C项目 | 9 |
+| C++项目 | 1 |
 
-## 免费编程学习平台：freeCodeCamp.org
+## jq：轻量灵活的命令行JSON处理器
 
-* 创建周期：3318 天
-* 开发语言：TypeScript, JavaScript
-* 协议类型：BSD 3-Clause "New" or "Revised" License
-* Star数量：382039 个
-* Fork数量：35616 次
-* 关注人数：382039 人
-* 贡献人数：395 人
-* Open Issues数量：354 个
-* Github地址：https://github.com/freeCodeCamp/freeCodeCamp.git
-* 项目首页: http://contribute.freecodecamp.org/
-
-
-![](/images/freecodecamp-freecodecamp-0.png)
-
-freeCodeCamp.org 是一个开源平台和社区，人们可以免费学习编程。这是一个由捐助支持的慈善机构，旨在帮助成年人转入科技领域，已经帮助超过40,000人获得了他们的第一份开发工作。该平台提供全栈网页开发和机器学习课程，采用自主学习和大量互动编程挑战。
-
-## 免费编程图书资源列表
-
-* 创建周期：3755 天
-* 协议类型：Creative Commons Attribution 4.0 International
-* Star数量：308067 个
-* Fork数量：59182 次
-* 关注人数：308067 人
-* 贡献人数：432 人
-* Open Issues数量：36 个
-* Github地址：https://github.com/EbookFoundation/free-programming-books.git
-* 项目首页: https://ebookfoundation.github.io/free-programming-books/
-
-
-网站https://ebookfoundation.github.io/free-programming-books-search/提供了各种语言的免费编程图书列表。它为希望通过开源材料学习编程的个人提供了宝贵的资源。
-
-## 从零开始构建你喜爱的技术
-
-* 创建周期：2086 天
-* Star数量：240928 个
-* Fork数量：23078 次
-* 关注人数：240928 人
-* 贡献人数：112 人
-* Open Issues数量：314 个
-* Github地址：https://github.com/codecrafters-io/build-your-own-x.git
-* 项目首页: https://codecrafters.io
-
-
-![](/images/codecrafters-io-build-your-own-x-0.png)
-
-这个存储库是一系列逐步指南的汇编，可以从头开始重新创建各种技术，例如3D渲染器、区块链、游戏、操作系统等。它旨在帮助个人通过理解和构建自己喜欢的技术来掌握编程。
-
-## 编程面试准备材料手册
-
-* 创建周期：2759 天
-* 开发语言：TypeScript
-* 协议类型：MIT License
-* Star数量：105041 个
-* Fork数量：13494 次
-* 关注人数：105041 人
-* 贡献人数：153 人
-* Open Issues数量：30 个
-* Github地址：https://github.com/yangshun/tech-interview-handbook.git
-* 项目首页: https://www.techinterviewhandbook.org
-
-
-该项目为繁忙的软件工程师提供精选的编程面试准备材料，包括最佳实践问题、算法速查表、软件工程师简历指南、行为问题和前端面试准备。由 Blind 75 的作者创建，已惠及超过 500,000 人。
-
-## RustDesk: 一款开源远程桌面软件
-
-* 创建周期：1211 天
-* 开发语言：Rust, Dart
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：54551 个
-* Fork数量：6049 次
-* 关注人数：54551 人
-* 贡献人数：229 人
-* Open Issues数量：51 个
-* Github地址：https://github.com/rustdesk/rustdesk.git
-* 项目首页: https://rustdesk.com
-
-
-![](/images/rustdesk-rustdesk-0.png)
-
-RustDesk是一款使用Rust编写的开源远程桌面软件，为TeamViewer提供了一种替代方案。它提供了无需配置的简便设置，注重数据安全，并允许用户使用提供的约会/中继服务器，设置自己的服务器，或开发自定义服务器。该项目鼓励社区贡献，并提供了入门资源。
-
-## 开源 Spotify 客户端：无需付费订阅，跨平台支持
-
-* 创建周期：1072 天
-* 开发语言：Dart
+* 创建周期：4207 天
+* 开发语言：C
 * 协议类型：Other
-* Star数量：14808 个
-* Fork数量：588 次
-* 关注人数：14808 人
-* 贡献人数：42 人
-* Open Issues数量：231 个
-* Github地址：https://github.com/KRTirtho/spotube.git
-* 项目首页: https://spotube.krtirtho.dev/
+* Star数量：27698 个
+* Fork数量：1538 次
+* 关注人数：27698 人
+* 贡献人数：164 人
+* Open Issues数量：415 个
+* Github地址：https://github.com/jqlang/jq.git
+* 项目首页: https://jqlang.github.io/jq/
 
 
-![](/images/krtirtho-spotube-0.png)
+jq是一个轻量灵活的命令行JSON处理器，用便携式C语言编写。它类似于sed、awk、grep和其他用于JSON数据操作的命令行工具。没有运行时依赖，可以轻松地对结构化数据进行切片、过滤、映射和转换。
 
-这是一个开源的 Spotify 客户端，不需要付费订阅，也不使用 Electron。它适用于桌面和移动平台。该客户端提供了无广告、可下载的音轨、跨平台支持、小巧的体积、低数据使用量、匿名/访客登录、同步歌词、无遥测或用户数据收集、本地性能和开源/自由软件等功能。播放控制在本地进行，而不是在服务器上。建议通过观看/点赞/订阅艺术家的 YouTube 频道或在 Spotify 上点赞他们的音轨（或购买 Spotify Premium 订阅）来支持创作者。
+## Flipper Zero Unleashed Firmware - Flipper Zero解锁固件
 
-## Reactive Resume: 免费开源简历生成器
-
-* 创建周期：1399 天
-* 开发语言：TypeScript
-* 协议类型：MIT License
-* Star数量：18136 个
-* Fork数量：1985 次
-* 关注人数：18136 人
-* 贡献人数：102 人
-* Open Issues数量：351 个
-* Github地址：https://github.com/AmruthPillai/Reactive-Resume.git
-* 项目首页: https://rxresu.me
+* 创建周期：679 天
+* 开发语言：C
+* 协议类型：GNU General Public License v3.0
+* Star数量：13585 个
+* Fork数量：1219 次
+* 关注人数：13585 人
+* 贡献人数：306 人
+* Open Issues数量：70 个
+* Github地址：https://github.com/DarkFlippers/unleashed-firmware.git
+* 项目首页: https://t.me/flipperzero_unofficial
 
 
-![](/images/amruthpillai-reactive-resume-0.png)
+![](/images/darkflippers-unleashed-firmware-0.png)
 
-Reactive Resume是一款免费的开源简历生成器，注重隐私、安全和定制化。它简化了创建、更新和分享简历的过程，完全安全、可定制、便携、开源，并永久免费。
+Flipper Zero Unleashed Firmware是一个旨在为Flipper Zero设备提供固件的开源项目。
 
-## 大型语言模型（LLMs）课程
+## Audacity: 多轨音频编辑器和录音工具
 
-* 创建周期：221 天
-* 开发语言：Jupyter Notebook
+* 创建周期：3226 天
+* 开发语言：C, C++
+* 协议类型：Other
+* Star数量：10757 个
+* Fork数量：2149 次
+* 关注人数：10757 人
+* 贡献人数：197 人
+* Open Issues数量：1055 个
+* Github地址：https://github.com/audacity/audacity.git
+* 项目首页: https://wiki.audacityteam.org/wiki/For_Developers
+
+
+Audacity是一款易于使用的多轨音频编辑器和录音工具，可在各种操作系统上使用。它支持从真实或虚拟音频设备录制，支持导入/导出各种音频格式，具有高质量的32位浮点音频处理，插件支持，批处理宏，多轨编辑，可访问性功能以及分析/可视化工具。
+
+## Mongoose - 嵌入式Web服务器和网络库
+
+* 创建周期：4180 天
+* 开发语言：C
+* 协议类型：Other
+* Star数量：10237 个
+* Fork数量：2646 次
+* 关注人数：10237 人
+* 贡献人数：110 人
+* Open Issues数量：3 个
+* Github地址：https://github.com/cesanta/mongoose.git
+* 项目首页: https://mongoose.ws
+
+
+Mongoose是用于C/C++的嵌入式Web服务器和网络库，为各种协议提供基于事件驱动的非阻塞API。它跨平台支持内置协议，如TCP/UDP、HTTP、MQTT、Websocket，并提供SSL/TLS支持。源代码符合ISO C和ISO C++标准，并且占用空间小，易于集成到各种环境中。它还提供内置固件更新，并配有详细的用户指南、API参考和教程。
+
+## xrdp: 开源RDP服务器
+
+* 创建周期：4657 天
+* 开发语言：C
 * 协议类型：Apache License 2.0
-* Star数量：18166 个
-* Fork数量：1760 次
-* 关注人数：18166 人
-* 贡献人数：2 人
-* Open Issues数量：19 个
-* Github地址：https://github.com/mlabonne/llm-course.git
-* 项目首页: https://mlabonne.github.io/blog/
+* Star数量：5062 个
+* Fork数量：2764 次
+* 关注人数：5062 人
+* 贡献人数：97 人
+* Open Issues数量：311 个
+* Github地址：https://github.com/neutrinolabs/xrdp.git
+* 项目首页: http://www.xrdp.org/
 
 
-大型语言模型（LLMs）课程分为三个部分：LLM基础涵盖数学、Python和神经网络的基本知识，LLM科学家专注于使用最新技术构建最佳的LLMs，而LLM工程师专注于创建基于LLMs的应用程序并部署它们。
+![](/images/neutrinolabs-xrdp-0.png)
 
-## OpenGFW：灵活易用的Linux上GFW开源实现
+xrdp是一个开源的远程桌面协议（RDP）服务器，允许用户远程连接到Linux桌面。
 
-* 创建周期：41 天
-* 开发语言：Go
-* 协议类型：Mozilla Public License 2.0
-* Star数量：1966 个
-* Fork数量：118 次
-* 关注人数：1966 人
-* 贡献人数：1 人
-* Open Issues数量：9 个
-* Github地址：https://github.com/apernet/OpenGFW.git
+## Mbed TLS: 便携式的加密库和PSA加密API的参考实现
+
+* 创建周期：4088 天
+* 开发语言：C
+* 协议类型：Other
+* Star数量：4712 个
+* Fork数量：2425 次
+* 关注人数：4712 人
+* 贡献人数：295 人
+* Open Issues数量：1369 个
+* Github地址：https://github.com/Mbed-TLS/mbedtls.git
+* 项目首页: https://www.trustedfirmware.org/projects/mbed-tls/
 
 
-OpenGFW 是一个灵活、易于使用的开源 GFW 在 Linux 上的实现，旨在比真实的 GFW 更强大，并在家用路由器上提供网络主权。然而，该项目仍处于早期开发阶段，使用时需谨慎。该项目正在寻求贡献者，特别是帮助实现更多协议的分析器。
+Mbed TLS是一个开源的、便携式、易于使用的C库，它实现了加密原语、X.509证书操作以及SSL/TLS和DTLS协议。它包括PSA加密API的参考实现，并由于其小的代码占用空间而适用于嵌入式系统。该库可以使用平台特定选项进行配置，并通过ReadTheDocs和GitHub提供文档。它支持GNU Make、CMake和Microsoft Visual Studio等多个构建系统，并创建了三个库：libmbedcrypto、libmbedx509和libmbedtls。
 
-## Palworld专用服务器Docker
+## Apache NuttX: 一个成熟的、实时的嵌入式操作系统
 
-* 创建周期：5 天
-* 开发语言：Shell, Dockerfile
+* 创建周期：1502 天
+* 开发语言：C
+* 协议类型：Apache License 2.0
+* Star数量：2191 个
+* Fork数量：942 次
+* 关注人数：2191 人
+* 贡献人数：298 人
+* Open Issues数量：441 个
+* Github地址：https://github.com/apache/nuttx.git
+* 项目首页: https://nuttx.apache.org/
+
+
+Apache NuttX是一个成熟的、实时的嵌入式操作系统（RTOS），其重点是符合标准和占用空间小。它可以在8位到64位微控制器环境中实现可伸缩性，主要遵循POSIX和ANSI标准，并采用其他常见RTOS的标准API，以满足这些标准未涵盖的功能。
+
+## FreeRTOS内核文件存储库和使用指南
+
+* 创建周期：1598 天
+* 开发语言：C
 * 协议类型：MIT License
-* Star数量：538 个
-* Fork数量：50 次
-* 关注人数：538 人
-* 贡献人数：7 人
-* Open Issues数量：20 个
-* Github地址：https://github.com/thijsvanloef/palworld-server-docker.git
-* 项目首页: https://hub.docker.com/r/thijsvanloef/palworld-server-docker
+* Star数量：2132 个
+* Fork数量：933 次
+* 关注人数：2132 人
+* 贡献人数：142 人
+* Open Issues数量：30 个
+* Github地址：https://github.com/FreeRTOS/FreeRTOS-Kernel.git
+* 项目首页: https://www.FreeRTOS.org
 
 
-Palworld专用服务器Docker是一个开源项目，旨在简化托管Palworld游戏的专用服务器的设置。经过测试，确认可以在Linux（Ubuntu/Debian）和Windows 10上运行。然而，目前不兼容Xbox Gamepass/Xbox Console玩家，他们只能使用邀请码加入最多4名玩家的会话。
+FreeRTOS内核文件作为FreeRTOS存储库的子模块，以及其他相关存储库一起提供。该存储库仅包含内核源文件/头文件和端口，并主要用于预配置的演示应用程序项目。用户可以从演示应用程序项目开始，然后删除演示文件并添加自己的应用程序源文件。FreeRTOS内核快速入门指南、开发人员文档和API参考中提供了详细说明和其他资源。用户可以访问FreeRTOS社区支持论坛获取帮助和支持。
+
+## Eclipse Cyclone DDS: OMG DDS规范的开源实现
+
+* 创建周期：2213 天
+* 开发语言：C
+* 协议类型：Other
+* Star数量：733 个
+* Fork数量：318 次
+* 关注人数：733 人
+* 贡献人数：81 人
+* Open Issues数量：195 个
+* Github地址：https://github.com/eclipse-cyclonedds/cyclonedds.git
+* 项目首页: https://projects.eclipse.org/projects/iot.cyclonedds
+
+
+![](/images/eclipse-cyclonedds-cyclonedds-0.png)
+
+Eclipse Cyclone DDS是OMG DDS规范的开源实现，作为Eclipse IoT项目开发。它是机器人操作系统（ROS 2）的一级中间件，并被用于各种系统，如空中交通管制、医疗系统和机器人技术。它提供了一个强大的“共享数据空间”架构，并旨在覆盖OMG规范，包括DCPS、零配置发现、发布/订阅消息、可配置的数据存储、QoS设置、DDS安全性、DDS C++ API、DDS XTypes和DDSI-RTPS。
 
