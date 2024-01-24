@@ -1,9 +1,9 @@
 ---
-title: Github 2024-01-25 开源项目日报 Top9
-date: 2024-01-25T07:01:32+08:00
+title: Github 2024-01-25 Go开源项目日报 Top10
+date: 2024-01-25T07:11:42+08:00
 slug: github-trendings-today-20240125
 author: 老孙正经胡说
-image: /images/hiddify-hiddify-next-0.png
+image: /images/trufflesecurity-trufflehog-0.png
 tags:
   - github
   - trendings
@@ -11,22 +11,22 @@ tags:
   - 项目
   - 人数
   - 人
-  - 语言
   - 开发
-  - 和
+  - 是
+  - 语言
   - 创建
   - 协议
-  - 类型
   - 周期
+  - 类型
   - 关注
   - 贡献
   - 地址
-  - 模型
-  - 是
+  - 和
+  - 用于
   - 开源
   - 上
-  - 训练
-  - 用于
+  - 使用
+  - 提供
 
 categories:
 
@@ -34,159 +34,173 @@ draft: false
 ---
 
 
-根据Github Trendings的统计，今日(2024-01-25统计)共有9个项目上榜。根据开发语言中项目的数量，汇总情况如下：
+根据Github Trendings的统计，今日(2024-01-25统计)共有10个项目上榜。根据开发语言中项目的数量，汇总情况如下：
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 3 |
-| Go项目 | 1 |
-| Jupyter Notebook项目 | 1 |
-| Dart项目 | 1 |
-| 非开发语言项目 | 1 |
-| HTML项目 | 1 |
-| R项目 | 1 |
+| Go项目 | 10 |
+| Smarty项目 | 2 |
+| C项目 | 1 |
 
-## 大型语言模型（LLMs）课程
+## Docker Compose v2: 在Docker上运行多容器应用程序的工具
 
-* 创建周期：221 天
-* 开发语言：Jupyter Notebook
+* 创建周期：3685 天
+* 开发语言：Go
 * 协议类型：Apache License 2.0
-* Star数量：18166 个
-* Fork数量：1760 次
-* 关注人数：18166 人
-* 贡献人数：2 人
-* Open Issues数量：19 个
-* Github地址：https://github.com/mlabonne/llm-course.git
-* 项目首页: https://mlabonne.github.io/blog/
+* Star数量：31431 个
+* Fork数量：5156 次
+* 关注人数：31431 人
+* 贡献人数：156 人
+* Open Issues数量：200 个
+* Github地址：https://github.com/docker/compose.git
+* 项目首页: https://docs.docker.com/compose/
 
 
-大型语言模型（LLMs）课程分为三个部分：LLM基础涵盖数学、Python和神经网络的基本知识，LLM科学家专注于使用最新技术构建最佳的LLMs，而LLM工程师专注于创建基于LLMs的应用程序并部署它们。
+Docker Compose v2是一个工具，用于在Docker上运行使用Compose文件格式定义的多容器应用程序。它用于定义组成应用程序的一个或多个容器的配置，并允许使用单个命令' docker compose up' 轻松创建和启动应用程序。
 
-## 机器学习工程开放书籍
+## Trufflehog: 查找和验证凭据的开源项目
 
-* 创建周期：1240 天
-* 开发语言：Python
-* 协议类型：Creative Commons Attribution Share Alike 4.0 International
-* Star数量：6496 个
-* Fork数量：386 次
-* 关注人数：6496 人
-* 贡献人数：11 人
-* Open Issues数量：3 个
-* Github地址：https://github.com/stas00/ml-engineering.git
-* 项目首页: https://stasosphere.com/machine-learning/
+* 创建周期：2581 天
+* 开发语言：Go
+* 协议类型：GNU Affero General Public License v3.0
+* Star数量：13105 个
+* Fork数量：1498 次
+* 关注人数：13105 人
+* 贡献人数：93 人
+* Open Issues数量：189 个
+* Github地址：https://github.com/trufflesecurity/trufflehog.git
+* 项目首页: https://trufflesecurity.com
 
 
-机器学习工程开放书籍是一个旨在帮助成功训练大型语言模型和多模态模型的方法论的开放集合。其中包含适用于LLM/VLM训练工程师和操作员的技术材料，包括用于快速实施的脚本和复制粘贴命令。该存储库汇编了作者在训练大型语言模型（LLM）和VLM时的经验，包括2022年开源BLOOM-176B模型和2023年IDEFICS-80B多模态模型。作者目前正在Contextual.AI开发和训练开源的检索增强模型，并与更广泛的机器学习社区分享了这些信息。
+![](/images/trufflesecurity-trufflehog-0.png)
 
-## 数据可视化中的良好和不良实践
+Trufflehog是一个用于查找和验证凭据的开源项目。它提供了多种安装选项，包括在MacOS上使用Homebrew，使用Docker，二进制发布，从源代码编译以及使用安装脚本（带或不带校验签名验证）。
 
-* 创建周期：611 天
-* 开发语言：R
+## 高可用性 Prometheus 设置与长期存储能力的开源项目
+
+* 创建周期：2276 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：12389 个
+* Fork数量：1992 次
+* 关注人数：12389 人
+* 贡献人数：415 人
+* Open Issues数量：496 个
+* Github地址：https://github.com/thanos-io/thanos.git
+* 项目首页: https://thanos.io
+
+
+![](/images/thanos-io-thanos-0.png)
+
+该项目是一个开源的 CNCF 孵化项目，提供具有长期存储能力的高可用性 Prometheus 设置。它还宣布了 ThanosCon 将于 3 月 19 日在巴黎举行，作为 KubeCon EU 的联合半天活动，并在 12 月 3 日之前开放 CFP。
+
+## Sing-box: 通用代理平台
+
+* 创建周期：574 天
+* 开发语言：Go
+* 协议类型：Other
+* Star数量：11152 个
+* Fork数量：1580 次
+* 关注人数：11152 人
+* 贡献人数：43 人
+* Open Issues数量：49 个
+* Github地址：https://github.com/SagerNet/sing-box.git
+* 项目首页: https://sing-box.sagernet.org/
+
+
+Sing-box 是一个开源的通用代理平台。
+
+## pgx - PostgreSQL驱动程序和工具包
+
+* 创建周期：3953 天
+* 开发语言：Go
 * 协议类型：MIT License
-* Star数量：5019 个
-* Fork数量：152 次
-* 关注人数：5019 人
-* 贡献人数：1 人
-* Open Issues数量：7 个
-* Github地址：https://github.com/cxli233/FriendsDontLetFriends.git
+* Star数量：8877 个
+* Fork数量：800 次
+* 关注人数：8877 人
+* 贡献人数：257 人
+* Open Issues数量：152 个
+* Github地址：https://github.com/jackc/pgx.git
 
 
-这篇文章讨论了数据可视化中的良好和不良实践，为每个主题提供了例子和解释。它涵盖了诸如用于均值分离的条形图、适用于小样本量的小提琴图、用于单向数据的双向颜色刻度、用于多因素实验的条形图草地以及在不考虑重新排序行和列的情况下生成热图等主题。
+pgx是用于PostgreSQL的纯Go驱动程序和工具包，提供了与PostgreSQL特定功能（如LISTEN/NOTIFY和COPY）的低级高性能接口。它包括标准database/sql接口的适配器以及一组相关软件包，用于实现PostgreSQL功能。
 
-## OpenGFW：灵活易用的Linux上GFW开源实现
+## SQLBoiler: 生成与数据库模式相适配的Go ORM
 
-* 创建周期：41 天
+* 创建周期：2895 天
+* 开发语言：Go, Smarty
+* 协议类型：BSD 3-Clause "New" or "Revised" License
+* Star数量：6252 个
+* Fork数量：565 次
+* 关注人数：6252 人
+* 贡献人数：146 人
+* Open Issues数量：91 个
+* Github地址：https://github.com/volatiletech/sqlboiler.git
+
+
+SQLBoiler是一个用于生成与数据库模式相适配的Go ORM的工具。这是一个“数据库优先”的ORM，需要先创建数据库模式。它不兼容GOPATH项目，并且v4是唯一维护的版本，与v3相比没有重大变化，除了Go模块。
+
+## GitHub Actions自托管runner的Kubernetes控制器
+
+* 创建周期：1458 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：3971 个
+* Fork数量：992 次
+* 关注人数：3971 人
+* 贡献人数：263 人
+* Open Issues数量：257 个
+* Github地址：https://github.com/actions/actions-runner-controller.git
+
+
+Actions Runner Controller (ARC)是GitHub Actions自托管runner的Kubernetes控制器，允许用户在其Kubernetes集群中管理和扩展其自托管runner基础架构。
+
+## OpenGFW: Linux上的灵活易用的开源GFW实现
+
+* 创建周期：43 天
 * 开发语言：Go
 * 协议类型：Mozilla Public License 2.0
-* Star数量：1966 个
-* Fork数量：118 次
-* 关注人数：1966 人
+* Star数量：3966 个
+* Fork数量：235 次
+* 关注人数：3966 人
 * 贡献人数：1 人
-* Open Issues数量：9 个
+* Open Issues数量：13 个
 * Github地址：https://github.com/apernet/OpenGFW.git
 
 
-OpenGFW 是一个灵活、易于使用的开源 GFW 在 Linux 上的实现，旨在比真实的 GFW 更强大，并在家用路由器上提供网络主权。然而，该项目仍处于早期开发阶段，使用时需谨慎。该项目正在寻求贡献者，特别是帮助实现更多协议的分析器。
+OpenGFW是一个灵活、易于使用的开源GFW在Linux上的实现，它在许多方面比真实的东西更强大。这是您可以在家用路由器上拥有的网络主权。请注意，该项目仍处于开发的早期阶段，请自行承担风险。我们正在寻找贡献者来帮助我们完成这个项目，特别是实现更多协议的分析器！
 
-## Hiddify-Next: 多平台自动代理客户端
+## Golang 框架：向 Laravel 致敬
 
-* 创建周期：249 天
-* 开发语言：Dart
-* 协议类型：Other
-* Star数量：3426 个
-* Fork数量：232 次
-* 关注人数：3426 人
-* 贡献人数：20 人
-* Open Issues数量：107 个
-* Github地址：https://github.com/hiddify/hiddify-next.git
-* 项目首页: https://hiddify.com
-
-
-![](/images/hiddify-hiddify-next-0.png)
-
-Hiddify-Next是一个支持Sing-box、X-ray、TUIC、Hysteria、Reality、Trojan、SSH等多种协议的多平台自动代理客户端。它是一个开源、安全且无广告的解决方案。
-
-## 深度任意：释放大规模未标记数据的力量
-
-* 创建周期：3 天
-* 开发语言：Python
-* 协议类型：Apache License 2.0
-* Star数量：1803 个
-* Fork数量：102 次
-* 关注人数：1803 人
-* 贡献人数：1 人
-* Open Issues数量：20 个
-* Github地址：https://github.com/LiheYoung/Depth-Anything.git
-* 项目首页: https://depth-anything.github.io
-
-
-Depth Anything是一个实用的解决方案，用于通过在150万标记图像和超过6200万未标记图像的组合上进行训练，实现鲁棒的单目深度估计。
-
-## FullStack 项目：编程和开发相关平台
-
-* 创建周期：867 天
-* 开发语言：HTML
-* Star数量：1032 个
-* Fork数量：336 次
-* 关注人数：1032 人
-* 贡献人数：1 人
-* Open Issues数量：8 个
-* Github地址：https://github.com/anonystick/anonystick.git
-* 项目首页: https://anonystick.com
-
-
-![](/images/anonystick-anonystick-0.png)
-
-FullStack项目是一个开源平台，您可以在其中询问与编程和开发相关的各种主题。它还提供了一个关于JavaScript技巧的YouTube频道链接。
-
-## Azure从零到英雄课程
-
-* 创建周期：29 天
+* 创建周期：821 天
+* 开发语言：Go
 * 协议类型：MIT License
-* Star数量：358 个
-* Fork数量：269 次
-* 关注人数：358 人
+* Star数量：1675 个
+* Fork数量：144 次
+* 关注人数：1675 人
+* 贡献人数：5 人
+* Open Issues数量：43 个
+* Github地址：https://github.com/goravel/goravel.git
+* 项目首页: https://goravel.dev
+
+
+![](/images/goravel-goravel-0.png)
+
+一个面向网络工匠的 Golang 框架，向 Laravel 致敬。
+
+## Zigbee Home: 为 nRF52 Zigbee 设备提供类似于 ESPHome 的功能
+
+* 创建周期：52 天
+* 开发语言：Go, C, Smarty
+* 协议类型：GNU General Public License v3.0
+* Star数量：281 个
+* Fork数量：3 次
+* 关注人数：281 人
 * 贡献人数：1 人
-* Open Issues数量：1 个
-* Github地址：https://github.com/iam-veeramalla/Azure-zero-to-hero.git
+* Open Issues数量：0 个
+* Github地址：https://github.com/ffenix113/zigbee_home.git
+* 项目首页: https://ffenix113.github.io/zigbee_home/
 
 
-![](/images/iam-veeramalla-azure-zero-to-hero-0.png)
-
-该存储库旨在帮助个人从零开始学习Azure，涵盖了DevOps工程师所需的所有基本概念。
-
-## Palworld主机保存修复工具
-
-* 创建周期：4 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：223 个
-* Fork数量：12 次
-* 关注人数：223 人
-* 贡献人数：3 人
-* Open Issues数量：15 个
-* Github地址：https://github.com/xNul/palworld-host-save-fix.git
-
-
-Palworld主机保存修复工具旨在解决一个问题，即在不同类型的Palworld服务器之间迁移保存文件时，会强制玩家创建新角色。该工具特别适用于从合作模式迁移到专用服务器以及在不同专用服务器之间迁移地图。该问题是由于不同服务器类型以不同方式生成玩家GUID，导致服务器无法识别现有玩家存档而引起的。该工具提供的脚本通过将新服务器上玩家的GUID应用于旧服务器上的存档来解决此问题。
+Zigbee Home 是一个旨在为 Zigbee 设备提供类似于 ESPHome 的功能的项目。该项目旨在为 nRF52 Zigbee 设备提供类似于 ESPHome 的功能和特性。请注意，dev 分支用于实验和探索，不能用来确定最终项目的质量。
 
