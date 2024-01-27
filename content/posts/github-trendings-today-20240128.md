@@ -1,32 +1,32 @@
 ---
-title: Github 2024-01-28 开源项目日报 Top10
-date: 2024-01-28T07:02:48+08:00
+title: Github 2024-01-28 php开源项目日报 Top10
+date: 2024-01-28T07:11:24+08:00
 slug: github-trendings-today-20240128
 author: 老孙正经胡说
-image: /images/psf-black-0.png
+image: /images/nextcloud-server-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
-  - 人
-  - 人数
-  - 开发
-  - 语言
-  - 创建
   - 和
-  - 周期
-  - 关注
-  - 贡献
-  - 地址
-  - 类型
-  - 协议
-  - 是
+  - 项目
+  - 人数
+  - 人
+  - 开发
   - 提供
-  - 扩展
-  - 代码
-  - 应用程序
-  - 直播
+  - 语言
+  - 是
+  - 贡献
+  - 创建
+  - 周期
+  - 协议
+  - 类型
+  - 关注
+  - 地址
+  - 并
+  - 开源
+  - 用于
+  - 支持
 
 categories:
 
@@ -38,172 +38,176 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 3 |
-| TypeScript项目 | 2 |
-| Rust项目 | 1 |
-| HTML项目 | 1 |
+| PHP项目 | 10 |
 | JavaScript项目 | 1 |
-| Cuda项目 | 1 |
-| C#项目 | 1 |
-| 非开发语言项目 | 1 |
 
-## Nuxt：Vue.js全栈Web应用程序和网站的直观框架
+## Symfony PHP框架和组件
 
-* 创建周期：2650 天
-* 开发语言：TypeScript
+* 创建周期：5130 天
+* 开发语言：PHP
 * 协议类型：MIT License
-* Star数量：50032 个
-* Fork数量：4716 次
-* 关注人数：50032 人
-* 贡献人数：448 人
-* Open Issues数量：942 个
-* Github地址：https://github.com/nuxt/nuxt.git
-* 项目首页: https://nuxt.com
+* Star数量：28999 个
+* Fork数量：9440 次
+* 关注人数：28999 人
+* 贡献人数：368 人
+* Open Issues数量：846 个
+* Github地址：https://github.com/symfony/symfony.git
+* 项目首页: https://symfony.com
 
 
-Nuxt是一个免费的开源框架，提供了一种直观且可扩展的方式来使用Vue.js创建类型安全、高性能和生产级全栈Web应用程序和网站。它提供了一些功能，使得构建快速、SEO友好和可扩展的Web应用程序变得容易，包括服务器端渲染、静态站点生成、自动路由、状态管理、SEO优化、自动导入、180多个可扩展模块以及部署到各种托管平台。
+Symfony是用于Web和控制台应用程序的PHP框架，以及一组可重用的PHP组件。它被数千个Web应用程序和流行的PHP项目广泛使用。该框架遵循语义化版本控制，提供长期支持（LTS）版本，并具有可预测且适合业务的发布流程。Symfony 7.0得到了Shopware、Sulu和Les-Tilleuls.coop的支持。Shopware是一个由Symfony和Vue.js驱动的开放式无头商务平台，Sulu是Symfony开发人员的CMS，Les-Tilleuls.coop是一支提供专业服务的Symfony专家团队。该项目提供了全面的文档、支持性社区，并欢迎开发人员的贡献。安全漏洞可以按照特定程序进行报告，并且开发由Symfony核心团队领导并得到贡献者的支持。
 
-## Black：不妥协的Python代码格式化工具
+## Nextcloud服务器：安全的数据之家
 
-* 创建周期：2146 天
-* 开发语言：Python
+* 创建周期：2796 天
+* 开发语言：PHP, JavaScript
+* 协议类型：GNU Affero General Public License v3.0
+* Star数量：24831 个
+* Fork数量：3842 次
+* 关注人数：24831 人
+* 贡献人数：354 人
+* Open Issues数量：2757 个
+* Github地址：https://github.com/nextcloud/server.git
+* 项目首页: https://nextcloud.com
+
+
+![](/images/nextcloud-server-0.png)
+
+Nextcloud服务器是一个开源平台，为您存储所有数据提供安全的环境。
+
+## Matomo：开源网站分析平台
+
+* 创建周期：4687 天
+* 开发语言：PHP
+* 协议类型：GNU General Public License v3.0
+* Star数量：18681 个
+* Fork数量：2608 次
+* 关注人数：18681 人
+* 贡献人数：314 人
+* Open Issues数量：2279 个
+* Github地址：https://github.com/matomo-org/matomo.git
+* 项目首页: https://matomo.org/
+
+
+![](/images/matomo-org-matomo-0.png)
+
+Matomo，前身为Piwik，是一个开源的网站分析平台，提供了与Google Analytics的替代方案。它提供完全的数据控制，方便地从网站和应用程序收集数据，可视化和隐私保护。
+
+## Filament: 加速Laravel开发的完美起点
+
+* 创建周期：1410 天
+* 开发语言：PHP
 * 协议类型：MIT License
-* Star数量：35977 个
-* Fork数量：2371 次
-* 关注人数：35977 人
-* 贡献人数：413 人
-* Open Issues数量：372 个
-* Github地址：https://github.com/psf/black.git
-* 项目首页: https://black.readthedocs.io/en/stable/
+* Star数量：12228 个
+* Fork数量：1990 次
+* 关注人数：12228 人
+* 贡献人数：372 人
+* Open Issues数量：66 个
+* Github地址：https://github.com/filamentphp/filament.git
+* 项目首页: https://filamentphp.com
 
 
-![](/images/psf-black-0.png)
+![](/images/filamentphp-filament-0.png)
 
-Black 是一种不妥协的 Python 代码格式化工具，提供速度、确定性，并且不受 pycodestyle 对格式的挑剔。它确保代码在不同项目中看起来相同，并通过生成尽可能小的差异，使代码审查更快速。
+Filament是一套精美设计且完全可扩展的Laravel全栈组件集合，使用Livewire、Alpine.js和Tailwind CSS。它为加速Laravel开发提供了完美的起点，消除了重复构建相同功能的需求。
 
-## 高级英语学习指南
+## Pest - 优雅的PHP测试框架
 
-* 创建周期：2427 天
-* 开发语言：HTML
-* Star数量：31378 个
-* Fork数量：3697 次
-* 关注人数：31378 人
-* 贡献人数：22 人
-* Open Issues数量：22 个
-* Github地址：https://github.com/byoungd/English-level-up-tips.git
-* 项目首页: https://byoungd.github.io/English-level-up-tips/
-
-
-![](/images/byoungd-english-level-up-tips-0.png)
-
-一个高级的学习英语指南，可能会给你带来很多好处。
-
-## 跨平台本机应用程序开发框架：.NET MAUI
-
-* 创建周期：1360 天
-* 开发语言：C#
+* 创建周期：1418 天
+* 开发语言：PHP
 * 协议类型：MIT License
-* Star数量：21211 个
-* Fork数量：1570 次
-* 关注人数：21211 人
-* 贡献人数：399 人
-* Open Issues数量：3273 个
-* Github地址：https://github.com/dotnet/maui.git
-* 项目首页: https://dot.net/maui
+* Star数量：8429 个
+* Fork数量：272 次
+* 关注人数：8429 人
+* 贡献人数：87 人
+* Open Issues数量：34 个
+* Github地址：https://github.com/pestphp/pest.git
+* 项目首页: https://pestphp.com
 
 
-.NET MAUI是一个用于构建跨移动、平板和桌面本机设备应用程序的框架，允许开发人员使用单个共享代码库创建可以在多个平台上运行的应用程序。
+![](/images/pestphp-pest-0.png)
 
-## Zed: 由Atom和Tree-sitter的创建者开发的高性能多人代码编辑器
+Pest是一个优雅的PHP测试框架，旨在重新带回PHP测试的乐趣。
 
-* 创建周期：1071 天
-* 开发语言：Rust
+## Rector - 即时升级和自动重构
+
+* 创建周期：2381 天
+* 开发语言：PHP
+* 协议类型：MIT License
+* Star数量：7842 个
+* Fork数量：663 次
+* 关注人数：7842 人
+* 贡献人数：181 人
+* Open Issues数量：19 个
+* Github地址：https://github.com/rectorphp/rector.git
+* 项目首页: https://getrector.com
+
+
+Rector是一个开源工具，为PHP 5.3+代码提供即时升级和自动重构。它帮助升级和重构应用程序的PHP代码，在两个主要领域提供帮助。
+
+## Akaunting™ - 现代化在线会计软件
+
+* 创建周期：2412 天
+* 开发语言：PHP
 * 协议类型：Other
-* Star数量：9428 个
-* Fork数量：260 次
-* 关注人数：9428 人
-* 贡献人数：42 人
-* Open Issues数量：1187 个
-* Github地址：https://github.com/zed-industries/zed.git
-* 项目首页: https://zed.dev
+* Star数量：7142 个
+* Fork数量：2250 次
+* 关注人数：7142 人
+* 贡献人数：91 人
+* Open Issues数量：18 个
+* Github地址：https://github.com/akaunting/akaunting.git
+* 项目首页: https://akaunting.com
 
 
-Zed是由Atom和Tree-sitter的创建者开发的高性能多人代码编辑器。
+Akaunting™是一款专为小型企业和自由职业者设计的在线会计软件。它采用了Laravel、VueJS、Tailwind和RESTful API等现代技术。由于其模块化结构，Akaunting为用户和开发人员提供了一个出色的应用商店。
 
-## Mamba: 具有选择性状态空间的线性时间序列建模
+## MediaWiki - 维基软件
 
-* 创建周期：58 天
-* 开发语言：Python, Cuda
-* 协议类型：Apache License 2.0
-* Star数量：5576 个
-* Fork数量：484 次
-* 关注人数：5576 人
-* 贡献人数：8 人
-* Open Issues数量：68 个
-* Github地址：https://github.com/state-spaces/mamba.git
-
-
-Mamba 是一个专注于具有选择性状态空间的线性时间序列建模的开源项目。该项目旨在为各种应用提供高效和有效的序列建模技术。
-
-## Google索引脚本
-
-* 创建周期：6 天
-* 开发语言：JavaScript
-* 协议类型：MIT License
-* Star数量：2939 个
-* Fork数量：205 次
-* 关注人数：2939 人
-* 贡献人数：3 人
-* Open Issues数量：4 个
-* Github地址：https://github.com/goenning/google-indexing-script.git
-* 项目首页: https://seogets.com/blog/google-indexing-script
+* 创建周期：4105 天
+* 开发语言：PHP
+* 协议类型：Other
+* Star数量：3832 个
+* Fork数量：1380 次
+* 关注人数：3832 人
+* 贡献人数：335 人
+* Open Issues数量：0 个
+* Github地址：https://github.com/wikimedia/mediawiki.git
+* 项目首页: https://www.mediawiki.org
 
 
-![](/images/goenning-google-indexing-script-0.png)
+MediaWiki是一款免费开源的维基软件，被维基百科和其他维基媒体项目使用。它功能丰富，可扩展，支持超过350种语言。该平台拥有庞大而充满活力的用户和开发者社区，并为贡献者提供了广泛的文档和支持。
 
-该开源项目提供了一个脚本，可以使用Google索引API在不到48小时内将网站索引到Google上。强调索引并不等同于排名，而只是告知Google网站上所有页面的存在。
+## Nextcloud All-in-One: 官方一体化安装方法
 
-## IPTV直播源抓取与整合
-
-* 创建周期：135 天
-* Star数量：2701 个
-* Fork数量：170 次
-* 关注人数：2701 人
-* 贡献人数：1 人
-* Open Issues数量：2 个
-* Github地址：https://github.com/joevess/IPTV.git
-
-
-IPTV直播源抓取，自动整合好趣网直播源+TVBox直播源+其他网上直播源，选择分辨率和速度最佳的视频流，定期更新。
-
-## ComfyUI InstantID非官方实现
-
-* 创建周期：6 天
-* 开发语言：Python
-* Star数量：509 个
-* Fork数量：29 次
-* 关注人数：509 人
-* 贡献人数：1 人
-* Open Issues数量：54 个
-* Github地址：https://github.com/ZHO-ZHO-ZHO/ComfyUI-InstantID.git
+* 创建周期：789 天
+* 开发语言：PHP
+* 协议类型：GNU Affero General Public License v3.0
+* Star数量：3462 个
+* Fork数量：457 次
+* 关注人数：3462 人
+* 贡献人数：85 人
+* Open Issues数量：21 个
+* Github地址：https://github.com/nextcloud/all-in-one.git
+* 项目首页: https://hub.docker.com/r/nextcloud/all-in-one
 
 
-![](/images/zho-zho-zho-comfyui-instantid-0.png)
+![](/images/nextcloud-all-in-one-0.png)
 
-ComfyUI InstantID是ComfyUI的非官方InstantID实现，增加了对pose_ref的支持。
+Nextcloud All-in-One是Nextcloud的官方安装方法，提供了一个Nextcloud实例中包含大多数功能的简单部署和维护。它包括Nextcloud、用于Nextcloud文件的高性能后端、Nextcloud Office、用于Nextcloud Talk和TURN服务器的高性能后端、Nextcloud Talk Recording服务器、基于BorgBackup的备份解决方案、Imaginary用于各种文件类型的预览、ClamAV用于防病毒后端以及全文搜索。
 
-## Lumos: 本地LLM驱动的RAG LLM共同驾驶Chrome扩展
+## LibreNMS: 开源网络监控系统
 
-* 创建周期：76 天
-* 开发语言：TypeScript
-* 协议类型：MIT License
-* Star数量：410 个
-* Fork数量：19 次
-* 关注人数：410 人
-* 贡献人数：1 人
-* Open Issues数量：14 个
-* Github地址：https://github.com/andrewnguonly/Lumos.git
+* 创建周期：3744 天
+* 开发语言：PHP
+* 协议类型：Other
+* Star数量：3429 个
+* Fork数量：2178 次
+* 关注人数：3429 人
+* 贡献人数：371 人
+* Open Issues数量：184 个
+* Github地址：https://github.com/librenms/librenms.git
+* 项目首页: https://www.librenms.org
 
 
-Lumos是一个RAG LLM共同驾驶Chrome扩展，可以通过本地LLMs提供动力进行网页浏览。它使用Ollama在本地机器上进行推理，无需外部服务器支持，但由于Chrome扩展平台的安全约束，它依赖于本地服务器支持。该应用程序受到Web LLM项目的Chrome扩展示例和LangChain提供的本地LLM示例的启发。
+LibreNMS是一个开源的网络监控系统，可以自动发现网络设备，并支持各种硬件和操作系统。它鼓励社区贡献，优先考虑用户需求，并倡导友好的环境。该项目提供了广泛的文档，并通过Discord、Twitter和GitHub等渠道欢迎参与。此外，还提供了用于测试的VM镜像。该项目基于GPL许可，遵循Debian社会契约。
 
