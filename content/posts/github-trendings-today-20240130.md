@@ -1,32 +1,32 @@
 ---
-title: Github 2024-01-30 开源项目日报 Top10
-date: 2024-01-30T07:01:29+08:00
+title: Github 2024-01-30 Python开源项目日报 Top10
+date: 2024-01-30T07:11:16+08:00
 slug: github-trendings-today-20240130
 author: 老孙正经胡说
-image: /images/datatalksclub-data-engineering-zoomcamp-0.png
+image: /images/taskingai-taskingai-0.png
 tags:
   - github
   - trendings
   - 数量
   - 人数
   - 人
+  - 和
   - 项目
-  - 语言
   - 开发
+  - 语言
   - 创建
-  - 关注
+  - 中
   - 周期
-  - 贡献
-  - 地址
   - 协议
   - 类型
-  - 和
-  - 中
+  - 关注
+  - 贡献
+  - 地址
   - 是
+  - 工具
   - 使用
-  - 实现
-  - 模型
-  - 进行
+  - 功能
+  - 文件
 
 categories:
 
@@ -38,167 +38,162 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 4 |
-| TypeScript项目 | 2 |
-| Jupyter Notebook项目 | 2 |
-| HTML项目 | 1 |
-| Rust项目 | 1 |
-| C项目 | 1 |
+| Python项目 | 10 |
+| TypeScript项目 | 1 |
 
 ## 稳定扩散Web UI
 
-* 创建周期：526 天
+* 创建周期：512 天
 * 开发语言：Python
 * 协议类型：GNU Affero General Public License v3.0
-* Star数量：119358 个
-* Fork数量：23783 次
-* 关注人数：119358 人
+* Star数量：117672 个
+* Fork数量：23480 次
+* 关注人数：117672 人
 * 贡献人数：430 人
-* Open Issues数量：1833 个
+* Open Issues数量：1812 个
 * Github地址：https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
 
 
 稳定扩散Web UI是基于Gradio库的浏览器界面，用于稳定扩散。
 
-## Fuel客户端：Rust全节点实现
+## yt-dlp: 一个增强版的youtube-dl分支
 
-* 创建周期：1251 天
-* 开发语言：Rust
-* 协议类型：Other
-* Star数量：33568 个
-* Fork数量：1371 次
-* 关注人数：33568 人
-* 贡献人数：45 人
-* Open Issues数量：164 个
-* Github地址：https://github.com/FuelLabs/fuel-core.git
-
-
-Fuel客户端是Fuel v2协议的Rust全节点实现。
-
-## 数据工程Zoomcamp：免费课程
-
-* 创建周期：818 天
-* 开发语言：Jupyter Notebook
-* Star数量：18680 个
-* Fork数量：3977 次
-* 关注人数：18680 人
-* 贡献人数：86 人
-* Open Issues数量：23 个
-* Github地址：https://github.com/DataTalksClub/data-engineering-zoomcamp.git
+* 创建周期：1184 天
+* 开发语言：Python
+* 协议类型：The Unlicense
+* Star数量：64607 个
+* Fork数量：5309 次
+* 关注人数：64607 人
+* 贡献人数：385 人
+* Open Issues数量：1422 个
+* Github地址：https://github.com/yt-dlp/yt-dlp.git
+* 项目首页: https://discord.gg/H5MNcFW63r
 
 
-![](/images/datatalksclub-data-engineering-zoomcamp-0.png)
+yt-dlp是youtube-dl的一个分支，具有额外的功能和修复，重点是添加新功能和补丁，同时与原始项目保持最新。它包括详细的安装说明，更新/发布文件，依赖关系，编译，使用和选项，配置，格式选择，修改元数据，插件，嵌入示例等。它还集成了SponsorBlock，用于标记/删除YouTube视频中的赞助部分，并更改了默认格式排序选项，以获得更高分辨率和更好的编解码器。
 
-Data Engineering Zoomcamp是DataTalks.Club提供的免费课程，涵盖容器化、工作流编排、数据仓库、分析工程、批处理和流处理等主题。课程包括有关数据摄入和使用SQL进行流处理的研讨会，以及最终项目。
+## 少样本语音克隆的高质量TTS模型
 
-## 从零开始构建大型语言模型
-
-* 创建周期：190 天
-* 开发语言：Jupyter Notebook
-* 协议类型：Other
-* Star数量：3073 个
-* Fork数量：149 次
-* 关注人数：3073 人
-* 贡献人数：6 人
-* Open Issues数量：0 个
-* Github地址：https://github.com/rasbt/LLMs-from-scratch.git
-* 项目首页: https://www.manning.com/books/build-a-large-language-model-from-scratch
+* 创建周期：9 天
+* 开发语言：Python
+* 协议类型：MIT License
+* Star数量：4367 个
+* Fork数量：411 次
+* 关注人数：4367 人
+* 贡献人数：24 人
+* Open Issues数量：65 个
+* Github地址：https://github.com/RVC-Boss/GPT-SoVITS.git
 
 
-《从零开始构建大型语言模型》一书指导读者逐步创建自己的LLM，用清晰的文字、图表和示例解释每个阶段。用于教育目的训练和开发小型功能模型的方法，与创建ChatGPT等大规模基础模型的方法相似。
-
-## Lepton AI对话搜索演示
-
-* 创建周期：6 天
-* 开发语言：TypeScript, Python
-* 协议类型：Apache License 2.0
-* Star数量：1079 个
-* Fork数量：115 次
-* 关注人数：1079 人
-* 贡献人数：2 人
-* Open Issues数量：2 个
-* Github地址：https://github.com/leptonai/search_with_lepton.git
-* 项目首页: https://search.lepton.run
-
-
-![](/images/leptonai-search_with_lepton-0.png)
-
-该项目旨在利用Lepton AI构建一个快速的基于对话的搜索演示。它包括内置LLM支持、搜索引擎、可定制的UI界面以及可共享、缓存的搜索结果。
+该项目专注于使用最少的语音数据来训练高质量的文本到语音（TTS）模型，实现少样本语音克隆。该项目的GitHub页面上提供了演示视频。
 
 ## RAGatouille: 简化RAG管道中的最先进检索方法
 
 * 创建周期：32 天
 * 开发语言：Python
 * 协议类型：Apache License 2.0
-* Star数量：1168 个
+* Star数量：1169 个
 * Fork数量：77 次
-* 关注人数：1168 人
+* 关注人数：1169 人
 * 贡献人数：12 人
 * Open Issues数量：25 个
 * Github地址：https://github.com/bclavie/RAGatouille.git
 
 
-RAGatouille是一个开源项目，旨在使在任何RAG管道中使用和训练最先进的检索方法变得简单。它旨在弥合复杂的RAG管道实践和信息检索最新研究之间的差距，特别关注使ColBERT模型简单易用。
+RAGatouille旨在使在RAG管道中使用最先进的检索方法变得简单，特别是专注于使ColBERT易于使用。它弥合了复杂的RAG实践与信息检索领域的前沿研究之间的差距，并提供了模块化和易用性。
 
-## 在C中重新实现C++标准库功能
+## Lepton AI: Pythonic框架简化AI服务构建
 
-* 创建周期：46 天
-* 开发语言：C
-* 协议类型：ISC License
-* Star数量：625 个
-* Fork数量：33 次
-* 关注人数：625 人
-* 贡献人数：1 人
-* Open Issues数量：1 个
-* Github地址：https://github.com/KaisenAmin/c_std.git
+* 创建周期：146 天
+* 开发语言：Python
+* 协议类型：Apache License 2.0
+* Star数量：1108 个
+* Fork数量：67 次
+* 关注人数：1108 人
+* 贡献人数：17 人
+* Open Issues数量：11 个
+* Github地址：https://github.com/leptonai/leptonai.git
+* 项目首页: https://lepton.ai/
 
 
-该项目旨在使用C编程语言重新实现C++标准库的功能。它为C开发人员提供了在C++中常见的工具和库，使其能够更好地管理数据结构、实现算法并在C语言的生态系统内使用各种功能。
+Lepton AI是一个旨在简化构建AI服务过程的Pythonic框架。它提供了一个Python库，允许用户轻松将研究和建模代码转换为服务，关键功能包括一个名为Photon的Python抽象，简单的抽象来启动类似HuggingFace的模型，常见模型的预构建示例，AI定制功能，如自动批处理和后台作业，一个客户端，可以像本地Python函数一样自动调用服务，以及用于在云环境中轻松部署的Python配置规范。
 
-## Palworld-save-tools: 转换PalWorld .sav文件的工具
+## LangGraph: 以图形构建语言代理
 
-* 创建周期：8 天
+* 创建周期：173 天
 * 开发语言：Python
 * 协议类型：MIT License
-* Star数量：242 个
-* Fork数量：13 次
-* 关注人数：242 人
+* Star数量：690 个
+* Fork数量：63 次
+* 关注人数：690 人
+* 贡献人数：6 人
+* Open Issues数量：16 个
+* Github地址：https://github.com/langchain-ai/langgraph.git
+
+
+LangGraph是一个专注于将语言代理构建为图形的开源项目，从而可以以一种新的方式来理解和处理语言。它旨在提供一个以图形结构表示和分析语言数据的框架。
+
+## TaskingAI：AI原生应用开发的开源平台
+
+* 创建周期：22 天
+* 开发语言：Python, TypeScript
+* 协议类型：Apache License 2.0
+* Star数量：584 个
+* Fork数量：98 次
+* 关注人数：584 人
+* 贡献人数：6 人
+* Open Issues数量：2 个
+* Github地址：https://github.com/TaskingAI/TaskingAI.git
+* 项目首页: https://www.tasking.ai
+
+
+![](/images/taskingai-taskingai-0.png)
+
+TaskingAI是一个面向AI原生应用开发的开源平台，它简化了使用各种供应商的LLM创建类似GPTs的多租户应用程序的过程。它具有推理、检索、助手和工具等模块化功能，无缝集成以增强开发过程，具有直观的UI控制台和可定制集成。
+
+## PalWorld .sav文件转换工具
+
+* 创建周期：9 天
+* 开发语言：Python
+* 协议类型：MIT License
+* Star数量：345 个
+* Fork数量：22 次
+* 关注人数：345 人
 * 贡献人数：1 人
-* Open Issues数量：17 个
+* Open Issues数量：27 个
 * Github地址：https://github.com/cheahjs/palworld-save-tools.git
 
 
-palworld-save-tools是一个开源项目，提供了将PalWorld .sav文件转换为JSON以及相反转换的工具。它在v0.9版本中对JSON文件格式进行了更改，旧版本的JSON文件不兼容。该工具相比uesave-rs具有更快的运行速度和较少的内存使用。它还支持解析其他非Palworld感知的Unreal保存编辑器无法处理的数据，例如游戏组织、公会、玩家和小伙伴。
+palworld-save-tools是一个开源项目，提供了将PalWorld .sav文件转换为JSON以及相反操作的工具。最近，该工具已更改了JSON文件的格式，旧版本的工具与新格式不兼容。然而，更新后的工具提供了更快的性能和更少的内存使用。警告用户不要使用早于v0.4的版本，以避免数据损坏，因为它们在转换过程中可能会创建损坏的Level.sav文件。此外，该工具支持解析uesave或其他非Palworld感知的Unreal保存编辑器无法处理的数据，包括Level.sav文件中的GroupSaveDataMap和CharacterSaveParameterMap。
 
-## TraderBot: 实时新闻情绪交易机器人
+## SUPIR: 实用算法实现照片逼真图像恢复
 
-* 创建周期：11 天
-* 开发语言：HTML
-* Star数量：217 个
-* Fork数量：63 次
-* 关注人数：217 人
-* 贡献人数：1 人
-* Open Issues数量：1 个
-* Github地址：https://github.com/nicknochnack/MLTradingBot.git
-
-
-![](/images/nicknochnack-mltradingbot-0.png)
-
-TraderBot是一个开源项目，涉及构建一个交易机器人，能够分析实时新闻事件的情绪并进行适当的交易。
-
-## Farcaster Frames投票应用
-
-* 创建周期：7 天
-* 开发语言：TypeScript
+* 创建周期：40 天
+* 开发语言：Python
 * 协议类型：MIT License
-* Star数量：78 个
-* Fork数量：26 次
-* 关注人数：78 人
-* 贡献人数：2 人
-* Open Issues数量：2 个
-* Github地址：https://github.com/farcasterxyz/fc-polls.git
-* 项目首页: https://fc-polls.vercel.app
+* Star数量：164 个
+* Fork数量：8 次
+* 关注人数：164 人
+* 贡献人数：1 人
+* Open Issues数量：3 个
+* Github地址：https://github.com/Fanghua-Yu/SUPIR.git
+* 项目首页: http://supir.xpixel.group/
 
 
-Farcaster Frames投票应用是一个示例应用程序，演示了Farcaster Frames的使用。它允许用户创建投票并对其进行投票，通过经过身份验证的操作来防止欺骗，并将结果存储在redis数据库中。
+SUPIR 是一个旨在开发实用算法来实现各种现实世界场景下的照片逼真图像恢复的项目。该项目涉及多个机构的研究人员，包括深圳先进技术研究院、上海人工智能实验室、悉尼大学、香港理工大学、腾讯ARC实验室和香港中文大学。
+
+## PalWorld Saves 编辑和生成工具
+
+* 创建周期：4 天
+* 开发语言：Python
+* 协议类型：MIT License
+* Star数量：112 个
+* Fork数量：14 次
+* 关注人数：112 人
+* 贡献人数：4 人
+* Open Issues数量：12 个
+* Github地址：https://github.com/EternalWraith/PalEdit.git
+
+
+一个简单的工具，用于编辑和生成PalWorld保存中的Pals。该应用程序未经签名，可能会在某些防病毒软件中触发误报。鼓励用户下载应用程序并自行编译，以消除对病毒的担忧。在提出新问题之前，请用户务必查看项目路线图和已有问题，以确保他们的关注点或功能请求尚未得到解决或计划在未来的发布中实现。
 
