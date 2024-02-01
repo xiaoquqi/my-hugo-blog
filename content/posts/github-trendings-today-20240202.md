@@ -1,21 +1,20 @@
 ---
-title: Github 2024-02-02 开源项目日报 Top10
-date: 2024-02-02T07:01:18+08:00
+title: Github 2024-02-02 Java开源项目日报 Top10
+date: 2024-02-02T07:11:49+08:00
 slug: github-trendings-today-20240202
 author: 老孙正经胡说
-image: /images/f-awesome-chatgpt-prompts-0.png
+image: /images/apache-incubator-seata-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 语言
   - 人数
   - 人
-  - 项目
   - 开发
+  - 项目
   - 和
+  - 语言
   - 创建
-  - 模型
   - 周期
   - 关注
   - 贡献
@@ -23,10 +22,11 @@ tags:
   - 是
   - 协议
   - 类型
-  - 大型
-  - 视觉
-  - 中
   - 使用
+  - 数据
+  - 工具
+  - 可以
+  - 中
 
 categories:
 
@@ -38,171 +38,171 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 6 |
-| HTML项目 | 2 |
-| TypeScript项目 | 2 |
-| C#项目 | 1 |
-| JavaScript项目 | 1 |
+| Java项目 | 10 |
 
-## ChatGPT提示库
+## Ghidra - 软件逆向工程框架
 
-* 创建周期：424 天
-* 开发语言：HTML
-* 协议类型：Creative Commons Zero v1.0 Universal
-* Star数量：98770 个
-* Fork数量：13584 次
-* 关注人数：98770 人
-* 贡献人数：80 人
-* Open Issues数量：288 个
-* Github地址：https://github.com/f/awesome-chatgpt-prompts.git
-* 项目首页: https://prompts.chat
-
-
-![](/images/f-awesome-chatgpt-prompts-0.png)
-
-该存储库包含一系列可与ChatGPT模型一起使用的提示示例，该模型是由OpenAI训练的大型语言模型。鼓励用户将自己的提示添加到列表中，并使用ChatGPT生成新的提示。该存储库旨在提供创建提示的灵感，并促进使用ChatGPT生成类人文本。
-
-## MLflow: 机器学习生命周期平台
-
-* 创建周期：2068 天
-* 开发语言：Python, JavaScript
+* 创建周期：1792 天
+* 开发语言：Java
 * 协议类型：Apache License 2.0
-* Star数量：16546 个
-* Fork数量：3810 次
-* 关注人数：16546 人
-* 贡献人数：455 人
-* Open Issues数量：1341 个
-* Github地址：https://github.com/mlflow/mlflow.git
-* 项目首页: https://mlflow.org
+* Star数量：45784 个
+* Fork数量：5481 次
+* 关注人数：45784 人
+* 贡献人数：266 人
+* Open Issues数量：1481 个
+* Github地址：https://github.com/NationalSecurityAgency/ghidra.git
+* 项目首页: https://www.nsa.gov/ghidra
 
 
-MLflow是一个旨在简化机器学习开发生命周期的开源平台。它提供了跟踪实验、将代码打包成可重现运行的功能，以及分享和部署模型。MLflow提供了轻量级的API，可与各种机器学习应用程序和库（例如TensorFlow、PyTorch和XGBoost）一起在不同环境中使用，包括笔记本、独立应用程序和云端。
+Ghidra是由美国国家安全局研究局开发的软件逆向工程框架。它包括一系列强大的软件分析工具，用于在不同平台上分析编译代码。用户可以执行诸如反汇编、汇编、反编译、图形化和脚本编写等任务，它支持各种处理器指令集和可执行文件格式。此外，用户可以使用Java或Python创建自己的扩展和脚本。Ghidra的开发旨在解决复杂SRE工作中的扩展和团队合作挑战，并提供可定制和可扩展的研究平台。美国国家安全局已经利用Ghidra来分析恶意代码，并洞悉网络和系统潜在漏洞。
 
-## LLaVA: 大型语言和视觉助手 - 视觉指导调整
+## Seata: Simple Extensible Autonomous Transaction Architecture (Seata) - 一个开源的分布式事务解决方案
 
-* 创建周期：291 天
-* 开发语言：Python
+* 创建周期：1862 天
+* 开发语言：Java
 * 协议类型：Apache License 2.0
-* Star数量：13098 个
-* Fork数量：1362 次
-* 关注人数：13098 人
-* 贡献人数：41 人
-* Open Issues数量：521 个
-* Github地址：https://github.com/haotian-liu/LLaVA.git
-* 项目首页: https://llava.hliu.cc
+* Star数量：24746 个
+* Fork数量：8716 次
+* 关注人数：24746 人
+* 贡献人数：285 人
+* Open Issues数量：746 个
+* Github地址：https://github.com/apache/incubator-seata.git
+* 项目首页: https://seata.apache.org/
 
 
-![](/images/haotian-liu-llava-0.png)
+![](/images/apache-incubator-seata-0.png)
 
-LLaVA是一个专注于视觉指导调整的项目，旨在实现与GPT-4水平能力的大型语言和视觉模型。它旨在通过视觉指导调整来改进基线，并在NeurIPS 2023上进行展示。
+Seata是一种易于使用、高性能的开源分布式事务解决方案。它被称为Simple Extensible Autonomous Transaction Architecture（Seata）。
 
-## Code Llama: 大型代码语言模型
+## SeaTunnel: 下一代超高性能数据集成工具
 
-* 创建周期：161 天
-* 开发语言：Python
-* 协议类型：Other
-* Star数量：12727 个
-* Fork数量：1301 次
-* 关注人数：12727 人
-* 贡献人数：11 人
-* Open Issues数量：84 个
-* Github地址：https://github.com/facebookresearch/codellama.git
+* 创建周期：2358 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：6941 个
+* Fork数量：1453 次
+* 关注人数：6941 人
+* 贡献人数：240 人
+* Open Issues数量：580 个
+* Github地址：https://github.com/apache/seatunnel.git
+* 项目首页: https://seatunnel.apache.org/
 
 
-Code Llama是一系列用于代码的大型语言模型，提供了最先进的性能、填充能力、支持大型输入上下文，并且具有编程任务的零射命令遵循能力。它包括多种类型，以涵盖各种应用，并且现在可以让各种规模的个人、创作者、研究人员和企业进行负责任的实验、创新和扩展想法。
+![](/images/apache-seatunnel-0.png)
 
-## Fabric: 利用人工智能增强人类能力的开源框架
+SeaTunnel是一个开源的下一代超高性能、分布式、大规模数据集成工具，称为Apache SeaTunnel。
 
-* 创建周期：29 天
-* 开发语言：Python, HTML
+## 十亿行挑战 -- Java实现文本文件数据聚合
+
+* 创建周期：18 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：2251 个
+* Fork数量：858 次
+* 关注人数：2251 人
+* 贡献人数：114 人
+* Open Issues数量：37 个
+* Github地址：https://github.com/gunnarmorling/1brc.git
+* 项目首页: https://www.morling.dev/blog/one-billion-row-challenge/
+
+
+十亿行挑战是一个开源项目，使用Java探索从文本文件中聚合十亿行数据。鼓励参与者优化他们的Java实现，以实现对一系列气象站温度值的最快聚合。
+
+## AWS SDK for Java 2.0：与Amazon Web Services轻松交互的新功能
+
+* 创建周期：2415 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：2021 个
+* Fork数量：826 次
+* 关注人数：2021 人
+* 贡献人数：131 人
+* Open Issues数量：362 个
+* Github地址：https://github.com/aws/aws-sdk-java-v2.git
+
+
+![](/images/aws-aws-sdk-java-v2-0.png)
+
+AWS SDK for Java 2.0是1.0版本的重写，具有新功能，可以轻松与Amazon Web Services进行交互。它包括非阻塞IO和可插拔的HTTP实现，以进行定制。用户可以使用Maven或任何支持MavenCentral的构建系统快速开始使用。
+
+## Apache Paimon(孵化中) - 流数据湖平台
+
+* 创建周期：751 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：1659 个
+* Fork数量：696 次
+* 关注人数：1659 人
+* 贡献人数：129 人
+* Open Issues数量：321 个
+* Github地址：https://github.com/apache/incubator-paimon.git
+* 项目首页: https://paimon.apache.org/
+
+
+![](/images/apache-incubator-paimon-0.png)
+
+Apache Paimon(孵化中)是一个支持高速数据摄取、变更数据跟踪和高效实时分析的流数据湖平台。它是从Flink社区发展而来，其架构参考了Iceberg的一些设计概念。
+
+## 禁漫天堂Github Actions下载器
+
+* 创建周期：1081 天
+* 开发语言：Java
 * 协议类型：MIT License
-* Star数量：1039 个
-* Fork数量：102 次
-* 关注人数：1039 人
+* Star数量：1322 个
+* Fork数量：1542 次
+* 关注人数：1322 人
+* 贡献人数：2 人
+* Open Issues数量：30 个
+* Github地址：https://github.com/jiayaoO3O/18-comic-finder.git
+
+
+![](/images/jiayaoo3o-18-comic-finder-0.png)
+
+禁漫天堂Github Actions下载器是一个使用GitHub Actions的禁漫天堂爬虫，用Java编写。作者强调使用爬虫下载时要注意对禁漫天堂服务器的持续性访问，避免一次性添加太多漫画，以免给服务器带来持久的压力。
+
+## 简易电视直播收看软件
+
+* 创建周期：31 天
+* 开发语言：Java
+* Star数量：315 个
+* Fork数量：30 次
+* 关注人数：315 人
 * 贡献人数：1 人
-* Open Issues数量：12 个
-* Github地址：https://github.com/danielmiessler/fabric.git
+* Open Issues数量：38 个
+* Github地址：https://github.com/Eanya-Tonic/CCTV_Viewer.git
+* 项目首页: https://www.bilibili.com/video/BV1Gc41187D6
 
 
-Fabric 是一个旨在利用人工智能增强人类能力的开源框架。目前仍处于早期阶段，正在不断增加更多的文档和功能。
+![](/images/eanya-tonic-cctv_viewer-0.png)
 
-## Excel 16位CPU
+This is a simple TV live viewing software based on tv.cctv.com and CCTV, which is used to conveniently watch TV programs on set-top boxes.
 
-* 创建周期：4 天
-* 开发语言：Python
-* 协议类型：Creative Commons Zero v1.0 Universal
-* Star数量：1114 个
-* Fork数量：93 次
-* 关注人数：1114 人
-* 贡献人数：1 人
-* Open Issues数量：6 个
-* Github地址：https://github.com/InkboxSoftware/excelCPU.git
+## 协作和共享代码的开发工具
 
-
-Excel 16位CPU存储库包含一个在Excel电子表格中实现的16位CPU，具有16个通用寄存器、128KB的RAM和一个128x128的显示屏。它可以在自动模式或手动模式下进行控制，并根据InstructionSet.xlsx电子表格中指定的指令集架构运行。此外，可以使用Excel-ASM16语言编写程序，并编译到ROM.xlsx电子表格中。
-
-## AI封面生成器
-
-* 创建周期：4 天
-* 开发语言：TypeScript
-* 协议类型：Apache License 2.0
-* Star数量：679 个
-* Fork数量：130 次
-* 关注人数：679 人
-* 贡献人数：1 人
-* Open Issues数量：3 个
-* Github地址：https://github.com/all-in-aigc/aicover.git
-* 项目首页: https://aicover.design
+* 创建周期：12 天
+* 开发语言：Java
+* 协议类型：GNU General Public License v3.0
+* Star数量：255 个
+* Fork数量：7 次
+* 关注人数：255 人
+* 贡献人数：312 人
+* Open Issues数量：5 个
+* Github地址：https://github.com/polymorphicshade/Tubular.git
 
 
-AI封面生成器是由aicover.design推出的开源项目。它允许用户为各种用途创建由人工智能生成的封面设计。
+这个开源项目是一个供开发人员协作和共享代码的工具。它提供了一个版本控制、问题跟踪和持续集成的平台。该项目旨在促进高效有组织的软件开发。
 
-## Celeste 64: 山脉的碎片
-
-* 创建周期：4 天
-* 开发语言：C#
-* Star数量：841 个
-* Fork数量：55 次
-* 关注人数：841 人
-* 贡献人数：9 人
-* Open Issues数量：16 个
-* Github地址：https://github.com/ExOK/Celeste64.git
-
-
-《Celeste 64: 山脉的碎片》是由原《Celeste》开发者在不到2周的时间内为《Celeste》6周年庆开发的游戏。这是一个3D游戏，使用了主要用于2D游戏的库进行编码，被视为类似于周末游戏开发大赛的作品。
-
-## 大型视觉语言模型的专家混合
-
-* 创建周期：50 天
-* 开发语言：Python
-* 协议类型：Apache License 2.0
-* Star数量：609 个
-* Fork数量：28 次
-* 关注人数：609 人
-* 贡献人数：1 人
-* Open Issues数量：6 个
-* Github地址：https://github.com/PKU-YuanGroup/MoE-LLaVA.git
-* 项目首页: https://arxiv.org/abs/2401.15947
-
-
-![](/images/pku-yuangroup-moe-llava-0.png)
-
-项目“大型视觉语言模型的专家混合”已通过模型范围使其模型可供下载，并发布了性能更强的MoE-LLaVA-Phi2。此外，Hugging Face演示和所有代码和数据集现在可供查看和更新。
-
-## Stripe集成的SaaS网站构建器和项目管理
+## wx-dump-4j: 微信数据分析工具
 
 * 创建周期：8 天
-* 开发语言：TypeScript
-* Star数量：264 个
-* Fork数量：131 次
-* 关注人数：264 人
+* 开发语言：Java
+* Star数量：131 个
+* Fork数量：15 次
+* 关注人数：131 人
 * 贡献人数：1 人
-* Open Issues数量：3 个
-* Github地址：https://github.com/webprodigies/plura-production.git
-* 项目首页: https://plura-production.vercel.app
+* Open Issues数量：5 个
+* Github地址：https://github.com/xuchengsheng/wx-dump-4j.git
 
 
-![](/images/webprodigies-plura-production-0.png)
-
-这个开源项目是一个集成了Stripe的SaaS网站构建器、项目管理和仪表板。它利用了Nextjs14、Bun、Stripe Connect、Prisma、MySQL和Tailwind。
+wx-dump-4j是一款基于Java开发的微信数据分析工具。它不仅可以准确显示您的好友数、群聊数和当日的消息总量，还提供了过去15天内的每日消息统计功能，让您清晰了解自己的社交活跃度。此外它还能够识别并展示最近一个月内与您互动最频繁的前10位联系人。它还支持导出微信的聊天记录、联系人和群聊信息，甚至可以查看超过三天限制的朋友圈历史记录。
 
