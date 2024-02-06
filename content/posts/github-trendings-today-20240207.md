@@ -1,31 +1,31 @@
 ---
-title: Github 2024-02-07 开源项目日报 Top9
-date: 2024-02-07T07:01:07+08:00
+title: Github 2024-02-07 C开源项目日报 Top10
+date: 2024-02-07T07:11:29+08:00
 slug: github-trendings-today-20240207
 author: 老孙正经胡说
-image: /images/usememos-memos-0.png
+image: /images/microsoft-mimalloc-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
   - 人数
   - 人
-  - 开发
   - 和
+  - 项目
+  - 开发
   - 语言
-  - 是
-  - 创建
   - 贡献
+  - 协议
+  - 创建
   - 周期
   - 关注
   - 地址
-  - 协议
+  - 是
   - 类型
-  - 使用
-  - 应用
-  - 可以
-  - 并
+  - 实现
+  - 安全
+  - 提供
+  - 软件
   - 开源
 
 categories:
@@ -34,170 +34,169 @@ draft: false
 ---
 
 
-根据Github Trendings的统计，今日(2024-02-07统计)共有9个项目上榜。根据开发语言中项目的数量，汇总情况如下：
+根据Github Trendings的统计，今日(2024-02-07统计)共有10个项目上榜。根据开发语言中项目的数量，汇总情况如下：
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Rust项目 | 2 |
-| TypeScript项目 | 2 |
-| Python项目 | 2 |
-| Ruby项目 | 1 |
-| HTML项目 | 1 |
-| NASL项目 | 1 |
-| Go项目 | 1 |
-| C项目 | 1 |
-| Svelte项目 | 1 |
-| C++项目 | 1 |
-
-## React Native: 用React构建原生应用的框架
-
-* 创建周期：3316 天
-* 开发语言：C++
-* 协议类型：MIT License
-* Star数量：114169 个
-* Fork数量：24224 次
-* 关注人数：114169 人
-* 贡献人数：312 人
-* Open Issues数量：1163 个
-* Github地址：https://github.com/facebook/react-native.git
-* 项目首页: https://reactnative.dev
-
-
-React Native 是一个使用 React 构建原生应用的框架，将 React 的声明式 UI 框架引入到 iOS 和 Android。它允许使用原生 UI 控件，并且提供对原生平台的完全访问。React Native 提倡声明式、基于组件的开发，可以更轻松地创建 UI，使代码更可预测，并提高开发速度。它还支持在多个平台上重用代码。
-
-## 轻量级隐私笔记服务
-
-* 创建周期：788 天
-* 开发语言：Go, TypeScript
-* 协议类型：MIT License
-* Star数量：23207 个
-* Fork数量：1682 次
-* 关注人数：23207 人
-* 贡献人数：165 人
-* Open Issues数量：83 个
-* Github地址：https://github.com/usememos/memos.git
-* 项目首页: https://usememos.com
-
-
-![](/images/usememos-memos-0.png)
-
-一个开源的轻量级笔记服务，允许用户轻松捕捉和分享他们的想法，同时优先考虑隐私。
-
-## 开源个人理财应用 Maybe 的 React 原始版本
-
-* 创建周期：16 天
-* 开发语言：TypeScript
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：9764 个
-* Fork数量：679 次
-* 关注人数：9764 人
-* 贡献人数：13 人
-* Open Issues数量：21 个
-* Github地址：https://github.com/maybe-finance/maybe.git
-* 项目首页: https://maybe.co
-
-
-![](/images/maybe-finance-maybe-0.png)
-
-这是一个开源的个人理财应用，是之前已停用的个人理财应用Maybe的原始React应用。它使用了许多外部服务，如Plaid和Finicity，使其完全运行需要大量的工作。
+| C项目 | 10 |
+| CMake项目 | 1 |
 
 ## 我的电视 - 安卓电视直播软件
 
-* 创建周期：61 天
+* 创建周期：40 天
 * 开发语言：C
-* Star数量：5566 个
-* Fork数量：630 次
-* 关注人数：5566 人
+* Star数量：649 个
+* Fork数量：124 次
+* 关注人数：649 人
 * 贡献人数：1 人
-* Open Issues数量：46 个
+* Open Issues数量：23 个
 * Github地址：https://github.com/lizongying/my-tv.git
-* 项目首页: https://lyrics.run/my-tv.html
 
 
-我的电视是一款安卓电视直播软件，内置直播源，用户安装即可使用。
+我的电视是一个开源的安卓电视直播应用，内置了直播源。
 
-## Rye: 为Python开发人员提供无忧体验
+## FreeRDP: 远程桌面协议实现
 
-* 创建周期：291 天
-* 开发语言：Rust, NASL
+* 创建周期：4605 天
+* 开发语言：C
+* 协议类型：Apache License 2.0
+* Star数量：9780 个
+* Fork数量：25046 次
+* 关注人数：9780 人
+* 贡献人数：311 人
+* Open Issues数量：433 个
+* Github地址：https://github.com/FreeRDP/FreeRDP.git
+* 项目首页: http://www.freerdp.com/
+
+
+FreeRDP是远程桌面协议（RDP）的免费实现，根据Apache许可发布。它允许用户在任何地方以任何方式使用他们的软件，促进互操作性，解放计算体验。
+
+## mimalloc: 优异性能的紧凑通用分配器
+
+* 创建周期：1694 天
+* 开发语言：C
 * 协议类型：MIT License
-* Star数量：8623 个
-* Fork数量：250 次
-* 关注人数：8623 人
-* 贡献人数：57 人
-* Open Issues数量：64 个
-* Github地址：https://github.com/mitsuhiko/rye.git
-* 项目首页: https://rye-up.com
+* Star数量：9153 个
+* Fork数量：752 次
+* 关注人数：9153 人
+* 贡献人数：72 人
+* Open Issues数量：307 个
+* Github地址：https://github.com/microsoft/mimalloc.git
 
 
-![](/images/mitsuhiko-rye-0.png)
+![](/images/microsoft-mimalloc-0.png)
 
-Rye是Python的一种综合项目和软件包管理解决方案，旨在为各个级别的Python开发人员提供无忧体验。
+mimalloc是一个紧凑的通用分配器，性能优异。它是malloc的即插即用替代品，可用于包括Windows、macOS、Linux和BSD在内的各种系统。其设计的显著特点包括小而一致的库大小，自由列表分片以减少碎片化，急切页面清除和安全功能。在基准测试中，它的性能优于其他主要分配器，并且对大型操作系统页面有良好的支持。
 
-## 聊天界面
+## xxHash - 非常快速的哈希算法
 
-* 创建周期：355 天
-* 开发语言：TypeScript, Svelte
+* 创建周期：3570 天
+* 开发语言：C
+* 协议类型：Other
+* Star数量：8130 个
+* Fork数量：789 次
+* 关注人数：8130 人
+* 贡献人数：90 人
+* Open Issues数量：26 个
+* Github地址：https://github.com/Cyan4973/xxHash.git
+* 项目首页: http://www.xxhash.com/
+
+
+![](/images/cyan4973-xxhash-0.png)
+
+xxHash是一种非常快速的非加密哈希算法，可以以RAM速度限制进行处理。它具有高度的可移植性，并且在所有平台上生成相同的哈希值。该库包括XXH32、XXH64和XXH3算法，所有这些算法都成功通过了SMHasher测试套件。基准测试显示，XXH3和XXH128实现了高带宽和小数据速度，使它们适用于各种应用。
+
+## Greenplum数据库 - 开源大规模并行数据平台
+
+* 创建周期：3029 天
+* 开发语言：C
 * 协议类型：Apache License 2.0
-* Star数量：5098 个
-* Fork数量：658 次
-* 关注人数：5098 人
-* 贡献人数：48 人
-* Open Issues数量：145 个
-* Github地址：https://github.com/huggingface/chat-ui.git
-* 项目首页: https://huggingface.co/chat
+* Star数量：6121 个
+* Fork数量：1702 次
+* 关注人数：6121 人
+* 贡献人数：249 人
+* Open Issues数量：452 个
+* Github地址：https://github.com/greenplum-db/gpdb.git
+* 项目首页: http://greenplum.org
 
 
-![](/images/huggingface-chat-ui-0.png)
+Greenplum数据库是基于PostgreSQL的开源大规模并行数据平台，专为分析、机器学习和人工智能而设计。它提供强大的分析功能，可处理PB级数据量，并由先进的基于成本的查询优化器驱动。该项目在Apache 2许可下发布，并欢迎社区贡献。
 
-Chat UI是一个开源代码库，用于支持HuggingChat应用程序，利用SvelteKit和OpenAssistant或Llama等开源模型。它提供了一个聊天界面，并可以轻松部署到HF Space。
+## Arm A-Profile架构的安全世界软件参考实现
 
-## Jujutsu: 一个强大的版本控制系统
+* 创建周期：3761 天
+* 开发语言：C
+* 协议类型：Other
+* Star数量：1767 个
+* Fork数量：1300 次
+* 关注人数：1767 人
+* 贡献人数：341 人
+* Open Issues数量：12 个
+* Github地址：https://github.com/ARM-software/arm-trusted-firmware.git
+* 项目首页: https://developer.trustedfirmware.org/dashboard/view/6/
 
-* 创建周期：1144 天
-* 开发语言：Rust
+
+Trusted Firmware-A（TF-A）是Arm A-Profile架构的安全世界软件的参考实现，为安全世界引导和运行时固件的产品化提供了一个起点。它实现了Arm接口标准，并设计为可在基于Armv8-A和Armv7-A架构的硬件平台和软件模型上进行移植和重复使用。鼓励用户对从TF-A衍生的任何安全世界代码进行安全验证。
+
+## Grafana Beyla: 基于eBPF和OpenTelemetry的零代码自动仪器化
+
+* 创建周期：352 天
+* 开发语言：C
 * 协议类型：Apache License 2.0
-* Star数量：4826 个
-* Fork数量：156 次
-* 关注人数：4826 人
-* 贡献人数：74 人
-* Open Issues数量：221 个
-* Github地址：https://github.com/martinvonz/jj.git
-* 项目首页: https://martinvonz.github.io/jj/
+* Star数量：1015 个
+* Fork数量：59 次
+* 关注人数：1015 人
+* 贡献人数：25 人
+* Open Issues数量：48 个
+* Github地址：https://github.com/grafana/beyla.git
 
 
-Jujutsu是一个强大的软件项目版本控制系统，旨在易于使用并与许多物理后端兼容。它结合了Git、Mercurial、Sapling、Pijul和Darcs的设计选择和概念，同时添加了自己的创新功能，如工作副本作为提交、操作日志和撤消以及自动变基和冲突解决。该项目仍在开发中，并欢迎讨论和贡献。
+Grafana Beyla是一个开源项目，提供了基于eBPF和OpenTelemetry的零代码自动仪器化功能，适用于HTTP和HTTPS服务。它提供了一种自动仪器化服务的方式，无需手动编码。
 
-## OLMo：AI2最先进的开放语言模型训练与使用
+## 启用UEFI系统上的可调整大小的BAR项目及NvStrapsReBar工具
 
-* 创建周期：349 天
-* 开发语言：Python
+* 创建周期：575 天
+* 开发语言：C
+* 协议类型：MIT License
+* Star数量：903 个
+* Fork数量：34 次
+* 关注人数：903 人
+* 贡献人数：2 人
+* Open Issues数量：18 个
+* Github地址：https://github.com/xCuri0/ReBarUEFI.git
+
+
+![](/images/xcuri0-rebaruefi-0.png)
+
+该项目旨在启用几乎任何UEFI系统上的可调整大小的BAR，并为NVIDIA Turing GPU（20或16系列）提供了名为NvStrapsReBar的特定工具。
+
+## Pico TPMSniffer: 用于联想笔记本电脑的实验性TPM嗅探器
+
+* 创建周期：4 天
+* 开发语言：C, CMake
+* 协议类型：Other
+* Star数量：150 个
+* Fork数量：25 次
+* 关注人数：150 人
+* 贡献人数：1 人
+* Open Issues数量：0 个
+* Github地址：https://github.com/stacksmashing/pico-tpmsniffer.git
+
+
+Pico TPMSniffer是一个简单的、实验性的LPC总线TPM嗅探器，专为某些联想笔记本电脑设计。它不适用于专业或生产使用，目前固件仅支持LPC，不支持SPI TPMs。
+
+## Leaky Vessels动态检测器
+
+* 创建周期：7 天
+* 开发语言：C
 * 协议类型：Apache License 2.0
-* Star数量：960 个
-* Fork数量：56 次
-* 关注人数：960 人
-* 贡献人数：22 人
-* Open Issues数量：78 个
-* Github地址：https://github.com/allenai/OLMo.git
-* 项目首页: https://allenai.org/olmo
-
-
-![](/images/allenai-olmo-0.png)
-
-OLMo是一个用于训练和使用AI2最先进的开放语言模型的存储库。它是由科学家为科学家构建的。
-
-## Rawdog: 用Python脚本生成和自动执行的CLI助手
-
-* 创建周期：6 天
-* 开发语言：Python
-* 协议类型：Apache License 2.0
-* Star数量：571 个
-* Fork数量：40 次
-* 关注人数：571 人
+* Star数量：69 个
+* Fork数量：11 次
+* 关注人数：69 人
 * 贡献人数：4 人
-* Open Issues数量：11 个
-* Github地址：https://github.com/AbanteAI/rawdog.git
+* Open Issues数量：1 个
+* Github地址：https://github.com/snyk/leaky-vessels-dynamic-detector.git
 
 
-Rawdog是一个开源的CLI助手，可以根据用户查询生成和自动执行Python脚本。它可以执行诸如分析主目录中的文件夹、描述CSV文件和识别活动端口等任务。Rawdog是RAG（检索增强生成）的一种新颖替代方案，可以通过运行脚本并将输出添加到对话中来自我选择上下文。
+Leaky Vessels Dynamic Detector是一个开源项目，为runc和Docker漏洞提供了基于eBPF的运行时检测的参考实现。它钩入Linux系统调用和Docker守护程序的函数调用，以识别特定漏洞的利用。
 
