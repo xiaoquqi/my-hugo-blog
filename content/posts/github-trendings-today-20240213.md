@@ -1,6 +1,6 @@
 ---
-title: Github 2024-02-13 开源项目日报 Top9
-date: 2024-02-13T07:01:38+08:00
+title: Github 2024-02-13 Python开源项目日报 Top10
+date: 2024-02-13T07:11:20+08:00
 slug: github-trendings-today-20240213
 author: 老孙正经胡说
 image: /images/donnemartin-system-design-primer-0.png
@@ -8,25 +8,25 @@ tags:
   - github
   - trendings
   - 数量
-  - 项目
-  - 和
   - 人数
   - 人
-  - 开发
   - 语言
-  - 是
+  - 项目
+  - 开发
   - 创建
   - 周期
+  - 协议
+  - 类型
   - 关注
   - 贡献
   - 地址
-  - 协议
-  - 类型
-  - 软件
-  - 到
-  - 运行
+  - 和
   - 使用
+  - 模型
+  - 是
   - 开源
+  - 语音
+  - 设计
 
 categories:
 
@@ -34,164 +34,175 @@ draft: false
 ---
 
 
-根据Github Trendings的统计，今日(2024-02-13统计)共有9个项目上榜。根据开发语言中项目的数量，汇总情况如下：
+根据Github Trendings的统计，今日(2024-02-13统计)共有10个项目上榜。根据开发语言中项目的数量，汇总情况如下：
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| JavaScript项目 | 2 |
-| Python项目 | 2 |
-| C++项目 | 2 |
-| TypeScript项目 | 2 |
-| Rust项目 | 1 |
-| Go项目 | 1 |
-| Dart项目 | 1 |
-| Java项目 | 1 |
-| C项目 | 1 |
+| Python项目 | 10 |
 
 ## 系统设计指南
 
-* 创建周期：2543 天
+* 创建周期：2507 天
 * 开发语言：Python
 * 协议类型：Other
-* Star数量：246143 个
-* Fork数量：42698 次
-* 关注人数：246143 人
+* Star数量：241693 个
+* Fork数量：42010 次
+* 关注人数：241693 人
 * 贡献人数：109 人
-* Open Issues数量：415 个
+* Open Issues数量：413 个
 * Github地址：https://github.com/donnemartin/system-design-primer.git
 
 
 ![](/images/donnemartin-system-design-primer-0.png)
 
-《系统设计指南》是一个开源项目，帮助个人学习如何设计大规模系统并为系统设计面试做准备。它包括 Anki 知识卡片，以便有效学习。
+系统设计指南是一个开源项目，帮助个人学习如何设计大规模系统并为系统设计面试做准备。它还包括Anki记忆卡，以便有效学习。
 
-## 比特币核心：开源软件连接到比特币网络的验证和钱包功能
+## yt-dlp: 一个增强版的youtube-dl分支
 
-* 创建周期：4804 天
-* 开发语言：C++
-* 协议类型：MIT License
-* Star数量：73899 个
-* Fork数量：36761 次
-* 关注人数：73899 人
-* 贡献人数：350 人
-* Open Issues数量：678 个
-* Github地址：https://github.com/bitcoin/bitcoin.git
-* 项目首页: https://bitcoincore.org/en/download
-
-
-比特币核心是一个开源软件，连接到比特币网络以下载和验证区块和交易。它包括钱包和图形用户界面，并在MIT许可下发布。开发过程包括定期构建、测试和创建稳定的发布版本。由于项目的安全关键性质，测试和代码审查至关重要。
-
-## 自托管照片和视频备份解决方案
-
-* 创建周期：740 天
-* 开发语言：TypeScript, Dart
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：25662 个
-* Fork数量：1199 次
-* 关注人数：25662 人
-* 贡献人数：262 人
-* Open Issues数量：338 个
-* Github地址：https://github.com/immich-app/immich.git
-* 项目首页: https://immich.app
+* 创建周期：1184 天
+* 开发语言：Python
+* 协议类型：The Unlicense
+* Star数量：64607 个
+* Fork数量：5309 次
+* 关注人数：64607 人
+* 贡献人数：385 人
+* Open Issues数量：1422 个
+* Github地址：https://github.com/yt-dlp/yt-dlp.git
+* 项目首页: https://discord.gg/H5MNcFW63r
 
 
-![](/images/immich-app-immich-0.png)
+yt-dlp是youtube-dl的一个分支，具有额外的功能和修复，重点是添加新功能和补丁，同时与原始项目保持最新。它包括详细的安装说明，更新/发布文件，依赖关系，编译，使用和选项，配置，格式选择，修改元数据，插件，嵌入示例等。它还集成了SponsorBlock，用于标记/删除YouTube视频中的赞助部分，并更改了默认格式排序选项，以获得更高分辨率和更好的编解码器。
 
-这是一个自托管的照片和视频备份解决方案，允许用户直接从他们的手机备份媒体。然而，需要注意的是，该项目目前正在非常积极地开发中，因此用户应该期待错误和重大变化。还建议不要仅依赖该应用程序来存储照片和视频，并始终遵循宝贵媒体的3-2-1备份计划。
+## Fooocus: 图像生成软件
 
-## AdGuard Home: 网络范围广告和跟踪屏蔽软件
-
-* 创建周期：2778 天
-* 开发语言：Go, JavaScript
+* 创建周期：188 天
+* 开发语言：Python
 * 协议类型：GNU General Public License v3.0
-* Star数量：21300 个
-* Fork数量：1657 次
-* 关注人数：21300 人
-* 贡献人数：79 人
-* Open Issues数量：1003 个
-* Github地址：https://github.com/AdguardTeam/AdGuardHome.git
-* 项目首页: https://adguard.com/adguard-home.html
+* Star数量：30681 个
+* Fork数量：3552 次
+* 关注人数：30681 人
+* 贡献人数：33 人
+* Open Issues数量：237 个
+* Github地址：https://github.com/lllyasviel/Fooocus.git
 
 
-![](/images/adguardteam-adguardhome-0.png)
+![](/images/lllyasviel-fooocus-0.png)
 
-AdGuard Home是一种网络范围的广告和跟踪屏蔽软件，它作为一个DNS服务器运行，将跟踪域重定向到“黑洞”，从而阻止设备连接到这些服务器。它不需要客户端软件，并且基于公共AdGuard DNS服务器使用的相同软件。
+Fooocus是基于Gradio的开源图像生成软件。它重新思考了Stable Diffusion和Midjourney的设计，提供了离线、开源和免费的平台。它消除了手动调整的需求，专注于提示和图像，并包含自动优化。安装过程简化，最小GPU内存要求为4GB。
 
-## LLRT（低延迟运行时）- 为快速高效的无服务器应用程序而生
+## 使用MoviePy自动创建YouTube短视频
 
-* 创建周期：144 天
-* 开发语言：JavaScript, Rust
-* 协议类型：MIT No Attribution
-* Star数量：2784 个
-* Fork数量：53 次
-* 关注人数：2784 人
-* 贡献人数：9 人
-* Open Issues数量：12 个
-* Github地址：https://github.com/awslabs/llrt.git
+* 创建周期：13 天
+* 开发语言：Python
+* 协议类型：MIT License
+* Star数量：7294 个
+* Fork数量：878 次
+* 关注人数：7294 人
+* 贡献人数：21 人
+* Open Issues数量：4 个
+* Github地址：https://github.com/FujiwaraChoki/MoneyPrinter.git
 
 
-LLRT（低延迟运行时）是一个实验性的、轻量级的JavaScript运行时，旨在满足快速高效的无服务器应用程序的不断增长需求。与在AWS Lambda上运行的其他JavaScript运行时相比，LLRT的启动速度可以提高10倍以上，总体成本可以降低2倍。LLRT是用Rust构建的，利用QuickJS作为JavaScript引擎，确保内存使用效率和快速启动。但需要注意的是，LLRT是一个实验性的软件包，可能会发生变化，仅供评估目的使用。
+使用MoviePy自动在本地创建YouTube短视频，只需提供要讨论的视频主题。
 
-## VirtualBox KVM: 使用Linux KVM的开源虚拟化工具
+## CrewAI：先进的自主AI代理编排框架
 
-* 创建周期：25 天
-* 开发语言：C, C++
-* 协议类型：Other
-* Star数量：507 个
-* Fork数量：41 次
-* 关注人数：507 人
+* 创建周期：73 天
+* 开发语言：Python
+* 协议类型：MIT License
+* Star数量：2488 个
+* Fork数量：265 次
+* 关注人数：2488 人
+* 贡献人数：12 人
+* Open Issues数量：35 个
+* Github地址：https://github.com/joaomdmoura/crewAI.git
+* 项目首页: https://crewai.io
+
+
+![](/images/joaomdmoura-crewai-0.png)
+
+CrewAI是一个先进的框架，用于编排角色扮演的自主AI代理，促进协作智能，使代理能够在复杂任务上无缝合作。
+
+## 使用100多个LLM的开源API执行语言模型任务
+
+* 创建周期：201 天
+* 开发语言：Python
+* 协议类型：MIT License
+* Star数量：5303 个
+* Fork数量：524 次
+* 关注人数：5303 人
+* 贡献人数：104 人
+* Open Issues数量：283 个
+* Github地址：https://github.com/BerriAI/litellm.git
+* 项目首页: https://docs.litellm.ai/docs/
+
+
+![](/images/berriai-litellm-0.png)
+
+该项目涉及使用各种开源LLM API，如Bedrock、Azure、OpenAI、Cohere、Anthropic、Ollama、Sagemaker、HuggingFace、Replicate等100多个LLM，来执行语言模型任务。
+
+## 情感语音模型MetaVoice-1B
+
+* 创建周期：7 天
+* 开发语言：Python
+* 协议类型：Apache License 2.0
+* Star数量：1830 个
+* Fork数量：228 次
+* 关注人数：1830 人
 * 贡献人数：5 人
-* Open Issues数量：8 个
-* Github地址：https://github.com/cyberus-technology/virtualbox-kvm.git
+* Open Issues数量：16 个
+* Github地址：https://github.com/metavoiceio/metavoice-src.git
+* 项目首页: https://themetavoice.xyz/
 
 
-VirtualBox KVM是开源虚拟化工具VirtualBox的改进版本，它使用Linux KVM作为底层hypervisor。
+MetaVoice-1B是一个开源的1.2B参数基础模型，经过了100,000小时的语音训练，用于文本转语音。它优先考虑了英语中的情感语音节奏和语调，美式和英式语音的零射击克隆，支持通过微调进行语音克隆，成功使用最少1分钟的训练数据进行印度说话者的支持，以及长篇合成。该模型以Apache 2.0许可证发布，可以无限制地使用。
 
-## Oblivion - Android的非官方Warp客户端
+## 使用函数调用构建AI助手的工具包
 
-* 创建周期：5 天
-* 开发语言：Java
-* Star数量：550 个
-* Fork数量：38 次
-* 关注人数：550 人
-* 贡献人数：7 人
-* Open Issues数量：25 个
-* Github地址：https://github.com/bepass-org/oblivion.git
+* 创建周期：650 天
+* 开发语言：Python
+* 协议类型：Mozilla Public License 2.0
+* Star数量：1796 个
+* Fork数量：195 次
+* 关注人数：1796 人
+* 贡献人数：12 人
+* Open Issues数量：14 个
+* Github地址：https://github.com/phidatahq/phidata.git
+* 项目首页: https://docs.phidata.com
 
 
-Oblivion是一个非官方的Android Warp客户端，通过用户友好的应用程序提供安全和优化的互联网访问。它利用bepass-sdk和自定义的WireGuard Go实现，实现快速和私密的在线体验。
+![](/images/phidatahq-phidata-0.png)
 
-## Self-Play Fine-Tuning (SPIN)的官方实现
+Phidata是一个使用函数调用构建AI助手的工具包。函数调用使LLMs能够通过调用函数并根据响应智能地选择下一步，就像人类解决问题一样。
+
+## 自我对弈微调：将弱语言模型转化为强语言模型
 
 * 创建周期：9 天
 * 开发语言：Python
 * 协议类型：Apache License 2.0
-* Star数量：348 个
+* Star数量：349 个
 * Fork数量：24 次
-* 关注人数：348 人
+* 关注人数：349 人
 * 贡献人数：4 人
 * Open Issues数量：0 个
 * Github地址：https://github.com/uclaml/SPIN.git
 * 项目首页: https://uclaml.github.io/SPIN/
 
 
-Self-Play Fine-Tuning (SPIN)的官方实现，用于将弱语言模型转换为强语言模型。该存储库包含了作者Zixiang Chen、Yihe Deng、Huizhuo Yuan、Kaixuan Ji和Quanquan Gu的论文代码。
+Self-Play Fine-Tuning (SPIN)项目的官方实现，其中包含了陈子翔、邓奕禾、袁慧卓、季凯轩和顾全全撰写的论文《自我对弈微调将弱语言模型转化为强语言模型》的代码。
 
-## Skiff：隐私优先的端到端加密工作空间
+## PalWorld服务器工具包
 
-* 创建周期：659 天
-* 开发语言：TypeScript
-* 协议类型：Other
-* Star数量：268 个
-* Fork数量：145 次
-* 关注人数：268 人
-* 贡献人数：10 人
-* Open Issues数量：65 个
-* Github地址：https://github.com/skiff-org/skiff-apps.git
-* 项目首页: https://skiff.com/
+* 创建周期：17 天
+* 开发语言：Python
+* 协议类型：MIT License
+* Star数量：236 个
+* Fork数量：41 次
+* 关注人数：236 人
+* 贡献人数：6 人
+* Open Issues数量：3 个
+* Github地址：https://github.com/magicbear/palworld-server-toolkit.git
 
 
-![](/images/skiff-org-skiff-apps-0.png)
-
-Skiff是一个以隐私为首要考虑的、端到端加密的工作空间，拥有邮件、日历、页面和驱动产品。用户可以在skiff.com免费注册Skiff邮件帐户，并享受私密、安全的使用体验，还可以选择升级以获得更多功能和存储空间。
+PalWorld服务器工具包是一个开源项目，旨在修改保存文件，列出玩家，修复保存文件等。
 
