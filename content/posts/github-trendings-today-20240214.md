@@ -1,32 +1,32 @@
 ---
-title: Github 2024-02-14 开源项目日报 Top9
-date: 2024-02-14T07:01:13+08:00
+title: Github 2024-02-14 C开源项目日报 Top7
+date: 2024-02-14T07:11:11+08:00
 slug: github-trendings-today-20240214
 author: 老孙正经胡说
-image: /images/gitbutlerapp-gitbutler-0.png
+image: /images/flipper-xfw-xtreme-firmware-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
-  - 人
   - 人数
+  - 人
+  - 项目
+  - 开发
+  - 语言
   - 和
   - 是
-  - 语言
-  - 开发
+  - 地址
   - 创建
   - 周期
+  - 协议
+  - 类型
   - 关注
   - 贡献
-  - 地址
-  - 运行
-  - 类型
-  - 协议
-  - 请求
-  - 使用
-  - 并
-  - 托管
+  - 开源
+  - 固件
+  - 进程
+  - C++
+  - 改进
 
 categories:
 
@@ -34,157 +34,124 @@ draft: false
 ---
 
 
-根据Github Trendings的统计，今日(2024-02-14统计)共有9个项目上榜。根据开发语言中项目的数量，汇总情况如下：
+根据Github Trendings的统计，今日(2024-02-14统计)共有7个项目上榜。根据开发语言中项目的数量，汇总情况如下：
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Rust项目 | 4 |
-| TypeScript项目 | 1 |
-| PowerShell项目 | 1 |
-| Java项目 | 1 |
-| JavaScript项目 | 1 |
-| Jupyter Notebook项目 | 1 |
-| 非开发语言项目 | 1 |
-| Python项目 | 1 |
+| C项目 | 7 |
+| C++项目 | 3 |
 
-## Nushell - 一种新型的Shell
+## XMRig：跨平台CPU/GPU矿工和RandomX基准测试工具
 
-* 创建周期：1741 天
-* 开发语言：Rust
-* 协议类型：MIT License
-* Star数量：28770 个
-* Fork数量：1515 次
-* 关注人数：28770 人
-* 贡献人数：417 人
-* Open Issues数量：1232 个
-* Github地址：https://github.com/nushell/nushell.git
-* 项目首页: https://www.nushell.sh/
-
-
-Nushell是一种新型的Shell。
-
-## 自托管隧道解决方案列表
-
-* 创建周期：1246 天
-* Star数量：11887 个
-* Fork数量：592 次
-* 关注人数：11887 人
-* 贡献人数：32 人
-* Open Issues数量：47 个
-* Github地址：https://github.com/anderspitman/awesome-tunneling.git
-
-
-这是一个ngrok/Cloudflare隧道替代方案和其他隧道软件与服务的列表，重点是自托管。其目的是跟踪和比较隧道解决方案，主要针对希望通过公共域名自动提供HTTPS的本地Web服务器的自托管者和开发人员，即使在受限网络后面。该列表包括开源和商业/闭源选项，以及叠加网络和其他高级工具。自托管的推荐包括frp、SirTunnel和boringproxy，而大多数人推荐使用CloudFlare Tunnel。该列表还提供了有关新工具的更新，并对项目进行了分类，以便更轻松地进行导航。
-
-## Hurl：多功能命令行HTTP请求工具
-
-* 创建周期：1266 天
-* 开发语言：Rust
-* 协议类型：Apache License 2.0
-* Star数量：8091 个
-* Fork数量：263 次
-* 关注人数：8091 人
+* 创建周期：2496 天
+* 开发语言：C, C++
+* 协议类型：GNU General Public License v3.0
+* Star数量：8132 个
+* Fork数量：3591 次
+* 关注人数：8132 人
 * 贡献人数：50 人
+* Open Issues数量：537 个
+* Github地址：https://github.com/xmrig/xmrig.git
+* 项目首页: https://xmrig.com/
+
+
+XMRig是一个开源的，高性能的，跨平台的CPU/GPU矿工和RandomX基准测试工具，支持RandomX、KawPow、CryptoNight和GhostRider。它提供了Windows、Linux、macOS和FreeBSD的官方二进制文件。
+
+## Dom固件：Flipper Zero的强大改进
+
+* 创建周期：423 天
+* 开发语言：C
+* 协议类型：GNU General Public License v3.0
+* Star数量：7820 个
+* Fork数量：557 次
+* 关注人数：7820 人
+* 贡献人数：353 人
+* Open Issues数量：41 个
+* Github地址：https://github.com/Flipper-XFW/Xtreme-Firmware.git
+* 项目首页: https://flipper-xtre.me
+
+
+![](/images/flipper-xfw-xtreme-firmware-0.png)
+
+Dom固件是对Flipper Zero官方固件的大规模改进，整合了Unleashed的代码。它旨在根据社区反馈定期推出更新，专注于修复错误，扩展Flipper的功能，并确保用户友好的体验。此外，它还包括一个专门的应用程序，用于轻松访问实施的功能。
+
+## PortaPack Mayhem: HackRF+PortaPack H1/H2的定制固件
+
+* 创建周期：1417 天
+* 开发语言：C
+* 协议类型：GNU General Public License v3.0
+* Star数量：2486 个
+* Fork数量：462 次
+* 关注人数：2486 人
+* 贡献人数：84 人
 * Open Issues数量：125 个
-* Github地址：https://github.com/Orange-OpenSource/hurl.git
-* 项目首页: https://hurl.dev
+* Github地址：https://github.com/portapack-mayhem/mayhem-firmware.git
 
 
-Hurl是一个多功能的命令行工具，用于使用纯文本运行和测试HTTP请求。它可用于单个和基于会话的请求，并支持链式多个请求、捕获值以及对标头和主体响应进行查询评估。由libcurl支持，Hurl快速、高效，并且支持HTTP/3。它还提供各种测试功能，如不同类型的查询和断言、测试HTTP端点、检查响应字节，并生成各种格式的报告。
+![](/images/portapack-mayhem-mayhem-firmware-0.png)
 
-## LLRT（低延迟运行时）- 为快速高效的无服务器应用程序而生
+PortaPack Mayhem是HackRF+PortaPack H1/H2的定制固件，是Havoc固件的衍生版本，旨在添加比旧版本更多的功能和修复。它包括一个用于PortaPack H2+HackRF+电池克隆的3D打印外壳，并不断更新以添加新功能、修复错误和生成文档，以便进一步开发。
 
-* 创建周期：144 天
-* 开发语言：JavaScript, Rust
-* 协议类型：MIT No Attribution
-* Star数量：2784 个
-* Fork数量：53 次
-* 关注人数：2784 人
-* 贡献人数：9 人
-* Open Issues数量：12 个
-* Github地址：https://github.com/awslabs/llrt.git
+## open62541 - OPC UA开源实现
 
-
-LLRT（低延迟运行时）是一个实验性的、轻量级的JavaScript运行时，旨在满足快速高效的无服务器应用程序的不断增长需求。与在AWS Lambda上运行的其他JavaScript运行时相比，LLRT的启动速度可以提高10倍以上，总体成本可以降低2倍。LLRT是用Rust构建的，利用QuickJS作为JavaScript引擎，确保内存使用效率和快速启动。但需要注意的是，LLRT是一个实验性的软件包，可能会发生变化，仅供评估目的使用。
-
-## Sudo for Windows: 允许在Windows上运行提升的命令
-
-* 创建周期：11 天
-* 开发语言：PowerShell
-* 协议类型：MIT License
-* Star数量：1327 个
-* Fork数量：34 次
-* 关注人数：1327 人
-* 贡献人数：6 人
-* Open Issues数量：27 个
-* Github地址：https://github.com/microsoft/sudo.git
+* 创建周期：3673 天
+* 开发语言：C
+* 协议类型：Mozilla Public License 2.0
+* Star数量：2347 个
+* Fork数量：1140 次
+* 关注人数：2347 人
+* 贡献人数：249 人
+* Open Issues数量：872 个
+* Github地址：https://github.com/open62541/open62541.git
+* 项目首页: http://open62541.org
 
 
-Sudo for Windows是一个开源项目，允许用户直接从非提升的终端窗口运行提升的命令。它适用于Windows 11版本26045及更高版本，并且可以在Windows设置应用程序中为内部人员启用。该项目正在逐步开源，可以报告问题和提出功能请求。
+open62541是OPC UA（OPC统一架构）即IEC 62541的开源实现，使用Mozilla Public License v2.0许可。
 
-## GitButler: 允许多分支工作的灵活git客户端
+## Dopamine: iOS 15的半无线束缚永久签名越狱工具
 
 * 创建周期：379 天
-* 开发语言：TypeScript, Rust
+* 开发语言：C
+* 协议类型：MIT License
+* Star数量：1649 个
+* Fork数量：194 次
+* 关注人数：1649 人
+* 贡献人数：29 人
+* Open Issues数量：9 个
+* Github地址：https://github.com/opa334/Dopamine.git
+
+
+Dopamine是一个针对iOS 15的半无线束缚的永久签名越狱工具。它是针对iOS 15.0 - 15.4.1的无根arm64e越狱。更多详细信息请访问官方网站https://ellekit.space/dopamine/
+
+## VirtualBox KVM: 开源虚拟化工具使用Linux KVM作为基础的改进版本
+
+* 创建周期：28 天
+* 开发语言：C, C++
 * 协议类型：Other
-* Star数量：2169 个
-* Fork数量：87 次
-* 关注人数：2169 人
-* 贡献人数：15 人
-* Open Issues数量：59 个
-* Github地址：https://github.com/gitbutlerapp/gitbutler.git
-* 项目首页: https://gitbutler.com
+* Star数量：736 个
+* Fork数量：110 次
+* 关注人数：736 人
+* 贡献人数：5 人
+* Open Issues数量：8 个
+* Github地址：https://github.com/cyberus-technology/virtualbox-kvm.git
 
 
-![](/images/gitbutlerapp-gitbutler-0.png)
+VirtualBox KVM是开源虚拟化工具VirtualBox的改进版本，它使用Linux KVM作为基础的虚拟化程序。该项目欢迎贡献者的参与，并鼓励有兴趣的个人与我们联系，共同寻找解决方案。
 
-GitButler是一个git客户端，允许同时在多个分支上工作，将文件更改组织到单独的分支中，并将分支单独推送到远程或创建拉取请求。
+## DarkWidow: 通过修改后的TartarusGate方法进行系统调用和远程进程注入的开源项目
 
-## 利用函数调用构建AI助手的工具包
-
-* 创建周期：648 天
-* 开发语言：Python
-* 协议类型：Mozilla Public License 2.0
-* Star数量：871 个
-* Fork数量：115 次
-* 关注人数：871 人
-* 贡献人数：7 人
-* Open Issues数量：15 个
-* Github地址：https://github.com/phidatahq/phidata.git
-* 项目首页: https://docs.phidata.com
-
-
-![](/images/phidatahq-phidata-0.png)
-
-Phidata是一个利用函数调用构建AI助手的工具包。函数调用使LLMs能够通过调用函数并根据响应智能地选择下一步，就像人类解决问题一样。
-
-## PEFT（预训练-评估微调）项目
-
-* 创建周期：251 天
-* 开发语言：Jupyter Notebook
-* Star数量：1251 个
-* Fork数量：359 次
-* 关注人数：1251 人
+* 创建周期：205 天
+* 开发语言：C, C++
+* 协议类型：MIT License
+* Star数量：346 个
+* Fork数量：49 次
+* 关注人数：346 人
 * 贡献人数：1 人
-* Open Issues数量：2 个
-* Github地址：https://github.com/ashishpatel26/LLM-Finetuning.git
+* Open Issues数量：0 个
+* Github地址：https://github.com/reveng007/DarkWidow.git
 
 
-![](/images/ashishpatel26-llm-finetuning-0.png)
+![](/images/reveng007-darkwidow-0.png)
 
-PEFT（预训练-评估微调）项目旨在使用LoRA和Hugging Face的transformers库，高效地微调大型语言模型。
-
-## Oblivion - Android的非官方Warp客户端
-
-* 创建周期：5 天
-* 开发语言：Java
-* Star数量：550 个
-* Fork数量：38 次
-* 关注人数：550 人
-* 贡献人数：7 人
-* Open Issues数量：25 个
-* Github地址：https://github.com/bepass-org/oblivion.git
-
-
-Oblivion是一个非官方的Android Warp客户端，通过用户友好的应用程序提供安全和优化的互联网访问。它利用bepass-sdk和自定义的WireGuard Go实现，实现快速和私密的在线体验。
+DarkWidow是一个开源项目，涉及间接动态系统调用，通过修改后的TartarusGate方法对SSN和系统调用地址进行排序，通过APC Early Bird进行远程进程注入，将一个牺牲进程作为目标进程，对生成的进程应用ACG和BlockDll缓解策略，进行PPID欺骗，并使用API哈希从TIB解析API。
 
