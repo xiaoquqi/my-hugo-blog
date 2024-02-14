@@ -1,32 +1,32 @@
 ---
-title: Github 2024-02-15 开源项目日报 Top9
-date: 2024-02-15T07:01:17+08:00
+title: Github 2024-02-15 Go开源项目日报 Top10
+date: 2024-02-15T07:11:08+08:00
 slug: github-trendings-today-20240215
 author: 老孙正经胡说
-image: /images/gitbutlerapp-gitbutler-0.png
+image: /images/valyala-fasthttp-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
-  - 和
-  - 人数
   - 人
-  - 开发
+  - 人数
+  - 和
   - 语言
   - 创建
+  - 项目
+  - 开发
+  - 贡献
   - 是
   - 周期
-  - 关注
-  - 贡献
-  - 地址
-  - 开源
   - 协议
   - 类型
-  - 使用
-  - 中
-  - 可
-  - 模型
+  - 关注
+  - 地址
+  - 用于
+  - 提供
+  - 管理
+  - 应用程序
+  - 开源
 
 categories:
 
@@ -34,157 +34,170 @@ draft: false
 ---
 
 
-根据Github Trendings的统计，今日(2024-02-15统计)共有9个项目上榜。根据开发语言中项目的数量，汇总情况如下：
+根据Github Trendings的统计，今日(2024-02-15统计)共有10个项目上榜。根据开发语言中项目的数量，汇总情况如下：
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| TypeScript项目 | 4 |
-| Python项目 | 2 |
-| Solidity项目 | 2 |
-| Rust项目 | 1 |
-| JavaScript项目 | 1 |
-| Go项目 | 1 |
-| C++项目 | 1 |
+| Go项目 | 10 |
 
-## Terraform: 以安全和可预测的方式创建、更改和管理基础架构的开源工具
+## Terraform：基础设施即代码的开源工具
 
 * 创建周期：3626 天
 * 开发语言：Go
 * 协议类型：Other
-* Star数量：40389 个
+* Star数量：40393 个
 * Fork数量：9397 次
-* 关注人数：40389 人
+* 关注人数：40393 人
 * 贡献人数：358 人
 * Open Issues数量：1943 个
 * Github地址：https://github.com/hashicorp/terraform.git
 * 项目首页: https://www.terraform.io/
 
 
-Terraform 是一个开源工具，用于以安全和可预测的方式创建、更改和管理基础架构。它将 API 编码为声明性配置文件，可以轻松在团队成员之间共享、版本化和协作。它可以管理现有的服务提供商以及自定义的内部解决方案，其关键特性包括基础架构即代码、执行计划、资源图和变更自动化。
+Terraform 是一个用于通过声明性配置文件创建、更改和管理基础设施的开源工具。它允许基础设施版本化、共享，并视其为代码，具有基础设施即代码、执行计划、资源图和变更自动化等功能。
 
-## 机器学习工程开放书籍
+## Cobra: 用于创建功能强大的现代Go CLI应用程序的库
 
-* 创建周期：1240 天
-* 开发语言：Python
-* 协议类型：Creative Commons Attribution Share Alike 4.0 International
-* Star数量：6496 个
-* Fork数量：386 次
-* 关注人数：6496 人
-* 贡献人数：11 人
-* Open Issues数量：3 个
-* Github地址：https://github.com/stas00/ml-engineering.git
-* 项目首页: https://stasosphere.com/machine-learning/
+* 创建周期：3810 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：35094 个
+* Fork数量：2850 次
+* 关注人数：35094 人
+* 贡献人数：281 人
+* Open Issues数量：259 个
+* Github地址：https://github.com/spf13/cobra.git
+* 项目首页: https://cobra.dev
 
 
-机器学习工程开放书籍是一个旨在帮助成功训练大型语言模型和多模态模型的方法论的开放集合。其中包含适用于LLM/VLM训练工程师和操作员的技术材料，包括用于快速实施的脚本和复制粘贴命令。该存储库汇编了作者在训练大型语言模型（LLM）和VLM时的经验，包括2022年开源BLOOM-176B模型和2023年IDEFICS-80B多模态模型。作者目前正在Contextual.AI开发和训练开源的检索增强模型，并与更广泛的机器学习社区分享了这些信息。
+Cobra是一个用于在Go中创建功能强大的现代CLI应用程序的库。它提供了基于子命令的CLI、完全符合POSIX标准的标志、嵌套子命令、自动生成帮助、shell自动完成、man页面生成、命令别名以及定义自定义帮助和用法的灵活性。它建立在命令、参数和标志的结构上，旨在使应用程序在使用时读起来像句子。
 
-## GitButler: 允许多分支工作的灵活git客户端
+## Vault - 开源秘密管理与加密服务
 
-* 创建周期：379 天
-* 开发语言：TypeScript, Rust
+* 创建周期：3277 天
+* 开发语言：Go
 * 协议类型：Other
-* Star数量：2169 个
-* Fork数量：87 次
-* 关注人数：2169 人
-* 贡献人数：15 人
-* Open Issues数量：59 个
-* Github地址：https://github.com/gitbutlerapp/gitbutler.git
-* 项目首页: https://gitbutler.com
+* Star数量：29288 个
+* Fork数量：4127 次
+* 关注人数：29288 人
+* 贡献人数：392 人
+* Open Issues数量：1318 个
+* Github地址：https://github.com/hashicorp/vault.git
+* 项目首页: https://www.vaultproject.io/
 
 
-![](/images/gitbutlerapp-gitbutler-0.png)
+Vault是一个开源工具，用于秘密管理、加密服务和特权访问管理。它提供了一个统一的界面，用于安全地访问和控制各种类型的秘密，如API密钥、密码和证书。Vault提供了安全的秘密存储、动态秘密生成、数据加密、租约和续约以及撤销支持等功能。它还为安全自动化提供了文档、入门指南和认证考试。
 
-GitButler是一个git客户端，允许同时在多个分支上工作，将文件更改组织到单独的分支中，并将分支单独推送到远程或创建拉取请求。
+## Consul：动态分布式基础架构连接和配置解决方案
 
-## Adeus: 个性化人工智能可穿戴设备
-
-* 创建周期：24 天
-* 开发语言：TypeScript
+* 创建周期：3720 天
+* 开发语言：Go
 * 协议类型：Other
-* Star数量：990 个
-* Fork数量：79 次
-* 关注人数：990 人
-* 贡献人数：10 人
-* Open Issues数量：15 个
-* Github地址：https://github.com/adamcohenhillel/ADeus.git
-* 项目首页: https://docs.adeus.ai/
+* Star数量：27465 个
+* Fork数量：4436 次
+* 关注人数：27465 人
+* 贡献人数：362 人
+* Open Issues数量：1283 个
+* Github地址：https://github.com/hashicorp/consul.git
+* 项目首页: https://www.consul.io
 
 
-Adeus是一款开源的人工智能可穿戴设备，可以记录现实世界的音频，将其转录并存储在个人服务器上。通过配套的应用程序，可以实现个性化互动，提供相关背景的对话。
+Consul是一个分布式、高可用且数据中心感知的解决方案，用于在动态分布式基础架构中连接和配置应用程序。它提供了诸如多数据中心支持、用于安全通信的服务网格、API网关、服务发现、健康检查和动态应用程序配置等功能。
 
-## 使用反作用轮的平衡立方体项目
+## Helm：Kubernetes 资源管理工具
 
-* 创建周期：5 天
-* 开发语言：C++
-* 协议类型：GNU General Public License v3.0
-* Star数量：692 个
-* Fork数量：46 次
-* 关注人数：692 人
-* 贡献人数：1 人
-* Open Issues数量：0 个
-* Github地址：https://github.com/willem-pennings/balancing-cube.git
+* 创建周期：3054 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：25676 个
+* Fork数量：6990 次
+* 关注人数：25676 人
+* 贡献人数：377 人
+* Open Issues数量：632 个
+* Github地址：https://github.com/helm/helm.git
+* 项目首页: https://helm.sh
 
 
-该项目涉及使用反作用轮在角落或边缘平衡自身的平衡立方体。它包括在Fusion 360中设计的机械设计，KiCad 7中设计的电路板设计，使用Arduino IDE编写的代码，以及使用Escon Studio委托和调整的电机驱动器。还有一个YouTube视频展示了平衡立方体，以及有关创作者网站上的更多项目信息。
+Helm 是一个用于管理 Charts 的工具，Charts 是预配置的 Kubernetes 资源包。它允许用户查找和使用打包为 Helm Charts 的热门软件在 Kubernetes 中运行，分享他们自己的应用程序作为 Helm Charts，创建可重现的 Kubernetes 应用程序构建，智能地管理 Kubernetes 清单文件，并管理 Helm 包的发布。
 
-## Mario Kart 3.js - JavaScript/WebGL 马里奥卡丁车
+## 高性能Go语言HTTP包
 
-* 创建周期：24 天
-* 开发语言：JavaScript
+* 创建周期：3042 天
+* 开发语言：Go
 * 协议类型：MIT License
-* Star数量：607 个
-* Fork数量：69 次
-* 关注人数：607 人
-* 贡献人数：3 人
-* Open Issues数量：4 个
-* Github地址：https://github.com/Lunakepio/Mario-Kart-3.js.git
-* 项目首页: https://mario-kart-3-js.vercel.app
+* Star数量：20729 个
+* Fork数量：1718 次
+* 关注人数：20729 人
+* 贡献人数：188 人
+* Open Issues数量：83 个
+* Github地址：https://github.com/valyala/fasthttp.git
 
 
-Mario Kart 3.js是一个旨在使用JavaScript和WebGL重新创建马里奥卡丁车游戏的开源项目。尽管项目仍在进行中，但大约已完成了50%的工作。这是一项耗时的工作，但开发人员鼓励用户享受到目前为止所取得的进展。
+![](/images/valyala-fasthttp-0.png)
 
-## AgentKit: 基于LangChain的代理应用程序快速构建工具包
+快速的Go语言HTTP包，针对高性能进行了优化，在热路径中没有内存分配。比net/http快10倍。专为高性能边缘案例设计，特别适用于每秒处理数千个小到中等请求且需要保持一致的低毫秒响应时间的服务器/客户端。
 
-* 创建周期：21 天
-* 开发语言：TypeScript, Python
-* 协议类型：MIT License
-* Star数量：550 个
-* Fork数量：56 次
-* 关注人数：550 人
-* 贡献人数：3 人
-* Open Issues数量：3 个
-* Github地址：https://github.com/BCG-X-Official/agentkit.git
-* 项目首页: https://agentkit.infra.x.bcg.com/
+## gRPC-Go: 高性能、开源的通用RPC框架的Go语言实现
 
-
-AgentKit是由BCG X开发的基于LangChain的入门套件，用于构建代理程序。它允许开发人员快速尝试使用美观的用户界面构建受限代理架构，并构建可扩展到生产级MVP的全栈基于聊天的代理程序。该工具包提供的优势包括快速构建高质量的代理应用程序，为代理设计的灵活的响应式UI/UX，专注于可靠性，并设置为可扩展，具有现成的队列管理、认证、缓存和监控。
-
-## DN404 🥜: 联合ERC20和ERC721对的实现
-
-* 创建周期：5 天
-* 开发语言：Solidity
-* 协议类型：MIT License
-* Star数量：229 个
-* Fork数量：72 次
-* 关注人数：229 人
-* 贡献人数：10 人
-* Open Issues数量：6 个
-* Github地址：https://github.com/Vectorized/dn404.git
+* 创建周期：3356 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：19531 个
+* Fork数量：4256 次
+* 关注人数：19531 人
+* 贡献人数：387 人
+* Open Issues数量：133 个
+* Github地址：https://github.com/grpc/grpc-go.git
+* 项目首页: https://grpc.io
 
 
-DN404 🥜是一个实现了联合ERC20和ERC721对的项目，确保完全符合ERC20和ERC721规范，并将一侧的转账反映到另一侧。它还针对效率进行了优化。
+gRPC-Go是gRPC的Go语言实现，是一个高性能、开源的通用RPC框架，将移动和HTTP/2放在首位。它设计高效，并且有很好的文档，易于采用。
 
-## ERC-404: 下一个版本的开源项目
+## Hyperledger Fabric: 企业级权限分布式账本框架
 
-* 创建周期：5 天
-* 开发语言：TypeScript, Solidity
-* Star数量：152 个
-* Fork数量：71 次
-* 关注人数：152 人
-* 贡献人数：3 人
-* Open Issues数量：6 个
-* Github地址：https://github.com/Pandora-Labs-Org/erc404.git
+* 创建周期：2730 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：15241 个
+* Fork数量：8768 次
+* 关注人数：15241 人
+* 贡献人数：298 人
+* Open Issues数量：182 个
+* Github地址：https://github.com/hyperledger/fabric.git
+* 项目首页: https://wiki.hyperledger.org/display/fabric
 
 
-ERC-404是一个开源项目的下一个版本。它尚未经过全面测试或审计，目前不适合在生产中使用。ERC-404的v1.0版本是与Pandora一起发布的。
+Hyperledger Fabric是一个企业级的权限分布式账本框架，具有模块化和多功能设计。它提供了一种独特的共识方法，可以实现规模化性能同时保护隐私。它是一个分布式账本解决方案的平台，具有高度的机密性、弹性、灵活性和可扩展性，支持不同组件的可插拔实现。
+
+## Terraform AWS提供程序
+
+* 创建周期：2439 天
+* 开发语言：Go
+* 协议类型：Mozilla Public License 2.0
+* Star数量：9193 个
+* Fork数量：8685 次
+* 关注人数：9193 人
+* 贡献人数：353 人
+* Open Issues数量：4051 个
+* Github地址：https://github.com/hashicorp/terraform-provider-aws.git
+* 项目首页: https://registry.terraform.io/providers/hashicorp/aws
+
+
+Terraform AWS提供程序允许Terraform管理AWS资源，并提供贡献指南、季度开发路线图、常见问题解答、教程和讨论论坛等资源。
+
+## k8sgpt: 为每个人赋予 Kubernetes 超能力
+
+* 创建周期：293 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：3871 个
+* Fork数量：433 次
+* 关注人数：3871 人
+* 贡献人数：56 人
+* Open Issues数量：28 个
+* Github地址：https://github.com/k8sgpt-ai/k8sgpt.git
+* 项目首页: http://k8sgpt.ai
+
+
+k8sgpt 是一个用于扫描 Kubernetes 集群、诊断和处理问题的工具，使用简单的英语进行交流。它将 SRE 经验融入其分析器，并利用人工智能丰富信息。它具有与 OpenAI、Azure、Cohere、Amazon Bedrock 和本地模型的即插即用集成。可以通过 CLI 进行安装。
 
