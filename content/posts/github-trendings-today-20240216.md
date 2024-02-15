@@ -1,9 +1,9 @@
 ---
-title: Github 2024-02-16 开源项目日报 Top9
-date: 2024-02-16T07:01:19+08:00
+title: Github 2024-02-16 Java开源项目日报 Top10
+date: 2024-02-16T07:11:15+08:00
 slug: github-trendings-today-20240216
 author: 老孙正经胡说
-image: /images/psf-black-0.png
+image: /images/jenkinsci-jenkins-0.png
 tags:
   - github
   - trendings
@@ -13,20 +13,20 @@ tags:
   - 人
   - 和
   - 开发
+  - 贡献
   - 语言
-  - 创建
-  - 类型
   - 是
+  - 创建
   - 周期
   - 协议
+  - 类型
   - 关注
-  - 贡献
   - 地址
-  - 并
-  - 工具
-  - 支持
   - 开源
-  - 代理
+  - 提供
+  - 数据
+  - 工具
+  - 平台
 
 categories:
 
@@ -34,163 +34,174 @@ draft: false
 ---
 
 
-根据Github Trendings的统计，今日(2024-02-16统计)共有9个项目上榜。根据开发语言中项目的数量，汇总情况如下：
+根据Github Trendings的统计，今日(2024-02-16统计)共有10个项目上榜。根据开发语言中项目的数量，汇总情况如下：
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 4 |
-| TypeScript项目 | 3 |
-| Rust项目 | 3 |
-| Jupyter Notebook项目 | 1 |
-| JavaScript项目 | 1 |
+| Java项目 | 10 |
+| C++项目 | 1 |
+| Vue项目 | 1 |
+| Python项目 | 1 |
 
-## Black：不妥协的Python代码格式化工具
+## Jenkins自动化服务器
 
-* 创建周期：2146 天
-* 开发语言：Python
+* 创建周期：4834 天
+* 开发语言：Java
 * 协议类型：MIT License
-* Star数量：35977 个
-* Fork数量：2371 次
-* 关注人数：35977 人
-* 贡献人数：413 人
-* Open Issues数量：372 个
-* Github地址：https://github.com/psf/black.git
-* 项目首页: https://black.readthedocs.io/en/stable/
+* Star数量：22046 个
+* Fork数量：8557 次
+* 关注人数：22046 人
+* 贡献人数：304 人
+* Open Issues数量：77 个
+* Github地址：https://github.com/jenkinsci/jenkins.git
+* 项目首页: https://www.jenkins.io
 
 
-![](/images/psf-black-0.png)
+![](/images/jenkinsci-jenkins-0.png)
 
-Black 是一种不妥协的 Python 代码格式化工具，提供速度、确定性，并且不受 pycodestyle 对格式的挑剔。它确保代码在不同项目中看起来相同，并通过生成尽可能小的差异，使代码审查更快速。
+Jenkins是一个使用Java构建的开源自动化服务器，提供超过1800个插件来自动化各种任务，如构建项目、运行测试、静态代码分析和部署。它旨在通过执行重复任务来节省时间并优化开发流程，使人类能够专注于更重要的工作。该项目提供官方发布的WAR文件、Docker镜像、本机软件包和各种平台的安装程序。它还提供包括新功能和错误修复在内的每周发布以及旧版本的长期支持（LTS）。Jenkins可以在GitHub上找到，欢迎遵循贡献指南为项目做出贡献。项目的治理、理念、价值观和开发实践在Jenkins治理文件中有详细说明。Jenkins被数百万用户和数千家公司使用，并且根据MIT许可证进行许可。
 
-## Poetry: 简化Python包装和依赖管理
+## Presto: 大数据分布式SQL查询引擎
 
-* 创建周期：2179 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：28492 个
-* Fork数量：2248 次
-* 关注人数：28492 人
-* 贡献人数：439 人
-* Open Issues数量：673 个
-* Github地址：https://github.com/python-poetry/poetry.git
-* 项目首页: https://python-poetry.org
-
-
-![](/images/python-poetry-poetry-0.png)
-
-Poetry是一个工具，帮助声明、管理和安装Python项目的依赖关系，用简单的基于pyproject.toml的项目格式替换了setup.py，requirements.txt，setup.cfg，MANIFEST.in和Pipfile。
-
-## Hurl：多功能命令行HTTP请求工具
-
-* 创建周期：1266 天
-* 开发语言：Rust
+* 创建周期：4201 天
+* 开发语言：Java
 * 协议类型：Apache License 2.0
-* Star数量：8091 个
-* Fork数量：263 次
-* 关注人数：8091 人
-* 贡献人数：50 人
-* Open Issues数量：125 个
-* Github地址：https://github.com/Orange-OpenSource/hurl.git
-* 项目首页: https://hurl.dev
+* Star数量：15410 个
+* Fork数量：5262 次
+* 关注人数：15410 人
+* 贡献人数：332 人
+* Open Issues数量：1891 个
+* Github地址：https://github.com/prestodb/presto.git
+* 项目首页: http://prestodb.io
 
 
-Hurl是一个多功能的命令行工具，用于使用纯文本运行和测试HTTP请求。它可用于单个和基于会话的请求，并支持链式多个请求、捕获值以及对标头和主体响应进行查询评估。由libcurl支持，Hurl快速、高效，并且支持HTTP/3。它还提供各种测试功能，如不同类型的查询和断言、测试HTTP端点、检查响应字节，并生成各种格式的报告。
+Presto是一个分布式SQL查询引擎，用于大数据，为查询和分析大型数据集提供了强大的工具。
 
-## Danswer: 一个开源的问题答案工具
+## Quarkus: 超音速亚原子级Java
 
-* 创建周期：295 天
-* 开发语言：Python, TypeScript
-* 协议类型：MIT License
-* Star数量：6943 个
-* Fork数量：746 次
-* 关注人数：6943 人
-* 贡献人数：45 人
-* Open Issues数量：129 个
-* Github地址：https://github.com/danswer-ai/danswer.git
-* 项目首页: https://docs.danswer.dev/
+* 创建周期：2023 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：12743 个
+* Fork数量：2460 次
+* 关注人数：12743 人
+* 贡献人数：391 人
+* Open Issues数量：2507 个
+* Github地址：https://github.com/quarkusio/quarkus.git
+* 项目首页: https://quarkus.io
 
 
-![](/images/danswer-ai-danswer-0.png)
+Quarkus是一个开源的Java框架，旨在实现超音速和亚原子级，为开发Java应用程序提供轻量且高性能的平台。
 
-Danswer是一个开源工具，允许用户提出问题并获得私人来源支持的答案。它可以连接到诸如Slack、GitHub和Confluence等各种工具。Danswer的部署非常简单，可以在本地运行，也可以通过单个docker compose命令部署在虚拟机上。它还内置了对Kubernetes的部署支持，并提供相关文件供参考。
+## PlantUML: 从文本生成UML图的开源工具
 
-## GitButler: 允许多分支工作的灵活git客户端
-
-* 创建周期：379 天
-* 开发语言：TypeScript, Rust
+* 创建周期：4852 天
+* 开发语言：Java
 * 协议类型：Other
-* Star数量：2169 个
-* Fork数量：87 次
-* 关注人数：2169 人
-* 贡献人数：15 人
-* Open Issues数量：59 个
-* Github地址：https://github.com/gitbutlerapp/gitbutler.git
-* 项目首页: https://gitbutler.com
+* Star数量：9237 个
+* Fork数量：854 次
+* 关注人数：9237 人
+* 贡献人数：71 人
+* Open Issues数量：451 个
+* Github地址：https://github.com/plantuml/plantuml.git
+* 项目首页: https://plantuml.com
 
 
-![](/images/gitbutlerapp-gitbutler-0.png)
+PlantUML是一个开源工具，允许用户从文本描述中生成UML图。它不受log4j漏洞的影响。
 
-GitButler是一个git客户端，允许同时在多个分支上工作，将文件更改组织到单独的分支中，并将分支单独推送到远程或创建拉取请求。
+## DataHub: 现代数据堆栈的元数据平台
 
-## ZLUDA：在AMD GPU上运行CUDA应用程序的开源项目
-
-* 创建周期：1503 天
-* 开发语言：Rust
+* 创建周期：3012 天
+* 开发语言：Java, Python
 * 协议类型：Apache License 2.0
-* Star数量：4172 个
-* Fork数量：181 次
-* 关注人数：4172 人
-* 贡献人数：8 人
-* Open Issues数量：29 个
-* Github地址：https://github.com/vosen/ZLUDA.git
+* Star数量：8959 个
+* Fork数量：2623 次
+* 关注人数：8959 人
+* 贡献人数：424 人
+* Open Issues数量：188 个
+* Github地址：https://github.com/datahub-project/datahub.git
+* 项目首页: https://datahubproject.io
 
 
-ZLUDA是一个开源项目，它可以在AMD GPU上以接近原生性能运行未经修改的CUDA应用程序。目前处于alpha质量阶段，但已确认可以与各种原生CUDA应用程序一起使用，如Geekbench、3DF Zephyr、Blender等。
+![](/images/datahub-project-datahub-0.png)
 
-## 稳定级联
+DataHub是一个为现代数据堆栈设计的开源元数据平台。
 
-* 创建周期：22 天
-* 开发语言：Jupyter Notebook
-* 协议类型：MIT License
-* Star数量：2623 个
-* Fork数量：142 次
-* 关注人数：2623 人
-* 贡献人数：3 人
-* Open Issues数量：37 个
-* Github地址：https://github.com/Stability-AI/StableCascade.git
+## Kafdrop - Kafka Web UI工具
 
-
-Stable Cascade是一个开源项目，提供基于Würstchen架构的训练和推断脚本，以及各种模型。它实现了高达42的压缩因子，允许将1024x1024的图像编码为24x24，同时保持清晰的重建。该模型旨在提高效率，从而实现更快的推断和更便宜的训练。它还支持已知的扩展，如微调、LoRA、ControlNet和IP-Adapter，并在视觉和评估方面展现了令人印象深刻的结果。
-
-## AgentKit: 基于LangChain的代理应用程序快速构建工具包
-
-* 创建周期：21 天
-* 开发语言：TypeScript, Python
-* 协议类型：MIT License
-* Star数量：550 个
-* Fork数量：56 次
-* 关注人数：550 人
-* 贡献人数：3 人
-* Open Issues数量：3 个
-* Github地址：https://github.com/BCG-X-Official/agentkit.git
-* 项目首页: https://agentkit.infra.x.bcg.com/
+* 创建周期：1726 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：5043 个
+* Fork数量：786 次
+* 关注人数：5043 人
+* 贡献人数：65 人
+* Open Issues数量：42 个
+* Github地址：https://github.com/obsidiandynamics/kafdrop.git
 
 
-AgentKit是由BCG X开发的基于LangChain的入门套件，用于构建代理程序。它允许开发人员快速尝试使用美观的用户界面构建受限代理架构，并构建可扩展到生产级MVP的全栈基于聊天的代理程序。该工具包提供的优势包括快速构建高质量的代理应用程序，为代理设计的灵活的响应式UI/UX，专注于可靠性，并设置为可扩展，具有现成的队列管理、认证、缓存和监控。
+Kafdrop是一个Kafka Web UI工具，提供有关代理、主题、分区、消费者的信息，并允许用户查看消息。它是一个基于Spring Boot构建的轻量级应用程序，支持SASL和TLS安全代理。该项目是Kafdrop 2.x的重启版本，更新到Java 17+、Kafka 2.x、Helm和Kubernetes。
 
-## Mario Kart 3.js - JavaScript/WebGL 马里奥卡丁车
+## OpenPDF: 免费的Java PDF文件库
 
-* 创建周期：24 天
-* 开发语言：JavaScript
-* 协议类型：MIT License
-* Star数量：607 个
-* Fork数量：69 次
-* 关注人数：607 人
-* 贡献人数：3 人
-* Open Issues数量：4 个
-* Github地址：https://github.com/Lunakepio/Mario-Kart-3.js.git
-* 项目首页: https://mario-kart-3-js.vercel.app
+* 创建周期：2776 天
+* 开发语言：Java
+* 协议类型：Other
+* Star数量：3082 个
+* Fork数量：534 次
+* 关注人数：3082 人
+* 贡献人数：113 人
+* Open Issues数量：115 个
+* Github地址：https://github.com/LibrePDF/OpenPDF.git
 
 
-Mario Kart 3.js是一个旨在使用JavaScript和WebGL重新创建马里奥卡丁车游戏的开源项目。尽管项目仍在进行中，但大约已完成了50%的工作。这是一项耗时的工作，但开发人员鼓励用户享受到目前为止所取得的进展。
+OpenPDF是一个免费的Java库，用于创建和编辑PDF文件，采用LGPL和MPL开源许可证。它基于iText的一个分支，并欢迎其他开发人员通过在其GitHub存储库上提交拉取请求和错误报告来进行贡献。
+
+## iMoutai 应用: 自动预约与Docker一键部署
+
+* 创建周期：189 天
+* 开发语言：Java, Vue
+* 协议类型：Apache License 2.0
+* Star数量：1097 个
+* Fork数量：321 次
+* 关注人数：1097 人
+* 贡献人数：7 人
+* Open Issues数量：25 个
+* Github地址：https://github.com/oddfar/campus-imaotai.git
+* 项目首页: https://oddfar.github.io/campus-doc/campus-imaotai
+
+
+![](/images/oddfar-campus-imaotai-0.png)
+
+iMoutai应用是一个开源项目，允许自动每日预约，并支持使用Docker进行一键部署。
+
+## HeliBoard: 隐私保护和可定制的开源键盘
+
+* 创建周期：709 天
+* 开发语言：Java, C++
+* 协议类型：Apache License 2.0
+* Star数量：768 个
+* Fork数量：27 次
+* 关注人数：768 人
+* 贡献人数：71 人
+* Open Issues数量：93 个
+* Github地址：https://github.com/Helium314/HeliBoard.git
+
+
+HeliBoard是一个注重隐私保护和可定制的开源键盘，基于AOSP/OpenBoard。它不需要互联网权限，因此可以完全离线运行。
+
+## 协作和共享代码的开发工具
+
+* 创建周期：12 天
+* 开发语言：Java
+* 协议类型：GNU General Public License v3.0
+* Star数量：255 个
+* Fork数量：7 次
+* 关注人数：255 人
+* 贡献人数：312 人
+* Open Issues数量：5 个
+* Github地址：https://github.com/polymorphicshade/Tubular.git
+
+
+这个开源项目是一个供开发人员协作和共享代码的工具。它提供了一个版本控制、问题跟踪和持续集成的平台。该项目旨在促进高效有组织的软件开发。
 
