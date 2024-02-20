@@ -1,32 +1,32 @@
 ---
-title: Github 2024-02-21 开源项目日报 Top10
-date: 2024-02-21T07:01:28+08:00
+title: Github 2024-02-21 C开源项目日报 Top10
+date: 2024-02-21T07:11:19+08:00
 slug: github-trendings-today-20240221
 author: 老孙正经胡说
-image: /images/xtekky-gpt4free-0.png
+image: /images/lvgl-lvgl-0.png
 tags:
   - github
   - trendings
   - 数量
   - 人数
   - 人
-  - 项目
-  - 语言
-  - 开发
-  - 类型
   - 和
-  - 模型
+  - 项目
+  - 开发
+  - 语言
   - 创建
   - 周期
-  - 协议
   - 关注
   - 贡献
   - 地址
+  - 提供
+  - 协议
+  - 类型
   - 是
-  - 视频
-  - 进行
-  - 中
-  - 用户
+  - 开源
+  - 支持
+  - 联网
+  - 可
 
 categories:
 
@@ -38,154 +38,168 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 8 |
-| 非开发语言项目 | 1 |
-| TypeScript项目 | 1 |
+| C项目 | 10 |
 
-## gpt4free 语言模型集合改进计划
+## Lean的LEDE源码：为国产龙芯LOONGSON SoC loongarch64/飞腾Phytium腾锐2000系列架构添加支持
 
-* 创建周期：300 天
-* 开发语言：Python
+* 创建周期：2338 天
+* 开发语言：C
+* 协议类型：Other
+* Star数量：28149 个
+* Fork数量：19764 次
+* 关注人数：28149 人
+* 贡献人数：420 人
+* Open Issues数量：639 个
+* Github地址：https://github.com/coolsnowwolf/lede.git
+
+
+欢迎来到 Lean 的 LEDE 源码仓库，为国产龙芯 LOONGSON SoC loongarch64 / 飞腾 Phytium 腾锐2000 系列架构添加支持
+
+## TDengine: 适用于物联网和工业物联网的高性能时序数据库
+
+* 创建周期：1686 天
+* 开发语言：C
+* 协议类型：GNU Affero General Public License v3.0
+* Star数量：22568 个
+* Fork数量：4808 次
+* 关注人数：22568 人
+* 贡献人数：171 人
+* Open Issues数量：1235 个
+* Github地址：https://github.com/taosdata/TDengine.git
+* 项目首页: https://tdengine.com
+
+
+TDengine是一个高性能的开源时序数据库，专为物联网、连接车辆、工业物联网和DevOps而设计。
+
+## 我的电视 - 安卓电视直播软件
+
+* 创建周期：40 天
+* 开发语言：C
+* Star数量：649 个
+* Fork数量：124 次
+* 关注人数：649 人
+* 贡献人数：1 人
+* Open Issues数量：23 个
+* Github地址：https://github.com/lizongying/my-tv.git
+
+
+我的电视是一个开源的安卓电视直播应用，内置了直播源。
+
+## LVGL：开源嵌入式图形库
+
+* 创建周期：2814 天
+* 开发语言：C
+* 协议类型：MIT License
+* Star数量：14414 个
+* Fork数量：2892 次
+* 关注人数：14414 人
+* 贡献人数：386 人
+* Open Issues数量：105 个
+* Github地址：https://github.com/lvgl/lvgl.git
+* 项目首页: https://lvgl.io
+
+
+![](/images/lvgl-lvgl-0.png)
+
+LVGL是一种流行的开源嵌入式图形库，得到Arm、STM32、NXP等行业领先供应商和项目的支持。它提供了一个功能丰富的环境，用于创建现代和美观的图形用户界面，集成所需的资源最少。此外，LVGL团队为GUI项目提供图形设计、UI实现和咨询服务。
+
+## Zephyr 项目 - 可扩展的实时操作系统（RTOS）
+
+* 创建周期：2827 天
+* 开发语言：C
+* 协议类型：Apache License 2.0
+* Star数量：9212 个
+* Fork数量：5703 次
+* 关注人数：9212 人
+* 贡献人数：391 人
+* Open Issues数量：2388 个
+* Github地址：https://github.com/zephyrproject-rtos/zephyr.git
+* 项目首页: https://docs.zephyrproject.org
+
+
+Zephyr 项目是一个开源的、可扩展的实时操作系统（RTOS），专为资源受限设备设计，支持多种硬件架构，并且专注于安全性。它适用于从简单的嵌入式传感器到复杂的物联网无线网关等各种系统。
+
+## darktable - 开源摄影工作流应用程序和原始开发工具
+
+* 创建周期：4354 天
+* 开发语言：C
 * 协议类型：GNU General Public License v3.0
-* Star数量：51768 个
-* Fork数量：12716 次
-* 关注人数：51768 人
-* 贡献人数：168 人
-* Open Issues数量：107 个
-* Github地址：https://github.com/xtekky/gpt4free.git
-* 项目首页: https://discord.gg/XfybzPXPH5
+* Star数量：8624 个
+* Fork数量：1079 次
+* 关注人数：8624 人
+* 贡献人数：373 人
+* Open Issues数量：434 个
+* Github地址：https://github.com/darktable-org/darktable.git
+* 项目首页: https://www.darktable.org
 
 
-![](/images/xtekky-gpt4free-0.png)
+![](/images/darktable-org-darktable-0.png)
 
-官方 gpt4free 仓库是由 @hlohaus 维护，@xtekky 编写的强大语言模型集合。该项目欢迎用户反馈以进行改进，并提供了一个表单供用户提交建议。该项目旨在进行各种改进，如增强文档、提供视频教程、更新提供者状态列表、改进 Bing 包装器，并增强错误处理和兼容性。
+darktable是一个开源的摄影工作流应用程序和原始开发工具。它为摄影师提供了虚拟的灯桌和暗房，可以管理数据库中的数字底片，通过可缩放的灯桌查看它们，并能够开发原始图像，增强它们并将其导出到本地或远程存储。
 
-## 社交媒体账户搜索工具
+## Wazuh - 开源安全平台：统一XDR和SIEM保护
 
-* 创建周期：1885 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：48048 个
-* Fork数量：6068 次
-* 关注人数：48048 人
-* 贡献人数：192 人
-* Open Issues数量：204 个
-* Github地址：https://github.com/sherlock-project/sherlock.git
-* 项目首页: http://sherlock-project.github.io
-
-
-![](/images/sherlock-project-sherlock-0.png)
-
-这个开源项目允许用户在各种社交网络上使用特定的用户名搜索社交媒体账户。它提供了一种便捷的方式来追踪和定位与特定用户名相关的社交媒体资料。
-
-## Lobe Chat - 开源高性能AI聊天框架
-
-* 创建周期：276 天
-* 开发语言：TypeScript
-* 协议类型：MIT License
-* Star数量：18033 个
-* Fork数量：3733 次
-* 关注人数：18033 人
-* 贡献人数：61 人
-* Open Issues数量：147 个
-* Github地址：https://github.com/lobehub/lobe-chat.git
-* 项目首页: https://chat-preview.lobehub.com
-
-
-![](/images/lobehub-lobe-chat-0.png)
-
-Lobe Chat是一个开源的、高性能的AI聊天框架，支持一键免费部署私人ChatGPT/Gemini/Local LLM应用。
-
-## minbpe：LLM标记的字节对编码算法
-
-* 创建周期：4 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：4034 个
-* Fork数量：248 次
-* 关注人数：4034 人
-* 贡献人数：6 人
-* Open Issues数量：4 个
-* Github地址：https://github.com/karpathy/minbpe.git
-
-
-项目'minbpe'提供了常用于LLM标记的字节对编码（BPE）算法的最小清晰代码。它包括两个标记器'BasicTokenizer'和'RegexTokenizer'，以及一个'RegexTokenizer'，它复制了GPT-4的标记化。该项目还包括一个脚本'train.py'，用于在输入文本上训练标记器并将词汇保存到磁盘以进行可视化。
-
-## Magika: 深度学习文件类型检测工具
-
-* 创建周期：181 天
-* 开发语言：Python
-* 协议类型：Apache License 2.0
-* Star数量：2812 个
-* Fork数量：126 次
-* 关注人数：2812 人
-* 贡献人数：5 人
-* Open Issues数量：38 个
-* Github地址：https://github.com/google/magika.git
-* 项目首页: https://google.github.io/magika/
-
-
-Magika是一种AI驱动的文件类型检测工具，利用深度学习准确检测文件类型。它采用自定义的、高度优化的Keras模型，可以在毫秒内精确识别文件。在超过100万个文件和100种内容类型的评估中，它实现了超过99%的精度和召回率，并且被Google大规模使用以提高用户安全性。
-
-## 大世界模型（LWM）
-
-* 创建周期：10 天
-* 开发语言：Python
-* 协议类型：Apache License 2.0
-* Star数量：1282 个
-* Fork数量：68 次
-* 关注人数：1282 人
-* 贡献人数：3 人
-* Open Issues数量：14 个
-* Github地址：https://github.com/LargeWorldModel/LWM.git
-
-
-Large World Model (LWM) 是一个通用的大上下文多模态自回归模型。它是使用RingAttention在大量多样化的长视频和书籍数据集上训练的，可以进行语言、图像和视频的理解和生成。
-
-## 具有Transformer的可扩展扩散模型（DiT）的官方PyTorch实现
-
-* 创建周期：431 天
-* 开发语言：Python
+* 创建周期：3116 天
+* 开发语言：C
 * 协议类型：Other
-* Star数量：2682 个
-* Fork数量：210 次
-* 关注人数：2682 人
-* 贡献人数：3 人
-* Open Issues数量：34 个
-* Github地址：https://github.com/facebookresearch/DiT.git
+* Star数量：8334 个
+* Fork数量：1325 次
+* 关注人数：8334 人
+* 贡献人数：223 人
+* Open Issues数量：2737 个
+* Github地址：https://github.com/wazuh/wazuh.git
+* 项目首页: https://wazuh.com/
 
 
-官方PyTorch实现的“具有Transformer的可扩展扩散模型”称为DiT。
+![](/images/wazuh-wazuh-0.png)
 
-## UFO：Windows OS交互的UI焦点代理
+Wazuh是一个开源安全平台，为端点和云工作负载提供统一的XDR和SIEM保护。它提供跨各种环境（包括本地、虚拟化、容器化和基于云的环境）的威胁预防、检测和响应能力。
 
-* 创建周期：42 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：984 个
-* Fork数量：82 次
-* 关注人数：984 人
-* 贡献人数：4 人
-* Open Issues数量：2 个
-* Github地址：https://github.com/microsoft/UFO.git
+## LIBPCAP 1.x.y: Tcpdump Group的系统独立用户级数据包捕获接口
 
-
-UFO是一个UI焦点双代理框架，旨在通过无缝地在单个或跨多个应用程序中导航和操作来满足Windows OS上的用户请求。
-
-## V-JEPA: 视频联合嵌入预测架构
-
-* 创建周期：9 天
-* 开发语言：Python
+* 创建周期：3965 天
+* 开发语言：C
 * 协议类型：Other
-* Star数量：1162 个
-* Fork数量：85 次
-* 关注人数：1162 人
-* 贡献人数：4 人
-* Open Issues数量：7 个
-* Github地址：https://github.com/facebookresearch/jepa.git
+* Star数量：2459 个
+* Fork数量：819 次
+* 关注人数：2459 人
+* 贡献人数：133 人
+* Open Issues数量：121 个
+* Github地址：https://github.com/the-tcpdump-group/libpcap.git
+* 项目首页: https://www.tcpdump.org/
 
 
-![](/images/facebookresearch-jepa-0.png)
+LIBPCAP 1.x.y由Tcpdump Group提供了一个系统独立的用户级数据包捕获接口，为低级网络监控提供了一个可移植的框架。它通过创建一个系统独立的API来简化移植工作，并减轻了每个应用程序中需要几个系统相关的数据包捕获模块的需求，从而促进了网络统计信息收集、安全监控和网络调试。源代码可在GitHub上获得，并且它以前是由劳伦斯伯克利国家实验室网络研究组提供的。
 
-V-JEPA是视频联合嵌入预测架构的官方PyTorch代码库，是一种从视频中进行自监督学习的视觉表示方法。这些模型通过 passively 观看 VideoMix2M 数据集中的视频像素进行训练，并产生多功能的视觉表示，在下游视频和图像任务中表现良好，而无需调整模型参数。
+## 微软研究软件无线电（Sora）
+
+* 创建周期：3269 天
+* 开发语言：C
+* 协议类型：Other
+* Star数量：336 个
+* Fork数量：132 次
+* 关注人数：336 人
+* 贡献人数：3 人
+* Open Issues数量：0 个
+* Github地址：https://github.com/microsoft/Sora.git
+
+
+微软研究软件无线电（Sora）是一个基于主机PC中的通用多核CPU的可编程软件无线电平台。它允许研究人员和工程师以最小的工作量快速原型化新的高速无线物理和媒体访问控制层。该SDK提供了用于基带编程的BRICK模型，用户模式802.11a/b/n样本以及新的调试绘图工具，并完全支持Windows 10。
+
+## UAC-BOF-Bonanza: UAC绕过技术集合
+
+* 创建周期：5 天
+* 开发语言：C
+* 协议类型：GNU General Public License v3.0
+* Star数量：214 个
+* Fork数量：32 次
+* 关注人数：214 人
+* 贡献人数：1 人
+* Open Issues数量：0 个
+* Github地址：https://github.com/icyguider/UAC-BOF-Bonanza.git
+
+
+![](/images/icyguider-uac-bof-bonanza-0.png)
+
+UAC-BOF-Bonanza是一个存储库，其中包含了一系列将公开的UAC绕过技术武装成BOF的技术。它提供了一个集成所有技术的单个模块，可用于Havoc C2框架，以及用于Sliver的extension.json文件。该存储库还包括每个UAC绕过的独立实现，在运行make命令时会自动构建。
 
