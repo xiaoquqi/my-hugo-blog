@@ -1,9 +1,9 @@
 ---
-title: Github 2024-02-23 开源项目日报 Top10
-date: 2024-02-23T07:01:20+08:00
+title: Github 2024-02-23 Java开源项目日报 Top9
+date: 2024-02-23T07:11:43+08:00
 slug: github-trendings-today-20240223
 author: 老孙正经胡说
-image: /images/codecrafters-io-build-your-own-x-0.png
+image: /images/snailclimb-javaguide-0.png
 tags:
   - github
   - trendings
@@ -11,22 +11,22 @@ tags:
   - 项目
   - 人数
   - 人
-  - 开发
   - 和
+  - 是
+  - 开发
   - 语言
   - 创建
-  - 是
-  - 周期
   - 关注
-  - 贡献
   - 地址
+  - 周期
   - 协议
-  - 开源
   - 类型
-  - 安全
-  - 内存
-  - 中
-  - 技术
+  - 贡献
+  - 开源
+  - 数据
+  - 工作
+  - 流
+  - 分析
 
 categories:
 
@@ -34,156 +34,160 @@ draft: false
 ---
 
 
-根据Github Trendings的统计，今日(2024-02-23统计)共有10个项目上榜。根据开发语言中项目的数量，汇总情况如下：
+根据Github Trendings的统计，今日(2024-02-23统计)共有9个项目上榜。根据开发语言中项目的数量，汇总情况如下：
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| 非开发语言项目 | 4 |
-| Python项目 | 3 |
-| TypeScript项目 | 1 |
-| HTML项目 | 1 |
-| Dart项目 | 1 |
-| Rust项目 | 1 |
+| Java项目 | 8 |
+| 非开发语言项目 | 1 |
+| C++项目 | 1 |
 
-## 从零开始构建你喜爱的技术
+## JavaGuide - Java 程序员学习和面试指南
 
-* 创建周期：2086 天
-* Star数量：240928 个
-* Fork数量：23078 次
-* 关注人数：240928 人
-* 贡献人数：112 人
-* Open Issues数量：314 个
-* Github地址：https://github.com/codecrafters-io/build-your-own-x.git
-* 项目首页: https://codecrafters.io
-
-
-![](/images/codecrafters-io-build-your-own-x-0.png)
-
-这个存储库是一系列逐步指南的汇编，可以从头开始重新创建各种技术，例如3D渲染器、区块链、游戏、操作系统等。它旨在帮助个人通过理解和构建自己喜欢的技术来掌握编程。
-
-## 专业编程 - 软件工程师的学习资源集合
-
-* 创建周期：3029 天
-* 开发语言：Python, HTML
-* 协议类型：MIT License
-* Star数量：38418 个
-* Fork数量：2940 次
-* 关注人数：38418 人
-* 贡献人数：27 人
-* Open Issues数量：14 个
-* Github地址：https://github.com/charlax/professional-programming.git
-
-
-专业编程是一套针对软件工程师的学习资源集合，涵盖了从编程原则到个人生产力和工作/生活平衡等广泛主题。其目标是提供经典和鼓舞人心的资源，使开发人员更加熟练。
-
-## Langchain-Chatchat（原Langchain-ChatGLM）- 本地知识库问答应用
-
-* 创建周期：328 天
-* 开发语言：Python
+* 创建周期：2118 天
+* 开发语言：Java
 * 协议类型：Apache License 2.0
-* Star数量：22635 个
-* Fork数量：3949 次
-* 关注人数：22635 人
-* 贡献人数：116 人
-* Open Issues数量：46 个
-* Github地址：https://github.com/chatchat-space/Langchain-Chatchat.git
+* Star数量：140773 个
+* Fork数量：44922 次
+* 关注人数：140773 人
+* 贡献人数：414 人
+* Open Issues数量：58 个
+* Github地址：https://github.com/Snailclimb/JavaGuide.git
+* 项目首页: https://javaguide.cn
 
 
-Langchain-Chatchat（原Langchain-ChatGLM）是一个基于大型语言模型（如ChatGLM）和应用框架（如Langchain）实现的开源、可在本地部署的检索增强生成（RAG）大型模型知识库项目。
+![](/images/snailclimb-javaguide-0.png)
 
-## Lobe Chat - 开源高性能AI聊天框架
+JavaGuide 是一份涵盖大部分 Java 程序员所需要掌握的核心知识的学习和面试指南，提供面试准备、知识星球和使用建议等内容。该项目的 Github 地址为 https://github.com/Snailclimb/JavaGuide 。
 
-* 创建周期：276 天
-* 开发语言：TypeScript
+## 《Hello 算法》：动画图解、一键运行的数据结构与算法教程
+
+* 创建周期：476 天
+* 协议类型：Other
+* Star数量：63556 个
+* Fork数量：7731 次
+* 关注人数：63556 人
+* 贡献人数：137 人
+* Open Issues数量：20 个
+* Github地址：https://github.com/krahets/hello-algo.git
+* 项目首页: https://hello-algo.com
+
+
+![](/images/krahets-hello-algo-0.png)
+
+《Hello 算法》是一本开源的、面向初学者的关于数据结构与算法的教程，采用动画图解和可运行的代码示例，支持多种编程语言。该项目旨在提供清晰易懂的内容，学习曲线平滑，引导初学者探索数据结构与算法的知识地图。鼓励读者互相学习，通常会在两天内回复问题和评论。
+
+## XXL-JOB：分布式任务调度框架
+
+* 创建周期：3009 天
+* 开发语言：Java
+* 协议类型：GNU General Public License v3.0
+* Star数量：26112 个
+* Fork数量：10529 次
+* 关注人数：26112 人
+* 贡献人数：57 人
+* Open Issues数量：1318 个
+* Github地址：https://github.com/xuxueli/xxl-job.git
+* 项目首页: http://www.xuxueli.com/xxl-job/
+
+
+XXL-JOB是一个分布式任务调度框架，其核心设计目标是快速开发、简单学习、轻量级、易扩展。它已经是开源的，并且在许多公司的生产环境中被使用，提供即插即用的解决方案。
+
+## RuoYi-Vue Pro: 基于Spring Boot和Vue的开源后台管理系统+微信小程序
+
+* 创建周期：1125 天
+* 开发语言：Java
 * 协议类型：MIT License
-* Star数量：18033 个
-* Fork数量：3733 次
-* 关注人数：18033 人
-* 贡献人数：61 人
-* Open Issues数量：147 个
-* Github地址：https://github.com/lobehub/lobe-chat.git
-* 项目首页: https://chat-preview.lobehub.com
+* Star数量：22204 个
+* Fork数量：4662 次
+* 关注人数：22204 人
+* 贡献人数：191 人
+* Open Issues数量：11 个
+* Github地址：https://github.com/YunaiV/ruoyi-vue-pro.git
+* 项目首页: https://doc.iocoder.cn/
 
 
-![](/images/lobehub-lobe-chat-0.png)
+RuoYi-Vue Pro 是 RuoYi-Vue 项目的新版本，它是基于 Spring Boot + MyBatis Plus + Vue & Element 实现的后台管理系统 + 微信小程序。它支持 RBAC 动态权限、数据权限、SaaS 多租户、Flowable 工作流、第三方登录、支付、短信、电子商务、CRM、ERP 等功能。该项目是开源的，作者欢迎大家给予关注和支持。
 
-Lobe Chat是一个开源的、高性能的AI聊天框架，支持一键免费部署私人ChatGPT/Gemini/Local LLM应用。
+## ruoyi-vue-pro: 优化重构的全新 Cloud 版本
 
-## Hiddify-Next: 多平台自动代理客户端
-
-* 创建周期：249 天
-* 开发语言：Dart
-* 协议类型：Other
-* Star数量：3426 个
-* Fork数量：232 次
-* 关注人数：3426 人
-* 贡献人数：20 人
-* Open Issues数量：107 个
-* Github地址：https://github.com/hiddify/hiddify-next.git
-* 项目首页: https://hiddify.com
+* 创建周期：1758 天
+* 开发语言：Java
+* 协议类型：MIT License
+* Star数量：14815 个
+* Fork数量：3499 次
+* 关注人数：14815 人
+* 贡献人数：45 人
+* Open Issues数量：2 个
+* Github地址：https://github.com/YunaiV/yudao-cloud.git
+* 项目首页: https://cloud.iocoder.cn
 
 
-![](/images/hiddify-hiddify-next-0.png)
+ruoyi-vue-pro 是一个全新的 Cloud 版本，优化重构了所有功能。它是基于 Spring Cloud Alibaba + MyBatis Plus + Vue & Element 实现的后台管理系统 + 用户小程序，支持 RBAC 动态权限、多租户、数据权限、工作流、第三方登录、支付、短信、商城、CRM、ERP 等功能。该项目是开源的，作者的动力来自于 ⭐️ Star ⭐️。
 
-Hiddify-Next是一个支持Sing-box、X-ray、TUIC、Hysteria、Reality、Trojan、SSH等多种协议的多平台自动代理客户端。它是一个开源、安全且无广告的解决方案。
+## Apache DolphinScheduler: 低代码敏捷数据编排平台
 
-## cve-rs: 100%安全的Rust内存漏洞引入
-
-* 创建周期：7 天
-* 开发语言：Rust
-* 协议类型：Other
-* Star数量：2092 个
-* Fork数量：45 次
-* 关注人数：2092 人
-* 贡献人数：6 人
-* Open Issues数量：8 个
-* Github地址：https://github.com/Speykious/cve-rs.git
-
-
-![](/images/speykious-cve-rs-0.png)
-
-cve-rs 是一个使用 100% 安全的 Rust 编写的开源项目，允许以内存安全的方式引入常见的内存漏洞到 Rust 程序中。它旨在提供一种在不损害程序安全性的情况下破坏程序内存的方法。该项目致力于通过在整个代码库中使用 #![deny(unsafe_code)] 并实现内存漏洞和某些 Rust 函数的安全重新实现来确保内存安全。
-
-## 科技公司系统设计案例研究
-
-* 创建周期：8 天
-* Star数量：1290 个
-* Fork数量：93 次
-* 关注人数：1290 人
-* 贡献人数：1 人
-* Open Issues数量：0 个
-* Github地址：https://github.com/systemdesign42/system-design.git
+* 创建周期：1820 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：11701 个
+* Fork数量：4298 次
+* 关注人数：11701 人
+* 贡献人数：362 人
+* Open Issues数量：1007 个
+* Github地址：https://github.com/apache/dolphinscheduler.git
+* 项目首页: https://dolphinscheduler.apache.org/
 
 
-![](/images/systemdesign42-system-design-0.png)
+Apache DolphinScheduler是一种现代数据编排平台，可以使用低代码敏捷地创建高性能工作流。
 
-这个开源项目旨在汇编各种科技公司的案例研究，以及它们处理大规模用户需求的系统设计策略。这些案例研究涵盖了广泛的主题，如实时协作、视频流媒体、微服务和可扩展性。其目标是提供一个宝贵的资源，以了解并从成功的科技公司的经验中学习。
+## StarRocks: 下一代实时分析数据库
 
-## OOTDiffusion: Outfitting Fusion基于潜在扩散可控虚拟试穿
-
-* 创建周期：30 天
-* 开发语言：Python
-* 协议类型：Other
-* Star数量：1262 个
-* Fork数量：133 次
-* 关注人数：1262 人
-* 贡献人数：1 人
-* Open Issues数量：23 个
-* Github地址：https://github.com/levihsu/OOTDiffusion.git
-
-
-OOTDiffusion是Outfitting Fusion基于潜在扩散可控虚拟试穿的官方实现。该项目由来自小i研究的徐宇豪、顾涛、陈伟峰和陈成才开发。实现包括在VITON-HD（768 * 1024）上训练的模型检查点，并计划将在未来发布在Dress Code（768 * 1024）上训练的检查点。该项目还在预处理阶段利用了humanparsing和openpose的检查点，并要求将clip-vit-large-patch14下载到checkpoints文件夹中。
-
-## 独立开发者出海技术栈和工具
-
-* 创建周期：3 天
-* Star数量：1032 个
-* Fork数量：71 次
-* 关注人数：1032 人
-* 贡献人数：3 人
-* Open Issues数量：0 个
-* Github地址：https://github.com/weijunext/indie-hacker-tools.git
+* 创建周期：902 天
+* 开发语言：Java, C++
+* 协议类型：Apache License 2.0
+* Star数量：7342 个
+* Fork数量：1523 次
+* 关注人数：7342 人
+* 贡献人数：343 人
+* Open Issues数量：1372 个
+* Github地址：https://github.com/StarRocks/starrocks.git
+* 项目首页: https://starrocks.io
 
 
-这个开源项目收录了独立开发者出海所需的技术栈和工具，旨在帮助他们提升开发效率、降低成本，同时选择市场上流行的工具。该仓库持续整理中，并欢迎开发者提供pr和issues进行更新。
+![](/images/starrocks-starrocks-0.png)
+
+StarRocks是一种面向完整分析场景的下一代次秒级MPP OLAP数据库，包括多维分析、实时分析和即席查询。它荣获InfoWorld 2023年BOSSIE奖，被评为最佳开源软件。StarRocks旨在使数据密集的实时分析变得快速简便，查询速度比其他流行解决方案快5到10倍。它能够在更新历史记录的同时进行良好的实时分析，并能轻松地利用数据湖中的历史数据增强实时分析。StarRocks允许用户消除非规范化表，以获得更好的性能和灵活性。
+
+## Camunda平台7 - 灵活的BPMN和DMN工作流框架
+
+* 创建周期：4068 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：3810 个
+* Fork数量：1458 次
+* 关注人数：3810 人
+* 贡献人数：210 人
+* Open Issues数量：868 个
+* Github地址：https://github.com/camunda/camunda-bpm-platform.git
+* 项目首页: https://camunda.com/
+
+
+Camunda平台7是一个开源的灵活框架，用于BPMN和DMN的工作流和流程自动化。它与Quarkus、Spring、Spring Boot和CDI集成，其核心是运行在Java虚拟机内部的本地BPMN 2.0流程引擎。它可以嵌入到任何Java应用程序和任何运行时容器中，并与Java EE 6和Spring框架完美匹配。此外，它还提供了一整套用于人工工作流管理、运营和监控的工具。
+
+## 十亿行挑战 -- Java实现文本文件数据聚合
+
+* 创建周期：18 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：2251 个
+* Fork数量：858 次
+* 关注人数：2251 人
+* 贡献人数：114 人
+* Open Issues数量：37 个
+* Github地址：https://github.com/gunnarmorling/1brc.git
+* 项目首页: https://www.morling.dev/blog/one-billion-row-challenge/
+
+
+十亿行挑战是一个开源项目，使用Java探索从文本文件中聚合十亿行数据。鼓励参与者优化他们的Java实现，以实现对一系列气象站温度值的最快聚合。
 
