@@ -1,32 +1,32 @@
 ---
-title: Github 2024-02-24 开源项目日报 Top10
-date: 2024-02-24T07:01:12+08:00
+title: Github 2024-02-24 Rust开源项目日报 Top10
+date: 2024-02-24T07:11:18+08:00
 slug: github-trendings-today-20240224
 author: 老孙正经胡说
-image: /images/jackfrued-python-100-days-0.png
+image: /images/tw93-pake-0.png
 tags:
   - github
   - trendings
   - 数量
   - 人
-  - 项目
   - 人数
+  - 项目
   - 开发
-  - 和
-  - 是
   - 语言
+  - 协议
+  - 是
   - 创建
-  - 模型
   - 周期
+  - 类型
   - 关注
   - 贡献
   - 地址
-  - 协议
-  - 类型
-  - 视频
-  - 实现
-  - 并
-  - C++
+  - 和
+  - 中
+  - 提供
+  - 使用
+  - 开源
+  - 内存
 
 categories:
 
@@ -38,168 +38,172 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 5 |
-| TypeScript项目 | 2 |
-| C++项目 | 1 |
-| Rust项目 | 1 |
-| JavaScript项目 | 1 |
-| HTML项目 | 1 |
-| Jupyter Notebook项目 | 1 |
+| Rust项目 | 10 |
+| Fluent项目 | 1 |
 
-## Python - 100天从新手到大师
+## Fuel客户端：Rust全节点实现
 
-* 创建周期：2186 天
-* 开发语言：Python, HTML, Jupyter Notebook
-* Star数量：146991 个
-* Fork数量：50759 次
-* 关注人数：146991 人
-* 贡献人数：12 人
-* Open Issues数量：709 个
-* Github地址：https://github.com/jackfrued/Python-100-Days.git
+* 创建周期：1269 天
+* 开发语言：Rust
+* 协议类型：Other
+* Star数量：39035 个
+* Fork数量：1503 次
+* 关注人数：39035 人
+* 贡献人数：45 人
+* Open Issues数量：168 个
+* Github地址：https://github.com/FuelLabs/fuel-core.git
 
 
-![](/images/jackfrued-python-100-days-0.png)
-
-作者骆昊从项目上线到获得8w+星标以来，一直收到反馈说基础部分（前15天的内容）对新手来说是比较困难的，建议有配套视频进行讲解。最近把基础部分的内容重新制作了一个名为“Python-Core-50-Courses”
+Fuel客户端是Fuel v2协议的开源Rust全节点实现。
 
 ## Zed: 由Atom和Tree-sitter的创建者开发的高性能多人代码编辑器
 
 * 创建周期：1071 天
 * 开发语言：Rust
 * 协议类型：Other
-* Star数量：9428 个
-* Fork数量：260 次
-* 关注人数：9428 人
+* Star数量：9436 个
+* Fork数量：261 次
+* 关注人数：9436 人
 * 贡献人数：42 人
-* Open Issues数量：1187 个
+* Open Issues数量：1185 个
 * Github地址：https://github.com/zed-industries/zed.git
 * 项目首页: https://zed.dev
 
 
 Zed是由Atom和Tree-sitter的创建者开发的高性能多人代码编辑器。
 
-## Gemma：Google Gemini模型的官方PyTorch实现
+## Pake: 利用 Rust 轻松构建轻量级多端桌面应用
 
-* 创建周期：4 天
-* 开发语言：Python
-* 协议类型：Apache License 2.0
-* Star数量：2512 个
-* Fork数量：176 次
-* 关注人数：2512 人
-* 贡献人数：3 人
-* Open Issues数量：8 个
-* Github地址：https://github.com/google/gemma_pytorch.git
-* 项目首页: https://ai.google.dev/gemma
-
-
-Gemma是一系列轻量级、最先进的开放模型，是基于用于创建Google Gemini模型的研究和技术构建的。它们是文本到文本、仅解码的大型语言模型，提供英文、开放权重、预训练变种和指令调整变种。这是Gemma模型的官方PyTorch实现，提供了使用PyTorch和PyTorch/XLA的模型和推断实现，并支持在CPU、GPU和TPU上运行推断。
-
-## gemma.cpp: Google Gemma基础模型的轻量级C++推理引擎
-
-* 创建周期：11 天
-* 开发语言：C++
-* 协议类型：Apache License 2.0
-* Star数量：1905 个
-* Fork数量：118 次
-* 关注人数：1905 人
-* 贡献人数：4 人
-* Open Issues数量：15 个
-* Github地址：https://github.com/google/gemma.cpp.git
-
-
-gemma.cpp是一个轻量级的、独立的C++推理引擎，用于Google的Gemma基础模型。
-
-## OOTDiffusion: Outfitting Fusion基于潜在扩散可控虚拟试穿
-
-* 创建周期：30 天
-* 开发语言：Python
-* 协议类型：Other
-* Star数量：1262 个
-* Fork数量：133 次
-* 关注人数：1262 人
-* 贡献人数：1 人
-* Open Issues数量：23 个
-* Github地址：https://github.com/levihsu/OOTDiffusion.git
-
-
-OOTDiffusion是Outfitting Fusion基于潜在扩散可控虚拟试穿的官方实现。该项目由来自小i研究的徐宇豪、顾涛、陈伟峰和陈成才开发。实现包括在VITON-HD（768 * 1024）上训练的模型检查点，并计划将在未来发布在Dress Code（768 * 1024）上训练的检查点。该项目还在预处理阶段利用了humanparsing和openpose的检查点，并要求将clip-vit-large-patch14下载到checkpoints文件夹中。
-
-## React Strict DOM（RSD）：改善和标准化React组件开发的实验性集成
-
-* 创建周期：4 天
-* 开发语言：JavaScript
+* 创建周期：491 天
+* 开发语言：Rust
 * 协议类型：MIT License
-* Star数量：1698 个
-* Fork数量：58 次
-* 关注人数：1698 人
-* 贡献人数：4 人
-* Open Issues数量：22 个
-* Github地址：https://github.com/facebook/react-strict-dom.git
+* Star数量：20955 个
+* Fork数量：3046 次
+* 关注人数：20955 人
+* 贡献人数：27 人
+* Open Issues数量：8 个
+* Github地址：https://github.com/tw93/Pake.git
 
 
-React Strict DOM（RSD）是React DOM和StyleX的实验性集成，旨在改善和标准化Web和原生平台上样式化React组件的开发。其目标是在不影响性能、可靠性或质量的前提下提高React开发的速度和效率。RSD通过填充标准API并利用即将到来的React Native的新Web功能来支持原生平台。
+![](/images/tw93-pake-0.png)
 
-## MoneyPrinter V2: 在线赚钱自动化应用程序
+Pake 是一个开源项目，允许用户使用 Rust 将任何网页转换为桌面应用程序。它轻巧快速，并提供了一些功能，例如几乎比 Electron 包小 20 倍，内置电池包，简单易用的工具来替代旧的捆绑方法。
 
-* 创建周期：10 天
-* 开发语言：Python
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：596 个
-* Fork数量：73 次
-* 关注人数：596 人
-* 贡献人数：6 人
-* Open Issues数量：1 个
-* Github地址：https://github.com/FujiwaraChoki/MoneyPrinterV2.git
+## Atuin: 用SQLite数据库替换shell历史记录的工具
+
+* 创建周期：1238 天
+* 开发语言：Rust
+* 协议类型：MIT License
+* Star数量：16210 个
+* Fork数量：459 次
+* 关注人数：16210 人
+* 贡献人数：168 人
+* Open Issues数量：191 个
+* Github地址：https://github.com/atuinsh/atuin.git
+* 项目首页: https://atuin.sh
 
 
-MoneyPrinter V2是一个自动化在线赚钱过程的应用程序。它是原始项目的完全重写，侧重于更广泛的功能和更模块化的架构。MPV2需要Python 3.9才能有效运行。
+![](/images/atuinsh-atuin-0.png)
 
-## SoraWebui: 使用文本在线生成视频的开源项目
+Atuin是一个开源工具，它用SQLite数据库替换现有的shell历史记录，为命令提供额外的上下文信息。它还通过Atuin服务器提供可选的、完全加密的历史记录同步功能，可以在多台设备之间同步历史记录。
 
-* 创建周期：6 天
-* 开发语言：TypeScript
+## Czkawka和Krokiet: 波兰语中的简单、快速、免费应用程序
+
+* 创建周期：1271 天
+* 开发语言：Rust, Fluent
+* 协议类型：Other
+* Star数量：14787 个
+* Fork数量：442 次
+* 关注人数：14787 人
+* 贡献人数：59 人
+* Open Issues数量：360 个
+* Github地址：https://github.com/qarmin/czkawka.git
+
+
+![](/images/qarmin-czkawka-0.png)
+
+Czkawka是一个简单、快速、免费的应用程序，波兰语中称为“打嗝”，旨在从计算机中删除不必要的文件。这是一个多功能应用程序，可以查找重复文件、空文件夹和相似的图像。Krokiet与Czkawka类似，但使用了Slint前端。
+
+## Hyper：Rust 的 HTTP 库
+
+* 创建周期：3465 天
+* 开发语言：Rust
+* 协议类型：MIT License
+* Star数量：13528 个
+* Fork数量：1481 次
+* 关注人数：13528 人
+* 贡献人数：359 人
+* Open Issues数量：221 个
+* Github地址：https://github.com/hyperium/hyper.git
+* 项目首页: https://hyper.rs
+
+
+Hyper 是一个为 Rust 提供的开源 HTTP 库，为 HTTP/1 和 HTTP/2 协议提供了一种安全高效的解决方案。它具有异步设计能力，性能领先，并经过了广泛的正确性测试。该库在客户端和服务器 API 的生产中被广泛使用，并提供了入门指南。
+
+## DataFusion：Rust中的高速数据查询引擎
+
+* 创建周期：1015 天
+* 开发语言：Rust
 * 协议类型：Apache License 2.0
-* Star数量：640 个
-* Fork数量：170 次
-* 关注人数：640 人
-* 贡献人数：2 人
-* Open Issues数量：2 个
-* Github地址：https://github.com/SoraWebui/SoraWebui.git
-* 项目首页: https://sorawebui.com/
+* Star数量：4523 个
+* Fork数量：827 次
+* 关注人数：4523 人
+* 贡献人数：398 人
+* Open Issues数量：935 个
+* Github地址：https://github.com/apache/arrow-datafusion.git
+* 项目首页: https://arrow.apache.org/datafusion
 
 
-![](/images/sorawebui-sorawebui-0.png)
+DataFusion是一个高速、可扩展的查询引擎，用于在Rust中构建高质量的数据中心系统，使用Apache Arrow内存格式。它提供了SQL和Dataframe API，出色的性能，内置支持各种数据格式，广泛的定制化以及强大的社区。
 
-SoraWebui是一个开源项目，通过允许用户使用文本在线生成视频，简化了视频创作，使用了OpenAI的Sora模型，并具有易于一键部署网站的特点。
+## Loco: Rust中的个人框架
 
-## Sora AI视频生成器
-
-* 创建周期：7 天
-* 开发语言：TypeScript
+* 创建周期：109 天
+* 开发语言：Rust
 * 协议类型：Apache License 2.0
-* Star数量：384 个
-* Fork数量：120 次
-* 关注人数：384 人
-* 贡献人数：1 人
-* Open Issues数量：2 个
-* Github地址：https://github.com/all-in-aigc/sorafm.git
-* 项目首页: https://sora.fm
+* Star数量：2737 个
+* Fork数量：97 次
+* 关注人数：2737 人
+* 贡献人数：31 人
+* Open Issues数量：33 个
+* Github地址：https://github.com/loco-rs/loco.git
+* 项目首页: https://loco.rs
 
 
-Sora AI视频生成器是由Sora.FM开发的开源项目。这是一个利用人工智能生成视频的工具。
+![](/images/loco-rs-loco-0.png)
 
-## 波斯牌照识别系统（PLPR）
+Loco是一个为Rust设计的开源个人框架，适用于小型项目和创业公司，并且受Rails的强烈启发。它旨在为那些熟悉Rails和Rust的人提供熟悉的环境，同时也欢迎只熟悉Rails的Rust新手。
+
+## cve-rs: 以内存安全的方式引入常见内存漏洞的Rust项目
+
+* 创建周期：8 天
+* 开发语言：Rust
+* 协议类型：Other
+* Star数量：2325 个
+* Fork数量：71 次
+* 关注人数：2325 人
+* 贡献人数：7 人
+* Open Issues数量：5 个
+* Github地址：https://github.com/Speykious/cve-rs.git
+
+
+![](/images/speykious-cve-rs-0.png)
+
+cve-rs是一个使用100%安全的Rust编写的开源项目，允许用户以内存安全的方式在Rust程序中引入常见的内存漏洞。
+
+## Quary: 使用Rust编写的快速轻量级SQL转换引擎
 
 * 创建周期：4 天
-* 开发语言：Python
-* 协议类型：GNU General Public License v3.0
-* Star数量：251 个
-* Fork数量：69 次
-* 关注人数：251 人
-* 贡献人数：1 人
-* Open Issues数量：5 个
-* Github地址：https://github.com/mtkarimi/smart-resident-guard.git
+* 开发语言：Rust
+* 协议类型：MIT License
+* Star数量：192 个
+* Fork数量：2 次
+* 关注人数：192 人
+* 贡献人数：4 人
+* Open Issues数量：1 个
+* Github地址：https://github.com/quarylabs/quary.git
+* 项目首页: https://www.quary.dev
 
 
-波斯牌照识别（PLPR）系统是一种最先进的解决方案，专为在图像和视频流中检测和识别波斯牌照而设计。利用先进的深度学习模型和用户友好的界面，它确保在不同场景下可靠的性能。
+Quary是一种工具，允许团队使用用Rust编写的快速轻量级SQL转换引擎来进行数据转换的建模、测试和部署。
 
