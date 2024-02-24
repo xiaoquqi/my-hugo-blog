@@ -1,32 +1,32 @@
 ---
-title: Github 2024-02-25 开源项目日报 Top10
-date: 2024-02-25T07:00:59+08:00
+title: Github 2024-02-25 php开源项目日报 Top10
+date: 2024-02-25T07:11:07+08:00
 slug: github-trendings-today-20240225
 author: 老孙正经胡说
-image: /images/jackfrued-python-100-days-0.png
+image: /images/laravel-framework-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
+  - 和
   - 人数
   - 人
-  - 语言
   - 开发
-  - 是
-  - 模型
-  - 和
+  - 项目
+  - 语言
+  - 贡献
   - 创建
   - 周期
-  - 关注
-  - 贡献
-  - 地址
-  - 实现
-  - 使用
   - 协议
   - 类型
-  - C++
-  - 到
+  - 关注
+  - 地址
+  - 是
+  - 提供
+  - 框架
+  - 功能
+  - 中
+  - 构建
 
 categories:
 
@@ -38,153 +38,170 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 5 |
-| Jupyter Notebook项目 | 2 |
-| TypeScript项目 | 2 |
-| 非开发语言项目 | 1 |
-| HTML项目 | 1 |
-| C++项目 | 1 |
-| Dart项目 | 1 |
+| PHP项目 | 10 |
 
-## Python - 100天从新手到大师
+## Laravel: 以优雅语法简化Web开发
 
-* 创建周期：2186 天
-* 开发语言：Python, HTML, Jupyter Notebook
-* Star数量：146991 个
-* Fork数量：50759 次
-* 关注人数：146991 人
-* 贡献人数：12 人
-* Open Issues数量：709 个
-* Github地址：https://github.com/jackfrued/Python-100-Days.git
+* 创建周期：4028 天
+* 开发语言：PHP
+* 协议类型：MIT License
+* Star数量：30824 个
+* Fork数量：10526 次
+* 关注人数：30824 人
+* 贡献人数：383 人
+* Open Issues数量：27 个
+* Github地址：https://github.com/laravel/framework.git
+* 项目首页: https://laravel.com
 
 
-![](/images/jackfrued-python-100-days-0.png)
+![](/images/laravel-framework-0.png)
 
-作者骆昊从项目上线到获得8w+星标以来，一直收到反馈说基础部分（前15天的内容）对新手来说是比较困难的，建议有配套视频进行讲解。最近把基础部分的内容重新制作了一个名为“Python-Core-50-Courses”
+Laravel是一个以其富有表现力和优雅的语法而闻名的Web应用程序框架。它旨在通过简化常见任务（如路由、依赖注入、会话和缓存存储、数据库模式迁移、后台作业处理和实时事件广播）使Web开发成为一种愉快和创造性的体验。它提供了平衡的易用性和功能强大性，适用于小型和大型应用。
 
-## Hiddify-Next: 多平台自动代理客户端
+## Livewire: Laravel中构建动态UI组件的全栈框架
 
-* 创建周期：249 天
-* 开发语言：Dart
+* 创建周期：1818 天
+* 开发语言：PHP
+* 协议类型：MIT License
+* Star数量：21388 个
+* Fork数量：1416 次
+* 关注人数：21388 人
+* 贡献人数：425 人
+* Open Issues数量：6 个
+* Github地址：https://github.com/livewire/livewire.git
+
+
+Livewire是Laravel的全栈框架，它简化了在PHP中构建动态UI组件的过程。
+
+## Filament: 加速Laravel开发的完美起点
+
+* 创建周期：1410 天
+* 开发语言：PHP
+* 协议类型：MIT License
+* Star数量：12228 个
+* Fork数量：1990 次
+* 关注人数：12228 人
+* 贡献人数：372 人
+* Open Issues数量：66 个
+* Github地址：https://github.com/filamentphp/filament.git
+* 项目首页: https://filamentphp.com
+
+
+![](/images/filamentphp-filament-0.png)
+
+Filament是一套精美设计且完全可扩展的Laravel全栈组件集合，使用Livewire、Alpine.js和Tailwind CSS。它为加速Laravel开发提供了完美的起点，消除了重复构建相同功能的需求。
+
+## Dompdf：PHP中的HTML到PDF转换器
+
+* 创建周期：4122 天
+* 开发语言：PHP
+* 协议类型：GNU Lesser General Public License v2.1
+* Star数量：10146 个
+* Fork数量：1767 次
+* 关注人数：10146 人
+* 贡献人数：129 人
+* Open Issues数量：555 个
+* Github地址：https://github.com/dompdf/dompdf.git
+* 项目首页: https://dompdf.github.io/
+
+
+Dompdf是一个用PHP编写的HTML到PDF转换器，它是一个以样式为驱动的渲染器，支持CSS 2.1兼容的HTML布局和渲染。它可以下载和读取外部样式表、内联样式标签和HTML元素的样式属性。用户可以通过演示、StackOverflow和讨论找到最新的稳定代码和支持。
+
+## Rector - 即时升级和自动重构
+
+* 创建周期：2381 天
+* 开发语言：PHP
+* 协议类型：MIT License
+* Star数量：7842 个
+* Fork数量：663 次
+* 关注人数：7842 人
+* 贡献人数：181 人
+* Open Issues数量：19 个
+* Github地址：https://github.com/rectorphp/rector.git
+* 项目首页: https://getrector.com
+
+
+Rector是一个开源工具，为PHP 5.3+代码提供即时升级和自动重构。它帮助升级和重构应用程序的PHP代码，在两个主要领域提供帮助。
+
+## Kanboard: 项目管理软件维护模式下的看板方法论
+
+* 创建周期：3683 天
+* 开发语言：PHP
+* 协议类型：MIT License
+* Star数量：7995 个
+* Fork数量：1742 次
+* 关注人数：7995 人
+* 贡献人数：337 人
+* Open Issues数量：142 个
+* Github地址：https://github.com/kanboard/kanboard.git
+* 项目首页: https://kanboard.org
+
+
+Kanboard是专注于看板方法论的项目管理软件，目前处于维护模式。这意味着作者不再积极开发新的重要功能，但根据社区贡献定期发布新版本。只要遵循指南，就会接受新功能和错误修复的拉取请求。
+
+## Laravel Lang 项目：为 Laravel 框架提供 126 种语言支持
+
+* 创建周期：3924 天
+* 开发语言：PHP
+* 协议类型：MIT License
+* Star数量：7298 个
+* Fork数量：3080 次
+* 关注人数：7298 人
+* 贡献人数：383 人
+* Open Issues数量：0 个
+* Github地址：https://github.com/Laravel-Lang/lang.git
+* 项目首页: https://laravel-lang.com
+
+
+Laravel Lang 项目为 Laravel 框架的各种包（如 Laravel Jetstream、Fortify、Breeze、Cashier、Nova、Spark 和 UI）提供了对 126 种语言的支持。
+
+## Akaunting™ - 现代化在线会计软件
+
+* 创建周期：2412 天
+* 开发语言：PHP
 * 协议类型：Other
-* Star数量：3426 个
-* Fork数量：232 次
-* 关注人数：3426 人
-* 贡献人数：20 人
-* Open Issues数量：107 个
-* Github地址：https://github.com/hiddify/hiddify-next.git
-* 项目首页: https://hiddify.com
+* Star数量：7142 个
+* Fork数量：2250 次
+* 关注人数：7142 人
+* 贡献人数：91 人
+* Open Issues数量：18 个
+* Github地址：https://github.com/akaunting/akaunting.git
+* 项目首页: https://akaunting.com
 
 
-![](/images/hiddify-hiddify-next-0.png)
+Akaunting™是一款专为小型企业和自由职业者设计的在线会计软件。它采用了Laravel、VueJS、Tailwind和RESTful API等现代技术。由于其模块化结构，Akaunting为用户和开发人员提供了一个出色的应用商店。
 
-Hiddify-Next是一个支持Sing-box、X-ray、TUIC、Hysteria、Reality、Trojan、SSH等多种协议的多平台自动代理客户端。它是一个开源、安全且无广告的解决方案。
+## Docker学习平台和最新功能
 
-## Gemma：Google Gemini模型的官方PyTorch实现
-
-* 创建周期：4 天
-* 开发语言：Python
+* 创建周期：1938 天
+* 开发语言：PHP
 * 协议类型：Apache License 2.0
-* Star数量：2512 个
-* Fork数量：176 次
-* 关注人数：2512 人
-* 贡献人数：3 人
-* Open Issues数量：8 个
-* Github地址：https://github.com/google/gemma_pytorch.git
-* 项目首页: https://ai.google.dev/gemma
-
-
-Gemma是一系列轻量级、最先进的开放模型，是基于用于创建Google Gemini模型的研究和技术构建的。它们是文本到文本、仅解码的大型语言模型，提供英文、开放权重、预训练变种和指令调整变种。这是Gemma模型的官方PyTorch实现，提供了使用PyTorch和PyTorch/XLA的模型和推断实现，并支持在CPU、GPU和TPU上运行推断。
-
-## gemma.cpp: Google Gemma基础模型的轻量级C++推理引擎
-
-* 创建周期：11 天
-* 开发语言：C++
-* 协议类型：Apache License 2.0
-* Star数量：1905 个
-* Fork数量：118 次
-* 关注人数：1905 人
-* 贡献人数：4 人
-* Open Issues数量：15 个
-* Github地址：https://github.com/google/gemma.cpp.git
-
-
-gemma.cpp是一个轻量级的、独立的C++推理引擎，用于Google的Gemma基础模型。
-
-## OOTDiffusion: Outfitting Fusion基于潜在扩散可控虚拟试穿
-
-* 创建周期：30 天
-* 开发语言：Python
-* 协议类型：Other
-* Star数量：1262 个
-* Fork数量：133 次
-* 关注人数：1262 人
-* 贡献人数：1 人
+* Star数量：6148 个
+* Fork数量：1913 次
+* 关注人数：6148 人
+* 贡献人数：77 人
 * Open Issues数量：23 个
-* Github地址：https://github.com/levihsu/OOTDiffusion.git
+* Github地址：https://github.com/collabnix/dockerlabs.git
+* 项目首页: https://dockerlabs.collabnix.com
 
 
-OOTDiffusion是Outfitting Fusion基于潜在扩散可控虚拟试穿的官方实现。该项目由来自小i研究的徐宇豪、顾涛、陈伟峰和陈成才开发。实现包括在VITON-HD（768 * 1024）上训练的模型检查点，并计划将在未来发布在Dress Code（768 * 1024）上训练的检查点。该项目还在预处理阶段利用了humanparsing和openpose的检查点，并要求将clip-vit-large-patch14下载到checkpoints文件夹中。
+![](/images/collabnix-dockerlabs-0.png)
 
-## YOLOv9: 使用可编程梯度信息学习的实现
+Docker是一个学习平台，为初学者、中级和高级用户提供了500多个互动教程和指南。它在Docker Desktop上经过了充分测试，并且可以在浏览器上运行，无需基础设施。社区提供Slack、Discord和GitHub存储库等资源，用于协作和分享。此外，还有涵盖各种Docker主题和Docker Desktop最新功能的博客文章、文章和动手实验室。
 
-* 创建周期：7 天
-* 开发语言：Python
-* Star数量：1787 个
-* Fork数量：176 次
-* 关注人数：1787 人
-* 贡献人数：1 人
-* Open Issues数量：54 个
-* Github地址：https://github.com/WongKinYiu/yolov9.git
+## CodeIgniter 4: 轻量高效的PHP框架
 
-
-YOLOv9是论文'YOLOv9: 使用可编程梯度信息学习想要学习的内容'的实现。它专注于使用可编程梯度信息进行学习。
-
-## Gemma: Google DeepMind的开放权重大型语言模型（LLM）
-
-* 创建周期：5 天
-* 开发语言：Jupyter Notebook, Python
-* 协议类型：Apache License 2.0
-* Star数量：1068 个
-* Fork数量：133 次
-* 关注人数：1068 人
-* 贡献人数：1 人
-* Open Issues数量：6 个
-* Github地址：https://github.com/google-deepmind/gemma.git
-* 项目首页: http://ai.google.dev/gemma
+* 创建周期：3104 天
+* 开发语言：PHP
+* 协议类型：MIT License
+* Star数量：5052 个
+* Fork数量：1840 次
+* 关注人数：5052 人
+* 贡献人数：304 人
+* Open Issues数量：91 个
+* Github地址：https://github.com/codeigniter4/CodeIgniter4.git
+* 项目首页: https://codeigniter.com/
 
 
-Gemma是Google DeepMind的一个开源项目，包括基于Gemini研究和技术的开放权重大型语言模型（LLM）。该项目包括使用Flax和JAX的推断实现和示例。
-
-## SoraWebui: 使用文本在线生成视频的开源项目
-
-* 创建周期：6 天
-* 开发语言：TypeScript
-* 协议类型：Apache License 2.0
-* Star数量：640 个
-* Fork数量：170 次
-* 关注人数：640 人
-* 贡献人数：2 人
-* Open Issues数量：2 个
-* Github地址：https://github.com/SoraWebui/SoraWebui.git
-* 项目首页: https://sorawebui.com/
-
-
-![](/images/sorawebui-sorawebui-0.png)
-
-SoraWebui是一个开源项目，通过允许用户使用文本在线生成视频，简化了视频创作，使用了OpenAI的Sora模型，并具有易于一键部署网站的特点。
-
-## NOTE钱包（社区版本）
-
-* 创建周期：6 天
-* 开发语言：TypeScript
-* Star数量：53 个
-* Fork数量：24 次
-* 关注人数：53 人
-* 贡献人数：1 人
-* Open Issues数量：6 个
-* Github地址：https://github.com/NoteProtocol/NoteWallet.git
-
-
-NOTE钱包（社区版本）是一个简单的命令行工具，用于管理比特币和NOTE加密资产。
+CodeIgniter 4是一个最初由EllisLab开发的开源PHP框架。它旨在快速开发，并提供了一种轻量高效的方式来构建Web应用程序。
 
