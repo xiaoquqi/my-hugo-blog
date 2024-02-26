@@ -1,32 +1,32 @@
 ---
-title: Github 2024-02-27 开源项目日报 Top10
-date: 2024-02-27T07:01:20+08:00
+title: Github 2024-02-27 Python开源项目日报 Top10
+date: 2024-02-27T07:11:19+08:00
 slug: github-trendings-today-20240227
 author: 老孙正经胡说
-image: /images/ollama-ollama-0.png
+image: /images/killianlucas-open-interpreter-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
-  - 人
   - 人数
-  - 语言
-  - 和
+  - 人
+  - 项目
   - 开发
-  - 协议
-  - 贡献
-  - 是
+  - 语言
   - 创建
   - 周期
+  - 协议
   - 关注
+  - 贡献
   - 地址
+  - 和
   - 类型
-  - 使用
-  - 学习
-  - 中
-  - C++
+  - 是
   - 开源
+  - 执行
+  - 学习
+  - 代码
+  - 中
 
 categories:
 
@@ -38,159 +38,167 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 2 |
-| 非开发语言项目 | 2 |
-| Batchfile项目 | 1 |
-| Go项目 | 1 |
-| Rust项目 | 1 |
-| Fluent项目 | 1 |
-| JavaScript项目 | 1 |
-| C#项目 | 1 |
-| C++项目 | 1 |
+| Python项目 | 10 |
+| Cuda项目 | 1 |
 
-## 免费编程图书资源列表
+## 免费API集合
 
-* 创建周期：3755 天
-* 协议类型：Creative Commons Attribution 4.0 International
-* Star数量：308067 个
-* Fork数量：59182 次
-* 关注人数：308067 人
-* 贡献人数：432 人
-* Open Issues数量：36 个
-* Github地址：https://github.com/EbookFoundation/free-programming-books.git
-* 项目首页: https://ebookfoundation.github.io/free-programming-books/
-
-
-网站https://ebookfoundation.github.io/free-programming-books-search/提供了各种语言的免费编程图书列表。它为希望通过开源材料学习编程的个人提供了宝贵的资源。
-
-## Windows和Office激活工具
-
-* 创建周期：1507 天
-* 开发语言：Batchfile
-* 协议类型：GNU General Public License v3.0
-* Star数量：64129 个
-* Fork数量：6390 次
-* 关注人数：64129 人
-* 贡献人数：5 人
-* Open Issues数量：4 个
-* Github地址：https://github.com/massgravel/Microsoft-Activation-Scripts.git
-* 项目首页: https://massgrave.dev
-
-
-该项目是一个Windows和Office激活工具，利用HWID、Ohook、KMS38和在线KMS激活方法。它强调开源代码，并致力于减少杀毒软件的检测。
-
-## Ollama: 在本地使用大型语言模型的设置和使用
-
-* 创建周期：215 天
-* 开发语言：Go
-* 协议类型：MIT License
-* Star数量：33457 个
-* Fork数量：2209 次
-* 关注人数：33457 人
-* 贡献人数：106 人
-* Open Issues数量：526 个
-* Github地址：https://github.com/ollama/ollama.git
-* 项目首页: https://ollama.ai
-
-
-![](/images/ollama-ollama-0.png)
-
-Ollama是一个开源项目，帮助用户在本地设置和使用诸如Llama 2和Mistral之类的大型语言模型。
-
-## Jellyfin: 自由软件媒体系统
-
-* 创建周期：1906 天
-* 开发语言：C#
-* 协议类型：GNU General Public License v2.0
-* Star数量：28416 个
-* Fork数量：2615 次
-* 关注人数：28416 人
-* 贡献人数：381 人
-* Open Issues数量：510 个
-* Github地址：https://github.com/jellyfin/jellyfin.git
-* 项目首页: https://jellyfin.org
-
-
-![](/images/jellyfin-jellyfin-0.png)
-
-Jellyfin是一个自由软件媒体系统，为专有媒体流平台提供了一个替代方案。它允许用户通过多个应用程序从专用服务器管理和流媒体。该项目是开源的，没有高级许可证或隐藏议程，并欢迎任何有兴趣贡献的人。
-
-## Czkawka和Krokiet：计算机文件清理应用程序
-
-* 创建周期：1274 天
-* 开发语言：Rust, Fluent
-* 协议类型：Other
-* Star数量：15267 个
-* Fork数量：488 次
-* 关注人数：15267 人
-* 贡献人数：59 人
-* Open Issues数量：361 个
-* Github地址：https://github.com/qarmin/czkawka.git
-
-
-![](/images/qarmin-czkawka-0.png)
-
-Czkawka是一个简单、快速、免费的应用程序，波兰语中称为“打嗝”，可帮助您从计算机中删除不必要的文件。它是一个多功能应用程序，可以查找重复文件、空文件夹和相似的图像。Krokiet与Czkawka类似，但使用Slint前端，并在波兰语中称为“槌球”。
-
-## Xray面板：多协议、多用户访问、高级Web面板
-
-* 创建周期：383 天
-* 开发语言：JavaScript
-* 协议类型：GNU General Public License v3.0
-* Star数量：5975 个
-* Fork数量：1148 次
-* 关注人数：5975 人
-* 贡献人数：40 人
-* Open Issues数量：575 个
-* Github地址：https://github.com/MHSanaei/3x-ui.git
-* 项目首页: https://t.me/panel3xui
-
-
-![](/images/mhsanaei-3x-ui-0.png)
-
-Xray面板是一个开源项目，支持Vmess、Vless、Trojan、ShadowSocks和Wireguard等多种协议，支持多用户访问、到期日、流量限制和IP限制。它是建立在Xray核心之上的高级Web面板。该项目仅供个人学习和交流之用，不得用于非法目的或生产环境。
-
-## gemma.cpp: Google Gemma基础模型的轻量级C++推理引擎
-
-* 创建周期：11 天
-* 开发语言：C++
-* 协议类型：Apache License 2.0
-* Star数量：1905 个
-* Fork数量：118 次
-* 关注人数：1905 人
-* 贡献人数：4 人
-* Open Issues数量：15 个
-* Github地址：https://github.com/google/gemma.cpp.git
-
-
-gemma.cpp是一个轻量级的、独立的C++推理引擎，用于Google的Gemma基础模型。
-
-## YOLOv9: 使用可编程梯度信息学习的实现
-
-* 创建周期：7 天
+* 创建周期：2900 天
 * 开发语言：Python
-* Star数量：1787 个
-* Fork数量：176 次
-* 关注人数：1787 人
+* 协议类型：MIT License
+* Star数量：280943 个
+* Fork数量：30691 次
+* 关注人数：280943 人
+* 贡献人数：428 人
+* Open Issues数量：243 个
+* Github地址：https://github.com/public-apis/public-apis.git
+* 项目首页: http://public-apis.org
+
+
+这个开源项目是一个集体的免费API列表，涵盖了许多类别，如动物、动漫、反恶意软件、艺术与设计、认证与授权、区块链、书籍、商业等。它提供了各种用途的可用免费API的全面索引。
+
+## Open Interpreter: 一种自然语言接口
+
+* 创建周期：179 天
+* 开发语言：Python
+* 协议类型：GNU Affero General Public License v3.0
+* Star数量：36253 个
+* Fork数量：3170 次
+* 关注人数：36253 人
+* 贡献人数：69 人
+* Open Issues数量：163 个
+* Github地址：https://github.com/KillianLucas/open-interpreter.git
+* 项目首页: http://openinterpreter.com/
+
+
+![](/images/killianlucas-open-interpreter-0.png)
+
+Open Interpreter 是一种自然语言接口，允许LLMs在本地运行代码，使用户能够通过终端中类似于ChatGPT的界面与计算机的通用功能进行交互。它提供了创建和编辑各种类型文件、控制Chrome浏览器进行研究以及分析大型数据集的能力。在执行代码之前，用户需要批准该代码。
+
+## GPT PILOT: 从头开始编写可扩展的应用程序的开发工具
+
+* 创建周期：195 天
+* 开发语言：Python
+* 协议类型：MIT License
+* Star数量：21795 个
+* Fork数量：1884 次
+* 关注人数：21795 人
+* 贡献人数：38 人
+* Open Issues数量：175 个
+* Github地址：https://github.com/Pythagora-io/gpt-pilot.git
+
+
+![](/images/pythagora-io-gpt-pilot-0.png)
+
+GPT PILOT是一个开源开发工具，允许开发人员在监督实施的同时从头开始编写可扩展的应用程序。
+
+## Python编程语言入门课程
+
+* 创建周期：573 天
+* 开发语言：Python
+* 协议类型：Apache License 2.0
+* Star数量：20238 个
+* Fork数量：1329 次
+* 关注人数：20238 人
 * 贡献人数：1 人
-* Open Issues数量：54 个
+* Open Issues数量：6 个
+* Github地址：https://github.com/mouredev/Hello-Python.git
+
+
+![](/images/mouredev-hello-python-0.png)
+
+这是一个开源课程，旨在从零开始教授Python编程语言，适合初学者。它包括75节课，37小时的视频内容，编码练习，项目和聊天群。课程涵盖了基础知识、前端开发、后端开发、测试和人工智能。
+
+## Mamba: 具有选择性状态空间的线性时间序列建模
+
+* 创建周期：88 天
+* 开发语言：Python, Cuda
+* 协议类型：Apache License 2.0
+* Star数量：6804 个
+* Fork数量：522 次
+* 关注人数：6804 人
+* 贡献人数：9 人
+* Open Issues数量：110 个
+* Github地址：https://github.com/state-spaces/mamba.git
+
+
+Mamba是一个专注于具有选择性状态空间的线性时间序列建模的开源项目。该项目由Albert Gu和Tri Dao介绍，论文可在https://arxiv.org/abs/2312.00752找到
+
+## YOLOv9: 使用可编程梯度信息学习想要学习的内容
+
+* 创建周期：9 天
+* 开发语言：Python
+* 协议类型：GNU General Public License v3.0
+* Star数量：3858 个
+* Fork数量：422 次
+* 关注人数：3858 人
+* 贡献人数：1 人
+* Open Issues数量：42 个
 * Github地址：https://github.com/WongKinYiu/yolov9.git
 
 
-YOLOv9是论文'YOLOv9: 使用可编程梯度信息学习想要学习的内容'的实现。它专注于使用可编程梯度信息进行学习。
+YOLOv9是对论文《YOLOv9: 使用可编程梯度信息学习想要学习的内容》的实现。它旨在提供一个系统，利用可编程梯度信息来学习特定任务。
 
 ## Cloudflare WARP+ 订阅项目
 
-* 创建周期：187 天
+* 创建周期：188 天
 * 开发语言：Python
 * 协议类型：GNU General Public License v3.0
-* Star数量：1848 个
-* Fork数量：270 次
-* 关注人数：1848 人
+* Star数量：2889 个
+* Fork数量：383 次
+* 关注人数：2889 人
 * 贡献人数：5 人
 * Open Issues数量：4 个
 * Github地址：https://github.com/vvbbnn00/WARP-Clash-API.git
 
 
-该项目使您能够通过订阅的方式使用Cloudflare WARP+，自动获取流量。
+该项目使您能够通过订阅方式使用Cloudflare WARP+，自动获取流量。
+
+## Python风险识别工具（PyRIT）
+
+* 创建周期：77 天
+* 开发语言：Python
+* 协议类型：MIT License
+* Star数量：592 个
+* Fork数量：73 次
+* 关注人数：592 人
+* 贡献人数：10 人
+* Open Issues数量：3 个
+* Github地址：https://github.com/Azure/PyRIT.git
+
+
+Python风险识别工具（PyRIT）是一个开放的自动化框架，旨在赋予安全专业人员和机器学习工程师主动发现生成式人工智能系统中的风险。
+
+## OpenCodeInterpreter: 集成代码生成与执行的开源项目
+
+* 创建周期：8 天
+* 开发语言：Python
+* 协议类型：Apache License 2.0
+* Star数量：544 个
+* Fork数量：49 次
+* 关注人数：544 人
+* 贡献人数：6 人
+* Open Issues数量：5 个
+* Github地址：https://github.com/OpenCodeInterpreter/OpenCodeInterpreter.git
+
+
+![](/images/opencodeinterpreter-opencodeinterpreter-0.png)
+
+OpenCodeInterpreter是一个集成了代码生成、执行和改进的开源项目。它允许在统一环境中生成和执行代码，通过执行实现代码的迭代改进。
+
+## Scroll脚本：桥接、交换和NFT铸造
+
+* 创建周期：132 天
+* 开发语言：Python
+* Star数量：147 个
+* Fork数量：76 次
+* 关注人数：147 人
+* 贡献人数：3 人
+* Open Issues数量：1 个
+* Github地址：https://github.com/czbag/scroll.git
+
+
+![](/images/czbag-scroll-0.png)
+
+这个开源项目提供了一个用于处理Scroll的脚本，包括进行不同桥接的存款/取款、在各种平台上交换、利用借贷协议、铸造和桥接NFT等功能，以及执行其他自定义操作，如创建Gnosis Safe和部署合约。
 
