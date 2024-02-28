@@ -1,32 +1,32 @@
 ---
-title: Github 2024-02-29 开源项目日报 Top9
-date: 2024-02-29T07:01:19+08:00
+title: Github 2024-02-29 Go开源项目日报 Top10
+date: 2024-02-29T07:11:16+08:00
 slug: github-trendings-today-20240229
 author: 老孙正经胡说
-image: /images/toeverything-affine-0.png
+image: /images/ollama-ollama-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
-  - 人数
-  - 人
-  - 开发
-  - 语言
   - 和
-  - 创建
-  - 周期
+  - 人
+  - 人数
+  - 项目
+  - 语言
+  - 开发
+  - 容器
   - 协议
   - 类型
+  - 创建
+  - 周期
   - 关注
   - 贡献
   - 地址
   - 是
-  - 中
-  - 开源
   - 提供
-  - 集成
-  - 列表
+  - 用于
+  - 日志
+  - 使用
 
 categories:
 
@@ -34,161 +34,172 @@ draft: false
 ---
 
 
-根据Github Trendings的统计，今日(2024-02-29统计)共有9个项目上榜。根据开发语言中项目的数量，汇总情况如下：
+根据Github Trendings的统计，今日(2024-02-29统计)共有10个项目上榜。根据开发语言中项目的数量，汇总情况如下：
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 4 |
-| TypeScript项目 | 3 |
-| Zig项目 | 1 |
-| HTML项目 | 1 |
+| Go项目 | 10 |
 
-## 免费API集合列表
+## Moby 项目 - 软件容器化的开源工具集
 
-* 创建周期：2901 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：282033 个
-* Fork数量：30778 次
-* 关注人数：282033 人
-* 贡献人数：428 人
-* Open Issues数量：246 个
-* Github地址：https://github.com/public-apis/public-apis.git
-* 项目首页: http://public-apis.org
-
-
-这个开源项目是一个集体的免费API列表，涵盖了动物、动漫、反恶意软件、艺术与设计、身份验证与授权、区块链、书籍、商业等广泛领域。它提供了各种目的和行业可用的API的综合索引。
-
-## AFFiNE: 下一代知识库
-
-* 创建周期：578 天
-* 开发语言：TypeScript
-* 协议类型：Other
-* Star数量：27527 个
-* Fork数量：1755 次
-* 关注人数：27527 人
-* 贡献人数：132 人
-* Open Issues数量：310 个
-* Github地址：https://github.com/toeverything/AFFiNE.git
-* 项目首页: https://affine.pro
-
-
-![](/images/toeverything-affine-0.png)
-
-AFFiNE是一款下一代知识库，将规划、排序和创建集成到一个开源和注重隐私的平台中。用户可以通过在GitHub上收藏该项目来及时了解发布信息。
-
-## Movie-web: 轻松观看电影和节目的小型Web应用程序
-
-* 创建周期：961 天
-* 开发语言：TypeScript
-* 协议类型：MIT License
-* Star数量：18884 个
-* Fork数量：2018 次
-* 关注人数：18884 人
-* 贡献人数：109 人
-* Open Issues数量：110 个
-* Github地址：https://github.com/movie-web/movie-web.git
-* 项目首页: https://movie-web.github.io/docs/
-
-
-Movie-web是一个专为轻松观看电影和节目而设计的小型Web应用程序。它提供直观美观的用户界面，显示来自第三方提供商的视频文件。它提供自动保存进度和收藏节目或电影等功能。
-
-## CrewAI: 协作智能的AI代理编排框架
-
-* 创建周期：125 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：8412 个
-* Fork数量：914 次
-* 关注人数：8412 人
-* 贡献人数：26 人
-* Open Issues数量：119 个
-* Github地址：https://github.com/joaomdmoura/crewAI.git
-* 项目首页: https://crewai.io
-
-
-![](/images/joaomdmoura-crewai-0.png)
-
-CrewAI是一个用于编排角色扮演的开源框架，可以实现自主AI代理。它促进协作智能，使代理能够无缝协作，处理复杂任务。
-
-## TigerBeetle: 金融会计数据库的未来
-
-* 创建周期：1420 天
-* 开发语言：Zig
+* 创建周期：4059 天
+* 开发语言：Go
 * 协议类型：Apache License 2.0
-* Star数量：4993 个
-* Fork数量：209 次
-* 关注人数：4993 人
-* 贡献人数：54 人
-* Open Issues数量：116 个
-* Github地址：https://github.com/tigerbeetle/tigerbeetle.git
-* 项目首页: https://tigerbeetle.com
+* Star数量：67419 个
+* Fork数量：18497 次
+* 关注人数：67419 人
+* 贡献人数：402 人
+* Open Issues数量：3359 个
+* Github地址：https://github.com/moby/moby.git
+* 项目首页: https://mobyproject.org/
 
 
-![](/images/tigerbeetle-tigerbeetle-0.png)
+Moby项目是Docker推出的开源项目，旨在促进和加速软件容器化。它提供了一套工具组件，用于构建定制的基于容器的系统，并为容器爱好者和专业人士提供了一个合作和创新的平台。
 
-TigerBeetle是一个专为使命关键的安全性和性能而设计的金融会计数据库，以推动未来的金融服务。TigerBeetle的生产版本目前正在积极开发中。
+## Go Ethereum: 以太坊Go语言官方实现
 
-## Cloudflare WARP+ 订阅项目
+* 创建周期：3717 天
+* 开发语言：Go
+* 协议类型：GNU Lesser General Public License v3.0
+* Star数量：45047 个
+* Fork数量：18609 次
+* 关注人数：45047 人
+* 贡献人数：431 人
+* Open Issues数量：360 个
+* Github地址：https://github.com/ethereum/go-ethereum.git
+* 项目首页: https://geth.ethereum.org
 
-* 创建周期：187 天
-* 开发语言：Python
-* 协议类型：GNU General Public License v3.0
-* Star数量：1848 个
-* Fork数量：270 次
-* 关注人数：1848 人
-* 贡献人数：5 人
-* Open Issues数量：4 个
-* Github地址：https://github.com/vvbbnn00/WARP-Clash-API.git
 
+Go Ethereum是以Go编程语言实现的以太坊协议的官方实现。它为以太坊提供了执行层，并为稳定版本和不稳定的主分支提供了自动化构建。可以在https://geth.ethereum.org/downloads/找到二进制存档。
 
-该项目使您能够通过订阅的方式使用Cloudflare WARP+，自动获取流量。
+## Ollama: 本地大型语言模型设置与运行
 
-## 太鼓：去中心化的以太坊等值 ZK-Rollup 项目
-
-* 创建周期：581 天
-* 开发语言：HTML
+* 创建周期：248 天
+* 开发语言：Go
 * 协议类型：MIT License
-* Star数量：3208 个
-* Fork数量：1525 次
-* 关注人数：3208 人
-* 贡献人数：169 人
-* Open Issues数量：94 个
-* Github地址：https://github.com/taikoxyz/taiko-mono.git
-* 项目首页: http://taiko.xyz
+* Star数量：42421 个
+* Fork数量：2724 次
+* 关注人数：42421 人
+* 贡献人数：138 人
+* Open Issues数量：709 个
+* Github地址：https://github.com/ollama/ollama.git
+* 项目首页: https://ollama.com
 
 
-太鼓是一个去中心化的、与以太坊等值的 ZK-Rollup 项目，其文档可以在 taiko.xyz 网站上找到。每个软件包中还包含有 README，源代码中也有注释供参考。
+![](/images/ollama-ollama-0.png)
 
-## React-Three-Fiber 3D用户界面项目
+Ollama是一个开源项目，帮助用户在本地设置和利用诸如Llama 2、Mistral和Gemma等大型语言模型。
 
-* 创建周期：14 天
-* 开发语言：TypeScript
+## PocketBase: 开源实时后端
+
+* 创建周期：555 天
+* 开发语言：Go
+* 协议类型：MIT License
+* Star数量：30029 个
+* Fork数量：1330 次
+* 关注人数：30029 人
+* 贡献人数：37 人
+* Open Issues数量：38 个
+* Github地址：https://github.com/pocketbase/pocketbase.git
+* 项目首页: https://pocketbase.io
+
+
+![](/images/pocketbase-pocketbase-0.png)
+
+PocketBase是一个开源的Go后端，包括嵌入式SQLite数据库与实时订阅，内置文件和用户管理，方便的管理面板UI，以及简单的REST-ish API。它仍在积极开发中，在达到v1.0.0之前不能保证完全向后兼容。
+
+## Vault - 开源秘密管理与加密服务
+
+* 创建周期：3277 天
+* 开发语言：Go
 * 协议类型：Other
-* Star数量：823 个
-* Fork数量：18 次
-* 关注人数：823 人
-* 贡献人数：3 人
-* Open Issues数量：3 个
-* Github地址：https://github.com/pmndrs/uikit.git
+* Star数量：29288 个
+* Fork数量：4127 次
+* 关注人数：29288 人
+* 贡献人数：392 人
+* Open Issues数量：1318 个
+* Github地址：https://github.com/hashicorp/vault.git
+* 项目首页: https://www.vaultproject.io/
 
 
-该项目旨在使用@react-three/fiber和yoga为Three.js构建高性能的3D用户界面。它提供了更高的性能，没有悬念，嵌套对象以正确传播事件，更好的滚动体验以及整体的DX改进。路线图包括按需渲染，升级到yoga2.0，虚拟列表以及对更多字符和不同语言的支持。
+Vault是一个开源工具，用于秘密管理、加密服务和特权访问管理。它提供了一个统一的界面，用于安全地访问和控制各种类型的秘密，如API密钥、密码和证书。Vault提供了安全的秘密存储、动态秘密生成、数据加密、租约和续约以及撤销支持等功能。它还为安全自动化提供了文档、入门指南和认证考试。
 
-## OpenCodeInterpreter: 集成代码生成与执行的开源项目
+## Consul：动态分布式基础架构连接和配置解决方案
 
-* 创建周期：10 天
-* 开发语言：Python
+* 创建周期：3720 天
+* 开发语言：Go
+* 协议类型：Other
+* Star数量：27465 个
+* Fork数量：4436 次
+* 关注人数：27465 人
+* 贡献人数：362 人
+* Open Issues数量：1283 个
+* Github地址：https://github.com/hashicorp/consul.git
+* 项目首页: https://www.consul.io
+
+
+Consul是一个分布式、高可用且数据中心感知的解决方案，用于在动态分布式基础架构中连接和配置应用程序。它提供了诸如多数据中心支持、用于安全通信的服务网格、API网关、服务发现、健康检查和动态应用程序配置等功能。
+
+## Loki: Prometheus日志聚合系统
+
+* 创建周期：2145 天
+* 开发语言：Go
+* 协议类型：GNU Affero General Public License v3.0
+* Star数量：21630 个
+* Fork数量：3161 次
+* 关注人数：21630 人
+* 贡献人数：449 人
+* Open Issues数量：1385 个
+* Github地址：https://github.com/grafana/loki.git
+* 项目首页: https://grafana.com/loki
+
+
+Loki是受Prometheus启发的横向扩展、高可用性、多租户日志聚合系统。它旨在成本效益高且易于操作，使用标签来表示日志流而不是索引日志内容。它特别适合存储Kubernetes Pod日志，并在Grafana中具有原生支持。基于Loki的日志堆栈由3个组件组成：promtail、loki和Grafana。Loki专注于日志而不是指标，并通过推送而不是拉取来传递日志。
+
+## cAdvisor（容器顾问）- 运行中的守护程序，用于收集、汇总、处理和导出有关运行容器资源使用情况和性能特征的信息
+
+* 创建周期：3552 天
+* 开发语言：Go
+* 协议类型：Other
+* Star数量：16081 个
+* Fork数量：2255 次
+* 关注人数：16081 人
+* 贡献人数：297 人
+* Open Issues数量：712 个
+* Github地址：https://github.com/google/cadvisor.git
+
+
+cAdvisor（容器顾问）是一个运行中的守护程序，用于收集、汇总、处理和导出有关运行容器的资源使用情况和性能特征的信息。它为用户提供了对每个容器的资源使用情况、历史使用情况和网络统计的理解，原生支持 Docker 容器和其他容器类型。
+
+## go-github: 用于访问GitHub API v3的Go客户端库
+
+* 创建周期：3933 天
+* 开发语言：Go
+* 协议类型：BSD 3-Clause "New" or "Revised" License
+* Star数量：9975 个
+* Fork数量：1978 次
+* 关注人数：9975 人
+* 贡献人数：445 人
+* Open Issues数量：65 个
+* Github地址：https://github.com/google/go-github.git
+* 项目首页: https://pkg.go.dev/github.com/google/go-github/v59/github
+
+
+go-github是一个用于访问GitHub API v3的Go客户端库。它需要Go版本1.13或更高版本，并跟踪Go的版本支持政策。对于那些有兴趣使用GraphQL API v4的人，推荐的库是shurcooL/githubv4。
+
+## Gatus: 开发者健康仪表板
+
+* 创建周期：1639 天
+* 开发语言：Go
 * 协议类型：Apache License 2.0
-* Star数量：816 个
-* Fork数量：95 次
-* 关注人数：816 人
-* 贡献人数：7 人
-* Open Issues数量：2 个
-* Github地址：https://github.com/OpenCodeInterpreter/OpenCodeInterpreter.git
+* Star数量：4896 个
+* Fork数量：362 次
+* 关注人数：4896 人
+* 贡献人数：71 人
+* Open Issues数量：130 个
+* Github地址：https://github.com/TwiN/gatus.git
+* 项目首页: https://gatus.io
 
 
-![](/images/opencodeinterpreter-opencodeinterpreter-0.png)
-
-OpenCodeInterpreter是一个集成代码生成、执行和改进的开源项目。它旨在提供一个平台，实现代码生成和执行的无缝集成，从而实现代码的高效改进。
+Gatus是一个面向开发者的健康仪表板，允许使用各种类型的查询来监视服务，并使用条件评估结果。它还支持通过多个平台进行警报，并可以部署在Kubernetes中。
 
