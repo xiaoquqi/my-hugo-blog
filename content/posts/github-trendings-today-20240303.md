@@ -1,32 +1,32 @@
 ---
-title: Github 2024-03-03 开源项目日报 Top9
-date: 2024-03-03T07:00:47+08:00
+title: Github 2024-03-03 php开源项目日报 Top9
+date: 2024-03-03T07:10:58+08:00
 slug: github-trendings-today-20240303
 author: 老孙正经胡说
-image: /images/yuzu-emu-yuzu-0.png
+image: /images/magento-magento2-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
   - 人数
   - 人
-  - 开发
   - 和
-  - 创建
-  - 周期
-  - 关注
-  - 贡献
-  - 地址
+  - 项目
+  - 开发
+  - 是
   - 语言
+  - 创建
+  - 贡献
+  - 周期
   - 协议
   - 类型
-  - 是
-  - 中
-  - 生成式
-  - 人工智能
+  - 关注
+  - 地址
+  - 库
+  - 开源
+  - 用于
   - 提供
-  - 视频
+  - 应用程序
 
 categories:
 
@@ -38,148 +38,149 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| 非开发语言项目 | 4 |
-| Rust项目 | 1 |
-| C++项目 | 1 |
-| Jupyter Notebook项目 | 1 |
-| Python项目 | 1 |
-| Shell项目 | 1 |
+| PHP项目 | 8 |
+| 非开发语言项目 | 1 |
 
-## 任天堂Switch模拟器yuzu：兼容性和最新功能
+## Symfony PHP框架和组件
 
-* 创建周期：2249 天
-* 开发语言：C++
+* 创建周期：5130 天
+* 开发语言：PHP
+* 协议类型：MIT License
+* Star数量：28999 个
+* Fork数量：9440 次
+* 关注人数：28999 人
+* 贡献人数：368 人
+* Open Issues数量：846 个
+* Github地址：https://github.com/symfony/symfony.git
+* 项目首页: https://symfony.com
+
+
+Symfony是用于Web和控制台应用程序的PHP框架，以及一组可重用的PHP组件。它被数千个Web应用程序和流行的PHP项目广泛使用。该框架遵循语义化版本控制，提供长期支持（LTS）版本，并具有可预测且适合业务的发布流程。Symfony 7.0得到了Shopware、Sulu和Les-Tilleuls.coop的支持。Shopware是一个由Symfony和Vue.js驱动的开放式无头商务平台，Sulu是Symfony开发人员的CMS，Les-Tilleuls.coop是一支提供专业服务的Symfony专家团队。该项目提供了全面的文档、支持性社区，并欢迎开发人员的贡献。安全漏洞可以按照特定程序进行报告，并且开发由Symfony核心团队领导并得到贡献者的支持。
+
+## Faker: 用于生成假数据的PHP库
+
+* 创建周期：4524 天
+* 开发语言：PHP
+* 协议类型：MIT License
+* Star数量：26782 个
+* Fork数量：3546 次
+* 关注人数：26782 人
+* 贡献人数：386 人
+* Open Issues数量：231 个
+* Github地址：https://github.com/fzaninotto/Faker.git
+
+
+Faker是一个用于生成假数据的PHP库，可用于引导数据库、创建漂亮的XML文档、填充持久性以进行压力测试，或者对从生产服务中获取的数据进行匿名化处理。
+
+## Magento开源项目和Adobe Commerce
+
+* 创建周期：4435 天
+* 开发语言：PHP
+* 协议类型：Open Software License 3.0
+* Star数量：11083 个
+* Fork数量：9328 次
+* 关注人数：11083 人
+* 贡献人数：257 人
+* Open Issues数量：2518 个
+* Github地址：https://github.com/magento/magento2.git
+* 项目首页: http://www.magento.com
+
+
+![](/images/magento-magento2-0.png)
+
+Magento开源项目提供基本的电子商务功能，用于构建在线商店。建议使用Adobe Commerce作为完整的电子商务解决方案，其中包括优化的云架构、托管以及人工智能驱动的商品推广和分析。
+
+## Google API客户端库：PHP访问Google API的开源库
+
+* 创建周期：3838 天
+* 开发语言：PHP
+* 协议类型：Apache License 2.0
+* Star数量：9027 个
+* Fork数量：3743 次
+* 关注人数：9027 人
+* 贡献人数：153 人
+* Open Issues数量：54 个
+* Github地址：https://github.com/googleapis/google-api-php-client.git
+
+
+Google API客户端库是一个开源的PHP客户端库，允许在服务器上访问各种Google API，如Gmail、Drive和YouTube。它得到了Google的官方支持，并处于维护模式，这意味着将解决关键错误和安全问题，但不会添加新功能。
+
+## Rector - 即时升级和自动重构
+
+* 创建周期：2381 天
+* 开发语言：PHP
+* 协议类型：MIT License
+* Star数量：7842 个
+* Fork数量：663 次
+* 关注人数：7842 人
+* 贡献人数：181 人
+* Open Issues数量：19 个
+* Github地址：https://github.com/rectorphp/rector.git
+* 项目首页: https://getrector.com
+
+
+Rector是一个开源工具，为PHP 5.3+代码提供即时升级和自动重构。它帮助升级和重构应用程序的PHP代码，在两个主要领域提供帮助。
+
+## JSON Web Token (JWT) 和 JSON Web Signature 库
+
+* 创建周期：3651 天
+* 开发语言：PHP
+* 协议类型：BSD 3-Clause "New" or "Revised" License
+* Star数量：7156 个
+* Fork数量：590 次
+* 关注人数：7156 人
+* 贡献人数：53 人
+* Open Issues数量：8 个
+* Github地址：https://github.com/lcobucci/jwt.git
+* 项目首页: https://lcobucci-jwt.readthedocs.io/en/stable/
+
+
+这是一个简单的库，用于基于 RFC 7519 处理 JSON Web Token (JWT) 和 JSON Web Signature。
+
+## 宝塔面板第三方云端站点程序
+
+* 创建周期：638 天
+* 协议类型：MIT License
+* Star数量：1284 个
+* Fork数量：533 次
+* 关注人数：1284 人
+* 贡献人数：2 人
+* Open Issues数量：118 个
+* Github地址：https://github.com/flucont/btcloud.git
+
+
+这是一个用PHP开发的宝塔面板第三方云端站点程序，可实现最新版宝塔面板私有化部署，满足隐私安全合规需求，并且具有去除面板强制绑定账号和DIY面板功能等特点。网站后台管理功能包括一键同步宝塔官方的插件列表与增量更新插件包，以及云端使用记录、IP黑白名单、操作日志、定时任务等功能。项目自带的宝塔安装包和更新包是8.0.x最新版，已修改适配第三方云端，并且完全开源。
+
+## Wallos: 开源个人订阅跟踪器
+
+* 创建周期：150 天
+* 开发语言：PHP
 * 协议类型：GNU General Public License v3.0
-* Star数量：36810 个
-* Fork数量：3680 次
-* 关注人数：36810 人
-* 贡献人数：338 人
-* Open Issues数量：1794 个
-* Github地址：https://github.com/yuzu-emu/yuzu.git
-* 项目首页: https://yuzu-emu.org/
+* Star数量：1202 个
+* Fork数量：59 次
+* 关注人数：1202 人
+* 贡献人数：20 人
+* Open Issues数量：40 个
+* Github地址：https://github.com/ellite/Wallos.git
 
 
-![](/images/yuzu-emu-yuzu-0.png)
+Wallos是一个开源的个人订阅跟踪器，可帮助用户跟踪各种订阅、管理开支并保持组织有序。
 
-任天堂Switch模拟器yuzu可以在满足必要的硬件要求的情况下以全速运行大多数商业游戏。要获取受支持游戏的完整列表，请访问网站上的兼容性页面，以获取最新的新闻和功能。
+## RAWeb: RetroAchievements.org平台应用程序
 
-## 初学者生成式人工智能课程
-
-* 创建周期：218 天
-* 开发语言：Jupyter Notebook
-* 协议类型：MIT License
-* Star数量：22909 个
-* Fork数量：14124 次
-* 关注人数：22909 人
-* 贡献人数：47 人
-* Open Issues数量：35 个
-* Github地址：https://github.com/microsoft/generative-ai-for-beginners.git
-
-
-《初学者生成式人工智能》是由微软云倡导者提供的12课程，教授构建生成式人工智能应用程序的基础知识。参与者将学习生成式人工智能原理和应用开发的关键方面，并有机会构建自己的生成式人工智能创业公司。
-
-## 免费课程与认证清单 - 云学习网络
-
-* 创建周期：1311 天
-* 协议类型：MIT License
-* Star数量：19112 个
-* Fork数量：1469 次
-* 关注人数：19112 人
-* 贡献人数：69 人
-* Open Issues数量：35 个
-* Github地址：https://github.com/cloudcommunity/Free-Certifications.git
-* 项目首页: https://cloudstudy.net
+* 创建周期：2211 天
+* 开发语言：PHP
+* 协议类型：GNU General Public License v3.0
+* Star数量：211 个
+* Fork数量：77 次
+* 关注人数：211 人
+* 贡献人数：40 人
+* Open Issues数量：37 个
+* Github地址：https://github.com/RetroAchievements/RAWeb.git
+* 项目首页: https://retroachievements.org
 
 
-云学习网络提供了一个精心策划的免费课程和认证的清单，这是一个全球科技社区。该存储库包括即将到期的限时优惠，因此鼓励用户快速利用。
+![](/images/retroachievements-raweb-0.png)
 
-## Animate Anyone: 一致且可控的角色动画图像到视频合成
-
-* 创建周期：96 天
-* 协议类型：Apache License 2.0
-* Star数量：13431 个
-* Fork数量：840 次
-* 关注人数：13431 人
-* 贡献人数：1 人
-* Open Issues数量：49 个
-* Github地址：https://github.com/HumanAIGC/AnimateAnyone.git
-
-
-Animate Anyone 是一个专注于角色动画的一致且可控的图像到视频合成的开源项目。它旨在提供一种可靠且可调整的方法，从角色静态图像生成动画视频。
-
-## Pingora: 构建快速、可靠和可扩展网络服务的开源库
-
-* 创建周期：302 天
-* 开发语言：Rust
-* 协议类型：Apache License 2.0
-* Star数量：10381 个
-* Fork数量：496 次
-* 关注人数：10381 人
-* 贡献人数：3 人
-* Open Issues数量：32 个
-* Github地址：https://github.com/cloudflare/pingora.git
-
-
-Pingora是一个专为构建快速、可靠和可扩展网络服务而设计的开源库。
-
-## 自动 polyfill 服务
-
-* 创建周期：3536 天
-* 协议类型：MIT License
-* Star数量：6372 个
-* Fork数量：570 次
-* 关注人数：6372 人
-* 贡献人数：167 人
-* Open Issues数量：20 个
-* Github地址：https://github.com/polyfillpolyfill/polyfill-service.git
-* 项目首页: https://polyfill.io/
-
-
-该项目是一个开源的自动 polyfill 服务。它提供了对项目的简要介绍。
-
-## Emote Portrait Alive: 在弱条件下生成表现力肖像视频
-
-* 创建周期：4 天
-* Star数量：4420 个
-* Fork数量：296 次
-* 关注人数：4420 人
-* 贡献人数：1 人
-* Open Issues数量：126 个
-* Github地址：https://github.com/HumanAIGC/EMO.git
-
-
-该项目是关于 Emote Portrait Alive，旨在利用 Audio2Video Diffusion Model，在较弱的条件下生成具有表现力的肖像视频。该项目由阿里巴巴集团智能计算研究所的田林瑞、王琦、张邦和薄烈峰开发。
-
-## 在Docker容器中运行Windows应用程序
-
-* 创建周期：47 天
-* 开发语言：Shell
-* 协议类型：MIT License
-* Star数量：2714 个
-* Fork数量：164 次
-* 关注人数：2714 人
-* 贡献人数：3 人
-* Open Issues数量：11 个
-* Github地址：https://github.com/dockur/windows.git
-
-
-![](/images/dockur-windows-0.png)
-
-Windows in a Docker容器是一个开源项目，可以在Docker容器中运行Windows应用程序。它提供了一种将Windows应用程序容器化并在一致的环境中运行的方式，从而更容易进行部署和管理。
-
-## BitNet: Scaling 1-bit Transformers for Large Language Models - PyTorch实现
-
-* 创建周期：136 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：671 个
-* Fork数量：39 次
-* 关注人数：671 人
-* 贡献人数：4 人
-* Open Issues数量：10 个
-* Github地址：https://github.com/kyegomez/BitNet.git
-* 项目首页: https://discord.gg/qUtxnK2NMf
-
-
-BitNet是论文'BitNet: Scaling 1-bit Transformers for Large Language Models'中线性方法和模型的PyTorch实现。它涉及将Transformer中的线性投影替换为BitLinear模块，使BitNet架构的实现非常简单。
+RAWeb是RetroAchievements.org的平台应用程序，使用Laravel框架（TALL堆栈）构建。
 
