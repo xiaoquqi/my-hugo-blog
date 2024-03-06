@@ -1,32 +1,32 @@
 ---
-title: Github 2024-03-07 开源项目日报 Top10
-date: 2024-03-07T07:03:47+08:00
+title: Github 2024-03-07 Go开源项目日报 Top10
+date: 2024-03-07T07:11:13+08:00
 slug: github-trendings-today-20240307
 author: 老孙正经胡说
-image: /images/abi-screenshot-to-code-0.png
+image: /images/goharbor-harbor-0.png
 tags:
   - github
   - trendings
   - 数量
   - 人数
   - 人
+  - 开发
+  - 和
   - 项目
   - 语言
-  - 开发
   - 贡献
+  - 地址
   - 创建
   - 周期
-  - 关注
-  - 地址
-  - 是
   - 协议
   - 类型
-  - 和
-  - 模拟器
-  - 任天堂
+  - 关注
+  - 提供
+  - 服务
+  - 使用
   - 开源
-  - 上
-  - 游戏
+  - 是
+  - 用于
 
 categories:
 
@@ -38,172 +38,151 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 4 |
-| C++项目 | 3 |
-| C#项目 | 1 |
+| Go项目 | 10 |
 | TypeScript项目 | 1 |
-| 非开发语言项目 | 1 |
-| HTML项目 | 1 |
-| CSS项目 | 1 |
 
-## 屏幕截图转代码应用
+## Harbor - 开源的云原生注册表项目
 
-* 创建周期：114 天
-* 开发语言：TypeScript, Python
-* 协议类型：MIT License
-* Star数量：42336 个
-* Fork数量：4965 次
-* 关注人数：42336 人
-* 贡献人数：18 人
-* Open Issues数量：85 个
-* Github地址：https://github.com/abi/screenshot-to-code.git
-* 项目首页: https://screenshottocode.com
-
-
-![](/images/abi-screenshot-to-code-0.png)
-
-这个开源项目是一个简单的应用程序，它使用GPT-4 Vision或Claude 3来生成代码，使用DALL-E 3来生成类似的图像，将屏幕截图转换为代码。它支持HTML/Tailwind CSS、React、Bootstrap和Vue。用户还可以输入URL来克隆一个活动网站。该项目在GitHub上可用，以获取更多演示和更新。
-
-## Ryujinx: 任天堂Switch模拟器
-
-* 创建周期：2223 天
-* 开发语言：C#
-* 协议类型：MIT License
-* Star数量：28824 个
-* Fork数量：3163 次
-* 关注人数：28824 人
-* 贡献人数：178 人
-* Open Issues数量：772 个
-* Github地址：https://github.com/Ryujinx/Ryujinx.git
-* 项目首页: https://www.ryujinx.org
-
-
-![](/images/ryujinx-ryujinx-0.png)
-
-Ryujinx是一个用C#编写的开源任天堂Switch模拟器。截至2023年10月，已测试了大约4200个标题，其中超过4150个可以启动到游戏界面，并且大约3500个被认为是可玩的。用户可以通过提交新的游戏测试或更新现有的测试来贡献兼容性列表。
-
-## Clash Premium规则集（RULE-SET）
-
-* 创建周期：1316 天
-* 协议类型：GNU General Public License v3.0
-* Star数量：15051 个
-* Fork数量：1267 次
-* 关注人数：15051 人
-* 贡献人数：3 人
-* Open Issues数量：0 个
-* Github地址：https://github.com/Loyalsoldier/clash-rules.git
-
-
-![](/images/loyalsoldier-clash-rules-0.png)
-
-Clash Premium规则集（RULE-SET）兼容ClashX Pro、Clash for Windows客户端，由GitHub Actions每天早上6:30自动构建。
-
-## Dolphin - 一款GameCube和Wii模拟器
-
-* 创建周期：3881 天
-* 开发语言：C++
-* 协议类型：Other
-* Star数量：11732 个
-* Fork数量：2501 次
-* 关注人数：11732 人
-* 贡献人数：366 人
-* Open Issues数量：272 个
-* Github地址：https://github.com/dolphin-emu/dolphin.git
-* 项目首页: https://dolphin-emu.org
-
-
-Dolphin是一款GameCube / Wii模拟器，允许用户在PC上玩这两个平台的游戏，并进行各种改进。
-
-## DUSt3R: 几何3D视觉简化
-
-* 创建周期：13 天
-* 开发语言：Python
-* 协议类型：Other
-* Star数量：1865 个
-* Fork数量：155 次
-* 关注人数：1865 人
-* 贡献人数：3 人
-* Open Issues数量：15 个
-* Github地址：https://github.com/naver/dust3r.git
-
-
-DUSt3R是Geometric 3D Vision Made Easy的官方实现。它旨在利用几何技术简化3D视觉的过程。
-
-## 基于Next.js和React.js的简单UI组件示例
-
-* 创建周期：490 天
-* 开发语言：HTML, CSS
-* Star数量：2552 个
-* Fork数量：494 次
-* 关注人数：2552 人
-* 贡献人数：3 人
-* Open Issues数量：3 个
-* Github地址：https://github.com/atherosai/ui.git
-* 项目首页: https://learning.atheros.ai
-
-
-该存储库包含基于Next.js和React.js的简单UI组件示例。它包括HTML/CSS/JS和React示例的安装说明，具体示例包括TikTok、Instagram、Youtube、Twitter、Linkedin和Threads。
-
-## 微型视觉语言模型Moondream
-
-* 创建周期：38 天
-* 开发语言：Python
-* Star数量：1618 个
-* Fork数量：123 次
-* 关注人数：1618 人
-* 贡献人数：8 人
-* Open Issues数量：29 个
-* Github地址：https://github.com/vikhyat/moondream.git
-
-
-微型视觉语言模型Moondream是一个强大而多功能的开源项目，旨在有效地在各种平台上运行。
-
-## 任天堂Switch模拟器（非官方镜像分支）
-
-* 创建周期：3 天
-* 开发语言：C++
-* 协议类型：GNU General Public License v3.0
-* Star数量：1319 个
-* Fork数量：1004 次
-* 关注人数：1319 人
-* 贡献人数：337 人
-* Open Issues数量：8 个
-* Github地址：https://github.com/yuzu-mirror/yuzu.git
-
-
-![](/images/yuzu-mirror-yuzu-0.png)
-
-这个任天堂Switch模拟器是原始存储库的非官方镜像分支。
-
-## 任天堂3DS模拟器
-
-* 创建周期：3 天
-* 开发语言：C++
-* 协议类型：GNU General Public License v2.0
-* Star数量：578 个
-* Fork数量：307 次
-* 关注人数：578 人
-* 贡献人数：267 人
-* Open Issues数量：5 个
-* Github地址：https://github.com/PabloMK7/citra.git
-
-
-任天堂3DS模拟器是一个开源项目，旨在在其他平台上复制3DS游戏体验，使用户能够在诸如个人电脑和智能手机等设备上玩3DS游戏。
-
-## ComfyUI-layerdiffuse: 层扩散自定义节点
-
-* 创建周期：5 天
-* 开发语言：Python
+* 创建周期：2908 天
+* 开发语言：Go
 * 协议类型：Apache License 2.0
-* Star数量：517 个
-* Fork数量：59 次
-* 关注人数：517 人
-* 贡献人数：3 人
-* Open Issues数量：12 个
-* Github地址：https://github.com/huchenlei/ComfyUI-layerdiffuse.git
+* Star数量：21549 个
+* Fork数量：4526 次
+* 关注人数：21549 人
+* 贡献人数：297 人
+* Open Issues数量：597 个
+* Github地址：https://github.com/goharbor/harbor.git
+* 项目首页: https://goharbor.io
 
 
-![](/images/huchenlei-comfyui-layerdiffuse-0.png)
+![](/images/goharbor-harbor-0.png)
 
-ComfyUI-layerdiffuse是开源项目LayerDiffuse的一个实现，可在https://github.com/layerdiffusion/LayerDiffuse找到。它为层扩散提供了自定义节点。
+Harbor是一个开源的可信的云原生注册表项目，用于存储、签名和扫描内容。它通过添加安全性、身份验证和管理等功能，扩展了开源的Docker Distribution。它支持镜像在注册表之间的复制，并提供用户管理、访问控制和活动审计等高级安全功能。
+
+## Kubernetes Dashboard - 通用Kubernetes集群Web UI
+
+* 创建周期：3066 天
+* 开发语言：Go, TypeScript
+* 协议类型：Apache License 2.0
+* Star数量：13520 个
+* Fork数量：4034 次
+* 关注人数：13520 人
+* 贡献人数：346 人
+* Open Issues数量：138 个
+* Github地址：https://github.com/kubernetes/dashboard.git
+
+
+Kubernetes Dashboard是一个开源的通用Web UI，用于管理Kubernetes集群。
+
+## Terraform AWS提供程序
+
+* 创建周期：2439 天
+* 开发语言：Go
+* 协议类型：Mozilla Public License 2.0
+* Star数量：9193 个
+* Fork数量：8685 次
+* 关注人数：9193 人
+* 贡献人数：353 人
+* Open Issues数量：4051 个
+* Github地址：https://github.com/hashicorp/terraform-provider-aws.git
+* 项目首页: https://registry.terraform.io/providers/hashicorp/aws
+
+
+Terraform AWS提供程序允许Terraform管理AWS资源，并提供贡献指南、季度开发路线图、常见问题解答、教程和讨论论坛等资源。
+
+## GitHub Copilot免费使用GPT-4模型服务
+
+* 创建周期：60 天
+* 开发语言：Go
+* 协议类型：MIT License
+* Star数量：994 个
+* Fork数量：120 次
+* 关注人数：994 人
+* 贡献人数：5 人
+* Open Issues数量：5 个
+* Github地址：https://github.com/aaamoon/copilot-gpt4-service.git
+* 项目首页: https://gpt4copilot.tech
+
+
+GitHub Copilot提供了一个免费使用GPT-4模型的服务，用户可以访问网站 https://gpt4copilot.tech 并填入服务端API地址和GitHub Copilot插件令牌来使用。该服务还提供了三个已开通GitHub Copilot账号的令牌供使用，用户也可以通过copilot-token接口获取自己的令牌。此外，用户可以自行切换模型，支持GPT-4模型。
+
+## ExternalDNS: Kubernetes服务和Ingress与外部DNS提供商同步工具
+
+* 创建周期：2583 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：7131 个
+* Fork数量：2452 次
+* 关注人数：7131 人
+* 贡献人数：409 人
+* Open Issues数量：254 个
+* Github地址：https://github.com/kubernetes-sigs/external-dns.git
+
+
+ExternalDNS是一个开源工具，它将Kubernetes服务和Ingress与AWS Route53、Google CloudDNS等外部DNS提供商进行同步。
+
+## Podinfo: Kubernetes微服务最佳实践展示
+
+* 创建周期：2253 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：4835 个
+* Fork数量：1533 次
+* 关注人数：4835 人
+* 贡献人数：44 人
+* Open Issues数量：23 个
+* Github地址：https://github.com/stefanprodan/podinfo.git
+
+
+![](/images/stefanprodan-podinfo-0.png)
+
+Podinfo是一个用Go编写的小型Web应用程序，演示了在Kubernetes中运行微服务的最佳实践。它被CNCF项目如Flux和Flagger用于测试和研讨会。Podinfo包括健康检查、优雅的关闭、Prometheus和Open Telemetry仪表化、结构化日志、故障注入、Swagger文档、各种工具的安装程序、多架构容器镜像支持、容器镜像签名、CVE扫描等功能。其Web API提供各种端点，用于检索运行时信息、版本详细信息、指标、健康检查和其他功能。此外，它还提供了用于健康检查、回显内容和返回版本详细信息的gRPC API，以及用于访问Swagger文档的Web UI。
+
+## Google Cloud客户端库为Go
+
+* 创建周期：3590 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：3541 个
+* Fork数量：1192 次
+* 关注人数：3541 人
+* 贡献人数：328 人
+* Open Issues数量：326 个
+* Github地址：https://github.com/googleapis/google-cloud-go.git
+* 项目首页: https://cloud.google.com/go/docs/reference
+
+
+Google Cloud客户端库为Go提供了Google Cloud平台服务的Go语言包。要安装这些包，建议使用go get命令而不是克隆整个存储库。请注意，其中一些包正在开发中，可能会偶尔进行不兼容的更改。
+
+## 403JUMP: 绕过HTTP 403禁止页面的工具
+
+* 创建周期：43 天
+* 开发语言：Go
+* 协议类型：MIT License
+* Star数量：99 个
+* Fork数量：9 次
+* 关注人数：99 人
+* 贡献人数：1 人
+* Open Issues数量：3 个
+* Github地址：https://github.com/trap-bytes/403jump.git
+
+
+![](/images/trap-bytes-403jump-0.png)
+
+403JUMP是一个为渗透测试人员和赏金猎人设计的开源工具，旨在审核Web应用程序的安全性。它旨在使用各种技术绕过HTTP 403（禁止）页面。
+
+## Golang实现的多线程加密货币交易机器人
+
+* 创建周期：7 天
+* 开发语言：Go
+* 协议类型：MIT License
+* Star数量：50 个
+* Fork数量：6 次
+* 关注人数：50 人
+* 贡献人数：1 人
+* Open Issues数量：9 个
+* Github地址：https://github.com/AndreyMashukov/go-crypto-bot.git
+
+
+这是一个使用Golang实现的可投入生产的加密货币交易机器人。它支持经典交易、三角套利、机器学习集成、管理系统的API访问和Docker支持。它兼容Binance交易所，并正在开发ByBit交易所。
 
