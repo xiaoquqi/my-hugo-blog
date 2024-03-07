@@ -1,32 +1,32 @@
 ---
-title: Github 2024-03-08 开源项目日报 Top10
-date: 2024-03-08T07:01:30+08:00
+title: Github 2024-03-08 Java开源项目日报 Top10
+date: 2024-03-08T07:11:15+08:00
 slug: github-trendings-today-20240308
 author: 老孙正经胡说
-image: /images/loyalsoldier-clash-rules-0.png
+image: /images/krahets-hello-algo-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
   - 人数
   - 人
-  - 语言
-  - 模型
-  - 创建
-  - 开发
+  - 项目
   - 和
-  - 贡献
+  - 语言
+  - 开发
+  - 创建
   - 周期
-  - 关注
-  - 地址
   - 协议
   - 类型
-  - 开源
+  - 关注
+  - 贡献
+  - 地址
   - 是
-  - 构建
-  - 示例
-  - 生成
+  - 开源
+  - 中
+  - 算法
+  - 工具
+  - 数据
 
 categories:
 
@@ -38,170 +38,156 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 3 |
-| Jupyter Notebook项目 | 2 |
-| JavaScript项目 | 1 |
-| Rust项目 | 1 |
+| Java项目 | 9 |
 | C++项目 | 1 |
 | 非开发语言项目 | 1 |
-| HTML项目 | 1 |
-| CSS项目 | 1 |
 
-## 初学者的生成式人工智能（第2版）
+## 《Hello 算法》：动画图解、一键运行的数据结构与算法教程
 
-* 创建周期：259 天
-* 开发语言：Jupyter Notebook
-* 协议类型：MIT License
-* Star数量：25764 个
-* Fork数量：16105 次
-* 关注人数：25764 人
-* 贡献人数：50 人
-* Open Issues数量：17 个
-* Github地址：https://github.com/microsoft/generative-ai-for-beginners.git
-* 项目首页: https://microsoft.github.io/generative-ai-for-beginners/
-
-
-《初学者的生成式人工智能（第2版）》是由微软云倡导者提供的一门全面的18课程，教授一切开始构建生成式人工智能应用所需的知识。
-
-## Clash Premium规则集（RULE-SET）
-
-* 创建周期：1316 天
-* 协议类型：GNU General Public License v3.0
-* Star数量：15051 个
-* Fork数量：1267 次
-* 关注人数：15051 人
-* 贡献人数：3 人
-* Open Issues数量：0 个
-* Github地址：https://github.com/Loyalsoldier/clash-rules.git
-
-
-![](/images/loyalsoldier-clash-rules-0.png)
-
-Clash Premium规则集（RULE-SET）兼容ClashX Pro、Clash for Windows客户端，由GitHub Actions每天早上6:30自动构建。
-
-## 从零开始构建大型语言模型
-
-* 创建周期：197 天
-* 开发语言：Jupyter Notebook
+* 创建周期：476 天
 * 协议类型：Other
-* Star数量：8212 个
-* Fork数量：475 次
-* 关注人数：8212 人
-* 贡献人数：6 人
-* Open Issues数量：0 个
-* Github地址：https://github.com/rasbt/LLMs-from-scratch.git
-* 项目首页: https://www.manning.com/books/build-a-large-language-model-from-scratch
+* Star数量：63556 个
+* Fork数量：7731 次
+* 关注人数：63556 人
+* 贡献人数：137 人
+* Open Issues数量：20 个
+* Github地址：https://github.com/krahets/hello-algo.git
+* 项目首页: https://hello-algo.com
 
 
-《从零开始构建大型语言模型》是一本指导您从头开始创建自己的LLM的书籍，使用清晰的解释、图表和示例。该方法与创建ChatGPT等大规模基础模型的方法相似。它涵盖了理解大型语言模型和处理文本数据等主题。
+![](/images/krahets-hello-algo-0.png)
 
-## ZLUDA：在AMD GPU上运行CUDA应用程序的开源项目
+《Hello 算法》是一本开源的、面向初学者的关于数据结构与算法的教程，采用动画图解和可运行的代码示例，支持多种编程语言。该项目旨在提供清晰易懂的内容，学习曲线平滑，引导初学者探索数据结构与算法的知识地图。鼓励读者互相学习，通常会在两天内回复问题和评论。
 
-* 创建周期：1524 天
-* 开发语言：Rust
+## EasyExcel：快速、简洁的Java处理Excel工具
+
+* 创建周期：2222 天
+* 开发语言：Java
 * 协议类型：Apache License 2.0
-* Star数量：6718 个
-* Fork数量：364 次
-* 关注人数：6718 人
-* 贡献人数：9 人
-* Open Issues数量：50 个
-* Github地址：https://github.com/vosen/ZLUDA.git
+* Star数量：30556 个
+* Fork数量：7358 次
+* 关注人数：30556 人
+* 贡献人数：63 人
+* Open Issues数量：500 个
+* Github地址：https://github.com/alibaba/easyexcel.git
+* 项目首页: https://easyexcel.opensource.alibaba.com
 
 
-ZLUDA是一个开源项目，它可以在AMD GPU上以接近原生性能运行未经修改的CUDA应用程序。目前处于alpha质量阶段，但已确认可以与各种本地CUDA应用程序一起使用，如Geekbench、3DF Zephyr、Blender等。
+EasyExcel是一个快速、简洁的Java处理Excel工具，解决了大文件内存溢出的问题。它重写了Apache POI对07版Excel的解析，大大降低了内存消耗，并且提供了极速模式来更快地处理Excel文件。
 
-## 复制 Sora（Open AI T2V 模型）
+## Keycloak: 现代应用程序和服务的开源身份和访问管理解决方案
 
-* 创建周期：17 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：4985 个
-* Fork数量：435 次
-* 关注人数：4985 人
-* 贡献人数：15 人
-* Open Issues数量：47 个
-* Github地址：https://github.com/PKU-YuanGroup/Open-Sora-Plan.git
-
-
-该项目旨在复制 Sora（Open AI T2V 模型），但我们只拥有有限的资源。我们真诚希望所有的开源社区能够为这个项目做出贡献。
-
-## Puter：先进的开源桌面环境
-
-* 创建周期：5 天
-* 开发语言：JavaScript
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：4855 个
-* Fork数量：194 次
-* 关注人数：4855 人
-* 贡献人数：7 人
-* Open Issues数量：22 个
-* Github地址：https://github.com/HeyPuter/puter.git
-* 项目首页: https://puter.com
-
-
-![](/images/heyputer-puter-0.png)
-
-Puter是一个先进的开源桌面环境，位于浏览器中，旨在功能丰富、速度异常快、高度可扩展。它可用于构建远程桌面环境，或作为云存储服务、远程服务器、Web托管平台等的界面。
-
-## 基于Next.js和React.js的简单UI组件示例
-
-* 创建周期：490 天
-* 开发语言：HTML, CSS
-* Star数量：2552 个
-* Fork数量：494 次
-* 关注人数：2552 人
-* 贡献人数：3 人
-* Open Issues数量：3 个
-* Github地址：https://github.com/atherosai/ui.git
-* 项目首页: https://learning.atheros.ai
-
-
-该存储库包含基于Next.js和React.js的简单UI组件示例。它包括HTML/CSS/JS和React示例的安装说明，具体示例包括TikTok、Instagram、Youtube、Twitter、Linkedin和Threads。
-
-## TripoSR: 快速前馈3D重建的开源模型
-
-* 创建周期：30 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：1492 个
-* Fork数量：170 次
-* 关注人数：1492 人
-* 贡献人数：6 人
-* Open Issues数量：24 个
-* Github地址：https://github.com/VAST-AI-Research/TripoSR.git
-
-
-TripoSR 是由 Tripo AI 和 Stability AI 开发的开源模型，用于从单个图像快速进行前馈3D重建。它利用大型重建模型（LRM）的原则，显著提高了3D重建的速度和质量，在 NVIDIA A100 GPU 上可以在不到0.5秒内生成高质量的3D模型。该模型在定性和定量评估中表现出优异的性能，在多个公共数据集上优于其他开源替代方案。它是根据 MIT 许可证发布的，包括源代码、预训练模型和交互式在线演示，旨在赋予研究人员、开发人员和创意人员在3D生成 AI 和3D内容创作方面的可能性。
-
-## Open-Sora: 构建自己的视频生成模型
-
-* 创建周期：17 天
-* 开发语言：Python
+* 创建周期：3846 天
+* 开发语言：Java
 * 协议类型：Apache License 2.0
-* Star数量：1151 个
-* Fork数量：96 次
-* 关注人数：1151 人
-* 贡献人数：6 人
-* Open Issues数量：10 个
-* Github地址：https://github.com/hpcaitech/Open-Sora.git
+* Star数量：18649 个
+* Fork数量：6018 次
+* 关注人数：18649 人
+* 贡献人数：336 人
+* Open Issues数量：2122 个
+* Github地址：https://github.com/keycloak/keycloak.git
+* 项目首页: https://www.keycloak.org
 
 
-![](/images/hpcaitech-open-sora-0.png)
+Keycloak是现代应用程序和服务的开源身份和访问管理解决方案。它包括Keycloak Server、Java适配器和JavaScript适配器的源代码。
 
-Open-Sora是一个开源项目，允许用户构建类似于OpenAI的Sora的自己的视频生成模型。它提供了创建自定义视频生成模型所需的工具和资源。
+## QtScrcpy: Android实时显示控制软件
 
-## 基于Yuzu EA 4176的存储库
+* 创建周期：1720 天
+* 开发语言：Java, C++
+* 协议类型：Apache License 2.0
+* Star数量：14700 个
+* Fork数量：2084 次
+* 关注人数：14700 人
+* 贡献人数：19 人
+* Open Issues数量：426 个
+* Github地址：https://github.com/barry-ran/QtScrcpy.git
+* 项目首页: https://blog.csdn.net/rankun1/article/details/87970523
 
-* 创建周期：4 天
-* 开发语言：C++
-* 协议类型：MIT License
-* Star数量：561 个
-* Fork数量：214 次
-* 关注人数：561 人
-* 贡献人数：1 人
-* Open Issues数量：1 个
-* Github地址：https://github.com/Crimson-Hawk/suyu.git
+
+QtScrcpy是一款开源软件，允许通过USB或网络实时显示和控制Android设备。它不需要root权限，并支持GNU/Linux、Windows和macOS等多个平台。它专注于轻量化、性能、质量、低延迟、快速启动时间和非侵入性。
+
+## LanguageTool：25+种语言的校对软件
+
+* 创建周期：3865 天
+* 开发语言：Java
+* 协议类型：GNU Lesser General Public License v2.1
+* Star数量：11341 个
+* Fork数量：1324 次
+* 关注人数：11341 人
+* 贡献人数：177 人
+* Open Issues数量：1924 个
+* Github地址：https://github.com/languagetool-org/languagetool.git
+* 项目首页: https://languagetool.org
 
 
-此存储库是基于Yuzu EA 4176创建的，旨在防止微软将其关闭。鼓励贡献者参与。
+LanguageTool是一款开源的校对软件，支持英语、西班牙语、法语、德语、葡萄牙语、波兰语、荷兰语等25多种语言。它可以发现许多简单拼写检查器无法检测到的错误，并提供各种资源，如工作机会、服务器设置指南、HTTP API文档和Java使用说明。
+
+## Apache Flink的CDC连接器
+
+* 创建周期：1320 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：5025 个
+* Fork数量：1715 次
+* 关注人数：5025 人
+* 贡献人数：111 人
+* Open Issues数量：342 个
+* Github地址：https://github.com/apache/flink-cdc.git
+* 项目首页: https://ververica.github.io/flink-cdc-connectors/
+
+
+![](/images/apache-flink-cdc-0.png)
+
+Apache Flink的CDC连接器是一组源连接器，使用变更数据捕获（CDC）从不同的数据库中摄取变更。它集成了Debezium来捕获数据变更，并设计用于与Apache Flink一起使用。
+
+## Liquibase: 开源数据库模式更改跟踪工具
+
+* 创建周期：4627 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：4309 个
+* Fork数量：1767 次
+* 关注人数：4309 人
+* 贡献人数：314 人
+* Open Issues数量：643 个
+* Github地址：https://github.com/liquibase/liquibase.git
+* 项目首页: https://www.liquibase.org
+
+
+Liquibase是一个开源工具，帮助开发人员跟踪、对版本进行管理和部署数据库模式更改。它提供了控制特定版本的模式更改、消除数据库发布中的错误和延迟、自动排序部署脚本、轻松回滚更改以及与现有工具协作的功能。
+
+## LangChain for Java: 利用LLM的力量加速你的Java应用程序
+
+* 创建周期：206 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：1391 个
+* Fork数量：239 次
+* 关注人数：1391 人
+* 贡献人数：46 人
+* Open Issues数量：76 个
+* Github地址：https://github.com/langchain4j/langchain4j.git
+* 项目首页: https://github.com/langchain4j/langchain4j
+
+
+LangChain for Java是一个旨在利用LLM的力量来加速Java应用程序的项目。
+
+## Apache Paimon(孵化中) - 流数据湖平台
+
+* 创建周期：751 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：1659 个
+* Fork数量：696 次
+* 关注人数：1659 人
+* 贡献人数：129 人
+* Open Issues数量：321 个
+* Github地址：https://github.com/apache/incubator-paimon.git
+* 项目首页: https://paimon.apache.org/
+
+
+![](/images/apache-incubator-paimon-0.png)
+
+Apache Paimon(孵化中)是一个支持高速数据摄取、变更数据跟踪和高效实时分析的流数据湖平台。它是从Flink社区发展而来，其架构参考了Iceberg的一些设计概念。
 
