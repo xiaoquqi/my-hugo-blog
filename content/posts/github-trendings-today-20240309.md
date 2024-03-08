@@ -1,9 +1,9 @@
 ---
-title: Github 2024-03-09 开源项目日报 Top10
-date: 2024-03-09T07:01:17+08:00
+title: Github 2024-03-09 Rust开源项目日报 Top10
+date: 2024-03-09T07:11:06+08:00
 slug: github-trendings-today-20240309
 author: 老孙正经胡说
-image: /images/ryujinx-ryujinx-0.png
+image: /images/pola-rs-polars-0.png
 tags:
   - github
   - trendings
@@ -11,22 +11,22 @@ tags:
   - 人数
   - 人
   - 项目
-  - 和
   - 语言
+  - 和
   - 开发
-  - 创建
-  - 贡献
-  - 周期
-  - 关注
-  - 地址
-  - 模型
-  - 协议
   - 类型
   - 是
-  - 开源
-  - 使用
-  - 示例
+  - 创建
+  - 周期
+  - 协议
+  - 关注
+  - 贡献
+  - 地址
   - 中
+  - 查询
+  - 运行
+  - 提供
+  - 开源
 
 categories:
 
@@ -38,172 +38,168 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 3 |
-| HTML项目 | 1 |
-| CSS项目 | 1 |
-| Swift项目 | 1 |
-| C#项目 | 1 |
-| C++项目 | 1 |
-| Jupyter Notebook项目 | 1 |
-| TypeScript项目 | 1 |
-| JavaScript项目 | 1 |
+| Rust项目 | 10 |
+| Python项目 | 1 |
+| Scala项目 | 1 |
+| CUE项目 | 1 |
 
-## Ryujinx: 任天堂Switch模拟器
+## InfluxDB Edge: 开源实时时序数据库
 
-* 创建周期：2223 天
-* 开发语言：C#
+* 创建周期：3817 天
+* 开发语言：Rust
+* 协议类型：Apache License 2.0
+* Star数量：27405 个
+* Fork数量：3468 次
+* 关注人数：27405 人
+* 贡献人数：319 人
+* Open Issues数量：1898 个
+* Github地址：https://github.com/influxdata/influxdb.git
+* 项目首页: https://influxdata.com
+
+
+InfluxDB Edge是用Rust编写的开源时序数据库，专注于为各种类型的观测数据提供实时缓冲。最新版本（3.x）可以通过SQL或InfluxQL进行查询，并将数据批量持久化到对象存储中作为Parquet文件。它可以作为独立系统在单个进程中运行，并提供商业版本，用于具有企业安全功能的集群化、分布式时序数据库。
+
+## Polars: Rust中的DataFrame接口和OLAP查询引擎
+
+* 创建周期：1354 天
+* 开发语言：Rust, Python
 * 协议类型：MIT License
-* Star数量：28824 个
-* Fork数量：3163 次
-* 关注人数：28824 人
-* 贡献人数：178 人
-* Open Issues数量：772 个
-* Github地址：https://github.com/Ryujinx/Ryujinx.git
-* 项目首页: https://www.ryujinx.org
+* Star数量：23854 个
+* Fork数量：1393 次
+* 关注人数：23854 人
+* 贡献人数：342 人
+* Open Issues数量：1313 个
+* Github地址：https://github.com/pola-rs/polars.git
+* 项目首页: https://docs.pola.rs
 
 
-![](/images/ryujinx-ryujinx-0.png)
+![](/images/pola-rs-polars-0.png)
 
-Ryujinx是一个用C#编写的开源任天堂Switch模拟器。截至2023年10月，已测试了大约4200个标题，其中超过4150个可以启动到游戏界面，并且大约3500个被认为是可玩的。用户可以通过提交新的游戏测试或更新现有的测试来贡献兼容性列表。
+Polars是在Rust上实现的OLAP查询引擎之上的DataFrame接口，提供诸如惰性和急切执行、多线程、SIMD、查询优化、强大的表达式API和用于大于RAM数据集的混合流式传输等功能。它支持Rust、Python、Node.js、R等多种语言。
 
-## Kingfisher：纯Swift图像下载和缓存库
+## Vector：高性能可观察性数据管道
 
-* 创建周期：3260 天
-* 开发语言：Swift
+* 创建周期：2021 天
+* 开发语言：Rust, CUE
+* 协议类型：Mozilla Public License 2.0
+* Star数量：15723 个
+* Fork数量：1341 次
+* 关注人数：15723 人
+* 贡献人数：369 人
+* Open Issues数量：1741 个
+* Github地址：https://github.com/vectordotdev/vector.git
+* 项目首页: https://vector.dev
+
+
+Vector是一个开源的高性能可观察性数据管道，允许用户收集、转换和路由日志和指标到任何供应商。它实现了成本降低、数据丰富化和数据安全，并且比空间中其他替代方案快高达10倍。
+
+## ZLUDA：在AMD GPU上运行CUDA应用程序的开源项目
+
+* 创建周期：1524 天
+* 开发语言：Rust
+* 协议类型：Apache License 2.0
+* Star数量：6718 个
+* Fork数量：364 次
+* 关注人数：6718 人
+* 贡献人数：9 人
+* Open Issues数量：50 个
+* Github地址：https://github.com/vosen/ZLUDA.git
+
+
+ZLUDA是一个开源项目，它可以在AMD GPU上以接近原生性能运行未经修改的CUDA应用程序。目前处于alpha质量阶段，但已确认可以与各种本地CUDA应用程序一起使用，如Geekbench、3DF Zephyr、Blender等。
+
+## Gleam：构建可扩展的类型安全系统的友好语言
+
+* 创建周期：2809 天
+* 开发语言：Rust
+* 协议类型：Apache License 2.0
+* Star数量：6298 个
+* Fork数量：310 次
+* 关注人数：6298 人
+* 贡献人数：157 人
+* Open Issues数量：130 个
+* Github地址：https://github.com/gleam-lang/gleam.git
+* 项目首页: https://gleam.run
+
+
+Gleam是一种友好的语言，用于构建可扩展的类型安全系统。
+
+## DataFusion：Rust中的高速数据查询引擎
+
+* 创建周期：1015 天
+* 开发语言：Rust
+* 协议类型：Apache License 2.0
+* Star数量：4523 个
+* Fork数量：827 次
+* 关注人数：4523 人
+* 贡献人数：398 人
+* Open Issues数量：935 个
+* Github地址：https://github.com/apache/arrow-datafusion.git
+* 项目首页: https://arrow.apache.org/datafusion
+
+
+DataFusion是一个高速、可扩展的查询引擎，用于在Rust中构建高质量的数据中心系统，使用Apache Arrow内存格式。它提供了SQL和Dataframe API，出色的性能，内置支持各种数据格式，广泛的定制化以及强大的社区。
+
+## ord - 一种实验性的satoshis管理软件
+
+* 创建周期：818 天
+* 开发语言：Rust
+* 协议类型：Creative Commons Zero v1.0 Universal
+* Star数量：3029 个
+* Fork数量：1042 次
+* 关注人数：3029 人
+* 贡献人数：75 人
+* Open Issues数量：350 个
+* Github地址：https://github.com/ordinals/ord.git
+* 项目首页: https://ordinals.com
+
+
+ord是一种实验性软件，用于管理satoshis的索引、区块浏览器和命令行钱包。它为satoshis分配序数，允许它们被收集和交易。该项目是开源的，由社区资助，当前的首席维护者是raphjaph。它依赖于比特币核心进行私钥管理和交易签名，并鼓励用户捐赠以支持其维护和开发。
+
+## 本地 Rust UI 库：细粒度反应性
+
+* 创建周期：403 天
+* 开发语言：Rust
 * 协议类型：MIT License
-* Star数量：22445 个
-* Fork数量：2576 次
-* 关注人数：22445 人
-* 贡献人数：172 人
-* Open Issues数量：134 个
-* Github地址：https://github.com/onevcat/Kingfisher.git
+* Star数量：1990 个
+* Fork数量：93 次
+* 关注人数：1990 人
+* 贡献人数：39 人
+* Open Issues数量：45 个
+* Github地址：https://github.com/lapce/floem.git
+* 项目首页: https://docs.rs/floem
 
 
-![](/images/onevcat-kingfisher-0.png)
+这是一个具有细粒度反应性的本地 Rust UI 库。该项目仍在不断发展中，我们将在达到 v1 版本的过程中偶尔进行重大更改并添加缺失的功能。
 
-Kingfisher是一个强大的、纯Swift的库，用于从网络上下载和缓存图像，为您提供了一种纯Swift的方式来处理下一个应用中的远程图像。
+## Gitu: 一个受Magit启发的终端用户界面Git客户端
 
-## 使用Three.js和localStorage实现多窗口3D场景同步
-
-* 创建周期：107 天
-* 开发语言：JavaScript
+* 创建周期：77 天
+* 开发语言：Rust
 * 协议类型：MIT License
-* Star数量：15306 个
-* Fork数量：2379 次
-* 关注人数：15306 人
-* 贡献人数：2 人
-* Open Issues数量：37 个
-* Github地址：https://github.com/bgstaal/multipleWindow3dScene.git
-
-
-这个开源项目演示了如何使用three.js和localStorage在多个窗口之间同步3D场景。它提供了一个快速的示例来实现这种功能。
-
-## 从零开始构建大型语言模型
-
-* 创建周期：197 天
-* 开发语言：Jupyter Notebook
-* 协议类型：Other
-* Star数量：8212 个
-* Fork数量：475 次
-* 关注人数：8212 人
-* 贡献人数：6 人
-* Open Issues数量：0 个
-* Github地址：https://github.com/rasbt/LLMs-from-scratch.git
-* 项目首页: https://www.manning.com/books/build-a-large-language-model-from-scratch
-
-
-《从零开始构建大型语言模型》是一本指导您从头开始创建自己的LLM的书籍，使用清晰的解释、图表和示例。该方法与创建ChatGPT等大规模基础模型的方法相似。它涵盖了理解大型语言模型和处理文本数据等主题。
-
-## 基于Next.js和React.js的简单UI组件示例
-
-* 创建周期：490 天
-* 开发语言：HTML, CSS
-* Star数量：2552 个
-* Fork数量：494 次
-* 关注人数：2552 人
+* Star数量：352 个
+* Fork数量：6 次
+* 关注人数：352 人
 * 贡献人数：3 人
-* Open Issues数量：3 个
-* Github地址：https://github.com/atherosai/ui.git
-* 项目首页: https://learning.atheros.ai
+* Open Issues数量：10 个
+* Github地址：https://github.com/altsem/gitu.git
 
 
-该存储库包含基于Next.js和React.js的简单UI组件示例。它包括HTML/CSS/JS和React示例的安装说明，具体示例包括TikTok、Instagram、Youtube、Twitter、Linkedin和Threads。
+Gitu是受Magit启发的终端用户界面(TUI) Git客户端，提供了一个在Emacs之外的Git界面。它允许用户直接从终端与Git进行交互，为管理版本控制提供了一种便捷高效的方式。
 
-## TripoSR: 快速前馈3D重建的开源模型
+## Comet: Apache Spark插件利用Apache Arrow DataFusion提高查询效率和运行时
 
-* 创建周期：30 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：1492 个
-* Fork数量：170 次
-* 关注人数：1492 人
-* 贡献人数：6 人
-* Open Issues数量：24 个
-* Github地址：https://github.com/VAST-AI-Research/TripoSR.git
-
-
-TripoSR 是由 Tripo AI 和 Stability AI 开发的开源模型，用于从单个图像快速进行前馈3D重建。它利用大型重建模型（LRM）的原则，显著提高了3D重建的速度和质量，在 NVIDIA A100 GPU 上可以在不到0.5秒内生成高质量的3D模型。该模型在定性和定量评估中表现出优异的性能，在多个公共数据集上优于其他开源替代方案。它是根据 MIT 许可证发布的，包括源代码、预训练模型和交互式在线演示，旨在赋予研究人员、开发人员和创意人员在3D生成 AI 和3D内容创作方面的可能性。
-
-## 企业SaaS入门套件
-
-* 创建周期：605 天
-* 开发语言：TypeScript
+* 创建周期：54 天
+* 开发语言：Rust, Scala
 * 协议类型：Apache License 2.0
-* Star数量：1664 个
-* Fork数量：327 次
-* 关注人数：1664 人
-* 贡献人数：35 人
-* Open Issues数量：14 个
-* Github地址：https://github.com/boxyhq/saas-starter-kit.git
-* 项目首页: https://boxyhq.com/blog/enterprise-ready-saas-starter-kit
+* Star数量：283 个
+* Fork数量：48 次
+* 关注人数：283 人
+* 贡献人数：15 人
+* Open Issues数量：29 个
+* Github地址：https://github.com/apache/arrow-datafusion-comet.git
+* 项目首页: https://arrow.apache.org/datafusion-comet
 
 
-![](/images/boxyhq-saas-starter-kit-0.png)
-
-企业SaaS入门套件是一个开源的Next.js SaaS样板，旨在启动企业应用程序开发。它为构建企业SaaS应用程序提供了基础，并鼓励用户为持续的开发和改进给予star标记。
-
-## Qwen1.5代理框架和应用程序
-
-* 创建周期：169 天
-* 开发语言：Python
-* 协议类型：Other
-* Star数量：1071 个
-* Fork数量：115 次
-* 关注人数：1071 人
-* 贡献人数：11 人
-* Open Issues数量：30 个
-* Github地址：https://github.com/QwenLM/Qwen-Agent.git
-
-
-Qwen1.5 is an open source agent framework and application with features such as function calling, code interpreter, RAG, and Chrome extension.
-
-## MaxText：开源高性能可扩展LLM
-
-* 创建周期：375 天
-* 开发语言：Python
-* 协议类型：Apache License 2.0
-* Star数量：664 个
-* Fork数量：96 次
-* 关注人数：664 人
-* 贡献人数：37 人
-* Open Issues数量：47 个
-* Github地址：https://github.com/google/maxtext.git
-
-
-MaxText 是一个开源的、高性能的、可扩展的 LLM，使用纯Python/Jax编写，针对Google Cloud TPUs。它旨在成为研究和生产中雄心勃勃的LLM项目的起点，鼓励用户首先尝试使用它，然后修改以满足他们的需求。
-
-## Helldivers 2 内部黑客 DLL 代理概念验证
-
-* 创建周期：5 天
-* 开发语言：C++
-* 协议类型：MIT License
-* Star数量：126 个
-* Fork数量：212 次
-* 关注人数：126 人
-* 贡献人数：5 人
-* Open Issues数量：22 个
-* Github地址：https://github.com/emoisback/Helldivers-2-Internal-Hack-Dll-Proxy-PoC.git
-
-
-该项目是使用DLL代理进行内部黑客攻击的概念验证，针对游戏《Helldivers 2》。它旨在展示使用DLL代理修改游戏行为的潜力。
+Comet是一个Apache Spark插件，利用Apache Arrow DataFusion作为本机运行时来提高查询效率和运行时。它使用本机DataFusion运行时运行Spark SQL查询，比基于JVM的运行时更快、资源利用更高效。Comet旨在支持本机Parquet实现，完整实现Spark运算符和内置表达式，并提供UDF框架，使用户能够将现有的UDF迁移到本机。
 
