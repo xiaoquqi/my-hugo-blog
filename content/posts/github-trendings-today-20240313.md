@@ -1,32 +1,32 @@
 ---
-title: Github 2024-03-13 开源项目日报 Top10
-date: 2024-03-13T07:01:34+08:00
+title: Github 2024-03-13 C开源项目日报 Top10
+date: 2024-03-13T07:11:27+08:00
 slug: github-trendings-today-20240313
 author: 老孙正经胡说
-image: /images/krahets-hello-algo-0.png
+image: /images/libuv-libuv-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
-  - 人数
-  - 人
   - 和
-  - 语言
+  - 项目
+  - 人
+  - 人数
   - 开发
-  - 创建
-  - 类型
-  - 周期
-  - 关注
-  - 贡献
-  - 地址
-  - 协议
   - 是
-  - 开源
+  - 语言
+  - 创建
+  - 协议
+  - 贡献
+  - 固件
+  - 周期
+  - 类型
+  - 关注
+  - 地址
   - 提供
-  - 支持
-  - 算法
-  - 示例
+  - 库
+  - 用于
+  - 使用
 
 categories:
 
@@ -38,174 +38,171 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Rust项目 | 2 |
-| Python项目 | 2 |
-| 非开发语言项目 | 2 |
-| HTML项目 | 1 |
-| CSS项目 | 1 |
-| Dart项目 | 1 |
-| TypeScript项目 | 1 |
-| Go项目 | 1 |
-| JavaScript项目 | 1 |
+| C项目 | 10 |
+| C++项目 | 1 |
 
-## 《Hello 算法》：动画图解、一键运行的数据结构与算法教程
+## Curl：用于传输数据的命令行工具和库
 
-* 创建周期：476 天
+* 创建周期：5067 天
+* 开发语言：C
 * 协议类型：Other
-* Star数量：63556 个
-* Fork数量：7731 次
-* 关注人数：63556 人
-* 贡献人数：137 人
-* Open Issues数量：20 个
-* Github地址：https://github.com/krahets/hello-algo.git
-* 项目首页: https://hello-algo.com
+* Star数量：32994 个
+* Fork数量：6208 次
+* 关注人数：32994 人
+* 贡献人数：406 人
+* Open Issues数量：62 个
+* Github地址：https://github.com/curl/curl.git
+* 项目首页: https://curl.se/
 
 
-![](/images/krahets-hello-algo-0.png)
+Curl是一个用于使用URL语法传输数据的命令行工具和库，支持各种协议。它提供强大的功能，并可以通过阅读手册和安装文档来使用。libcurl库可供软件使用，并且可以在FAQ文档中找到对常见问题的解答。
 
-《Hello 算法》是一本开源的、面向初学者的关于数据结构与算法的教程，采用动画图解和可运行的代码示例，支持多种编程语言。该项目旨在提供清晰易懂的内容，学习曲线平滑，引导初学者探索数据结构与算法的知识地图。鼓励读者互相学习，通常会在两天内回复问题和评论。
+## libuv: 跨平台异步I/O库
 
-## LocalSend: 本地网络安全文件和消息共享应用
-
-* 创建周期：451 天
-* 开发语言：Dart
+* 创建周期：3756 天
+* 开发语言：C
 * 协议类型：MIT License
-* Star数量：30176 个
-* Fork数量：1503 次
-* 关注人数：30176 人
-* 贡献人数：106 人
-* Open Issues数量：309 个
-* Github地址：https://github.com/localsend/localsend.git
-* 项目首页: https://localsend.org
+* Star数量：23006 个
+* Fork数量：3470 次
+* 关注人数：23006 人
+* 贡献人数：446 人
+* Open Issues数量：185 个
+* Github地址：https://github.com/libuv/libuv.git
+* 项目首页: https://libuv.org/
 
 
-![](/images/localsend-localsend-0.png)
+![](/images/libuv-libuv-0.png)
 
-LocalSend是一个免费的开源应用程序，可以在本地网络上安全地在附近设备之间共享文件和消息，无需互联网连接。
+这个开源项目是一个名为libuv的跨平台异步I/O库。
 
-## Bruno: 专为API探索和测试而设计的开源IDE
+## BCC - 用于内核跟踪和操作的BPF工具包
 
-* 创建周期：532 天
-* 开发语言：JavaScript
-* 协议类型：MIT License
-* Star数量：14783 个
-* Fork数量：611 次
-* 关注人数：14783 人
-* 贡献人数：163 人
-* Open Issues数量：799 个
-* Github地址：https://github.com/usebruno/bruno.git
-* 项目首页: https://www.usebruno.com/
-
-
-Bruno是一个专为探索和测试API而设计的开源IDE。它是Postman和Insomnia等工具的轻量级替代品，旨在颠覆当前的现状。Bruno允许用户使用名为Bru的纯文本标记语言直接将集合存储在其文件系统中。它还支持使用Git或其他版本控制系统对API集合进行协作。Bruno优先考虑数据隐私，并且仅支持离线使用，没有添加云同步功能的计划。
-
-## Qlib: 开源AI量化投资平台
-
-* 创建周期：1307 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：13708 个
-* Fork数量：2382 次
-* 关注人数：13708 人
-* 贡献人数：112 人
-* Open Issues数量：206 个
-* Github地址：https://github.com/microsoft/qlib.git
-* 项目首页: https://qlib.readthedocs.io/en/latest/
-
-
-Qlib是一个开源的面向人工智能的量化投资平台，支持包括监督学习、市场动态建模和强化学习在内的多样的机器学习建模范式。它旨在通过人工智能技术在量化投资中实现潜力、赋予研究力量并创造价值。该平台涵盖了量化投资的整个链条，包括寻找Alpha、风险建模、组合优化和订单执行。它还通过越来越多的最新量化研究作品和论文，促进了关键挑战的协作解决方案。Qlib提供了强大的基础设施来支持量化研究和对交易策略的全面分析，并可以以低成本在线提供服务。
-
-## Gleam：构建可扩展的类型安全系统的友好语言
-
-* 创建周期：2809 天
-* 开发语言：Rust
+* 创建周期：3179 天
+* 开发语言：C
 * 协议类型：Apache License 2.0
-* Star数量：6298 个
-* Fork数量：310 次
-* 关注人数：6298 人
-* 贡献人数：157 人
-* Open Issues数量：130 个
-* Github地址：https://github.com/gleam-lang/gleam.git
-* 项目首页: https://gleam.run
+* Star数量：18728 个
+* Fork数量：3716 次
+* 关注人数：18728 人
+* 贡献人数：357 人
+* Open Issues数量：910 个
+* Github地址：https://github.com/iovisor/bcc.git
 
 
-Gleam是一种友好的语言，用于构建可扩展的类型安全系统。
+BCC是一个工具包，用于使用扩展BPF创建高效的内核跟踪和操作程序。它包括各种工具和示例，使用C语言进行内核仪器化和Python和Lua的前端，使得编写BPF程序更加容易。它适用于诸如性能分析和网络流量控制等任务。
 
-## Fabric: 用人工智能增强人类能力的开源框架
+## Flipper Zero固件：构建可持续社区的开源项目
 
-* 创建周期：40 天
-* 开发语言：Python, JavaScript
+* 创建周期：1321 天
+* 开发语言：C
+* 协议类型：GNU General Public License v3.0
+* Star数量：10723 个
+* Fork数量：2438 次
+* 关注人数：10723 人
+* 贡献人数：255 人
+* Open Issues数量：179 个
+* Github地址：https://github.com/flipperdevices/flipperzero-firmware.git
+* 项目首页: https://flipperzero.one
+
+
+Flipper Zero固件是一个开源项目，旨在围绕Flipper构建一个健康和可持续的社区。它包括固件更新、用户文档、开发者文档以及对项目贡献的指南。
+
+## Atomic Red Team™ - 小型便携检测测试
+
+* 创建周期：2331 天
+* 开发语言：C
 * 协议类型：MIT License
-* Star数量：5128 个
-* Fork数量：406 次
-* 关注人数：5128 人
-* 贡献人数：22 人
-* Open Issues数量：2 个
-* Github地址：https://github.com/danielmiessler/fabric.git
+* Star数量：8758 个
+* Fork数量：2613 次
+* 关注人数：8758 人
+* 贡献人数：340 人
+* Open Issues数量：9 个
+* Github地址：https://github.com/redcanaryco/atomic-red-team.git
 
 
-![](/images/danielmiessler-fabric-0.png)
+Atomic Red Team是一个测试库，映射到MITRE ATT&CK框架，为安全团队提供小型和高度便携的检测测试，以便快速、便携和可重复地测试其环境。
 
-Fabric 是一个开源框架，旨在利用人工智能增强人类能力。它提供了将问题分解为组件的哲学，并提供了一种提示的框架方法。该框架包括快速入门指南、设置 fabric 客户端、使用模式、创建 fabric mill、结构、组件、CLI-native 特性、直接调用模式、示例以及主要贡献者的详细信息。
+## Unity Test: 面向C语言的嵌入式单元测试框架
 
-## 基于Next.js和React.js的简单UI组件示例
-
-* 创建周期：490 天
-* 开发语言：HTML, CSS
-* Star数量：2552 个
-* Fork数量：494 次
-* 关注人数：2552 人
-* 贡献人数：3 人
-* Open Issues数量：3 个
-* Github地址：https://github.com/atherosai/ui.git
-* 项目首页: https://learning.atheros.ai
-
-
-该存储库包含基于Next.js和React.js的简单UI组件示例。它包括HTML/CSS/JS和React示例的安装说明，具体示例包括TikTok、Instagram、Youtube、Twitter、Linkedin和Threads。
-
-## 互联网上最佳系统设计资源的案例研究
-
-* 创建周期：26 天
-* 协议类型：Other
-* Star数量：4711 个
-* Fork数量：451 次
-* 关注人数：4711 人
-* 贡献人数：1 人
-* Open Issues数量：0 个
-* Github地址：https://github.com/systemdesign42/system-design.git
-* 项目首页: https://newsletter.systemdesign.one
+* 创建周期：4430 天
+* 开发语言：C
+* 协议类型：MIT License
+* Star数量：3627 个
+* Fork数量：907 次
+* 关注人数：3627 人
+* 贡献人数：117 人
+* Open Issues数量：58 个
+* Github地址：https://github.com/ThrowTheSwitch/Unity.git
+* 项目首页: ThrowTheSwitch.org
 
 
-该项目旨在通过一系列案例研究，在互联网上打造最佳的系统设计资源。
+Unity Test是一个面向C语言的开源单元测试框架，专为嵌入式工具链而设计。它适用于测试针对各种微控制器的代码，并可以轻松集成到现有的构建设置中。该项目在编译器和构建系统方面具有灵活性。此外，ThrowTheSwitch.org还提供了一个名为Ceedling的相关构建工具，供那些喜欢自动化的人使用。鼓励新用户探索入门指南，以及包含变更日志和已知问题的文档。
 
-## AI 一站式国际化解决方案
+## Apache AGE: PostgreSQL的图数据库扩展
 
-* 创建周期：240 天
-* 开发语言：TypeScript, Go
+* 创建周期：1351 天
+* 开发语言：C
 * 协议类型：Apache License 2.0
-* Star数量：1230 个
-* Fork数量：221 次
-* 关注人数：1230 人
-* 贡献人数：3 人
-* Open Issues数量：29 个
-* Github地址：https://github.com/Deeptrain-Community/chatnio.git
-* 项目首页: https://chatnio.net
+* Star数量：2488 个
+* Fork数量：341 次
+* 关注人数：2488 人
+* 贡献人数：74 人
+* Open Issues数量：394 个
+* Github地址：https://github.com/apache/age.git
+* 项目首页: https://age.apache.org
 
 
-该项目是一个开源的 AI 一站式国际化解决方案，包括 AI 聊天对话、渠道管理系统和转发 API 服务。它支持各种 AI 模型、视觉模型、对话记忆、模型市场、预设功能、站点公告、偏好设置等。它还提供了具有自主开发的渠道分发算法、多渠道管理、自定义模型、渠道重试、同一渠道内的平衡负载以及用户分组的渠道管理。转发 API 服务兼容多种格式，并支持多个 AI 模型。
+![](/images/apache-age-0.png)
 
-## Gitu: 一个受Magit启发的终端用户界面Git客户端
+Apache AGE是PostgreSQL的一个扩展，它增加了图数据库支持，使用户能够在现有的关系数据库上利用图数据库。它经过优化，能够处理复杂的连接图数据，并支持openCypher查询、多个图以及分层图标签组织。该项目旨在通过将PostgreSQL的功能和特性与图模型相结合，提供一个连贯且易于实现的多模型数据库。它的设计简单易用，支持各种平台，并提供不同编程语言的驱动程序。此外，Apache AGE Viewer是一个用户界面，提供数据可视化和探索功能，增强了Apache AGE的能力。
 
-* 创建周期：77 天
-* 开发语言：Rust
+## FreeRTOS内核文件存储库和使用指南
+
+* 创建周期：1598 天
+* 开发语言：C
 * 协议类型：MIT License
-* Star数量：352 个
+* Star数量：2132 个
+* Fork数量：933 次
+* 关注人数：2132 人
+* 贡献人数：142 人
+* Open Issues数量：30 个
+* Github地址：https://github.com/FreeRTOS/FreeRTOS-Kernel.git
+* 项目首页: https://www.FreeRTOS.org
+
+
+FreeRTOS内核文件作为FreeRTOS存储库的子模块，以及其他相关存储库一起提供。该存储库仅包含内核源文件/头文件和端口，并主要用于预配置的演示应用程序项目。用户可以从演示应用程序项目开始，然后删除演示文件并添加自己的应用程序源文件。FreeRTOS内核快速入门指南、开发人员文档和API参考中提供了详细说明和其他资源。用户可以访问FreeRTOS社区支持论坛获取帮助和支持。
+
+## Flipper Zero 定制固件：突破性功能和易于定制的用户体验
+
+* 创建周期：12 天
+* 开发语言：C
+* 协议类型：GNU General Public License v3.0
+* Star数量：837 个
+* Fork数量：22 次
+* 关注人数：837 人
+* 贡献人数：365 人
+* Open Issues数量：7 个
+* Github地址：https://github.com/Next-Flip/Momentum-Firmware.git
+* 项目首页: https://momentum-fw.dev
+
+
+![](/images/next-flip-momentum-firmware-0.png)
+
+这个定制固件基于官方固件，包含了来自Unleashed的大多数出色功能。它是Xtreme固件的直接延续，由同一批开发人员打造。该固件的目标是不断突破Flipper Zero的可能性边界，推动许多新的突破性功能的创新，同时保持任何固件中最易于定制的用户体验。及时修复错误并确保稳定和兼容的系统也是我们最重要的。请注意，下面提到的只是我们固件的一些主要添加之一。要查看完整列表，请在这里检查。我们提供一个功能强大且易于使用的应用程序，专门为我们的固件量身定制，让您可以配置您梦寐以求的一切，甚至更多。
+
+## psOff - PlayStation 4模拟器 (Windows)
+
+* 创建周期：15 天
+* 开发语言：C, C++
+* 协议类型：GNU General Public License v3.0
+* Star数量：104 个
 * Fork数量：6 次
-* 关注人数：352 人
-* 贡献人数：3 人
-* Open Issues数量：10 个
-* Github地址：https://github.com/altsem/gitu.git
+* 关注人数：104 人
+* 贡献人数：4 人
+* Open Issues数量：3 个
+* Github地址：https://github.com/SysRay/psOff_public.git
 
 
-Gitu是受Magit启发的终端用户界面(TUI) Git客户端，提供了一个在Emacs之外的Git界面。它允许用户直接从终端与Git进行交互，为管理版本控制提供了一种便捷高效的方式。
+![](/images/sysray-psoff_public-0.png)
+
+psOff是一个正在开发的PlayStation 4模拟器，用于Windows。它旨在创建一个独立的框架，用于着色器重建、命令缓冲区翻译和管理GPU内存，以在Windows上运行Linux二进制文件。该项目目前无法运行游戏，因为运行时和渲染部分目前是私有的。
 
