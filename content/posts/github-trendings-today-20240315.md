@@ -1,6 +1,6 @@
 ---
-title: Github 2024-03-15 开源项目日报 Top10
-date: 2024-03-15T07:01:36+08:00
+title: Github 2024-03-15 Java开源项目日报 Top10
+date: 2024-03-15T07:11:31+08:00
 slug: github-trendings-today-20240315
 author: 老孙正经胡说
 image: /images/krahets-hello-algo-0.png
@@ -8,25 +8,25 @@ tags:
   - github
   - trendings
   - 数量
+  - 和
+  - 项目
   - 人数
   - 人
-  - 项目
-  - 和
-  - 开发
   - 语言
-  - 类型
+  - 开发
+  - 协议
+  - 支持
+  - 贡献
+  - 提供
   - 创建
   - 周期
-  - 协议
+  - 类型
   - 关注
-  - 贡献
   - 地址
   - 是
-  - 应用程序
   - 开源
-  - 提供
-  - 框架
-  - 算法
+  - 平台
+  - 消息
 
 categories:
 
@@ -38,12 +38,9 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| TypeScript项目 | 3 |
-| Python项目 | 3 |
-| 非开发语言项目 | 2 |
-| PHP项目 | 1 |
-| C#项目 | 1 |
-| Rust项目 | 1 |
+| Java项目 | 9 |
+| 非开发语言项目 | 1 |
+| TypeScript项目 | 1 |
 
 ## 《Hello 算法》：动画图解、一键运行的数据结构与算法教程
 
@@ -62,150 +59,151 @@ draft: false
 
 《Hello 算法》是一本开源的、面向初学者的关于数据结构与算法的教程，采用动画图解和可运行的代码示例，支持多种编程语言。该项目旨在提供清晰易懂的内容，学习曲线平滑，引导初学者探索数据结构与算法的知识地图。鼓励读者互相学习，通常会在两天内回复问题和评论。
 
-## ASP.NET Core：现代云端应用程序开发框架
+## Apache Kafka: Java和Scala版本支持
 
-* 创建周期：3657 天
-* 开发语言：C#
-* 协议类型：MIT License
-* Star数量：34002 个
-* Fork数量：9580 次
-* 关注人数：34002 人
-* 贡献人数：337 人
-* Open Issues数量：2975 个
-* Github地址：https://github.com/dotnet/aspnetcore.git
-* 项目首页: https://asp.net
-
-
-ASP.NET Core是一个开源的跨平台框架，用于构建现代基于云的互联网应用程序，如Web应用程序、物联网应用程序和移动后端。它提供了一个优化的开发框架，用于部署到云端或在本地运行的应用程序，由具有最小开销的模块化组件组成，允许在构建解决方案时保持灵活性。ASP.NET Core应用程序可以在Windows、Mac和Linux上进行跨平台开发和运行。
-
-## Laravel: 以优雅语法简化Web开发
-
-* 创建周期：4028 天
-* 开发语言：PHP
-* 协议类型：MIT License
-* Star数量：30824 个
-* Fork数量：10526 次
-* 关注人数：30824 人
-* 贡献人数：383 人
-* Open Issues数量：27 个
-* Github地址：https://github.com/laravel/framework.git
-* 项目首页: https://laravel.com
-
-
-![](/images/laravel-framework-0.png)
-
-Laravel是一个以其富有表现力和优雅的语法而闻名的Web应用程序框架。它旨在通过简化常见任务（如路由、依赖注入、会话和缓存存储、数据库模式迁移、后台作业处理和实时事件广播）使Web开发成为一种愉快和创造性的体验。它提供了平衡的易用性和功能强大性，适用于小型和大型应用。
-
-## Fig：终端和 shell 的 IDE 风格自动补全工具
-
-* 创建周期：1263 天
-* 开发语言：TypeScript
-* 协议类型：MIT License
-* Star数量：24075 个
-* Fork数量：5310 次
-* 关注人数：24075 人
-* 贡献人数：409 人
-* Open Issues数量：167 个
-* Github地址：https://github.com/withfig/autocomplete.git
-* 项目首页: https://fig.io
-
-
-![](/images/withfig-autocomplete-0.png)
-
-Fig 是一个为终端和 shell 提供 IDE 风格自动补全的开源工具。它旨在通过提供诸如弹出子命令、选项和上下文相关参数等功能，使命令行对个人更加便捷，对团队更具协作性。
-
-## GPT PILOT: 从头开始编写可扩展的应用程序的开发工具
-
-* 创建周期：195 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：21795 个
-* Fork数量：1884 次
-* 关注人数：21795 人
-* 贡献人数：38 人
-* Open Issues数量：175 个
-* Github地址：https://github.com/Pythagora-io/gpt-pilot.git
-
-
-![](/images/pythagora-io-gpt-pilot-0.png)
-
-GPT PILOT是一个开源开发工具，允许开发人员在监督实施的同时从头开始编写可扩展的应用程序。
-
-## 全栈FastAPI模板
-
-* 创建周期：1846 天
-* 开发语言：TypeScript, Python
-* 协议类型：MIT License
-* Star数量：15466 个
-* Fork数量：2697 次
-* 关注人数：15466 人
-* 贡献人数：31 人
-* Open Issues数量：171 个
-* Github地址：https://github.com/tiangolo/full-stack-fastapi-template.git
-
-
-全栈FastAPI模板是一个现代Web应用程序模板，利用FastAPI、React、SQLModel、PostgreSQL、Docker、GitHub Actions、自动HTTPS等。
-
-## Gleam：构建可扩展的类型安全系统的友好语言
-
-* 创建周期：2809 天
-* 开发语言：Rust
+* 创建周期：4561 天
+* 开发语言：Java
 * 协议类型：Apache License 2.0
-* Star数量：6298 个
-* Fork数量：310 次
-* 关注人数：6298 人
-* 贡献人数：157 人
-* Open Issues数量：130 个
-* Github地址：https://github.com/gleam-lang/gleam.git
-* 项目首页: https://gleam.run
+* Star数量：26793 个
+* Fork数量：13458 次
+* 关注人数：26793 人
+* 贡献人数：349 人
+* Open Issues数量：1109 个
+* Github地址：https://github.com/apache/kafka.git
 
 
-Gleam是一种友好的语言，用于构建可扩展的类型安全系统。
+Apache Kafka是一个开源项目，需要Java进行构建和测试。它支持Java 8、11、17和21，并计划在将来的版本中废弃Java 8和11。它还支持Scala 2.12和2.13，并计划在将来的版本中移除对2.12的支持。
 
-## Fabric: 用人工智能增强人类能力的开源框架
+## Bazel：快速、可扩展的多语言构建系统
 
-* 创建周期：40 天
-* 开发语言：Python, JavaScript
+* 创建周期：3564 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：22144 个
+* Fork数量：3851 次
+* 关注人数：22144 人
+* 贡献人数：286 人
+* Open Issues数量：1962 个
+* Github地址：https://github.com/bazelbuild/bazel.git
+* 项目首页: https://bazel.build
+
+
+Bazel是一个快速、可扩展的多语言构建系统，可快速可靠地构建和测试任何规模的软件。它支持多种语言，包括Java、C++、Android、iOS和Go，并可以扩展以处理大型代码库和各种持续集成解决方案。
+
+## Apache RocketMQ: 云原生消息传递和流处理平台
+
+* 创建周期：2662 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：20380 个
+* Fork数量：11379 次
+* 关注人数：20380 人
+* 贡献人数：332 人
+* Open Issues数量：433 个
+* Github地址：https://github.com/apache/rocketmq.git
+* 项目首页: https://rocketmq.apache.org/
+
+
+Apache RocketMQ是一个具有分布式能力的云原生消息传递和流处理平台，提供低延迟、高性能和可靠性。它支持各种消息模式、金融级事务消息、容错、消息追踪、大数据和流处理生态系统集成、消息追溯、高效的消费模型、多种消息协议、灵活的部署架构、批量消息交换、消息过滤、Docker镜像、管理仪表板、身份验证和授权、开源连接器以及轻量级实时计算。
+
+## 源码猎人：挖掘互联网行业主流技术的底层实现原理
+
+* 创建周期：1600 天
+* 开发语言：Java
+* 协议类型：Creative Commons Attribution Share Alike 4.0 International
+* Star数量：15497 个
+* Fork数量：2956 次
+* 关注人数：15497 人
+* 贡献人数：28 人
+* Open Issues数量：10 个
+* Github地址：https://github.com/doocs/source-code-hunter.git
+* 项目首页: https://doocs.github.io/source-code-hunter
+
+
+![](/images/doocs-source-code-hunter-0.png)
+
+这个项目的目标是从源码层面剖析和挖掘互联网行业主流技术的底层实现原理，为开发者提供提升技术深度的便利。目前开放的有Spring全家桶、Mybatis、Netty、Dubbo框架，以及Redis、Tomcat中间件等。加入这个项目，一起通读互联网行业主流框架及中间件源码，成为强大的“源码猎人”。
+
+## LanguageTool：25+种语言的校对软件
+
+* 创建周期：3865 天
+* 开发语言：Java
+* 协议类型：GNU Lesser General Public License v2.1
+* Star数量：11341 个
+* Fork数量：1324 次
+* 关注人数：11341 人
+* 贡献人数：177 人
+* Open Issues数量：1924 个
+* Github地址：https://github.com/languagetool-org/languagetool.git
+* 项目首页: https://languagetool.org
+
+
+LanguageTool是一款开源的校对软件，支持英语、西班牙语、法语、德语、葡萄牙语、波兰语、荷兰语等25多种语言。它可以发现许多简单拼写检查器无法检测到的错误，并提供各种资源，如工作机会、服务器设置指南、HTTP API文档和Java使用说明。
+
+## Apache Kafka 管理的 Web 用户界面
+
+* 创建周期：1515 天
+* 开发语言：Java, TypeScript
+* 协议类型：Apache License 2.0
+* Star数量：7754 个
+* Fork数量：972 次
+* 关注人数：7754 人
+* 贡献人数：169 人
+* Open Issues数量：351 个
+* Github地址：https://github.com/provectus/kafka-ui.git
+
+
+![](/images/provectus-kafka-ui-0.png)
+
+这个开源项目为管理Apache Kafka提供了一个基于Web的用户界面，Apache Kafka是一个分布式流处理平台。它通过图形界面提供了一个方便的方式来监视和管理Kafka集群、主题和代理。
+
+## Testcontainers: 为JUnit测试提供一次性实例的Java库
+
+* 创建周期：3260 天
+* 开发语言：Java
 * 协议类型：MIT License
-* Star数量：5128 个
-* Fork数量：406 次
-* 关注人数：5128 人
-* 贡献人数：22 人
-* Open Issues数量：2 个
-* Github地址：https://github.com/danielmiessler/fabric.git
+* Star数量：7683 个
+* Fork数量：1578 次
+* 关注人数：7683 人
+* 贡献人数：430 人
+* Open Issues数量：602 个
+* Github地址：https://github.com/testcontainers/testcontainers-java.git
+* 项目首页: https://testcontainers.org
 
 
-![](/images/danielmiessler-fabric-0.png)
+Testcontainers是一个Java库，支持JUnit测试，提供常见数据库、Selenium Web浏览器或其他可以在Docker容器中运行的轻量级、一次性实例。
 
-Fabric 是一个开源框架，旨在利用人工智能增强人类能力。它提供了将问题分解为组件的哲学，并提供了一种提示的框架方法。该框架包括快速入门指南、设置 fabric 客户端、使用模式、创建 fabric mill、结构、组件、CLI-native 特性、直接调用模式、示例以及主要贡献者的详细信息。
+## WEB VIDEO PLATFORM: 基于GB28181-2016标准的开源网络视频平台
 
-## Teable: 无代码数据库快速指南
-
-* 创建周期：500 天
-* 开发语言：TypeScript
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：2444 个
-* Fork数量：98 次
-* 关注人数：2444 人
-* 贡献人数：7 人
-* Open Issues数量：8 个
-* Github地址：https://github.com/teableio/teable.git
-* 项目首页: https://teable.io
+* 创建周期：1154 天
+* 开发语言：Java
+* 协议类型：MIT License
+* Star数量：4012 个
+* Fork数量：1233 次
+* 关注人数：4012 人
+* 贡献人数：69 人
+* Open Issues数量：92 个
+* Github地址：https://github.com/648540858/wvp-GB28181-pro.git
+* 项目首页: https://wvp-gb-28181-pro.vercel.app
 
 
-Teable是一个开源的、超快速的、实时的、专业的、开发者友好的无代码数据库。用户可以从模板中选择场景，并单击“使用此模板”来获得快速体验。想要高性能？尝试100万行演示，感受Teable的速度。想要快速学习如何使用？点击本教程。有兴趣自行部署？点击Railway上的部署。
+![](/images/648540858-wvp-gb28181-pro-0.png)
 
-## 数据科学Gen AI播放列表2024
+WEB VIDEO PLATFORM是一个基于GB28181-2016标准的开源网络视频平台，支持NAT穿透以及海康、大华、宇视等品牌的IPC、NVR和DVR接入。它还支持国标级联，以及将视频流转发和推送到国标平台。该平台提供开箱即用的28181协议视频平台，实现核心信令和设备管理后端，并支持各种设备，包括非国标设备，以充分利用。
 
-* 创建周期：3 天
-* 协议类型：GNU General Public License v3.0
-* Star数量：325 个
-* Fork数量：89 次
-* 关注人数：325 人
-* 贡献人数：1 人
-* Open Issues数量：0 个
-* Github地址：https://github.com/krishnaik06/Data-Science-Gen-AI-Playlist-2024.git
+## Confluent Schema Registry: Kafka元数据服务层
+
+* 创建周期：3384 天
+* 开发语言：Java
+* 协议类型：Other
+* Star数量：2118 个
+* Fork数量：1094 次
+* 关注人数：2118 人
+* 贡献人数：193 人
+* Open Issues数量：308 个
+* Github地址：https://github.com/confluentinc/schema-registry.git
+* 项目首页: https://docs.confluent.io/current/schema-registry/docs/index.html
 
 
-Data Science Gen AI Playlist 2024是一个旨在为对数据科学和人工智能感兴趣的个人提供全面资源和工具收集的开源项目。
+Confluent Schema Registry是一个为Kafka提供元数据服务层的开源项目。它提供了用于存储和检索Avro、JSON Schema和Protobuf模式的RESTful接口，具有版本化历史和兼容性设置。该项目包括文档、快速API使用示例、安装和部署说明、开发细节、OpenAPI规范、贡献指南和许可信息。
 
