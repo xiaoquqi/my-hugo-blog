@@ -1,32 +1,32 @@
 ---
-title: Github 2024-03-16 开源项目日报 Top10
-date: 2024-03-16T07:01:21+08:00
+title: Github 2024-03-16 Rust开源项目日报 Top10
+date: 2024-03-16T07:11:18+08:00
 slug: github-trendings-today-20240316
 author: 老孙正经胡说
-image: /images/krahets-hello-algo-0.png
+image: /images/rustdesk-rustdesk-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
   - 人数
   - 人
+  - 项目
   - 开发
-  - 是
   - 语言
+  - 和
   - 创建
   - 贡献
+  - 是
   - 周期
   - 关注
   - 地址
+  - 提供
+  - 编写
   - 开源
-  - 和
   - 协议
   - 类型
-  - 框架
-  - 提供
   - 旨在
-  - 模板
+  - 智能
 
 categories:
 
@@ -38,167 +38,169 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 5 |
-| 非开发语言项目 | 2 |
-| TypeScript项目 | 1 |
-| C++项目 | 1 |
-| Lua项目 | 1 |
-| Swift项目 | 1 |
+| Rust项目 | 10 |
+| TypeScript项目 | 2 |
+| Go项目 | 1 |
 
-## 《Hello 算法》：动画图解、一键运行的数据结构与算法教程
+## RustDesk: 用Rust编写的开源远程桌面软件
 
-* 创建周期：476 天
-* 协议类型：Other
-* Star数量：63556 个
-* Fork数量：7731 次
-* 关注人数：63556 人
-* 贡献人数：137 人
-* Open Issues数量：20 个
-* Github地址：https://github.com/krahets/hello-algo.git
-* 项目首页: https://hello-algo.com
+* 创建周期：1218 天
+* 开发语言：Rust, Dart
+* 协议类型：GNU Affero General Public License v3.0
+* Star数量：58141 个
+* Fork数量：6255 次
+* 关注人数：58141 人
+* 贡献人数：230 人
+* Open Issues数量：49 个
+* Github地址：https://github.com/rustdesk/rustdesk.git
+* 项目首页: https://rustdesk.com
 
 
-![](/images/krahets-hello-algo-0.png)
+![](/images/rustdesk-rustdesk-0.png)
 
-《Hello 算法》是一本开源的、面向初学者的关于数据结构与算法的教程，采用动画图解和可运行的代码示例，支持多种编程语言。该项目旨在提供清晰易懂的内容，学习曲线平滑，引导初学者探索数据结构与算法的知识地图。鼓励读者互相学习，通常会在两天内回复问题和评论。
+RustDesk是一款用Rust编写的开源远程桌面软件，可作为TeamViewer的替代品。它可以直接使用，无需配置，提供完全的数据控制和安全性。用户可以使用提供的会合/中继服务器，自行设置，或编写自己的服务器。该项目欢迎所有人的贡献，并提供常见问题解答、二进制下载和每夜构建。
 
-## MetaGPT: 多代理框架
+## 后现代模态文本编辑器
 
-* 创建周期：260 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：35582 个
-* Fork数量：4113 次
-* 关注人数：35582 人
-* 贡献人数：68 人
-* Open Issues数量：240 个
-* Github地址：https://github.com/geekan/MetaGPT.git
-* 项目首页: https://deepwisdom.ai/
-
-
-MetaGPT是一个旨在为满足各种需求提供多代理框架的开源项目。该项目包括PRD、设计、任务以及用于管理框架的存储库。
-
-## GPT PILOT: 从头开始编写可扩展的应用程序的开发工具
-
-* 创建周期：195 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：21795 个
-* Fork数量：1884 次
-* 关注人数：21795 人
-* 贡献人数：38 人
-* Open Issues数量：175 个
-* Github地址：https://github.com/Pythagora-io/gpt-pilot.git
+* 创建周期：1328 天
+* 开发语言：Rust
+* 协议类型：Mozilla Public License 2.0
+* Star数量：27484 个
+* Fork数量：1993 次
+* 关注人数：27484 人
+* 贡献人数：424 人
+* Open Issues数量：1159 个
+* Github地址：https://github.com/helix-editor/helix.git
+* 项目首页: https://helix-editor.com
 
 
-![](/images/pythagora-io-gpt-pilot-0.png)
+一款用Rust编写的后现代模态文本编辑器，深受Kakoune和Neovim启发。它具有类似Vim的模态编辑、多重选择、内置语言服务器支持和智能的增量语法高亮。它主要是一个基于终端的编辑器，但旨在通过wgpu或skulpin探索自定义渲染器。
 
-GPT PILOT是一个开源开发工具，允许开发人员在监督实施的同时从头开始编写可扩展的应用程序。
+## 面向Web规模的区块链技术
 
-## 全栈FastAPI模板
-
-* 创建周期：1846 天
-* 开发语言：TypeScript, Python
-* 协议类型：MIT License
-* Star数量：15466 个
-* Fork数量：2697 次
-* 关注人数：15466 人
-* 贡献人数：31 人
-* Open Issues数量：171 个
-* Github地址：https://github.com/tiangolo/full-stack-fastapi-template.git
-
-
-全栈FastAPI模板是一个现代Web应用程序模板，利用FastAPI、React、SQLModel、PostgreSQL、Docker、GitHub Actions、自动HTTPS等。
-
-## Fabric: 用人工智能增强人类能力的开源框架
-
-* 创建周期：40 天
-* 开发语言：Python, JavaScript
-* 协议类型：MIT License
-* Star数量：5128 个
-* Fork数量：406 次
-* 关注人数：5128 人
-* 贡献人数：22 人
-* Open Issues数量：2 个
-* Github地址：https://github.com/danielmiessler/fabric.git
-
-
-![](/images/danielmiessler-fabric-0.png)
-
-Fabric 是一个开源框架，旨在利用人工智能增强人类能力。它提供了将问题分解为组件的哲学，并提供了一种提示的框架方法。该框架包括快速入门指南、设置 fabric 客户端、使用模式、创建 fabric mill、结构、组件、CLI-native 特性、直接调用模式、示例以及主要贡献者的详细信息。
-
-## 数据工程资源存储库
-
-* 创建周期：118 天
-* Star数量：7042 个
-* Fork数量：1011 次
-* 关注人数：7042 人
-* 贡献人数：44 人
-* Open Issues数量：1 个
-* Github地址：https://github.com/DataEngineer-io/data-engineer-handbook.git
-
-
-这是一个包含全面资源的存储库，用于学习数据工程，包括数据工程手册、项目和面试部分，提供实际示例和面试建议。
-
-## LaVague: 自然语言网页自动化框架
-
-* 创建周期：19 天
-* 开发语言：Python
+* 创建周期：2208 天
+* 开发语言：Rust
 * 协议类型：Apache License 2.0
-* Star数量：2180 个
-* Fork数量：154 次
-* 关注人数：2180 人
-* 贡献人数：3 人
-* Open Issues数量：20 个
-* Github地址：https://github.com/lavague-ai/LaVague.git
+* Star数量：11488 个
+* Fork数量：3504 次
+* 关注人数：11488 人
+* 贡献人数：360 人
+* Open Issues数量：584 个
+* Github地址：https://github.com/solana-labs/solana.git
+* 项目首页: https://solanalabs.com
 
 
-LaVague是一个旨在使用自然语言指令自动化与网站交互的开源框架。它允许用户在浏览器上执行自动化操作，使网页自动化更加高效和直观。
+该项目是一个面向Web规模的区块链，旨在为快速、安全、可扩展、去中心化的应用程序和市场提供支持。
 
-## suyu: 开源Nintendo Switch模拟器
+## Hyperswitch：用Rust编写的开源支付交换机
 
-* 创建周期：8 天
-* 开发语言：C++
+* 创建周期：516 天
+* 开发语言：Rust
+* 协议类型：Apache License 2.0
+* Star数量：9315 个
+* Fork数量：741 次
+* 关注人数：9315 人
+* 贡献人数：149 人
+* Open Issues数量：444 个
+* Github地址：https://github.com/juspay/hyperswitch.git
+* 项目首页: https://hyperswitch.io/
+
+
+Hyperswitch是一个用Rust编写的开源支付交换机，旨在使支付快速、可靠且价格实惠。它旨在减少对单一处理器（如Stripe或Braintree）的依赖，减少开发工作量，提高成功率，降低处理费用，定制支付流程，并通过本地/备用支付方式扩大业务范围。
+
+## Sui: 下一代智能合约平台
+
+* 创建周期：816 天
+* 开发语言：Rust
+* 协议类型：Apache License 2.0
+* Star数量：5464 个
+* Fork数量：12409 次
+* 关注人数：5464 人
+* 贡献人数：235 人
+* Open Issues数量：883 个
+* Github地址：https://github.com/MystenLabs/sui.git
+* 项目首页: https://sui.io
+
+
+Sui是一种具有高吞吐量、低延迟和资产导向编程模型的下一代智能合约平台，由Move编程语言驱动。
+
+## Rnote: 开源矢量绘图应用程序
+
+* 创建周期：954 天
+* 开发语言：Rust
 * 协议类型：GNU General Public License v3.0
-* Star数量：581 个
-* Fork数量：61 次
-* 关注人数：581 人
-* 贡献人数：338 人
-* Open Issues数量：1 个
-* Github地址：https://github.com/suyu-emu/suyu.git
-* 项目首页: https://suyu.dev/
+* Star数量：5276 个
+* Fork数量：186 次
+* 关注人数：5276 人
+* 贡献人数：50 人
+* Open Issues数量：234 个
+* Github地址：https://github.com/flxzt/rnote.git
+* 项目首页: https://rnote.flxzt.net
 
 
-suyu是一个用C++编写的开源Nintendo Switch模拟器，是yuzu项目的延续。它设计时考虑了可移植性，并且积极维护着Windows、Linux和Android版本。该项目强调合法获取密钥和游戏的重要性，不支持盗版。此外，这是一个非盈利倡议，并欢迎开发人员通过他们的Discord服务器做出贡献。
+![](/images/flxzt-rnote-0.png)
 
-## oh-my-rime: 快速初始化Rime的模板解决方案
+Rnote是一个开源的基于矢量的绘图应用程序，用于素描、手写笔记和注释文档和图片。它面向学生、教师和使用绘图板的用户，提供诸如PDF和图片导入/导出、无限画布和适应不同屏幕尺寸的自适应用户界面等功能。该应用程序采用Rust和GTK4编写，并包括压感笔输入、可定制背景、形状工具、文档扩展布局等各种功能。然而，需要注意的是文件格式仍不稳定，可能会在不同版本之间发生变化，影响兼容性。
 
-* 创建周期：363 天
-* 开发语言：Lua
-* 协议类型：GNU General Public License v3.0
-* Star数量：910 个
-* Fork数量：78 次
-* 关注人数：910 人
-* 贡献人数：3 人
-* Open Issues数量：3 个
-* Github地址：https://github.com/Mintimate/oh-my-rime.git
-* 项目首页: https://www.mintimate.cc/
+## Kata Containers: 轻量级虚拟机与容器性能的安全性优势
+
+* 创建周期：2235 天
+* 开发语言：Rust, Go
+* 协议类型：Apache License 2.0
+* Star数量：4572 个
+* Fork数量：1047 次
+* 关注人数：4572 人
+* 贡献人数：310 人
+* Open Issues数量：1375 个
+* Github地址：https://github.com/kata-containers/kata-containers.git
 
 
-oh-my-rime是一个快速初始化Rime的模板解决方案，灵感来自作者使用oh-my-zsh。它旨在为用户在使用此模板时提供类似于使用oh-my-zsh的体验。它也被称为Mint Input或薄荷输入法。如果在下载过程中遇到困难，用户可以使用GitHub Action推送的镜像仓库。
+Kata Containers 是一个旨在创建轻量级虚拟机（VMs）的开源项目，旨在提供容器的性能同时提供虚拟机的安全性优势。
 
-## Diia 项目: 乌克兰数字转型部开发的开源应用程序
+## Solana的Anchor框架：智能合约开发工具
 
-* 创建周期：5 天
-* 开发语言：Swift
-* 协议类型：European Union Public License 1.2
-* Star数量：266 个
-* Fork数量：48 次
-* 关注人数：266 人
+* 创建周期：1170 天
+* 开发语言：Rust, TypeScript
+* 协议类型：Apache License 2.0
+* Star数量：3053 个
+* Fork数量：1156 次
+* 关注人数：3053 人
+* 贡献人数：237 人
+* Open Issues数量：395 个
+* Github地址：https://github.com/coral-xyz/anchor.git
+* 项目首页: https://anchor-lang.com
+
+
+![](/images/coral-xyz-anchor-0.png)
+
+Anchor框架为Solana的Sealevel运行时提供了开发人员工具，用于编写智能合约，包括Rust eDSL、IDL规范、用于生成客户端的TypeScript包以及用于应用程序开发的CLI。对于熟悉以太坊的Solidity、Truffle和web3.js的开发人员来说，这将提供一个熟悉的体验。
+
+## Rust 闪卡
+
+* 创建周期：13 天
+* 开发语言：Rust
+* Star数量：306 个
+* Fork数量：9 次
+* 关注人数：306 人
 * 贡献人数：1 人
-* Open Issues数量：5 个
-* Github地址：https://github.com/diia-open-source/ios-diia.git
+* Open Issues数量：2 个
+* Github地址：https://github.com/ad-si/Rust-Flashcards.git
+* 项目首页: https://ankiweb.net/shared/info/1541471942
 
 
-Diia 项目是由乌克兰数字转型部开发的开源应用程序。它提供了对公民数字文件和政府服务的访问，旨在简化与国家的互动，并减少在队列和文书工作上花费的时间。该项目在建立长期关系时促进开放性、效率和人性。
+Rust 闪卡是一个开源项目，拥有超过 550 张旨在从零开始教授 Rust 的闪卡。这些闪卡是用 markdown 写成的，基于官方的 Rust 书籍。用户可以直接从 AnkiWeb 获取 Anki 卡组，或者从发布页面下载最新版本。该项目归功于 u/WebDev193 的初步工作。
+
+## Granblue Fantasy: Relink 实验性DPS计量器
+
+* 创建周期：24 天
+* 开发语言：Rust, TypeScript
+* Star数量：60 个
+* Fork数量：6 次
+* 关注人数：60 人
+* 贡献人数：5 人
+* Open Issues数量：15 个
+* Github地址：https://github.com/false-spring/gbfr-logs.git
+
+
+这是一个实验性的Granblue Fantasy: Relink叠加DPS计量器，基于naoouo/GBFR-ACT的逆向工程工作。
 
