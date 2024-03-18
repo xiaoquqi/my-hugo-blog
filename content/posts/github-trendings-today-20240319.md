@@ -1,32 +1,32 @@
 ---
-title: Github 2024-03-19 开源项目日报 Top10
-date: 2024-03-19T07:01:15+08:00
+title: Github 2024-03-19 Python开源项目日报 Top10
+date: 2024-03-19T07:11:03+08:00
 slug: github-trendings-today-20240319
 author: 老孙正经胡说
-image: /images/pythagora-io-gpt-pilot-0.png
+image: /images/killianlucas-open-interpreter-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 人
-  - 人数
   - 项目
-  - 开发
-  - 创建
+  - 人数
+  - 人
   - 语言
+  - 创建
+  - 开发
   - 周期
   - 关注
   - 贡献
   - 地址
-  - 是
-  - 和
   - 协议
   - 类型
   - 提供
+  - 和
   - 开源
-  - 应用程序
-  - 平台
-  - 包括
+  - 是
+  - 使用
+  - 代码
+  - 交互
 
 categories:
 
@@ -38,10 +38,41 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 9 |
-| TypeScript项目 | 2 |
-| HTML项目 | 1 |
-| GDScript项目 | 1 |
+| Python项目 | 10 |
+
+## PrivateGPT: 保护隐私的文档交互AI项目
+
+* 创建周期：322 天
+* 开发语言：Python
+* 协议类型：Apache License 2.0
+* Star数量：49302 个
+* Fork数量：6523 次
+* 关注人数：49302 人
+* 贡献人数：64 人
+* Open Issues数量：163 个
+* Github地址：https://github.com/imartinez/privateGPT.git
+* 项目首页: https://docs.privategpt.dev
+
+
+PrivateGPT是一个可投入生产的人工智能项目，允许用户在没有互联网连接的情况下使用大型语言模型（LLMs）与其文档进行交互。它提供了高级API以便于实施和低级API供高级用户使用。该项目还提供了Gradio UI客户端用于测试API和各种有用的工具。它强调隐私，并且不允许数据离开执行环境。
+
+## Open Interpreter: 一种自然语言接口
+
+* 创建周期：179 天
+* 开发语言：Python
+* 协议类型：GNU Affero General Public License v3.0
+* Star数量：36253 个
+* Fork数量：3170 次
+* 关注人数：36253 人
+* 贡献人数：69 人
+* Open Issues数量：163 个
+* Github地址：https://github.com/KillianLucas/open-interpreter.git
+* 项目首页: http://openinterpreter.com/
+
+
+![](/images/killianlucas-open-interpreter-0.png)
+
+Open Interpreter 是一种自然语言接口，允许LLMs在本地运行代码，使用户能够通过终端中类似于ChatGPT的界面与计算机的通用功能进行交互。它提供了创建和编辑各种类型文件、控制Chrome浏览器进行研究以及分析大型数据集的能力。在执行代码之前，用户需要批准该代码。
 
 ## MetaGPT: 多代理框架
 
@@ -76,21 +107,6 @@ MetaGPT是一个旨在为满足各种需求提供多代理框架的开源项目�
 
 GPT PILOT是一个开源开发工具，允许开发人员在监督实施的同时从头开始编写可扩展的应用程序。
 
-## 全栈FastAPI模板
-
-* 创建周期：1846 天
-* 开发语言：TypeScript, Python
-* 协议类型：MIT License
-* Star数量：15466 个
-* Fork数量：2697 次
-* 关注人数：15466 人
-* 贡献人数：31 人
-* Open Issues数量：171 个
-* Github地址：https://github.com/tiangolo/full-stack-fastapi-template.git
-
-
-全栈FastAPI模板是一个现代Web应用程序模板，利用FastAPI、React、SQLModel、PostgreSQL、Docker、GitHub Actions、自动HTTPS等。
-
 ## 多平台爬虫工具
 
 * 创建周期：282 天
@@ -105,6 +121,24 @@ GPT PILOT是一个开源开发工具，允许开发人员在监督实施的同�
 
 
 这个开源项目提供了针对小红书、抖音、快手、B站、微博等平台的爬虫工具，可以抓取视频、图片、评论、点赞、转发等信息。项目使用playwright搭建桥梁，保留登录成功后的上下文浏览器环境，并通过执行JS表达式获取一些加密参数，从而简化了核心加密JS代码的复现和逆向难度。
+
+## 使用100多个LLM的开源API执行语言模型任务
+
+* 创建周期：201 天
+* 开发语言：Python
+* 协议类型：MIT License
+* Star数量：5303 个
+* Fork数量：524 次
+* 关注人数：5303 人
+* 贡献人数：104 人
+* Open Issues数量：283 个
+* Github地址：https://github.com/BerriAI/litellm.git
+* 项目首页: https://docs.litellm.ai/docs/
+
+
+![](/images/berriai-litellm-0.png)
+
+该项目涉及使用各种开源LLM API，如Bedrock、Azure、OpenAI、Cohere、Anthropic、Ollama、Sagemaker、HuggingFace、Replicate等100多个LLM，来执行语言模型任务。
 
 ## 大卫·艾登堡解说你的生活
 
@@ -165,36 +199,4 @@ Skyvern利用LLMs和计算机视觉自动化基于浏览器的工作流程，提
 
 
 Clarity-Upscaler是一个为所有人提供重新想象的图像放大的开源AI应用程序。开发者还创建付费版本的代码来资助他们的工作，但鼓励使用免费代码。更多信息和更新可以在开发者的Twitter账号上找到。
-
-## The Mirror: 为您提供拥有创作的自由
-
-* 创建周期：32 天
-* 开发语言：GDScript, TypeScript
-* 协议类型：Other
-* Star数量：501 个
-* Fork数量：56 次
-* 关注人数：501 人
-* 贡献人数：3 人
-* Open Issues数量：15 个
-* Github地址：https://github.com/the-mirror-gdp/the-mirror.git
-* 项目首页: https://themirror.space
-
-
-![](/images/the-mirror-gdp-the-mirror-0.png)
-
-The Mirror 是一个开源的替代 Roblox 和 UEFN 的选择，为您提供拥有创作的自由。它是建立在 Godot 上的实时协作游戏开发平台，为创建和玩游戏、虚拟世界和数字体验提供了一体化解决方案。该平台包括多人编辑器、高级网络、可视化脚本、传统编码、材质编辑器、资产系统、VR 支持等功能。The Mirror 的源代码，包括 Godot 应用程序、Web 服务器和文档，都在一个存储库中，以帮助开发人员快速构建游戏。
-
-## 使用Rembg的简单图像背景去除Flask Web应用
-
-* 创建周期：4 天
-* 开发语言：HTML, Python
-* Star数量：213 个
-* Fork数量：71 次
-* 关注人数：213 人
-* 贡献人数：1 人
-* Open Issues数量：2 个
-* Github地址：https://github.com/codediodeio/rembg-webapp-tutorial.git
-
-
-这是一个简单的Flask Web应用程序，利用Rembg来去除图像的背景。用户可以在YouTube上观看教程，了解如何使用该应用。
 
