@@ -1,20 +1,21 @@
 ---
-title: Github 2024-03-20 开源项目日报 Top10
-date: 2024-03-20T07:01:22+08:00
+title: Github 2024-03-20 C开源项目日报 Top8
+date: 2024-03-20T07:10:56+08:00
 slug: github-trendings-today-20240320
 author: 老孙正经胡说
-image: /images/roboflow-supervision-0.png
+image: /images/wazuh-wazuh-0.png
 tags:
   - github
   - trendings
   - 数量
+  - 和
+  - 项目
   - 人数
   - 人
-  - 语言
-  - 模型
-  - 项目
-  - 和
   - 开发
+  - 提供
+  - 语言
+  - 是
   - 创建
   - 周期
   - 关注
@@ -22,11 +23,10 @@ tags:
   - 地址
   - 协议
   - 类型
-  - 工具
-  - 提供
-  - 是
   - 用于
-  - 代码
+  - 中
+  - 可以
+  - 支持
 
 categories:
 
@@ -34,165 +34,142 @@ draft: false
 ---
 
 
-根据Github Trendings的统计，今日(2024-03-20统计)共有10个项目上榜。根据开发语言中项目的数量，汇总情况如下：
+根据Github Trendings的统计，今日(2024-03-20统计)共有8个项目上榜。根据开发语言中项目的数量，汇总情况如下：
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 7 |
-| 非开发语言项目 | 3 |
+| C项目 | 8 |
+| Python项目 | 1 |
 
-## 科学上网工具和资源大全
+## Redis - 内存数据库和数据结构服务器
 
-* 创建周期：2919 天
-* Star数量：50651 个
-* Fork数量：8928 次
-* 关注人数：50651 人
-* 贡献人数：1 人
-* Open Issues数量：385 个
-* Github地址：https://github.com/Alvin9999/new-pac.git
-
-
-该项目提供了关于科学上网、翻墙、VPN等内容的教程、工具和资源，包括一键翻墙浏览器、VPS搭建翻墙服务器脚本、免费账号/节点等，适用于电脑、手机、iOS、安卓、Windows、Mac、Linux和路由器。
-
-## MetaGPT: 多代理框架
-
-* 创建周期：260 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：35582 个
-* Fork数量：4113 次
-* 关注人数：35582 人
-* 贡献人数：68 人
-* Open Issues数量：240 个
-* Github地址：https://github.com/geekan/MetaGPT.git
-* 项目首页: https://deepwisdom.ai/
+* 创建周期：5411 天
+* 开发语言：C
+* 协议类型：BSD 3-Clause "New" or "Revised" License
+* Star数量：62974 个
+* Fork数量：23165 次
+* 关注人数：62974 人
+* 贡献人数：385 人
+* Open Issues数量：2517 个
+* Github地址：https://github.com/redis/redis.git
+* 项目首页: http://redis.io
 
 
-MetaGPT是一个旨在为满足各种需求提供多代理框架的开源项目。该项目包括PRD、设计、任务以及用于管理框架的存储库。
+Redis是一种内存数据库，可以持久化到磁盘，通过一组命令提供对可变数据结构的访问。它提供了诸如复制、可调节的耐久性级别、集群和高可用性等功能。Redis支持各种数据类型，并可以在多个平台上编译和使用。它还提供了构建TLS支持、systemd支持和选择内存分配器的选项。Redis可以使用默认配置运行，也可以通过命令行参数进行修改。安装过程包括安装二进制文件和配置init脚本和配置文件的选项。
 
-## Grok-1开放权重模型
+## WindTerm: 专业的跨平台SSH/SFTP/Shell/Telnet/串行终端
 
-* 创建周期：3 天
-* 开发语言：Python
-* 协议类型：Apache License 2.0
-* Star数量：34982 个
-* Fork数量：5643 次
-* 关注人数：34982 人
-* 贡献人数：6 人
-* Open Issues数量：50 个
-* Github地址：https://github.com/xai-org/grok-1.git
-
-
-Grok-1存储库包含用于加载和运行Grok-1开放权重模型的JAX示例代码，该模型具有314B参数的大尺寸。该模型设计采用了8个专家的混合（MoE）架构，64个层，48个用于查询的注意头，8个用于键/值，以及其他附加功能，如旋转嵌入（RoPE）和支持激活分片和8位量化。代码和相关的Grok-1权重在此版本中受Apache 2.0许可证的管辖。
-
-## 可重复使用的计算机视觉工具
-
-* 创建周期：478 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：10958 个
-* Fork数量：875 次
-* 关注人数：10958 人
-* 贡献人数：53 人
-* Open Issues数量：89 个
-* Github地址：https://github.com/roboflow/supervision.git
-* 项目首页: https://supervision.roboflow.com
-
-
-![](/images/roboflow-supervision-0.png)
-
-我们为您提供可重复使用的计算机视觉工具，用于加载数据集、在图像或视频上绘制检测，以及计算特定区域内的检测数量。
-
-## 多平台爬虫工具
-
-* 创建周期：282 天
-* 开发语言：Python
-* 协议类型：Apache License 2.0
-* Star数量：2419 个
-* Fork数量：451 次
-* 关注人数：2419 人
-* 贡献人数：8 人
-* Open Issues数量：24 个
-* Github地址：https://github.com/NanmiCoder/MediaCrawler.git
-
-
-这个开源项目提供了针对小红书、抖音、快手、B站、微博等平台的爬虫工具，可以抓取视频、图片、评论、点赞、转发等信息。项目使用playwright搭建桥梁，保留登录成功后的上下文浏览器环境，并通过执行JS表达式获取一些加密参数，从而简化了核心加密JS代码的复现和逆向难度。
-
-## Open-Sora: 构建自己的视频生成模型
-
-* 创建周期：17 天
-* 开发语言：Python
-* 协议类型：Apache License 2.0
-* Star数量：1151 个
-* Fork数量：96 次
-* 关注人数：1151 人
-* 贡献人数：6 人
-* Open Issues数量：10 个
-* Github地址：https://github.com/hpcaitech/Open-Sora.git
-
-
-![](/images/hpcaitech-open-sora-0.png)
-
-Open-Sora是一个开源项目，允许用户构建类似于OpenAI的Sora的自己的视频生成模型。它提供了创建自定义视频生成模型所需的工具和资源。
-
-## OpenAI Grok: 大规模强化学习实验平台
-
-* 创建周期：1072 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：2561 个
-* Fork数量：282 次
-* 关注人数：2561 人
-* 贡献人数：3 人
-* Open Issues数量：31 个
-* Github地址：https://github.com/openai/grok.git
-
-
-OpenAI Grok是一个旨在提供运行大规模强化学习实验的平台的开源项目。它包括一个灵活的界面，用于定义实验，在各种环境中运行实验，并可视化结果。
-
-## LLM4Decompile: 使用大型语言模型反编译二进制代码
-
-* 创建周期：21 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：1550 个
-* Fork数量：97 次
-* 关注人数：1550 人
+* 创建周期：1557 天
+* 开发语言：C
+* Star数量：18515 个
+* Fork数量：1466 次
+* 关注人数：18515 人
 * 贡献人数：2 人
-* Open Issues数量：5 个
-* Github地址：https://github.com/albertan017/LLM4Decompile.git
+* Open Issues数量：1418 个
+* Github地址：https://github.com/kingToolbox/WindTerm.git
+* 项目首页: https://kingtoolbox.github.io
 
 
-LLM4Decompile是一个专注于使用大型语言模型进行逆向工程和反编译二进制代码的开源项目。它旨在利用先进的语言模型提供有关使用大型语言模型反编译二进制代码的详细信息和见解。
+WindTerm是一个专业的跨平台SSH/SFTP/Shell/Telnet/串行终端，旨在为DevOps提供更快更好的客户端。它完全免费，无论是商业用途还是非商业用途，没有任何限制。该项目在Apache-2.0许可下提供开源代码，源代码将逐步开放。WindTerm还欢迎与SSH、Sftp、Shell、Telnet、串行以及客户端本身相关的问题、功能请求和讨论。
 
-## ComfyUI 工作流集合
+## Wazuh - 开源安全平台：统一XDR和SIEM保护
 
-* 创建周期：14 天
-* 协议类型：GNU General Public License v3.0
-* Star数量：1112 个
-* Fork数量：122 次
-* 关注人数：1112 人
-* 贡献人数：1 人
-* Open Issues数量：2 个
-* Github地址：https://github.com/ZHO-ZHO-ZHO/ComfyUI-Workflows-ZHO.git
+* 创建周期：3116 天
+* 开发语言：C
+* 协议类型：Other
+* Star数量：8334 个
+* Fork数量：1325 次
+* 关注人数：8334 人
+* 贡献人数：223 人
+* Open Issues数量：2737 个
+* Github地址：https://github.com/wazuh/wazuh.git
+* 项目首页: https://wazuh.com/
 
 
-![](/images/zho-zho-zho-comfyui-workflows-zho-0.png)
+![](/images/wazuh-wazuh-0.png)
 
-ComfyUI 是一个包含 15 个不同工作流的集合，包括 ComfyUI 智能助手，稳定级联，3D，LLM + SD，差分扩散，YoloWorld-EfficientSAM，Portrait Master，ArtGallery，InstantID-ZHO，PhotoMaker-ZHO，SVD-ZHO，I2VGenXL，更多模型，TravelSuite-ZHO，词云 和 ComfyUI 中的 APISR。
+Wazuh是一个开源安全平台，为端点和云工作负载提供统一的XDR和SIEM保护。它提供跨各种环境（包括本地、虚拟化、容器化和基于云的环境）的威胁预防、检测和响应能力。
 
-## Chronos: 学习时间序列的语言
+## 快速轻量级日志和指标处理器
 
-* 创建周期：24 天
-* 开发语言：Python
+* 创建周期：3319 天
+* 开发语言：C
 * 协议类型：Apache License 2.0
-* Star数量：367 个
-* Fork数量：62 次
-* 关注人数：367 人
-* 贡献人数：3 人
+* Star数量：5199 个
+* Fork数量：1410 次
+* 关注人数：5199 人
+* 贡献人数：372 人
+* Open Issues数量：592 个
+* Github地址：https://github.com/fluent/fluent-bit.git
+* 项目首页: https://fluentbit.io
+
+
+![](/images/fluent-fluent-bit-0.png)
+
+该项目是一个专为Linux、BSD、OSX和Windows设计的快速轻量级日志和指标处理器。它为单元测试、集成测试、arm构建和最新版本提供了CI状态。
+
+## FFmpegKit - 用于各种应用程序的FFmpeg工具集
+
+* 创建周期：1331 天
+* 开发语言：C
+* 协议类型：GNU Lesser General Public License v3.0
+* Star数量：3643 个
+* Fork数量：484 次
+* 关注人数：3643 人
+* 贡献人数：12 人
+* Open Issues数量：60 个
+* Github地址：https://github.com/arthenica/ffmpeg-kit.git
+* 项目首页: https://arthenica.github.io/ffmpeg-kit
+
+
+FFmpegKit是一套工具集，用于在各种应用程序中使用FFmpeg，包括Android、iOS、Linux、macOS、tvOS、Flutter和React Native。它包括用于构建FFmpeg本机库的脚本，用于运行FFmpeg/FFprobe命令的包装库，以及在Github、Maven Central、CocoaPods、pub和npm上提供的预构建二进制包。
+
+## vkd3d-proton: 在Vulkan上实现Direct3D 12 API的开发分支
+
+* 创建周期：1644 天
+* 开发语言：C
+* 协议类型：GNU Lesser General Public License v2.1
+* Star数量：1637 个
+* Fork数量：177 次
+* 关注人数：1637 人
+* 贡献人数：51 人
+* Open Issues数量：142 个
+* Github地址：https://github.com/HansKristian-Work/vkd3d-proton.git
+
+
+vkd3d-proton是VKD3D的一个分支，旨在在Vulkan之上实现完整的Direct3D 12 API。它作为Proton中Direct3D 12支持的开发工作。
+
+## Trezor固件Monorepo
+
+* 创建周期：1806 天
+* 开发语言：C, Python
+* 协议类型：Other
+* Star数量：1227 个
+* Fork数量：615 次
+* 关注人数：1227 人
+* 贡献人数：226 人
+* Open Issues数量：334 个
+* Github地址：https://github.com/trezor/trezor-firmware.git
+* 项目首页: https://trezor.io
+
+
+![](/images/trezor-trezor-firmware-0.png)
+
+Trezor固件Monorepo是一个开源项目，为Trezor硬件钱包提供固件。该项目旨在通过不断更新和改进固件，确保加密货币交易的安全性和可靠性。
+
+## Barney's Basement - 开发者版本
+
+* 创建周期：6 天
+* 开发语言：C
+* Star数量：66 个
+* Fork数量：8 次
+* 关注人数：66 人
+* 贡献人数：2 人
 * Open Issues数量：1 个
-* Github地址：https://github.com/amazon-science/chronos-forecasting.git
+* Github地址：https://github.com/SentientArt/TheBasement.git
 
 
-Chronos是基于语言模型架构的预训练时间序列预测模型系列。它通过缩放和量化将时间序列转换为一系列标记，并使用交叉熵损失在这些标记上训练语言模型。一旦训练完成，通过在历史上下文中对多个未来轨迹进行采样，可以获得概率预测。Chronos模型已经在大量公开可用的时间序列数据以及使用高斯过程生成的合成数据上进行了训练。
+![](/images/sentientart-thebasement-0.png)
+
+Barney's Basement是一个目前正在开发中的开源项目。这是项目的开发者版本，提供了用于测试的演示。
 
