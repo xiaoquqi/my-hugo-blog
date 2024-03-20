@@ -1,32 +1,32 @@
 ---
-title: Github 2024-03-21 开源项目日报 Top10
-date: 2024-03-21T07:01:22+08:00
+title: Github 2024-03-21 Go开源项目日报 Top10
+date: 2024-03-21T07:11:50+08:00
 slug: github-trendings-today-20240321
 author: 老孙正经胡说
-image: /images/roboflow-supervision-0.png
+image: /images/milvus-io-milvus-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 人
-  - 人数
-  - 项目
-  - 创建
   - 和
+  - 项目
+  - 人数
+  - 人
+  - 创建
+  - 是
   - 开发
   - 语言
-  - 模型
-  - 周期
-  - 关注
-  - 贡献
-  - 地址
   - 协议
+  - 贡献
+  - 周期
   - 类型
-  - 生成
-  - 工具
-  - 用于
-  - 是
+  - 关注
+  - 地址
   - 提供
+  - 支持
+  - 开源
+  - 工具
+  - 云
 
 categories:
 
@@ -38,172 +38,165 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 4 |
-| 非开发语言项目 | 2 |
-| TypeScript项目 | 1 |
-| JavaScript项目 | 1 |
-| Batchfile项目 | 1 |
-| Jupyter Notebook项目 | 1 |
+| Go项目 | 10 |
+| HTML项目 | 1 |
 
-## Grok-1开放权重模型
+## Milvus: 云原生向量数据库与嵌入式相似性搜索
 
-* 创建周期：3 天
-* 开发语言：Python
+* 创建周期：1620 天
+* 开发语言：Go
 * 协议类型：Apache License 2.0
-* Star数量：34982 个
-* Fork数量：5643 次
-* 关注人数：34982 人
-* 贡献人数：6 人
-* Open Issues数量：50 个
-* Github地址：https://github.com/xai-org/grok-1.git
+* Star数量：25568 个
+* Fork数量：2501 次
+* 关注人数：25568 人
+* 贡献人数：226 人
+* Open Issues数量：636 个
+* Github地址：https://github.com/milvus-io/milvus.git
+* 项目首页: https://milvus.io
 
 
-Grok-1存储库包含用于加载和运行Grok-1开放权重模型的JAX示例代码，该模型具有314B参数的大尺寸。该模型设计采用了8个专家的混合（MoE）架构，64个层，48个用于查询的注意头，8个用于键/值，以及其他附加功能，如旋转嵌入（RoPE）和支持激活分片和8位量化。代码和相关的Grok-1权重在此版本中受Apache 2.0许可证的管辖。
+![](/images/milvus-io-milvus-0.png)
 
-## 初学者的生成式人工智能（第2版）
+Milvus是一个为嵌入式相似性搜索和人工智能应用而设计的开源向量数据库。它提供了对非结构化数据搜索的便捷性，并确保在部署环境中提供一致的用户体验。Milvus 2.0是一个以云原生为特色的向量数据库，其存储和计算被设计为分离的，具有状态无关的组件，以增强弹性和灵活性。它于2019年10月在开源Apache许可证2.0下发布，并是LF AI & Data Foundation的研究生项目。
 
-* 创建周期：259 天
-* 开发语言：Jupyter Notebook
+## Viper: Go项目中流行的配置解决方案
+
+* 创建周期：3641 天
+* 开发语言：Go
 * 协议类型：MIT License
-* Star数量：25764 个
-* Fork数量：16105 次
-* 关注人数：25764 人
-* 贡献人数：50 人
-* Open Issues数量：17 个
-* Github地址：https://github.com/microsoft/generative-ai-for-beginners.git
-* 项目首页: https://microsoft.github.io/generative-ai-for-beginners/
+* Star数量：25483 个
+* Fork数量：1977 次
+* 关注人数：25483 人
+* 贡献人数：160 人
+* Open Issues数量：499 个
+* Github地址：https://github.com/spf13/viper.git
 
 
-《初学者的生成式人工智能（第2版）》是由微软云倡导者提供的一门全面的18课程，教授一切开始构建生成式人工智能应用所需的知识。
+Viper 是 Go 项目中流行的配置解决方案，许多知名项目如 Hugo、EMC RexRay 和 Docker Notary 都在使用它。Viper 团队正在寻求即将推出的 V2 版本的反馈，并鼓励社区通过提供的链接分享他们的想法。
 
-## 稳定性AI的生成模型
+## Lux：快速简单的视频下载库和命令行工具
 
-* 创建周期：273 天
-* 开发语言：Python
+* 创建周期：2217 天
+* 开发语言：Go
 * 协议类型：MIT License
-* Star数量：21137 个
-* Fork数量：2272 次
-* 关注人数：21137 人
-* 贡献人数：16 人
-* Open Issues数量：224 个
-* Github地址：https://github.com/Stability-AI/generative-models.git
+* Star数量：23899 个
+* Fork数量：2693 次
+* 关注人数：23899 人
+* 贡献人数：97 人
+* Open Issues数量：478 个
+* Github地址：https://github.com/iawia002/lux.git
 
 
-Stability AI的生成模型是一个开源项目，专注于为各种应用程序创建和实现生成模型。这些模型旨在生成类似于给定数据集的新数据样本，它们通常用于诸如图像生成、文本生成和数据增强等任务。
+Lux 是一个用 Go 编写的快速简单的视频下载库和命令行工具。它支持通过不同的软件包管理器进行安装，下载视频、播放列表和其他内容，恢复下载，使用 cookies 和代理，多线程以及支持多个网站。该项目还提供了网络、播放列表、文件系统、字幕和优酷的选项，并且欢迎贡献。
 
-## 可重复使用的计算机视觉工具
+## Cilium: 一个基于eBPF的网络、可观测性和安全性解决方案
 
-* 创建周期：478 天
-* 开发语言：Python
+* 创建周期：2948 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：17530 个
+* Fork数量：2575 次
+* 关注人数：17530 人
+* 贡献人数：400 人
+* Open Issues数量：1149 个
+* Github地址：https://github.com/cilium/cilium.git
+* 项目首页: https://cilium.io
+
+
+Cilium是一个基于eBPF的数据平面的开源网络、可观测性和安全性解决方案。它提供了一个简单的平面3层网络，支持多集群，具有L7协议意识，分布式负载平衡，以及集成网关、带宽管理和服务网格等高级功能。它利用eBPF技术实现安全、网络和可见性逻辑的高效灵活实现。
+
+## Teleport: 基础设施连接、身份验证和访问控制
+
+* 创建周期：3307 天
+* 开发语言：Go
+* 协议类型：GNU Affero General Public License v3.0
+* Star数量：16063 个
+* Fork数量：1631 次
+* 关注人数：16063 人
+* 贡献人数：265 人
+* Open Issues数量：2422 个
+* Github地址：https://github.com/gravitational/teleport.git
+* 项目首页: https://goteleport.com
+
+
+Teleport是一个开源工具，为基础设施提供连接、身份验证、访问控制和审计。它允许为云基础设施设置SSO，使用mTLS端点和短期证书保护对服务的访问，建立隧道以访问NAT和防火墙后面的服务，提供具有会话记录和重放的审计日志，并通过访问请求统一RBAC。它支持SSH、Kubernetes、数据库、RDP和Web服务。
+
+## 使用Gitleaks保护和发现机密信息
+
+* 创建周期：2203 天
+* 开发语言：Go
 * 协议类型：MIT License
-* Star数量：10958 个
-* Fork数量：875 次
-* 关注人数：10958 人
-* 贡献人数：53 人
-* Open Issues数量：89 个
-* Github地址：https://github.com/roboflow/supervision.git
-* 项目首页: https://supervision.roboflow.com
+* Star数量：14645 个
+* Fork数量：1310 次
+* 关注人数：14645 人
+* 贡献人数：153 人
+* Open Issues数量：165 个
+* Github地址：https://github.com/gitleaks/gitleaks.git
+* 项目首页: https://gitleaks.io
 
 
-![](/images/roboflow-supervision-0.png)
+Gitleaks是一个旨在保护和发现代码存储库中的机密信息的开源项目。它是一个用于识别和防止暴露密码、API密钥和其他凭据等敏感信息的工具。
 
-我们为您提供可重复使用的计算机视觉工具，用于加载数据集、在图像或视频上绘制检测，以及计算特定区域内的检测数量。
+## Packer：创建多平台相同机器镜像的工具
 
-## Open-Sora: 构建自己的视频生成模型
+* 创建周期：4016 天
+* 开发语言：Go
+* 协议类型：Other
+* Star数量：14835 个
+* Fork数量：3303 次
+* 关注人数：14835 人
+* 贡献人数：369 人
+* Open Issues数量：418 个
+* Github地址：https://github.com/hashicorp/packer.git
+* 项目首页: http://www.packer.io
+
+
+Packer是一个工具，用于从单个源配置创建多个平台的相同机器镜像。它轻量级，在所有主要操作系统上运行，并通过外部插件集成支持各种平台。Packer创建的图像可以轻松转换为Vagrant虚拟机。
+
+## Tekton Pipelines: 云原生的 Kubernetes 风格资源
+
+* 创建周期：2031 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：8248 个
+* Fork数量：1737 次
+* 关注人数：8248 人
+* 贡献人数：302 人
+* Open Issues数量：382 个
+* Github地址：https://github.com/tektoncd/pipeline.git
+* 项目首页: https://tekton.dev
+
+
+Tekton Pipelines 是一个云原生项目，提供了声明 CI/CD 风格流水线的 Kubernetes 风格资源。它在 Kubernetes 上运行，使用容器作为构建块，并且是解耦的，允许任务独立运行，并且资源可以在运行之间轻松交换。此外，它是类型化的，可以轻松交换资源的实现，例如镜像。
+
+## Coze-Bot: 代理Discord-Bot实现GPT4对话模型的API请求
 
 * 创建周期：17 天
-* 开发语言：Python
-* 协议类型：Apache License 2.0
-* Star数量：1151 个
-* Fork数量：96 次
-* 关注人数：1151 人
-* 贡献人数：6 人
-* Open Issues数量：10 个
-* Github地址：https://github.com/hpcaitech/Open-Sora.git
-
-
-![](/images/hpcaitech-open-sora-0.png)
-
-Open-Sora是一个开源项目，允许用户构建类似于OpenAI的Sora的自己的视频生成模型。它提供了创建自定义视频生成模型所需的工具和资源。
-
-## 多平台爬虫工具
-
-* 创建周期：282 天
-* 开发语言：Python
-* 协议类型：Apache License 2.0
-* Star数量：2419 个
-* Fork数量：451 次
-* 关注人数：2419 人
-* 贡献人数：8 人
-* Open Issues数量：24 个
-* Github地址：https://github.com/NanmiCoder/MediaCrawler.git
-
-
-这个开源项目提供了针对小红书、抖音、快手、B站、微博等平台的爬虫工具，可以抓取视频、图片、评论、点赞、转发等信息。项目使用playwright搭建桥梁，保留登录成功后的上下文浏览器环境，并通过执行JS表达式获取一些加密参数，从而简化了核心加密JS代码的复现和逆向难度。
-
-## Planka - 实时看板工具
-
-* 创建周期：1665 天
-* 开发语言：JavaScript
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：5804 个
-* Fork数量：560 次
-* 关注人数：5804 人
-* 贡献人数：57 人
-* Open Issues数量：248 个
-* Github地址：https://github.com/plankanban/planka.git
-* 项目首页: https://planka.app
-
-
-![](/images/plankanban-planka-0.png)
-
-Planka是一个使用React和Redux构建的开源实时看板，适用于工作组。
-
-## ComfyUI 工作流集合
-
-* 创建周期：14 天
-* 协议类型：GNU General Public License v3.0
-* Star数量：1112 个
-* Fork数量：122 次
-* 关注人数：1112 人
-* 贡献人数：1 人
-* Open Issues数量：2 个
-* Github地址：https://github.com/ZHO-ZHO-ZHO/ComfyUI-Workflows-ZHO.git
-
-
-![](/images/zho-zho-zho-comfyui-workflows-zho-0.png)
-
-ComfyUI 是一个包含 15 个不同工作流的集合，包括 ComfyUI 智能助手，稳定级联，3D，LLM + SD，差分扩散，YoloWorld-EfficientSAM，Portrait Master，ArtGallery，InstantID-ZHO，PhotoMaker-ZHO，SVD-ZHO，I2VGenXL，更多模型，TravelSuite-ZHO，词云 和 ComfyUI 中的 APISR。
-
-## Discord嵌入式应用程序SDK
-
-* 创建周期：114 天
-* 开发语言：TypeScript
+* 开发语言：Go
 * 协议类型：MIT License
-* Star数量：544 个
-* Fork数量：70 次
-* 关注人数：544 人
-* 贡献人数：5 人
-* Open Issues数量：11 个
-* Github地址：https://github.com/discord/embedded-app-sdk.git
-* 项目首页: https://discord.com/developers/docs/activities/overview
-
-
-Discord嵌入式应用程序SDK允许开发人员在Discord平台内创建沉浸式的多人体验。
-
-## Windows 10/11 升级助手工具
-
-* 创建周期：4 天
-* 开发语言：Batchfile
-* Star数量：202 个
-* Fork数量：46 次
-* 关注人数：202 人
-* 贡献人数：5 人
+* Star数量：1102 个
+* Fork数量：315 次
+* 关注人数：1102 人
+* 贡献人数：2 人
 * Open Issues数量：1 个
-* Github地址：https://github.com/TheMMC/In-Place_Upgrade_Helper.git
+* Github地址：https://github.com/deanxv/coze-discord-proxy.git
 
 
-![](/images/themmc-in-place_upgrade_helper-0.png)
+Coze-Bot是一个代理Discord-Bot，可以通过API请求GPT4对话模型和微调模型。它具有完美适配多种对话面板、对话隔离、流式返回支持、创建discord分类/频道/线程的功能。同时也支持与openai对齐的对话接口和图/文件生文接口，以及dall-e-3文生图接口。此外，它还能定时任务自动活跃机器人，并支持配置多机器人。
 
-这是一个用于Windows 10和11的升级助手工具，可以通过四种不同的方法升级Windows。它支持通过更改产品密钥、启动普通的就地升级、启动特定Windows版本的就地升级，以及执行强制的就地升级以保留所有应用程序和设置。然而，最后一种方法没有得到微软的认可，用户应该自行承担风险。该工具仍在不断改进中，不会激活Windows，目前可提供德语原生版本，并提供英语和中文翻译。
+## OneTerm Bastion Host: 基础设施安全访问与控制的开源项目
+
+* 创建周期：51 天
+* 开发语言：Go, HTML
+* 协议类型：GNU Affero General Public License v3.0
+* Star数量：150 个
+* Fork数量：26 次
+* 关注人数：150 人
+* 贡献人数：4 人
+* Open Issues数量：4 个
+* Github地址：https://github.com/veops/oneterm.git
+* 项目首页: https://term.veops.cn/oneterm
+
+
+OneTerm Bastion Host是一个旨在提供对基础设施的安全访问和控制的开源项目，专注于认证、授权、账户和审计。它通过角色管理、授权批准、资源访问控制和会话审计，增强了企业内部控制和合规安全，管理IT人员的操作行为。
 
