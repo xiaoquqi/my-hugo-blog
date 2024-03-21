@@ -1,32 +1,32 @@
 ---
-title: Github 2024-03-22 开源项目日报 Top10
-date: 2024-03-22T07:01:58+08:00
+title: Github 2024-03-22 Java开源项目日报 Top10
+date: 2024-03-22T07:11:40+08:00
 slug: github-trendings-today-20240322
 author: 老孙正经胡说
-image: /images/hpcaitech-colossalai-0.png
+image: /images/apolloconfig-apollo-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
   - 人数
   - 人
-  - 和
+  - 项目
   - 开发
   - 语言
-  - 创建
   - 关注
+  - 创建
   - 是
-  - 开源
+  - 和
+  - 数据
   - 周期
-  - 协议
   - 贡献
   - 地址
-  - 工具
+  - 协议
   - 类型
-  - 提供
-  - 模型
-  - 功能
+  - 中
+  - 不同
+  - 缓存
+  - 配置
 
 categories:
 
@@ -38,32 +38,43 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 3 |
-| C#项目 | 1 |
-| Java项目 | 1 |
-| Rust项目 | 1 |
-| Go项目 | 1 |
-| Shell项目 | 1 |
-| 非开发语言项目 | 1 |
-| TypeScript项目 | 1 |
+| Java项目 | 10 |
+| Swift项目 | 1 |
+| Python项目 | 1 |
 
-## Colossal-AI：使大型人工智能模型更加实惠和快速训练的开源项目
+## Java生态系统中的Spring框架教程集合
 
-* 创建周期：866 天
-* 开发语言：Python
+* 创建周期：3980 天
+* 开发语言：Java
+* 协议类型：MIT License
+* Star数量：35802 个
+* Fork数量：54198 次
+* 关注人数：35802 人
+* 贡献人数：322 人
+* Open Issues数量：83 个
+* Github地址：https://github.com/eugenp/tutorials.git
+* 项目首页: http://bit.ly/github-lsso
+
+
+该项目是一个包含多个小而专注的教程的集合，涵盖了Java生态系统中各个领域的开发，重点关注Spring框架、Spring Boot和Spring Security。它利用maven构建配置文件来分隔项目，并包括构建整个存储库、特定模块以及运行Spring Boot模块和测试的说明。
+
+## Apollo - 可靠的微服务配置管理系统
+
+* 创建周期：2940 天
+* 开发语言：Java
 * 协议类型：Apache License 2.0
-* Star数量：36661 个
-* Fork数量：4124 次
-* 关注人数：36661 人
-* 贡献人数：166 人
-* Open Issues数量：386 个
-* Github地址：https://github.com/hpcaitech/ColossalAI.git
-* 项目首页: https://www.colossalai.org
+* Star数量：28711 个
+* Fork数量：10158 次
+* 关注人数：28711 人
+* 贡献人数：146 人
+* Open Issues数量：130 个
+* Github地址：https://github.com/apolloconfig/apollo.git
+* 项目首页: https://www.apolloconfig.com
 
 
-![](/images/hpcaitech-colossalai-0.png)
+![](/images/apolloconfig-apollo-0.png)
 
-Colossal-AI是一个旨在使大型人工智能模型更加实惠、训练速度更快并且能够被更广泛用户使用的开源项目。
+Apollo是一个可靠的配置管理系统，适用于微服务配置管理场景。它可以集中管理不同应用和不同集群的配置，适用于微服务配置管理场景。Apollo提供了统一的界面来集中管理不同环境、不同集群和不同命名空间的配置。配置更改实时生效，支持版本管理、灰度发布、授权管理和操作审计。此外，Apollo还提供丰富的SDK，包括Java、.Net等，并提供HTTP API和开放平台API。它还具有简单的部署和使用指南。
 
 ## RuoYi-Vue Pro: 基于Spring Boot和Vue的开源后台管理系统+微信小程序
 
@@ -81,136 +92,118 @@ Colossal-AI是一个旨在使大型人工智能模型更加实惠、训练速度
 
 RuoYi-Vue Pro 是 RuoYi-Vue 项目的新版本，它是基于 Spring Boot + MyBatis Plus + Vue & Element 实现的后台管理系统 + 微信小程序。它支持 RBAC 动态权限、数据权限、SaaS 多租户、Flowable 工作流、第三方登录、支付、短信、电子商务、CRM、ERP 等功能。该项目是开源的，作者欢迎大家给予关注和支持。
 
-## Lynis - UNIX系统安全审计和加固工具
+## Apache DolphinScheduler: 低代码敏捷数据编排平台
 
-* 创建周期：3755 天
-* 开发语言：Shell
-* 协议类型：GNU General Public License v3.0
-* Star数量：12143 个
-* Fork数量：1361 次
-* 关注人数：12143 人
-* 贡献人数：188 人
-* Open Issues数量：155 个
-* Github地址：https://github.com/CISOfy/lynis.git
-* 项目首页: https://cisofy.com/lynis/
-
-
-Lynis是一个针对基于UNIX的系统（包括Linux、macOS和BSD）的安全审计和加固工具。它执行深度安全扫描，提供系统加固建议，并扫描一般系统信息、易受攻击的软件包以及配置问题。它被广泛用于系统管理员、审计员和渗透测试人员用于评估和改善系统安全。
-
-## 可重复使用的计算机视觉工具
-
-* 创建周期：478 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：10958 个
-* Fork数量：875 次
-* 关注人数：10958 人
-* 贡献人数：53 人
-* Open Issues数量：89 个
-* Github地址：https://github.com/roboflow/supervision.git
-* 项目首页: https://supervision.roboflow.com
-
-
-![](/images/roboflow-supervision-0.png)
-
-我们为您提供可重复使用的计算机视觉工具，用于加载数据集、在图像或视频上绘制检测，以及计算特定区域内的检测数量。
-
-## Open-Sora: 构建自己的视频生成模型
-
-* 创建周期：17 天
-* 开发语言：Python
+* 创建周期：1820 天
+* 开发语言：Java
 * 协议类型：Apache License 2.0
-* Star数量：1151 个
-* Fork数量：96 次
-* 关注人数：1151 人
-* 贡献人数：6 人
-* Open Issues数量：10 个
-* Github地址：https://github.com/hpcaitech/Open-Sora.git
+* Star数量：11701 个
+* Fork数量：4298 次
+* 关注人数：11701 人
+* 贡献人数：362 人
+* Open Issues数量：1007 个
+* Github地址：https://github.com/apache/dolphinscheduler.git
+* 项目首页: https://dolphinscheduler.apache.org/
 
 
-![](/images/hpcaitech-open-sora-0.png)
+Apache DolphinScheduler是一种现代数据编排平台，可以使用低代码敏捷地创建高性能工作流。
 
-Open-Sora是一个开源项目，允许用户构建类似于OpenAI的Sora的自己的视频生成模型。它提供了创建自定义视频生成模型所需的工具和资源。
+## 基于Spring-Boot的通用文件在线预览项目
 
-## Garnet: 新型远程缓存存储
+* 创建周期：2292 天
+* 开发语言：Java
+* Star数量：9678 个
+* Fork数量：2523 次
+* 关注人数：9678 人
+* 贡献人数：42 人
+* Open Issues数量：245 个
+* Github地址：https://github.com/kekingcn/kkFileView.git
+* 项目首页: https://kkview.cn
 
-* 创建周期：214 天
-* 开发语言：C#
+
+Universal File Online Preview Project，也称为kkFileView，基于Spring-Boot。它允许用户在线预览各种类型的文件，方便用户在不需要下载文件的情况下查看文档。
+
+## DataHub: 现代数据堆栈的元数据平台
+
+* 创建周期：3012 天
+* 开发语言：Java, Python
+* 协议类型：Apache License 2.0
+* Star数量：8959 个
+* Fork数量：2623 次
+* 关注人数：8959 人
+* 贡献人数：424 人
+* Open Issues数量：188 个
+* Github地址：https://github.com/datahub-project/datahub.git
+* 项目首页: https://datahubproject.io
+
+
+![](/images/datahub-project-datahub-0.png)
+
+DataHub是一个为现代数据堆栈设计的开源元数据平台。
+
+## SeaTunnel: 下一代超高性能数据集成工具
+
+* 创建周期：2358 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：6941 个
+* Fork数量：1453 次
+* 关注人数：6941 人
+* 贡献人数：240 人
+* Open Issues数量：580 个
+* Github地址：https://github.com/apache/seatunnel.git
+* 项目首页: https://seatunnel.apache.org/
+
+
+![](/images/apache-seatunnel-0.png)
+
+SeaTunnel是一个开源的下一代超高性能、分布式、大规模数据集成工具，称为Apache SeaTunnel。
+
+## React Native视频组件 - react-native-video
+
+* 创建周期：3279 天
+* 开发语言：Java, Swift
 * 协议类型：MIT License
-* Star数量：3648 个
-* Fork数量：133 次
-* 关注人数：3648 人
-* 贡献人数：13 人
-* Open Issues数量：13 个
-* Github地址：https://github.com/microsoft/garnet.git
-* 项目首页: https://microsoft.github.io/garnet/
+* Star数量：6920 个
+* Fork数量：2811 次
+* 关注人数：6920 人
+* 贡献人数：252 人
+* Open Issues数量：217 个
+* Github地址：https://github.com/react-native-video/react-native-video.git
 
 
-![](/images/microsoft-garnet-0.png)
+react-native-video是React Native的开源<Video />组件，允许开发人员轻松将视频播放功能整合到他们的应用程序中。
 
-Garnet是来自微软研究的新型远程缓存存储，提供更好的吞吐量、可扩展性和低客户端延迟。它采用流行的RESP wire协议，与现有的Redis客户端兼容，并设计为跨平台和现代化。
+## Apache Flink的CDC连接器
 
-## jnv: 交互式JSON查看器和jq过滤器编辑器
-
-* 创建周期：4 天
-* 开发语言：Rust
-* 协议类型：MIT License
-* Star数量：1906 个
-* Fork数量：10 次
-* 关注人数：1906 人
-* 贡献人数：3 人
-* Open Issues数量：9 个
-* Github地址：https://github.com/ynqa/jnv.git
-
-
-![](/images/ynqa-jnv-0.png)
-
-jnv是一个旨在浏览JSON数据的开源工具，提供交互式JSON查看器和jq过滤器编辑器。它受到jid和jiq的启发。
-
-## Retina: 专为 Kubernetes 设计的开源 eBPF 分布式网络可观测性工具
-
-* 创建周期：59 天
-* 开发语言：Go
-* 协议类型：MIT License
-* Star数量：785 个
-* Fork数量：27 次
-* 关注人数：785 人
-* 贡献人数：10 人
-* Open Issues数量：29 个
-* Github地址：https://github.com/microsoft/retina.git
-* 项目首页: https://retina.sh
+* 创建周期：1320 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：5025 个
+* Fork数量：1715 次
+* 关注人数：5025 人
+* 贡献人数：111 人
+* Open Issues数量：342 个
+* Github地址：https://github.com/apache/flink-cdc.git
+* 项目首页: https://ververica.github.io/flink-cdc-connectors/
 
 
-Retina 是一个专为 Kubernetes 设计的开源 eBPF 分布式网络可观测性工具。它提供了 goreport、GitHub 发布、godoc、许可证、测试、发布、codeql 和 golangci-lint 等功能。
+![](/images/apache-flink-cdc-0.png)
 
-## 开源临时邮箱工具
+Apache Flink的CDC连接器是一组源连接器，使用变更数据捕获（CDC）从不同的数据库中摄取变更。它集成了Debezium来捕获数据变更，并设计用于与Apache Flink一起使用。
 
-* 创建周期：8 天
-* 开发语言：TypeScript
-* 协议类型：GNU General Public License v3.0
-* Star数量：779 个
-* Fork数量：73 次
-* 关注人数：779 人
-* 贡献人数：2 人
-* Open Issues数量：2 个
-* Github地址：https://github.com/yesmore/vmail.git
-* 项目首页: https://vmail.dev
+## JetCache: Java缓存框架
 
-
-![](/images/yesmore-vmail-0.png)
-
-这是一个开源的临时邮箱工具，使用Cloudflare电子邮件工作者实现临时电子邮件服务。
-
-## Smart Components: .NET 应用程序的实验性 AI 功能
-
-* 创建周期：14 天
-* Star数量：254 个
-* Fork数量：14 次
-* 关注人数：254 人
-* 贡献人数：2 人
-* Open Issues数量：8 个
-* Github地址：https://github.com/dotnet-smartcomponents/smartcomponents.git
+* 创建周期：2536 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：4709 个
+* Fork数量：1005 次
+* 关注人数：4709 人
+* 贡献人数：30 人
+* Open Issues数量：355 个
+* Github地址：https://github.com/alibaba/jetcache.git
 
 
-Smart Components是.NET团队的一个实验性项目，允许开发人员轻松地将AI功能添加到其.NET应用程序中，而无需花费数周来重新设计用户体验或研究机器学习和提示工程。这些预构建的端到端AI功能可以集成到现有的UI中，以增强终端用户的应用程序生产力。最初可用于ASP.NET Core 6.0及更高版本，支持Blazor或MVC/Razor Pages，根据反馈可能会支持其他UI技术。
+JetCache是一个Java缓存框架，为不同的缓存解决方案提供统一的使用方式。它提供了强大的注解，用于原生TTL、两级缓存、分布式环境下的自动刷新以及实例的手动操作。它有四种实现方式：Redis、Caffeine（内存中）、Simple（内存中）和Guava（内存中）。JetCache的特点包括声明式方法缓存、通过统一API进行缓存操作、访问统计收集、可定制的键生成和值序列化、分布式缓存自动刷新、异步访问以及Spring Boot支持。
 
