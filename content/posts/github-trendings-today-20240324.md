@@ -1,32 +1,32 @@
 ---
-title: Github 2024-03-24 开源项目日报 Top10
-date: 2024-03-24T07:01:53+08:00
+title: Github 2024-03-24 php开源项目日报 Top10
+date: 2024-03-24T07:11:11+08:00
 slug: github-trendings-today-20240324
 author: 老孙正经胡说
-image: /images/openinterpreter-open-interpreter-0.png
+image: /images/nextcloud-server-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
+  - 和
   - 人数
   - 人
-  - 和
-  - 语言
+  - 项目
   - 开发
   - 贡献
+  - 语言
   - 创建
-  - 协议
-  - 周期
-  - 类型
   - 关注
-  - 地址
   - 是
-  - 工具
   - 开源
+  - 周期
+  - 地址
+  - 协议
+  - 类型
+  - 库
   - 提供
-  - 旨在
-  - 并
+  - 用于
+  - 电子商务
 
 categories:
 
@@ -38,176 +38,175 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 4 |
-| Jupyter Notebook项目 | 1 |
-| C#项目 | 1 |
-| Kotlin项目 | 1 |
-| Go项目 | 1 |
-| Rust项目 | 1 |
-| 非开发语言项目 | 1 |
+| PHP项目 | 10 |
+| JavaScript项目 | 1 |
 
-## 项目化学习
+## Nextcloud服务器：安全的数据之家
 
-* 创建周期：2538 天
-* 协议类型：MIT License
-* Star数量：161973 个
-* Fork数量：21345 次
-* 关注人数：161973 人
-* 贡献人数：100 人
-* Open Issues数量：109 个
-* Github地址：https://github.com/practical-tutorials/project-based-learning.git
-
-
-项目化学习是一个由程序开发者学习如何从零开始构建应用程序的编程教程的精选列表。这些教程涵盖了不同的主要编程语言，可能涉及多种技术和语言。要开始使用，请简单地fork这个仓库。请参考CONTRIBUTING.md以获取贡献指南。
-
-## Open Interpreter: 本地代码运行和自然语言界面
-
-* 创建周期：254 天
-* 开发语言：Python
+* 创建周期：2796 天
+* 开发语言：PHP, JavaScript
 * 协议类型：GNU Affero General Public License v3.0
-* Star数量：43193 个
-* Fork数量：3785 次
-* 关注人数：43193 人
-* 贡献人数：85 人
-* Open Issues数量：102 个
-* Github地址：https://github.com/OpenInterpreter/open-interpreter.git
-* 项目首页: http://openinterpreter.com/
+* Star数量：24831 个
+* Fork数量：3842 次
+* 关注人数：24831 人
+* 贡献人数：354 人
+* Open Issues数量：2757 个
+* Github地址：https://github.com/nextcloud/server.git
+* 项目首页: https://nextcloud.com
 
 
-![](/images/openinterpreter-open-interpreter-0.png)
+![](/images/nextcloud-server-0.png)
 
-Open Interpreter是一个工具，允许LLMs在本地运行代码，并为各种计算机任务提供自然语言界面，例如创建和编辑媒体，控制浏览器以及分析数据集。
+Nextcloud服务器是一个开源平台，为您存储所有数据提供安全的环境。
 
-## 开发人员的强大工具：开源项目概述
+## Magento开源项目和Adobe Commerce
 
-* 创建周期：264 天
-* 开发语言：Jupyter Notebook
-* 协议类型：MIT License
-* Star数量：6591 个
-* Fork数量：441 次
-* 关注人数：6591 人
-* 贡献人数：6 人
-* Open Issues数量：23 个
-* Github地址：https://github.com/mshumer/gpt-prompt-engineer.git
-
-
-![](/images/mshumer-gpt-prompt-engineer-0.png)
-
-这个开源项目是开发人员的强大工具，提供了一套全面的功能，用于构建和管理软件项目。它提供了广泛的功能，包括版本控制、问题跟踪和持续集成。该项目旨在简化开发过程，改善团队成员之间的协作。
-
-## Garnet: 新型远程缓存存储
-
-* 创建周期：214 天
-* 开发语言：C#
-* 协议类型：MIT License
-* Star数量：3648 个
-* Fork数量：133 次
-* 关注人数：3648 人
-* 贡献人数：13 人
-* Open Issues数量：13 个
-* Github地址：https://github.com/microsoft/garnet.git
-* 项目首页: https://microsoft.github.io/garnet/
+* 创建周期：4435 天
+* 开发语言：PHP
+* 协议类型：Open Software License 3.0
+* Star数量：11083 个
+* Fork数量：9328 次
+* 关注人数：11083 人
+* 贡献人数：257 人
+* Open Issues数量：2518 个
+* Github地址：https://github.com/magento/magento2.git
+* 项目首页: http://www.magento.com
 
 
-![](/images/microsoft-garnet-0.png)
+![](/images/magento-magento2-0.png)
 
-Garnet是来自微软研究的新型远程缓存存储，提供更好的吞吐量、可扩展性和低客户端延迟。它采用流行的RESP wire协议，与现有的Redis客户端兼容，并设计为跨平台和现代化。
+Magento开源项目提供基本的电子商务功能，用于构建在线商店。建议使用Adobe Commerce作为完整的电子商务解决方案，其中包括优化的云架构、托管以及人工智能驱动的商品推广和分析。
 
-## jnv: 交互式JSON查看器和jq过滤器编辑器
+## Google API客户端库：PHP访问Google API的开源库
 
-* 创建周期：4 天
-* 开发语言：Rust
-* 协议类型：MIT License
-* Star数量：1906 个
-* Fork数量：10 次
-* 关注人数：1906 人
-* 贡献人数：3 人
-* Open Issues数量：9 个
-* Github地址：https://github.com/ynqa/jnv.git
-
-
-![](/images/ynqa-jnv-0.png)
-
-jnv是一个旨在浏览JSON数据的开源工具，提供交互式JSON查看器和jq过滤器编辑器。它受到jid和jiq的启发。
-
-## Devika: 自主的AI软件工程师
-
-* 创建周期：3 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：2901 个
-* Fork数量：399 次
-* 关注人数：2901 人
-* 贡献人数：7 人
-* Open Issues数量：79 个
-* Github地址：https://github.com/stitionai/devika.git
-
-
-Devika是一款自主的AI软件工程师，能够理解高级人类指令，将其分解为步骤，研究相关信息，并编写代码以实现给定的目标。它旨在成为Cognition AI的Devin的竞争性开源替代品。该项目目前处于早期开发阶段，欢迎贡献以帮助推动进展！
-
-## 01 项目：面向人工智能设备的开源生态系统
-
-* 创建周期：73 天
-* 开发语言：Python
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：2205 个
-* Fork数量：196 次
-* 关注人数：2205 人
-* 贡献人数：15 人
-* Open Issues数量：38 个
-* Github地址：https://github.com/OpenInterpreter/01.git
-
-
-![](/images/openinterpreter-01-0.png)
-
-01 项目是一个面向人工智能设备的开源生态系统，拥有一款用于驱动对话设备的旗舰操作系统。它包括软件，如基于 ESP32 的语音接口 01 Light 和用于家庭计算机设置的 01 Server。该项目旨在支持并构建更多硬件，使 01 能够在任何具有输入、输出和互联网连接的设备上运行。它公开了一个语音到语音的 websocket，并运行了一个受 Andrej Karpathy 的 LLM OS 启发的代码解释语言模型。
-
-## AutoDev: AI编程工具与多语言支持
-
-* 创建周期：344 天
-* 开发语言：Kotlin
-* 协议类型：Mozilla Public License 2.0
-* Star数量：1523 个
-* Fork数量：191 次
-* 关注人数：1523 人
-* 贡献人数：12 人
-* Open Issues数量：6 个
-* Github地址：https://github.com/unit-mesh/auto-dev.git
-* 项目首页: https://ide.unitmesh.cc/
-
-
-![](/images/unit-mesh-auto-dev-0.png)
-
-AutoDev是一款具有多语言支持、自动生成代码和协助解决bug的AI编程工具。它还提供可定制的提示和神奇的Auto Dev/Testing/Document/Agent功能。它还包括用于AutoDevelopment的DevIns AI代理语言。
-
-## Retina: 专为 Kubernetes 设计的开源 eBPF 分布式网络可观测性工具
-
-* 创建周期：59 天
-* 开发语言：Go
-* 协议类型：MIT License
-* Star数量：785 个
-* Fork数量：27 次
-* 关注人数：785 人
-* 贡献人数：10 人
-* Open Issues数量：29 个
-* Github地址：https://github.com/microsoft/retina.git
-* 项目首页: https://retina.sh
-
-
-Retina 是一个专为 Kubernetes 设计的开源 eBPF 分布式网络可观测性工具。它提供了 goreport、GitHub 发布、godoc、许可证、测试、发布、codeql 和 golangci-lint 等功能。
-
-## Thunder：PyTorch模型加速编译器
-
-* 创建周期：6 天
-* 开发语言：Python
+* 创建周期：3838 天
+* 开发语言：PHP
 * 协议类型：Apache License 2.0
-* Star数量：508 个
-* Fork数量：30 次
-* 关注人数：508 人
-* 贡献人数：34 人
-* Open Issues数量：19 个
-* Github地址：https://github.com/Lightning-AI/lightning-thunder.git
+* Star数量：9027 个
+* Fork数量：3743 次
+* 关注人数：9027 人
+* 贡献人数：153 人
+* Open Issues数量：54 个
+* Github地址：https://github.com/googleapis/google-api-php-client.git
 
 
-Thunder是用于PyTorch的源到源编译器，旨在通过同时组合和使用不同的硬件执行器，使PyTorch模型运行速度快如闪电。它适用于单个加速器和多GPU环境，并且旨在易于使用、理解和扩展。
+Google API客户端库是一个开源的PHP客户端库，允许在服务器上访问各种Google API，如Gmail、Drive和YouTube。它得到了Google的官方支持，并处于维护模式，这意味着将解决关键错误和安全问题，但不会添加新功能。
+
+## WooCommerce Monorepo: 一个可定制的开源电子商务平台
+
+* 创建周期：4611 天
+* 开发语言：PHP
+* Star数量：9022 个
+* Fork数量：10710 次
+* 关注人数：9022 人
+* 贡献人数：335 人
+* Open Issues数量：3265 个
+* Github地址：https://github.com/woocommerce/woocommerce.git
+* 项目首页: https://woo.com
+
+
+WooCommerce Monorepo 是一个建立在WordPress上的可定制的开源电子商务平台，为任何商业需求提供了解决方案。它包括了用于开发核心WooCommerce插件及其扩展的所有插件、包和工具。鼓励开发人员关注WooCommerce开发博客和Twitter上的@DevelopWC以获取更新。
+
+## PrestaShop - 开源电子商务解决方案
+
+* 创建周期：4101 天
+* 开发语言：PHP
+* 协议类型：Other
+* Star数量：7655 个
+* Fork数量：4740 次
+* 关注人数：7655 人
+* 贡献人数：254 人
+* Open Issues数量：2610 个
+* Github地址：https://github.com/PrestaShop/PrestaShop.git
+* 项目首页: https://www.prestashop-project.org/
+
+
+![](/images/prestashop-prestashop-0.png)
+
+PrestaShop是一个用PHP编写的开源电子商务Web应用程序，旨在为商家和客户提供出色的购物车体验。它可以高度定制，支持主要支付服务，翻译成多种语言，并具有完全响应的设计。存储库包含用于开发目的的源代码，稳定版本为8.1。'develop'分支包含下一个版本PrestaShop 9.0的进行中工作。它需要运行PHP 8.1+和MySQL 5.6+的Web服务器，也可以使用Docker部署。该项目欢迎贡献和错误报告，并为用户和开发人员提供了详细的文档和指南。
+
+## Docker学习平台和最新功能
+
+* 创建周期：1938 天
+* 开发语言：PHP
+* 协议类型：Apache License 2.0
+* Star数量：6148 个
+* Fork数量：1913 次
+* 关注人数：6148 人
+* 贡献人数：77 人
+* Open Issues数量：23 个
+* Github地址：https://github.com/collabnix/dockerlabs.git
+* 项目首页: https://dockerlabs.collabnix.com
+
+
+![](/images/collabnix-dockerlabs-0.png)
+
+Docker是一个学习平台，为初学者、中级和高级用户提供了500多个互动教程和指南。它在Docker Desktop上经过了充分测试，并且可以在浏览器上运行，无需基础设施。社区提供Slack、Discord和GitHub存储库等资源，用于协作和分享。此外，还有涵盖各种Docker主题和Docker Desktop最新功能的博客文章、文章和动手实验室。
+
+## OpenAI PHP: 与OpenAI API交互的PHP API客户端
+
+* 创建周期：504 天
+* 开发语言：PHP
+* 协议类型：MIT License
+* Star数量：4071 个
+* Fork数量：415 次
+* 关注人数：4071 人
+* 贡献人数：32 人
+* Open Issues数量：16 个
+* Github地址：https://github.com/openai-php/client.git
+
+
+![](/images/openai-php-client-0.png)
+
+OpenAI PHP是一个由社区维护的PHP API客户端，用于与OpenAI API进行交互。支持那些为创建和维护这个有价值工具而贡献了时间和精力的开发者是非常重要的。
+
+## Statamic: 以平面为先的Laravel + Git CMS
+
+* 创建周期：2301 天
+* 开发语言：PHP
+* 协议类型：Other
+* Star数量：3309 个
+* Fork数量：453 次
+* 关注人数：3309 人
+* 贡献人数：243 人
+* Open Issues数量：292 个
+* Github地址：https://github.com/statamic/cms.git
+* 项目首页: https://statamic.com
+
+
+![](/images/statamic-cms-0.png)
+
+Statamic是一个以平面为先的，由Laravel + Git驱动的CMS，用于创建美丽且易于管理的网站。该存储库包含了核心CMS软件包的代码。
+
+## PocketMine-MP: Minecraft Bedrock Edition的PHP服务器软件
+
+* 创建周期：2732 天
+* 开发语言：PHP
+* 协议类型：GNU Lesser General Public License v3.0
+* Star数量：3179 个
+* Fork数量：1495 次
+* 关注人数：3179 人
+* 贡献人数：188 人
+* Open Issues数量：426 个
+* Github地址：https://github.com/pmmp/PocketMine-MP.git
+* 项目首页: https://pmmp.io
+
+
+PocketMine-MP是一个使用PHP从头开始构建的Minecraft: Bedrock Edition高度可定制的服务器软件，具有超过10年的历史。它提供强大的插件API、丰富的生态系统、多世界支持、高性能和持续更新，以支持新的Minecraft版本。
+
+## WordPress Develop: 开源同步镜像
+
+* 创建周期：2666 天
+* 开发语言：PHP
+* 协议类型：GNU General Public License v2.0
+* Star数量：2249 个
+* Fork数量：2276 次
+* 关注人数：2249 人
+* 贡献人数：81 人
+* Open Issues数量：1386 个
+* Github地址：https://github.com/WordPress/wordpress-develop.git
+* 项目首页: https://make.wordpress.org/core/handbook/contribute/git/github-pull-requests-for-code-review/
+
+
+WordPress Develop是一个开源项目，从git://develop.git.wordpress.org同步，包括分支和标签。它作为WordPress子版本库的镜像，并要求每个拉取请求都包含指向https://core.trac.wordpress.org/上的现有工单的链接。该版本库是一个开发空间，用于贡献bug报告、补丁、测试变更、撰写文档以及参与其中。
 
