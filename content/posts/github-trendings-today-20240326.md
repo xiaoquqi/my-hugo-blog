@@ -1,6 +1,6 @@
 ---
-title: Github 2024-03-26 开源项目日报 Top10
-date: 2024-03-26T07:01:18+08:00
+title: Github 2024-03-26 Python开源项目日报 Top10
+date: 2024-03-26T07:11:28+08:00
 slug: github-trendings-today-20240326
 author: 老孙正经胡说
 image: /images/openinterpreter-open-interpreter-0.png
@@ -8,25 +8,25 @@ tags:
   - github
   - trendings
   - 数量
-  - 项目
   - 人数
   - 人
+  - 项目
+  - 和
   - 开发
   - 语言
-  - 和
-  - 贡献
-  - 是
   - 创建
+  - 贡献
   - 周期
   - 协议
   - 类型
   - 关注
   - 地址
+  - 语音
+  - 模型
+  - 是
   - 开源
   - 并
-  - 提供
-  - 运行
-  - 分析
+  - 代码
 
 categories:
 
@@ -38,13 +38,7 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 3 |
-| TypeScript项目 | 3 |
-| Jupyter Notebook项目 | 2 |
-| C++项目 | 1 |
-| GDScript项目 | 1 |
-| Lua项目 | 1 |
-| Solidity项目 | 1 |
+| Python项目 | 10 |
 
 ## Open Interpreter: 本地代码运行和自然语言界面
 
@@ -64,39 +58,22 @@ draft: false
 
 Open Interpreter是一个工具，允许LLMs在本地运行代码，并为各种计算机任务提供自然语言界面，例如创建和编辑媒体，控制浏览器以及分析数据集。
 
-## Lobe Chat: 开源ChatGPT/LLMs UI/Framework
+## 主机文件整合器和扩展项目
 
-* 创建周期：281 天
-* 开发语言：TypeScript
+* 创建周期：4366 天
+* 开发语言：Python
 * 协议类型：MIT License
-* Star数量：20641 个
-* Fork数量：4020 次
-* 关注人数：20641 人
-* 贡献人数：63 人
-* Open Issues数量：166 个
-* Github地址：https://github.com/lobehub/lobe-chat.git
-* 项目首页: https://chat-preview.lobehub.com
+* Star数量：25105 个
+* Fork数量：2106 次
+* 关注人数：25105 人
+* 贡献人数：133 人
+* Open Issues数量：77 个
+* Github地址：https://github.com/StevenBlack/hosts.git
 
 
-![](/images/lobehub-lobe-chat-0.png)
+![](/images/stevenblack-hosts-0.png)
 
-Lobe Chat是一个开源的、现代化设计的ChatGPT/LLMs UI/Framework，支持语音合成、多模态功能和可扩展的插件系统。它提供一键免费部署私人ChatGPT/Gemini/Ollama聊天应用。
-
-## 去中心化自治调节公司（DARC）
-
-* 创建周期：356 天
-* 开发语言：TypeScript, Solidity
-* 协议类型：Other
-* Star数量：8150 个
-* Fork数量：6346 次
-* 关注人数：8150 人
-* 贡献人数：6 人
-* Open Issues数量：2 个
-* Github地址：https://github.com/Project-DARC/DARC.git
-* 项目首页: https://darc.app
-
-
-去中心化自治调节公司（DARC）是一个在任何EVM兼容的区块链上运行的虚拟机，具有基于链上法律系统、多级代币和分红机制。该项目旨在建立一个受商业法规插件系统监管的去中心化自治公司。目前项目处于早期开发阶段，尚未准备投入生产使用。
+这个开源项目从多个来源整合和扩展主机文件，允许用户选择添加类别如色情和社交媒体的扩展。该存储库提供了一个统一的主机文件，去除了重复项，并提供各种定制的主机文件。该项目作为主机文件聚合器，并在2024年3月24日进行了最后更新。
 
 ## Devika: 自主的AI软件工程师
 
@@ -113,38 +90,20 @@ Lobe Chat是一个开源的、现代化设计的ChatGPT/LLMs UI/Framework，支�
 
 Devika是一款自主的AI软件工程师，能够理解高级人类指令，将其分解为步骤，研究相关信息，并编写代码以实现给定的目标。它旨在成为Cognition AI的Devin的竞争性开源替代品。该项目目前处于早期开发阶段，欢迎贡献以帮助推动进展！
 
-## 开发人员的强大工具：开源项目概述
+## MLX示例：学习如何使用MLX框架的独立示例
 
-* 创建周期：264 天
-* 开发语言：Jupyter Notebook
+* 创建周期：42 天
+* 开发语言：Python
 * 协议类型：MIT License
-* Star数量：6591 个
-* Fork数量：441 次
-* 关注人数：6591 人
-* 贡献人数：6 人
-* Open Issues数量：23 个
-* Github地址：https://github.com/mshumer/gpt-prompt-engineer.git
+* Star数量：3434 个
+* Fork数量：510 次
+* 关注人数：3434 人
+* 贡献人数：59 人
+* Open Issues数量：44 个
+* Github地址：https://github.com/ml-explore/mlx-examples.git
 
 
-![](/images/mshumer-gpt-prompt-engineer-0.png)
-
-这个开源项目是开发人员的强大工具，提供了一套全面的功能，用于构建和管理软件项目。它提供了广泛的功能，包括版本控制、问题跟踪和持续集成。该项目旨在简化开发过程，改善团队成员之间的协作。
-
-## Node.js官方网站源代码
-
-* 创建周期：3203 天
-* 开发语言：TypeScript
-* 协议类型：MIT License
-* Star数量：4348 个
-* Fork数量：5763 次
-* 关注人数：4348 人
-* 贡献人数：414 人
-* Open Issues数量：48 个
-* Github地址：https://github.com/nodejs/nodejs.org.git
-* 项目首页: https://nodejs.org
-
-
-Nodejs.org 是由 OpenJS Foundation 维护的 Node.js JavaScript 运行时的官方网站。该存储库包含网站的源代码，使用了 Next.js，一个 React 框架进行构建。
+MLX示例存储库包含一些独立的示例，演示了如何使用MLX框架。MNIST示例对于初学者学习如何使用MLX非常有帮助。
 
 ## 01 项目：面向人工智能设备的开源生态系统
 
@@ -163,49 +122,81 @@ Nodejs.org 是由 OpenJS Foundation 维护的 Node.js JavaScript 运行时的官
 
 01 项目是一个面向人工智能设备的开源生态系统，拥有一款用于驱动对话设备的旗舰操作系统。它包括软件，如基于 ESP32 的语音接口 01 Light 和用于家庭计算机设置的 01 Server。该项目旨在支持并构建更多硬件，使 01 能够在任何具有输入、输出和互联网连接的设备上运行。它公开了一个语音到语音的 websocket，并运行了一个受 Andrej Karpathy 的 LLM OS 启发的代码解释语言模型。
 
-## Claude-Investor | 投资分析代理
+## ComfyUI IPAdapter plus - 开源项目维护与开发支持
 
-* 创建周期：4 天
-* 开发语言：Jupyter Notebook
-* 协议类型：MIT License
-* Star数量：1029 个
-* Fork数量：120 次
-* 关注人数：1029 人
-* 贡献人数：1 人
-* Open Issues数量：6 个
-* Github地址：https://github.com/mshumer/gpt-investor.git
-
-
-Claude-Investor是一个实验性的投资分析代理，利用Claude 3 Opus和Haiku模型为特定行业的股票提供全面的见解和建议。它检索公司的财务数据、新闻文章和分析师评级，进行情感分析，并生成比较分析，以排名公司的投资潜力。
-
-## GriddyCode: 使用Godot开发的现代代码编辑器
-
-* 创建周期：30 天
-* 开发语言：GDScript, Lua
-* 协议类型：Apache License 2.0
-* Star数量：402 个
-* Fork数量：32 次
-* 关注人数：402 人
-* 贡献人数：10 人
-* Open Issues数量：18 个
-* Github地址：https://github.com/face-hh/griddycode.git
-
-
-GriddyCode是使用Godot开发的开源代码编辑器。它旨在为编码提供现代高效的平台，并支持Lua模块化。编辑器具有特定要求，例如在文件选择器中使用Nerdfont，并与Linux兼容。
-
-## suyu: 开源Nintendo Switch模拟器
-
-* 创建周期：8 天
-* 开发语言：C++
+* 创建周期：209 天
+* 开发语言：Python
 * 协议类型：GNU General Public License v3.0
-* Star数量：581 个
-* Fork数量：61 次
-* 关注人数：581 人
-* 贡献人数：338 人
-* Open Issues数量：1 个
-* Github地址：https://github.com/suyu-emu/suyu.git
-* 项目首页: https://suyu.dev/
+* Star数量：1687 个
+* Fork数量：137 次
+* 关注人数：1687 人
+* 贡献人数：3 人
+* Open Issues数量：29 个
+* Github地址：https://github.com/cubiq/ComfyUI_IPAdapter_plus.git
 
 
-suyu是一个用C++编写的开源Nintendo Switch模拟器，是yuzu项目的延续。它设计时考虑了可移植性，并且积极维护着Windows、Linux和Android版本。该项目强调合法获取密钥和游戏的重要性，不支持盗版。此外，这是一个非盈利倡议，并欢迎开发人员通过他们的Discord服务器做出贡献。
+![](/images/cubiq-comfyui_ipadapter_plus-0.png)
+
+ComfyUI IPAdapter plus 是一个开源项目，用作 IPAdapter 模型的参考实现。它遵循 ComfyUI 的方式，旨在内存高效、快速，并且不易受 Comfy 更新影响。项目创建者最初是出于工作需要开始开发的，但现在接收到功能请求、bug 报告和支持请求。尽管代码是免费提供的，但创建者鼓励从该项目中受益的公司考虑赞助或捐款，以支持维护和开发。
+
+## VoiceCraft: 零-Shot 语音编辑与野外文本转语音
+
+* 创建周期：14 天
+* 开发语言：Python
+* 协议类型：Other
+* Star数量：852 个
+* Fork数量：62 次
+* 关注人数：852 人
+* 贡献人数：3 人
+* Open Issues数量：9 个
+* Github地址：https://github.com/jasonppy/VoiceCraft.git
+
+
+VoiceCraft是一个专注于零-shot语音编辑和野外文本转语音的开源项目。它旨在提供用于操纵语音录音和生成自然音色合成语音的工具，而无需大量的训练数据。
+
+## T-Rex2: 利用文本-视觉提示协同实现通用目标检测
+
+* 创建周期：136 天
+* 开发语言：Python
+* 协议类型：Other
+* Star数量：840 个
+* Fork数量：44 次
+* 关注人数：840 人
+* 贡献人数：3 人
+* Open Issues数量：5 个
+* Github地址：https://github.com/IDEA-Research/T-Rex.git
+* 项目首页: https://deepdataspace.com/home
+
+
+T-Rex2旨在通过将文本和视觉提示集成到一个模型中来改进目标检测。传统的目标检测模型受其封闭集特性的限制，训练过程繁琐。T-Rex2通过利用文本和视觉提示的协同作用来解决这些限制，实现了强大的零-shot能力，使其成为目标检测领域的多功能工具。
+
+## 进化模型融合配方的优化
+
+* 创建周期：21 天
+* 开发语言：Python
+* 协议类型：Apache License 2.0
+* Star数量：633 个
+* Fork数量：29 次
+* 关注人数：633 人
+* 贡献人数：1 人
+* Open Issues数量：3 个
+* Github地址：https://github.com/SakanaAI/evolutionary-model-merge.git
+
+
+进化模型融合配方的优化是SakanaAI的开源项目。它作为一个中心枢纽，展示了与进化模型融合系列相关的发布和资源，提供了模型和代码，以重现其论文中提出的评估。
+
+## Mistral变压器存储库
+
+* 创建周期：3 天
+* 开发语言：Python
+* 协议类型：Apache License 2.0
+* Star数量：322 个
+* Fork数量：23 次
+* 关注人数：322 人
+* 贡献人数：2 人
+* Open Issues数量：2 个
+* Github地址：https://github.com/mistralai-sf24/hackathon.git
+
+
+Mistral变压器存储库包含最少量的代码来运行7B模型并对其进行微调。它与博客和Discord社区相关联，用于支持和更新。
 
