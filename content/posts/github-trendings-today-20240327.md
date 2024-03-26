@@ -1,32 +1,32 @@
 ---
-title: Github 2024-03-27 开源项目日报 Top10
-date: 2024-03-27T07:01:13+08:00
+title: Github 2024-03-27 C开源项目日报 Top10
+date: 2024-03-27T07:11:29+08:00
 slug: github-trendings-today-20240327
 author: 老孙正经胡说
-image: /images/openinterpreter-open-interpreter-0.png
+image: /images/imagemagick-imagemagick-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
   - 人数
   - 人
-  - 创建
-  - 语言
   - 和
+  - 项目
+  - 语言
   - 开发
-  - 贡献
+  - 是
+  - 创建
   - 周期
+  - 关注
+  - 贡献
+  - 地址
   - 协议
   - 类型
-  - 关注
-  - 地址
-  - 是
-  - 语音
-  - 并
-  - 模型
-  - 旨在
   - 开源
+  - 构建
+  - 存储
+  - 提供
+  - 支持
 
 categories:
 
@@ -38,166 +38,167 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 4 |
-| Jupyter Notebook项目 | 2 |
-| TypeScript项目 | 2 |
-| 非开发语言项目 | 2 |
-| Solidity项目 | 1 |
-| Go项目 | 1 |
+| C项目 | 10 |
+| C++项目 | 1 |
+| HTML项目 | 1 |
 
-## Open Interpreter: 本地代码运行和自然语言界面
+## 我的电视 - 安卓电视直播软件
 
-* 创建周期：254 天
-* 开发语言：Python
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：43193 个
-* Fork数量：3785 次
-* 关注人数：43193 人
-* 贡献人数：85 人
-* Open Issues数量：102 个
-* Github地址：https://github.com/OpenInterpreter/open-interpreter.git
-* 项目首页: http://openinterpreter.com/
-
-
-![](/images/openinterpreter-open-interpreter-0.png)
-
-Open Interpreter是一个工具，允许LLMs在本地运行代码，并为各种计算机任务提供自然语言界面，例如创建和编辑媒体，控制浏览器以及分析数据集。
-
-## 从零开始构建大型语言模型
-
-* 创建周期：197 天
-* 开发语言：Jupyter Notebook
-* 协议类型：Other
-* Star数量：8212 个
-* Fork数量：475 次
-* 关注人数：8212 人
-* 贡献人数：6 人
-* Open Issues数量：0 个
-* Github地址：https://github.com/rasbt/LLMs-from-scratch.git
-* 项目首页: https://www.manning.com/books/build-a-large-language-model-from-scratch
-
-
-《从零开始构建大型语言模型》是一本指导您从头开始创建自己的LLM的书籍，使用清晰的解释、图表和示例。该方法与创建ChatGPT等大规模基础模型的方法相似。它涵盖了理解大型语言模型和处理文本数据等主题。
-
-## Devika: 自主的AI软件工程师
-
-* 创建周期：3 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：2901 个
-* Fork数量：399 次
-* 关注人数：2901 人
-* 贡献人数：7 人
-* Open Issues数量：79 个
-* Github地址：https://github.com/stitionai/devika.git
-
-
-Devika是一款自主的AI软件工程师，能够理解高级人类指令，将其分解为步骤，研究相关信息，并编写代码以实现给定的目标。它旨在成为Cognition AI的Devin的竞争性开源替代品。该项目目前处于早期开发阶段，欢迎贡献以帮助推动进展！
-
-## 去中心化自治调节公司（DARC）
-
-* 创建周期：356 天
-* 开发语言：TypeScript, Solidity
-* 协议类型：Other
-* Star数量：8150 个
-* Fork数量：6346 次
-* 关注人数：8150 人
-* 贡献人数：6 人
-* Open Issues数量：2 个
-* Github地址：https://github.com/Project-DARC/DARC.git
-* 项目首页: https://darc.app
-
-
-去中心化自治调节公司（DARC）是一个在任何EVM兼容的区块链上运行的虚拟机，具有基于链上法律系统、多级代币和分红机制。该项目旨在建立一个受商业法规插件系统监管的去中心化自治公司。目前项目处于早期开发阶段，尚未准备投入生产使用。
-
-## 互联网上最佳系统设计资源的案例研究
-
-* 创建周期：26 天
-* 协议类型：Other
-* Star数量：4711 个
-* Fork数量：451 次
-* 关注人数：4711 人
+* 创建周期：40 天
+* 开发语言：C
+* Star数量：649 个
+* Fork数量：124 次
+* 关注人数：649 人
 * 贡献人数：1 人
-* Open Issues数量：0 个
-* Github地址：https://github.com/systemdesign42/system-design.git
-* 项目首页: https://newsletter.systemdesign.one
+* Open Issues数量：23 个
+* Github地址：https://github.com/lizongying/my-tv.git
 
 
-该项目旨在通过一系列案例研究，在互联网上打造最佳的系统设计资源。
+我的电视是一个开源的安卓电视直播应用，内置了直播源。
 
-## OpenDevin: 编写更少，实现更多
+## Cosmopolitan Libc: 一次构建，随处运行的C库
 
-* 创建周期：14 天
-* 开发语言：Jupyter Notebook
-* 协议类型：MIT License
-* Star数量：5071 个
-* Fork数量：421 次
-* 关注人数：5071 人
-* 贡献人数：23 人
-* Open Issues数量：58 个
-* Github地址：https://github.com/OpenDevin/OpenDevin.git
-
-
-OpenDevin是一个旨在帮助开发人员编写更少代码并实现更多目标的开源项目。它提供工具和资源来简化开发流程，提高生产力。
-
-## 全面的生成式人工智能指南
-
-* 创建周期：50 天
-* 协议类型：MIT License
-* Star数量：2313 个
-* Fork数量：537 次
-* 关注人数：2313 人
-* 贡献人数：4 人
-* Open Issues数量：0 个
-* Github地址：https://github.com/aishwaryanr/awesome-generative-ai-guide.git
-* 项目首页: https://www.linkedin.com/in/areganti/
+* 创建周期：1381 天
+* 开发语言：C
+* 协议类型：ISC License
+* Star数量：14440 个
+* Fork数量：473 次
+* 关注人数：14440 人
+* 贡献人数：70 人
+* Open Issues数量：151 个
+* Github地址：https://github.com/jart/cosmopolitan.git
 
 
-一个全面的存储库，用于生成式人工智能研究更新、面试资源、笔记本等。它包括每月最佳的GenAI论文列表、面试资源、课程材料、免费课程和用于开发生成式人工智能应用的代码存储库。
+Cosmopolitan Libc是一个C库，可以实现一次构建，随处运行的语言，类似于Java，但不需要解释器或虚拟机。相反，它重新配置GCC和Clang以输出符合POSIX标准的多语言格式，在Linux + Mac + Windows + FreeBSD + OpenBSD + NetBSD + BIOS上以最佳性能和最小的占用空间运行。
 
-## MoneyPrinterTurbo 💸 自动短视频生成器
+## Memcached: 面向分布式系统的高性能缓存存储
 
-* 创建周期：12 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：325 个
-* Fork数量：96 次
-* 关注人数：325 人
-* 贡献人数：1 人
-* Open Issues数量：17 个
-* Github地址：https://github.com/harry0703/MoneyPrinterTurbo.git
+* 创建周期：5451 天
+* 开发语言：C
+* 协议类型：BSD 3-Clause "New" or "Revised" License
+* Star数量：13106 个
+* Fork数量：3237 次
+* 关注人数：13106 人
+* 贡献人数：182 人
+* Open Issues数量：71 个
+* Github地址：https://github.com/memcached/memcached.git
+* 项目首页: https://memcached.org
 
 
-MoneyPrinterTurbo 💸 是一个利用大型模型的开源项目，通过提供视频、主题或关键词，自动创建视频文案、素材、字幕和背景音乐，生成高清短视频。
+Memcached是一个面向分布式系统设计的高性能多线程事件驱动的键值缓存存储。它是解决奇怪行为和超时问题的宝贵资源，并提供了有趣的使用教程。
 
-## VoiceCraft: 零-Shot 语音编辑与野外文本转语音
+## ImageMagick：数字图像编辑和处理的开源软件套件
 
-* 创建周期：14 天
-* 开发语言：Python
+* 创建周期：3237 天
+* 开发语言：C, HTML
 * 协议类型：Other
-* Star数量：852 个
-* Fork数量：62 次
-* 关注人数：852 人
-* 贡献人数：3 人
-* Open Issues数量：9 个
-* Github地址：https://github.com/jasonppy/VoiceCraft.git
+* Star数量：10886 个
+* Fork数量：1268 次
+* 关注人数：10886 人
+* 贡献人数：154 人
+* Open Issues数量：104 个
+* Github地址：https://github.com/ImageMagick/ImageMagick.git
+* 项目首页: https://imagemagick.org
 
 
-VoiceCraft是一个专注于零-shot语音编辑和野外文本转语音的开源项目。它旨在提供用于操纵语音录音和生成自然音色合成语音的工具，而无需大量的训练数据。
+![](/images/imagemagick-imagemagick-0.png)
 
-## 自主AI代理项目
+ImageMagick是一个免费的开源软件套件，用于编辑和处理数字图像，支持包括JPEG、PNG、GIF、TIFF和PDF在内的多种文件格式。
 
-* 创建周期：9 天
-* 开发语言：TypeScript, Go
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：355 个
-* Fork数量：26 次
-* 关注人数：355 人
-* 贡献人数：4 人
-* Open Issues数量：13 个
-* Github地址：https://github.com/semanser/codel.git
-* 项目首页: https://discord.gg/uMaGSHNjzc
+## cJSON：超轻量级JSON解析器
+
+* 创建周期：2930 天
+* 开发语言：C
+* 协议类型：MIT License
+* Star数量：9902 个
+* Fork数量：3091 次
+* 关注人数：9902 人
+* 贡献人数：76 人
+* Open Issues数量：220 个
+* Github地址：https://github.com/DaveGamble/cJSON.git
 
 
-这是一个开源项目，用于创建一个完全自主的AI代理，可以使用终端、浏览器和编辑器执行复杂的任务和项目。它在一个沙盒化的Docker环境中运行，自动检测下一步操作，如果需要，从网络获取最新信息，并将所有历史命令和输出保存在PostgreSQL数据库中。它还具有内置的文本编辑器和基于用户任务的自动Docker镜像选择器。该项目是自托管的，并具有现代化的用户界面。
+cJSON是用ANSI C编写的超轻量级JSON解析器。
+
+## Windows 11 驱动程序示例
+
+* 创建周期：3309 天
+* 开发语言：C, C++
+* 协议类型：Microsoft Public License
+* Star数量：6567 个
+* Fork数量：4862 次
+* 关注人数：6567 人
+* 贡献人数：129 人
+* Open Issues数量：428 个
+* Github地址：https://github.com/microsoft/Windows-driver-samples.git
+
+
+该存储库包含用于 Microsoft Visual Studio 和 Windows Driver Kit (WDK) 的驱动程序示例，包括通用 Windows 驱动程序和仅桌面驱动程序示例。这些示例旨在为各种硬件形态因素（从手机到台式电脑）提供通用 Windows 驱动程序支持的基础，并且旨在与 Visual Studio 2022 和 Windows Driver Kit (WDK) 11 一起使用。
+
+## GmSSL：国产商用密码开源库
+
+* 创建周期：3404 天
+* 开发语言：C
+* 协议类型：Apache License 2.0
+* Star数量：4663 个
+* Fork数量：1581 次
+* 关注人数：4663 人
+* 贡献人数：31 人
+* Open Issues数量：238 个
+* Github地址：https://github.com/guanzhi/GmSSL.git
+* 项目首页: http://gmssl.org
+
+
+![](/images/guanzhi-gmssl-0.png)
+
+GmSSL is a domestically produced commercial open-source cryptographic library developed independently by Peking University, which comprehensively covers the functions of national cryptographic algorithms, standards, and secure communication protocols. It supports mainstream operating systems and processors, including mobile platforms, and typical domestic cryptographic hardware such as cryptographic keys and cards. It provides feature-rich command-line tools and various programming interfaces in multiple compiled languages.
+
+## Apache AGE: PostgreSQL的图数据库扩展
+
+* 创建周期：1351 天
+* 开发语言：C
+* 协议类型：Apache License 2.0
+* Star数量：2488 个
+* Fork数量：341 次
+* 关注人数：2488 人
+* 贡献人数：74 人
+* Open Issues数量：394 个
+* Github地址：https://github.com/apache/age.git
+* 项目首页: https://age.apache.org
+
+
+![](/images/apache-age-0.png)
+
+Apache AGE是PostgreSQL的一个扩展，它增加了图数据库支持，使用户能够在现有的关系数据库上利用图数据库。它经过优化，能够处理复杂的连接图数据，并支持openCypher查询、多个图以及分层图标签组织。该项目旨在通过将PostgreSQL的功能和特性与图模型相结合，提供一个连贯且易于实现的多模型数据库。它的设计简单易用，支持各种平台，并提供不同编程语言的驱动程序。此外，Apache AGE Viewer是一个用户界面，提供数据可视化和探索功能，增强了Apache AGE的能力。
+
+## Slurm: 一个高度可扩展的工作负载管理器
+
+* 创建周期：4608 天
+* 开发语言：C
+* 协议类型：Other
+* Star数量：2190 个
+* Fork数量：604 次
+* 关注人数：2190 人
+* 贡献人数：242 人
+* Open Issues数量：4 个
+* Github地址：https://github.com/SchedMD/slurm.git
+* 项目首页: https://slurm.schedmd.com/
+
+
+Slurm是一个开源的集群资源管理和作业调度系统，提供对计算节点的独占和/或非独占访问，执行和监视分配节点上的工作的框架，并管理冲突的资源请求。它简单、可扩展、便携、容错和互连不可知，并且仅在Linux下进行了测试。
+
+## PlaceHolderKV: 新型开源键值存储
+
+* 创建周期：5 天
+* 开发语言：C
+* 协议类型：BSD 3-Clause "New" or "Revised" License
+* Star数量：521 个
+* Fork数量：21 次
+* 关注人数：521 人
+* 贡献人数：386 人
+* Open Issues数量：26 个
+* Github地址：https://github.com/placeholderkv/placeholderkv.git
+
+
+该项目是一个名为PlaceHolderKV的新型开源键值存储，它是Redis项目的一个分支。README目前正在建设中，该项目旨在构建一个新的社区驱动的高性能键值存储。它提供了有关构建、测试、修复构建问题、选择内存分配器、构建TLS支持、运行和安装PlaceHolderKV的信息。
 
