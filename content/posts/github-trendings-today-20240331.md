@@ -1,9 +1,9 @@
 ---
-title: Github 2024-03-31 开源项目日报 Top10
-date: 2024-03-31T07:01:09+08:00
+title: Github 2024-03-31 php开源项目日报 Top10
+date: 2024-03-31T07:11:05+08:00
 slug: github-trendings-today-20240331
 author: 老孙正经胡说
-image: /images/developersdigest-llm-answer-engine-0.png
+image: /images/nextcloud-server-0.png
 tags:
   - github
   - trendings
@@ -14,19 +14,19 @@ tags:
   - 开发
   - 语言
   - 和
-  - 视频
-  - 创建
-  - 是
-  - 周期
   - 类型
+  - 创建
+  - 周期
   - 关注
   - 贡献
   - 地址
   - 协议
+  - 是
   - 提供
-  - 模型
-  - 生成
-  - 语音
+  - 安全
+  - 用于
+  - 开源
+  - 扩展
 
 categories:
 
@@ -38,135 +38,113 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 6 |
-| Jupyter Notebook项目 | 3 |
-| C项目 | 1 |
-| TypeScript项目 | 1 |
-| PHP项目 | 1 |
+| PHP项目 | 10 |
+| JavaScript项目 | 1 |
 
-## OpenDevin: 编写更少，实现更多
+## SecLists - 安全测试人员的伴侣
 
-* 创建周期：14 天
-* 开发语言：Jupyter Notebook
+* 创建周期：4375 天
+* 开发语言：PHP
 * 协议类型：MIT License
-* Star数量：5071 个
-* Fork数量：421 次
-* 关注人数：5071 人
-* 贡献人数：23 人
-* Open Issues数量：58 个
-* Github地址：https://github.com/OpenDevin/OpenDevin.git
+* Star数量：52010 个
+* Fork数量：23569 次
+* 关注人数：52010 人
+* 贡献人数：249 人
+* Open Issues数量：41 个
+* Github地址：https://github.com/danielmiessler/SecLists.git
+* 项目首页: https://www.owasp.org/index.php/OWASP_Internet_of_Things_Project
 
 
-OpenDevin是一个旨在帮助开发人员编写更少代码并实现更多目标的开源项目。它提供工具和资源来简化开发流程，提高生产力。
+SecLists是安全测试人员的伴侣。它是一个收集了多种类型的列表，用于安全评估，在一个地方进行收集。列表类型包括用户名、密码、URL、敏感数据模式、模糊测试负载、Web shell等等。其目标是使安全测试人员能够将此存储库拉到新的测试环境，并访问可能需要的每种类型的列表。
 
-## MoneyPrinterTurbo 💸 自动短视频生成器
+## Nextcloud服务器：安全的数据之家
 
-* 创建周期：12 天
-* 开发语言：Python
+* 创建周期：2796 天
+* 开发语言：PHP, JavaScript
+* 协议类型：GNU Affero General Public License v3.0
+* Star数量：24831 个
+* Fork数量：3842 次
+* 关注人数：24831 人
+* 贡献人数：354 人
+* Open Issues数量：2757 个
+* Github地址：https://github.com/nextcloud/server.git
+* 项目首页: https://nextcloud.com
+
+
+![](/images/nextcloud-server-0.png)
+
+Nextcloud服务器是一个开源平台，为您存储所有数据提供安全的环境。
+
+## Filament: 加速Laravel开发的完美起点
+
+* 创建周期：1410 天
+* 开发语言：PHP
 * 协议类型：MIT License
-* Star数量：325 个
-* Fork数量：96 次
-* 关注人数：325 人
-* 贡献人数：1 人
-* Open Issues数量：17 个
-* Github地址：https://github.com/harry0703/MoneyPrinterTurbo.git
+* Star数量：12228 个
+* Fork数量：1990 次
+* 关注人数：12228 人
+* 贡献人数：372 人
+* Open Issues数量：66 个
+* Github地址：https://github.com/filamentphp/filament.git
+* 项目首页: https://filamentphp.com
 
 
-MoneyPrinterTurbo 💸 是一个利用大型模型的开源项目，通过提供视频、主题或关键词，自动创建视频文案、素材、字幕和背景音乐，生成高清短视频。
+![](/images/filamentphp-filament-0.png)
 
-## Valkey: 一个高性能数据结构服务器
+Filament是一套精美设计且完全可扩展的Laravel全栈组件集合，使用Livewire、Alpine.js和Tailwind CSS。它为加速Laravel开发提供了完美的起点，消除了重复构建相同功能的需求。
 
-* 创建周期：8 天
-* 开发语言：C
-* 协议类型：BSD 3-Clause "New" or "Revised" License
-* Star数量：2775 个
-* Fork数量：81 次
-* 关注人数：2775 人
-* 贡献人数：386 人
-* Open Issues数量：55 个
-* Github地址：https://github.com/valkey-io/valkey.git
-* 项目首页: https://valkey.io
+## Magento开源项目和Adobe Commerce
+
+* 创建周期：4435 天
+* 开发语言：PHP
+* 协议类型：Open Software License 3.0
+* Star数量：11083 个
+* Fork数量：9328 次
+* 关注人数：11083 人
+* 贡献人数：257 人
+* Open Issues数量：2518 个
+* Github地址：https://github.com/magento/magento2.git
+* 项目首页: http://www.magento.com
 
 
-Valkey是一个高性能数据结构服务器，从开源项目Redis分支而来。它支持各种原生结构和可扩展的插件系统，用于添加新的数据结构和访问模式。该项目正在建设中，重点是构建一个新的社区驱动的高性能键值存储。README提供了有关构建Valkey、修复依赖项或缓存构建选项的问题、选择内存分配器、配置单调时钟、运行Valkey、玩Valkey和安装Valkey的信息。
+![](/images/magento-magento2-0.png)
 
-## GPT-LLM-Trainer: 新版本介绍
+Magento开源项目提供基本的电子商务功能，用于构建在线商店。建议使用Adobe Commerce作为完整的电子商务解决方案，其中包括优化的云架构、托管以及人工智能驱动的商品推广和分析。
 
-* 创建周期：235 天
-* 开发语言：Jupyter Notebook
-* 协议类型：MIT License
-* Star数量：3494 个
-* Fork数量：427 次
-* 关注人数：3494 人
-* 贡献人数：1 人
+## Nextcloud All-in-One: 官方一体化安装方法
+
+* 创建周期：789 天
+* 开发语言：PHP
+* 协议类型：GNU Affero General Public License v3.0
+* Star数量：3462 个
+* Fork数量：457 次
+* 关注人数：3462 人
+* 贡献人数：85 人
 * Open Issues数量：21 个
-* Github地址：https://github.com/mshumer/gpt-llm-trainer.git
+* Github地址：https://github.com/nextcloud/all-in-one.git
+* 项目首页: https://hub.docker.com/r/nextcloud/all-in-one
 
 
-GPT-LLM-Trainer是Claude 3、LLaMA 2 7B Fine-Tuning模型的新版本。它也是GPT-3.5模型的微调版本。
+![](/images/nextcloud-all-in-one-0.png)
 
-## VoiceCraft: 零-Shot 语音编辑与野外文本转语音
+Nextcloud All-in-One是Nextcloud的官方安装方法，提供了一个Nextcloud实例中包含大多数功能的简单部署和维护。它包括Nextcloud、用于Nextcloud文件的高性能后端、Nextcloud Office、用于Nextcloud Talk和TURN服务器的高性能后端、Nextcloud Talk Recording服务器、基于BorgBackup的备份解决方案、Imaginary用于各种文件类型的预览、ClamAV用于防病毒后端以及全文搜索。
 
-* 创建周期：14 天
-* 开发语言：Python
-* 协议类型：Other
-* Star数量：852 个
-* Fork数量：62 次
-* 关注人数：852 人
-* 贡献人数：3 人
-* Open Issues数量：9 个
-* Github地址：https://github.com/jasonppy/VoiceCraft.git
+## 方糖全栈路线图2023
 
-
-VoiceCraft是一个专注于零-shot语音编辑和野外文本转语音的开源项目。它旨在提供用于操纵语音录音和生成自然音色合成语音的工具，而无需大量的训练数据。
-
-## AniPortrait: 基于音频驱动的逼真肖像动画合成
-
-* 创建周期：8 天
-* 开发语言：Python
-* 协议类型：Apache License 2.0
-* Star数量：1601 个
-* Fork数量：152 次
-* 关注人数：1601 人
-* 贡献人数：2 人
-* Open Issues数量：23 个
-* Github地址：https://github.com/Zejun-Yang/AniPortrait.git
-
-
-AniPortrait是一个新颖的框架，用于通过音频和参考肖像图像生成高质量动画。它还支持使用提供的视频进行面部再现。
-
-## DBRX: Databricks开发的大型语言模型
-
-* 创建周期：4 天
-* 开发语言：Python
-* 协议类型：Other
-* Star数量：1319 个
-* Fork数量：107 次
-* 关注人数：1319 人
-* 贡献人数：4 人
-* Open Issues数量：4 个
-* Github地址：https://github.com/databricks/dbrx.git
-* 项目首页: https://www.databricks.com/
-
-
-DBRX是由Databricks开发的大型语言模型，可在开放许可下使用。该存储库提供了运行推理的代码示例和资源，以及创始人的博客、DBRX技术博客、HuggingFace和LLM Foundry的链接。在该存储库中可以找到参考模型代码，文件名为modeling_dbrx.py。
-
-## 复杂的答案引擎项目
-
-* 创建周期：23 天
-* 开发语言：TypeScript
-* Star数量：1153 个
-* Fork数量：188 次
-* 关注人数：1153 人
+* 创建周期：456 天
+* 开发语言：PHP
+* Star数量：3189 个
+* Fork数量：253 次
+* 关注人数：3189 人
 * 贡献人数：1 人
-* Open Issues数量：13 个
-* Github地址：https://github.com/developersdigest/llm-answer-engine.git
-* 项目首页: https://developersdigest.tech
+* Open Issues数量：1 个
+* Github地址：https://github.com/easychen/stack-roadmap.git
+* 项目首页: http://road.ftqq.com
 
 
-![](/images/developersdigest-llm-answer-engine-0.png)
+![](/images/easychen-stack-roadmap-0.png)
 
-该项目旨在利用Next.js、Groq、Mixtral、Langchain、OpenAI、Brave和Serper构建一个复杂的答案引擎。它旨在根据用户查询高效返回来源、答案、图片、视频和后续问题，是对自然语言处理和搜索技术感兴趣的开发人员的理想起点。
+方糖全栈路线图2023旨在为“从螺丝钉到一人企业”补全技能栈。
 
 ## 《一人企业方法论》第二版
 
@@ -184,18 +162,50 @@ DBRX是由Databricks开发的大型语言模型，可在开放许可下使用。
 
 《一人企业方法论》第二版适合那些从事自媒体、电子商务、数字商品等其他副业的非技术人群。
 
-## MuseV: 基于扩散的虚拟人类视频生成框架
+## 快速、可扩展的服务器端代码高亮工具
 
-* 创建周期：6 天
-* 开发语言：Python
+* 创建周期：16 天
+* 开发语言：PHP
 * 协议类型：MIT License
-* Star数量：233 个
-* Fork数量：13 次
-* 关注人数：233 人
-* 贡献人数：5 人
+* Star数量：409 个
+* Fork数量：14 次
+* 关注人数：409 人
+* 贡献人数：7 人
+* Open Issues数量：7 个
+* Github地址：https://github.com/tempestphp/highlight.git
+
+
+这个开源项目是一个快速且可扩展的服务器端代码高亮工具，适用于Web和终端。它支持各种编程语言、主题和特殊的高亮标签。此外，它还提供了强调、模糊、添加和删除、自定义类、内联语言以及Commonmark集成等功能。
+
+## V2ray Collector: 收集、组织和分析V2ray流量数据的平台
+
+* 创建周期：110 天
+* 开发语言：PHP
+* 协议类型：GNU Affero General Public License v3.0
+* Star数量：170 个
+* Fork数量：29 次
+* 关注人数：170 人
+* 贡献人数：2 人
 * Open Issues数量：3 个
-* Github地址：https://github.com/TMElyralab/MuseV.git
+* Github地址：https://github.com/yebekhe/TVC.git
 
 
-MuseV 是基于扩散的虚拟人类视频生成框架，支持使用新颖的视觉条件并行去噪方案进行无限长度生成。它提供了在人类数据集上训练的检查点，支持各种输入类型，如图像到视频，文本到图像到视频，视频到视频，并与稳定扩散生态系统兼容。它还支持多参考图像技术，并计划发布 MuseTalk，一个实时高质量的唇同步模型，以补充其功能。
+V2ray Collector是一个旨在提供收集、组织和分析V2ray流量数据的开源项目。它允许用户深入了解网络流量模式和使用情况，并且旨在可定制和可扩展。
+
+## Laravel 11 RBAC 扩展
+
+* 创建周期：15 天
+* 开发语言：PHP
+* 协议类型：MIT License
+* Star数量：39 个
+* Fork数量：0 次
+* 关注人数：39 人
+* 贡献人数：2 人
+* Open Issues数量：1 个
+* Github地址：https://github.com/binary-cats/laravel-rbac.git
+
+
+![](/images/binary-cats-laravel-rbac-0.png)
+
+这个开源项目是 spatie/laravel-permissions 的 RBAC 扩展，旨在增强 Laravel 11，提供了一种简单的方法来定义角色及其权限，以防止权限列表不断增长和维护成为问题。
 
