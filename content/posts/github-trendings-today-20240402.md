@@ -1,32 +1,32 @@
 ---
-title: Github 2024-04-02 开源项目日报 Top10
-date: 2024-04-02T07:01:14+08:00
+title: Github 2024-04-02 Python开源项目日报 Top10
+date: 2024-04-02T07:11:10+08:00
 slug: github-trendings-today-20240402
 author: 老孙正经胡说
-image: /images/janhq-jan-0.png
+image: /images/donnemartin-system-design-primer-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
   - 人数
   - 人
-  - 和
-  - 开发
   - 语言
   - 创建
+  - 项目
+  - 开发
+  - 类型
   - 贡献
-  - 是
+  - 模型
   - 周期
   - 关注
   - 地址
+  - 是
   - 协议
-  - 类型
-  - 构建
-  - 工具
-  - 课程
   - 提供
-  - 语音
+  - 和
+  - 代理
+  - 系统
+  - 开源
 
 categories:
 
@@ -38,107 +38,110 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 4 |
-| TypeScript项目 | 4 |
-| Jupyter Notebook项目 | 2 |
-| HTML项目 | 1 |
-| C项目 | 1 |
+| Python项目 | 10 |
 
-## 经典机器学习课程：微软Azure云倡导者的项目化学习
+## 系统设计指南
 
-* 创建周期：1126 天
-* 开发语言：HTML
-* 协议类型：MIT License
-* Star数量：65560 个
-* Fork数量：13360 次
-* 关注人数：65560 人
-* 贡献人数：125 人
-* Open Issues数量：11 个
-* Github地址：https://github.com/microsoft/ML-For-Beginners.git
-* 项目首页: https://microsoft.github.io/ML-For-Beginners/
-
-
-微软的Azure云倡导者提供了一份为期12周的、26课时的经典机器学习课程，主要使用Scikit-learn作为库。课程包括课前和课后测验、书面说明、解决方案、作业等。它面向初学者，并与“初学者数据科学”课程相辅相成。学习方法是基于项目的，允许将这些技术应用到来自各种世界文化的数据中。该课程由一组专家和贡献者撰写和插图，特别感谢微软学生大使对其贡献。
-
-## 初学者的生成式人工智能（第2版）
-
-* 创建周期：259 天
-* 开发语言：Jupyter Notebook
-* 协议类型：MIT License
-* Star数量：25764 个
-* Fork数量：16105 次
-* 关注人数：25764 人
-* 贡献人数：50 人
-* Open Issues数量：17 个
-* Github地址：https://github.com/microsoft/generative-ai-for-beginners.git
-* 项目首页: https://microsoft.github.io/generative-ai-for-beginners/
-
-
-《初学者的生成式人工智能（第2版）》是由微软云倡导者提供的一门全面的18课程，教授一切开始构建生成式人工智能应用所需的知识。
-
-## Jan - 将AI带到您的桌面
-
-* 创建周期：151 天
-* 开发语言：TypeScript
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：6307 个
-* Fork数量：320 次
-* 关注人数：6307 人
-* 贡献人数：25 人
-* Open Issues数量：156 个
-* Github地址：https://github.com/janhq/jan.git
-* 项目首页: https://jan.ai/
-
-
-![](/images/janhq-jan-0.png)
-
-Jan是ChatGPT的开源替代品，可在您的计算机上100%离线运行。它目前正在开发中，并支持各种硬件架构，如Nvidia GPU、Apple M系列、Apple Intel、Linux Debian和Windows x64。
-
-## OpenDevin: 编写更少，实现更多
-
-* 创建周期：14 天
-* 开发语言：Jupyter Notebook
-* 协议类型：MIT License
-* Star数量：5071 个
-* Fork数量：421 次
-* 关注人数：5071 人
-* 贡献人数：23 人
-* Open Issues数量：58 个
-* Github地址：https://github.com/OpenDevin/OpenDevin.git
-
-
-OpenDevin是一个旨在帮助开发人员编写更少代码并实现更多目标的开源项目。它提供工具和资源来简化开发流程，提高生产力。
-
-## Valkey: 一个高性能数据结构服务器
-
-* 创建周期：8 天
-* 开发语言：C
-* 协议类型：BSD 3-Clause "New" or "Revised" License
-* Star数量：2775 个
-* Fork数量：81 次
-* 关注人数：2775 人
-* 贡献人数：386 人
-* Open Issues数量：55 个
-* Github地址：https://github.com/valkey-io/valkey.git
-* 项目首页: https://valkey.io
-
-
-Valkey是一个高性能数据结构服务器，从开源项目Redis分支而来。它支持各种原生结构和可扩展的插件系统，用于添加新的数据结构和访问模式。该项目正在建设中，重点是构建一个新的社区驱动的高性能键值存储。README提供了有关构建Valkey、修复依赖项或缓存构建选项的问题、选择内存分配器、配置单调时钟、运行Valkey、玩Valkey和安装Valkey的信息。
-
-## VoiceCraft: 零-Shot 语音编辑与野外文本转语音
-
-* 创建周期：14 天
+* 创建周期：2507 天
 * 开发语言：Python
 * 协议类型：Other
-* Star数量：852 个
-* Fork数量：62 次
-* 关注人数：852 人
-* 贡献人数：3 人
-* Open Issues数量：9 个
-* Github地址：https://github.com/jasonppy/VoiceCraft.git
+* Star数量：241693 个
+* Fork数量：42010 次
+* 关注人数：241693 人
+* 贡献人数：109 人
+* Open Issues数量：413 个
+* Github地址：https://github.com/donnemartin/system-design-primer.git
 
 
-VoiceCraft是一个专注于零-shot语音编辑和野外文本转语音的开源项目。它旨在提供用于操纵语音录音和生成自然音色合成语音的工具，而无需大量的训练数据。
+![](/images/donnemartin-system-design-primer-0.png)
+
+系统设计指南是一个开源项目，帮助个人学习如何设计大规模系统并为系统设计面试做准备。它还包括Anki记忆卡，以便有效学习。
+
+## gpt4free存储库：强大语言模型的集合
+
+* 创建周期：300 天
+* 开发语言：Python
+* 协议类型：GNU General Public License v3.0
+* Star数量：51769 个
+* Fork数量：12716 次
+* 关注人数：51769 人
+* 贡献人数：168 人
+* Open Issues数量：107 个
+* Github地址：https://github.com/xtekky/gpt4free.git
+* 项目首页: https://discord.gg/XfybzPXPH5
+
+
+![](/images/xtekky-gpt4free-0.png)
+
+官方的gpt4free存储库是由@hlohaus维护，@xtekky编写的强大语言模型的集合。用户被鼓励通过反馈表提供改进建议。该项目旨在根据调查结果进行各种改进，包括增强文档、更新提供商状态列表、创建教程、改进包装器以及增强稳定性和兼容性。
+
+## 高质量VCTK训练集驱动的VC模型及RVCv3模型
+
+* 创建周期：295 天
+* 开发语言：Python
+* 协议类型：MIT License
+* Star数量：15433 个
+* Fork数量：2511 次
+* 关注人数：15433 人
+* 贡献人数：97 人
+* Open Issues数量：679 个
+* Github地址：https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI.git
+
+
+![](/images/rvc-project-retrieval-based-voice-conversion-webui-0.png)
+
+这个开源项目使用了接近50小时的高质量VCTK训练集来训练其VC模型，没有版权上的顾虑。即将推出的RVCv3模型将具有更大的参数、更多的数据、更好的性能，并且需要更少的训练数据，推理速度相似。
+
+## Typer: 基于 Python 类型提示的命令行应用程序构建库
+
+* 创建周期：1560 天
+* 开发语言：Python
+* 协议类型：MIT License
+* Star数量：13534 个
+* Fork数量：562 次
+* 关注人数：13534 人
+* 贡献人数：50 人
+* Open Issues数量：203 个
+* Github地址：https://github.com/tiangolo/typer.git
+* 项目首页: https://typer.tiangolo.com/
+
+
+![](/images/tiangolo-typer-0.png)
+
+Typer 是一个基于 Python 类型提示的开源库，用于构建命令行应用程序。它旨在为开发人员和最终用户提供直观且易于使用的体验，具有诸如良好的编辑器支持、自动帮助和完成、最小化代码重复等功能，以及根据需要增加复杂性的能力。此外，它还可以运行脚本并将其转换为命令行界面。
+
+## SymPy：纯Python计算机代数系统
+
+* 创建周期：5086 天
+* 开发语言：Python
+* 协议类型：Other
+* Star数量：12094 个
+* Fork数量：4247 次
+* 关注人数：12094 人
+* 贡献人数：444 人
+* Open Issues数量：4990 个
+* Github地址：https://github.com/sympy/sympy.git
+* 项目首页: https://sympy.org/
+
+
+![](/images/sympy-sympy-0.png)
+
+SymPy是一个纯Python编写的计算机代数系统。它是一个开源项目，得到了许多作者和社区成员的贡献。该项目在New BSD许可下进行授权。
+
+## MoneyPrinterTurbo 💸 自动短视频生成器
+
+* 创建周期：12 天
+* 开发语言：Python
+* 协议类型：MIT License
+* Star数量：325 个
+* Fork数量：96 次
+* 关注人数：325 人
+* 贡献人数：1 人
+* Open Issues数量：17 个
+* Github地址：https://github.com/harry0703/MoneyPrinterTurbo.git
+
+
+MoneyPrinterTurbo 💸 是一个利用大型模型的开源项目，通过提供视频、主题或关键词，自动创建视频文案、素材、字幕和背景音乐，生成高清短视频。
 
 ## AniPortrait: 基于音频驱动的逼真肖像动画合成
 
@@ -155,51 +158,50 @@ VoiceCraft是一个专注于零-shot语音编辑和野外文本转语音的开�
 
 AniPortrait是一个新颖的框架，用于通过音频和参考肖像图像生成高质量动画。它还支持使用提供的视频进行面部再现。
 
-## 复杂的答案引擎项目
+## AIOS：LLM代理操作系统
+
+* 创建周期：77 天
+* 开发语言：Python
+* 协议类型：MIT License
+* Star数量：840 个
+* Fork数量：112 次
+* 关注人数：840 人
+* 贡献人数：5 人
+* Open Issues数量：11 个
+* Github地址：https://github.com/agiresearch/AIOS.git
+
+
+AIOS是一个大型语言模型（LLM）代理操作系统，将大型语言模型嵌入操作系统作为操作系统的大脑。它旨在创建一个具有灵魂的操作系统，旨在优化资源分配，促进代理之间的上下文切换，实现代理的并发执行，为代理提供工具服务，维护代理的访问控制，并为LLM代理开发人员提供丰富的工具包。
+
+## BrushNet: 一种用于图像修补的扩散模型
 
 * 创建周期：23 天
-* 开发语言：TypeScript
-* Star数量：1153 个
-* Fork数量：188 次
-* 关注人数：1153 人
-* 贡献人数：1 人
-* Open Issues数量：13 个
-* Github地址：https://github.com/developersdigest/llm-answer-engine.git
-* 项目首页: https://developersdigest.tech
+* 开发语言：Python
+* 协议类型：Other
+* Star数量：494 个
+* Fork数量：40 次
+* 关注人数：494 人
+* 贡献人数：2 人
+* Open Issues数量：6 个
+* Github地址：https://github.com/TencentARC/BrushNet.git
+* 项目首页: https://tencentarc.github.io/BrushNet/
 
 
-![](/images/developersdigest-llm-answer-engine-0.png)
+BrushNet是论文《BrushNet: A Plug-and-Play Image Inpainting Model with Decomposed Dual-Branch Diffusion》的官方实现。它专注于使用扩散模型进行图像修补，并旨在提供一种图像生成方法。
 
-该项目旨在利用Next.js、Groq、Mixtral、Langchain、OpenAI、Brave和Serper构建一个复杂的答案引擎。它旨在根据用户查询高效返回来源、答案、图片、视频和后续问题，是对自然语言处理和搜索技术感兴趣的开发人员的理想起点。
+## Grass Auto Reger&Farm: Grass.io 账户创建和挖矿机器人
 
-## OpenUI：描述和实时渲染UI的工具
-
-* 创建周期：16 天
-* 开发语言：TypeScript, Python
-* 协议类型：Apache License 2.0
-* Star数量：1199 个
-* Fork数量：90 次
-* 关注人数：1199 人
-* 贡献人数：3 人
-* Open Issues数量：2 个
-* Github地址：https://github.com/wandb/openui.git
+* 创建周期：6 天
+* 开发语言：Python
+* Star数量：77 个
+* Fork数量：31 次
+* 关注人数：77 人
+* 贡献人数：2 人
+* Open Issues数量：0 个
+* Github地址：https://github.com/MsLolita/grass.git
 
 
-OpenUI是一个工具，允许用户使用他们的想象描述UI并实时查看其渲染。它旨在使构建UI组件的过程变得有趣、快速和灵活，并且正在W&B进行使用，用于测试和原型化构建强大应用程序的下一代工具。
+![](/images/mslolita-grass-0.png)
 
-## HeyForm: 无编码技能的对话式表单构建工具
-
-* 创建周期：13 天
-* 开发语言：TypeScript
-* 协议类型：GNU General Public License v3.0
-* Star数量：944 个
-* Fork数量：110 次
-* 关注人数：944 人
-* 贡献人数：3 人
-* Open Issues数量：3 个
-* Github地址：https://github.com/heyform/heyform.git
-* 项目首页: https://heyform.net
-
-
-HeyForm 是一个开源表单构建工具，允许任何人创建有趣的对话式调查表、问卷调查、测验和投票，无需编码技能。它简化了对话式表单的创建，使任何人都能通过有趣的调查、测验和投票收集信息或反馈。我们致力于通过定期更新（包括错误修复、新功能和性能改进）增强 HeyForm。
+Grass Auto Reger&Farm 是一个开源机器人，帮助用户在 grass.io 上创建账户并积累点数。它还在 Telegram 频道中提供最新动态，提供适用于 grass 挖矿的最便宜的代理和服务器信息。
 
