@@ -1,32 +1,32 @@
 ---
-title: Github 2024-04-05 开源项目日报 Top10
-date: 2024-04-05T07:01:15+08:00
+title: Github 2024-04-05 Java开源项目日报 Top9
+date: 2024-04-05T07:11:40+08:00
 slug: github-trendings-today-20240405
 author: 老孙正经胡说
-image: /images/netease-youdao-qanything-0.png
+image: /images/openapitools-openapi-generator-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
   - 人数
   - 人
-  - 和
-  - 语言
+  - 项目
   - 开发
-  - 是
+  - 语言
   - 创建
-  - 周期
-  - 关注
   - 贡献
-  - 地址
-  - 使用
+  - 和
+  - 周期
   - 协议
   - 类型
-  - 支持
-  - 工具
-  - 允许
-  - 用于
+  - 关注
+  - 地址
+  - 是
+  - 开源
+  - 源码
+  - 实现
+  - 功能
+  - 平台
 
 categories:
 
@@ -34,173 +34,163 @@ draft: false
 ---
 
 
-根据Github Trendings的统计，今日(2024-04-05统计)共有10个项目上榜。根据开发语言中项目的数量，汇总情况如下：
+根据Github Trendings的统计，今日(2024-04-05统计)共有9个项目上榜。根据开发语言中项目的数量，汇总情况如下：
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 6 |
-| TypeScript项目 | 3 |
-| Vue项目 | 2 |
-| JavaScript项目 | 1 |
-| Go项目 | 1 |
-| Rust项目 | 1 |
+| Java项目 | 9 |
+| TypeScript项目 | 1 |
 
-## Bruno: 专为API探索和测试而设计的开源IDE
+## OpenAPI 生成器：基于规范自动生成API工具
 
-* 创建周期：532 天
-* 开发语言：JavaScript
+* 创建周期：2155 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：19624 个
+* Fork数量：6034 次
+* 关注人数：19624 人
+* 贡献人数：404 人
+* Open Issues数量：4531 个
+* Github地址：https://github.com/OpenAPITools/openapi-generator.git
+* 项目首页: https://openapi-generator.tech
+
+
+![](/images/openapitools-openapi-generator-0.png)
+
+OpenAPI 生成器是一个工具，它根据 OpenAPI 规范 (v2, v3) 自动化生成 API 客户端库、服务器存根、文档和配置。它是一个开源项目，可以通过赞助来获得支持。
+
+## 源码猎人：挖掘互联网行业主流技术的底层实现原理
+
+* 创建周期：1600 天
+* 开发语言：Java
+* 协议类型：Creative Commons Attribution Share Alike 4.0 International
+* Star数量：15497 个
+* Fork数量：2956 次
+* 关注人数：15497 人
+* 贡献人数：28 人
+* Open Issues数量：10 个
+* Github地址：https://github.com/doocs/source-code-hunter.git
+* 项目首页: https://doocs.github.io/source-code-hunter
+
+
+![](/images/doocs-source-code-hunter-0.png)
+
+这个项目的目标是从源码层面剖析和挖掘互联网行业主流技术的底层实现原理，为开发者提供提升技术深度的便利。目前开放的有Spring全家桶、Mybatis、Netty、Dubbo框架，以及Redis、Tomcat中间件等。加入这个项目，一起通读互联网行业主流框架及中间件源码，成为强大的“源码猎人”。
+
+## Vert.x - JVM 上的反应式应用程序工具包
+
+* 创建周期：4676 天
+* 开发语言：Java
+* 协议类型：Other
+* Star数量：14025 个
+* Fork数量：2041 次
+* 关注人数：14025 人
+* 贡献人数：230 人
+* Open Issues数量：309 个
+* Github地址：https://github.com/eclipse-vertx/vert.x.git
+* 项目首页: http://vertx.io
+
+
+Vert.x 是用于在 JVM 上构建反应式应用程序的工具包。Vert.x Core 是 Vert.x 核心的存储库，其中包含支持 HTTP、TCP、文件系统访问和其他功能的低级功能。它可以直接在应用程序中使用，并被许多其他 Vert.x 组件所使用。
+
+## Apache Pulsar - 灵活的分布式消息平台
+
+* 创建周期：2838 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：13693 个
+* Fork数量：3484 次
+* 关注人数：13693 人
+* 贡献人数：368 人
+* Open Issues数量：1332 个
+* Github地址：https://github.com/apache/pulsar.git
+* 项目首页: https://pulsar.apache.org/
+
+
+Apache Pulsar是一个具有灵活消息模型和直观客户端API的分布式发布-订阅消息平台。
+
+## Lawnchair 14: Android开源主屏应用
+
+* 创建周期：2590 天
+* 开发语言：Java
+* 协议类型：Other
+* Star数量：8305 个
+* Fork数量：1124 次
+* 关注人数：8305 人
+* 贡献人数：165 人
+* Open Issues数量：142 个
+* Github地址：https://github.com/LawnchairLauncher/lawnchair.git
+* 项目首页: https://lawnchair.app
+
+
+![](/images/lawnchairlauncher-lawnchair-0.png)
+
+Lawnchair是一个面向Android的开源主屏应用，它在Launcher3的基础上集成了Pixel Launcher的功能，并提供了丰富的定制选项。该项目的代码库用于开发Lawnchair 14，基于Android 14的Launcher3。
+
+## Conductor: 微服务编排引擎
+
+* 创建周期：42 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：1473 个
+* Fork数量：49 次
+* 关注人数：1473 人
+* 贡献人数：236 人
+* Open Issues数量：22 个
+* Github地址：https://github.com/conductor-oss/conductor.git
+* 项目首页: https://conductor-oss.org
+
+
+Conductor 是一个微服务编排引擎，最初由 Netflix 创建，用于协调微服务和事件。Conductor OSS 由 Orkes 的开发团队和开源社区的成员共同维护。
+
+## Spring框架核心功能和高级主题深入探讨
+
+* 创建周期：203 天
+* 开发语言：Java
 * 协议类型：MIT License
-* Star数量：14783 个
-* Fork数量：611 次
-* 关注人数：14783 人
-* 贡献人数：163 人
-* Open Issues数量：799 个
-* Github地址：https://github.com/usebruno/bruno.git
-* 项目首页: https://www.usebruno.com/
-
-
-Bruno是一个专为探索和测试API而设计的开源IDE。它是Postman和Insomnia等工具的轻量级替代品，旨在颠覆当前的现状。Bruno允许用户使用名为Bru的纯文本标记语言直接将集合存储在其文件系统中。它还支持使用Git或其他版本控制系统对API集合进行协作。Bruno优先考虑数据隐私，并且仅支持离线使用，没有添加云同步功能的计划。
-
-## QAnything：本地知识库问答系统
-
-* 创建周期：19 天
-* 开发语言：Python, Vue
-* 协议类型：Apache License 2.0
-* Star数量：2133 个
-* Fork数量：169 次
-* 关注人数：2133 人
-* 贡献人数：5 人
-* Open Issues数量：25 个
-* Github地址：https://github.com/netease-youdao/QAnything.git
-* 项目首页: https://qanything.ai
-
-
-![](/images/netease-youdao-qanything-0.png)
-
-QAnything是一个本地知识库问答系统，支持广泛的文件格式和数据库，可用于离线安装和使用。它允许用户简单地放置任何本地存储的任何格式的文件，并获得准确、快速和可靠的答案。当前支持的格式包括PDF、Word（doc/docx）、PPT、Markdown、Eml、TXT、图像（jpg、png等）、网页链接，未来预计将支持更多格式。
-
-## IPEX-LLM: 在Intel CPU和GPU上运行低延迟LLM的PyTorch库
-
-* 创建周期：2776 天
-* 开发语言：Python
-* 协议类型：Apache License 2.0
-* Star数量：5492 个
-* Fork数量：1176 次
-* 关注人数：5492 人
-* 贡献人数：93 人
-* Open Issues数量：1010 个
-* Github地址：https://github.com/intel-analytics/ipex-llm.git
-* 项目首页: https://ipex-llm.readthedocs.io
-
-
-![](/images/intel-analytics-ipex-llm-0.png)
-
-IPEX-LLM是一个用于在Intel CPU和GPU上以低延迟运行LLM的PyTorch库。它是建立在Intel PyTorch扩展(IPEX)之上的，并与各种工具和模型无缝集成，以实现高效的推断和微调。
-
-## SWE-agent: 将语言模型转化为软件工程代理
-
-* 创建周期：3 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：4809 个
-* Fork数量：401 次
-* 关注人数：4809 人
-* 贡献人数：10 人
-* Open Issues数量：24 个
-* Github地址：https://github.com/princeton-nlp/SWE-agent.git
-* 项目首页: https://swe-agent.com/
-
-
-SWE-agent是一个项目，将语言模型（如GPT-4）转化为软件工程代理，能够修复真实GitHub存储库中的错误和问题。它在完整的SWE-bench测试集上取得了最先进的性能，解决了12.29%的问题。
-
-## OpenUI：描述和实时渲染UI的工具
-
-* 创建周期：16 天
-* 开发语言：TypeScript, Python
-* 协议类型：Apache License 2.0
-* Star数量：1199 个
-* Fork数量：90 次
-* 关注人数：1199 人
-* 贡献人数：3 人
-* Open Issues数量：2 个
-* Github地址：https://github.com/wandb/openui.git
-
-
-OpenUI是一个工具，允许用户使用他们的想象描述UI并实时查看其渲染。它旨在使构建UI组件的过程变得有趣、快速和灵活，并且正在W&B进行使用，用于测试和原型化构建强大应用程序的下一代工具。
-
-## xzbot 项目：探索 xz 后门 (CVE-2024-3094)
-
-* 创建周期：3 天
-* 开发语言：Go, Python
-* Star数量：2431 个
-* Fork数量：140 次
-* 关注人数：2431 人
+* Star数量：5107 个
+* Fork数量：641 次
+* 关注人数：5107 人
 * 贡献人数：1 人
-* Open Issues数量：1 个
-* Github地址：https://github.com/amlweems/xzbot.git
+* Open Issues数量：23 个
+* Github地址：https://github.com/xuchengsheng/spring-reading.git
+* 项目首页: https://blog.csdn.net/duzhuang2399
 
 
-xzbot 项目探索了 xz 后门 (CVE-2024-3094)，包括了蜜罐、ed448 补丁、后门格式和后门演示，用于检测和理解攻击尝试。
+Spring框架涵盖了核心概念和关键功能，包括控制反转（IOC）容器的使用，面向切面编程（AOP），事务管理，Spring MVC，数据访问、安全、Boot自动配置等方面的深入研究。还包含了高级主题如缓存抽象、响应式编程，以及对Spring源码的深入探讨。
 
-## douyin - 模仿抖音的移动端短视频项目
+## Java实现的Tron白皮书
 
-* 创建周期：1998 天
-* 开发语言：Vue
-* 协议类型：MIT License
-* Star数量：1641 个
-* Fork数量：615 次
-* 关注人数：1641 人
-* 贡献人数：5 人
-* Open Issues数量：1 个
-* Github地址：https://github.com/zyronon/douyin.git
-* 项目首页: http://dy.ttentau.top/
+* 创建周期：2292 天
+* 开发语言：Java
+* 协议类型：GNU Lesser General Public License v3.0
+* Star数量：3593 个
+* Fork数量：1310 次
+* 关注人数：3593 人
+* 贡献人数：183 人
+* Open Issues数量：21 个
+* Github地址：https://github.com/tronprotocol/java-tron.git
 
 
-douyin 是一个模仿抖音的移动端短视频项目，它基于 Vue 和 Vite 实现。使用了最新的 Vue 全家桶技术栈，接口数据通过 axios-mock-adapter 模拟。
+![](/images/tronprotocol-java-tron-0.png)
 
-## RAGFlow: 基于深度文档理解的开源RAG引擎
+Java实现的Tron白皮书是一个开源项目，旨在构建TRON的源代码并提供运行java-tron的平台。它还强调社区贡献、可用资源、完整性检查和许可。
 
-* 创建周期：115 天
-* 开发语言：Python, TypeScript
+## Dinky: 实时数据开发平台
+
+* 创建周期：1031 天
+* 开发语言：Java, TypeScript
 * 协议类型：Apache License 2.0
-* Star数量：1882 个
-* Fork数量：120 次
-* 关注人数：1882 人
-* 贡献人数：10 人
-* Open Issues数量：7 个
-* Github地址：https://github.com/infiniflow/ragflow.git
-* 项目首页: https://ragflow.io
+* Star数量：2773 个
+* Fork数量：994 次
+* 关注人数：2773 人
+* 贡献人数：138 人
+* Open Issues数量：62 个
+* Github地址：https://github.com/DataLinkDC/dinky.git
+* 项目首页: http://www.dinky.org.cn
 
 
-![](/images/infiniflow-ragflow-0.png)
+![](/images/datalinkdc-dinky-0.png)
 
-RAGFlow是一个基于深度文档理解的开源RAG（检索增强生成）引擎。它为企业提供了简化的工作流程，整合了LLM（大型语言模型），以提供准确的问答能力，并支持来自各种复杂格式数据的充分证明。
-
-## Ore: 一种新颖的数字货币挖矿算法
-
-* 创建周期：89 天
-* 开发语言：Rust
-* Star数量：86 个
-* Fork数量：17 次
-* 关注人数：86 人
-* 贡献人数：1 人
-* Open Issues数量：9 个
-* Github地址：https://github.com/HardhatChad/ore.git
-
-
-Ore是一种数字货币，可以在家里或手机上进行挖矿，它使用一种新颖的工作证明算法，确保没有矿工会因为无法获得奖励而被饿死。
-
-## pass.in: 现场活动参与者管理系统
-
-* 创建周期：23 天
-* 开发语言：TypeScript
-* Star数量：64 个
-* Fork数量：75 次
-* 关注人数：64 人
-* 贡献人数：1 人
-* Open Issues数量：2 个
-* Github地址：https://github.com/rocketseat-education/nlw-unite-nodejs.git
-
-
-pass.in是Rocketseat的NLW Unite期间开发的Node.js后端。它是一个用于管理现场活动参与者的应用程序，允许组织者注册活动并打开公开的报名页面。已注册的参与者可以发出凭证，在活动当天进行签到。系统将扫描参与者的凭证以允许其进入活动。
+Dinky是一个基于Apache Flink的实时数据开发平台，可以实现敏捷的数据开发、部署和运营。
 
