@@ -1,32 +1,32 @@
 ---
-title: Github 2024-04-07 开源项目日报 Top10
-date: 2024-04-07T07:01:22+08:00
+title: Github 2024-04-07 php开源项目日报 Top10
+date: 2024-04-07T07:11:12+08:00
 slug: github-trendings-today-20240407
 author: 老孙正经胡说
-image: /images/astronvim-astronvim-0.png
+image: /images/filamentphp-filament-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
   - 人数
   - 人
   - 和
   - 开发
+  - 项目
+  - 是
   - 语言
+  - 协议
   - 创建
   - 周期
+  - 类型
   - 关注
   - 贡献
   - 地址
-  - 是
-  - 使用
-  - 协议
-  - 类型
-  - 提供
-  - 运行
-  - 中
-  - 配置
+  - 开源
+  - 用于
+  - 用户
+  - 可
+  - 平台
 
 categories:
 
@@ -38,172 +38,170 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Rust项目 | 2 |
-| Go项目 | 2 |
-| Jupyter Notebook项目 | 1 |
-| TypeScript项目 | 1 |
-| Lua项目 | 1 |
-| Shell项目 | 1 |
-| Svelte项目 | 1 |
-| Python项目 | 1 |
-| Objective-C项目 | 1 |
-| C++项目 | 1 |
+| PHP项目 | 10 |
+| Blade项目 | 1 |
 
-## AstroNvim - 一个美观且功能丰富的neovim配置
+## Monica: 个人关系管理系统
 
-* 创建周期：795 天
-* 开发语言：Lua
-* 协议类型：GNU General Public License v3.0
-* Star数量：11484 个
-* Fork数量：839 次
-* 关注人数：11484 人
-* 贡献人数：73 人
-* Open Issues数量：1 个
-* Github地址：https://github.com/AstroNvim/AstroNvim.git
-* 项目首页: https://AstroNvim.com
-
-
-![](/images/astronvim-astronvim-0.png)
-
-AstroNvim是一个美观且功能丰富的neovim配置，具有出色的插件集，易于扩展和使用。
-
-## Firebase苹果开发SDK
-
-* 创建周期：2542 天
-* 开发语言：Objective-C, C++
-* 协议类型：Apache License 2.0
-* Star数量：5135 个
-* Fork数量：1341 次
-* 关注人数：5135 人
-* 贡献人数：217 人
-* Open Issues数量：402 个
-* Github地址：https://github.com/firebase/firebase-ios-sdk.git
-* 项目首页: https://firebase.google.com
-
-
-Firebase SDK for Apple App Development是一个开源存储库，其中包含除FirebaseAnalytics之外的所有苹果平台Firebase SDK的源代码。Firebase是一个应用开发平台，提供工具帮助构建、增长和变现应用。
-
-## Plandex: 开源AI编码引擎
-
-* 创建周期：165 天
-* 开发语言：Go
+* 创建周期：2606 天
+* 开发语言：PHP
 * 协议类型：GNU Affero General Public License v3.0
-* Star数量：2169 个
-* Fork数量：112 次
-* 关注人数：2169 人
-* 贡献人数：6 人
-* Open Issues数量：12 个
-* Github地址：https://github.com/plandex-ai/plandex.git
-* 项目首页: https://plandex.ai
+* Star数量：20610 个
+* Fork数量：2070 次
+* 关注人数：20610 人
+* 贡献人数：23 人
+* Open Issues数量：681 个
+* Github地址：https://github.com/monicahq/monica.git
+* 项目首页: https://beta.monicahq.com
 
 
-Plandex是一个开源的AI编码引擎，允许用户使用LLMs构建复杂软件。它提供了受保护的沙盒功能，用于审查更改，内置版本控制，终端中高效的上下文管理，以及对各种平台的支持，无需依赖。
+Monica是一个开源的个人关系管理系统，旨在帮助用户记住关于朋友、家人和商业关系的一切。它允许用户记录他们的生活，目前正在测试开发中。
 
-## LLocalSearch - 本地运行的搜索聚合器
+## PHPMailer - 用于PHP的经典电子邮件发送库
 
-* 创建周期：14 天
-* 开发语言：Go, Svelte
+* 创建周期：4548 天
+* 开发语言：PHP
+* 协议类型：GNU Lesser General Public License v2.1
+* Star数量：20271 个
+* Fork数量：9858 次
+* 关注人数：20271 人
+* 贡献人数：250 人
+* Open Issues数量：48 个
+* Github地址：https://github.com/PHPMailer/PHPMailer.git
+
+
+PHPMailer是一个功能齐全的用于PHP的电子邮件创建和传输类，是一种经典的电子邮件发送库。
+
+## PHPUnit: PHP程序员的单元测试框架
+
+* 创建周期：5141 天
+* 开发语言：PHP
+* 协议类型：BSD 3-Clause "New" or "Revised" License
+* Star数量：19460 个
+* Fork数量：2245 次
+* 关注人数：19460 人
+* 贡献人数：391 人
+* Open Issues数量：108 个
+* Github地址：https://github.com/sebastianbergmann/phpunit.git
+* 项目首页: https://phpunit.de/
+
+
+PHPUnit是面向程序员的PHP测试框架，遵循xUnit架构用于单元测试。
+
+## Filament: 加速Laravel开发的完美起点
+
+* 创建周期：1410 天
+* 开发语言：PHP
+* 协议类型：MIT License
+* Star数量：12228 个
+* Fork数量：1990 次
+* 关注人数：12228 人
+* 贡献人数：372 人
+* Open Issues数量：66 个
+* Github地址：https://github.com/filamentphp/filament.git
+* 项目首页: https://filamentphp.com
+
+
+![](/images/filamentphp-filament-0.png)
+
+Filament是一套精美设计且完全可扩展的Laravel全栈组件集合，使用Livewire、Alpine.js和Tailwind CSS。它为加速Laravel开发提供了完美的起点，消除了重复构建相同功能的需求。
+
+## Coolify: 开源自助云平台
+
+* 创建周期：1112 天
+* 开发语言：PHP, Blade
 * 协议类型：Apache License 2.0
-* Star数量：2911 个
-* Fork数量：118 次
-* 关注人数：2911 人
-* 贡献人数：6 人
-* Open Issues数量：29 个
-* Github地址：https://github.com/nilsherzig/LLocalSearch.git
+* Star数量：10527 个
+* Fork数量：567 次
+* 关注人数：10527 人
+* 贡献人数：80 人
+* Open Issues数量：59 个
+* Github地址：https://github.com/coollabsio/coolify.git
+* 项目首页: https://coolify.io
 
 
-![](/images/nilsherzig-llocalsearch-0.png)
+![](/images/coollabsio-coolify-0.png)
 
-LLocalSearch是一个完全本地运行的搜索聚合器，使用LLM代理，允许用户通过一系列LLM来提问并获得答案，无需OpenAI或Google API密钥。它提供了对代理的进展和最终答案的可见性。
+Coolify是一个开源且可自行托管的替代品，可替代Heroku、Netlify和Vercel等云平台。它可以帮助用户通过SSH连接在自己的硬件上管理服务器、应用程序和数据库，包括VPS、裸金属和树莓派。该平台旨在在使用个人服务器时提供云的便利性，确保没有供应商锁定，并使用户即使停止使用Coolify也能保留对其资源的控制。
 
-## 人类烹饪书
+## Dompdf：PHP中的HTML到PDF转换器
 
-* 创建周期：236 天
-* 开发语言：Jupyter Notebook
+* 创建周期：4122 天
+* 开发语言：PHP
+* 协议类型：GNU Lesser General Public License v2.1
+* Star数量：10146 个
+* Fork数量：1767 次
+* 关注人数：10146 人
+* 贡献人数：129 人
+* Open Issues数量：555 个
+* Github地址：https://github.com/dompdf/dompdf.git
+* 项目首页: https://dompdf.github.io/
+
+
+Dompdf是一个用PHP编写的HTML到PDF转换器，它是一个以样式为驱动的渲染器，支持CSS 2.1兼容的HTML布局和渲染。它可以下载和读取外部样式表、内联样式标签和HTML元素的样式属性。用户可以通过演示、StackOverflow和讨论找到最新的稳定代码和支持。
+
+## Snipe-IT - 开源资产管理系统
+
+* 创建周期：3736 天
+* 开发语言：PHP
+* 协议类型：GNU Affero General Public License v3.0
+* Star数量：9130 个
+* Fork数量：2856 次
+* 关注人数：9130 人
+* 贡献人数：253 人
+* Open Issues数量：1474 个
+* Github地址：https://github.com/snipe/snipe-it.git
+* 项目首页: https://snipeitapp.com
+
+
+![](/images/snipe-snipe-it-0.png)
+
+Snipe-IT是一个建立在Laravel 8上的免费开源IT资产和许可证管理系统。它是一个面向IT运营的基于Web的软件，用于跟踪资产、管理软件许可证和处理折旧。该项目正在积极开发，并经常发布更新，可以在Mac OSX、Linux和Windows等各种操作系统上运行，并且还提供了Docker镜像。
+
+## 官方 PHP 客户端：Elasticsearch 与 Elastic Cloud 的推荐工具
+
+* 创建周期：3992 天
+* 开发语言：PHP
 * 协议类型：MIT License
-* Star数量：1728 个
-* Fork数量：221 次
-* 关注人数：1728 人
-* 贡献人数：12 人
-* Open Issues数量：9 个
-* Github地址：https://github.com/anthropics/anthropic-cookbook.git
+* Star数量：5236 个
+* Fork数量：959 次
+* 关注人数：5236 人
+* 贡献人数：141 人
+* Open Issues数量：28 个
+* Github地址：https://github.com/elastic/elasticsearch-php.git
+* 项目首页: https://www.elastic.co/guide/en/elasticsearch/client/php-api/current/index.html
 
 
-《人类烹饪书》是一个展示如何创造性和高效地使用克劳德的笔记本和食谱集合。它提供了代码和指南，帮助开发人员将克劳德集成到他们的项目中。
+官方的 PHP 客户端适用于 Elasticsearch 可供下载。这是与 Elasticsearch 交互的推荐客户端，可用于访问最新版本的 Elasticsearch 或注册 Elastic Cloud 的免费试用。
 
-## SaaS Boilerplate：使用Next.js、Tailwind CSS和TypeScript构建的全栈React应用程序
+## V2Board: 多代理协议管理面板应用
 
-* 创建周期：9 天
-* 开发语言：TypeScript
+* 创建周期：1629 天
+* 开发语言：PHP
 * 协议类型：MIT License
-* Star数量：1139 个
-* Fork数量：124 次
-* 关注人数：1139 人
-* 贡献人数：4 人
-* Open Issues数量：2 个
-* Github地址：https://github.com/ixartz/SaaS-Boilerplate.git
-* 项目首页: https://react-saas.com/
+* Star数量：4021 个
+* Fork数量：1427 次
+* 关注人数：4021 人
+* 贡献人数：17 人
+* Open Issues数量：101 个
+* Github地址：https://github.com/v2board/v2board.git
 
 
-SaaS Boilerplate是一个使用Next.js、Tailwind CSS、Shadcn UI和TypeScript构建的全栈React应用程序。它包括身份验证、多租户、角色和权限、国际化、首页、数据库、日志记录和测试等功能。该项目旨在为开发人员提供良好的体验，支持Next.js、TypeScript、ESLint、Prettier、Husky、Lint-Staged、Jest、Testing Library、Commitlint、VSCode、PostCSS、Tailwind CSS、Clerk身份验证、DrizzleORM和Turso数据库、Sentry错误监控、Pino.js日志记录、Better Stack日志管理、Checkly监控、Storybook和多语言（i18n）。可以克隆该项目以创建个性化的SaaS应用程序，并在“SaaS Boilerplate”上查看实时演示。
+V2Board是一个用于通过Web应用程序界面管理多个代理协议的开源项目。它使用PHP7.3+、Composer、MySQL5.5+、Redis和Laravel构建。
 
-## 可视自回归建模：通过下一尺度预测实现可扩展图像生成
+## Pimcore - 开源数据与体验管理平台
 
-* 创建周期：6 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：536 个
-* Fork数量：14 次
-* 关注人数：536 人
-* 贡献人数：2 人
-* Open Issues数量：7 个
-* Github地址：https://github.com/FoundationVision/VAR.git
-
-
-![](/images/foundationvision-var-0.png)
-
-Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction的官方PyTorch实现将GPT风格模型提升到超越视觉生成中观察到的扩散和比例定律之上。
-
-## Ore CLI: Ore程序的命令行界面
-
-* 创建周期：90 天
-* 开发语言：Rust
-* Star数量：137 个
-* Fork数量：104 次
-* 关注人数：137 人
-* 贡献人数：4 人
-* Open Issues数量：26 个
-* Github地址：https://github.com/HardhatChad/ore-cli.git
+* 创建周期：4478 天
+* 开发语言：PHP
+* 协议类型：Other
+* Star数量：3112 个
+* Fork数量：1388 次
+* 关注人数：3112 人
+* 贡献人数：285 人
+* Open Issues数量：349 个
+* Github地址：https://github.com/pimcore/pimcore.git
+* 项目首页: http://www.pimcore.com
 
 
-Ore CLI是Ore程序的命令行界面，为用户提供了通过命令行与程序进行交互的便捷方式。
-
-## Ore: 一种新颖的数字货币挖矿算法
-
-* 创建周期：89 天
-* 开发语言：Rust
-* Star数量：86 个
-* Fork数量：17 次
-* 关注人数：86 人
-* 贡献人数：1 人
-* Open Issues数量：9 个
-* Github地址：https://github.com/HardhatChad/ore.git
-
-
-Ore是一种数字货币，可以在家里或手机上进行挖矿，它使用一种新颖的工作证明算法，确保没有矿工会因为无法获得奖励而被饿死。
-
-## Availup: 运行 Avail 轻客户端的工具
-
-* 创建周期：225 天
-* 开发语言：Shell
-* 协议类型：MIT License
-* Star数量：91 个
-* Fork数量：395 次
-* 关注人数：91 人
-* 贡献人数：3 人
-* Open Issues数量：7 个
-* Github地址：https://github.com/availproject/availup.git
-
-
-Availup 是一个用于运行 Avail 轻客户端的工具，可以使用各种标志来自定义配置、升级二进制文件和管理身份文件。它还提供了使用自定义配置和种子短语的选项，以及在应用程序特定模式下运行客户端。
+Pimcore是一个开源的数据和体验管理平台，包括PIM、MDM、CDP、DAM、DXP/CMS和数字商务。它提供文档、翻译支持、问题跟踪、论坛和社区聊天以获取支持和讨论。
 
