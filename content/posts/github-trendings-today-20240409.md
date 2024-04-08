@@ -1,32 +1,32 @@
 ---
-title: Github 2024-04-09 开源项目日报 Top10
-date: 2024-04-09T07:01:40+08:00
+title: Github 2024-04-09 Python开源项目日报 Top10
+date: 2024-04-09T07:11:47+08:00
 slug: github-trendings-today-20240409
 author: 老孙正经胡说
-image: /images/freecodecamp-freecodecamp-0.png
+image: /images/donnemartin-system-design-primer-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
-  - 人
   - 人数
-  - 和
+  - 人
+  - 项目
   - 开发
   - 语言
+  - 贡献
   - 创建
   - 周期
-  - 关注
-  - 贡献
-  - 地址
   - 协议
   - 类型
+  - 关注
+  - 地址
+  - 和
+  - 系统
+  - 实现
+  - 模型
+  - 设计
   - 是
-  - 提供
-  - 支持
-  - 中
-  - 免费
-  - 编程
+  - 开源
 
 categories:
 
@@ -38,81 +38,56 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 3 |
-| TypeScript项目 | 3 |
-| Go项目 | 1 |
-| Rust项目 | 1 |
-| HTML项目 | 1 |
+| Python项目 | 10 |
 | Vue项目 | 1 |
-| 非开发语言项目 | 1 |
 | JavaScript项目 | 1 |
 
-## 免费编程学习平台：freeCodeCamp.org
+## 系统设计指南
 
-* 创建周期：3302 天
-* 开发语言：TypeScript, JavaScript
-* 协议类型：BSD 3-Clause "New" or "Revised" License
-* Star数量：381011 个
-* Fork数量：35361 次
-* 关注人数：381011 人
-* 贡献人数：397 人
-* Open Issues数量：378 个
-* Github地址：https://github.com/freeCodeCamp/freeCodeCamp.git
-* 项目首页: http://contribute.freecodecamp.org/
-
-
-![](/images/freecodecamp-freecodecamp-0.png)
-
-freeCodeCamp.org 是一个开放源代码平台和社区，人们可以免费学习编程。它得到慈善机构的支持，旨在帮助成年人转入科技行业。该平台提供全栈网页开发和机器学习课程，并提供交互式编程挑战。
-
-## 免费编程书籍和学习资源清单
-
-* 创建周期：3762 天
-* 协议类型：Creative Commons Attribution 4.0 International
-* Star数量：309978 个
-* Fork数量：59490 次
-* 关注人数：309978 人
-* 贡献人数：432 人
-* Open Issues数量：36 个
-* Github地址：https://github.com/EbookFoundation/free-programming-books.git
-* 项目首页: https://ebookfoundation.github.io/free-programming-books/
+* 创建周期：2507 天
+* 开发语言：Python
+* 协议类型：Other
+* Star数量：241693 个
+* Fork数量：42010 次
+* 关注人数：241693 人
+* 贡献人数：109 人
+* Open Issues数量：413 个
+* Github地址：https://github.com/donnemartin/system-design-primer.git
 
 
-该项目是一个列出了多种语言中免费可用的编程书籍和学习资源的清单。它提供了一个可通过易于阅读的网站访问的可搜索数据库。
+![](/images/donnemartin-system-design-primer-0.png)
 
-## 计算机科学自学指南
+系统设计指南是一个开源项目，帮助个人学习如何设计大规模系统并为系统设计面试做准备。它还包括Anki记忆卡，以便有效学习。
 
-* 创建周期：901 天
-* 开发语言：HTML
+## ComfyUI：强大而模块化的稳定扩散GUI
+
+* 创建周期：399 天
+* 开发语言：Python, JavaScript
+* 协议类型：GNU General Public License v3.0
+* Star数量：25663 个
+* Fork数量：2741 次
+* 关注人数：25663 人
+* 贡献人数：90 人
+* Open Issues数量：1263 个
+* Github地址：https://github.com/comfyanonymous/ComfyUI.git
+
+
+ComfyUI是一个开源项目，提供强大而模块化的稳定扩散图形用户界面（GUI）、API和后端，具有图/节点界面。它允许用户使用基于图/节点/流程图的界面设计和执行高级稳定扩散管道。
+
+## 少样本语音克隆的高质量TTS模型
+
+* 创建周期：9 天
+* 开发语言：Python
 * 协议类型：MIT License
-* Star数量：47445 个
-* Fork数量：5891 次
-* 关注人数：47445 人
-* 贡献人数：117 人
-* Open Issues数量：98 个
-* Github地址：https://github.com/PKUFlyingPig/cs-self-learning.git
-* 项目首页: https://csdiy.wiki
+* Star数量：4367 个
+* Fork数量：411 次
+* 关注人数：4367 人
+* 贡献人数：24 人
+* Open Issues数量：65 个
+* Github地址：https://github.com/RVC-Boss/GPT-SoVITS.git
 
 
-这是一本由亲身经历自学挑战和收获的人创建的计算机科学自学指南。该指南旨在为计算机科学初学者提供宝贵的资源和见解，帮助他们在众多开源课程和材料中进行导航，并最终精通各种编程语言和计算机科学主题。
-
-## Lobe Chat: 开源ChatGPT/LLMs UI/Framework
-
-* 创建周期：281 天
-* 开发语言：TypeScript
-* 协议类型：MIT License
-* Star数量：20641 个
-* Fork数量：4020 次
-* 关注人数：20641 人
-* 贡献人数：63 人
-* Open Issues数量：166 个
-* Github地址：https://github.com/lobehub/lobe-chat.git
-* 项目首页: https://chat-preview.lobehub.com
-
-
-![](/images/lobehub-lobe-chat-0.png)
-
-Lobe Chat是一个开源的、现代化设计的ChatGPT/LLMs UI/Framework，支持语音合成、多模态功能和可扩展的插件系统。它提供一键免费部署私人ChatGPT/Gemini/Ollama聊天应用。
+该项目专注于使用最少的语音数据来训练高质量的文本到语音（TTS）模型，实现少样本语音克隆。该项目的GitHub页面上提供了演示视频。
 
 ## QAnything：本地知识库问答系统
 
@@ -132,21 +107,20 @@ Lobe Chat是一个开源的、现代化设计的ChatGPT/LLMs UI/Framework，支�
 
 QAnything是一个本地知识库问答系统，支持广泛的文件格式和数据库，可用于离线安装和使用。它允许用户简单地放置任何本地存储的任何格式的文件，并获得准确、快速和可靠的答案。当前支持的格式包括PDF、Word（doc/docx）、PPT、Markdown、Eml、TXT、图像（jpg、png等）、网页链接，未来预计将支持更多格式。
 
-## Plandex: 开源AI编码引擎
+## 复制 Sora（Open AI T2V 模型）
 
-* 创建周期：165 天
-* 开发语言：Go
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：2169 个
-* Fork数量：112 次
-* 关注人数：2169 人
-* 贡献人数：6 人
-* Open Issues数量：12 个
-* Github地址：https://github.com/plandex-ai/plandex.git
-* 项目首页: https://plandex.ai
+* 创建周期：17 天
+* 开发语言：Python
+* 协议类型：MIT License
+* Star数量：4985 个
+* Fork数量：435 次
+* 关注人数：4985 人
+* 贡献人数：15 人
+* Open Issues数量：47 个
+* Github地址：https://github.com/PKU-YuanGroup/Open-Sora-Plan.git
 
 
-Plandex是一个开源的AI编码引擎，允许用户使用LLMs构建复杂软件。它提供了受保护的沙盒功能，用于审查更改，内置版本控制，终端中高效的上下文管理，以及对各种平台的支持，无需依赖。
+该项目旨在复制 Sora（Open AI T2V 模型），但我们只拥有有限的资源。我们真诚希望所有的开源社区能够为这个项目做出贡献。
 
 ## 可视自回归建模：通过下一尺度预测实现可扩展图像生成
 
@@ -165,17 +139,20 @@ Plandex是一个开源的AI编码引擎，允许用户使用LLMs构建复杂软�
 
 Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction的官方PyTorch实现将GPT风格模型提升到超越视觉生成中观察到的扩散和比例定律之上。
 
-## Ore CLI: Ore程序的命令行界面
+## JetMoE: 用0.1M美元实现LLaMA2性能
 
-* 创建周期：90 天
-* 开发语言：Rust
-* Star数量：137 个
-* Fork数量：104 次
-* 关注人数：137 人
-* 贡献人数：4 人
-* Open Issues数量：26 个
-* Github地址：https://github.com/HardhatChad/ore-cli.git
+* 创建周期：6 天
+* 开发语言：Python
+* 协议类型：Apache License 2.0
+* Star数量：550 个
+* Fork数量：31 次
+* 关注人数：550 人
+* 贡献人数：1 人
+* Open Issues数量：1 个
+* Github地址：https://github.com/myshell-ai/JetMoE.git
 
 
-Ore CLI是Ore程序的命令行界面，为用户提供了通过命令行与程序进行交互的便捷方式。
+![](/images/myshell-ai-jetmoe-0.png)
+
+JetMoE是一个旨在以10万美元的预算实现LLaMA2性能的开源项目。它专注于利用机器学习和优化技术，以低成本实现高性能。
 
