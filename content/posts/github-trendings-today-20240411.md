@@ -1,32 +1,32 @@
 ---
-title: Github 2024-04-11 开源项目日报 Top10
-date: 2024-04-11T07:01:31+08:00
+title: Github 2024-04-11 Go开源项目日报 Top10
+date: 2024-04-11T07:11:46+08:00
 slug: github-trendings-today-20240411
 author: 老孙正经胡说
-image: /images/langgenius-dify-0.png
+image: /images/ollama-ollama-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 人
-  - 项目
-  - 人数
-  - 开发
-  - 语言
-  - 创建
   - 和
-  - 类型
+  - 人数
+  - 人
+  - 语言
+  - 项目
+  - 是
+  - 开发
+  - 创建
   - 贡献
   - 周期
   - 协议
+  - 类型
   - 关注
   - 地址
   - 开源
-  - 是
-  - 模型
-  - 答案
-  - 大
-  - 引擎
+  - 提供
+  - 构建
+  - 用于
+  - 运行
 
 categories:
 
@@ -38,166 +38,171 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| TypeScript项目 | 4 |
-| Python项目 | 3 |
-| JavaScript项目 | 1 |
-| Cuda项目 | 1 |
-| Jupyter Notebook项目 | 1 |
-| 非开发语言项目 | 1 |
+| Go项目 | 10 |
 
-## Dify.AI: 开源的LLM应用程序开发平台
+## Syncthing: 开源持续文件同步工具
 
-* 创建周期：299 天
-* 开发语言：Python, TypeScript
-* 协议类型：Other
-* Star数量：14984 个
-* Fork数量：2007 次
-* 关注人数：14984 人
-* 贡献人数：79 人
-* Open Issues数量：52 个
-* Github地址：https://github.com/langgenius/dify.git
-* 项目首页: https://dify.ai
+* 创建周期：3789 天
+* 开发语言：Go
+* 协议类型：Mozilla Public License 2.0
+* Star数量：59188 个
+* Fork数量：3995 次
+* 关注人数：59188 人
+* 贡献人数：307 人
+* Open Issues数量：372 个
+* Github地址：https://github.com/syncthing/syncthing.git
+* 项目首页: https://forum.syncthing.net/
 
 
-![](/images/langgenius-dify-0.png)
+Syncthing是一个开源的持续文件同步工具，允许用户在多个设备之间安全高效地同步文件。它提供了分散和点对点的架构，确保了数据传输的隐私和安全。
 
-Dify.AI是一个开源的LLM应用程序开发平台，集成了后端作为服务和LLMOps。它涵盖了构建生成式AI原生应用所需的核心技术栈，包括内置的RAG引擎。Dify已经帮助构建了超过10万个应用程序，并允许用户基于任何LLMs部署自己的助手API和GPTs版本。
+## Ollama: 本地大型语言模型设置与运行
 
-## 简单、纯净的C/CUDA中的LLM培训
-
-* 创建周期：3 天
-* 开发语言：Cuda
+* 创建周期：248 天
+* 开发语言：Go
 * 协议类型：MIT License
-* Star数量：9433 个
-* Fork数量：789 次
-* 关注人数：9433 人
-* 贡献人数：8 人
-* Open Issues数量：18 个
-* Github地址：https://github.com/karpathy/llm.c.git
+* Star数量：42421 个
+* Fork数量：2724 次
+* 关注人数：42421 人
+* 贡献人数：138 人
+* Open Issues数量：709 个
+* Github地址：https://github.com/ollama/ollama.git
+* 项目首页: https://ollama.com
 
 
-LLM在简单的、纯净的C/CUDA中进行培训，无需像PyTorch或cPython这样庞大的依赖。该项目旨在提供干净、单文件实现，能够立即编译和运行，并且能够匹配PyTorch的性能。目前的工作包括直接的CUDA实现以提高速度，使用SIMD指令优化CPU版本，以及探索更现代的架构，如Llama2和Gemma。
+![](/images/ollama-ollama-0.png)
 
-## 复制 Sora（Open AI T2V 模型）
+Ollama是一个开源项目，帮助用户在本地设置和利用诸如Llama 2、Mistral和Gemma等大型语言模型。
 
-* 创建周期：17 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：4985 个
-* Fork数量：435 次
-* 关注人数：4985 人
-* 贡献人数：15 人
-* Open Issues数量：47 个
-* Github地址：https://github.com/PKU-YuanGroup/Open-Sora-Plan.git
+## Milvus: 云原生向量数据库与嵌入式相似性搜索
 
-
-该项目旨在复制 Sora（Open AI T2V 模型），但我们只拥有有限的资源。我们真诚希望所有的开源社区能够为这个项目做出贡献。
-
-## 互联网上最佳系统设计资源的案例研究
-
-* 创建周期：26 天
-* 协议类型：Other
-* Star数量：4711 个
-* Fork数量：451 次
-* 关注人数：4711 人
-* 贡献人数：1 人
-* Open Issues数量：0 个
-* Github地址：https://github.com/systemdesign42/system-design.git
-* 项目首页: https://newsletter.systemdesign.one
-
-
-该项目旨在通过一系列案例研究，在互联网上打造最佳的系统设计资源。
-
-## Node.js官方网站源代码
-
-* 创建周期：3203 天
-* 开发语言：TypeScript
-* 协议类型：MIT License
-* Star数量：4348 个
-* Fork数量：5763 次
-* 关注人数：4348 人
-* 贡献人数：414 人
-* Open Issues数量：48 个
-* Github地址：https://github.com/nodejs/nodejs.org.git
-* 项目首页: https://nodejs.org
-
-
-Nodejs.org 是由 OpenJS Foundation 维护的 Node.js JavaScript 运行时的官方网站。该存储库包含网站的源代码，使用了 Next.js，一个 React 框架进行构建。
-
-## FreeAskInternet：免费、私密、本地运行的搜索聚合器和答案生成器
-
-* 创建周期：5 天
-* 开发语言：Python
+* 创建周期：1620 天
+* 开发语言：Go
 * 协议类型：Apache License 2.0
-* Star数量：3293 个
-* Fork数量：309 次
-* 关注人数：3293 人
-* 贡献人数：1 人
-* Open Issues数量：25 个
-* Github地址：https://github.com/nashsu/FreeAskInternet.git
+* Star数量：25568 个
+* Fork数量：2501 次
+* 关注人数：25568 人
+* 贡献人数：226 人
+* Open Issues数量：636 个
+* Github地址：https://github.com/milvus-io/milvus.git
+* 项目首页: https://milvus.io
 
 
-FreeAskInternet 是一个完全免费、私密且在本地运行的搜索聚合器和答案生成器，使用LLM，无需GPU。用户可以提问，系统将进行多引擎搜索，整合结果，并利用ChatGPT3.5 LLM生成答案。
+![](/images/milvus-io-milvus-0.png)
 
-## DrawDB - 免费在线数据库设计工具和SQL生成器
+Milvus是一个为嵌入式相似性搜索和人工智能应用而设计的开源向量数据库。它提供了对非结构化数据搜索的便捷性，并确保在部署环境中提供一致的用户体验。Milvus 2.0是一个以云原生为特色的向量数据库，其存储和计算被设计为分离的，具有状态无关的组件，以增强弹性和灵活性。它于2019年10月在开源Apache许可证2.0下发布，并是LF AI & Data Foundation的研究生项目。
 
-* 创建周期：269 天
-* 开发语言：JavaScript
+## Helm：Kubernetes 资源管理工具
+
+* 创建周期：3054 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：25676 个
+* Fork数量：6990 次
+* 关注人数：25676 人
+* 贡献人数：377 人
+* Open Issues数量：632 个
+* Github地址：https://github.com/helm/helm.git
+* 项目首页: https://helm.sh
+
+
+Helm 是一个用于管理 Charts 的工具，Charts 是预配置的 Kubernetes 资源包。它允许用户查找和使用打包为 Helm Charts 的热门软件在 Kubernetes 中运行，分享他们自己的应用程序作为 Helm Charts，创建可重现的 Kubernetes 应用程序构建，智能地管理 Kubernetes 清单文件，并管理 Helm 包的发布。
+
+## gRPC-Go: 高性能、开源的通用RPC框架的Go语言实现
+
+* 创建周期：3356 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：19531 个
+* Fork数量：4256 次
+* 关注人数：19531 人
+* 贡献人数：387 人
+* Open Issues数量：133 个
+* Github地址：https://github.com/grpc/grpc-go.git
+* 项目首页: https://grpc.io
+
+
+gRPC-Go是gRPC的Go语言实现，是一个高性能、开源的通用RPC框架，将移动和HTTP/2放在首位。它设计高效，并且有很好的文档，易于采用。
+
+## kafka-go: 用Go语言处理Kafka集群的简单高效方式
+
+* 创建周期：2529 天
+* 开发语言：Go
 * 协议类型：MIT License
-* Star数量：2307 个
-* Fork数量：113 次
-* 关注人数：2307 人
+* Star数量：7073 个
+* Fork数量：743 次
+* 关注人数：7073 人
+* 贡献人数：137 人
+* Open Issues数量：174 个
+* Github地址：https://github.com/segmentio/kafka-go.git
+
+
+kafka-go是一个用Go语言编写的开源Kafka库，旨在为Go应用程序提供一种简单高效的方式来处理Kafka集群。
+
+## Cosmos SDK：用Go构建高价值公共区块链的框架
+
+* 创建周期：2987 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：5889 个
+* Fork数量：3306 次
+* 关注人数：5889 人
+* 贡献人数：388 人
+* Open Issues数量：457 个
+* Github地址：https://github.com/cosmos/cosmos-sdk.git
+* 项目首页: https://cosmos.network/
+
+
+Cosmos SDK是一个用Go编程语言编写的开源框架，用于构建高价值的公共区块链。它包括CometBFT（BFT共识），并用于构建Cosmos Hub的实现Gaia。尽管大部分已经稳定，但该框架仍在进行一些重大更改，因此建议使用最新维护的Go版本来构建Cosmos SDK应用程序。
+
+## Podinfo: Kubernetes微服务最佳实践展示
+
+* 创建周期：2253 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：4835 个
+* Fork数量：1533 次
+* 关注人数：4835 人
+* 贡献人数：44 人
+* Open Issues数量：23 个
+* Github地址：https://github.com/stefanprodan/podinfo.git
+
+
+![](/images/stefanprodan-podinfo-0.png)
+
+Podinfo是一个用Go编写的小型Web应用程序，演示了在Kubernetes中运行微服务的最佳实践。它被CNCF项目如Flux和Flagger用于测试和研讨会。Podinfo包括健康检查、优雅的关闭、Prometheus和Open Telemetry仪表化、结构化日志、故障注入、Swagger文档、各种工具的安装程序、多架构容器镜像支持、容器镜像签名、CVE扫描等功能。其Web API提供各种端点，用于检索运行时信息、版本详细信息、指标、健康检查和其他功能。此外，它还提供了用于健康检查、回显内容和返回版本详细信息的gRPC API，以及用于访问Swagger文档的Web UI。
+
+## Volcano: 云原生批处理系统
+
+* 创建周期：1855 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：3731 个
+* Fork数量：856 次
+* 关注人数：3731 人
+* 贡献人数：198 人
+* Open Issues数量：270 个
+* Github地址：https://github.com/volcano-sh/volcano.git
+* 项目首页: https://volcano.sh
+
+
+![](/images/volcano-sh-volcano-0.png)
+
+Volcano是一个建立在Kubernetes上的云原生批处理系统，为各种类型的批处理和弹性工作负载提供机制，包括机器学习、深度学习、生物信息学、基因组学和大数据应用。它与诸如TensorFlow、Spark、Ray、PyTorch和MPI之类的领域框架集成。凭借十多年的高性能工作负载运行经验，Volcano已在全球范围内被广泛采用，并得到了许多公司和机构的积极贡献。
+
+## Reverst: 基于QUIC和HTTP/3的反向隧道服务器和Go客户端库
+
+* 创建周期：8 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：434 个
+* Fork数量：11 次
+* 关注人数：434 人
 * 贡献人数：2 人
-* Open Issues数量：14 个
-* Github地址：https://github.com/drawdb-io/drawdb.git
-* 项目首页: https://drawdb.vercel.app
+* Open Issues数量：6 个
+* Github地址：https://github.com/flipt-io/reverst.git
+* 项目首页: https://www.flipt.io
 
 
-DrawDB是一个免费、简单且直观的在线数据库设计工具和SQL生成器。它允许用户创建图表、导出SQL脚本并自定义编辑器，而无需创建账户。
-
-## 《开源大模型食用指南》
-
-* 创建周期：147 天
-* 开发语言：Jupyter Notebook
-* 协议类型：Apache License 2.0
-* Star数量：2216 个
-* Fork数量：267 次
-* 关注人数：2216 人
-* 贡献人数：20 人
-* Open Issues数量：9 个
-* Github地址：https://github.com/datawhalechina/self-llm.git
-
-
-《开源大模型食用指南》是一个围绕开源大模型、针对国内初学者、基于 AutoDL 平台的中国宝宝专属大模型教程。项目内容包括环境配置、本地部署、高效微调等全流程指导，旨在让更多的学生和未来的从业者了解和熟悉开源大模型的食用方法。
-
-## Morphic：人工智能驱动的答案引擎和生成式用户界面
-
-* 创建周期：6 天
-* 开发语言：TypeScript
-* 协议类型：Apache License 2.0
-* Star数量：1820 个
-* Fork数量：330 次
-* 关注人数：1820 人
-* 贡献人数：2 人
-* Open Issues数量：14 个
-* Github地址：https://github.com/miurla/morphic.git
-* 项目首页: https://morphic.sh
-
-
-Morphic是一个开源项目，具有人工智能驱动的答案引擎和生成式用户界面。
-
-## PokéRogue：口袋妖怪同人Roguelite游戏
-
-* 创建周期：379 天
-* 开发语言：TypeScript
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：297 个
-* Fork数量：100 次
-* 关注人数：297 人
-* 贡献人数：24 人
-* Open Issues数量：8 个
-* Github地址：https://github.com/pagefaultgames/pokerogue.git
-
-
-PokéRogue是一款基于浏览器的口袋妖怪同人游戏，受到了Roguelite类型游戏的重大启发。玩家可以在不断战斗的同时收集堆叠的物品，探索不同的生物群落，与训练师、boss等展开战斗。
+Reverst是一个（负载平衡的）反向隧道服务器和基于QUIC和HTTP/3构建的Go服务器客户端库。它使用quic-go用Go语言编写，客户端包基于net/http标准库抽象构建。它允许在相同隧道后运行多个服务实例，并且构建在QUIC和HTTP/3之上以提供性能。
 
