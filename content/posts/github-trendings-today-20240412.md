@@ -1,32 +1,32 @@
 ---
-title: Github 2024-04-12 开源项目日报 Top10
-date: 2024-04-12T07:01:20+08:00
+title: Github 2024-04-12 Java开源项目日报 Top9
+date: 2024-04-12T07:11:25+08:00
 slug: github-trendings-today-20240412
 author: 老孙正经胡说
-image: /images/jackfrued-python-100-days-0.png
+image: /images/halo-dev-halo-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
   - 人数
   - 人
   - 和
+  - 项目
   - 开发
-  - 创建
   - 语言
-  - 贡献
+  - 创建
+  - 开源
   - 周期
-  - 关注
-  - 地址
   - 协议
   - 类型
-  - 是
-  - 开源
-  - 进行
-  - 答案
-  - 中
+  - 关注
+  - 贡献
+  - 地址
+  - 测试
   - 提供
+  - 功能
+  - 是
+  - 使用
 
 categories:
 
@@ -34,175 +34,163 @@ draft: false
 ---
 
 
-根据Github Trendings的统计，今日(2024-04-12统计)共有10个项目上榜。根据开发语言中项目的数量，汇总情况如下：
+根据Github Trendings的统计，今日(2024-04-12统计)共有9个项目上榜。根据开发语言中项目的数量，汇总情况如下：
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 6 |
-| TypeScript项目 | 2 |
-| Cuda项目 | 1 |
-| C++项目 | 1 |
-| C项目 | 1 |
-| HTML项目 | 1 |
-| Jupyter Notebook项目 | 1 |
-| JavaScript项目 | 1 |
+| Java项目 | 9 |
+| TypeScript项目 | 3 |
 
-## Python - 100天从新手到大师
+## 强大易用的开源建站工具
 
-* 创建周期：2234 天
-* 开发语言：Python, HTML, Jupyter Notebook
-* Star数量：149435 个
-* Fork数量：51212 次
-* 关注人数：149435 人
-* 贡献人数：12 人
-* Open Issues数量：712 个
-* Github地址：https://github.com/jackfrued/Python-100-Days.git
-
-
-![](/images/jackfrued-python-100-days-0.png)
-
-Python-100天从新手到大师是作者骆昊的一个项目。收到反馈称基础部分（前15天的内容）对新手来说比较困难，因此建议提供配套视频进行讲解。最近，作者重新制作了基础部分的内容，名为'Python-Core-50-Courses'。
-
-## GoogleTest - Google测试和模拟框架
-
-* 创建周期：3181 天
-* 开发语言：C++
-* 协议类型：BSD 3-Clause "New" or "Revised" License
-* Star数量：32745 个
-* Fork数量：9774 次
-* 关注人数：32745 人
-* 贡献人数：395 人
-* Open Issues数量：314 个
-* Github地址：https://github.com/google/googletest.git
-* 项目首页: https://google.github.io/googletest/
-
-
-GoogleTest是由Google开发的开源测试和模拟框架。它提供了一套全面的工具，用于编写和运行C++测试，以及创建模拟类。
-
-## Dify.AI: 开源的LLM应用程序开发平台
-
-* 创建周期：299 天
-* 开发语言：Python, TypeScript
-* 协议类型：Other
-* Star数量：14984 个
-* Fork数量：2007 次
-* 关注人数：14984 人
-* 贡献人数：79 人
-* Open Issues数量：52 个
-* Github地址：https://github.com/langgenius/dify.git
-* 项目首页: https://dify.ai
-
-
-![](/images/langgenius-dify-0.png)
-
-Dify.AI是一个开源的LLM应用程序开发平台，集成了后端作为服务和LLMOps。它涵盖了构建生成式AI原生应用所需的核心技术栈，包括内置的RAG引擎。Dify已经帮助构建了超过10万个应用程序，并允许用户基于任何LLMs部署自己的助手API和GPTs版本。
-
-## Llama 2 LLM 架构的全栈训练 + 推理解决方案
-
-* 创建周期：262 天
-* 开发语言：C, Python
-* 协议类型：MIT License
-* Star数量：14969 个
-* Fork数量：1640 次
-* 关注人数：14969 人
-* 贡献人数：86 人
-* Open Issues数量：143 个
-* Github地址：https://github.com/karpathy/llama2.c.git
-
-
-该项目提供了 Llama 2 LLM 的全栈训练 + 推理解决方案，注重简约和简单性。它允许在 PyTorch 中训练 Llama 2 LLM 架构，然后使用单个 700 行的 C 文件进行推理。该项目处于早期阶段，目前正在进行模型量化工作。
-
-## 简单、纯净的C/CUDA中的LLM培训
-
-* 创建周期：3 天
-* 开发语言：Cuda
-* 协议类型：MIT License
-* Star数量：9433 个
-* Fork数量：789 次
-* 关注人数：9433 人
-* 贡献人数：8 人
-* Open Issues数量：18 个
-* Github地址：https://github.com/karpathy/llm.c.git
-
-
-LLM在简单的、纯净的C/CUDA中进行培训，无需像PyTorch或cPython这样庞大的依赖。该项目旨在提供干净、单文件实现，能够立即编译和运行，并且能够匹配PyTorch的性能。目前的工作包括直接的CUDA实现以提高速度，使用SIMD指令优化CPU版本，以及探索更现代的架构，如Llama2和Gemma。
-
-## 复制 Sora（Open AI T2V 模型）
-
-* 创建周期：17 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：4985 个
-* Fork数量：435 次
-* 关注人数：4985 人
-* 贡献人数：15 人
-* Open Issues数量：47 个
-* Github地址：https://github.com/PKU-YuanGroup/Open-Sora-Plan.git
-
-
-该项目旨在复制 Sora（Open AI T2V 模型），但我们只拥有有限的资源。我们真诚希望所有的开源社区能够为这个项目做出贡献。
-
-## FreeAskInternet：免费、私密、本地运行的搜索聚合器和答案生成器
-
-* 创建周期：5 天
-* 开发语言：Python
-* 协议类型：Apache License 2.0
-* Star数量：3293 个
-* Fork数量：309 次
-* 关注人数：3293 人
-* 贡献人数：1 人
-* Open Issues数量：25 个
-* Github地址：https://github.com/nashsu/FreeAskInternet.git
-
-
-FreeAskInternet 是一个完全免费、私密且在本地运行的搜索聚合器和答案生成器，使用LLM，无需GPU。用户可以提问，系统将进行多引擎搜索，整合结果，并利用ChatGPT3.5 LLM生成答案。
-
-## DrawDB - 免费在线数据库设计工具和SQL生成器
-
-* 创建周期：269 天
-* 开发语言：JavaScript
-* 协议类型：MIT License
-* Star数量：2307 个
-* Fork数量：113 次
-* 关注人数：2307 人
-* 贡献人数：2 人
-* Open Issues数量：14 个
-* Github地址：https://github.com/drawdb-io/drawdb.git
-* 项目首页: https://drawdb.vercel.app
-
-
-DrawDB是一个免费、简单且直观的在线数据库设计工具和SQL生成器。它允许用户创建图表、导出SQL脚本并自定义编辑器，而无需创建账户。
-
-## Morphic：人工智能驱动的答案引擎和生成式用户界面
-
-* 创建周期：6 天
-* 开发语言：TypeScript
-* 协议类型：Apache License 2.0
-* Star数量：1820 个
-* Fork数量：330 次
-* 关注人数：1820 人
-* 贡献人数：2 人
-* Open Issues数量：14 个
-* Github地址：https://github.com/miurla/morphic.git
-* 项目首页: https://morphic.sh
-
-
-Morphic是一个开源项目，具有人工智能驱动的答案引擎和生成式用户界面。
-
-## AutoCodeRover: 自主程序改进
-
-* 创建周期：4 天
-* 开发语言：Python
+* 创建周期：2214 天
+* 开发语言：Java, TypeScript
 * 协议类型：GNU General Public License v3.0
-* Star数量：1454 个
-* Fork数量：98 次
-* 关注人数：1454 人
-* 贡献人数：3 人
-* Open Issues数量：10 个
-* Github地址：https://github.com/nus-apr/auto-code-rover.git
+* Star数量：31269 个
+* Fork数量：9273 次
+* 关注人数：31269 人
+* 贡献人数：120 人
+* Open Issues数量：376 个
+* Github地址：https://github.com/halo-dev/halo.git
+* 项目首页: https://www.halo.run
 
 
-![](/images/nus-apr-auto-code-rover-0.png)
+![](/images/halo-dev-halo-0.png)
 
-AutoCodeRover是一个开源项目，旨在成为一个结构感知的自主软件工程师，专注于自主程序改进。
+一个强大且易于使用的开源建站工具，提供快速开始和体验使用。详细部署文档请查阅。
+
+## Redisson - 易用的Redis Java客户端与内存数据网格功能
+
+* 创建周期：3744 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：22661 个
+* Fork数量：5252 次
+* 关注人数：22661 人
+* 贡献人数：150 人
+* Open Issues数量：405 个
+* Github地址：https://github.com/redisson/redisson.git
+* 项目首页: https://redisson.pro
+
+
+Redisson是一个易于使用的Redis Java客户端，提供内存数据网格的功能。它提供同步、异步、RxJava和反应式API，拥有超过50个基于Redis的Java对象和服务，包括集合、多重映射、有序集合、映射、列表、队列、双端队列、信号量、锁、原子长、映射减少、布隆过滤器、Spring缓存、Tomcat、调度程序、JCache API、Hibernate、RPC和本地缓存。它基于高性能的异步和无锁Java Redis客户端和Netty框架，支持JDK 1.8到21和Android，以及Redis 3.0到7.2。
+
+## 智能多用途SQL客户端和报告工具
+
+* 创建周期：297 天
+* 开发语言：Java, TypeScript
+* 协议类型：Apache License 2.0
+* Star数量：12349 个
+* Fork数量：1381 次
+* 关注人数：12349 人
+* 贡献人数：28 人
+* Open Issues数量：321 个
+* Github地址：https://github.com/chat2db/Chat2DB.git
+* 项目首页: http://chat2db.ai
+
+
+![](/images/chat2db-chat2db-0.png)
+
+该项目是一个开源的SQL客户端和数据库报告工具，集成了ChatGPT功能，使其智能且多功能。
+
+## Apache DolphinScheduler: 低代码敏捷数据编排平台
+
+* 创建周期：1820 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：11701 个
+* Fork数量：4298 次
+* 关注人数：11701 人
+* 贡献人数：362 人
+* Open Issues数量：1007 个
+* Github地址：https://github.com/apache/dolphinscheduler.git
+* 项目首页: https://dolphinscheduler.apache.org/
+
+
+Apache DolphinScheduler是一种现代数据编排平台，可以使用低代码敏捷地创建高性能工作流。
+
+## MeterSphere：一站式开源持续测试平台
+
+* 创建周期：1439 天
+* 开发语言：Java, Vue
+* 协议类型：GNU General Public License v3.0
+* Star数量：10555 个
+* Fork数量：2412 次
+* 关注人数：10555 人
+* 贡献人数：55 人
+* Open Issues数量：184 个
+* Github地址：https://github.com/metersphere/metersphere.git
+* 项目首页: https://metersphere.io/
+
+
+![](/images/metersphere-metersphere-0.png)
+
+MeterSphere 是一站式开源持续测试平台，涵盖测试跟踪、接口测试、UI 测试和性能测试等功能，全面兼容 JMeter、Selenium 等主流开源标准，有效助力开发和测试团队充分利用云弹性进行高度可扩展的自动化测试，加速高质量的软件交付，推动中国测试行业整体效率的提升。
+
+## Apereo CAS - 中央认证服务（CAS）
+
+* 创建周期：4599 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：10616 个
+* Fork数量：3879 次
+* 关注人数：10616 人
+* 贡献人数：301 人
+* Open Issues数量：2 个
+* Github地址：https://github.com/apereo/cas.git
+* 项目首页: https://apereo.github.io/cas/
+
+
+![](/images/apereo-cas-0.png)
+
+Apereo CAS是一个开源项目，为所有用户提供身份验证和单点登录（SSO）功能。它被称为中央认证服务（CAS）。
+
+## Apache Kafka 管理的 Web 用户界面
+
+* 创建周期：1515 天
+* 开发语言：Java, TypeScript
+* 协议类型：Apache License 2.0
+* Star数量：7754 个
+* Fork数量：972 次
+* 关注人数：7754 人
+* 贡献人数：169 人
+* Open Issues数量：351 个
+* Github地址：https://github.com/provectus/kafka-ui.git
+
+
+![](/images/provectus-kafka-ui-0.png)
+
+这个开源项目为管理Apache Kafka提供了一个基于Web的用户界面，Apache Kafka是一个分布式流处理平台。它通过图形界面提供了一个方便的方式来监视和管理Kafka集群、主题和代理。
+
+## Spring框架核心功能和高级主题深入探讨
+
+* 创建周期：203 天
+* 开发语言：Java
+* 协议类型：MIT License
+* Star数量：5107 个
+* Fork数量：641 次
+* 关注人数：5107 人
+* 贡献人数：1 人
+* Open Issues数量：23 个
+* Github地址：https://github.com/xuchengsheng/spring-reading.git
+* 项目首页: https://blog.csdn.net/duzhuang2399
+
+
+Spring框架涵盖了核心概念和关键功能，包括控制反转（IOC）容器的使用，面向切面编程（AOP），事务管理，Spring MVC，数据访问、安全、Boot自动配置等方面的深入研究。还包含了高级主题如缓存抽象、响应式编程，以及对Spring源码的深入探讨。
+
+## Spring AI: 为AI应用提供Spring友好的API和抽象
+
+* 创建周期：290 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：1484 个
+* Fork数量：341 次
+* 关注人数：1484 人
+* 贡献人数：86 人
+* Open Issues数量：111 个
+* Github地址：https://github.com/spring-projects/spring-ai.git
+* 项目首页: https://docs.spring.io/spring-ai/reference/1.0-SNAPSHOT/index.html
+
+
+Spring AI是一个开源项目，为开发人工智能应用提供了Spring友好的API和抽象，旨在使您的@Bean智能化。
 
