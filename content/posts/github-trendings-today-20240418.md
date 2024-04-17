@@ -1,32 +1,32 @@
 ---
-title: Github 2024-04-18 开源项目日报 Top10
-date: 2024-04-18T07:01:23+08:00
+title: Github 2024-04-18 Go开源项目日报 Top10
+date: 2024-04-18T07:11:13+08:00
 slug: github-trendings-today-20240418
 author: 老孙正经胡说
-image: /images/jwasham-coding-interview-university-0.png
+image: /images/ollama-ollama-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
+  - 和
   - 人数
   - 人
+  - 项目
   - 语言
-  - 和
   - 开发
+  - 协议
   - 创建
   - 周期
+  - 类型
   - 关注
   - 贡献
   - 地址
-  - 学习
-  - 协议
-  - 类型
   - 是
-  - 模型
+  - 开源
   - 实现
-  - 系统
-  - 旨在
+  - 管理
+  - 用户
+  - 扫描
 
 categories:
 
@@ -38,173 +38,173 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 3 |
-| 非开发语言项目 | 2 |
-| TypeScript项目 | 2 |
-| Rust项目 | 1 |
-| Cuda项目 | 1 |
+| Go项目 | 10 |
 | Vue项目 | 1 |
-| HTML项目 | 1 |
-| CSS项目 | 1 |
-| JavaScript项目 | 1 |
+| TypeScript项目 | 1 |
 
-## 编程面试大学：成为软件工程师的全面学习计划
+## Ollama: 本地大型语言模型设置与运行
 
-* 创建周期：2859 天
-* 协议类型：Creative Commons Attribution Share Alike 4.0 International
-* Star数量：281153 个
-* Fork数量：72155 次
-* 关注人数：281153 人
-* 贡献人数：294 人
-* Open Issues数量：56 个
-* Github地址：https://github.com/jwasham/coding-interview-university.git
-
-
-![](/images/jwasham-coding-interview-university-0.png)
-
-编程面试大学是一个全面的学习计划，旨在成为一名软件工程师，最初创建为一个简短的待办事项清单，但现在已经发展成覆盖所有必要学习主题的大清单。该计划的创建者每天学习8-12小时，持续数月，最终被亚马逊聘为软件开发工程师。该学习计划旨在为个人在各大软件公司（如亚马逊、Facebook、Google和Microsoft）的技术面试做好准备。
-
-## JavaScript算法与数据结构
-
-* 创建周期：2217 天
-* 开发语言：JavaScript
+* 创建周期：248 天
+* 开发语言：Go
 * 协议类型：MIT License
-* Star数量：182351 个
-* Fork数量：29476 次
-* 关注人数：182351 人
-* 贡献人数：195 人
-* Open Issues数量：348 个
-* Github地址：https://github.com/trekhleb/javascript-algorithms.git
+* Star数量：42421 个
+* Fork数量：2724 次
+* 关注人数：42421 人
+* 贡献人数：138 人
+* Open Issues数量：709 个
+* Github地址：https://github.com/ollama/ollama.git
+* 项目首页: https://ollama.com
 
 
-这个开源项目包含了JavaScript实现的多种流行算法和数据结构。每个算法和数据结构都有自己详细的README，包括解释和进一步阅读的链接，包括YouTube视频。该项目旨在用于学习和研究目的，不适用于生产。
+![](/images/ollama-ollama-0.png)
 
-## Python中的算法实现集合
+Ollama是一个开源项目，帮助用户在本地设置和利用诸如Llama 2、Mistral和Gemma等大型语言模型。
 
-* 创建周期：2831 天
-* 开发语言：Python
+## GORM：面向Golang的开发者友好的ORM库
+
+* 创建周期：3730 天
+* 开发语言：Go
 * 协议类型：MIT License
-* Star数量：178357 个
-* Fork数量：43408 次
-* 关注人数：178357 人
-* 贡献人数：457 人
-* Open Issues数量：240 个
-* Github地址：https://github.com/TheAlgorithms/Python.git
-* 项目首页: https://the-algorithms.com/
+* Star数量：34522 个
+* Fork数量：3830 次
+* 关注人数：34522 人
+* 贡献人数：359 人
+* Open Issues数量：312 个
+* Github地址：https://github.com/go-gorm/gorm.git
+* 项目首页: https://gorm.io
 
 
-该项目包含了用Python实现的各种算法，旨在用于学习目的。需要注意的是，这些实现可能不如Python标准库中的实现高效，因此在使用时应谨慎。
+GORM是一个面向Golang的开源ORM库，旨在使开发人员更加友好。
 
-## 系统设计资源存储库
+## Harbor - 开源的云原生注册表项目
 
-* 创建周期：176 天
+* 创建周期：2908 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：21549 个
+* Fork数量：4526 次
+* 关注人数：21549 人
+* 贡献人数：297 人
+* Open Issues数量：597 个
+* Github地址：https://github.com/goharbor/harbor.git
+* 项目首页: https://goharbor.io
+
+
+![](/images/goharbor-harbor-0.png)
+
+Harbor是一个开源的可信的云原生注册表项目，用于存储、签名和扫描内容。它通过添加安全性、身份验证和管理等功能，扩展了开源的Docker Distribution。它支持镜像在注册表之间的复制，并提供用户管理、访问控制和活动审计等高级安全功能。
+
+## Trivy: 多功能安全扫描工具
+
+* 创建周期：1743 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：20035 个
+* Fork数量：2008 次
+* 关注人数：20035 人
+* 贡献人数：345 人
+* Open Issues数量：202 个
+* Github地址：https://github.com/aquasecurity/trivy.git
+* 项目首页: https://aquasecurity.github.io/trivy
+
+
+Trivy是一款全面而多功能的安全扫描工具，用于查找容器、Kubernetes、代码仓库、云等中的漏洞、配置错误、秘密和SBOM。它支持对容器镜像、文件系统、Git仓库、虚拟机镜像、Kubernetes和AWS进行扫描，并能够找到操作系统软件包、软件依赖、已知漏洞、基础设施即代码问题、敏感信息、秘密和软件许可证。Trivy支持多种流行的编程语言、操作系统和平台。
+
+## Panel：现代化、开源的 Linux 服务器管理面板
+
+* 创建周期：583 天
+* 开发语言：Go, Vue
 * 协议类型：GNU General Public License v3.0
-* Star数量：10250 个
-* Fork数量：2469 次
-* 关注人数：10250 人
-* 贡献人数：2 人
-* Open Issues数量：1 个
-* Github地址：https://github.com/ashishps1/awesome-system-design-resources.git
-* 项目首页: https://twitter.com/ashishps_1
+* Star数量：15828 个
+* Fork数量：1418 次
+* 关注人数：15828 人
+* 贡献人数：44 人
+* Open Issues数量：302 个
+* Github地址：https://github.com/1Panel-dev/1Panel.git
+* 项目首页: https://www.1panel.cn
 
 
-该存储库包含学习系统设计概念和准备面试所需的免费资源。
+![](/images/1panel-dev-1panel-0.png)
 
-## 基于Next.js和React.js的简单UI组件示例
+Panel 是一款现代化、开源的 Linux 服务器维护管理面板，可以实现高效管理、快速建站、访问应用商店，并通过一键备份和基于容器的应用管理等功能确保安全可靠性。
 
-* 创建周期：490 天
-* 开发语言：HTML, CSS
-* Star数量：2552 个
-* Fork数量：494 次
-* 关注人数：2552 人
+## Hyperledger Fabric: 企业级权限分布式账本框架
+
+* 创建周期：2730 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：15241 个
+* Fork数量：8768 次
+* 关注人数：15241 人
+* 贡献人数：298 人
+* Open Issues数量：182 个
+* Github地址：https://github.com/hyperledger/fabric.git
+* 项目首页: https://wiki.hyperledger.org/display/fabric
+
+
+Hyperledger Fabric是一个企业级的权限分布式账本框架，具有模块化和多功能设计。它提供了一种独特的共识方法，可以实现规模化性能同时保护隐私。它是一个分布式账本解决方案的平台，具有高度的机密性、弹性、灵活性和可扩展性，支持不同组件的可插拔实现。
+
+## Neko: 自托管虚拟浏览器和WebRTC技术
+
+* 创建周期：1496 天
+* 开发语言：Go, TypeScript
+* 协议类型：Apache License 2.0
+* Star数量：5365 个
+* Fork数量：410 次
+* 关注人数：5365 人
+* 贡献人数：36 人
+* Open Issues数量：94 个
+* Github地址：https://github.com/m1k1o/neko.git
+* 项目首页: https://neko.m1k1o.net/
+
+
+![](/images/m1k1o-neko-0.png)
+
+Neko是一个在Docker中运行并使用WebRTC技术的自托管虚拟浏览器。它为浏览网页、运行应用程序和执行任务提供了安全和隔离的环境。Neko还允许多个用户同时访问，非常适合团队、组织和希望共享浏览器访问权限的个人。此外，Neko还适用于举办观影派对和互动演示，使用户能够从任何地方与他人保持联系。
+
+## kube-state-metrics (KSM)：生成集群级别指标的服务
+
+* 创建周期：2904 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：5080 个
+* Fork数量：1847 次
+* 关注人数：5080 人
+* 贡献人数：334 人
+* Open Issues数量：102 个
+* Github地址：https://github.com/kubernetes/kube-state-metrics.git
+* 项目首页: https://kubernetes.io/docs/concepts/cluster-administration/kube-state-metrics/
+
+
+kube-state-metrics (KSM) 是一个通过监听Kubernetes API服务器生成集群级别指标的服务。它专注于集群内部各种对象（如部署、节点和Pod）的健康状态，而不修改Kubernetes API对象。这些指标通过HTTP端点公开，以便由Prometheus或兼容的抓取器消费。
+
+## Redka: 用SQLite重新实现Redis
+
+* 创建周期：12 天
+* 开发语言：Go
+* 协议类型：BSD 3-Clause "New" or "Revised" License
+* Star数量：1757 个
+* Fork数量：26 次
+* 关注人数：1757 人
 * 贡献人数：3 人
-* Open Issues数量：3 个
-* Github地址：https://github.com/atherosai/ui.git
-* 项目首页: https://learning.atheros.ai
+* Open Issues数量：1 个
+* Github地址：https://github.com/nalgeon/redka.git
 
 
-该存储库包含基于Next.js和React.js的简单UI组件示例。它包括HTML/CSS/JS和React示例的安装说明，具体示例包括TikTok、Instagram、Youtube、Twitter、Linkedin和Threads。
+Redka是一个旨在使用SQLite重新实现Redis的开源项目，同时保持与Redis API的兼容性。它提供了诸如数据存储不限于RAM、ACID事务、用于更好的内省和报告的SQL视图、进程内和独立服务器以及与Redis兼容的命令和协议等功能。
 
-## Reader: 将任何URL转换为LLM友好的输入
-
-* 创建周期：7 天
-* 开发语言：TypeScript
-* 协议类型：Apache License 2.0
-* Star数量：1781 个
-* Fork数量：110 次
-* 关注人数：1781 人
-* 贡献人数：2 人
-* Open Issues数量：14 个
-* Github地址：https://github.com/jina-ai/reader.git
-* 项目首页: https://jina.ai/reader
-
-
-![](/images/jina-ai-reader-0.png)
-
-Reader是一个工具，它将任何URL转换为LLM友好的输入，使用简单的https://r.jina.ai/前缀。该工具为代理和RAG系统提供了改进的输出，而且是免费的、稳定的和可扩展的，并且作为Jina AI的核心产品之一，正在积极维护。
-
-## MaxKB：基于LLM大语言模型的知识库问答系统
-
-* 创建周期：215 天
-* 开发语言：Python, Vue
-* 协议类型：GNU General Public License v3.0
-* Star数量：739 个
-* Fork数量：128 次
-* 关注人数：739 人
-* 贡献人数：32 人
-* Open Issues数量：29 个
-* Github地址：https://github.com/1Panel-dev/MaxKB.git
-
-
-![](/images/1panel-dev-maxkb-0.png)
-
-MaxKB 是基于 LLM 大语言模型的知识库问答系统。它旨在成为一种开箱即用的解决方案，支持轻松集成到第三方业务系统中。它允许直接上传文档、自动网络文档爬取、文本分割、向量化，并提供智能问答交互体验。它可以零编码快速嵌入到第三方业务系统，并支持多个大型模型，包括本地私有模型如 Llama 2、Azure OpenAI 和百度千帆大模型。
-
-## Mini-Gemini: 挖掘多模态视觉语言模型潜力的官方实现
-
-* 创建周期：23 天
-* 开发语言：Python
-* 协议类型：Apache License 2.0
-* Star数量：1848 个
-* Fork数量：124 次
-* 关注人数：1848 人
-* 贡献人数：5 人
-* Open Issues数量：28 个
-* Github地址：https://github.com/dvlab-research/MiniGemini.git
-* 项目首页: https://mini-gemini.github.io/
-
-
-Mini-Gemini是项目“挖掘多模态视觉语言模型潜力”的官方实现。它支持一系列从2B到34B的密集和MoE大型语言模型（LLMs），具有图像理解、推理和生成能力，并基于LLaVA构建。
-
-## SuperMemory: 用ChatGPT构建你的第二大脑
-
-* 创建周期：51 天
-* 开发语言：TypeScript
-* 协议类型：MIT License
-* Star数量：1847 个
-* Fork数量：139 次
-* 关注人数：1847 人
-* 贡献人数：2 人
-* Open Issues数量：11 个
-* Github地址：https://github.com/Dhravya/supermemory.git
-* 项目首页: https://supermemory.dhr.wtf
-
-
-![](/images/dhravya-supermemory-0.png)
-
-SuperMemory是一个开源项目，允许用户通过使用ChatGPT来构建自己的“第二大脑”，用于书签组织。用户可以通过Chrome扩展程序导入推文，保存网站并存储内容。
-
-## Ore CLI与Nvidia GPU支持
+## 整体系统、跨语言的性能分析器: 使用eBPF在Linux上的实现
 
 * 创建周期：3 天
-* 开发语言：Rust, Cuda
-* Star数量：113 个
-* Fork数量：47 次
-* 关注人数：113 人
-* 贡献人数：1 人
-* Open Issues数量：5 个
-* Github地址：https://github.com/BenjaSOL/ore-cli-gpu.git
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：574 个
+* Fork数量：31 次
+* 关注人数：574 人
+* 贡献人数：3 人
+* Open Issues数量：3 个
+* Github地址：https://github.com/elastic/otel-profiling-agent.git
 
 
-Ore CLI与Nvidia GPU支持是Ore程序的命令行界面，允许用户利用Nvidia GPU。它由@BenjaSOL和@KaedonsCrypto构建。
+这个开源项目使用eBPF在Linux上实现了一个整体系统、跨语言的性能分析器。它作为一个捐赠代理给OpenTelemetry的过渡空间。
 
