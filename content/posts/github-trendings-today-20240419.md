@@ -1,32 +1,32 @@
 ---
-title: Github 2024-04-19 开源项目日报 Top10
-date: 2024-04-19T07:01:22+08:00
+title: Github 2024-04-19 Java开源项目日报 Top9
+date: 2024-04-19T07:11:32+08:00
 slug: github-trendings-today-20240419
 author: 老孙正经胡说
-image: /images/jwasham-coding-interview-university-0.png
+image: /images/blankj-androidutilcode-0.png
 tags:
   - github
   - trendings
+  - 和
   - 数量
   - 项目
   - 人数
   - 人
-  - 和
-  - 语言
   - 开发
+  - 语言
+  - 是
   - 创建
   - 周期
+  - 协议
+  - 类型
   - 关注
   - 贡献
   - 地址
-  - 类型
-  - 是
-  - 协议
-  - 支持
-  - 系统
-  - 模型
-  - 中
-  - 设计
+  - 测试
+  - 提供
+  - 开源
+  - 功能
+  - 数据
 
 categories:
 
@@ -34,181 +34,161 @@ draft: false
 ---
 
 
-根据Github Trendings的统计，今日(2024-04-19统计)共有10个项目上榜。根据开发语言中项目的数量，汇总情况如下：
+根据Github Trendings的统计，今日(2024-04-19统计)共有9个项目上榜。根据开发语言中项目的数量，汇总情况如下：
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 2 |
-| Go项目 | 2 |
+| Java项目 | 9 |
 | HTML项目 | 1 |
-| CSS项目 | 1 |
-| C项目 | 1 |
-| Rust项目 | 1 |
-| 非开发语言项目 | 1 |
-| C++项目 | 1 |
-| TypeScript项目 | 1 |
-| Swift项目 | 1 |
 
-## 编程面试大学：成为软件工程师的全面学习计划
+## Android开发者实用工具集
 
-* 创建周期：2859 天
-* 协议类型：Creative Commons Attribution Share Alike 4.0 International
-* Star数量：281153 个
-* Fork数量：72155 次
-* 关注人数：281153 人
-* 贡献人数：294 人
-* Open Issues数量：56 个
-* Github地址：https://github.com/jwasham/coding-interview-university.git
+* 创建周期：2820 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：32909 个
+* Fork数量：10631 次
+* 关注人数：32909 人
+* 贡献人数：38 人
+* Open Issues数量：298 个
+* Github地址：https://github.com/Blankj/AndroidUtilCode.git
+* 项目首页: https://blankj.com/2016/07/31/android-utils-code/
 
 
-![](/images/jwasham-coding-interview-university-0.png)
+![](/images/blankj-androidutilcode-0.png)
 
-编程面试大学是一个全面的学习计划，旨在成为一名软件工程师，最初创建为一个简短的待办事项清单，但现在已经发展成覆盖所有必要学习主题的大清单。该计划的创建者每天学习8-12小时，持续数月，最终被亚马逊聘为软件开发工程师。该学习计划旨在为个人在各大软件公司（如亚马逊、Facebook、Google和Microsoft）的技术面试做好准备。
+这是一个供安卓开发者收集各种实用工具的开源项目。该项目不断更新，添加新功能和改进。
 
-## GPT/GLM等LLM大语言模型实用化交互接口
+## Redisson - 易用的Redis Java客户端与内存数据网格功能
 
-* 创建周期：337 天
-* 开发语言：Python
+* 创建周期：3744 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：22661 个
+* Fork数量：5252 次
+* 关注人数：22661 人
+* 贡献人数：150 人
+* Open Issues数量：405 个
+* Github地址：https://github.com/redisson/redisson.git
+* 项目首页: https://redisson.pro
+
+
+Redisson是一个易于使用的Redis Java客户端，提供内存数据网格的功能。它提供同步、异步、RxJava和反应式API，拥有超过50个基于Redis的Java对象和服务，包括集合、多重映射、有序集合、映射、列表、队列、双端队列、信号量、锁、原子长、映射减少、布隆过滤器、Spring缓存、Tomcat、调度程序、JCache API、Hibernate、RPC和本地缓存。它基于高性能的异步和无锁Java Redis客户端和Netty框架，支持JDK 1.8到21和Android，以及Redis 3.0到7.2。
+
+## EhViewer：图片浏览和下载应用程序
+
+* 创建周期：1257 天
+* 开发语言：Java, HTML
+* 协议类型：Apache License 2.0
+* Star数量：10969 个
+* Fork数量：347 次
+* 关注人数：10969 人
+* 贡献人数：10 人
+* Open Issues数量：223 个
+* Github地址：https://github.com/xiaojieonly/Ehviewer_CN_SXJ.git
+
+
+EhViewer是一个开源项目，提供了一款用于浏览和下载图片的应用程序。该项目经常发布新版本，修复bug和增加新功能，同时提供多种下载链接和社交媒体群组。
+
+## MeterSphere：一站式开源持续测试平台
+
+* 创建周期：1439 天
+* 开发语言：Java, Vue
 * 协议类型：GNU General Public License v3.0
-* Star数量：51717 个
-* Fork数量：6732 次
-* 关注人数：51717 人
-* 贡献人数：74 人
+* Star数量：10555 个
+* Fork数量：2412 次
+* 关注人数：10555 人
+* 贡献人数：55 人
 * Open Issues数量：184 个
-* Github地址：https://github.com/binary-husky/gpt_academic.git
-* 项目首页: https://github.com/binary-husky/gpt_academic/wiki/online
+* Github地址：https://github.com/metersphere/metersphere.git
+* 项目首页: https://metersphere.io/
 
 
-![](/images/binary-husky-gpt_academic-0.png)
+![](/images/metersphere-metersphere-0.png)
 
-该项目为GPT/GLM等LLM大语言模型提供实用的交互接口，特别优化论文阅读/润色/写作体验。它采用模块化设计，支持自定义快捷按钮和函数插件，同时支持Python和C++项目剖析和自译解功能，以及PDF/LaTex论文翻译和总结功能。此外，它还支持并行问询多种LLM模型和本地模型，以及接入通义千问、deepseekcoder、讯飞星火、文心一言、llama2、rwkv、claude2、moss等。
+MeterSphere 是一站式开源持续测试平台，涵盖测试跟踪、接口测试、UI 测试和性能测试等功能，全面兼容 JMeter、Selenium 等主流开源标准，有效助力开发和测试团队充分利用云弹性进行高度可扩展的自动化测试，加速高质量的软件交付，推动中国测试行业整体效率的提升。
 
-## Harbor - 开源的云原生注册表项目
+## 分布式和RESTful搜索引擎
 
-* 创建周期：2908 天
-* 开发语言：Go
+* 创建周期：1092 天
+* 开发语言：Java
 * 协议类型：Apache License 2.0
-* Star数量：21549 个
-* Fork数量：4526 次
-* 关注人数：21549 人
-* 贡献人数：297 人
-* Open Issues数量：597 个
-* Github地址：https://github.com/goharbor/harbor.git
-* 项目首页: https://goharbor.io
+* Star数量：8151 个
+* Fork数量：1514 次
+* 关注人数：8151 人
+* 贡献人数：347 人
+* Open Issues数量：1595 个
+* Github地址：https://github.com/opensearch-project/OpenSearch.git
+* 项目首页: https://opensearch.org/docs/latest/opensearch/index/
 
 
-![](/images/goharbor-harbor-0.png)
+这个开源项目是一个分布式和RESTful搜索引擎。它旨在为搜索和索引大量数据提供可扩展和高效的解决方案。该项目欢迎贡献者，并提供资源、行为准则、安全信息，以及有关许可、版权和商标的详细信息。
 
-Harbor是一个开源的可信的云原生注册表项目，用于存储、签名和扫描内容。它通过添加安全性、身份验证和管理等功能，扩展了开源的Docker Distribution。它支持镜像在注册表之间的复制，并提供用户管理、访问控制和活动审计等高级安全功能。
+## Apache Beam：统一的批处理和流式数据处理模型
 
-## Valkey: 一个高性能数据结构服务器
-
-* 创建周期：8 天
-* 开发语言：C
-* 协议类型：BSD 3-Clause "New" or "Revised" License
-* Star数量：2775 个
-* Fork数量：81 次
-* 关注人数：2775 人
-* 贡献人数：386 人
-* Open Issues数量：55 个
-* Github地址：https://github.com/valkey-io/valkey.git
-* 项目首页: https://valkey.io
-
-
-Valkey是一个高性能数据结构服务器，从开源项目Redis分支而来。它支持各种原生结构和可扩展的插件系统，用于添加新的数据结构和访问模式。该项目正在建设中，重点是构建一个新的社区驱动的高性能键值存储。README提供了有关构建Valkey、修复依赖项或缓存构建选项的问题、选择内存分配器、配置单调时钟、运行Valkey、玩Valkey和安装Valkey的信息。
-
-## 基于Next.js和React.js的简单UI组件示例
-
-* 创建周期：490 天
-* 开发语言：HTML, CSS
-* Star数量：2552 个
-* Fork数量：494 次
-* 关注人数：2552 人
-* 贡献人数：3 人
-* Open Issues数量：3 个
-* Github地址：https://github.com/atherosai/ui.git
-* 项目首页: https://learning.atheros.ai
-
-
-该存储库包含基于Next.js和React.js的简单UI组件示例。它包括HTML/CSS/JS和React示例的安装说明，具体示例包括TikTok、Instagram、Youtube、Twitter、Linkedin和Threads。
-
-## Mini-Gemini: 挖掘多模态视觉语言模型潜力的官方实现
-
-* 创建周期：23 天
-* 开发语言：Python
+* 创建周期：2999 天
+* 开发语言：Java
 * 协议类型：Apache License 2.0
-* Star数量：1848 个
-* Fork数量：124 次
-* 关注人数：1848 人
-* 贡献人数：5 人
-* Open Issues数量：28 个
-* Github地址：https://github.com/dvlab-research/MiniGemini.git
-* 项目首页: https://mini-gemini.github.io/
+* Star数量：7501 个
+* Fork数量：4124 次
+* 关注人数：7501 人
+* 贡献人数：304 人
+* Open Issues数量：4368 个
+* Github地址：https://github.com/apache/beam.git
+* 项目首页: https://beam.apache.org/
 
 
-Mini-Gemini是项目“挖掘多模态视觉语言模型潜力”的官方实现。它支持一系列从2B到34B的密集和MoE大型语言模型（LLMs），具有图像理解、推理和生成能力，并基于LLaVA构建。
+Apache Beam是一种统一的编程模型，用于批处理和流式数据处理。它提供了一种定义批处理和流式数据并行处理管道的模型，以及用于构建管道的特定于语言的SDK和用于在分布式处理后端上执行它们的运行器，包括Apache Flink、Apache Spark、Google Cloud Dataflow和Hazelcast Jet。
 
-## Descent 3: 第一人称射击游戏
+## Apache HertzBeat（孵化中）- 实时监控系统
 
-* 创建周期：3 天
-* 开发语言：C++
-* Star数量：2227 个
-* Fork数量：159 次
-* 关注人数：2227 人
-* 贡献人数：14 人
-* Open Issues数量：18 个
-* Github地址：https://github.com/kevinbentley/Descent3.git
-
-
-![](/images/kevinbentley-descent3-0.png)
-
-Descent 3是由Outrage Entertainment开发的开源项目。这是一款第一人称射击游戏。
-
-## 整体系统、跨语言的性能分析器: 使用eBPF在Linux上的实现
-
-* 创建周期：3 天
-* 开发语言：Go
+* 创建周期：805 天
+* 开发语言：Java
 * 协议类型：Apache License 2.0
-* Star数量：574 个
-* Fork数量：31 次
-* 关注人数：574 人
-* 贡献人数：3 人
-* Open Issues数量：3 个
-* Github地址：https://github.com/elastic/otel-profiling-agent.git
+* Star数量：4681 个
+* Fork数量：806 次
+* 关注人数：4681 人
+* 贡献人数：177 人
+* Open Issues数量：209 个
+* Github地址：https://github.com/apache/hertzbeat.git
+* 项目首页: https://hertzbeat.apache.org/
 
 
-这个开源项目使用eBPF在Linux上实现了一个整体系统、跨语言的性能分析器。它作为一个捐赠代理给OpenTelemetry的过渡空间。
+![](/images/apache-hertzbeat-0.png)
 
-## ATAC：终端中的简单API客户端
+Apache HertzBeat（孵化中）是一个实时监控系统，具有无代理、性能集群、兼容Prometheus、自定义监控和状态页面构建功能。
 
-* 创建周期：74 天
-* 开发语言：Rust
-* 协议类型：MIT License
-* Star数量：650 个
-* Fork数量：17 次
-* 关注人数：650 人
-* 贡献人数：6 人
-* Open Issues数量：9 个
-* Github地址：https://github.com/Julien-cpsn/ATAC.git
-* 项目首页: https://github.com/Julien-cpsn/ATAC/wiki
+## OsmAnd（OSM自动导航方向）- 地图和导航应用程序
 
-
-ATAC是一个简单的API客户端，允许用户直接从终端发出API请求，类似于Postman。
-
-## Code Connect: 连接设计系统组件与Figma中的设计系统
-
-* 创建周期：7 天
-* 开发语言：TypeScript, Swift
-* 协议类型：MIT License
-* Star数量：274 个
-* Fork数量：16 次
-* 关注人数：274 人
-* 贡献人数：1 人
-* Open Issues数量：16 个
-* Github地址：https://github.com/figma/code-connect.git
+* 创建周期：4843 天
+* 开发语言：Java
+* 协议类型：Other
+* Star数量：4251 个
+* Fork数量：978 次
+* 关注人数：4251 人
+* 贡献人数：269 人
+* Open Issues数量：2755 个
+* Github地址：https://github.com/osmandapp/OsmAnd.git
+* 项目首页: https://osmand.net
 
 
-![](/images/figma-code-connect-0.png)
+OsmAnd（OSM自动导航方向）是一款地图和导航应用程序，可访问免费、全球范围内且高质量的OpenStreetMap（OSM）数据库。它提供离线功能，预加载地图数据，并通过GPS支持汽车、自行车和行人使用的路线规划，包括光学和语音引导。
 
-Code Connect是一种工具，用于在代码中连接设计系统组件与Figma中的设计系统。它提供了来自设计系统的真实生产代码片段，支持从代码到Figma的属性映射，并且易于设置、维护、类型安全和可扩展。它支持React、Storybook和SwiftUI。
+## Apache Paimon: 使用 Flink 和 Spark 构建实时湖屋架构
+
+* 创建周期：828 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：1866 个
+* Fork数量：758 次
+* 关注人数：1866 人
+* 贡献人数：139 人
+* Open Issues数量：380 个
+* Github地址：https://github.com/apache/paimon.git
+* 项目首页: https://paimon.apache.org/
+
+
+![](/images/apache-paimon-0.png)
+
+Apache Paimon 是一种开源的湖格式，可以使用 Flink 和 Spark 构建实时湖屋架构，用于流式和批处理操作。它结合了湖格式和 LSM 结构，将实时流式更新纳入湖架构中。曾被称为 Flink Table Store，是由 Flink 社区开发的，借鉴了 Iceberg 的设计概念，感谢 Apache Flink 和 Apache Iceberg。
 
