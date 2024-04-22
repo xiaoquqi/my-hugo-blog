@@ -1,32 +1,32 @@
 ---
-title: Github 2024-04-23 开源项目日报 Top10
-date: 2024-04-23T07:01:10+08:00
+title: Github 2024-04-23 Python开源项目日报 Top10
+date: 2024-04-23T07:10:59+08:00
 slug: github-trendings-today-20240423
 author: 老孙正经胡说
-image: /images/ollama-ollama-0.png
+image: /images/joaomdmoura-crewai-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 人
   - 人数
-  - 项目
+  - 人
+  - 和
   - 语言
+  - 项目
   - 模型
   - 开发
+  - 协议
   - 创建
   - 周期
-  - 协议
+  - 类型
   - 关注
   - 贡献
   - 地址
+  - 微调
   - 是
-  - 和
-  - 类型
-  - 标志
-  - C++
   - 大型
-  - 用户
+  - 提供
+  - 使用
 
 categories:
 
@@ -38,66 +38,39 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 4 |
-| TypeScript项目 | 1 |
-| 非开发语言项目 | 1 |
-| Svelte项目 | 1 |
-| Go项目 | 1 |
+| Python项目 | 10 |
 | JavaScript项目 | 1 |
 | C++项目 | 1 |
 
-## Ollama: 本地大型语言模型设置与运行
+## ComfyUI：强大而模块化的稳定扩散GUI
 
-* 创建周期：248 天
-* 开发语言：Go
-* 协议类型：MIT License
-* Star数量：42421 个
-* Fork数量：2724 次
-* 关注人数：42421 人
-* 贡献人数：138 人
-* Open Issues数量：709 个
-* Github地址：https://github.com/ollama/ollama.git
-* 项目首页: https://ollama.com
-
-
-![](/images/ollama-ollama-0.png)
-
-Ollama是一个开源项目，帮助用户在本地设置和利用诸如Llama 2、Mistral和Gemma等大型语言模型。
-
-## LLaMA模型的C/C++移植
-
-* 创建周期：306 天
-* 开发语言：C, C++
-* 协议类型：MIT License
-* Star数量：48490 个
-* Fork数量：6881 次
-* 关注人数：48490 人
-* 贡献人数：470 人
-* Open Issues数量：950 个
-* Github地址：https://github.com/ggerganov/llama.cpp.git
+* 创建周期：399 天
+* 开发语言：Python, JavaScript
+* 协议类型：GNU General Public License v3.0
+* Star数量：25663 个
+* Fork数量：2741 次
+* 关注人数：25663 人
+* 贡献人数：90 人
+* Open Issues数量：1263 个
+* Github地址：https://github.com/comfyanonymous/ComfyUI.git
 
 
-![](/images/ggerganov-llama.cpp-0.png)
+ComfyUI是一个开源项目，提供强大而模块化的稳定扩散图形用户界面（GUI）、API和后端，具有图/节点界面。它允许用户使用基于图/节点/流程图的界面设计和执行高级稳定扩散管道。
 
-该项目是将Facebook的LLaMA模型移植到C/C++，允许在纯C/C++中进行LLaMA模型的推断。
+## 简化大型语言模型微调的项目
 
-## Puter：先进的开源桌面环境
-
-* 创建周期：5 天
-* 开发语言：JavaScript
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：4855 个
-* Fork数量：194 次
-* 关注人数：4855 人
-* 贡献人数：7 人
-* Open Issues数量：22 个
-* Github地址：https://github.com/HeyPuter/puter.git
-* 项目首页: https://puter.com
+* 创建周期：331 天
+* 开发语言：Python
+* 协议类型：Apache License 2.0
+* Star数量：17269 个
+* Fork数量：2074 次
+* 关注人数：17269 人
+* 贡献人数：56 人
+* Open Issues数量：60 个
+* Github地址：https://github.com/hiyouga/LLaMA-Factory.git
 
 
-![](/images/heyputer-puter-0.png)
-
-Puter是一个先进的开源桌面环境，位于浏览器中，旨在功能丰富、速度异常快、高度可扩展。它可用于构建远程桌面环境，或作为云存储服务、远程服务器、Web托管平台等的界面。
+该项目旨在简化大型语言模型的微调过程，使其更加高效。它为Colab和本地机器提供了资源。
 
 ## Code Llama: 大型代码语言模型
 
@@ -113,22 +86,6 @@ Puter是一个先进的开源桌面环境，位于浏览器中，旨在功能丰
 
 
 Code Llama是一系列用于代码的大型语言模型，提供了最先进的性能、填充能力、对大型输入上下文的支持，以及编程任务的零射击指令跟随能力。这些模型涵盖了多种应用程序，包括基础模型、Python专业化模型和具有不同参数的指令跟随模型。它们是在16k标记序列上进行训练的，并且在最多100k标记的输入上显示出改进。Code Llama是通过使用更高采样的代码对Llama 2进行微调而开发的，并且对模型的微调版本应用了相当多的安全缓解措施。Code Llama的最新版本现在可供各种规模的个人、创作者、研究人员和企业使用，包括预训练和微调的Llama语言模型的模型权重和起始代码。
-
-## 开放式WebUI（前身为Ollama WebUI）
-
-* 创建周期：147 天
-* 开发语言：Svelte
-* 协议类型：MIT License
-* Star数量：7242 个
-* Fork数量：641 次
-* 关注人数：7242 人
-* 贡献人数：59 人
-* Open Issues数量：67 个
-* Github地址：https://github.com/open-webui/open-webui.git
-* 项目首页: https://openwebui.com
-
-
-开放式WebUI（前身为Ollama WebUI）是一个用户友好的界面，支持LLM运行器，如Ollama和兼容OpenAI的API。
 
 ## Meta Llama 3 模型权重和分词器下载
 
@@ -163,33 +120,73 @@ Meta Llama 3 GitHub 网站提供模型权重和分词器的下载。用户需要
 
 CrewAI是一个先进的框架，用于编排角色扮演的自主AI代理，促进协作智能，使代理能够在复杂任务上无缝合作。
 
-## 娱乐目的制作的高质量PNG标志集
+## 快速调优Mistral、Gemma和Llama
 
-* 创建周期：5 天
+* 创建周期：110 天
+* 开发语言：Python
+* 协议类型：Apache License 2.0
+* Star数量：4492 个
+* Fork数量：206 次
+* 关注人数：4492 人
+* 贡献人数：5 人
+* Open Issues数量：89 个
+* Github地址：https://github.com/unslothai/unsloth.git
+* 项目首页: https://unsloth.ai
+
+
+![](/images/unslothai-unsloth-0.png)
+
+这个开源项目旨在以70%更少的内存使用量，将Mistral、Gemma和Llama的微调速度提高2-5倍。
+
+## 使用函数调用构建AI助手的工具包
+
+* 创建周期：650 天
+* 开发语言：Python
+* 协议类型：Mozilla Public License 2.0
+* Star数量：1796 个
+* Fork数量：195 次
+* 关注人数：1796 人
+* 贡献人数：12 人
+* Open Issues数量：14 个
+* Github地址：https://github.com/phidatahq/phidata.git
+* 项目首页: https://docs.phidata.com
+
+
+![](/images/phidatahq-phidata-0.png)
+
+Phidata是一个使用函数调用构建AI助手的工具包。函数调用使LLMs能够通过调用函数并根据响应智能地选择下一步，就像人类解决问题一样。
+
+## 紫队评估工具 - Purple Llama
+
+* 创建周期：136 天
+* 开发语言：Python, C++
 * 协议类型：Other
-* Star数量：2171 个
-* Fork数量：106 次
-* 关注人数：2171 人
-* 贡献人数：2 人
-* Open Issues数量：94 个
-* Github地址：https://github.com/Aikoyori/ProgrammingVTuberLogos.git
+* Star数量：815 个
+* Fork数量：157 次
+* 关注人数：815 人
+* 贡献人数：15 人
+* Open Issues数量：6 个
+* Github地址：https://github.com/meta-llama/PurpleLlama.git
 
 
-这是一个为了娱乐目的制作的一组高质量PNG标志，可供非商业使用。需要注意的是这些标志并非官方标志，建议用户在索取之前检查是否有其他人已经要求了相同的标志。还有类似的项目可用，如@G2-Games的“有趣的标志”，@PetricaT的“ProgrammingVTuberLogos Addon”，@lDMDiamondl的“ProgrammingVTuberLogos 韩国版”，Manhkbrady在Behance上的“为Visual Studio制作的ProgrammingVTuberLogos”（由@hvpexe存储库提供），以及sawaratsuki1004在Twitter上的“透明标志”。
+Purple Llama是一套旨在评估和增强LLM安全性的工具。该项目借鉴了来自网络安全领域的“紫队”概念，强调了需要同时采取进攻性（红队）和防御性（蓝队）策略来解决生成式人工智能带来的挑战。这种协作方法旨在全面评估和减轻潜在风险。
 
-## 多人国际象棋平台
+## VLM工具包：大型语言模型微调的高效、灵活和功能齐全的工具包
 
-* 创建周期：8 天
-* 开发语言：TypeScript
-* Star数量：347 个
-* Fork数量：179 次
-* 关注人数：347 人
-* 贡献人数：11 人
-* Open Issues数量：54 个
-* Github地址：https://github.com/code100x/chess.git
+* 创建周期：287 天
+* 开发语言：Python
+* 协议类型：Apache License 2.0
+* Star数量：1733 个
+* Fork数量：142 次
+* 关注人数：1733 人
+* 贡献人数：23 人
+* Open Issues数量：62 个
+* Github地址：https://github.com/InternLM/xtuner.git
 
 
-正在开发一个多人国际象棋平台，允许用户注册、创建或加入比赛，在比赛过程中下棋，并实施类似标准国际象棋评级的评级系统。
+![](/images/internlm-xtuner-0.png)
+
+VLM工具包是一个开源项目，为InternLM、Llama、Baichuan、Qwen和ChatGLM等大型语言模型提供了高效、灵活和功能齐全的微调工具包。它支持各种模型和功能，包括用于高效可扩展训练的序列并行支持、多模态预训练和微调，以及针对系统上下文的优化数据处理。
 
 ## 考试中心随机分配脚本
 
