@@ -1,32 +1,32 @@
 ---
-title: Github 2024-04-24 开源项目日报 Top10
-date: 2024-04-24T07:01:28+08:00
+title: Github 2024-04-24 C开源项目日报 Top9
+date: 2024-04-24T07:11:09+08:00
 slug: github-trendings-today-20240424
 author: 老孙正经胡说
-image: /images/ggerganov-llama.cpp-0.png
+image: /images/lvgl-lvgl-0.png
 tags:
   - github
   - trendings
   - 数量
   - 人数
   - 人
-  - 项目
-  - 语言
-  - 开发
   - 和
-  - 模型
+  - 项目
+  - 开发
+  - 语言
+  - 是
   - 创建
   - 周期
   - 关注
   - 贡献
   - 地址
+  - 工具
+  - 用于
   - 协议
-  - 中文
   - 类型
-  - C++
-  - 是
-  - 允许
-  - 构建
+  - 支持
+  - 内核
+  - 开源
 
 categories:
 
@@ -34,170 +34,150 @@ draft: false
 ---
 
 
-根据Github Trendings的统计，今日(2024-04-24统计)共有10个项目上榜。根据开发语言中项目的数量，汇总情况如下：
+根据Github Trendings的统计，今日(2024-04-24统计)共有9个项目上榜。根据开发语言中项目的数量，汇总情况如下：
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 5 |
-| TypeScript项目 | 3 |
-| PowerShell项目 | 1 |
+| C项目 | 9 |
 | C++项目 | 1 |
-| 非开发语言项目 | 1 |
 
-## LLaMA模型的C/C++移植
+## 我的电视 - 安卓电视直播软件
 
-* 创建周期：306 天
-* 开发语言：C, C++
-* 协议类型：MIT License
-* Star数量：48490 个
-* Fork数量：6881 次
-* 关注人数：48490 人
-* 贡献人数：470 人
-* Open Issues数量：950 个
-* Github地址：https://github.com/ggerganov/llama.cpp.git
-
-
-![](/images/ggerganov-llama.cpp-0.png)
-
-该项目是将Facebook的LLaMA模型移植到C/C++，允许在纯C/C++中进行LLaMA模型的推断。
-
-## Dify.AI: 开源的LLM应用程序开发平台
-
-* 创建周期：299 天
-* 开发语言：Python, TypeScript
-* 协议类型：Other
-* Star数量：14984 个
-* Fork数量：2007 次
-* 关注人数：14984 人
-* 贡献人数：79 人
-* Open Issues数量：52 个
-* Github地址：https://github.com/langgenius/dify.git
-* 项目首页: https://dify.ai
-
-
-![](/images/langgenius-dify-0.png)
-
-Dify.AI是一个开源的LLM应用程序开发平台，集成了后端作为服务和LLMOps。它涵盖了构建生成式AI原生应用所需的核心技术栈，包括内置的RAG引擎。Dify已经帮助构建了超过10万个应用程序，并允许用户基于任何LLMs部署自己的助手API和GPTs版本。
-
-## 简化大型语言模型微调的项目
-
-* 创建周期：331 天
-* 开发语言：Python
-* 协议类型：Apache License 2.0
-* Star数量：17269 个
-* Fork数量：2074 次
-* 关注人数：17269 人
-* 贡献人数：56 人
-* Open Issues数量：60 个
-* Github地址：https://github.com/hiyouga/LLaMA-Factory.git
-
-
-该项目旨在简化大型语言模型的微调过程，使其更加高效。它为Colab和本地机器提供了资源。
-
-## Meta Llama 3 模型权重和分词器下载
-
-* 创建周期：37 天
-* 开发语言：Python
-* 协议类型：Other
-* Star数量：7323 个
-* Fork数量：506 次
-* 关注人数：7323 人
-* 贡献人数：19 人
-* Open Issues数量：40 个
-* Github地址：https://github.com/meta-llama/llama3.git
-
-
-Meta Llama 3 GitHub 网站提供模型权重和分词器的下载。用户需要访问 Meta Llama 网站，接受许可协议，然后通过电子邮件收到一个签名的 URL，使用提供的脚本开始下载。先决条件包括安装 wget 和 md5sum。链接在 24 小时后过期，并且有下载限制，但如果用户遇到 '403: Forbidden' 等错误，可以重新请求链接。
-
-## 社区驱动的现代化Salesforce替代方案
-
-* 创建周期：403 天
-* 开发语言：TypeScript
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：7589 个
-* Fork数量：608 次
-* 关注人数：7589 人
-* 贡献人数：128 人
-* Open Issues数量：223 个
-* Github地址：https://github.com/twentyhq/twenty.git
-* 项目首页: https://twenty.com
-
-
-该项目旨在创建一个现代化的Salesforce替代方案，侧重于社区驱动的开发。它允许用户添加、过滤、排序、编辑和跟踪客户。
-
-## Llama中文社区：Llama3在线体验和微调模型开放
-
-* 创建周期：280 天
-* 开发语言：Python
-* Star数量：10001 个
-* Fork数量：921 次
-* 关注人数：10001 人
-* 贡献人数：14 人
-* Open Issues数量：161 个
-* Github地址：https://github.com/LlamaFamily/Llama-Chinese.git
-* 项目首页: https://llama.family
-
-
-Llama中文社区开放了Llama3在线体验和微调模型，实时更新最新的Llama3学习资料，并提供完全开源可商用的中文Llama大模型。
-
-## 中文大语言模型开源项目
-
-* 创建周期：338 天
-* Star数量：9206 个
-* Fork数量：818 次
-* 关注人数：9206 人
-* 贡献人数：19 人
-* Open Issues数量：0 个
-* Github地址：https://github.com/HqWu-HITCS/Awesome-Chinese-LLM.git
-
-
-This project aims to collect and organize open source models, applications, datasets, and tutorials related to Chinese large language models (LLM), including base models, vertical domain fine-tuning, and applications. The number of resources already collected has reached 100+. The focus is on smaller-scale models that can be privately deployed with lower training costs.
-
-## Tiny11 builder: 构建定制和精简的Windows 11镜像
-
-* 创建周期：425 天
-* 开发语言：PowerShell
-* Star数量：4464 个
-* Fork数量：420 次
-* 关注人数：4464 人
-* 贡献人数：4 人
-* Open Issues数量：100 个
-* Github地址：https://github.com/ntdevlabs/tiny11builder.git
-
-
-Tiny11 builder是一组PowerShell脚本，旨在构建定制和精简的Windows 11镜像。它允许用户使用任何Windows 11版本、语言或架构，并旨在仅使用Microsoft实用程序（如DISM）进行构建过程。脚本还包括一个无人值守答案文件，用于在部署过程中绕过Microsoft账户设置。
-
-## Llama3 中文仓库
-
-* 创建周期：6 天
-* 开发语言：Python
-* Star数量：1027 个
-* Fork数量：97 次
-* 关注人数：1027 人
-* 贡献人数：2 人
-* Open Issues数量：12 个
-* Github地址：https://github.com/CrazyBoyM/llama3-Chinese-chat.git
-* 项目首页: https://huggingface.co/shareAI
-
-
-![](/images/crazyboym-llama3-chinese-chat-0.png)
-
-Llama3 中文仓库是一个聚合各种网友和厂商微调、魔改版本的有趣权重、训练、推理、部署教程视频和文档的项目。该仓库旨在提供中文学习内容，并欢迎任何人加入共建。
-
-## LLM Scraper：使用LLMs将网页转换为结构化数据的TypeScript库
-
-* 创建周期：4 天
-* 开发语言：TypeScript
-* 协议类型：MIT License
-* Star数量：637 个
-* Fork数量：40 次
-* 关注人数：637 人
+* 创建周期：40 天
+* 开发语言：C
+* Star数量：649 个
+* Fork数量：124 次
+* 关注人数：649 人
 * 贡献人数：1 人
-* Open Issues数量：8 个
-* Github地址：https://github.com/mishushakov/llm-scraper.git
+* Open Issues数量：23 个
+* Github地址：https://github.com/lizongying/my-tv.git
 
 
-![](/images/mishushakov-llm-scraper-0.png)
+我的电视是一个开源的安卓电视直播应用，内置了直播源。
 
-LLM Scraper是一个TypeScript库，它允许通过函数调用将网页转换为结构化数据。
+## LVGL：开源嵌入式图形库
+
+* 创建周期：2814 天
+* 开发语言：C
+* 协议类型：MIT License
+* Star数量：14414 个
+* Fork数量：2892 次
+* 关注人数：14414 人
+* 贡献人数：386 人
+* Open Issues数量：105 个
+* Github地址：https://github.com/lvgl/lvgl.git
+* 项目首页: https://lvgl.io
+
+
+![](/images/lvgl-lvgl-0.png)
+
+LVGL是一种流行的开源嵌入式图形库，得到Arm、STM32、NXP等行业领先供应商和项目的支持。它提供了一个功能丰富的环境，用于创建现代和美观的图形用户界面，集成所需的资源最少。此外，LVGL团队为GUI项目提供图形设计、UI实现和咨询服务。
+
+## Audacity: 多轨音频编辑器和录音工具
+
+* 创建周期：3226 天
+* 开发语言：C, C++
+* 协议类型：Other
+* Star数量：10757 个
+* Fork数量：2149 次
+* 关注人数：10757 人
+* 贡献人数：197 人
+* Open Issues数量：1055 个
+* Github地址：https://github.com/audacity/audacity.git
+* 项目首页: https://wiki.audacityteam.org/wiki/For_Developers
+
+
+Audacity是一款易于使用的多轨音频编辑器和录音工具，可在各种操作系统上使用。它支持从真实或虚拟音频设备录制，支持导入/导出各种音频格式，具有高质量的32位浮点音频处理，插件支持，批处理宏，多轨编辑，可访问性功能以及分析/可视化工具。
+
+## go-sqlite3: 用于Go的sqlite3驱动程序
+
+* 创建周期：4548 天
+* 开发语言：C
+* 协议类型：MIT License
+* Star数量：7443 个
+* Fork数量：1073 次
+* 关注人数：7443 人
+* 贡献人数：169 人
+* Open Issues数量：141 个
+* Github地址：https://github.com/mattn/go-sqlite3.git
+* 项目首页: http://mattn.github.io/go-sqlite3
+
+
+go-sqlite3是一个用于Go的sqlite3驱动程序，符合database/sql接口。它支持最新的稳定版本v1.14或更高版本，而不是v2，这是由于意外增加而没有进行重大更改或功能。该软件包遵循官方的Golang发布政策。
+
+## RISC-V GNU编译器工具链
+
+* 创建周期：3516 天
+* 开发语言：C
+* 协议类型：Other
+* Star数量：3121 个
+* Fork数量：1073 次
+* 关注人数：3121 人
+* 贡献人数：69 人
+* Open Issues数量：23 个
+* Github地址：https://github.com/riscv-collab/riscv-gnu-toolchain.git
+
+
+RISC-V GNU编译器工具链是一种C和C++交叉编译器，支持两种构建模式：通用ELF/Newlib工具链和更复杂的Linux-ELF/glibc工具链。
+
+## Apache NuttX: 一个成熟的、实时的嵌入式操作系统
+
+* 创建周期：1502 天
+* 开发语言：C
+* 协议类型：Apache License 2.0
+* Star数量：2191 个
+* Fork数量：942 次
+* 关注人数：2191 人
+* 贡献人数：298 人
+* Open Issues数量：441 个
+* Github地址：https://github.com/apache/nuttx.git
+* 项目首页: https://nuttx.apache.org/
+
+
+Apache NuttX是一个成熟的、实时的嵌入式操作系统（RTOS），其重点是符合标准和占用空间小。它可以在8位到64位微控制器环境中实现可伸缩性，主要遵循POSIX和ANSI标准，并采用其他常见RTOS的标准API，以满足这些标准未涵盖的功能。
+
+## Open MPI：高性能计算社区的最佳MPI库
+
+* 创建周期：3508 天
+* 开发语言：C
+* 协议类型：Other
+* Star数量：2011 个
+* Fork数量：837 次
+* 关注人数：2011 人
+* 贡献人数：267 人
+* Open Issues数量：759 个
+* Github地址：https://github.com/open-mpi/ompi.git
+* 项目首页: https://www.open-mpi.org
+
+
+Open MPI是由学术、研究和工业合作伙伴联合开发和维护的消息传递接口(MPI)规范的开源实现。它整合了高性能计算社区的专业知识、技术和资源，以构建最佳的MPI库，为系统和软件供应商、应用程序开发人员和计算机科学研究人员提供了优势。
+
+## Libbpf：多内核版本兼容的开源库
+
+* 创建周期：2023 天
+* 开发语言：C
+* 协议类型：Other
+* Star数量：1939 个
+* Fork数量：389 次
+* 关注人数：1939 人
+* 贡献人数：191 人
+* Open Issues数量：24 个
+* Github地址：https://github.com/libbpf/libbpf.git
+
+
+Libbpf是作为bpf-next Linux源代码树的一部分开发的开源库，定期与Github同步。它提供了用于构建BPF应用程序的文档和工具，支持BPF CO-RE启用的应用程序，并由各种发行版打包。该库旨在与多个内核版本兼容，具有持续集成测试和静态代码分析。
+
+## Lunatik：用Lua脚本化Linux内核的框架
+
+* 创建周期：2188 天
+* 开发语言：C
+* Star数量：408 个
+* Fork数量：22 次
+* 关注人数：408 人
+* 贡献人数：14 人
+* Open Issues数量：30 个
+* Github地址：https://github.com/luainkernel/lunatik.git
+
+
+Lunatik是一个使用Lua脚本化Linux内核的框架。它包括一个修改后的Lua解释器，用于在内核中运行；一个用Lua编写的设备驱动程序；一个命令行工具，用于加载和运行脚本以及从用户空间管理运行时环境；一个用于从内核加载和运行脚本以及管理运行时环境的C API；以及用于将内核功能绑定到Lua脚本的Lua API。
 
