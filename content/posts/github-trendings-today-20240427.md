@@ -1,32 +1,32 @@
 ---
-title: Github 2024-04-27 开源项目日报 Top9
-date: 2024-04-27T07:00:59+08:00
+title: Github 2024-04-27 Rust开源项目日报 Top10
+date: 2024-04-27T07:11:11+08:00
 slug: github-trendings-today-20240427
 author: 老孙正经胡说
-image: /images/hpcaitech-open-sora-0.png
+image: /images/rust-lang-rust-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 和
-  - 人数
   - 人
   - 项目
+  - 人数
+  - 和
   - 开发
   - 语言
-  - 协议
   - 创建
-  - 关注
-  - 周期
+  - 协议
   - 贡献
+  - 周期
+  - 关注
   - 地址
   - 是
+  - 编写
+  - 提供
+  - 开源
   - 类型
-  - 模型
-  - 构建
-  - 用户
-  - 代理
-  - 并
+  - 支持
+  - 使用
 
 categories:
 
@@ -34,152 +34,171 @@ draft: false
 ---
 
 
-根据Github Trendings的统计，今日(2024-04-27统计)共有9个项目上榜。根据开发语言中项目的数量，汇总情况如下：
+根据Github Trendings的统计，今日(2024-04-27统计)共有10个项目上榜。根据开发语言中项目的数量，汇总情况如下：
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 6 |
-| TypeScript项目 | 2 |
-| C++项目 | 1 |
-| JavaScript项目 | 1 |
+| Rust项目 | 10 |
+| Dart项目 | 1 |
+| Go项目 | 1 |
 
-## Open-Sora: 构建自己的视频生成模型
+## Rust: 构建可靠高效软件的开源项目
 
-* 创建周期：17 天
-* 开发语言：Python
-* 协议类型：Apache License 2.0
-* Star数量：1151 个
-* Fork数量：96 次
-* 关注人数：1151 人
-* 贡献人数：6 人
-* Open Issues数量：10 个
-* Github地址：https://github.com/hpcaitech/Open-Sora.git
-
-
-![](/images/hpcaitech-open-sora-0.png)
-
-Open-Sora是一个开源项目，允许用户构建类似于OpenAI的Sora的自己的视频生成模型。它提供了创建自定义视频生成模型所需的工具和资源。
-
-## Llamafile: 使开放的LLM更易访问
-
-* 创建周期：206 天
-* 开发语言：C++
+* 创建周期：5064 天
+* 开发语言：Rust
 * 协议类型：Other
-* Star数量：11635 个
-* Fork数量：547 次
-* 关注人数：11635 人
-* 贡献人数：28 人
-* Open Issues数量：55 个
-* Github地址：https://github.com/Mozilla-Ocho/llamafile.git
-* 项目首页: https://llamafile.ai
+* Star数量：92978 个
+* Fork数量：12000 次
+* 关注人数：92978 人
+* 贡献人数：442 人
+* Open Issues数量：9775 个
+* Github地址：https://github.com/rust-lang/rust.git
+* 项目首页: https://www.rust-lang.org
 
 
-Llamafile是一个框架，旨在通过将llama.cpp与Cosmopolitan Libc结合成一个名为'llamafile'的单文件可执行文件，使开放的LLM对开发人员和最终用户更加易于访问，无需安装即可在大多数计算机上本地运行。
+![](/images/rust-lang-rust-0.png)
 
-## ChatGPT API免费反向代理
+Rust 是一个旨在赋予每个人构建可靠高效软件能力的开源项目。主要源代码库包含编译器、标准库和文档。
 
-* 创建周期：491 天
-* 开发语言：TypeScript
+## RustDesk: 用Rust编写的开源远程桌面软件
+
+* 创建周期：1218 天
+* 开发语言：Rust, Dart
 * 协议类型：GNU Affero General Public License v3.0
-* Star数量：2909 个
-* Fork数量：485 次
-* 关注人数：2909 人
-* 贡献人数：7 人
-* Open Issues数量：7 个
-* Github地址：https://github.com/PawanOsman/ChatGPT.git
-* 项目首页: https://chat.pawan.krd
+* Star数量：58141 个
+* Fork数量：6255 次
+* 关注人数：58141 人
+* 贡献人数：230 人
+* Open Issues数量：49 个
+* Github地址：https://github.com/rustdesk/rustdesk.git
+* 项目首页: https://rustdesk.com
 
 
-ChatGPT API免费反向代理项目提供了一个免费的资源，允许无缝访问OpenAI的API。它镜像了官方的OpenAI API端点，使用户可以在没有直接成本的情况下利用OpenAI的功能。用户可以深入文档中了解如何设置他们的反向代理，或者连接托管服务以获得更顺畅的体验。
+![](/images/rustdesk-rustdesk-0.png)
 
-## CoreNet: 用于训练深度神经网络的工具包
+RustDesk是一款用Rust编写的开源远程桌面软件，可作为TeamViewer的替代品。它可以直接使用，无需配置，提供完全的数据控制和安全性。用户可以使用提供的会合/中继服务器，自行设置，或编写自己的服务器。该项目欢迎所有人的贡献，并提供常见问题解答、二进制下载和每夜构建。
 
-* 创建周期：9 天
-* 开发语言：Python
+## Lapce：用 Rust 编写的极快且强大的代码编辑器
+
+* 创建周期：2181 天
+* 开发语言：Rust
+* 协议类型：Apache License 2.0
+* Star数量：30314 个
+* Fork数量：892 次
+* 关注人数：30314 人
+* 贡献人数：155 人
+* Open Issues数量：705 个
+* Github地址：https://github.com/lapce/lapce.git
+* 项目首页: http://lapce.dev
+
+
+![](/images/lapce-lapce-0.png)
+
+Lapce 是一个用 Rust 编写的极快且强大的代码编辑器，具有内置的 LSP 支持、模态编辑、远程开发支持、支持以编译为 WASI 格式的语言编写插件，以及内置终端。
+
+## SurrealDB：现代应用程序的可扩展、分布式、协作数据库
+
+* 创建周期：870 天
+* 开发语言：Rust
 * 协议类型：Other
-* Star数量：2893 个
-* Fork数量：132 次
-* 关注人数：2893 人
-* 贡献人数：1 人
-* Open Issues数量：10 个
-* Github地址：https://github.com/apple/corenet.git
+* Star数量：25228 个
+* Fork数量：777 次
+* 关注人数：25228 人
+* 贡献人数：101 人
+* Open Issues数量：566 个
+* Github地址：https://github.com/surrealdb/surrealdb.git
+* 项目首页: https://surrealdb.com
 
 
-CoreNet是一个深度神经网络工具包，可以让研究人员和工程师训练标准和新颖的各种规模模型，包括基础模型，物体分类，物体检测和语义分割。
+SurrealDB是一个可扩展的、分布式的、协作的、文档-图形数据库，专为现代应用程序设计。它简化了数据库和API基础设施，减少了开发时间，并实现了实时协作。其关键特点包括减少开发时间、实时协作API后端服务、支持多种查询语言、细粒度访问控制等。
 
-## Schnorr协议的改进实现：零知识证明和HMAC的集成
+## 快速最先进的标记工具
 
-* 创建周期：24 天
-* 开发语言：JavaScript
+* 创建周期：1639 天
+* 开发语言：Rust
+* 协议类型：Apache License 2.0
+* Star数量：8419 个
+* Fork数量：724 次
+* 关注人数：8419 人
+* 贡献人数：83 人
+* Open Issues数量：97 个
+* Github地址：https://github.com/huggingface/tokenizers.git
+* 项目首页: https://huggingface.co/docs/tokenizers
+
+
+该项目是一个针对研究和生产优化的快速最先进的标记工具的开源工具。它具有训练新词汇和使用流行的标记工具进行标记的功能，处理速度极快，易于使用，多功能性和带有对齐跟踪的标准化。
+
+## Yazi - 快速终端文件管理器
+
+* 创建周期：210 天
+* 开发语言：Rust
 * 协议类型：MIT License
-* Star数量：1286 个
-* Fork数量：350 次
-* 关注人数：1286 人
-* 贡献人数：3 人
-* Open Issues数量：1 个
-* Github地址：https://github.com/zk-Call/zkp-hmac-communication-js.git
-* 项目首页: https://zkcall.net
+* Star数量：5668 个
+* Fork数量：122 次
+* 关注人数：5668 人
+* 贡献人数：39 人
+* Open Issues数量：25 个
+* Github地址：https://github.com/sxyazi/yazi.git
+* 项目首页: https://yazi-rs.github.io
 
 
-这个开源项目是Schnorr协议的一个改进实现，结合了状态种子以增强安全措施。它深入探讨了“零知识”证明（ZKPs）和基于哈希的消息认证码（HMACs）的概念。ZKPs允许一方向另一方证明给定的陈述是真实的，而不泄露额外的信息，而HMACs用于消息认证，确保数据完整性和消息真实性。该项目旨在革新认证安全性，并提供了一个专门用于验证基于文本的秘密的非交互式零知识证明（NIZKP）协议，并集成了HMAC以增强数据完整性和安全措施。
+Yazi是一个使用Rust编写的快速终端文件管理器，基于非阻塞异步I/O。它旨在提供高效、用户友好且可定制的文件管理体验。它具有完整的异步支持、强大的异步任务调度和管理、内置对多种图像协议的支持、代码高亮和图像解码、并发插件系统、与各种工具的集成、多标签支持、批量重命名、可视模式、文件选择器、主题系统、自定义布局等功能。
 
-## Cohere Toolkit: 轻松构建和部署RAG应用程序
+## Kata Containers: 轻量级虚拟机与容器性能的安全性优势
 
-* 创建周期：8 天
-* 开发语言：TypeScript, Python
-* 协议类型：MIT License
-* Star数量：1154 个
-* Fork数量：101 次
-* 关注人数：1154 人
-* 贡献人数：11 人
-* Open Issues数量：20 个
-* Github地址：https://github.com/cohere-ai/cohere-toolkit.git
-
-
-Cohere Toolkit是一个预先构建的组件集合，让用户能够轻松地构建和部署RAG应用程序。
-
-## TagStudio：用户关注的文档管理系统
-
-* 创建周期：9 天
-* 开发语言：Python
-* 协议类型：GNU General Public License v3.0
-* Star数量：710 个
-* Fork数量：57 次
-* 关注人数：710 人
-* 贡献人数：9 人
-* Open Issues数量：29 个
-* Github地址：https://github.com/CyanVoxel/TagStudio.git
+* 创建周期：2235 天
+* 开发语言：Rust, Go
+* 协议类型：Apache License 2.0
+* Star数量：4572 个
+* Fork数量：1047 次
+* 关注人数：4572 人
+* 贡献人数：310 人
+* Open Issues数量：1375 个
+* Github地址：https://github.com/kata-containers/kata-containers.git
 
 
-TagStudio是一个开源的文件和照片管理应用程序和系统，旨在为用户提供自由和灵活性。尽管可能存在错误和重大更改，但它仍处于早期阶段，并向贡献者开放。
+Kata Containers 是一个旨在创建轻量级虚拟机（VMs）的开源项目，旨在提供容器的性能同时提供虚拟机的安全性优势。
 
-## Maestro - 用Opus和Haiku智能分解和执行子代理的框架
+## reth: 以太坊协议的Rust实现
 
-* 创建周期：39 天
-* 开发语言：Python
-* Star数量：867 个
-* Fork数量：118 次
-* 关注人数：867 人
-* 贡献人数：5 人
-* Open Issues数量：11 个
-* Github地址：https://github.com/Doriandarko/maestro.git
+* 创建周期：590 天
+* 开发语言：Rust
+* 协议类型：Apache License 2.0
+* Star数量：3188 个
+* Fork数量：773 次
+* 关注人数：3188 人
+* 贡献人数：263 人
+* Open Issues数量：299 个
+* Github地址：https://github.com/paradigmxyz/reth.git
 
 
-Maestro是一个Python脚本，演示了使用Anthropic API进行AI辅助任务分解和执行工作流程。它利用了两个AI模型，Opus和Haiku，将一个目标分解成子任务，执行每个子任务，并将结果细化为一个连贯的最终输出。
+reth是一个开源项目，提供了使用Rust的以太坊协议的模块化、友好的贡献者和高速实现。这是一个正在进行中的项目，为用户和开发人员提供安装指南。
 
-## Llama-3-8B-Web：基于Llama 3的高级网络导航代理
+## 简化的Rust模式
 
-* 创建周期：8 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：800 个
-* Fork数量：51 次
-* 关注人数：800 人
+* 创建周期：580 天
+* 开发语言：Rust
+* Star数量：873 个
+* Fork数量：23 次
+* 关注人数：873 人
 * 贡献人数：2 人
-* Open Issues数量：3 个
-* Github地址：https://github.com/McGill-NLP/webllama.git
-* 项目首页: https://webllama.github.io
+* Open Issues数量：0 个
+* Github地址：https://github.com/alexpusch/rust-magic-patterns.git
 
 
-Llama-3-8B-Web是一个使用Llama 3构建的高级代理，用于进行带有对话的网络导航。它可以从Hugging Face模型中心下载，并在WebLINX上比GPT-4V高出18%。
+这个开源项目旨在以更易理解的方式简化和展示Rust模式，提供学习和参考的示例。
+
+## XELIS: Rust编写的私有区块链
+
+* 创建周期：1038 天
+* 开发语言：Rust
+* Star数量：149 个
+* Fork数量：22 次
+* 关注人数：149 人
+* 贡献人数：3 人
+* Open Issues数量：10 个
+* Github地址：https://github.com/xelis-project/xelis-blockchain.git
+
+
+XELIS是一个使用Rust编写并由Tokio驱动的私有区块链，采用账户模型和事件驱动系统。它利用BlockDAG来增强可扩展性和安全性，并采用ElGamal的同态加密来确保交易隐私和余额保密。该系统还具有修剪机制，并计划未来支持智能合约。
 
