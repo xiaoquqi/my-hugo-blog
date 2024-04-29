@@ -1,32 +1,32 @@
 ---
-title: Github 2024-04-30 开源项目日报 Top9
-date: 2024-04-30T07:00:57+08:00
+title: Github 2024-04-30 Python开源项目日报 Top10
+date: 2024-04-30T07:11:03+08:00
 slug: github-trendings-today-20240430
 author: 老孙正经胡说
-image: None
+image: /images/lc044-wechatmsg-0.png
 tags:
   - github
   - trendings
   - 数量
   - 人数
   - 人
-  - 和
   - 项目
   - 开发
   - 语言
   - 创建
+  - 贡献
   - 周期
   - 关注
-  - 贡献
   - 地址
   - 是
-  - 并
   - 协议
   - 类型
+  - 和
+  - 开源
+  - 旨在
+  - 生成
   - 模型
-  - 实现
-  - 性能
-  - 中
+  - 训练
 
 categories:
 
@@ -34,32 +34,44 @@ draft: false
 ---
 
 
-根据Github Trendings的统计，今日(2024-04-30统计)共有9个项目上榜。根据开发语言中项目的数量，汇总情况如下：
+根据Github Trendings的统计，今日(2024-04-30统计)共有10个项目上榜。根据开发语言中项目的数量，汇总情况如下：
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 5 |
-| Vue项目 | 1 |
-| Assembly项目 | 1 |
-| JavaScript项目 | 1 |
-| SystemVerilog项目 | 1 |
-| Rust项目 | 1 |
+| Python项目 | 10 |
+| TypeScript项目 | 1 |
 
-## MS-DOS v1.25, v2.0, v4.00 源代码存储库
+## 稳定扩散Web UI
 
-* 创建周期：2134 天
-* 开发语言：Assembly
-* 协议类型：MIT License
-* Star数量：24102 个
-* Fork数量：3276 次
-* 关注人数：24102 人
-* 贡献人数：36 人
-* Open Issues数量：3 个
-* Github地址：https://github.com/microsoft/MS-DOS.git
-* 项目首页: https://en.wikipedia.org/wiki/MS-DOS
+* 创建周期：512 天
+* 开发语言：Python
+* 协议类型：GNU Affero General Public License v3.0
+* Star数量：117672 个
+* Fork数量：23480 次
+* 关注人数：117672 人
+* 贡献人数：430 人
+* Open Issues数量：1812 个
+* Github地址：https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
 
 
-该存储库包含了IBM和微软联合开发的MS-DOS v1.25、v2.0和v4.00的原始源代码和编译后的二进制文件。这些文件供历史参考，并根据MIT许可证发布。强调了这些源文件仅供历史参考，不应进行修改，但鼓励用户分叉存储库并进行实验。
+稳定扩散Web UI是基于Gradio库的浏览器界面，用于稳定扩散。
+
+## 微信聊天记录导出与分析工具
+
+* 创建周期：475 天
+* 开发语言：Python
+* 协议类型：GNU General Public License v3.0
+* Star数量：26401 个
+* Fork数量：2729 次
+* 关注人数：26401 人
+* 贡献人数：15 人
+* Open Issues数量：52 个
+* Github地址：https://github.com/LC044/WeChatMsg.git
+
+
+![](/images/lc044-wechatmsg-0.png)
+
+该开源项目旨在提取微信聊天记录并将其导出成HTML、Word、CSV文档永久保存，同时对聊天记录进行分析生成年度聊天报告。项目功能包括从Windows本地微信数据库中还原聊天界面，文本、图片、拍一拍等系统消息的导出，以及批量导出数据、联系人等功能。未来的开发计划包括群组年度报告、情感分析、一键导出全部表情包、文件、图片、视频、语音等功能。
 
 ## MyShell: 即时语音克隆和开发者社区
 
@@ -77,21 +89,37 @@ draft: false
 
 MyShell通过开源技术提供即时语音克隆。加入他们的Discord社区，获取开发者专属讨论和合作机会。
 
-## DrawDB - 免费在线数据库设计工具和SQL生成器
+## Devika: 自主的AI软件工程师
 
-* 创建周期：269 天
-* 开发语言：JavaScript
+* 创建周期：3 天
+* 开发语言：Python
 * 协议类型：MIT License
-* Star数量：2307 个
-* Fork数量：113 次
-* 关注人数：2307 人
-* 贡献人数：2 人
-* Open Issues数量：14 个
-* Github地址：https://github.com/drawdb-io/drawdb.git
-* 项目首页: https://drawdb.vercel.app
+* Star数量：2901 个
+* Fork数量：399 次
+* 关注人数：2901 人
+* 贡献人数：7 人
+* Open Issues数量：79 个
+* Github地址：https://github.com/stitionai/devika.git
 
 
-DrawDB是一个免费、简单且直观的在线数据库设计工具和SQL生成器。它允许用户创建图表、导出SQL脚本并自定义编辑器，而无需创建账户。
+Devika是一款自主的AI软件工程师，能够理解高级人类指令，将其分解为步骤，研究相关信息，并编写代码以实现给定的目标。它旨在成为Cognition AI的Devin的竞争性开源替代品。该项目目前处于早期开发阶段，欢迎贡献以帮助推动进展！
+
+## Open-Sora: 构建自己的视频生成模型
+
+* 创建周期：17 天
+* 开发语言：Python
+* 协议类型：Apache License 2.0
+* Star数量：1151 个
+* Fork数量：96 次
+* 关注人数：1151 人
+* 贡献人数：6 人
+* Open Issues数量：10 个
+* Github地址：https://github.com/hpcaitech/Open-Sora.git
+
+
+![](/images/hpcaitech-open-sora-0.png)
+
+Open-Sora是一个开源项目，允许用户构建类似于OpenAI的Sora的自己的视频生成模型。它提供了创建自定义视频生成模型所需的工具和资源。
 
 ## CoreNet: 用于训练深度神经网络的工具包
 
@@ -108,36 +136,6 @@ DrawDB是一个免费、简单且直观的在线数据库设计工具和SQL生�
 
 CoreNet是一个深度神经网络工具包，可以让研究人员和工程师训练标准和新颖的各种规模模型，包括基础模型，物体分类，物体检测和语义分割。
 
-## douyin - 模仿抖音的移动端短视频项目
-
-* 创建周期：1998 天
-* 开发语言：Vue
-* 协议类型：MIT License
-* Star数量：1641 个
-* Fork数量：615 次
-* 关注人数：1641 人
-* 贡献人数：5 人
-* Open Issues数量：1 个
-* Github地址：https://github.com/zyronon/douyin.git
-* 项目首页: http://dy.ttentau.top/
-
-
-douyin 是一个模仿抖音的移动端短视频项目，它基于 Vue 和 Vite 实现。使用了最新的 Vue 全家桶技术栈，接口数据通过 axios-mock-adapter 模拟。
-
-## Tiny-GPU: 从基础开始学习GPU的最小Verilog实现
-
-* 创建周期：19 天
-* 开发语言：SystemVerilog, Python
-* Star数量：2145 个
-* Fork数量：99 次
-* 关注人数：2145 人
-* 贡献人数：2 人
-* Open Issues数量：3 个
-* Github地址：https://github.com/adam-maj/tiny-gpu.git
-
-
-Tiny-GPU是一个在Verilog中实现的最小GPU，旨在优化学习GPU从基础开始工作的过程。它由不到15个完全记录的Verilog文件组成，包括完整的架构和ISA文档，可工作的矩阵加法/乘法内核，以及对内核模拟和执行跟踪的全面支持。
-
 ## IDM-VTON: 在野外改进扩散模型以提升真实虚拟试穿体验
 
 * 创建周期：41 天
@@ -153,19 +151,36 @@ Tiny-GPU是一个在Verilog中实现的最小GPU，旨在优化学习GPU从基�
 
 IDM-VTON是论文“Improving Diffusion Models for Authentic Virtual Try-on in the Wild”的官方实现。它旨在增强真实场景中的虚拟试穿体验。
 
-## XELIS: Rust编写的私有区块链
+## RAG（检索增强生成）框架：TrueFoundry的开源项目
 
-* 创建周期：1038 天
-* 开发语言：Rust
-* Star数量：149 个
-* Fork数量：22 次
-* 关注人数：149 人
-* 贡献人数：3 人
-* Open Issues数量：10 个
-* Github地址：https://github.com/xelis-project/xelis-blockchain.git
+* 创建周期：279 天
+* 开发语言：Python, TypeScript
+* 协议类型：Apache License 2.0
+* Star数量：916 个
+* Fork数量：84 次
+* 关注人数：916 人
+* 贡献人数：5 人
+* Open Issues数量：4 个
+* Github地址：https://github.com/truefoundry/cognita.git
+* 项目首页: https://cognita.truefoundry.com
 
 
-XELIS是一个使用Rust编写并由Tokio驱动的私有区块链，采用账户模型和事件驱动系统。它利用BlockDAG来增强可扩展性和安全性，并采用ElGamal的同态加密来确保交易隐私和余额保密。该系统还具有修剪机制，并计划未来支持智能合约。
+RAG（检索增强生成）框架是TrueFoundry的开源项目，旨在构建用于生产的模块化应用程序。
+
+## torchtitan: PyTorch原生大规模LLM训练概念验证
+
+* 创建周期：139 天
+* 开发语言：Python
+* 协议类型：BSD 3-Clause "New" or "Revised" License
+* Star数量：829 个
+* Fork数量：63 次
+* 关注人数：829 人
+* 贡献人数：12 人
+* Open Issues数量：40 个
+* Github地址：https://github.com/pytorch/torchtitan.git
+
+
+torchtitan是一个处于预发布状态并正在积极开发中的开源项目。它是一个使用原生PyTorch进行大规模LLM训练的概念验证。该项目旨在展示PyTorch最新的分布式训练功能，以简洁、最小化的代码库展示，并且旨在设计成易于理解、使用和扩展，以适用于不同的训练目的。
 
 ## Netprobe Lite: 互联网性能测试工具
 
