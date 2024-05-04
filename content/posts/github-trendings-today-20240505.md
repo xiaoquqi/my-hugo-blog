@@ -1,32 +1,32 @@
 ---
-title: Github 2024-05-05 开源项目日报 Top10
-date: 2024-05-05T07:01:19+08:00
+title: Github 2024-05-05 php开源项目日报 Top10
+date: 2024-05-05T07:11:13+08:00
 slug: github-trendings-today-20240505
 author: 老孙正经胡说
-image: /images/freecodecamp-freecodecamp-0.png
+image: /images/barryvdh-laravel-debugbar-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
+  - 和
   - 人数
   - 人
-  - 和
+  - 项目
   - 开发
+  - 贡献
+  - 是
   - 语言
+  - 提供
+  - 并
+  - 开源
   - 创建
   - 周期
+  - 协议
   - 类型
   - 关注
-  - 贡献
   - 地址
-  - 是
-  - 协议
-  - 平台
-  - 工具
+  - 应用程序
   - 可
-  - 系统
-  - 信息
 
 categories:
 
@@ -38,67 +38,41 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| TypeScript项目 | 3 |
-| JavaScript项目 | 3 |
-| Jupyter Notebook项目 | 1 |
-| C项目 | 1 |
-| Shell项目 | 1 |
-| PHP项目 | 1 |
+| PHP项目 | 10 |
 | Blade项目 | 1 |
-| MDX项目 | 1 |
-| Python项目 | 1 |
-| Java项目 | 1 |
-| HTML项目 | 1 |
 
-## 免费编程学习平台：freeCodeCamp.org
+## Symfony PHP框架和组件
 
-* 创建周期：3302 天
-* 开发语言：TypeScript, JavaScript
-* 协议类型：BSD 3-Clause "New" or "Revised" License
-* Star数量：381011 个
-* Fork数量：35361 次
-* 关注人数：381011 人
-* 贡献人数：397 人
-* Open Issues数量：378 个
-* Github地址：https://github.com/freeCodeCamp/freeCodeCamp.git
-* 项目首页: http://contribute.freecodecamp.org/
-
-
-![](/images/freecodecamp-freecodecamp-0.png)
-
-freeCodeCamp.org 是一个开放源代码平台和社区，人们可以免费学习编程。它得到慈善机构的支持，旨在帮助成年人转入科技行业。该平台提供全栈网页开发和机器学习课程，并提供交互式编程挑战。
-
-## 本地托管的PDF文件操作工具
-
-* 创建周期：464 天
-* 开发语言：Java, HTML
-* 协议类型：GNU General Public License v3.0
-* Star数量：23260 个
-* Fork数量：1652 次
-* 关注人数：23260 人
-* 贡献人数：104 人
-* Open Issues数量：164 个
-* Github地址：https://github.com/Stirling-Tools/Stirling-PDF.git
-
-
-![](/images/stirling-tools-stirling-pdf-0.png)
-
-一个本地托管的网络应用程序，提供对PDF文件的各种操作。它是一个使用Docker的综合工具，允许进行分割、合并、转换、重新组织、添加图像、旋转和压缩PDF文件等任务。该应用程序通过不发出用于跟踪或记录的出站调用来确保隐私，并且文件在任务执行期间要么存在于客户端，要么仅暂时存在于服务器内存中。
-
-## Neofetch - 一个美观的命令行系统信息工具
-
-* 创建周期：3047 天
-* 开发语言：Shell
+* 创建周期：5130 天
+* 开发语言：PHP
 * 协议类型：MIT License
-* Star数量：20694 个
-* Fork数量：1544 次
-* 关注人数：20694 人
-* 贡献人数：181 人
-* Open Issues数量：491 个
-* Github地址：https://github.com/dylanaraps/neofetch.git
+* Star数量：28999 个
+* Fork数量：9440 次
+* 关注人数：28999 人
+* 贡献人数：368 人
+* Open Issues数量：846 个
+* Github地址：https://github.com/symfony/symfony.git
+* 项目首页: https://symfony.com
 
 
-Neofetch是一个用bash 3.2+编写的命令行系统信息工具。它以美观和视觉上令人愉悦的方式显示操作系统、软件和硬件信息。Neofetch的目的是用于系统截屏，显示其他人想要看到的信息。它可以进一步配置以显示不同类型的图像或根本不显示图像。Neofetch支持几乎150种不同的操作系统，从Linux到Windows，甚至更晦涩的操作系统如Minix、AIX和Haiku。
+Symfony是用于Web和控制台应用程序的PHP框架，以及一组可重用的PHP组件。它被数千个Web应用程序和流行的PHP项目广泛使用。该框架遵循语义化版本控制，提供长期支持（LTS）版本，并具有可预测且适合业务的发布流程。Symfony 7.0得到了Shopware、Sulu和Les-Tilleuls.coop的支持。Shopware是一个由Symfony和Vue.js驱动的开放式无头商务平台，Sulu是Symfony开发人员的CMS，Les-Tilleuls.coop是一支提供专业服务的Symfony专家团队。该项目提供了全面的文档、支持性社区，并欢迎开发人员的贡献。安全漏洞可以按照特定程序进行报告，并且开发由Symfony核心团队领导并得到贡献者的支持。
+
+## Laravel的Debugbar
+
+* 创建周期：3895 天
+* 开发语言：PHP
+* 协议类型：MIT License
+* Star数量：16165 个
+* Fork数量：1519 次
+* 关注人数：16165 人
+* 贡献人数：193 人
+* Open Issues数量：67 个
+* Github地址：https://github.com/barryvdh/laravel-debugbar.git
+
+
+![](/images/barryvdh-laravel-debugbar-0.png)
+
+Laravel的Debugbar是一个集成PHP Debug Bar的包。它包括一个ServiceProvider来注册debugbar，将其附加到输出，引导一些用于Laravel的Collectors，并实现特定于Laravel的自定义DataCollectors。它配置为在下拉菜单中显示重定向和（jQuery）Ajax请求。用户可以通过Laravel发布资产并进行配置。
 
 ## Coolify: 开源自助云平台
 
@@ -118,102 +92,118 @@ Neofetch是一个用bash 3.2+编写的命令行系统信息工具。它以美观
 
 Coolify是一个开源且可自行托管的替代品，可替代Heroku、Netlify和Vercel等云平台。它可以帮助用户通过SSH连接在自己的硬件上管理服务器、应用程序和数据库，包括VPS、裸金属和树莓派。该平台旨在在使用个人服务器时提供云的便利性，确保没有供应商锁定，并使用户即使停止使用Coolify也能保留对其资源的控制。
 
-## React Spectrum Libraries: 构建适应性、可访问性和健壮用户体验的库和工具
+## Rector - 即时升级和自动重构
 
-* 创建周期：1696 天
-* 开发语言：TypeScript, JavaScript, MDX
-* 协议类型：Apache License 2.0
-* Star数量：11703 个
-* Fork数量：1004 次
-* 关注人数：11703 人
-* 贡献人数：276 人
-* Open Issues数量：680 个
-* Github地址：https://github.com/adobe/react-spectrum.git
-* 项目首页: https://react-spectrum.adobe.com
-
-
-React Spectrum Libraries是一个帮助构建适应性、可访问性和健壮用户体验的库和工具集合。
-
-## KANs: Kolmogorov-Arnold Networks (KANs：科尔莫戈洛夫-阿诺尔德网络)
-
-* 创建周期：7 天
-* 开发语言：Jupyter Notebook
+* 创建周期：2381 天
+* 开发语言：PHP
 * 协议类型：MIT License
-* Star数量：4045 个
-* Fork数量：298 次
-* 关注人数：4045 人
-* 贡献人数：7 人
-* Open Issues数量：42 个
-* Github地址：https://github.com/KindXiaoming/pykan.git
+* Star数量：7842 个
+* Fork数量：663 次
+* 关注人数：7842 人
+* 贡献人数：181 人
+* Open Issues数量：19 个
+* Github地址：https://github.com/rectorphp/rector.git
+* 项目首页: https://getrector.com
 
 
-![](/images/kindxiaoming-pykan-0.png)
+Rector是一个开源工具，为PHP 5.3+代码提供即时升级和自动重构。它帮助升级和重构应用程序的PHP代码，在两个主要领域提供帮助。
 
-Kolmogorov-Arnold Networks (KANs)是多层感知器（MLPs）的一个有前途的替代品，其具有基于科尔莫戈洛夫-阿诺尔德表示定理的坚实数学基础。KANs在边缘上具有激活功能，而MLPs在节点上具有激活功能，使得KANs在模型准确性和可解释性方面更好。
+## PrestaShop - 开源电子商务解决方案
 
-## Fastfetch：快速系统信息获取工具
+* 创建周期：4101 天
+* 开发语言：PHP
+* 协议类型：Other
+* Star数量：7655 个
+* Fork数量：4740 次
+* 关注人数：7655 人
+* 贡献人数：254 人
+* Open Issues数量：2610 个
+* Github地址：https://github.com/PrestaShop/PrestaShop.git
+* 项目首页: https://www.prestashop-project.org/
 
-* 创建周期：1147 天
-* 开发语言：C
+
+![](/images/prestashop-prestashop-0.png)
+
+PrestaShop是一个用PHP编写的开源电子商务Web应用程序，旨在为商家和客户提供出色的购物车体验。它可以高度定制，支持主要支付服务，翻译成多种语言，并具有完全响应的设计。存储库包含用于开发目的的源代码，稳定版本为8.1。'develop'分支包含下一个版本PrestaShop 9.0的进行中工作。它需要运行PHP 8.1+和MySQL 5.6+的Web服务器，也可以使用Docker部署。该项目欢迎贡献和错误报告，并为用户和开发人员提供了详细的文档和指南。
+
+## Horizon: Laravel队列的仪表板和代码驱动配置
+
+* 创建周期：2487 天
+* 开发语言：PHP
 * 协议类型：MIT License
-* Star数量：2075 个
-* Fork数量：114 次
-* 关注人数：2075 人
-* 贡献人数：74 人
-* Open Issues数量：5 个
-* Github地址：https://github.com/fastfetch-cli/fastfetch.git
+* Star数量：3793 个
+* Fork数量：626 次
+* 关注人数：3793 人
+* 贡献人数：172 人
+* Open Issues数量：2 个
+* Github地址：https://github.com/laravel/horizon.git
+* 项目首页: https://laravel.com/docs/horizon
 
 
-Fastfetch是一个类似neofetch的工具，主要用C语言编写，用于获取系统信息并以美观的方式显示出来。它注重性能和可定制性，目前支持Linux、Android、FreeBSD、MacOS和Windows 7+。
+![](/images/laravel-horizon-0.png)
 
-## GLaDOS 人格核心项目
+Horizon是Laravel队列的工具，提供了一个仪表板和代码驱动的配置。它允许轻松监控关键队列指标，并将工作人员配置存储在一个文件中，以便团队协作。
 
-* 创建周期：407 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：1076 个
-* Fork数量：102 次
-* 关注人数：1076 人
-* 贡献人数：4 人
-* Open Issues数量：5 个
-* Github地址：https://github.com/dnhkng/GlaDOS.git
+## OpenEMR：开源电子健康记录和医疗实践管理解决方案
 
-
-![](/images/dnhkng-glados-0.png)
-
-该项目旨在构建GLaDOS的真实版本，涉及硬件和软件以创建一个有意识、互动和具象化的实体。这包括训练语音生成器、创建逼真的“人格核心”，实现记忆和视觉功能，并设计可3D打印的零件和一个动画系统。
-
-## Close-Circuit Telegram Vision: 革新位置跟踪的开源项目
-
-* 创建周期：9 天
-* 开发语言：JavaScript
+* 创建周期：5098 天
+* 开发语言：PHP
 * 协议类型：GNU General Public License v3.0
-* Star数量：582 个
-* Fork数量：63 次
-* 关注人数：582 人
-* 贡献人数：4 人
-* Open Issues数量：3 个
-* Github地址：https://github.com/IvanGlinkin/CCTV.git
+* Star数量：2614 个
+* Fork数量：1991 次
+* 关注人数：2614 人
+* 贡献人数：201 人
+* Open Issues数量：305 个
+* Github地址：https://github.com/openemr/openemr.git
+* 项目首页: https://open-emr.org/
 
 
-![](/images/ivanglinkin-cctv-0.png)
+OpenEMR是一种流行的开源电子健康记录和医疗实践管理解决方案。它提供完全集成的电子健康记录、实践管理、排班、电子账单、国际化、免费支持，并可在各种平台上运行。
 
-Close-Circuit Telegram Vision是一个开源项目，它集成了Telegram API，以革新位置跟踪，提供50-100米内的精确跟踪。用户可以实时监控他人的物流或安全情况，重新定义了我们如何导航周围环境。
+## WordPress Develop: 开源同步镜像
 
-## Horizon: 为普遍可及性而设计的现代银行平台
+* 创建周期：2666 天
+* 开发语言：PHP
+* 协议类型：GNU General Public License v2.0
+* Star数量：2249 个
+* Fork数量：2276 次
+* 关注人数：2249 人
+* 贡献人数：81 人
+* Open Issues数量：1386 个
+* Github地址：https://github.com/WordPress/wordpress-develop.git
+* 项目首页: https://make.wordpress.org/core/handbook/contribute/git/github-pull-requests-for-code-review/
 
-* 创建周期：9 天
-* 开发语言：TypeScript
-* Star数量：252 个
-* Fork数量：83 次
-* 关注人数：252 人
-* 贡献人数：2 人
-* Open Issues数量：7 个
-* Github地址：https://github.com/adrianhajdin/banking.git
-* 项目首页: https://banking-jet.vercel.app
+
+WordPress Develop是一个开源项目，从git://develop.git.wordpress.org同步，包括分支和标签。它作为WordPress子版本库的镜像，并要求每个拉取请求都包含指向https://core.trac.wordpress.org/上的现有工单的链接。该版本库是一个开发空间，用于贡献bug报告、补丁、测试变更、撰写文档以及参与其中。
+
+## Wallos: 开源个人订阅跟踪器
+
+* 创建周期：150 天
+* 开发语言：PHP
+* 协议类型：GNU General Public License v3.0
+* Star数量：1202 个
+* Fork数量：59 次
+* 关注人数：1202 人
+* 贡献人数：20 人
+* Open Issues数量：40 个
+* Github地址：https://github.com/ellite/Wallos.git
 
 
-![](/images/adrianhajdin-banking-0.png)
+Wallos是一个开源的个人订阅跟踪器，可帮助用户跟踪各种订阅、管理开支并保持组织有序。
 
-Horizon是一个为普遍可及性而设计的现代银行平台。
+## Laravel Reverb: 实时WebSocket通信后端
+
+* 创建周期：529 天
+* 开发语言：PHP
+* 协议类型：MIT License
+* Star数量：689 个
+* Fork数量：37 次
+* 关注人数：689 人
+* 贡献人数：20 人
+* Open Issues数量：4 个
+* Github地址：https://github.com/laravel/reverb.git
+* 项目首页: https://reverb.laravel.com
+
+
+Laravel Reverb为Laravel应用程序提供了实时的WebSocket通信后端。它为Laravel应用程序带来了实时的WebSocket通信。
 
