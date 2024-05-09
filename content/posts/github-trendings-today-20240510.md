@@ -1,32 +1,32 @@
 ---
-title: Github 2024-05-10 开源项目日报 Top10
-date: 2024-05-10T07:01:23+08:00
+title: Github 2024-05-10 Java开源项目日报 Top10
+date: 2024-05-10T07:11:35+08:00
 slug: github-trendings-today-20240510
 author: 老孙正经胡说
-image: /images/rustdesk-rustdesk-0.png
+image: /images/snailclimb-javaguide-0.png
 tags:
   - github
   - trendings
   - 数量
+  - 人数
   - 人
   - 项目
-  - 人数
   - 开发
-  - 创建
   - 和
+  - 分析
   - 语言
-  - 类型
-  - 贡献
-  - 周期
+  - 创建
   - 协议
   - 关注
   - 地址
-  - 开源
+  - 平台
+  - 周期
+  - 类型
+  - 贡献
+  - 数据
   - 是
-  - 提供
-  - 并
-  - 编写
-  - 可以
+  - 代码
+  - 支持
 
 categories:
 
@@ -38,174 +38,182 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 4 |
-| TypeScript项目 | 4 |
-| JavaScript项目 | 1 |
-| Lua项目 | 1 |
-| C++项目 | 1 |
-| Rust项目 | 1 |
-| Dart项目 | 1 |
+| Java项目 | 10 |
+| C++项目 | 2 |
 
-## RustDesk: 用Rust编写的开源远程桌面软件
+## JavaGuide - Java 程序员学习和面试指南
 
-* 创建周期：1218 天
-* 开发语言：Rust, Dart
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：58141 个
-* Fork数量：6255 次
-* 关注人数：58141 人
-* 贡献人数：230 人
-* Open Issues数量：49 个
-* Github地址：https://github.com/rustdesk/rustdesk.git
-* 项目首页: https://rustdesk.com
-
-
-![](/images/rustdesk-rustdesk-0.png)
-
-RustDesk是一款用Rust编写的开源远程桌面软件，可作为TeamViewer的替代品。它可以直接使用，无需配置，提供完全的数据控制和安全性。用户可以使用提供的会合/中继服务器，自行设置，或编写自己的服务器。该项目欢迎所有人的贡献，并提供常见问题解答、二进制下载和每夜构建。
-
-## AFFiNE: 下一代知识库
-
-* 创建周期：649 天
-* 开发语言：TypeScript
-* 协议类型：Other
-* Star数量：31610 个
-* Fork数量：2067 次
-* 关注人数：31610 人
-* 贡献人数：141 人
-* Open Issues数量：144 个
-* Github地址：https://github.com/toeverything/AFFiNE.git
-* 项目首页: https://affine.pro
-
-
-![](/images/toeverything-affine-0.png)
-
-AFFiNE是一种下一代知识库，集规划、排序和创建于一体。它是隐私优先、开源、可定制且即可使用。
-
-## OpenDevin: 编写更少，实现更多
-
-* 创建周期：14 天
-* 开发语言：Jupyter Notebook
-* 协议类型：MIT License
-* Star数量：5071 个
-* Fork数量：421 次
-* 关注人数：5071 人
-* 贡献人数：23 人
-* Open Issues数量：58 个
-* Github地址：https://github.com/OpenDevin/OpenDevin.git
-
-
-OpenDevin是一个旨在帮助开发人员编写更少代码并实现更多目标的开源项目。它提供工具和资源来简化开发流程，提高生产力。
-
-## ScrapeGraphAI: 一次抓取即可
-
-* 创建周期：101 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：1898 个
-* Fork数量：154 次
-* 关注人数：1898 人
-* 贡献人数：16 人
-* Open Issues数量：8 个
-* Github地址：https://github.com/VinciGit00/Scrapegraph-ai.git
-* 项目首页: https://scrapegraph-doc.onrender.com/
-
-
-![](/images/vincigit00-scrapegraph-ai-0.png)
-
-ScrapeGraphAI是一个开源的网页抓取Python库，利用LLM和直接图逻辑创建用于网站、文档和XML文件的抓取管道。用户只需指定要提取的信息，库就会为您处理提取过程。
-
-## Skyvern: 利用LLMs和计算机视觉自动化浏览器工作流程
-
-* 创建周期：18 天
-* 开发语言：Python
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：1593 个
-* Fork数量：65 次
-* 关注人数：1593 人
-* 贡献人数：4 人
-* Open Issues数量：18 个
-* Github地址：https://github.com/Skyvern-AI/skyvern.git
-
-
-Skyvern利用LLMs和计算机视觉自动化基于浏览器的工作流程，提供简单的API端点来完全自动化手动工作流程。它利用计算机视觉和LLMs实时解析视口中的项目，创建交互计划并与其交互。这种方法使Skyvern能够在新网站上运行，抵抗布局更改，并通过复杂的交互进行推理。
-
-## Ant 游戏引擎
-
-* 创建周期：2302 天
-* 开发语言：Lua, C++
-* 协议类型：MIT License
-* Star数量：3326 个
-* Fork数量：316 次
-* 关注人数：3326 人
-* 贡献人数：18 人
-* Open Issues数量：4 个
-* Github地址：https://github.com/ejoy/ant.git
-
-
-Ant 是由灵犀互娱开发的开源游戏引擎。现阶段仅将代码仓库公开，尚未正式发布。文档、示例等均待在 Wiki 上逐步完善。如有任何问题，可在 Discussions 发帖讨论。Issues 仅用于 Bug 跟踪，请不要在里面提问题。
-
-## LeRobot: PyTorch中的现实世界机器人
-
-* 创建周期：104 天
-* 开发语言：Python
+* 创建周期：2118 天
+* 开发语言：Java
 * 协议类型：Apache License 2.0
-* Star数量：1617 个
-* Fork数量：85 次
-* 关注人数：1617 人
-* 贡献人数：8 人
-* Open Issues数量：17 个
-* Github地址：https://github.com/huggingface/lerobot.git
+* Star数量：140773 个
+* Fork数量：44922 次
+* 关注人数：140773 人
+* 贡献人数：414 人
+* Open Issues数量：58 个
+* Github地址：https://github.com/Snailclimb/JavaGuide.git
+* 项目首页: https://javaguide.cn
 
 
-![](/images/huggingface-lerobot-0.png)
+![](/images/snailclimb-javaguide-0.png)
 
-LeRobot是一个开源项目，为PyTorch中的现实世界机器人提供模型、数据集和工具。它旨在降低机器人技术的准入门槛，并提供预训练模型、人类收集的演示数据集和仿真环境。该项目专注于模仿学习和强化学习，并计划在未来增加对现实世界机器人的更多支持。
+JavaGuide 是一份涵盖大部分 Java 程序员所需要掌握的核心知识的学习和面试指南，提供面试准备、知识星球和使用建议等内容。该项目的 Github 地址为 https://github.com/Snailclimb/JavaGuide 。
 
-## PokéRogue：口袋妖怪同人Roguelite游戏
+## JEECG BOOT 企业级低代码开发平台
 
-* 创建周期：379 天
-* 开发语言：TypeScript
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：297 个
-* Fork数量：100 次
-* 关注人数：297 人
-* 贡献人数：24 人
-* Open Issues数量：8 个
-* Github地址：https://github.com/pagefaultgames/pokerogue.git
+* 创建周期：1978 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：37774 个
+* Fork数量：14267 次
+* 关注人数：37774 人
+* 贡献人数：15 人
+* Open Issues数量：51 个
+* Github地址：https://github.com/jeecgboot/jeecg-boot.git
+* 项目首页: http://www.jeecg.com
 
 
-PokéRogue是一款基于浏览器的口袋妖怪同人游戏，受到了Roguelite类型游戏的重大启发。玩家可以在不断战斗的同时收集堆叠的物品，探索不同的生物群落，与训练师、boss等展开战斗。
+![](/images/jeecgboot-jeecg-boot-0.png)
 
-## Close-Circuit Telegram Vision: 革新位置跟踪的开源项目
+JEECG BOOT是一款企业级低代码开发平台，使用SpringBoot 2.x/3.x，SpringCloud，Ant Design&Vue，Mybatis，Shiro，JWT等技术，提供强大的代码生成器，帮助Java项目解决70%重复工作，让开发更关注业务，提高效率，节省成本，同时又不失灵活性。该平台提供了一系列低代码模块，实现在线开发零代码，同时支持灵活编码，解决了当前低代码产品不灵活的弊端。
 
-* 创建周期：9 天
-* 开发语言：JavaScript
+## Nacos：云原生动态命名和配置服务
+
+* 创建周期：2156 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：29123 个
+* Fork数量：12561 次
+* 关注人数：29123 人
+* 贡献人数：362 人
+* Open Issues数量：237 个
+* Github地址：https://github.com/alibaba/nacos.git
+* 项目首页: https://nacos.io
+
+
+![](/images/alibaba-nacos-0.png)
+
+Nacos是一个易于使用的动态服务发现、配置和服务管理平台，用于构建云原生应用。
+
+## Spring Cloud Alibaba: 阿里巴巴中间件的分布式解决方案
+
+* 创建周期：2352 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：27337 个
+* Fork数量：8142 次
+* 关注人数：27337 人
+* 贡献人数：175 人
+* Open Issues数量：359 个
+* Github地址：https://github.com/alibaba/spring-cloud-alibaba.git
+* 项目首页: https://sca.aliyun.com
+
+
+Spring Cloud Alibaba为阿里巴巴中间件的分布式解决方案提供了一站式应用开发解决方案。它包含了开发分布式应用所需的所有组件，使开发人员能够轻松地将Spring Cloud应用连接到阿里巴巴的分布式解决方案，并使用阿里巴巴中间件构建分布式应用系统。
+
+## 源码猎人：挖掘互联网行业主流技术的底层实现原理
+
+* 创建周期：1600 天
+* 开发语言：Java
+* 协议类型：Creative Commons Attribution Share Alike 4.0 International
+* Star数量：15497 个
+* Fork数量：2956 次
+* 关注人数：15497 人
+* 贡献人数：28 人
+* Open Issues数量：10 个
+* Github地址：https://github.com/doocs/source-code-hunter.git
+* 项目首页: https://doocs.github.io/source-code-hunter
+
+
+![](/images/doocs-source-code-hunter-0.png)
+
+这个项目的目标是从源码层面剖析和挖掘互联网行业主流技术的底层实现原理，为开发者提供提升技术深度的便利。目前开放的有Spring全家桶、Mybatis、Netty、Dubbo框架，以及Redis、Tomcat中间件等。加入这个项目，一起通读互联网行业主流框架及中间件源码，成为强大的“源码猎人”。
+
+## DataEase: 开源数据可视化分析工具
+
+* 创建周期：1193 天
+* 开发语言：Java
 * 协议类型：GNU General Public License v3.0
-* Star数量：582 个
-* Fork数量：63 次
-* 关注人数：582 人
-* 贡献人数：4 人
-* Open Issues数量：3 个
-* Github地址：https://github.com/IvanGlinkin/CCTV.git
+* Star数量：15358 个
+* Fork数量：2827 次
+* 关注人数：15358 人
+* 贡献人数：48 人
+* Open Issues数量：244 个
+* Github地址：https://github.com/dataease/dataease.git
+* 项目首页: https://dataease.io/
 
 
-![](/images/ivanglinkin-cctv-0.png)
+![](/images/dataease-dataease-0.png)
 
-Close-Circuit Telegram Vision是一个开源项目，它集成了Telegram API，以革新位置跟踪，提供50-100米内的精确跟踪。用户可以实时监控他人的物流或安全情况，重新定义了我们如何导航周围环境。
+DataEase 是一个开源的数据可视化分析工具，可以帮助用户快速分析数据并洞察业务趋势，支持丰富的数据源连接，拖拉拽方式快速制作图表，并方便与他人分享。
 
-## SaaS创始人的快速起点
+## Apache DolphinScheduler: 低代码敏捷数据编排平台
 
-* 创建周期：9 天
-* 开发语言：TypeScript
+* 创建周期：1820 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：11701 个
+* Fork数量：4298 次
+* 关注人数：11701 人
+* 贡献人数：362 人
+* Open Issues数量：1007 个
+* Github地址：https://github.com/apache/dolphinscheduler.git
+* 项目首页: https://dolphinscheduler.apache.org/
+
+
+Apache DolphinScheduler是一种现代数据编排平台，可以使用低代码敏捷地创建高性能工作流。
+
+## Apache Doris: 高性能实时分析数据库
+
+* 创建周期：2360 天
+* 开发语言：Java, C++
+* 协议类型：Apache License 2.0
+* Star数量：10667 个
+* Fork数量：2968 次
+* 关注人数：10667 人
+* 贡献人数：396 人
+* Open Issues数量：2332 个
+* Github地址：https://github.com/apache/doris.git
+* 项目首页: https://doris.apache.org
+
+
+![](/images/apache-doris-0.png)
+
+Apache Doris是一个基于MPP架构的易于使用、高性能和实时分析数据库。它以极高的速度和易用性而闻名，支持在海量数据下返回查询结果的亚秒响应时间。它适用于报告分析、临时查询、统一数据仓库和数据湖查询加速等场景。最新的2.0.3版本带来了超过10倍的性能改进，增强了日志分析和湖仓库场景，提高了数据更新和写入效率，支持了全面的多租户和资源隔离机制，以及企业用户的可用性功能。
+
+## StarRocks: 下一代实时分析数据库
+
+* 创建周期：902 天
+* 开发语言：Java, C++
+* 协议类型：Apache License 2.0
+* Star数量：7342 个
+* Fork数量：1523 次
+* 关注人数：7342 人
+* 贡献人数：343 人
+* Open Issues数量：1372 个
+* Github地址：https://github.com/StarRocks/starrocks.git
+* 项目首页: https://starrocks.io
+
+
+![](/images/starrocks-starrocks-0.png)
+
+StarRocks是一种面向完整分析场景的下一代次秒级MPP OLAP数据库，包括多维分析、实时分析和即席查询。它荣获InfoWorld 2023年BOSSIE奖，被评为最佳开源软件。StarRocks旨在使数据密集的实时分析变得快速简便，查询速度比其他流行解决方案快5到10倍。它能够在更新历史记录的同时进行良好的实时分析，并能轻松地利用数据湖中的历史数据增强实时分析。StarRocks允许用户消除非规范化表，以获得更好的性能和灵活性。
+
+## WEB VIDEO PLATFORM: 基于GB28181-2016标准的开源网络视频平台
+
+* 创建周期：1154 天
+* 开发语言：Java
 * 协议类型：MIT License
-* Star数量：339 个
-* Fork数量：40 次
-* 关注人数：339 人
-* 贡献人数：1 人
-* Open Issues数量：0 个
-* Github地址：https://github.com/AtotheY/saas-landingpage.git
+* Star数量：4012 个
+* Fork数量：1233 次
+* 关注人数：4012 人
+* 贡献人数：69 人
+* Open Issues数量：92 个
+* Github地址：https://github.com/648540858/wvp-GB28181-pro.git
+* 项目首页: https://wvp-gb-28181-pro.vercel.app
 
 
-Anthony Sistilli创建了一个样板，以帮助科技创始人在启动新的SaaS时节省时间。这个样板旨在成为一个快速的起点，可以进行编辑和部署，让创始人们专注于构建他们的产品并与用户交流。
+![](/images/648540858-wvp-gb28181-pro-0.png)
+
+WEB VIDEO PLATFORM是一个基于GB28181-2016标准的开源网络视频平台，支持NAT穿透以及海康、大华、宇视等品牌的IPC、NVR和DVR接入。它还支持国标级联，以及将视频流转发和推送到国标平台。该平台提供开箱即用的28181协议视频平台，实现核心信令和设备管理后端，并支持各种设备，包括非国标设备，以充分利用。
 
