@@ -1,32 +1,32 @@
 ---
-title: Github 2024-05-14 开源项目日报 Top10
-date: 2024-05-14T07:01:16+08:00
+title: Github 2024-05-14 Python开源项目日报 Top10
+date: 2024-05-14T07:11:23+08:00
 slug: github-trendings-today-20240514
 author: 老孙正经胡说
-image: /images/jgravelle-autogroq-0.png
+image: /images/binary-husky-gpt_academic-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
   - 人数
   - 人
-  - 开发
+  - 项目
   - 语言
+  - 开发
+  - 和
   - 创建
   - 周期
   - 关注
   - 贡献
   - 地址
-  - 和
-  - 编译
-  - 是
+  - 翻译
   - 协议
   - 类型
-  - 工具
-  - 重新
-  - 进行
-  - 文件
+  - 提供
+  - 是
+  - 模型
+  - 哔哩
+  - 并
 
 categories:
 
@@ -38,123 +38,92 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| C++项目 | 3 |
-| Python项目 | 3 |
-| TypeScript项目 | 2 |
-| C项目 | 1 |
-| Go项目 | 1 |
-| Svelte项目 | 1 |
-| Vue项目 | 1 |
-| HTML项目 | 1 |
-| CSS项目 | 1 |
+| Python项目 | 10 |
+| TypeScript项目 | 1 |
 
-## 开放式WebUI（前身为Ollama WebUI）
+## GPT/GLM等LLM大语言模型实用化交互接口
 
-* 创建周期：147 天
-* 开发语言：Svelte
-* 协议类型：MIT License
-* Star数量：7242 个
-* Fork数量：641 次
-* 关注人数：7242 人
-* 贡献人数：59 人
-* Open Issues数量：67 个
-* Github地址：https://github.com/open-webui/open-webui.git
-* 项目首页: https://openwebui.com
-
-
-开放式WebUI（前身为Ollama WebUI）是一个用户友好的界面，支持LLM运行器，如Ollama和兼容OpenAI的API。
-
-## 开发人员在线工具集合
-
-* 创建周期：1497 天
-* 开发语言：Vue, TypeScript
+* 创建周期：337 天
+* 开发语言：Python
 * 协议类型：GNU General Public License v3.0
-* Star数量：13001 个
-* Fork数量：1597 次
-* 关注人数：13001 人
-* 贡献人数：39 人
-* Open Issues数量：361 个
-* Github地址：https://github.com/CorentinTh/it-tools.git
-* 项目首页: https://it-tools.tech
+* Star数量：51717 个
+* Fork数量：6732 次
+* 关注人数：51717 人
+* 贡献人数：74 人
+* Open Issues数量：184 个
+* Github地址：https://github.com/binary-husky/gpt_academic.git
+* 项目首页: https://github.com/binary-husky/gpt_academic/wiki/online
 
 
-一个在线工具集合，为开发人员提供出色的用户体验，对开发人员和IT专业人员非常有用。
+![](/images/binary-husky-gpt_academic-0.png)
 
-## 基于Next.js和React.js的简单UI组件示例
+该项目为GPT/GLM等LLM大语言模型提供实用的交互接口，特别优化论文阅读/润色/写作体验。它采用模块化设计，支持自定义快捷按钮和函数插件，同时支持Python和C++项目剖析和自译解功能，以及PDF/LaTex论文翻译和总结功能。此外，它还支持并行问询多种LLM模型和本地模型，以及接入通义千问、deepseekcoder、讯飞星火、文心一言、llama2、rwkv、claude2、moss等。
 
-* 创建周期：490 天
-* 开发语言：HTML, CSS
-* Star数量：2552 个
-* Fork数量：494 次
-* 关注人数：2552 人
-* 贡献人数：3 人
-* Open Issues数量：3 个
-* Github地址：https://github.com/atherosai/ui.git
-* 项目首页: https://learning.atheros.ai
+## Cloudflare WARP+ 订阅项目
 
-
-该存储库包含基于Next.js和React.js的简单UI组件示例。它包括HTML/CSS/JS和React示例的安装说明，具体示例包括TikTok、Instagram、Youtube、Twitter、Linkedin和Threads。
-
-## Hydra: 游戏启动器与内置比特流客户端
-
-* 创建周期：41 天
-* 开发语言：TypeScript
-* 协议类型：MIT License
-* Star数量：753 个
-* Fork数量：72 次
-* 关注人数：753 人
-* 贡献人数：12 人
-* Open Issues数量：24 个
-* Github地址：https://github.com/hydralauncher/hydra.git
-* 项目首页: https://hydralauncher.site
-
-
-Hydra是一个游戏启动器，拥有自己的内置比特流客户端和自主管理的重打包抓取器。它是用TypeScript（Electron）和Python编写的，通过使用libtorrent处理种子系统。
-
-## 塞尔达传说64：重编译版
-
-* 创建周期：204 天
-* 开发语言：C++, C
+* 创建周期：188 天
+* 开发语言：Python
 * 协议类型：GNU General Public License v3.0
-* Star数量：2239 个
-* Fork数量：95 次
-* 关注人数：2239 人
-* 贡献人数：3 人
-* Open Issues数量：89 个
-* Github地址：https://github.com/Mr-Wiseguy/Zelda64Recomp.git
+* Star数量：2889 个
+* Fork数量：383 次
+* 关注人数：2889 人
+* 贡献人数：5 人
+* Open Issues数量：4 个
+* Github地址：https://github.com/vvbbnn00/WARP-Clash-API.git
 
 
-《塞尔达传说64：重编译版》是一个项目，利用N64：重编译版将《马里奥的面具》（以及很快《时光之笛》）进行静态重新编译，转换为具有许多新功能和增强功能的本机端口。它利用RT64作为渲染引擎，以提供其中一些增强功能。
+该项目使您能够通过订阅方式使用Cloudflare WARP+，自动获取流量。
 
-## 自托管的订阅内容整合仪表板
+## Bisheng：下一代人工智能应用的开放LLM DevOps平台
 
-* 创建周期：17 天
-* 开发语言：Go
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：2237 个
-* Fork数量：51 次
-* 关注人数：2237 人
-* 贡献人数：4 人
-* Open Issues数量：20 个
-* Github地址：https://github.com/glanceapp/glance.git
-
-
-一个自托管的仪表板，将所有您的订阅内容整合到一个地方，并具有各种功能。
-
-## N64: Recompiled - N64二进制文件的静态重新编译工具
-
-* 创建周期：545 天
-* 开发语言：C++
-* 协议类型：MIT License
-* Star数量：1882 个
-* Fork数量：102 次
-* 关注人数：1882 人
-* 贡献人数：4 人
-* Open Issues数量：18 个
-* Github地址：https://github.com/Mr-Wiseguy/N64Recomp.git
+* 创建周期：230 天
+* 开发语言：Python, TypeScript
+* 协议类型：Apache License 2.0
+* Star数量：5250 个
+* Fork数量：873 次
+* 关注人数：5250 人
+* 贡献人数：17 人
+* Open Issues数量：19 个
+* Github地址：https://github.com/dataelement/bisheng.git
+* 项目首页: https://bisheng.dataelem.com/
 
 
-N64: Recompiled是一个工具，用于将N64二进制文件静态重新编译为可在任何平台上编译的C代码。它可用于端口、工具或模拟行为，比解释器或动态重新编译更快。它还可用于在独立环境中运行N64二进制文件的部分。该项目受到IDO静态重新编译项目的启发，后者在现代系统上重新编译SGI IRIX IDO编译器，以便匹配N64游戏的反编译。
+![](/images/dataelement-bisheng-0.png)
+
+Bisheng 是一个面向下一代人工智能应用的开放LLM DevOps平台。它为开发和部署人工智能应用提供了全面的环境。
+
+## AgentScope: 简化LLM增强多代理应用程序构建
+
+* 创建周期：123 天
+* 开发语言：Python
+* 协议类型：Apache License 2.0
+* Star数量：1976 个
+* Fork数量：116 次
+* 关注人数：1976 人
+* 贡献人数：16 人
+* Open Issues数量：17 个
+* Github地址：https://github.com/modelscope/agentscope.git
+* 项目首页: https://modelscope.github.io/agentscope/
+
+
+![](/images/modelscope-agentscope-0.png)
+
+AgentScope是一个旨在使构建LLM增强的多代理应用程序变得更加简单的项目。它为开发人员提供了一个平台，让他们可以借助LLM技术来创建和部署应用程序。
+
+## 哔哩哔哩聊天机器人
+
+* 创建周期：8 天
+* 开发语言：Python
+* 协议类型：Apache License 2.0
+* Star数量：845 个
+* Fork数量：111 次
+* 关注人数：845 人
+* 贡献人数：1 人
+* Open Issues数量：8 个
+* Github地址：https://github.com/linyiLYi/bilibot.git
+
+
+哔哩哔哩聊天机器人是由哔哩哔哩用户评论微调训练而成的本地聊天机器人，支持文字聊天和通过questions.txt生成针对给定问题的语音对话。项目使用Qwen1.5-32B-Chat作为基础模型，并借助苹果mlx-lm LORA示例项目进行微调训练。语音生成部分基于开源项目GPT-SoVITS，问题语音来自B站用户白菜工厂1145号员工训练的派蒙语音模型。
 
 ## Gemma 2B - 10M上下文长度
 
@@ -169,6 +138,23 @@ N64: Recompiled是一个工具，用于将N64二进制文件静态重新编译�
 
 
 Gemma 2B是一个开源项目，利用了具有长达10M的上下文长度的循环局部注意力。它旨在在少于32GB的内存上运行，并针对CUDA的本地推断进行了优化。
+
+## Lumina-T2X: 文本到任何形式生成的统一框架
+
+* 创建周期：47 天
+* 开发语言：Python
+* 协议类型：MIT License
+* Star数量：640 个
+* Fork数量：27 次
+* 关注人数：640 人
+* 贡献人数：9 人
+* Open Issues数量：12 个
+* Github地址：https://github.com/Alpha-VLLM/Lumina-T2X.git
+
+
+![](/images/alpha-vllm-lumina-t2x-0.png)
+
+Lumina-T2X是一个统一的框架，用于文本到任何形式生成。它旨在利用基于流的大扩散变压器将文本转换为任何形式，分辨率和持续时间。
 
 ## 将代码转换为PDF文件的便捷工具
 
@@ -186,18 +172,36 @@ Gemma 2B是一个开源项目，利用了具有长达10M的上下文长度的循
 
 该项目提供了一个方便的方式将代码转换为PDF文件，这对于分享或进行修改非常有用。该项目的代码可以在GitHub上获得，网址为https://github.com/jgravelle/GetCodeAsPdf。
 
-## RT64: N64图形渲染器
+## Indqx PDF 翻译
 
-* 创建周期：115 天
-* 开发语言：C++
-* 协议类型：MIT License
-* Star数量：452 个
-* Fork数量：18 次
-* 关注人数：452 人
-* 贡献人数：3 人
-* Open Issues数量：4 个
-* Github地址：https://github.com/rt64/rt64.git
+* 创建周期：62 天
+* 开发语言：Python
+* 协议类型：BSD 3-Clause "New" or "Revised" License
+* Star数量：188 个
+* Fork数量：24 次
+* 关注人数：188 人
+* 贡献人数：1 人
+* Open Issues数量：0 个
+* Github地址：https://github.com/Mega-Gorilla/Index_PDF_Translation.git
 
 
-RT64是一款N64图形渲染器，用于在模拟器和本机端口中进行游戏增强。这是一个正在进行中的项目。
+![](/images/mega-gorilla-index_pdf_translation-0.png)
+
+Indqx PDF 翻译是 PDF 翻译的源代码，提供了直到 2024 年 5 月 31 日的 Web 翻译服务。随着服务的终止，Indqx PDF 翻译现在提供了可在本地使用的可执行代码。它允许在不破坏格式的情况下翻译 PDF，特别适用于学术论文，具有自动识别和翻译主要文本的功能，同时忽略公式和标题等非必要部分，根据宽度、字符数和字体大小识别文本块，自动识别并分别翻译图表描述。
+
+## PI Pwn: 在树莓派上运行的PS4固件11.0脚本
+
+* 创建周期：5 天
+* 开发语言：Python
+* Star数量：179 个
+* Fork数量：23 次
+* 关注人数：179 人
+* 贡献人数：1 人
+* Open Issues数量：3 个
+* Github地址：https://github.com/stooged/PI-Pwn.git
+
+
+![](/images/stooged-pi-pwn-0.png)
+
+PI Pwn是一个旨在在树莓派上设置并运行的脚本，使其能够在PS4固件11.0上运行。它还提供互联网访问，以及访问由goldhen启动的FTP、klog和binloader服务器。此外，它安装了DNS阻断器以防止更新，并允许树莓派在插入到游戏机的USB端口时充当虚拟闪存驱动器。
 
