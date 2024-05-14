@@ -1,32 +1,32 @@
 ---
-title: Github 2024-05-15 开源项目日报 Top10
-date: 2024-05-15T07:01:16+08:00
+title: Github 2024-05-15 C开源项目日报 Top9
+date: 2024-05-15T07:10:59+08:00
 slug: github-trendings-today-20240515
 author: 老孙正经胡说
-image: /images/datatalksclub-mlops-zoomcamp-0.png
+image: /images/fluent-fluent-bit-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
   - 人数
   - 人
   - 和
+  - 项目
   - 开发
   - 语言
+  - 贡献
+  - 是
   - 创建
-  - 编译
   - 周期
   - 关注
-  - 贡献
   - 地址
+  - 可
   - 协议
   - 类型
-  - 是
-  - 重新
-  - 哔哩
-  - 库
-  - 文件
+  - 固件
+  - 运行
+  - 应用程序
+  - 功能
 
 categories:
 
@@ -34,172 +34,156 @@ draft: false
 ---
 
 
-根据Github Trendings的统计，今日(2024-05-15统计)共有10个项目上榜。根据开发语言中项目的数量，汇总情况如下：
+根据Github Trendings的统计，今日(2024-05-15统计)共有9个项目上榜。根据开发语言中项目的数量，汇总情况如下：
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 2 |
-| C++项目 | 2 |
-| Jupyter Notebook项目 | 1 |
-| Assembly项目 | 1 |
-| HTML项目 | 1 |
-| CSS项目 | 1 |
-| C项目 | 1 |
-| 非开发语言项目 | 1 |
-| Go项目 | 1 |
-| TypeScript项目 | 1 |
+| C项目 | 9 |
+| Dart项目 | 1 |
+| Shell项目 | 1 |
 
-## MS-DOS v1.25, v2.0, v4.00 源代码存储库
+## Git - 快速、可扩展、分布式的版本控制系统
 
-* 创建周期：2134 天
-* 开发语言：Assembly
+* 创建周期：5740 天
+* 开发语言：C, Shell
+* 协议类型：Other
+* Star数量：49553 个
+* Fork数量：25014 次
+* 关注人数：49553 人
+* 贡献人数：416 人
+* Open Issues数量：175 个
+* Github地址：https://github.com/git/git.git
+
+
+Git是一个快速、可扩展、分布式的版本控制系统，具有丰富的命令集，并由GNU通用公共许可证覆盖的开源项目。最初由Linus Torvalds与网络上的一群黑客共同编写。
+
+## cJSON：超轻量级JSON解析器
+
+* 创建周期：2930 天
+* 开发语言：C
 * 协议类型：MIT License
-* Star数量：24102 个
-* Fork数量：3276 次
-* 关注人数：24102 人
-* 贡献人数：36 人
-* Open Issues数量：3 个
-* Github地址：https://github.com/microsoft/MS-DOS.git
-* 项目首页: https://en.wikipedia.org/wiki/MS-DOS
+* Star数量：9902 个
+* Fork数量：3091 次
+* 关注人数：9902 人
+* 贡献人数：76 人
+* Open Issues数量：220 个
+* Github地址：https://github.com/DaveGamble/cJSON.git
 
 
-该存储库包含了IBM和微软联合开发的MS-DOS v1.25、v2.0和v4.00的原始源代码和编译后的二进制文件。这些文件供历史参考，并根据MIT许可证发布。强调了这些源文件仅供历史参考，不应进行修改，但鼓励用户分叉存储库并进行实验。
+cJSON是用ANSI C编写的超轻量级JSON解析器。
 
-## MoneyPrinterTurbo 💸 自动短视频生成器
+## 快速轻量级日志和指标处理器
+
+* 创建周期：3319 天
+* 开发语言：C
+* 协议类型：Apache License 2.0
+* Star数量：5199 个
+* Fork数量：1410 次
+* 关注人数：5199 人
+* 贡献人数：372 人
+* Open Issues数量：592 个
+* Github地址：https://github.com/fluent/fluent-bit.git
+* 项目首页: https://fluentbit.io
+
+
+![](/images/fluent-fluent-bit-0.png)
+
+该项目是一个专为Linux、BSD、OSX和Windows设计的快速轻量级日志和指标处理器。它为单元测试、集成测试、arm构建和最新版本提供了CI状态。
+
+## Winlator - 在Android上运行Windows应用程序的应用
+
+* 创建周期：184 天
+* 开发语言：Java
+* 协议类型：MIT License
+* Star数量：3136 个
+* Fork数量：116 次
+* 关注人数：3136 人
+* 贡献人数：2 人
+* Open Issues数量：30 个
+* Github地址：https://github.com/brunodev85/winlator.git
+* 项目首页: https://winlator.org
+
+
+Winlator是一个Android应用程序，允许用户使用Wine和Box86/Box64运行Windows（x86_64）应用程序。您可以通过从GitHub Releases下载APK和OBB文件来安装它，然后启动应用程序以完成安装过程。该项目还感谢了为其开发做出贡献的第三方应用程序和个人。
+
+## WebAssembly微运行时（WAMR）
+
+* 创建周期：1763 天
+* 开发语言：C
+* 协议类型：Apache License 2.0
+* Star数量：4364 个
+* Fork数量：548 次
+* 关注人数：4364 人
+* 贡献人数：141 人
+* Open Issues数量：295 个
+* Github地址：https://github.com/bytecodealliance/wasm-micro-runtime.git
+
+
+WebAssembly微运行时（WAMR）是一个轻量级的独立WebAssembly（Wasm）运行时，具有小巧的体积、高性能和高度可配置的特性，可用于嵌入式、物联网、边缘计算、可信执行环境（TEE）、智能合约、云原生等应用。它包括用于加载和运行Wasm模块的VMcore，支持WASI和命令行界面的iwasm，用于提前编译的wamrc，以及App-framework、App-manager和WAMR-IDE等有用的组件和工具，用于使用WAMR vmcore构建真实解决方案。
+
+## INAV 7.1: 无需罗盘的导航飞行控制软件
+
+* 创建周期：3344 天
+* 开发语言：C
+* 协议类型：GNU General Public License v3.0
+* Star数量：2902 个
+* Fork数量：1391 次
+* 关注人数：2902 人
+* 贡献人数：351 人
+* Open Issues数量：177 个
+* Github地址：https://github.com/iNavFlight/inav.git
+* 项目首页: https://inavflight.github.io
+
+
+INAV是一款具有导航功能的飞行控制软件，已发布了7.1版本，引入了改进的导航功能。更新允许航点导航和无需罗盘即可返回家的功能，尽管推荐安装罗盘以获得更好的飞行精度、增强可靠性和减少风险。该软件建议无人机飞行员通过安装罗盘来优化性能，以优先考虑安全。
+
+## Flipper Zero 定制固件：突破性功能和易于定制的用户体验
 
 * 创建周期：12 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：325 个
-* Fork数量：96 次
-* 关注人数：325 人
-* 贡献人数：1 人
-* Open Issues数量：17 个
-* Github地址：https://github.com/harry0703/MoneyPrinterTurbo.git
-
-
-MoneyPrinterTurbo 💸 是一个利用大型模型的开源项目，通过提供视频、主题或关键词，自动创建视频文案、素材、字幕和背景音乐，生成高清短视频。
-
-## 基于Next.js和React.js的简单UI组件示例
-
-* 创建周期：490 天
-* 开发语言：HTML, CSS
-* Star数量：2552 个
-* Fork数量：494 次
-* 关注人数：2552 人
-* 贡献人数：3 人
-* Open Issues数量：3 个
-* Github地址：https://github.com/atherosai/ui.git
-* 项目首页: https://learning.atheros.ai
-
-
-该存储库包含基于Next.js和React.js的简单UI组件示例。它包括HTML/CSS/JS和React示例的安装说明，具体示例包括TikTok、Instagram、Youtube、Twitter、Linkedin和Threads。
-
-## DataTalks.Club的MLOps Zoomcamp课程
-
-* 创建周期：937 天
-* 开发语言：Jupyter Notebook
-* Star数量：9624 个
-* Fork数量：1816 次
-* 关注人数：9624 人
-* 贡献人数：67 人
-* Open Issues数量：5 个
-* Github地址：https://github.com/DataTalksClub/mlops-zoomcamp.git
-
-
-![](/images/datatalksclub-mlops-zoomcamp-0.png)
-
-DataTalks.Club的MLOps Zoomcamp课程是一个免费资源，为MLOps提供学习材料和指导。它包括视频教程、技术常见问题解答，并通过Slack和Telegram等社交媒体平台鼓励参与互动。
-
-## NocoBase: 可扩展的企业解决方案构建平台
-
-* 创建周期：1299 天
-* 开发语言：TypeScript
-* 协议类型：Other
-* Star数量：6120 个
-* Fork数量：806 次
-* 关注人数：6120 人
-* 贡献人数：53 人
-* Open Issues数量：51 个
-* Github地址：https://github.com/nocobase/nocobase.git
-* 项目首页: https://www.nocobase.com
-
-
-![](/images/nocobase-nocobase-0.png)
-
-NocoBase是一个以可扩展性为首要考虑因素的开源平台，旨在构建企业应用程序和解决方案，无需编码。
-
-## 自托管的订阅内容整合仪表板
-
-* 创建周期：17 天
-* 开发语言：Go
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：2237 个
-* Fork数量：51 次
-* 关注人数：2237 人
-* 贡献人数：4 人
-* Open Issues数量：20 个
-* Github地址：https://github.com/glanceapp/glance.git
-
-
-一个自托管的仪表板，将所有您的订阅内容整合到一个地方，并具有各种功能。
-
-## N64: Recompiled - N64二进制文件的静态重新编译工具
-
-* 创建周期：545 天
-* 开发语言：C++
-* 协议类型：MIT License
-* Star数量：1882 个
-* Fork数量：102 次
-* 关注人数：1882 人
-* 贡献人数：4 人
-* Open Issues数量：18 个
-* Github地址：https://github.com/Mr-Wiseguy/N64Recomp.git
-
-
-N64: Recompiled是一个工具，用于将N64二进制文件静态重新编译为可在任何平台上编译的C代码。它可用于端口、工具或模拟行为，比解释器或动态重新编译更快。它还可用于在独立环境中运行N64二进制文件的部分。该项目受到IDO静态重新编译项目的启发，后者在现代系统上重新编译SGI IRIX IDO编译器，以便匹配N64游戏的反编译。
-
-## 塞尔达传说64：重编译版
-
-* 创建周期：204 天
-* 开发语言：C++, C
+* 开发语言：C
 * 协议类型：GNU General Public License v3.0
-* Star数量：2239 个
-* Fork数量：95 次
-* 关注人数：2239 人
-* 贡献人数：3 人
-* Open Issues数量：89 个
-* Github地址：https://github.com/Mr-Wiseguy/Zelda64Recomp.git
-
-
-《塞尔达传说64：重编译版》是一个项目，利用N64：重编译版将《马里奥的面具》（以及很快《时光之笛》）进行静态重新编译，转换为具有许多新功能和增强功能的本机端口。它利用RT64作为渲染引擎，以提供其中一些增强功能。
-
-## 哔哩哔哩聊天机器人
-
-* 创建周期：8 天
-* 开发语言：Python
-* 协议类型：Apache License 2.0
-* Star数量：845 个
-* Fork数量：111 次
-* 关注人数：845 人
-* 贡献人数：1 人
-* Open Issues数量：8 个
-* Github地址：https://github.com/linyiLYi/bilibot.git
-
-
-哔哩哔哩聊天机器人是由哔哩哔哩用户评论微调训练而成的本地聊天机器人，支持文字聊天和通过questions.txt生成针对给定问题的语音对话。项目使用Qwen1.5-32B-Chat作为基础模型，并借助苹果mlx-lm LORA示例项目进行微调训练。语音生成部分基于开源项目GPT-SoVITS，问题语音来自B站用户白菜工厂1145号员工训练的派蒙语音模型。
-
-## AniTalker: 通过身份解耦的面部运动编码产生生动丰富多样的说话面部表情
-
-* 创建周期：16 天
-* 协议类型：Apache License 2.0
-* Star数量：579 个
-* Fork数量：45 次
-* 关注人数：579 人
-* 贡献人数：3 人
+* Star数量：837 个
+* Fork数量：22 次
+* 关注人数：837 人
+* 贡献人数：365 人
 * Open Issues数量：7 个
-* Github地址：https://github.com/X-LANCE/AniTalker.git
+* Github地址：https://github.com/Next-Flip/Momentum-Firmware.git
+* 项目首页: https://momentum-fw.dev
 
 
-AniTalker 是一个专注于通过身份解耦的面部运动编码来产生生动丰富多样的说话面部表情的项目。该项目的权重和代码正在整理以便尽快公开，该论文目前正在同行评审中，可能还会有细微变化。我们将在正式发表后更新该代码库。
+![](/images/next-flip-momentum-firmware-0.png)
+
+这个定制固件基于官方固件，包含了来自Unleashed的大多数出色功能。它是Xtreme固件的直接延续，由同一批开发人员打造。该固件的目标是不断突破Flipper Zero的可能性边界，推动许多新的突破性功能的创新，同时保持任何固件中最易于定制的用户体验。及时修复错误并确保稳定和兼容的系统也是我们最重要的。请注意，下面提到的只是我们固件的一些主要添加之一。要查看完整列表，请在这里检查。我们提供一个功能强大且易于使用的应用程序，专门为我们的固件量身定制，让您可以配置您梦寐以求的一切，甚至更多。
+
+## AI可穿戴设备：24小时+电池续航时间
+
+* 创建周期：54 天
+* 开发语言：C, Dart
+* Star数量：1163 个
+* Fork数量：116 次
+* 关注人数：1163 人
+* 贡献人数：21 人
+* Open Issues数量：12 个
+* Github地址：https://github.com/BasedHardware/Friend.git
+
+
+这款AI可穿戴设备拥有24小时以上的电池续航时间，并具有实时AI音频处理、低功耗蓝牙、开源软件和可穿戴设计。
+
+## OpenGlass - 开源智能眼镜
+
+* 创建周期：3 天
+* 开发语言：C
+* 协议类型：MIT License
+* Star数量：999 个
+* Fork数量：97 次
+* 关注人数：999 人
+* 贡献人数：7 人
+* Open Issues数量：2 个
+* Github地址：https://github.com/BasedHardware/OpenGlass.git
+* 项目首页: https://openglass.ai
+
+
+![](/images/basedhardware-openglass-0.png)
+
+OpenGlass是一个开源项目，旨在使用廉价的现成组件将任何普通眼镜变成智能眼镜。用户只需花费不到25美元的预算，就可以将他们的眼镜变成可黑客的智能眼镜，可以记录生活事件，识别人物，识别物体，翻译文本等。
 
