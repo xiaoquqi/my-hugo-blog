@@ -1,32 +1,32 @@
 ---
-title: Github 2024-05-17 开源项目日报 Top10
-date: 2024-05-17T07:00:58+08:00
+title: Github 2024-05-17 Java开源项目日报 Top9
+date: 2024-05-17T07:11:11+08:00
 slug: github-trendings-today-20240517
 author: 老孙正经胡说
-image: /images/lencx-chatgpt-0.png
+image: /images/doocs-leetcode-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
   - 人数
   - 人
+  - 项目
+  - 和
   - 开发
   - 语言
-  - 和
   - 关注
   - 创建
   - 周期
+  - 协议
   - 贡献
   - 地址
-  - 协议
   - 类型
   - 是
-  - 开源
-  - 服务
-  - 重新
-  - 编译
-  - 哔哩
+  - 中
+  - 提供
+  - 库
+  - 版
+  - 实现
 
 categories:
 
@@ -34,176 +34,160 @@ draft: false
 ---
 
 
-根据Github Trendings的统计，今日(2024-05-17统计)共有10个项目上榜。根据开发语言中项目的数量，汇总情况如下：
+根据Github Trendings的统计，今日(2024-05-17统计)共有9个项目上榜。根据开发语言中项目的数量，汇总情况如下：
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 2 |
-| Go项目 | 2 |
-| TypeScript项目 | 1 |
-| Rust项目 | 1 |
-| Jupyter Notebook项目 | 1 |
+| Java项目 | 8 |
 | HTML项目 | 1 |
-| C++项目 | 1 |
-| Kotlin项目 | 1 |
+| TypeScript项目 | 1 |
+| 非开发语言项目 | 1 |
 
-## ChatGPT桌面应用程序和Noi的开源问题
+## Java生态系统中的Spring框架教程集合
 
-* 创建周期：527 天
-* 开发语言：Rust
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：48224 个
-* Fork数量：5496 次
-* 关注人数：48224 人
-* 贡献人数：30 人
-* Open Issues数量：630 个
-* Github地址：https://github.com/lencx/ChatGPT.git
-* 项目首页: https://nofwl.com
-
-
-![](/images/lencx-chatgpt-0.png)
-
-ChatGPT桌面应用程序，适用于Mac、Windows和Linux，是一个开源项目，受到了很多关注。然而，由于未经授权的重新打包和潜在的侵权纠纷问题，推出了一个名为Noi的后继应用程序，作为一个更强大的AI封装应用。
-
-## NocoBase: 可扩展的企业解决方案构建平台
-
-* 创建周期：1299 天
-* 开发语言：TypeScript
-* 协议类型：Other
-* Star数量：6120 个
-* Fork数量：806 次
-* 关注人数：6120 人
-* 贡献人数：53 人
-* Open Issues数量：51 个
-* Github地址：https://github.com/nocobase/nocobase.git
-* 项目首页: https://www.nocobase.com
-
-
-![](/images/nocobase-nocobase-0.png)
-
-NocoBase是一个以可扩展性为首要考虑因素的开源平台，旨在构建企业应用程序和解决方案，无需编码。
-
-## N64: Recompiled - N64二进制文件的静态重新编译工具
-
-* 创建周期：545 天
-* 开发语言：C++
+* 创建周期：3980 天
+* 开发语言：Java
 * 协议类型：MIT License
-* Star数量：1882 个
-* Fork数量：102 次
-* 关注人数：1882 人
-* 贡献人数：4 人
-* Open Issues数量：18 个
-* Github地址：https://github.com/Mr-Wiseguy/N64Recomp.git
+* Star数量：35802 个
+* Fork数量：54198 次
+* 关注人数：35802 人
+* 贡献人数：322 人
+* Open Issues数量：83 个
+* Github地址：https://github.com/eugenp/tutorials.git
+* 项目首页: http://bit.ly/github-lsso
 
 
-N64: Recompiled是一个工具，用于将N64二进制文件静态重新编译为可在任何平台上编译的C代码。它可用于端口、工具或模拟行为，比解释器或动态重新编译更快。它还可用于在独立环境中运行N64二进制文件的部分。该项目受到IDO静态重新编译项目的启发，后者在现代系统上重新编译SGI IRIX IDO编译器，以便匹配N64游戏的反编译。
+该项目是一个包含多个小而专注的教程的集合，涵盖了Java生态系统中各个领域的开发，重点关注Spring框架、Spring Boot和Spring Security。它利用maven构建配置文件来分隔项目，并包括构建整个存储库、特定模块以及运行Spring Boot模块和测试的说明。
 
-## 自托管的订阅内容整合仪表板
+## 多种编程语言实现 LeetCode、《剑指 Offer（第 2 版）》、《程序员面试金典（第 6 版）》题解
 
-* 创建周期：17 天
-* 开发语言：Go
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：2237 个
-* Fork数量：51 次
-* 关注人数：2237 人
-* 贡献人数：4 人
-* Open Issues数量：20 个
-* Github地址：https://github.com/glanceapp/glance.git
+* 创建周期：2070 天
+* 协议类型：Creative Commons Attribution Share Alike 4.0 International
+* Star数量：29149 个
+* Fork数量：4979 次
+* 关注人数：29149 人
+* 贡献人数：144 人
+* Open Issues数量：3 个
+* Github地址：https://github.com/doocs/leetcode.git
+* 项目首页: https://doocs.github.io/leetcode
 
 
-一个自托管的仪表板，将所有您的订阅内容整合到一个地方，并具有各种功能。
+![](/images/doocs-leetcode-0.png)
 
-## Gemini API Cookbook: 快速入门教程和示例集
+该项目包含了 LeetCode、《剑指 Offer（第 2 版）》、《剑指 Offer（专项突击版）》和《程序员面试金典（第 6 版）》等题目的解决方案。所有解决方案均使用多种编程语言实现，包括但不限于 Java、Python、C++、Go、TypeScript 和 Rust。该项目正在积极维护，欢迎用户点赞并关注获取最新动态。
 
-* 创建周期：31 天
-* 开发语言：Jupyter Notebook
+## 本地托管的PDF文件操作工具
+
+* 创建周期：464 天
+* 开发语言：Java, HTML
+* 协议类型：GNU General Public License v3.0
+* Star数量：23260 个
+* Fork数量：1652 次
+* 关注人数：23260 人
+* 贡献人数：104 人
+* Open Issues数量：164 个
+* Github地址：https://github.com/Stirling-Tools/Stirling-PDF.git
+
+
+![](/images/stirling-tools-stirling-pdf-0.png)
+
+一个本地托管的网络应用程序，提供对PDF文件的各种操作。它是一个使用Docker的综合工具，允许进行分割、合并、转换、重新组织、添加图像、旋转和压缩PDF文件等任务。该应用程序通过不发出用于跟踪或记录的出站调用来确保隐私，并且文件在任务执行期间要么存在于客户端，要么仅暂时存在于服务器内存中。
+
+## Apache Kafka 管理的 Web 用户界面
+
+* 创建周期：1515 天
+* 开发语言：Java, TypeScript
 * 协议类型：Apache License 2.0
-* Star数量：909 个
-* Fork数量：77 次
-* 关注人数：909 人
-* 贡献人数：7 人
-* Open Issues数量：14 个
-* Github地址：https://github.com/google-gemini/cookbook.git
-* 项目首页: https://ai.google.dev
+* Star数量：7754 个
+* Fork数量：972 次
+* 关注人数：7754 人
+* 贡献人数：169 人
+* Open Issues数量：351 个
+* Github地址：https://github.com/provectus/kafka-ui.git
 
 
-Gemini API Cookbook是Gemini API的指南和示例集，提供了使用API不同功能的快速入门教程和示例。
+![](/images/provectus-kafka-ui-0.png)
 
-## 哔哩哔哩聊天机器人
+这个开源项目为管理Apache Kafka提供了一个基于Web的用户界面，Apache Kafka是一个分布式流处理平台。它通过图形界面提供了一个方便的方式来监视和管理Kafka集群、主题和代理。
 
-* 创建周期：8 天
-* 开发语言：Python
-* 协议类型：Apache License 2.0
-* Star数量：845 个
-* Fork数量：111 次
-* 关注人数：845 人
-* 贡献人数：1 人
-* Open Issues数量：8 个
-* Github地址：https://github.com/linyiLYi/bilibot.git
+## Testcontainers: 为JUnit测试提供一次性实例的Java库
 
-
-哔哩哔哩聊天机器人是由哔哩哔哩用户评论微调训练而成的本地聊天机器人，支持文字聊天和通过questions.txt生成针对给定问题的语音对话。项目使用Qwen1.5-32B-Chat作为基础模型，并借助苹果mlx-lm LORA示例项目进行微调训练。语音生成部分基于开源项目GPT-SoVITS，问题语音来自B站用户白菜工厂1145号员工训练的派蒙语音模型。
-
-## Hunyuan-DiT：强大的多分辨率扩散变压器与细粒度中文理解
-
-* 创建周期：7 天
-* 开发语言：Python
-* 协议类型：Other
-* Star数量：1170 个
-* Fork数量：62 次
-* 关注人数：1170 人
-* 贡献人数：4 人
-* Open Issues数量：26 个
-* Github地址：https://github.com/Tencent/HunyuanDiT.git
-* 项目首页: https://dit.hunyuan.tencent.com/
-
-
-![](/images/tencent-hunyuandit-0.png)
-
-Hunyuan-DiT是一个强大的多分辨率扩散变压器，专注于细粒度的中文理解。该存储库包含了PyTorch模型定义、预训练权重以及项目的推理/采样代码，还提供了更多可视化内容在项目页面上。
-
-## Piko: Ngrok的开源替代方案
-
-* 创建周期：59 天
-* 开发语言：Go
+* 创建周期：3260 天
+* 开发语言：Java
 * 协议类型：MIT License
-* Star数量：998 个
-* Fork数量：15 次
-* 关注人数：998 人
-* 贡献人数：2 人
+* Star数量：7683 个
+* Fork数量：1578 次
+* 关注人数：7683 人
+* 贡献人数：430 人
+* Open Issues数量：602 个
+* Github地址：https://github.com/testcontainers/testcontainers-java.git
+* 项目首页: https://testcontainers.org
+
+
+Testcontainers是一个Java库，支持JUnit测试，提供常见数据库、Selenium Web浏览器或其他可以在Docker容器中运行的轻量级、一次性实例。
+
+## Apache Iceberg: 大型分析表的高性能格式
+
+* 创建周期：2006 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：5624 个
+* Fork数量：2016 次
+* 关注人数：5624 人
+* 贡献人数：394 人
+* Open Issues数量：1420 个
+* Github地址：https://github.com/apache/iceberg.git
+* 项目首页: https://iceberg.apache.org/
+
+
+![](/images/apache-iceberg-0.png)
+
+Apache Iceberg是一种专为大型分析表设计的高性能格式，将SQL表的可靠性和简单性引入到大数据中。它使得像Spark、Trino、Flink、Presto、Hive和Impala等引擎能够同时安全地处理相同的表。
+
+## Azure SDK for Java 开发存储库
+
+* 创建周期：4546 天
+* 开发语言：Java
+* 协议类型：MIT License
+* Star数量：2179 个
+* Fork数量：1894 次
+* 关注人数：2179 人
+* 贡献人数：360 人
+* Open Issues数量：976 个
+* Github地址：https://github.com/Azure/azure-sdk-for-java.git
+
+
+该存储库致力于开发 Azure SDK for Java。建议 SDK 的用户查阅公共开发人员文档或版本化的开发人员文档。
+
+## Oblivion - Android Warp客户端
+
+* 创建周期：85 天
+* 开发语言：Java
+* Star数量：1561 个
+* Fork数量：258 次
+* 关注人数：1561 人
+* 贡献人数：12 人
+* Open Issues数量：81 个
+* Github地址：https://github.com/bepass-org/oblivion.git
+
+
+![](/images/bepass-org-oblivion-0.png)
+
+Oblivion是一个非官方的Android Warp客户端，旨在通过使用Cloudflare Warp技术的用户友好的应用程序提供安全和优化的互联网访问。它利用bepass-sdk和WireGuard的自定义Go实现，旨在实现快速和私密的在线体验。
+
+## DingoDB: 开源分布式多模式向量数据库
+
+* 创建周期：946 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：455 个
+* Fork数量：133 次
+* 关注人数：455 人
+* 贡献人数：23 人
 * Open Issues数量：1 个
-* Github地址：https://github.com/andydunstall/piko.git
+* Github地址：https://github.com/dingodb/dingo.git
+* 项目首页: https://www.dingodb.com
 
 
-Piko是Ngrok的开源替代方案，旨在提供生产流量服务并且在Kubernetes上简单托管。它允许在客户网络中公开服务，提供自己的云（BYOC）服务，或连接到物联网设备。代理服务器可以作为节点集群进行托管，以实现容错、扩展和零停机部署。上游服务连接到Piko并注册端点，Piko随后路由请求。它可以在不打开公共端口的情况下公开服务，并在多个上游服务注册相同端点时在这些上游服务之间进行请求负载均衡。
-
-## Kotlin多平台示例
-
-* 创建周期：590 天
-* 开发语言：Kotlin
-* 协议类型：Apache License 2.0
-* Star数量：732 个
-* Fork数量：58 次
-* 关注人数：732 人
-* 贡献人数：5 人
-* Open Issues数量：2 个
-* Github地址：https://github.com/android/kotlin-multiplatform-samples.git
-* 项目首页: https://androidx.github.io/kmp-eap-docs/
-
-
-Kotlin Multiplatform Samples是一个展示实验性Kotlin多平台Jetpack库的项目。
-
-## HackBat: 用于黑客和创客的开源设备
-
-* 创建周期：19 天
-* 开发语言：HTML
-* Star数量：232 个
-* Fork数量：22 次
-* 关注人数：232 人
-* 贡献人数：1 人
-* Open Issues数量：2 个
-* Github地址：https://github.com/controlpaths/hackbat.git
-
-
-HackBat是一个开源设备，旨在供黑客和创客们尝试不同的渗透测试技术。该设备基于Raspberry Pi RP2040微控制器，具有RF收发器、NFC、WIFI和OLED显示屏等功能。
+DingoDB是由DataCanvas设计的开源分布式多模式向量数据库。它支持使用统一的SQL对结构化和非结构化数据进行upserts和向量查询，具有高并发性和超低延迟。它集成了在线强一致性、关系语义和向量语义，并具有出色的水平扩展性和扩展能力。它完全兼容MySQL协议，并支持多种语言接口。
 
