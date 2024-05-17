@@ -1,32 +1,32 @@
 ---
-title: Github 2024-05-18 开源项目日报 Top10
-date: 2024-05-18T07:01:25+08:00
+title: Github 2024-05-18 Rust开源项目日报 Top10
+date: 2024-05-18T07:11:18+08:00
 slug: github-trendings-today-20240518
 author: 老孙正经胡说
-image: /images/abi-screenshot-to-code-0.png
+image: /images/lencx-chatgpt-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
   - 人数
   - 人
-  - 和
-  - 创建
+  - 项目
   - 开发
   - 语言
-  - 关注
-  - 周期
-  - 协议
   - 类型
+  - 关注
+  - 创建
+  - 周期
   - 贡献
   - 地址
   - 是
   - 开源
+  - 协议
+  - 和
+  - 编写
   - 应用程序
-  - 构建
-  - 使用
-  - 可
+  - 运行
+  - 中
 
 categories:
 
@@ -38,45 +38,8 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 5 |
-| TypeScript项目 | 4 |
-| Rust项目 | 1 |
-| JavaScript项目 | 1 |
-| Jupyter Notebook项目 | 1 |
-
-## React Router: React JavaScript 库的轻量级、功能丰富的路由库
-
-* 创建周期：3655 天
-* 开发语言：TypeScript
-* 协议类型：MIT License
-* Star数量：52045 个
-* Fork数量：10146 次
-* 关注人数：52045 人
-* 贡献人数：430 人
-* Open Issues数量：88 个
-* Github地址：https://github.com/remix-run/react-router.git
-* 项目首页: https://reactrouter.com
-
-
-React Router 是 React JavaScript 库的轻量级、功能丰富的路由库。它可以在 Web、服务器（使用 node.js）和 React Native 上运行。新用户可以从教程开始，对于从 v5、v4 或 Reach Router 迁移的用户，可以查看迁移指南。v6 的文档可以在网站上找到。
-
-## 屏幕截图转代码应用
-
-* 创建周期：114 天
-* 开发语言：TypeScript, Python
-* 协议类型：MIT License
-* Star数量：42336 个
-* Fork数量：4965 次
-* 关注人数：42336 人
-* 贡献人数：18 人
-* Open Issues数量：85 个
-* Github地址：https://github.com/abi/screenshot-to-code.git
-* 项目首页: https://screenshottocode.com
-
-
-![](/images/abi-screenshot-to-code-0.png)
-
-这个开源项目是一个简单的应用程序，它使用GPT-4 Vision或Claude 3来生成代码，使用DALL-E 3来生成类似的图像，将屏幕截图转换为代码。它支持HTML/Tailwind CSS、React、Bootstrap和Vue。用户还可以输入URL来克隆一个活动网站。该项目在GitHub上可用，以获取更多演示和更新。
+| Rust项目 | 10 |
+| TypeScript项目 | 1 |
 
 ## ChatGPT桌面应用程序和Noi的开源问题
 
@@ -96,120 +59,148 @@ React Router 是 React JavaScript 库的轻量级、功能丰富的路由库。�
 
 ChatGPT桌面应用程序，适用于Mac、Windows和Linux，是一个开源项目，受到了很多关注。然而，由于未经授权的重新打包和潜在的侵权纠纷问题，推出了一个名为Noi的后继应用程序，作为一个更强大的AI封装应用。
 
-## Bulletproof React: 构建可投入生产的React应用程序的简单、可扩展和强大架构
+## InfluxDB Edge: 开源实时时序数据库
 
-* 创建周期：1082 天
-* 开发语言：TypeScript
-* 协议类型：MIT License
-* Star数量：23221 个
-* Fork数量：2184 次
-* 关注人数：23221 人
-* 贡献人数：32 人
-* Open Issues数量：22 个
-* Github地址：https://github.com/alan2207/bulletproof-react.git
-
-
-Bulletproof React是一种简单、可扩展和强大的架构，用于构建可投入生产的React应用程序。
-
-## NocoBase: 可扩展的企业解决方案构建平台
-
-* 创建周期：1299 天
-* 开发语言：TypeScript
-* 协议类型：Other
-* Star数量：6120 个
-* Fork数量：806 次
-* 关注人数：6120 人
-* 贡献人数：53 人
-* Open Issues数量：51 个
-* Github地址：https://github.com/nocobase/nocobase.git
-* 项目首页: https://www.nocobase.com
+* 创建周期：3817 天
+* 开发语言：Rust
+* 协议类型：Apache License 2.0
+* Star数量：27405 个
+* Fork数量：3468 次
+* 关注人数：27405 人
+* 贡献人数：319 人
+* Open Issues数量：1898 个
+* Github地址：https://github.com/influxdata/influxdb.git
+* 项目首页: https://influxdata.com
 
 
-![](/images/nocobase-nocobase-0.png)
+InfluxDB Edge是用Rust编写的开源时序数据库，专注于为各种类型的观测数据提供实时缓冲。最新版本（3.x）可以通过SQL或InfluxQL进行查询，并将数据批量持久化到对象存储中作为Parquet文件。它可以作为独立系统在单个进程中运行，并提供商业版本，用于具有企业安全功能的集群化、分布式时序数据库。
 
-NocoBase是一个以可扩展性为首要考虑因素的开源平台，旨在构建企业应用程序和解决方案，无需编码。
+## Hyperswitch：用Rust编写的开源支付交换机
 
-## 使用函数调用构建AI助手的工具包
-
-* 创建周期：650 天
-* 开发语言：Python
-* 协议类型：Mozilla Public License 2.0
-* Star数量：1796 个
-* Fork数量：195 次
-* 关注人数：1796 人
-* 贡献人数：12 人
-* Open Issues数量：14 个
-* Github地址：https://github.com/phidatahq/phidata.git
-* 项目首页: https://docs.phidata.com
+* 创建周期：516 天
+* 开发语言：Rust
+* 协议类型：Apache License 2.0
+* Star数量：9315 个
+* Fork数量：741 次
+* 关注人数：9315 人
+* 贡献人数：149 人
+* Open Issues数量：444 个
+* Github地址：https://github.com/juspay/hyperswitch.git
+* 项目首页: https://hyperswitch.io/
 
 
-![](/images/phidatahq-phidata-0.png)
+Hyperswitch是一个用Rust编写的开源支付交换机，旨在使支付快速、可靠且价格实惠。它旨在减少对单一处理器（如Stripe或Braintree）的依赖，减少开发工作量，提高成功率，降低处理费用，定制支付流程，并通过本地/备用支付方式扩大业务范围。
 
-Phidata是一个使用函数调用构建AI助手的工具包。函数调用使LLMs能够通过调用函数并根据响应智能地选择下一步，就像人类解决问题一样。
+## ZLUDA：在AMD GPU上运行CUDA应用程序的开源项目
 
-## Mario Kart 3.js - JavaScript/WebGL 马里奥卡丁车
-
-* 创建周期：42 天
-* 开发语言：JavaScript
-* 协议类型：MIT License
-* Star数量：2993 个
-* Fork数量：713 次
-* 关注人数：2993 人
+* 创建周期：1524 天
+* 开发语言：Rust
+* 协议类型：Apache License 2.0
+* Star数量：6718 个
+* Fork数量：364 次
+* 关注人数：6718 人
 * 贡献人数：9 人
-* Open Issues数量：17 个
-* Github地址：https://github.com/Lunakepio/Mario-Kart-3.js.git
-* 项目首页: https://mario-kart-3-js.vercel.app
+* Open Issues数量：50 个
+* Github地址：https://github.com/vosen/ZLUDA.git
 
 
-Mario Kart 3.js是一个旨在使用JavaScript和WebGL重新创建马里奥卡丁车游戏的开源项目。尽管该项目仍在进行中，但大约完成了50%的工作。这是一个耗时的工作，但创作者希望人们能享受到目前为止所取得的进展。
+ZLUDA是一个开源项目，它可以在AMD GPU上以接近原生性能运行未经修改的CUDA应用程序。目前处于alpha质量阶段，但已确认可以与各种本地CUDA应用程序一起使用，如Geekbench、3DF Zephyr、Blender等。
 
-## GLaDOS 人格核心项目
+## Dufs - 实用文件服务器
 
-* 创建周期：407 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：1076 个
-* Fork数量：102 次
-* 关注人数：1076 人
-* 贡献人数：4 人
-* Open Issues数量：5 个
-* Github地址：https://github.com/dnhkng/GlaDOS.git
-
-
-![](/images/dnhkng-glados-0.png)
-
-该项目旨在构建GLaDOS的真实版本，涉及硬件和软件以创建一个有意识、互动和具象化的实体。这包括训练语音生成器、创建逼真的“人格核心”，实现记忆和视觉功能，并设计可3D打印的零件和一个动画系统。
-
-## InternVL Family: 与商用多模态模型接近的开源套件
-
-* 创建周期：178 天
-* 开发语言：Jupyter Notebook, Python
-* 协议类型：MIT License
-* Star数量：2261 个
-* Fork数量：145 次
-* 关注人数：2261 人
-* 贡献人数：5 人
-* Open Issues数量：65 个
-* Github地址：https://github.com/OpenGVLab/InternVL.git
-* 项目首页: https://arxiv.org/abs/2404.16821
+* 创建周期：723 天
+* 开发语言：Rust
+* 协议类型：Other
+* Star数量：4915 个
+* Fork数量：239 次
+* 关注人数：4915 人
+* 贡献人数：20 人
+* Open Issues数量：0 个
+* Github地址：https://github.com/sigoden/dufs.git
 
 
-![](/images/opengvlab-internvl-0.png)
+![](/images/sigoden-dufs-0.png)
 
-InternVL Family是GPT-4V的开创性开源替代品，旨在通过开源套件缩小与商用多模态模型之间的差距。它提供了一种多模态对话模型，接近GPT-4V的性能。
+Dufs是一种独特的实用文件服务器，支持静态服务、上传、搜索、访问控制、WebDAV...
 
-## llama3.np：纯NumPy实现的Llama 3模型
+## Aleo: 专为ZK应用设计的去中心化操作系统
 
-* 创建周期：5 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：559 个
-* Fork数量：37 次
-* 关注人数：559 人
+* 创建周期：1553 天
+* 开发语言：Rust
+* 协议类型：Apache License 2.0
+* Star数量：3896 个
+* Fork数量：2498 次
+* 关注人数：3896 人
+* 贡献人数：78 人
+* Open Issues数量：105 个
+* Github地址：https://github.com/AleoNet/snarkOS.git
+* 项目首页: http://snarkos.org
+
+
+![](/images/aleonet-snarkos-0.png)
+
+Aleo是一个专为ZK（零知识）应用设计的去中心化操作系统。它提供了一个构建和运行Aleo节点、客户端和证明者的平台。该项目包括了一个命令行界面和一个面向贡献者的开发指南。
+
+## Borgo编程语言：更具表现力的Go语法与类型安全性
+
+* 创建周期：442 天
+* 开发语言：Rust
+* Star数量：2652 个
+* Fork数量：27 次
+* 关注人数：2652 人
 * 贡献人数：1 人
+* Open Issues数量：15 个
+* Github地址：https://github.com/borgo-lang/borgo.git
+* 项目首页: https://borgo-lang.github.io
+
+
+![](/images/borgo-lang-borgo-0.png)
+
+Borgo是一种静态类型语言，可以编译成Go。它旨在比Go更具表现力，但比Rust更简单，提供比Go更多的类型安全性，以及类似Rust的语法，还有可选的分号。它与现有的Go包完全兼容，并提供在线游乐场来学习该语言。
+
+## Solana程序库（SPL）- 面向Sealevel并行运行时的链上程序集合
+
+* 创建周期：1450 天
+* 开发语言：Rust
+* 协议类型：Apache License 2.0
+* Star数量：3042 个
+* Fork数量：1878 次
+* 关注人数：3042 人
+* 贡献人数：208 人
+* Open Issues数量：62 个
+* Github地址：https://github.com/solana-labs/solana-program-library.git
+* 项目首页: https://solanalabs.com
+
+
+Solana程序库（SPL）是Solana Labs维护的一组面向Sealevel并行运行时的链上程序集合。这些程序已针对Solana的Sealevel实现进行了测试，其中一些已部署到Mainnet Beta。该库欢迎补丁，以确保这些程序在所有实现中都具有可移植性。
+
+## Quary: 使用Rust编写的快速轻量级SQL转换引擎
+
+* 创建周期：4 天
+* 开发语言：Rust
+* 协议类型：MIT License
+* Star数量：192 个
+* Fork数量：2 次
+* 关注人数：192 人
+* 贡献人数：4 人
 * Open Issues数量：1 个
-* Github地址：https://github.com/likejazz/llama3.np.git
+* Github地址：https://github.com/quarylabs/quary.git
+* 项目首页: https://www.quary.dev
 
 
-llama3.np是Llama 3模型的纯NumPy实现，利用Andrej Karpathy训练的stories15M模型以确保准确性。
+Quary是一种工具，允许团队使用用Rust编写的快速轻量级SQL转换引擎来进行数据转换的建模、测试和部署。
+
+## 通过100个练习学习Rust
+
+* 创建周期：6 天
+* 开发语言：Rust
+* Star数量：465 个
+* Fork数量：70 次
+* 关注人数：465 人
+* 贡献人数：5 人
+* Open Issues数量：3 个
+* Github地址：https://github.com/mainmatter/100-exercises-to-learn-rust.git
+
+
+一门自学课程，通过解决100个练习来学习Rust，适合想要从零开始学习Rust并能够编写自己程序的个人。该课程由Mainmatter编写，是我们Rust研讨会系列中的一部分。
 
