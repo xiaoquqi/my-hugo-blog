@@ -1,32 +1,32 @@
 ---
-title: Github 2024-05-23 开源项目日报 Top10
-date: 2024-05-23T07:02:21+08:00
+title: Github 2024-05-23 Go开源项目日报 Top10
+date: 2024-05-23T07:11:22+08:00
 slug: github-trendings-today-20240523
 author: 老孙正经胡说
-image: /images/iluwatar-java-design-patterns-0.png
+image: /images/ollama-ollama-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
-  - 人
   - 人数
-  - 开发
+  - 人
   - 语言
   - 和
-  - 模型
+  - 项目
+  - 开发
   - 创建
-  - 周期
-  - 关注
-  - 贡献
   - 地址
   - 是
-  - 开源
-  - 中
+  - 周期
   - 协议
   - 类型
+  - 关注
+  - 贡献
   - 并
-  - 可以
+  - 版本
+  - 可
+  - 工具
+  - 分析
 
 categories:
 
@@ -38,170 +38,167 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 3 |
-| TypeScript项目 | 2 |
-| 非开发语言项目 | 1 |
-| Java项目 | 1 |
-| Shell项目 | 1 |
-| Jupyter Notebook项目 | 1 |
-| JavaScript项目 | 1 |
+| Go项目 | 10 |
+| TypeScript项目 | 1 |
+| Inno Setup项目 | 1 |
 
-## Java设计模式：提高开发效率的正规化实践
+## Ollama: 本地大型语言模型设置与运行
 
-* 创建周期：3572 天
-* 开发语言：Java
-* 协议类型：Other
-* Star数量：86766 个
-* Fork数量：25959 次
-* 关注人数：86766 人
-* 贡献人数：404 人
-* Open Issues数量：188 个
-* Github地址：https://github.com/iluwatar/java-design-patterns.git
-* 项目首页: https://java-design-patterns.com
-
-
-![](/images/iluwatar-java-design-patterns-0.png)
-
-设计模式是程序员用来解决应用程序或系统设计中常见问题的正规化实践。它们可以加快开发速度，预防问题，并提高代码可读性。该网站展示了由开源社区的经验丰富的程序员和架构师开发的Java设计模式。这些模式可以通过它们的描述或源代码示例进行浏览，这些示例可以作为编程教程。建议在深入材料之前熟悉软件设计原则。
-
-## WebLLM: 将语言模型聊天直接引入Web浏览器中
-
-* 创建周期：406 天
-* 开发语言：TypeScript
-* 协议类型：Apache License 2.0
-* Star数量：10303 个
-* Fork数量：632 次
-* 关注人数：10303 人
-* 贡献人数：31 人
-* Open Issues数量：97 个
-* Github地址：https://github.com/mlc-ai/web-llm.git
-* 项目首页: https://mlc.ai/web-llm
-
-
-WebLLM是一个模块化且可定制的JavaScript包，可直接将语言模型聊天引入具有硬件加速的Web浏览器中。一切都在浏览器内部运行，无需服务器支持，并通过WebGPU进行加速。它完全兼容OpenAI API，允许在本地使用开源模型。该项目可以为每个人构建AI助手，并通过GPU加速确保隐私。
-
-## llama3: 从头开始实现的张量和矩阵乘法
-
-* 创建周期：3 天
-* 开发语言：Jupyter Notebook
+* 创建周期：248 天
+* 开发语言：Go
 * 协议类型：MIT License
-* Star数量：6091 个
-* Fork数量：368 次
-* 关注人数：6091 人
-* 贡献人数：1 人
-* Open Issues数量：8 个
-* Github地址：https://github.com/naklecha/llama3-from-scratch.git
+* Star数量：42421 个
+* Fork数量：2724 次
+* 关注人数：42421 人
+* 贡献人数：138 人
+* Open Issues数量：709 个
+* Github地址：https://github.com/ollama/ollama.git
+* 项目首页: https://ollama.com
 
 
-llama3这个开源项目是从头开始实现的，可以一次执行一个张量和矩阵的乘法。它还允许直接从llama3的meta提供的模型文件中加载张量，但在运行该文件之前需要从官方链接下载权重。
+![](/images/ollama-ollama-0.png)
 
-## Firecrawl: 将网站转换为LLM-ready markdown
+Ollama是一个开源项目，帮助用户在本地设置和利用诸如Llama 2、Mistral和Gemma等大型语言模型。
 
-* 创建周期：6 天
-* 开发语言：TypeScript
-* 协议类型：Apache License 2.0
-* Star数量：1056 个
-* Fork数量：61 次
-* 关注人数：1056 人
-* 贡献人数：4 人
-* Open Issues数量：13 个
-* Github地址：https://github.com/mendableai/firecrawl.git
-* 项目首页: https://firecrawl.dev
+## Dive：探索Docker镜像的工具
 
-
-Firecrawl是Mendable.ai的一个开源项目，旨在爬取并将任何网站转换为LLM-ready markdown。该项目处于早期开发阶段，致力于合并自定义模块，以利用清洁数据提高LLM响应的准确性。它还没有准备好完全自行托管。
-
-## 极客时间电子书
-
-* 创建周期：483 天
-* Star数量：3266 个
-* Fork数量：1240 次
-* 关注人数：3266 人
-* 贡献人数：1 人
-* Open Issues数量：2 个
-* Github地址：https://github.com/it-ebooks-0/geektime-books.git
-
-
-极客时间电子书是开源的，为开发人员和IT专业人士提供了广泛的技术知识和资源。该平台提供了涵盖编程、软件开发和技术趋势等主题的各种电子书。
-
-## Baileys - 轻量级TypeScript/JavaScript WhatsApp Web API
-
-* 创建周期：862 天
-* 开发语言：JavaScript
+* 创建周期：2069 天
+* 开发语言：Go
 * 协议类型：MIT License
-* Star数量：2801 个
-* Fork数量：985 次
-* 关注人数：2801 人
-* 贡献人数：129 人
-* Open Issues数量：105 个
-* Github地址：https://github.com/WhiskeySockets/Baileys.git
-* 项目首页: https://whiskeysockets.github.io/Baileys/
+* Star数量：41384 个
+* Fork数量：1607 次
+* 关注人数：41384 人
+* 贡献人数：47 人
+* Open Issues数量：152 个
+* Github地址：https://github.com/wagoodman/dive.git
 
 
-Baileys是一个轻量级、功能齐全的TypeScript/JavaScript WhatsApp Web API。
+Dive是一个用于探索Docker镜像、分析层内容并发现如何缩小Docker/OCI镜像大小的开源工具。
 
-## MiniCPM-V 和 OmniLMM: 图文理解的开源多模态大模型系列
+## Node.js版本管理工具（Windows）
 
-* 创建周期：78 天
-* 开发语言：Python
+* 创建周期：3533 天
+* 开发语言：Go, Inno Setup
+* 协议类型：MIT License
+* Star数量：35136 个
+* Fork数量：3198 次
+* 关注人数：35136 人
+* 贡献人数：73 人
+* Open Issues数量：80 个
+* Github地址：https://github.com/coreybutler/nvm-windows.git
+
+
+![](/images/coreybutler-nvm-windows-0.png)
+
+Node.js版本管理实用工具，用Go语言编写，适用于Windows。它允许在Windows计算机上管理多个Node.js安装，并类似于nvm，但适用于Windows。支持Node 4+，在安装或切换版本时需要管理员权限来创建符号链接。它可用于在不卸载稳定版本的情况下，使用不同的Node.js版本测试模块。
+
+## Testify - Go代码测试工具包
+
+* 创建周期：4237 天
+* 开发语言：Go
+* 协议类型：MIT License
+* Star数量：22206 个
+* Fork数量：1550 次
+* 关注人数：22206 人
+* 贡献人数：225 人
+* Open Issues数量：386 个
+* Github地址：https://github.com/stretchr/testify.git
+
+
+Testify是一个针对Go代码的开源工具包，提供了简单的断言、模拟和测试套件接口和功能。它提供了易于阅读的失败描述、断言的消息注释以及当前测试的终止功能。mock包提供了编写模拟对象的机制，suite包允许构建具有设置/拆卸方法的测试套件。Testify可以通过一行代码进行安装和更新，并支持从1.19版本开始的最新的Go主要版本。
+
+## Apache Answer - 问答平台软件
+
+* 创建周期：472 天
+* 开发语言：Go, TypeScript
 * 协议类型：Apache License 2.0
-* Star数量：861 个
-* Fork数量：49 次
-* 关注人数：861 人
-* 贡献人数：8 人
-* Open Issues数量：10 个
-* Github地址：https://github.com/OpenBMB/MiniCPM-V.git
+* Star数量：10391 个
+* Fork数量：711 次
+* 关注人数：10391 人
+* 贡献人数：49 人
+* Open Issues数量：63 个
+* Github地址：https://github.com/apache/incubator-answer.git
+* 项目首页: https://answer.apache.org
 
 
-MiniCPM-V 和 OmniLMM 是面向图文理解的开源多模态大模型系列。它们接受图像和文本输入，并提供高质量的文本输出。MiniCPM-V 2.0 版本能够处理任意长宽比的图像，具有 180 万像素，实现了类似 Gemini Pro 的场景文字识别能力和与 GPT-4V 相当的低幻觉率。OmniLMM-12B 模型在多个基准测试中优于同规模的其他模型，并实现了比 GPT-4V 更低的幻觉率。
+Apache Answer是一种面向任何规模团队的问答平台软件，可作为社区论坛、帮助中心或知识管理平台。
 
-## CodiumAI Cover-Agent: 人工智能驱动的自动化测试生成和代码覆盖率增强工具
+## Node Exporter - Prometheus硬件和操作系统指标的出口程序
 
-* 创建周期：5 天
-* 开发语言：Python
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：1251 个
-* Fork数量：66 次
-* 关注人数：1251 人
-* 贡献人数：8 人
-* Open Issues数量：7 个
-* Github地址：https://github.com/Codium-ai/cover-agent.git
-* 项目首页: https://www.codium.ai/
-
-
-![](/images/codium-ai-cover-agent-0.png)
-
-CodiumAI Cover-Agent是一个开源项目，提供了一个基于人工智能的工具，用于自动化测试生成和代码覆盖率增强。它旨在通过利用人工智能技术来改善软件测试和代码质量。
-
-## CogVLM2: 基于Meta-Llama-3-8B的新一代开源多模态模型
-
-* 创建周期：13 天
-* 开发语言：Python
+* 创建周期：4053 天
+* 开发语言：Go
 * 协议类型：Apache License 2.0
-* Star数量：446 个
-* Fork数量：22 次
-* 关注人数：446 人
-* 贡献人数：4 人
-* Open Issues数量：13 个
-* Github地址：https://github.com/THUDM/CogVLM2.git
+* Star数量：10412 个
+* Fork数量：2270 次
+* 关注人数：10412 人
+* 贡献人数：378 人
+* Open Issues数量：212 个
+* Github地址：https://github.com/prometheus/node_exporter.git
+* 项目首页: https://prometheus.io/
 
 
-CogVLM2是基于Meta-Llama-3-8B-Instruct的新一代开源多模态模型。它在诸如TextVQA和DocVQA等基准测试中有显著改进，支持8K内容长度，图像分辨率高达1344 * 1344，并提供支持中英文的模型版本。
+Node exporter是一个Prometheus的出口程序，用于* NIX内核暴露的硬件和操作系统指标，使用Go编写，具有可插拔的度量收集器。它还建议Windows用户使用Windows出口程序，并使用prometheus-dcgm来暴露NVIDIA GPU指标。
 
-## Git RCE漏洞利用PoC: CVE-2024-32002
+## Crossplane: 云原生控制平面框架
 
-* 创建周期：6 天
-* 开发语言：Shell
-* Star数量：144 个
-* Fork数量：49 次
-* 关注人数：144 人
-* 贡献人数：1 人
-* Open Issues数量：1 个
-* Github地址：https://github.com/amalmurali47/git_rce.git
-* 项目首页: https://amalmurali.me/posts/git-rce
+* 创建周期：2084 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：8892 个
+* Fork数量：898 次
+* 关注人数：8892 人
+* 贡献人数：211 人
+* Open Issues数量：202 个
+* Github地址：https://github.com/crossplane/crossplane.git
+* 项目首页: https://crossplane.io
 
 
-![](/images/amalmurali47-git_rce-0.png)
+Crossplane是一个无需编写代码即可构建云原生控制平面的框架。它具有高度可扩展的后端，可以在不同环境中编排应用程序和基础架构，以及可配置的前端，可控制其提供的声明性API模式。该项目是Cloud Native Computing Foundation的一部分。
 
-该存储库包含了一个用于利用CVE-2024-32002的PoC（概念验证），这是Git中的一个漏洞，允许在'git clone'操作期间进行远程代码执行（RCE）。通过操纵具有特定方式的子模块的存储库，攻击者可以利用大小写不敏感的文件系统上的符号链接处理，将文件写入'.git/'目录，从而导致执行恶意挂钩。该PoC专门针对Windows或Mac系统设计。
+## pprof：分析数据可视化工具
+
+* 创建周期：3037 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：7542 个
+* Fork数量：586 次
+* 关注人数：7542 人
+* 贡献人数：109 人
+* Open Issues数量：59 个
+* Github地址：https://github.com/google/pprof.git
+
+
+pprof是用于可视化和分析分析数据的工具。它读取profile.proto格式的分析样本，并生成报告以可视化和分析数据。它可以生成文本和图形报告，并使用本机binutils工具对机器地址进行符号化。该工具使用Go开发工具包和Graphviz构建，并可以从本地文件或通过HTTP读取配置文件。
+
+## OpenTelemetry-Go: 测量软件性能和行为的Go语言实现
+
+* 创建周期：1834 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：4864 个
+* Fork数量：994 次
+* 关注人数：4864 人
+* 贡献人数：275 人
+* Open Issues数量：166 个
+* Github地址：https://github.com/open-telemetry/opentelemetry-go.git
+* 项目首页: https://opentelemetry.io/
+
+
+OpenTelemetry-Go是OpenTelemetry的Go语言实现，提供一组API来直接测量软件的性能和行为，并将数据发送到可观察性平台。
+
+## CloudNativePG: 在Kubernetes环境中管理PostgreSQL数据库的开源平台
+
+* 创建周期：805 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：3536 个
+* Fork数量：248 次
+* 关注人数：3536 人
+* 贡献人数：106 人
+* Open Issues数量：302 个
+* Github地址：https://github.com/cloudnative-pg/cloudnative-pg.git
+* 项目首页: https://cloudnative-pg.io
+
+
+CloudNativePG是一个设计用于在Kubernetes环境中无缝管理PostgreSQL数据库的开源平台，涵盖从部署到维护的整个运营生命周期。其主要组件是CloudNativePG操作员，最初由EDB构建和赞助。
 
