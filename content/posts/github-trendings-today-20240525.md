@@ -1,32 +1,32 @@
 ---
-title: Github 2024-05-25 开源项目日报 Top10
-date: 2024-05-25T07:01:05+08:00
+title: Github 2024-05-25 Rust开源项目日报 Top10
+date: 2024-05-25T07:11:17+08:00
 slug: github-trendings-today-20240525
 author: 老孙正经胡说
-image: /images/gothinkster-realworld-0.png
+image: /images/rustdesk-rustdesk-0.png
 tags:
   - github
   - trendings
   - 数量
   - 项目
-  - 人数
   - 人
   - 和
-  - 语言
+  - 人数
   - 开发
+  - 是
+  - 语言
   - 创建
-  - 周期
-  - 关注
   - 贡献
-  - 地址
+  - 周期
   - 协议
   - 类型
-  - 是
+  - 关注
+  - 地址
   - 提供
+  - 工具
+  - 使用
+  - 中
   - 开源
-  - 应用程序
-  - 并
-  - 模型
 
 categories:
 
@@ -38,128 +38,132 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 3 |
-| TypeScript项目 | 3 |
-| 非开发语言项目 | 1 |
-| HTML项目 | 1 |
-| Rust项目 | 1 |
+| Rust项目 | 10 |
+| Svelte项目 | 1 |
+| TypeScript项目 | 1 |
+| Python项目 | 1 |
 | Go项目 | 1 |
-| Jupyter Notebook项目 | 1 |
-| Java项目 | 1 |
+| Dart项目 | 1 |
 
-## Angular文档：交付Web应用程序的自信之选
+## RustDesk: 用Rust编写的开源远程桌面软件
 
-* 创建周期：3537 天
-* 开发语言：TypeScript
-* 协议类型：MIT License
-* Star数量：94816 个
-* Fork数量：24708 次
-* 关注人数：94816 人
-* 贡献人数：386 人
-* Open Issues数量：1546 个
-* Github地址：https://github.com/angular/angular.git
-* 项目首页: https://angular.dev
-
-
-该项目旨在以自信交付Web应用程序，并提供有关使用Angular快速入门、学习基础知识和探索高级主题的文档。
-
-## RealWorld - 示例性全栈应用程序
-
-* 创建周期：3011 天
-* 开发语言：TypeScript
-* 协议类型：MIT License
-* Star数量：79182 个
-* Fork数量：7239 次
-* 关注人数：79182 人
-* 贡献人数：79 人
-* Open Issues数量：77 个
-* Github地址：https://github.com/gothinkster/realworld.git
-* 项目首页: https://main--realworld-docs.netlify.app/
-
-
-![](/images/gothinkster-realworld-0.png)
-
-RealWorld是一个示范性的全栈Medium.com克隆，由各种前端和后端驱动，允许用户查看不同技术如何用于构建真实世界的应用程序。它提供了使用不同语言、库和框架构建的100多个实现，所有这些实现都针对相同的API规范进行构建，以确保模块化。前端利用相同的Bootstrap 4主题实现一致的UI/UX，后端API的托管版本可供公共使用，无需API密钥。
-
-## 大型语言模型（LLMs）课程
-
-* 创建周期：229 天
-* 开发语言：Jupyter Notebook
-* 协议类型：Apache License 2.0
-* Star数量：22437 个
-* Fork数量：2157 次
-* 关注人数：22437 人
-* 贡献人数：2 人
-* Open Issues数量：23 个
-* Github地址：https://github.com/mlabonne/llm-course.git
-* 项目首页: https://mlabonne.github.io/blog/
-
-
-大型语言模型（LLMs）课程分为三个部分：LLM基础涵盖了数学、Python和神经网络的基本知识，LLM科学家专注于使用最新技术构建最佳的LLM，LLM工程师专注于创建基于LLM的应用程序并部署它们。
-
-## Khoj：开源AI辅助工具
-
-* 创建周期：1013 天
-* 开发语言：Python, HTML
+* 创建周期：1218 天
+* 开发语言：Rust, Dart
 * 协议类型：GNU Affero General Public License v3.0
-* Star数量：6609 个
-* Fork数量：309 次
-* 关注人数：6609 人
-* 贡献人数：28 人
+* Star数量：58141 个
+* Fork数量：6255 次
+* 关注人数：58141 人
+* 贡献人数：230 人
+* Open Issues数量：49 个
+* Github地址：https://github.com/rustdesk/rustdesk.git
+* 项目首页: https://rustdesk.com
+
+
+![](/images/rustdesk-rustdesk-0.png)
+
+RustDesk是一款用Rust编写的开源远程桌面软件，可作为TeamViewer的替代品。它可以直接使用，无需配置，提供完全的数据控制和安全性。用户可以使用提供的会合/中继服务器，自行设置，或编写自己的服务器。该项目欢迎所有人的贡献，并提供常见问题解答、二进制下载和每夜构建。
+
+## ripgrep（rg）- 递归搜索工具
+
+* 创建周期：2997 天
+* 开发语言：Rust
+* 协议类型：The Unlicense
+* Star数量：45437 个
+* Fork数量：1889 次
+* 关注人数：45437 人
+* 贡献人数：370 人
+* Open Issues数量：108 个
+* Github地址：https://github.com/BurntSushi/ripgrep.git
+
+
+![](/images/burntsushi-ripgrep-0.png)
+
+ripgrep（rg）是一种面向行的搜索工具，可以在当前目录中递归搜索正则表达式模式。默认情况下，ripgrep会遵守gitignore规则，并自动跳过隐藏文件/目录和二进制文件。（要禁用默认情况下的所有自动过滤，请使用rg -uuu .）ripgrep在Windows、macOS和Linux上具有一流的支持，并且类似于其他流行的搜索工具，如The Silver Searcher、ack和grep。它在MIT或UNLICENSE下具有双重许可。
+
+## Ruff: 极速Python代码检查器和格式化工具
+
+* 创建周期：655 天
+* 开发语言：Rust
+* 协议类型：MIT License
+* Star数量：27379 个
+* Fork数量：874 次
+* 关注人数：27379 人
+* 贡献人数：420 人
+* Open Issues数量：867 个
+* Github地址：https://github.com/astral-sh/ruff.git
+* 项目首页: https://docs.astral.sh/ruff
+
+
+Ruff是一个极快的Python代码检查器和代码格式化工具，用Rust编写，旨在比现有的检查器和格式化工具如Flake8和Black快10-100倍。它可通过pip安装，支持pyproject.toml，并兼容Python 3.12。Ruff提供了与Flake8、isort和Black的兼容性，内置缓存、修复支持、800多条内置规则，以及针对VS Code等编辑器的官方集成。它适用于单存储库，并且在Apache Airflow、FastAPI、Hugging Face和Pandas等主要开源项目中得到积极使用。
+
+## Polars: Rust中的DataFrame接口和OLAP查询引擎
+
+* 创建周期：1354 天
+* 开发语言：Rust, Python
+* 协议类型：MIT License
+* Star数量：23854 个
+* Fork数量：1393 次
+* 关注人数：23854 人
+* 贡献人数：342 人
+* Open Issues数量：1313 个
+* Github地址：https://github.com/pola-rs/polars.git
+* 项目首页: https://docs.pola.rs
+
+
+![](/images/pola-rs-polars-0.png)
+
+Polars是在Rust上实现的OLAP查询引擎之上的DataFrame接口，提供诸如惰性和急切执行、多线程、SIMD、查询优化、强大的表达式API和用于大于RAM数据集的混合流式传输等功能。它支持Rust、Python、Node.js、R等多种语言。
+
+## Biome: 高性能网络项目工具链
+
+* 创建周期：268 天
+* 开发语言：Rust
+* 协议类型：Apache License 2.0
+* Star数量：10153 个
+* Fork数量：331 次
+* 关注人数：10153 人
+* 贡献人数：382 人
+* Open Issues数量：141 个
+* Github地址：https://github.com/biomejs/biome.git
+* 项目首页: https://biomejs.dev
+
+
+![](/images/biomejs-biome-0.png)
+
+Biome是一个高性能的网络项目工具链，为JavaScript、TypeScript、JSX和JSON提供快速格式化和检查工具。它提供了来自ESLint、typescript-eslint和其他来源的200多条规则，并输出详细的诊断信息，帮助改善代码质量。Biome旨在与编辑器进行交互式使用，在编写代码时对其进行格式化和检查。
+
+## Kata Containers: 轻量级虚拟机与容器性能的安全性优势
+
+* 创建周期：2235 天
+* 开发语言：Rust, Go
+* 协议类型：Apache License 2.0
+* Star数量：4572 个
+* Fork数量：1047 次
+* 关注人数：4572 人
+* 贡献人数：310 人
+* Open Issues数量：1375 个
+* Github地址：https://github.com/kata-containers/kata-containers.git
+
+
+Kata Containers 是一个旨在创建轻量级虚拟机（VMs）的开源项目，旨在提供容器的性能同时提供虚拟机的安全性优势。
+
+## 可滚动的平铺式Wayland合成器
+
+* 创建周期：226 天
+* 开发语言：Rust
+* 协议类型：GNU General Public License v3.0
+* Star数量：1545 个
+* Fork数量：39 次
+* 关注人数：1545 人
+* 贡献人数：19 人
 * Open Issues数量：48 个
-* Github地址：https://github.com/khoj-ai/khoj.git
-* 项目首页: https://khoj.dev
+* Github地址：https://github.com/YaLTeR/niri.git
+* 项目首页: https://matrix.to/#/#niri:matrix.org
 
 
-![](/images/khoj-ai-khoj-0.png)
+![](/images/yalter-niri-0.png)
 
-Khoj是一个开源的人工智能工具，作为副驾驶帮助用户从自己的笔记或互联网上找到答案。它利用强大的LLM，如GPT-4和Llama3，可以在线访问或本地自行托管。用户可以从多个平台访问Khoj，包括Obsidian、Emacs、桌面应用程序、Web或Whatsapp。
-
-## 极客时间电子书
-
-* 创建周期：483 天
-* Star数量：3266 个
-* Fork数量：1240 次
-* 关注人数：3266 人
-* 贡献人数：1 人
-* Open Issues数量：2 个
-* Github地址：https://github.com/it-ebooks-0/geektime-books.git
-
-
-极客时间电子书是开源的，为开发人员和IT专业人士提供了广泛的技术知识和资源。该平台提供了涵盖编程、软件开发和技术趋势等主题的各种电子书。
-
-## MiniCPM-V 和 OmniLMM: 图文理解的开源多模态大模型系列
-
-* 创建周期：78 天
-* 开发语言：Python
-* 协议类型：Apache License 2.0
-* Star数量：861 个
-* Fork数量：49 次
-* 关注人数：861 人
-* 贡献人数：8 人
-* Open Issues数量：10 个
-* Github地址：https://github.com/OpenBMB/MiniCPM-V.git
-
-
-MiniCPM-V 和 OmniLMM 是面向图文理解的开源多模态大模型系列。它们接受图像和文本输入，并提供高质量的文本输出。MiniCPM-V 2.0 版本能够处理任意长宽比的图像，具有 180 万像素，实现了类似 Gemini Pro 的场景文字识别能力和与 GPT-4V 相当的低幻觉率。OmniLMM-12B 模型在多个基准测试中优于同规模的其他模型，并实现了比 GPT-4V 更低的幻觉率。
-
-## CodiumAI Cover-Agent: 人工智能驱动的自动化测试生成和代码覆盖率增强工具
-
-* 创建周期：5 天
-* 开发语言：Python
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：1251 个
-* Fork数量：66 次
-* 关注人数：1251 人
-* 贡献人数：8 人
-* Open Issues数量：7 个
-* Github地址：https://github.com/Codium-ai/cover-agent.git
-* 项目首页: https://www.codium.ai/
-
-
-![](/images/codium-ai-cover-agent-0.png)
-
-CodiumAI Cover-Agent是一个开源项目，提供了一个基于人工智能的工具，用于自动化测试生成和代码覆盖率增强。它旨在通过利用人工智能技术来改善软件测试和代码质量。
+一种可滚动的平铺式Wayland合成器，将窗口排列在无限向右滚动的列中，打开新窗口不会导致现有窗口调整大小。每个显示器都有自己独立的窗口条，窗口永远不会“溢出”到相邻的显示器。工作区是动态的，垂直排列，每个显示器都有独立的工作区集，并始终存在一个空的工作区。工作区布局在断开和连接显示器时会得到保留。
 
 ## Amber: 编译为Bash的高级编程语言
 
@@ -177,19 +181,35 @@ CodiumAI Cover-Agent是一个开源项目，提供了一个基于人工智能的
 
 Amber是一种高级编程语言，可编译为Bash，使得创建shell脚本变得容易。它特别适用于云服务，但重要的是要注意，该软件尚未准备好用于长时间使用。
 
-## Neosync: 开发人员的数据匿名化和合成工具
+## jsr.io: 现代JavaScript和TypeScript的开源软件包注册表
 
-* 创建周期：275 天
-* 开发语言：TypeScript, Go
+* 创建周期：87 天
+* 开发语言：Rust, TypeScript
 * 协议类型：MIT License
-* Star数量：1641 个
-* Fork数量：51 次
-* 关注人数：1641 人
-* 贡献人数：14 人
-* Open Issues数量：59 个
-* Github地址：https://github.com/nucleuscloud/neosync.git
-* 项目首页: https://www.neosync.dev
+* Star数量：1846 个
+* Fork数量：77 次
+* 关注人数：1846 人
+* 贡献人数：40 人
+* Open Issues数量：129 个
+* Github地址：https://github.com/jsr-io/jsr.git
+* 项目首页: https://jsr.io
 
 
-Neosync是一个面向开发人员的开源工具，旨在匿名化个人身份信息（PII），生成合成数据，并同步环境以进行测试、调试和改善开发人员体验。它允许公司安全地对生产数据进行代码测试，本地复制生产中的bug，修复破损的分段环境，减少合规范围，并为开发数据库提供合成数据。
+jsr.io是一个面向现代JavaScript和TypeScript的开源软件包注册表。它是新JavaScript注册表的源代码，专为那些有兴趣为注册表做贡献的人设计。
+
+## CADmium: 在浏览器中运行的新型CAD程序
+
+* 创建周期：265 天
+* 开发语言：Rust, Svelte
+* 协议类型：Other
+* Star数量：627 个
+* Fork数量：20 次
+* 关注人数：627 人
+* 贡献人数：6 人
+* Open Issues数量：18 个
+* Github地址：https://github.com/CADmium-Co/CADmium.git
+* 项目首页: https://cadmium-co.github.io/CADmium/
+
+
+CADmium是一个全新的CAD程序，从头开始开发，旨在在Web浏览器中运行。它旨在捕捉80%的最常见CAD使用情况，同时只做不到10%的工作，针对的是想要为3D打印设计简单物体的家庭爱好者。该项目处于早期原型阶段，源代码可以在Github上免费获取。
 
