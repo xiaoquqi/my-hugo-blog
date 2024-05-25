@@ -1,32 +1,32 @@
 ---
-title: Github 2024-05-26 开源项目日报 Top10
-date: 2024-05-26T07:01:04+08:00
+title: Github 2024-05-26 php开源项目日报 Top10
+date: 2024-05-26T07:11:19+08:00
 slug: github-trendings-today-20240526
 author: 老孙正经胡说
-image: /images/codecrafters-io-build-your-own-x-0.png
+image: /images/magento-magento2-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
   - 人数
   - 人
   - 和
+  - 项目
   - 开发
   - 语言
   - 创建
-  - 是
   - 周期
+  - 协议
+  - 类型
   - 关注
   - 贡献
   - 地址
   - 提供
-  - 技术
-  - 协议
-  - 类型
+  - 管理
   - 开源
-  - 旨在
-  - 用户
+  - 是
+  - 代码
+  - 帮助
 
 categories:
 
@@ -38,168 +38,171 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 3 |
-| 非开发语言项目 | 3 |
-| TypeScript项目 | 2 |
-| HTML项目 | 1 |
-| Jupyter Notebook项目 | 1 |
-| Rust项目 | 1 |
-| Svelte项目 | 1 |
+| PHP项目 | 10 |
+| JavaScript项目 | 1 |
 
-## 从零开始构建你喜爱的技术
+## Livewire: Laravel中构建动态UI组件的全栈框架
 
-* 创建周期：2156 天
-* Star数量：253338 个
-* Fork数量：24043 次
-* 关注人数：253338 人
-* 贡献人数：116 人
-* Open Issues数量：319 个
-* Github地址：https://github.com/codecrafters-io/build-your-own-x.git
-* 项目首页: https://codecrafters.io
-
-
-![](/images/codecrafters-io-build-your-own-x-0.png)
-
-这个存储库是一本精心编写的、逐步指南的汇编，可以从零开始重新创建各种技术，如3D渲染器、区块链/加密货币、游戏、操作系统、Web浏览器等。它旨在帮助用户通过理解和构建自己喜欢的技术来掌握编程。
-
-## 大型语言模型（LLMs）课程
-
-* 创建周期：229 天
-* 开发语言：Jupyter Notebook
-* 协议类型：Apache License 2.0
-* Star数量：22437 个
-* Fork数量：2157 次
-* 关注人数：22437 人
-* 贡献人数：2 人
-* Open Issues数量：23 个
-* Github地址：https://github.com/mlabonne/llm-course.git
-* 项目首页: https://mlabonne.github.io/blog/
-
-
-大型语言模型（LLMs）课程分为三个部分：LLM基础涵盖了数学、Python和神经网络的基本知识，LLM科学家专注于使用最新技术构建最佳的LLM，LLM工程师专注于创建基于LLM的应用程序并部署它们。
-
-## SearXNG: 免费的隐私尊重型元搜索引擎
-
-* 创建周期：1140 天
-* 开发语言：Python
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：9244 个
-* Fork数量：1070 次
-* 关注人数：9244 人
-* 贡献人数：209 人
-* Open Issues数量：256 个
-* Github地址：https://github.com/searxng/searxng.git
-* 项目首页: https://docs.searxng.org
-
-
-SearXNG是一个免费的互联网元搜索引擎，尊重用户隐私，并从各种搜索服务和数据库中聚合结果。它是一个可定制的元搜索引擎，并提供现成运行的实例。该项目还为用户、管理员和开发人员提供手册，以及AGPL许可证。SearXNG可在searx.space上获得，并提供安装指南、主页、维基和GitHub上的问题跟踪等各种资源。
-
-## 数据工程手册：学习资源库
-
-* 创建周期：189 天
-* Star数量：9177 个
-* Fork数量：1257 次
-* 关注人数：9177 人
-* 贡献人数：47 人
-* Open Issues数量：6 个
-* Github地址：https://github.com/DataExpert-io/data-engineer-handbook.git
-
-
-《数据工程手册》是一个包含了学习数据工程相关资源链接的综合知识库，包括项目和面试内容，帮助个人成为熟练的数据工程师。
-
-## Khoj：开源AI辅助工具
-
-* 创建周期：1013 天
-* 开发语言：Python, HTML
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：6609 个
-* Fork数量：309 次
-* 关注人数：6609 人
-* 贡献人数：28 人
-* Open Issues数量：48 个
-* Github地址：https://github.com/khoj-ai/khoj.git
-* 项目首页: https://khoj.dev
-
-
-![](/images/khoj-ai-khoj-0.png)
-
-Khoj是一个开源的人工智能工具，作为副驾驶帮助用户从自己的笔记或互联网上找到答案。它利用强大的LLM，如GPT-4和Llama3，可以在线访问或本地自行托管。用户可以从多个平台访问Khoj，包括Obsidian、Emacs、桌面应用程序、Web或Whatsapp。
-
-## 极客时间电子书
-
-* 创建周期：483 天
-* Star数量：3266 个
-* Fork数量：1240 次
-* 关注人数：3266 人
-* 贡献人数：1 人
-* Open Issues数量：2 个
-* Github地址：https://github.com/it-ebooks-0/geektime-books.git
-
-
-极客时间电子书是开源的，为开发人员和IT专业人士提供了广泛的技术知识和资源。该平台提供了涵盖编程、软件开发和技术趋势等主题的各种电子书。
-
-## Perplexica - 人工智能驱动的搜索引擎
-
-* 创建周期：22 天
-* 开发语言：TypeScript
+* 创建周期：1818 天
+* 开发语言：PHP
 * 协议类型：MIT License
-* Star数量：1587 个
-* Fork数量：156 次
-* 关注人数：1587 人
-* 贡献人数：2 人
-* Open Issues数量：11 个
-* Github地址：https://github.com/ItzCrazyKns/Perplexica.git
+* Star数量：21388 个
+* Fork数量：1416 次
+* 关注人数：21388 人
+* 贡献人数：425 人
+* Open Issues数量：6 个
+* Github地址：https://github.com/livewire/livewire.git
 
 
-Perplexica是一个开源的AI驱动搜索引擎，是Perplexity AI的替代选择。它旨在利用人工智能提供先进的搜索功能。
+Livewire是Laravel的全栈框架，它简化了在PHP中构建动态UI组件的过程。
 
-## Univer: Google Sheets、Slides和Docs的开源替代方案
+## PHPStan - PHP的静态分析工具
 
-* 创建周期：605 天
-* 开发语言：TypeScript
-* 协议类型：Apache License 2.0
-* Star数量：3672 个
-* Fork数量：369 次
-* 关注人数：3672 人
+* 创建周期：3065 天
+* 开发语言：PHP
+* 协议类型：MIT License
+* Star数量：12609 个
+* Fork数量：861 次
+* 关注人数：12609 人
+* 贡献人数：249 人
+* Open Issues数量：1068 个
+* Github地址：https://github.com/phpstan/phpstan.git
+* 项目首页: https://phpstan.org/
+
+
+PHPStan是一个用于PHP的静态分析工具，可以在不运行代码的情况下帮助发现代码中的错误。它专注于发现代码中的错误，在甚至编写测试之前就可以捕获整个类别的错误。该工具使PHP更接近编译语言，可以在运行实际代码之前检查每行代码的正确性。
+
+## Magento开源项目和Adobe Commerce
+
+* 创建周期：4435 天
+* 开发语言：PHP
+* 协议类型：Open Software License 3.0
+* Star数量：11083 个
+* Fork数量：9328 次
+* 关注人数：11083 人
+* 贡献人数：257 人
+* Open Issues数量：2518 个
+* Github地址：https://github.com/magento/magento2.git
+* 项目首页: http://www.magento.com
+
+
+![](/images/magento-magento2-0.png)
+
+Magento开源项目提供基本的电子商务功能，用于构建在线商店。建议使用Adobe Commerce作为完整的电子商务解决方案，其中包括优化的云架构、托管以及人工智能驱动的商品推广和分析。
+
+## Rector - 即时升级和自动重构
+
+* 创建周期：2381 天
+* 开发语言：PHP
+* 协议类型：MIT License
+* Star数量：7842 个
+* Fork数量：663 次
+* 关注人数：7842 人
+* 贡献人数：181 人
+* Open Issues数量：19 个
+* Github地址：https://github.com/rectorphp/rector.git
+* 项目首页: https://getrector.com
+
+
+Rector是一个开源工具，为PHP 5.3+代码提供即时升级和自动重构。它帮助升级和重构应用程序的PHP代码，在两个主要领域提供帮助。
+
+## UVdesk 开源社区帮助台项目
+
+* 创建周期：2032 天
+* 开发语言：PHP, JavaScript
+* 协议类型：MIT License
+* Star数量：6583 个
+* Fork数量：448 次
+* 关注人数：6583 人
 * 贡献人数：29 人
-* Open Issues数量：176 个
-* Github地址：https://github.com/dream-num/univer.git
-* 项目首页: https://univer.ai
+* Open Issues数量：84 个
+* Github地址：https://github.com/uvdesk/community-skeleton.git
+* 项目首页: https://www.uvdesk.com
 
 
-Univer是一个开源项目，旨在为Google Sheets、Slides和Docs提供替代方案。目前仍在积极开发中，用户应该预期会有重大的API变化。该项目欢迎社区的反馈、问题和建议。
+![](/images/uvdesk-community-skeleton-0.png)
 
-## CodiumAI Cover-Agent: 人工智能驱动的自动化测试生成和代码覆盖率增强工具
+UVdesk是一个建立在Symfony和backbone.js上的开源社区帮助台项目，提供面向服务、事件驱动、可扩展的帮助台系统。它提供翻译支持、无限的代理和客户、邮箱/邮件集成、保存的回复、垃圾邮件阻止、自动化工作流等功能。该项目包括核心框架、扩展框架、自动化捆绑包、邮箱组件和支持中心捆绑包。它还提供文档、系统要求和安装指南。
 
-* 创建周期：5 天
-* 开发语言：Python
+## Moodle - 世界开源学习平台
+
+* 创建周期：5170 天
+* 开发语言：PHP
+* 协议类型：GNU General Public License v3.0
+* Star数量：5227 个
+* Fork数量：6300 次
+* 关注人数：5227 人
+* 贡献人数：205 人
+* Open Issues数量：11 个
+* Github地址：https://github.com/moodle/moodle.git
+* 项目首页: https://moodle.org/
+
+
+![](/images/moodle-moodle-0.png)
+
+Moodle是世界上广泛使用的开源学习平台，被无数的大学、学校、公司以及各种组织和个人广泛使用，以创建具有强大、安全和集成系统的个性化学习环境。
+
+## GLPI: 免费资产和IT管理软件包
+
+* 创建周期：3237 天
+* 开发语言：PHP
+* 协议类型：GNU General Public License v3.0
+* Star数量：3894 个
+* Fork数量：1228 次
+* 关注人数：3894 人
+* 贡献人数：147 人
+* Open Issues数量：181 个
+* Github地址：https://github.com/glpi-project/glpi.git
+* 项目首页: https://glpi-project.org
+
+
+GLPI是一款免费的资产和IT管理软件包，提供ITIL服务台功能、许可证跟踪和软件审计。它包括服务资产和配置管理、请求履行、事件和问题管理、变更管理、知识管理、合同管理、IT服务的财务管理、资产预留、数据中心基础设施管理、软件和许可证管理、影响分析、服务目录、实体分离、项目管理和干预计划等功能。它还支持许多插件，提供额外的功能。
+
+## Xboard: 基于V2board的高性能面板
+
+* 创建周期：194 天
+* 开发语言：PHP
+* 协议类型：MIT License
+* Star数量：939 个
+* Fork数量：220 次
+* 关注人数：939 人
+* 贡献人数：3 人
+* Open Issues数量：39 个
+* Github地址：https://github.com/cedar2025/Xboard.git
+
+
+Xboard is a high-performance panel based on the secondary development of V2board, with many new features and upgrades, supporting new protocols and functions. The project disclaimer states that it is only for personal learning, development, and maintenance purposes.
+
+## Pelican Panel: 游戏服务器管理的简化工具
+
+* 创建周期：68 天
+* 开发语言：PHP
 * 协议类型：GNU Affero General Public License v3.0
-* Star数量：1251 个
-* Fork数量：66 次
-* 关注人数：1251 人
-* 贡献人数：8 人
-* Open Issues数量：7 个
-* Github地址：https://github.com/Codium-ai/cover-agent.git
-* 项目首页: https://www.codium.ai/
+* Star数量：482 个
+* Fork数量：56 次
+* 关注人数：482 人
+* 贡献人数：170 人
+* Open Issues数量：27 个
+* Github地址：https://github.com/pelican-dev/panel.git
+* 项目首页: https://pelican.dev
 
 
-![](/images/codium-ai-cover-agent-0.png)
+![](/images/pelican-dev-panel-0.png)
 
-CodiumAI Cover-Agent是一个开源项目，提供了一个基于人工智能的工具，用于自动化测试生成和代码覆盖率增强。它旨在通过利用人工智能技术来改善软件测试和代码质量。
+Pelican Panel是一个开源的基于Web的应用程序，旨在简化游戏服务器的服务器管理。它提供了一个用户友好的界面，实时资源监控，Docker容器隔离和广泛的定制选项，使其成为个人玩家和托管公司的理想选择。
 
-## CADmium: 在浏览器中运行的新型CAD程序
+## Top: Laravel应用程序的实时命令行监控
 
-* 创建周期：265 天
-* 开发语言：Rust, Svelte
-* 协议类型：Other
-* Star数量：627 个
-* Fork数量：20 次
-* 关注人数：627 人
-* 贡献人数：6 人
-* Open Issues数量：18 个
-* Github地址：https://github.com/CADmium-Co/CADmium.git
-* 项目首页: https://cadmium-co.github.io/CADmium/
+* 创建周期：16 天
+* 开发语言：PHP
+* 协议类型：MIT License
+* Star数量：188 个
+* Fork数量：5 次
+* 关注人数：188 人
+* 贡献人数：1 人
+* Open Issues数量：0 个
+* Github地址：https://github.com/leventcz/laravel-top.git
 
 
-CADmium是一个全新的CAD程序，从头开始开发，旨在在Web浏览器中运行。它旨在捕捉80%的最常见CAD使用情况，同时只做不到10%的工作，针对的是想要为3D打印设计简单物体的家庭爱好者。该项目处于早期原型阶段，源代码可以在Github上免费获取。
+Top为Laravel应用程序提供了实时监控，直接从命令行进行。它专为生产环境设计，能够轻松跟踪关键指标并识别最繁忙的路由。
 
