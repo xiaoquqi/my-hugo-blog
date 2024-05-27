@@ -1,6 +1,6 @@
 ---
-title: Github 2024-05-28 开源项目日报 Top10
-date: 2024-05-28T07:01:14+08:00
+title: Github 2024-05-28 Python开源项目日报 Top10
+date: 2024-05-28T07:11:14+08:00
 slug: github-trendings-today-20240528
 author: 老孙正经胡说
 image: /images/binary-husky-gpt_academic-0.png
@@ -11,22 +11,22 @@ tags:
   - 项目
   - 人数
   - 人
+  - 语言
   - 和
   - 开发
-  - 语言
   - 创建
   - 周期
-  - 协议
-  - 类型
   - 关注
   - 贡献
   - 地址
+  - 协议
   - 是
-  - 提供
+  - 类型
   - 模型
-  - 端
   - 到
+  - 提供
   - 开源
+  - 端
 
 categories:
 
@@ -38,26 +38,9 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 7 |
-| TypeScript项目 | 4 |
+| Python项目 | 10 |
+| TypeScript项目 | 2 |
 | HTML项目 | 1 |
-| Dart项目 | 1 |
-| 非开发语言项目 | 1 |
-
-## 免费编程书籍和学习资源清单
-
-* 创建周期：3762 天
-* 协议类型：Creative Commons Attribution 4.0 International
-* Star数量：309978 个
-* Fork数量：59490 次
-* 关注人数：309978 人
-* 贡献人数：432 人
-* Open Issues数量：36 个
-* Github地址：https://github.com/EbookFoundation/free-programming-books.git
-* 项目首页: https://ebookfoundation.github.io/free-programming-books/
-
-
-该项目是一个列出了多种语言中免费可用的编程书籍和学习资源的清单。它提供了一个可通过易于阅读的网站访问的可搜索数据库。
 
 ## 稳定扩散Web UI
 
@@ -107,6 +90,22 @@ draft: false
 
 OpenDevin是一个旨在帮助开发人员编写更少代码并实现更多目标的开源项目。它提供工具和资源来简化开发流程，提高生产力。
 
+## SWE-agent: 将语言模型转化为软件工程代理
+
+* 创建周期：3 天
+* 开发语言：Python
+* 协议类型：MIT License
+* Star数量：4809 个
+* Fork数量：401 次
+* 关注人数：4809 人
+* 贡献人数：10 人
+* Open Issues数量：24 个
+* Github地址：https://github.com/princeton-nlp/SWE-agent.git
+* 项目首页: https://swe-agent.com/
+
+
+SWE-agent是一个项目，将语言模型（如GPT-4）转化为软件工程代理，能够修复真实GitHub存储库中的错误和问题。它在完整的SWE-bench测试集上取得了最先进的性能，解决了12.29%的问题。
+
 ## Khoj：开源AI辅助工具
 
 * 创建周期：1013 天
@@ -124,22 +123,6 @@ OpenDevin是一个旨在帮助开发人员编写更少代码并实现更多目�
 ![](/images/khoj-ai-khoj-0.png)
 
 Khoj是一个开源的人工智能工具，作为副驾驶帮助用户从自己的笔记或互联网上找到答案。它利用强大的LLM，如GPT-4和Llama3，可以在线访问或本地自行托管。用户可以从多个平台访问Khoj，包括Obsidian、Emacs、桌面应用程序、Web或Whatsapp。
-
-## Ente: 开源端到端加密的照片存储平台
-
-* 创建周期：496 天
-* 开发语言：TypeScript, Dart
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：6019 个
-* Fork数量：385 次
-* 关注人数：6019 人
-* 贡献人数：50 人
-* Open Issues数量：97 个
-* Github地址：https://github.com/ente-io/ente.git
-* 项目首页: https://ente.io
-
-
-Ente是一个完全开源的、端到端加密的平台，为您提供了一个替代Google照片和Apple照片的选择。它提供了两个应用程序，Ente照片和Ente认证，并已经通过外部审核对其源代码和密码学进行了审核。
 
 ## Bisheng：下一代人工智能应用的开放LLM DevOps平台
 
@@ -193,18 +176,34 @@ YOLOv10 是一个开源的实时端到端目标检测项目。YOLOv10 的官方P
 
 Dataherald是一个面向企业级问题解答的自然语言到SQL引擎，可用于关系数据。它允许从数据库建立API以用简单的英语回答问题，使业务用户能够在不涉及数据分析师的情况下访问数据仓库的见解。该monorepo包含了四个组件，可以在/services下一起使用，以建立端到端的Dataherald部署：引擎、企业、管理控制台和Slackbot。
 
-## Agentic RAG: 企业级应用程序中的人工智能模型集成
+## Uni-MoE: 多模态模型的扩展与升级
 
-* 创建周期：28 天
-* 开发语言：TypeScript
-* 协议类型：Apache License 2.0
-* Star数量：658 个
-* Fork数量：61 次
-* 关注人数：658 人
+* 创建周期：85 天
+* 开发语言：Python
+* Star数量：523 个
+* Fork数量：22 次
+* 关注人数：523 人
+* 贡献人数：3 人
+* Open Issues数量：2 个
+* Github地址：https://github.com/HITsz-TMG/UMOE-Scaling-Unified-Multimodal-LLMs.git
+* 项目首页: https://uni-moe.github.io/
+
+
+![](/images/hitsz-tmg-umoe-scaling-unified-multimodal-llms-0.png)
+
+Uni-MoE 项目已升级，支持跨多个节点和 GPU 进行训练，在 fine-tuning 脚本中增强功能。还包括集成了分布式 MoE 模块的版本，可实现专家和模态级别的并行处理，提高效率和可扩展性。该项目提出使用 MoE 框架开发统一的多模态 LLM（MLLM），用于处理音频、图像、文本和视频等多种模态。数据和检查点仅供研究使用，并受 LLaMA 和 Vicuna 的许可协议限制。
+
+## HamsterKombat硬币挖掘机器人
+
+* 创建周期：53 天
+* 开发语言：Python
+* Star数量：125 个
+* Fork数量：34 次
+* 关注人数：125 人
 * 贡献人数：4 人
-* Open Issues数量：8 个
-* Github地址：https://github.com/ragapp/ragapp.git
+* Open Issues数量：41 个
+* Github地址：https://github.com/shamhi/HamsterKombatBot.git
 
 
-Agentic RAG是一个开源项目，提供了一种简单的方法将人工智能模型集成到企业应用程序中。通过运行具有提供的映像的docker容器，并通过Admin UI配置RAGapp，用户可以利用来自OpenAI、Gemini和Ollama的本地模型的人工智能模型。
+该项目是一个旨在在游戏HamsterKombat中挖掘硬币的机器人。这是一个开源项目，README文件以英文提供。
 
