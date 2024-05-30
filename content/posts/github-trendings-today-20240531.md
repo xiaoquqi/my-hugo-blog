@@ -1,32 +1,32 @@
 ---
-title: Github 2024-05-31 开源项目日报 Top10
-date: 2024-05-31T07:01:33+08:00
+title: Github 2024-05-31 Java开源项目日报 Top10
+date: 2024-05-31T07:11:36+08:00
 slug: github-trendings-today-20240531
 author: 老孙正经胡说
-image: /images/danielmiessler-fabric-0.png
+image: /images/snailclimb-javaguide-0.png
 tags:
   - github
   - trendings
   - 数量
+  - 和
   - 人数
   - 人
-  - 项目
   - 开发
+  - 项目
   - 语言
   - 创建
-  - 贡献
-  - 和
+  - 地址
   - 是
   - 周期
   - 关注
-  - 地址
-  - 开源
+  - 贡献
+  - 面试
   - 协议
   - 类型
-  - 客户端
-  - 生成
-  - 中
-  - 旨在
+  - 提供
+  - 分析
+  - 扩展
+  - 数据
 
 categories:
 
@@ -38,166 +38,172 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 4 |
-| TypeScript项目 | 3 |
-| Jupyter Notebook项目 | 2 |
-| Vue项目 | 1 |
-| Cuda项目 | 1 |
-| Elixir项目 | 1 |
+| Java项目 | 10 |
+| TypeScript项目 | 1 |
 
-## 简单、纯净的C/CUDA中的LLM培训
+## JavaGuide - Java 程序员学习和面试指南
 
-* 创建周期：3 天
-* 开发语言：Cuda
+* 创建周期：2118 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：140773 个
+* Fork数量：44922 次
+* 关注人数：140773 人
+* 贡献人数：414 人
+* Open Issues数量：58 个
+* Github地址：https://github.com/Snailclimb/JavaGuide.git
+* 项目首页: https://javaguide.cn
+
+
+![](/images/snailclimb-javaguide-0.png)
+
+JavaGuide 是一份涵盖大部分 Java 程序员所需要掌握的核心知识的学习和面试指南，提供面试准备、知识星球和使用建议等内容。该项目的 Github 地址为 https://github.com/Snailclimb/JavaGuide 。
+
+## 软件工程技术面试个人指南
+
+* 创建周期：2663 天
+* 开发语言：Java
 * 协议类型：MIT License
-* Star数量：9433 个
-* Fork数量：789 次
-* 关注人数：9433 人
-* 贡献人数：8 人
-* Open Issues数量：18 个
-* Github地址：https://github.com/karpathy/llm.c.git
+* Star数量：62290 个
+* Fork数量：12797 次
+* 关注人数：62290 人
+* 贡献人数：28 人
+* Open Issues数量：113 个
+* Github地址：https://github.com/kdn251/interviews.git
+* 项目首页: https://www.youtube.com/channel/UCKvwPt6BifPP54yzH99ff1g?view_as=subscriber
 
 
-LLM在简单的、纯净的C/CUDA中进行培训，无需像PyTorch或cPython这样庞大的依赖。该项目旨在提供干净、单文件实现，能够立即编译和运行，并且能够匹配PyTorch的性能。目前的工作包括直接的CUDA实现以提高速度，使用SIMD指令优化CPU版本，以及探索更现代的架构，如Llama2和Gemma。
+这是一个个人指南，针对软件工程技术面试，提供视频解决方案和详细解释，由Kevin Naughton Jr.维护。
 
-## Fabric: 用人工智能增强人类能力的开源框架
+## Ghidra - 软件逆向工程框架
 
-* 创建周期：40 天
-* 开发语言：Python, JavaScript
-* 协议类型：MIT License
-* Star数量：5128 个
-* Fork数量：406 次
-* 关注人数：5128 人
-* 贡献人数：22 人
-* Open Issues数量：2 个
-* Github地址：https://github.com/danielmiessler/fabric.git
+* 创建周期：1792 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：45784 个
+* Fork数量：5481 次
+* 关注人数：45784 人
+* 贡献人数：266 人
+* Open Issues数量：1481 个
+* Github地址：https://github.com/NationalSecurityAgency/ghidra.git
+* 项目首页: https://www.nsa.gov/ghidra
 
 
-![](/images/danielmiessler-fabric-0.png)
+Ghidra是由美国国家安全局研究局开发的软件逆向工程框架。它包括一系列强大的软件分析工具，用于在不同平台上分析编译代码。用户可以执行诸如反汇编、汇编、反编译、图形化和脚本编写等任务，它支持各种处理器指令集和可执行文件格式。此外，用户可以使用Java或Python创建自己的扩展和脚本。Ghidra的开发旨在解决复杂SRE工作中的扩展和团队合作挑战，并提供可定制和可扩展的研究平台。美国国家安全局已经利用Ghidra来分析恶意代码，并洞悉网络和系统潜在漏洞。
 
-Fabric 是一个开源框架，旨在利用人工智能增强人类能力。它提供了将问题分解为组件的哲学，并提供了一种提示的框架方法。该框架包括快速入门指南、设置 fabric 客户端、使用模式、创建 fabric mill、结构、组件、CLI-native 特性、直接调用模式、示例以及主要贡献者的详细信息。
+## DataEase: 开源数据可视化分析工具
 
-## ChatTTS：日常对话生成式语音模型
+* 创建周期：1193 天
+* 开发语言：Java
+* 协议类型：GNU General Public License v3.0
+* Star数量：15358 个
+* Fork数量：2827 次
+* 关注人数：15358 人
+* 贡献人数：48 人
+* Open Issues数量：244 个
+* Github地址：https://github.com/dataease/dataease.git
+* 项目首页: https://dataease.io/
 
-* 创建周期：4 天
-* 开发语言：Jupyter Notebook
-* 协议类型：Other
-* Star数量：8202 个
-* Fork数量：780 次
-* 关注人数：8202 人
+
+![](/images/dataease-dataease-0.png)
+
+DataEase 是一个开源的数据可视化分析工具，可以帮助用户快速分析数据并洞察业务趋势，支持丰富的数据源连接，拖拉拽方式快速制作图表，并方便与他人分享。
+
+## Debezium: 低延迟数据流平台
+
+* 创建周期：3052 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：10003 个
+* Fork数量：2417 次
+* 关注人数：10003 人
+* 贡献人数：369 人
+* Open Issues数量：67 个
+* Github地址：https://github.com/debezium/debezium.git
+* 项目首页: https://debezium.io
+
+
+Debezium是一个开源项目，为变更数据捕获（CDC）提供低延迟数据流平台。它允许监视数据库，并消费数据库中每个行级变更的事件。Debezium通过记录数据更改的历史在持久的复制日志中，确保所有更改都能正确完整地处理。
+
+## OWASP dependency-check: 应用程序依赖项漏洞检测工具
+
+* 创建周期：4288 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：5954 个
+* Fork数量：1212 次
+* 关注人数：5954 人
+* 贡献人数：278 人
+* Open Issues数量：571 个
+* Github地址：https://github.com/jeremylong/DependencyCheck.git
+* 项目首页: https://owasp.org/www-project-dependency-check/
+
+
+OWASP dependency-check是一种软件组成分析实用程序，用于检测应用程序依赖项中公开披露的漏洞。它使用Common Platform Enumeration (CPE)标识符来生成与相关CVE条目的报告。
+
+## Apache Pinot - 实时分布式OLAP数据存储
+
+* 创建周期：3665 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：5188 个
+* Fork数量：1213 次
+* 关注人数：5188 人
+* 贡献人数：328 人
+* Open Issues数量：1545 个
+* Github地址：https://github.com/apache/pinot.git
+* 项目首页: https://pinot.apache.org/
+
+
+Apache Pinot是一个实时分布式OLAP数据存储，旨在提供低延迟的可扩展实时分析。它可以从批处理数据源（如Hadoop HDFS、Amazon S3、Azure ADLS、Google Cloud Storage）和流数据源（如Apache Kafka）中摄取数据。Pinot由LinkedIn和Uber的工程师开发，旨在在没有上限的情况下进行横向和纵向扩展，同时保持基于集群大小和预期每秒查询（QPS）阈值的恒定性能。
+
+## Exadel CompreFace: 免费开源人脸识别系统
+
+* 创建周期：1425 天
+* 开发语言：Java, TypeScript
+* 协议类型：Apache License 2.0
+* Star数量：4596 个
+* Fork数量：631 次
+* 关注人数：4596 人
+* 贡献人数：70 人
+* Open Issues数量：194 个
+* Github地址：https://github.com/exadel-inc/CompreFace.git
+* 项目首页: https://exadel.com/accelerator-showcase/compreface/
+
+
+![](/images/exadel-inc-compreface-0.png)
+
+Exadel CompreFace是一个免费的开源人脸识别系统，可用作独立服务器或部署在云中。它为各种人脸识别功能提供REST API，支持CPU和GPU，并且易于扩展。该系统是自托管的，可以部署在本地或云上，并且不需要先前的机器学习技能。它利用了FaceNet和InsightFace等最先进的人脸识别方法和库。
+
+## 主要科技公司低级设计面试常问问题集
+
+* 创建周期：1073 天
+* 开发语言：Java
+* Star数量：1226 个
+* Fork数量：494 次
+* 关注人数：1226 人
 * 贡献人数：2 人
-* Open Issues数量：91 个
-* Github地址：https://github.com/2noise/ChatTTS.git
-* 项目首页: https://2noise.com/
+* Open Issues数量：0 个
+* Github地址：https://github.com/kumaransg/LLD.git
 
 
-ChatTTS是一个为日常对话场景设计的生成式语音模型，例如LLM助手。它支持英语和中文两种语言，并且经过了超过100,000小时的中英文数据训练。HuggingFace上的开源版本是一个40,000小时的预训练模型，不包括SFT。
+这是一个由主要科技公司在面试中常问及的低级设计问题和实现组成的精选集。它旨在帮助个人为低级设计面试做好准备，并在面试中取得成功。
 
-## YOLOv10: 实时端到端目标检测
+## Openkoda: 面向快速开发的开源业务应用平台
 
-* 创建周期：4 天
-* 开发语言：Python
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：1352 个
-* Fork数量：107 次
-* 关注人数：1352 人
-* 贡献人数：119 人
-* Open Issues数量：27 个
-* Github地址：https://github.com/THU-MIG/yolov10.git
-* 项目首页: https://arxiv.org/abs/2405.14458v1
-
-
-YOLOv10 是一个开源的实时端到端目标检测项目。YOLOv10 的官方PyTorch实现已经推出，已更新了新的检查点、类名，并集成到X-AnyLabeling中。此外，还提供了Transformers.js、colab、HuggingFace的演示，以及不同YOLOv10模型的onnx权重。
-
-## LlamaFS: 自组织文件系统
-
-* 创建周期：18 天
-* 开发语言：Jupyter Notebook, TypeScript
+* 创建周期：409 天
+* 开发语言：Java
 * 协议类型：MIT License
-* Star数量：1248 个
-* Fork数量：72 次
-* 关注人数：1248 人
-* 贡献人数：4 人
-* Open Issues数量：13 个
-* Github地址：https://github.com/iyaja/llama-fs.git
+* Star数量：647 个
+* Fork数量：21 次
+* 关注人数：647 人
+* 贡献人数：6 人
+* Open Issues数量：5 个
+* Github地址：https://github.com/openkoda/openkoda.git
+* 项目首页: https://openkoda.com/
 
 
-LlamaFS是一个开源的自组织文件系统，旨在提供高效可扩展的文件存储和检索。它利用自组织的方法在存储节点集群中分发和管理文件数据，优化性能和可靠性。
+![](/images/openkoda-openkoda-0.png)
 
-## XIAOJUSURVEY：快速打造专属问卷系统
-
-* 创建周期：209 天
-* 开发语言：TypeScript, Vue
-* 协议类型：Apache License 2.0
-* Star数量：836 个
-* Fork数量：110 次
-* 关注人数：836 人
-* 贡献人数：12 人
-* Open Issues数量：21 个
-* Github地址：https://github.com/didi/xiaoju-survey.git
-* 项目首页: https://xiaojusurvey.didi.cn
-
-
-![](/images/didi-xiaoju-survey-0.png)
-
-XIAOJUSURVEY是一套轻量、安全的问卷系统基座，提供面向个人和企业的一站式产品级解决方案，快速满足各类线上调研场景。内部系统已沉淀40+种题型，累积精选模板100+，适用于市场调研、客户满意度调研、在线考试、投票、报道、测评等众多场景。数据能力上，经过上亿量级打磨，沉淀了分题统计、交叉分析、多渠道分析等在线报表能力，快速满足专业化分析。开源项目以打造调研基座为核心，围绕平台能力、工程架构、研发体系进行建设，大家可以快速打造专属问卷系统：快速了解生态发展理念。
-
-## GoogleApis: Elixir客户端库访问Google API
-
-* 创建周期：2471 天
-* 开发语言：Elixir
-* 协议类型：Apache License 2.0
-* Star数量：846 个
-* Fork数量：315 次
-* 关注人数：846 人
-* 贡献人数：21 人
-* Open Issues数量：207 个
-* Github地址：https://github.com/googleapis/elixir-google-api.git
-* 项目首页: https://hex.pm/users/google-cloud
-
-
-GoogleApis 是一个包含 Elixir 客户端库以访问 Google API 的存储库。这些客户端库位于 clients/ 目录下，每个客户端库都有自己的 README。主文件夹包含生成这些客户端库所需的代码。重要提示：这些生成的客户端仍在开发中，应被视为实验性产品！
-
-## MusePose: 一个姿势驱动的虚拟人图像到视频框架
-
-* 创建周期：7 天
-* 开发语言：Python
-* 协议类型：Other
-* Star数量：653 个
-* Fork数量：32 次
-* 关注人数：653 人
-* 贡献人数：3 人
-* Open Issues数量：14 个
-* Github地址：https://github.com/TMElyralab/MusePose.git
-
-
-MusePose是一个受姿势等信号控制的虚拟人图像到视频生成框架。它是Muse开源系列的最后一个构建模块，旨在实现具有全身运动和互动能力的虚拟人生成。该项目感谢AnimateAnyone的学术论文和Moore-AnimateAnyone的代码库对AIGC社区和MusePose发展的贡献。
-
-## V-Express: 条件性丢失用于渐进式肖像视频生成
-
-* 创建周期：10 天
-* 开发语言：Python
-* Star数量：486 个
-* Fork数量：45 次
-* 关注人数：486 人
-* 贡献人数：1 人
-* Open Issues数量：11 个
-* Github地址：https://github.com/tencent-ailab/V-Express.git
-
-
-V-Express是一个开源项目，旨在利用参考图像、音频和一系列V-Kps图像生成说话头视频。它利用条件性丢失来进行渐进式训练，用于肖像视频生成。
-
-## 人工智能销售代表聊天机器人
-
-* 创建周期：6 天
-* 开发语言：TypeScript
-* Star数量：157 个
-* Fork数量：62 次
-* 关注人数：157 人
-* 贡献人数：1 人
-* Open Issues数量：2 个
-* Github地址：https://github.com/webprodigies/corinna-ai.git
-
-
-该项目是一个开源的人工智能聊天机器人，旨在充当销售代表。它仅限于教育用途许可，并且商业用途需要单独购买许可。
+Openkoda是一个面向快速开发的开源业务应用平台。它旨在通过提供预构建的功能和开箱即用的特性来减少开发时间和工作量。该平台采用灵活可扩展的方法，允许用户使用动态实体构建应用程序，并从多种多租户模型中进行选择。Openkoda支持熟悉的技术，如Java、Spring Boot、JavaScript、HTML、Hibernate和PostgreSQL，使开发人员可以轻松上手。此外，它提供了无限的定制和集成选项，以扩展功能。
 
