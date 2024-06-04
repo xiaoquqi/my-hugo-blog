@@ -1,32 +1,32 @@
 ---
-title: Github 2024-06-05 开源项目日报 Top10
-date: 2024-06-05T07:01:24+08:00
+title: Github 2024-06-05 C开源项目日报 Top10
+date: 2024-06-05T07:11:20+08:00
 slug: github-trendings-today-20240605
 author: 老孙正经胡说
-image: /images/vincigit00-scrapegraph-ai-0.png
+image: /images/micropython-micropython-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 人数
   - 人
+  - 人数
   - 和
+  - 项目
+  - 是
+  - 开发
   - 语言
   - 创建
-  - 项目
-  - 开发
-  - 是
+  - 支持
   - 周期
-  - 协议
-  - 类型
   - 关注
   - 贡献
   - 地址
-  - 模型
+  - 协议
+  - 类型
+  - 开源
+  - 窗口
+  - 用于
   - 提供
-  - 图像
-  - 可以
-  - 生成
 
 categories:
 
@@ -38,167 +38,166 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 7 |
-| Jupyter Notebook项目 | 2 |
-| Rust项目 | 1 |
+| C项目 | 10 |
+| C++项目 | 2 |
+| Python项目 | 1 |
 
-## 初学者的生成式人工智能（第2版）
+## 我的电视 - 安卓电视直播软件
 
-* 创建周期：259 天
-* 开发语言：Jupyter Notebook
-* 协议类型：MIT License
-* Star数量：25764 个
-* Fork数量：16105 次
-* 关注人数：25764 人
-* 贡献人数：50 人
-* Open Issues数量：17 个
-* Github地址：https://github.com/microsoft/generative-ai-for-beginners.git
-* 项目首页: https://microsoft.github.io/generative-ai-for-beginners/
-
-
-《初学者的生成式人工智能（第2版）》是由微软云倡导者提供的一门全面的18课程，教授一切开始构建生成式人工智能应用所需的知识。
-
-## 从零开始构建大型语言模型
-
-* 创建周期：197 天
-* 开发语言：Jupyter Notebook
-* 协议类型：Other
-* Star数量：8212 个
-* Fork数量：475 次
-* 关注人数：8212 人
-* 贡献人数：6 人
-* Open Issues数量：0 个
-* Github地址：https://github.com/rasbt/LLMs-from-scratch.git
-* 项目首页: https://www.manning.com/books/build-a-large-language-model-from-scratch
-
-
-《从零开始构建大型语言模型》是一本指导您从头开始创建自己的LLM的书籍，使用清晰的解释、图表和示例。该方法与创建ChatGPT等大规模基础模型的方法相似。它涵盖了理解大型语言模型和处理文本数据等主题。
-
-## Marker: 快速准确的PDF转Markdown工具
-
-* 创建周期：218 天
-* 开发语言：Python
-* 协议类型：GNU General Public License v3.0
-* Star数量：10397 个
-* Fork数量：502 次
-* 关注人数：10397 人
-* 贡献人数：4 人
-* Open Issues数量：48 个
-* Github地址：https://github.com/VikParuchuri/marker.git
-
-
-Marker是一个开源工具，可以快速准确地将PDF转换为markdown。它支持各种类型的文档、所有语言，并且可以移除页眉、页脚和其他文档附加信息。此外，它还可以格式化表格和代码块，提取并保存图片，将大多数方程式转换为LaTeX格式。Marker可以在GPU、CPU或MPS上运行。
-
-## ScrapeGraphAI: 一次抓取即可
-
-* 创建周期：101 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：1898 个
-* Fork数量：154 次
-* 关注人数：1898 人
-* 贡献人数：16 人
-* Open Issues数量：8 个
-* Github地址：https://github.com/VinciGit00/Scrapegraph-ai.git
-* 项目首页: https://scrapegraph-doc.onrender.com/
-
-
-![](/images/vincigit00-scrapegraph-ai-0.png)
-
-ScrapeGraphAI是一个开源的网页抓取Python库，利用LLM和直接图逻辑创建用于网站、文档和XML文件的抓取管道。用户只需指定要提取的信息，库就会为您处理提取过程。
-
-## MiniCPM-V 和 OmniLMM: 图文理解的开源多模态大模型系列
-
-* 创建周期：78 天
-* 开发语言：Python
-* 协议类型：Apache License 2.0
-* Star数量：861 个
-* Fork数量：49 次
-* 关注人数：861 人
-* 贡献人数：8 人
-* Open Issues数量：10 个
-* Github地址：https://github.com/OpenBMB/MiniCPM-V.git
-
-
-MiniCPM-V 和 OmniLMM 是面向图文理解的开源多模态大模型系列。它们接受图像和文本输入，并提供高质量的文本输出。MiniCPM-V 2.0 版本能够处理任意长宽比的图像，具有 180 万像素，实现了类似 Gemini Pro 的场景文字识别能力和与 GPT-4V 相当的低幻觉率。OmniLMM-12B 模型在多个基准测试中优于同规模的其他模型，并实现了比 GPT-4V 更低的幻觉率。
-
-## Omost：将LLM编码能力转化为图像生成能力
-
-* 创建周期：5 天
-* 开发语言：Python
-* 协议类型：Apache License 2.0
-* Star数量：1555 个
-* Fork数量：84 次
-* 关注人数：1555 人
-* 贡献人数：2 人
-* Open Issues数量：24 个
-* Github地址：https://github.com/lllyasviel/Omost.git
-
-
-![](/images/lllyasviel-omost-0.png)
-
-Omost 是一个旨在将LLM的编码能力转换为图像生成能力的项目。它提供了预训练的LLM模型，这些模型编写代码来组合图像视觉内容，使用Omost的虚拟Canvas代理进行渲染，然后可以通过特定的图像生成器实现生成图像。
-
-## ToonCrafter: 生成卡通插值
-
-* 创建周期：5 天
-* 开发语言：Python
-* 协议类型：Apache License 2.0
-* Star数量：1044 个
-* Fork数量：68 次
-* 关注人数：1044 人
+* 创建周期：40 天
+* 开发语言：C
+* Star数量：649 个
+* Fork数量：124 次
+* 关注人数：649 人
 * 贡献人数：1 人
-* Open Issues数量：12 个
-* Github地址：https://github.com/ToonCrafter/ToonCrafter.git
+* Open Issues数量：23 个
+* Github地址：https://github.com/lizongying/my-tv.git
 
 
-ToonCrafter是一个专注于生成卡通插值的开源项目，旨在创建一个系统，用于在卡通序列的关键帧之间生成过渡帧。该项目旨在帮助动画师和艺术家创建流畅且视觉上令人愉悦的动画。
+我的电视是一个开源的安卓电视直播应用，内置了直播源。
 
-## GPT-4o: 为Windows和Linux提供的ChatGPT MacOS应用替代品
+## yabai: macOS平铺窗口管理实用程序
 
-* 创建周期：9 天
-* 开发语言：Python
+* 创建周期：1859 天
+* 开发语言：C
 * 协议类型：MIT License
-* Star数量：762 个
-* Fork数量：56 次
-* 关注人数：762 人
-* 贡献人数：4 人
-* Open Issues数量：3 个
-* Github地址：https://github.com/onuratakan/gpt-computer-assistant.git
+* Star数量：22019 个
+* Fork数量：622 次
+* 关注人数：22019 人
+* 贡献人数：3 人
+* Open Issues数量：149 个
+* Github地址：https://github.com/koekeishiya/yabai.git
 
 
-![](/images/onuratakan-gpt-computer-assistant-0.png)
+yabai是适用于macOS的窗口管理实用程序，可作为内置窗口管理器的扩展。它提供了命令行界面，用于控制窗口、空间和显示器，并支持用户定义的键盘快捷键。yabai的主要功能是平铺窗口管理，使用二进制空间分区算法修改窗口布局。它还提供了诸如跟随鼠标焦点、禁用切换空间动画、创建超过16个空间等功能。
 
-GPT-4o是ChatGPT MacOS应用的替代品，为Windows和Linux提供了更新稳定的版本。它可以作为Python库轻松安装，并且很快将提供原生安装脚本。由Upsonic Tiger提供支持，是AI代理的功能中心。
+## ESP8266 和 ESP32 设备的开源固件
 
-## Bussin Web X - 自定义网络浏览器和引擎的替代品
+* 创建周期：2671 天
+* 开发语言：C, C++
+* 协议类型：GNU General Public License v3.0
+* Star数量：21566 个
+* Fork数量：4684 次
+* 关注人数：21566 人
+* 贡献人数：365 人
+* Open Issues数量：13 个
+* Github地址：https://github.com/arendst/Tasmota.git
+* 项目首页: https://tasmota.github.io/docs
 
-* 创建周期：47 天
-* 开发语言：Rust
-* 协议类型：Apache License 2.0
-* Star数量：636 个
-* Fork数量：76 次
-* 关注人数：636 人
-* 贡献人数：14 人
-* Open Issues数量：41 个
-* Github地址：https://github.com/face-hh/webx.git
+
+这是针对 ESP8266 和 ESP32 设备的开源固件，通过 webUI 提供简单配置，支持 OTA 更新、定时器或规则自动化，并完全本地控制 MQTT、HTTP、串行或 KNX。它是为 PlatformIO 编写的，旨在支持 PlatformIO 项目背后的人，特别是在当前事件中支持 Ivan Kravets。
+
+## raylib: 用于视频游戏编程的简单易用图形库
+
+* 创建周期：3821 天
+* 开发语言：C
+* 协议类型：zlib License
+* Star数量：18556 个
+* Fork数量：1939 次
+* 关注人数：18556 人
+* 贡献人数：430 人
+* Open Issues数量：37 个
+* Github地址：https://github.com/raysan5/raylib.git
+* 项目首页: http://www.raylib.com
 
 
-Bussin Web X是世界广泛网的替代品，提供自定义的网络浏览器、HTML渲染引擎、DNS和搜索引擎。它是用Rust和GTK编写的，使用自定义的HTML、CSS和Lua引擎，没有JavaScript。该项目包括Bussin Napture浏览器、DNS、官方搜索引擎和用于创建buss://网站的注册器等组件。
+raylib是一个简单易用的图形库，用于视频游戏编程，受Borland BGI图形库和XNA框架的启发。它适用于原型设计、工具、图形应用程序、嵌入式系统和教育。它没有花哨的界面或视觉辅助工具，只有纯粹的编码。它没有外部依赖项，支持多个平台，使用纯C代码编写，并且使用OpenGL进行硬件加速。它还支持多种字体和纹理格式，具有完整的3D支持、灵活的材质系统、动画3D模型、着色器支持、强大的数学模块、音频加载和播放、VR立体渲染、大量的代码示例集合以及对70多种编程语言的绑定。它是免费开源的。
 
-## Isaac Lab: 基于NVIDIA Isaac Sim的机器人学习框架
+## MicroPython - 在微控制器和嵌入式系统上实现Python 3.x
 
-* 创建周期：566 天
-* 开发语言：Python
+* 创建周期：3820 天
+* 开发语言：C
 * 协议类型：Other
-* Star数量：989 个
-* Fork数量：312 次
-* 关注人数：989 人
-* 贡献人数：33 人
-* Open Issues数量：135 个
-* Github地址：https://github.com/isaac-sim/IsaacLab.git
-* 项目首页: https://isaac-sim.github.io/IsaacLab
+* Star数量：18538 个
+* Fork数量：7413 次
+* 关注人数：18538 人
+* 贡献人数：409 人
+* Open Issues数量：1827 个
+* Github地址：https://github.com/micropython/micropython.git
+* 项目首页: https://micropython.org
 
 
-Isaac Lab 是建立在 NVIDIA Isaac Sim 上的统一且模块化的机器人学习框架。它旨在简化机器人学习研究中的常见工作流程，如强化学习、示教学习和运动规划。它利用最新的模拟能力，实现了逼真的场景和快速准确的模拟。
+![](/images/micropython-micropython-0.png)
+
+MicroPython 是一个开源项目，旨在在微控制器和小型嵌入式系统上实现 Python 3.x。它提供了对核心数据类型、内置模块以及用于访问硬件功能的特定模块的支持。该项目处于 beta 阶段，支持多种平台和架构，包括微控制器、类 Unix 系统和 Windows。它还包括一个用于将 Python 脚本预编译为 .mpy 文件的交叉编译器。
+
+## FreeRDP: 远程桌面协议实现
+
+* 创建周期：4605 天
+* 开发语言：C
+* 协议类型：Apache License 2.0
+* Star数量：9780 个
+* Fork数量：25046 次
+* 关注人数：9780 人
+* 贡献人数：311 人
+* Open Issues数量：433 个
+* Github地址：https://github.com/FreeRDP/FreeRDP.git
+* 项目首页: http://www.freerdp.com/
+
+
+FreeRDP是远程桌面协议（RDP）的免费实现，根据Apache许可发布。它允许用户在任何地方以任何方式使用他们的软件，促进互操作性，解放计算体验。
+
+## XMRig：跨平台CPU/GPU矿工和RandomX基准测试工具
+
+* 创建周期：2496 天
+* 开发语言：C, C++
+* 协议类型：GNU General Public License v3.0
+* Star数量：8132 个
+* Fork数量：3591 次
+* 关注人数：8132 人
+* 贡献人数：50 人
+* Open Issues数量：537 个
+* Github地址：https://github.com/xmrig/xmrig.git
+* 项目首页: https://xmrig.com/
+
+
+XMRig是一个开源的，高性能的，跨平台的CPU/GPU矿工和RandomX基准测试工具，支持RandomX、KawPow、CryptoNight和GhostRider。它提供了Windows、Linux、macOS和FreeBSD的官方二进制文件。
+
+## CVE-2024-1086 通用本地特权升级漏洞利用
+
+* 创建周期：77 天
+* 开发语言：C
+* 协议类型：MIT License
+* Star数量：2032 个
+* Fork数量：256 次
+* 关注人数：2032 人
+* 贡献人数：2 人
+* Open Issues数量：1 个
+* Github地址：https://github.com/Notselwyn/CVE-2024-1086.git
+* 项目首页: https://pwning.tech/nftables
+
+
+这是一个通用的本地特权升级 CVE-2024-1086 的概念验证漏洞利用，适用于 v5.14 到 v6.6 之间的大多数 Linux 内核，包括 Debian、Ubuntu 和 KernelCTF。在 KernelCTF 映像中的成功率为 99.4%。
+
+## ComfyUI-3D-Pack: 3D输入处理套件
+
+* 创建周期：152 天
+* 开发语言：C, Python
+* 协议类型：MIT License
+* Star数量：1590 个
+* Fork数量：158 次
+* 关注人数：1590 人
+* 贡献人数：6 人
+* Open Issues数量：83 个
+* Github地址：https://github.com/MrForExample/ComfyUI-3D-Pack.git
+
+
+ComfyUI-3D-Pack是一个广泛的节点套件，使ComfyUI能够使用尖端算法和模型处理3D输入，如Mesh和UV纹理。
+
+## ModSDK - Crash Team Racing模组工具包
+
+* 创建周期：652 天
+* 开发语言：C
+* Star数量：229 个
+* Fork数量：28 次
+* 关注人数：229 人
+* 贡献人数：14 人
+* Open Issues数量：13 个
+* Github地址：https://github.com/CTR-tools/CTR-ModSDK.git
+* 项目首页: https://discord.gg/WHkuh2n
+
+
+![](/images/ctr-tools-ctr-modsdk-0.png)
+
+ModSDK是一个用于在C语言中创建Crash Team Racing模组的工具包。该存储库还包含了一个完全反编译和逆向工程CTR的努力。
 
