@@ -1,32 +1,32 @@
 ---
-title: Github 2024-06-09 开源项目日报 Top10
-date: 2024-06-09T07:01:29+08:00
+title: Github 2024-06-09 php开源项目日报 Top10
+date: 2024-06-09T07:11:24+08:00
 slug: github-trendings-today-20240609
 author: 老孙正经胡说
-image: /images/hiddify-hiddify-next-0.png
+image: /images/coollabsio-coolify-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
+  - 和
   - 人数
   - 人
+  - 项目
+  - 创建
   - 开发
   - 语言
-  - 创建
-  - 周期
-  - 关注
+  - 管理
   - 贡献
-  - 地址
   - 是
+  - 周期
   - 协议
-  - 开源
-  - 和
   - 类型
-  - 使用
-  - 中
+  - 关注
+  - 地址
+  - 应用程序
   - 提供
-  - 构建
+  - 功能
+  - 开源
 
 categories:
 
@@ -38,177 +38,168 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| TypeScript项目 | 2 |
-| Swift项目 | 1 |
-| Jupyter Notebook项目 | 1 |
-| Shell项目 | 1 |
-| 非开发语言项目 | 1 |
-| JavaScript项目 | 1 |
-| Python项目 | 1 |
-| Scala项目 | 1 |
-| HTML项目 | 1 |
-| Go项目 | 1 |
-| Dart项目 | 1 |
+| PHP项目 | 10 |
+| Blade项目 | 1 |
 
-## 初学者的生成式人工智能（第2版）
+## Livewire: Laravel中构建动态UI组件的全栈框架
 
-* 创建周期：259 天
-* 开发语言：Jupyter Notebook
+* 创建周期：1818 天
+* 开发语言：PHP
 * 协议类型：MIT License
-* Star数量：25764 个
-* Fork数量：16105 次
-* 关注人数：25764 人
-* 贡献人数：50 人
-* Open Issues数量：17 个
-* Github地址：https://github.com/microsoft/generative-ai-for-beginners.git
-* 项目首页: https://microsoft.github.io/generative-ai-for-beginners/
+* Star数量：21388 个
+* Fork数量：1416 次
+* 关注人数：21388 人
+* 贡献人数：425 人
+* Open Issues数量：6 个
+* Github地址：https://github.com/livewire/livewire.git
 
 
-《初学者的生成式人工智能（第2版）》是由微软云倡导者提供的一门全面的18课程，教授一切开始构建生成式人工智能应用所需的知识。
+Livewire是Laravel的全栈框架，它简化了在PHP中构建动态UI组件的过程。
 
-## Hiddify: 开源多平台自动代理客户端
+## Coolify: 开源自助云平台
 
-* 创建周期：385 天
-* 开发语言：Dart
-* 协议类型：Other
-* Star数量：11336 个
-* Fork数量：1030 次
-* 关注人数：11336 人
-* 贡献人数：46 人
-* Open Issues数量：139 个
-* Github地址：https://github.com/hiddify/hiddify-next.git
-* 项目首页: https://hiddify.com
-
-
-![](/images/hiddify-hiddify-next-0.png)
-
-Hiddify是一个开源的多平台自动代理客户端，支持Sing-box、X-ray、TUIC、Hysteria、Reality、Trojan、SSH等多种协议。它安全且无广告。
-
-## LiveKit: 实时视频、音频和数据的开源项目
-
-* 创建周期：1324 天
-* 开发语言：Go
+* 创建周期：1112 天
+* 开发语言：PHP, Blade
 * 协议类型：Apache License 2.0
-* Star数量：7503 个
-* Fork数量：619 次
-* 关注人数：7503 人
-* 贡献人数：59 人
-* Open Issues数量：100 个
-* Github地址：https://github.com/livekit/livekit.git
-* 项目首页: https://docs.livekit.io
+* Star数量：10527 个
+* Fork数量：567 次
+* 关注人数：10527 人
+* 贡献人数：80 人
+* Open Issues数量：59 个
+* Github地址：https://github.com/coollabsio/coolify.git
+* 项目首页: https://coolify.io
 
 
-LiveKit 是一个开源项目，提供基于 WebRTC 的可扩展的多用户会议。它旨在为应用程序构建实时视频、音频和数据功能提供一切所需。LiveKit 的服务器使用 Go 编写，使用了出色的 Pion WebRTC 实现。
+![](/images/coollabsio-coolify-0.png)
 
-## Transformers.js：网络上的最先进机器学习
+Coolify是一个开源且可自行托管的替代品，可替代Heroku、Netlify和Vercel等云平台。它可以帮助用户通过SSH连接在自己的硬件上管理服务器、应用程序和数据库，包括VPS、裸金属和树莓派。该平台旨在在使用个人服务器时提供云的便利性，确保没有供应商锁定，并使用户即使停止使用Coolify也能保留对其资源的控制。
 
-* 创建周期：482 天
-* 开发语言：JavaScript
-* 协议类型：Apache License 2.0
-* Star数量：8264 个
-* Fork数量：458 次
-* 关注人数：8264 人
-* 贡献人数：28 人
-* Open Issues数量：200 个
-* Github地址：https://github.com/xenova/transformers.js.git
-* 项目首页: https://huggingface.co/docs/transformers.js
+## Magento开源项目和Adobe Commerce
 
-
-Transformers.js 是一个开源项目，可以在网络上实现最先进的机器学习。它允许在浏览器中直接运行 🤗 Transformers，无需服务器。该库在功能上等同于 Hugging Face 的 transformers python 库，并支持自然语言处理、计算机视觉、音频和多模态领域的各种任务。它使用 ONNX Runtime 在浏览器中运行模型，并提供了使用 🤗 Optimum 将预训练的 PyTorch、TensorFlow 或 JAX 模型轻松转换为 ONNX 的功能。
-
-## Delta Lake: 构建Lakehouse架构的开源存储框架
-
-* 创建周期：1875 天
-* 开发语言：Scala, HTML
-* 协议类型：Apache License 2.0
-* Star数量：7103 个
-* Fork数量：1607 次
-* 关注人数：7103 人
-* 贡献人数：305 人
-* Open Issues数量：706 个
-* Github地址：https://github.com/delta-io/delta.git
-* 项目首页: https://delta.io
+* 创建周期：4435 天
+* 开发语言：PHP
+* 协议类型：Open Software License 3.0
+* Star数量：11083 个
+* Fork数量：9328 次
+* 关注人数：11083 人
+* 贡献人数：257 人
+* Open Issues数量：2518 个
+* Github地址：https://github.com/magento/magento2.git
+* 项目首页: http://www.magento.com
 
 
-![](/images/delta-io-delta-0.png)
+![](/images/magento-magento2-0.png)
 
-Delta Lake是一个开源存储框架，可以使用包括Spark、PrestoDB、Flink、Trino和Hive在内的计算引擎以及Scala、Java、Rust、Ruby和Python的API来构建Lakehouse架构。
+Magento开源项目提供基本的电子商务功能，用于构建在线商店。建议使用Adobe Commerce作为完整的电子商务解决方案，其中包括优化的云架构、托管以及人工智能驱动的商品推广和分析。
 
-## Ice：功能强大的macOS菜单栏管理工具
+## Damn Vulnerable Web Application (DVWA) - 安全测试和漏洞练习
 
-* 创建周期：309 天
-* 开发语言：Swift
-* 协议类型：MIT License
-* Star数量：5631 个
-* Fork数量：85 次
-* 关注人数：5631 人
-* 贡献人数：3 人
-* Open Issues数量：42 个
-* Github地址：https://github.com/jordanbaird/Ice.git
-* 项目首页: https://icemenubar.app
-
-
-![](/images/jordanbaird-ice-0.png)
-
-Ice是一款功能强大的macOS菜单栏管理工具，其主要功能是隐藏和显示菜单栏项目。它还提供了各种其他功能，旨在成为最多功能的菜单栏工具之一。请注意，它目前正在积极开发中，一些功能尚未实现。
-
-## lsix: 在终端中显示图像缩略图的工具
-
-* 创建周期：2560 天
-* 开发语言：Shell
+* 创建周期：3973 天
+* 开发语言：PHP
 * 协议类型：GNU General Public License v3.0
-* Star数量：3697 个
-* Fork数量：127 次
-* 关注人数：3697 人
-* 贡献人数：4 人
-* Open Issues数量：37 个
-* Github地址：https://github.com/hackerb9/lsix.git
+* Star数量：9103 个
+* Fork数量：3135 次
+* 关注人数：9103 人
+* 贡献人数：48 人
+* Open Issues数量：3 个
+* Github地址：https://github.com/digininja/DVWA.git
 
 
-lsix是一个类似于'ls'的工具，但用于图像，在终端中使用sixel图形显示缩略图。
+Damn Vulnerable Web Application (DVWA)是一个PHP/MySQL Web应用程序，旨在故意设计成易受攻击。其主要目标是帮助安全专业人员测试其技能和工具，帮助Web开发人员了解安全Web应用程序的过程，并为学生和教师提供一个受控的环境，以学习Web应用程序安全。该应用程序允许用户通过简单的界面练习常见的Web漏洞，具有不同的难度级别，并且故意包含了用户可以发现的已记录和未记录的漏洞。
 
-## Adobe软件替代方案列表
+## Kanboard: 项目管理软件维护模式下的看板方法论
 
-* 创建周期：362 天
-* Star数量：2720 个
-* Fork数量：114 次
-* 关注人数：2720 人
-* 贡献人数：25 人
-* Open Issues数量：16 个
-* Github地址：https://github.com/KenneyNL/Adobe-Alternatives.git
+* 创建周期：3683 天
+* 开发语言：PHP
+* 协议类型：MIT License
+* Star数量：7995 个
+* Fork数量：1742 次
+* 关注人数：7995 人
+* 贡献人数：337 人
+* Open Issues数量：142 个
+* Github地址：https://github.com/kanboard/kanboard.git
+* 项目首页: https://kanboard.org
 
 
-一份由社区共同改进的Adobe软件替代方案列表，包括免费开源选项，免费、单次购买和订阅型替代方案。该列表涵盖了各种Adobe产品的替代方案，如Photoshop、Illustrator、Animate、InDesign、Substance、Lightroom、XD、Premiere、Acrobat、Bridge、Dreamweaver、Audition和After Effects。
+Kanboard是专注于看板方法论的项目管理软件，目前处于维护模式。这意味着作者不再积极开发新的重要功能，但根据社区贡献定期发布新版本。只要遵循指南，就会接受新功能和错误修复的拉取请求。
 
-## MiGPT：智能家居，从未如此贴心
+## Akaunting™ - 现代化在线会计软件
 
-* 创建周期：137 天
-* 开发语言：TypeScript
-* Star数量：2230 个
-* Fork数量：161 次
-* 关注人数：2230 人
-* 贡献人数：2 人
+* 创建周期：2412 天
+* 开发语言：PHP
+* 协议类型：Other
+* Star数量：7142 个
+* Fork数量：2250 次
+* 关注人数：7142 人
+* 贡献人数：91 人
 * Open Issues数量：18 个
-* Github地址：https://github.com/idootop/mi-gpt.git
+* Github地址：https://github.com/akaunting/akaunting.git
+* 项目首页: https://akaunting.com
 
 
-![](/images/idootop-mi-gpt-0.png)
+Akaunting™是一款专为小型企业和自由职业者设计的在线会计软件。它采用了Laravel、VueJS、Tailwind和RESTful API等现代技术。由于其模块化结构，Akaunting为用户和开发人员提供了一个出色的应用商店。
 
-MiGPT是一个智能家居项目，通过将小爱音箱、米家智能设备和ChatGPT的理解能力融合，打造一个懂你、有温度、与你共同进化的家。它使智能家居设备更智能、更贴心地响应指令，并构成一个强大的协作网络。
+## GLPI: 免费资产和IT管理软件包
 
-## Mesop: 用Python快速构建愉快的Web应用程序 🚀
-
-* 创建周期：239 天
-* 开发语言：Python, TypeScript
-* 协议类型：Apache License 2.0
-* Star数量：1109 个
-* Fork数量：47 次
-* 关注人数：1109 人
-* 贡献人数：6 人
-* Open Issues数量：76 个
-* Github地址：https://github.com/google/mesop.git
-* 项目首页: https://google.github.io/mesop/
+* 创建周期：3237 天
+* 开发语言：PHP
+* 协议类型：GNU General Public License v3.0
+* Star数量：3894 个
+* Fork数量：1228 次
+* 关注人数：3894 人
+* 贡献人数：147 人
+* Open Issues数量：181 个
+* Github地址：https://github.com/glpi-project/glpi.git
+* 项目首页: https://glpi-project.org
 
 
-Mesop是一个开源项目，允许开发人员使用Python快速构建Web应用程序。它旨在提供愉快而高效的开发体验。
+GLPI是一款免费的资产和IT管理软件包，提供ITIL服务台功能、许可证跟踪和软件审计。它包括服务资产和配置管理、请求履行、事件和问题管理、变更管理、知识管理、合同管理、IT服务的财务管理、资产预留、数据中心基础设施管理、软件和许可证管理、影响分析、服务目录、实体分离、项目管理和干预计划等功能。它还支持许多插件，提供额外的功能。
+
+## OpenEMR：开源电子健康记录和医疗实践管理解决方案
+
+* 创建周期：5098 天
+* 开发语言：PHP
+* 协议类型：GNU General Public License v3.0
+* Star数量：2614 个
+* Fork数量：1991 次
+* 关注人数：2614 人
+* 贡献人数：201 人
+* Open Issues数量：305 个
+* Github地址：https://github.com/openemr/openemr.git
+* 项目首页: https://open-emr.org/
+
+
+OpenEMR是一种流行的开源电子健康记录和医疗实践管理解决方案。它提供完全集成的电子健康记录、实践管理、排班、电子账单、国际化、免费支持，并可在各种平台上运行。
+
+## API Platform Core: 创建超媒体驱动的REST和GraphQL API
+
+* 创建周期：3429 天
+* 开发语言：PHP
+* 协议类型：MIT License
+* Star数量：2379 个
+* Fork数量：841 次
+* 关注人数：2379 人
+* 贡献人数：372 人
+* Open Issues数量：180 个
+* Github地址：https://github.com/api-platform/core.git
+* 项目首页: https://api-platform.com
+
+
+API Platform Core是一个强大的系统，用于创建超媒体驱动的REST和GraphQL API。它是API Platform框架的一部分，并可以与Symfony框架集成。它支持包括JSON-LD、Hydra Core Vocabulary、OpenAPI、JSON:API、HAL和Problem Details在内的各种开放格式，可以在几分钟内创建完整功能的Web API。
+
+## Speedtest Tracker: 自托管的互联网性能跟踪应用程序
+
+* 创建周期：637 天
+* 开发语言：PHP
+* 协议类型：MIT License
+* Star数量：2338 个
+* Fork数量：84 次
+* 关注人数：2338 人
+* 贡献人数：26 人
+* Open Issues数量：58 个
+* Github地址：https://github.com/alexjustesen/speedtest-tracker.git
+* 项目首页: https://speedtest-tracker.dev/
+
+
+Speedtest Tracker是一款自托管的互联网性能跟踪应用程序，可对Ookla的Speedtest服务进行速度测试检查。它允许用户使用自己的基础设施监控其互联网性能。
 
