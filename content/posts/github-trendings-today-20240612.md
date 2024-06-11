@@ -1,9 +1,9 @@
 ---
-title: Github 2024-06-12 开源项目日报 Top10
-date: 2024-06-12T07:01:51+08:00
+title: Github 2024-06-12 C开源项目日报 Top10
+date: 2024-06-12T07:11:22+08:00
 slug: github-trendings-today-20240612
 author: 老孙正经胡说
-image: /images/codecrafters-io-build-your-own-x-0.png
+image: /images/ventoy-ventoy-0.png
 tags:
   - github
   - trendings
@@ -11,22 +11,22 @@ tags:
   - 项目
   - 人数
   - 人
-  - 语言
-  - 是
-  - 开发
-  - 创建
   - 和
+  - 开发
+  - 语言
+  - 创建
   - 周期
+  - 协议
+  - 类型
   - 关注
   - 贡献
   - 地址
-  - 协议
-  - 类型
-  - 使用
-  - 模型
+  - 是
+  - 支持
+  - 开源
   - 提供
-  - 库
-  - 训练
+  - 扩展
+  - 中
 
 categories:
 
@@ -38,179 +38,173 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 4 |
-| JavaScript项目 | 2 |
-| Lua项目 | 1 |
+| C项目 | 10 |
 | PHP项目 | 1 |
-| Blade项目 | 1 |
-| 非开发语言项目 | 1 |
-| TypeScript项目 | 1 |
-| Shell项目 | 1 |
+| PLpgSQL项目 | 1 |
+| C++项目 | 1 |
 
-## 从零开始构建你喜爱的技术
+## Ventoy: 100%开源的可启动USB解决方案
 
-* 创建周期：2156 天
-* Star数量：253338 个
-* Fork数量：24043 次
-* 关注人数：253338 人
-* 贡献人数：116 人
-* Open Issues数量：319 个
-* Github地址：https://github.com/codecrafters-io/build-your-own-x.git
-* 项目首页: https://codecrafters.io
-
-
-![](/images/codecrafters-io-build-your-own-x-0.png)
-
-这个存储库是一本精心编写的、逐步指南的汇编，可以从零开始重新创建各种技术，如3D渲染器、区块链/加密货币、游戏、操作系统、Web浏览器等。它旨在帮助用户通过理解和构建自己喜欢的技术来掌握编程。
-
-## Node版本管理器 - 管理多个活动的node.js版本的POSIX-compliant bash脚本
-
-* 创建周期：5172 天
-* 开发语言：Shell
-* 协议类型：MIT License
-* Star数量：76686 个
-* Fork数量：7704 次
-* 关注人数：76686 人
-* 贡献人数：348 人
-* Open Issues数量：380 个
-* Github地址：https://github.com/nvm-sh/nvm.git
+* 创建周期：1534 天
+* 开发语言：C
+* 协议类型：GNU General Public License v3.0
+* Star数量：58456 个
+* Fork数量：3872 次
+* 关注人数：58456 人
+* 贡献人数：108 人
+* Open Issues数量：664 个
+* Github地址：https://github.com/ventoy/Ventoy.git
+* 项目首页: https://www.ventoy.net
 
 
-![](/images/nvm-sh-nvm-0.png)
+![](/images/ventoy-ventoy-0.png)
 
-Node版本管理器是一个符合POSIX标准的bash脚本，可帮助管理多个活动的node.js版本。
+Ventoy是一个100%开源的可启动USB解决方案，支持各种操作系统，包括Windows、Linux、Unix和ChromeOS。它提供快速简便的使用方式，支持各种分区样式和UEFI安全启动，并且可以直接从ISO/WIM/IMG/VHD(x)/EFI文件启动，无需提取。它还提供诸如Linux持久性、Windows和Linux的自动安装以及高度可定制的主题和菜单等功能。
 
-## 无白板招聘
+## PHP：流行的Web开发脚本语言
 
-* 创建周期：2646 天
-* 开发语言：JavaScript
-* 协议类型：MIT License
-* Star数量：42476 个
-* Fork数量：3384 次
-* 关注人数：42476 人
-* 贡献人数：428 人
-* Open Issues数量：11 个
-* Github地址：https://github.com/poteto/hiring-without-whiteboards.git
-
-
-项目“无白板招聘”是一个列出不进行“白板”面试的公司或团队的列表，这些面试与不良面试实践有关。相反，这些公司使用类似日常工作的面试技巧和问题，例如共同解决实际问题或接受家庭作业。
-
-## nanoGPT：简化快速的GPT训练库
-
-* 创建周期：531 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：32986 个
-* Fork数量：5076 次
-* 关注人数：32986 人
-* 贡献人数：35 人
-* Open Issues数量：244 个
-* Github地址：https://github.com/karpathy/nanoGPT.git
-
-
-nanoGPT是一个用于训练和微调中等规模GPT的开源存储库。它是minGPT的简化和快速替代品，将简单性置于复杂性之上。代码简单易懂，容易修改，允许从头开始训练新模型或微调预训练的检查点，例如来自OpenAI的GPT-2 1.3B模型。
-
-## Coolify: 开源自助云平台
-
-* 创建周期：1112 天
-* 开发语言：PHP, Blade
-* 协议类型：Apache License 2.0
-* Star数量：10527 个
-* Fork数量：567 次
-* 关注人数：10527 人
-* 贡献人数：80 人
-* Open Issues数量：59 个
-* Github地址：https://github.com/coollabsio/coolify.git
-* 项目首页: https://coolify.io
-
-
-![](/images/coollabsio-coolify-0.png)
-
-Coolify是一个开源且可自行托管的替代品，可替代Heroku、Netlify和Vercel等云平台。它可以帮助用户通过SSH连接在自己的硬件上管理服务器、应用程序和数据库，包括VPS、裸金属和树莓派。该平台旨在在使用个人服务器时提供云的便利性，确保没有供应商锁定，并使用户即使停止使用Coolify也能保留对其资源的控制。
-
-## 语言模型是无监督的多任务学习者
-
-* 创建周期：1948 天
-* 开发语言：Python
+* 创建周期：4710 天
+* 开发语言：C, PHP
 * 协议类型：Other
-* Star数量：21547 个
-* Fork数量：5376 次
-* 关注人数：21547 人
-* 贡献人数：15 人
-* Open Issues数量：168 个
-* Github地址：https://github.com/openai/gpt-2.git
-* 项目首页: https://openai.com/blog/better-language-models/
+* Star数量：37340 个
+* Fork数量：7657 次
+* 关注人数：37340 人
+* 贡献人数：234 人
+* Open Issues数量：968 个
+* Github地址：https://github.com/php/php-src.git
+* 项目首页: https://www.php.net
 
 
-该开源项目提供了来自论文《语言模型是无监督的多任务学习者》的代码和模型。它包括了有关GPT-2及其分阶段发布的信息，以及供研究人员研究其行为的数据集。请注意，由于错误，原始参数计数是错误的，因此您可能已经看到将小型称为117M，将中型称为345M。
+![](/images/php-php-src-0.png)
 
-## Frigate - 本地NVR与实时对象检测
+PHP是一种流行的用于Web开发的脚本语言，以其速度、灵活性和在各种网站中的广泛使用而闻名。它是根据PHP许可证v3.01分发的。
 
-* 创建周期：1964 天
-* 开发语言：Python, TypeScript
+## Whisper.cpp: 高性能自动语音识别模型的C/C++移植
+
+* 创建周期：569 天
+* 开发语言：C, C++
 * 协议类型：MIT License
-* Star数量：15524 个
-* Fork数量：1461 次
-* 关注人数：15524 人
-* 贡献人数：216 人
-* Open Issues数量：153 个
-* Github地址：https://github.com/blakeblackshear/frigate.git
-* 项目首页: https://frigate.video
+* Star数量：30141 个
+* Fork数量：2939 次
+* 关注人数：30141 人
+* 贡献人数：285 人
+* Open Issues数量：572 个
+* Github地址：https://github.com/ggerganov/whisper.cpp.git
 
 
-![](/images/blakeblackshear-frigate-0.png)
+![](/images/ggerganov-whisper.cpp-0.png)
 
-Frigate是专为Home Assistant设计的完整的本地NVR，具有AI对象检测功能，使用OpenCV和TensorFlow对IP摄像机进行实时对象检测。它与Home Assistant紧密集成，最大程度地减少资源使用，并通过大量使用多进程来最大化性能。此外，它通过MQTT进行通信，以便轻松集成到其他系统中，根据检测到的对象支持基于保留设置的视频录制，支持全天候录制，并通过RTSP进行重新流式传输，以减少与摄像机的连接数。
+Whisper.cpp是一个高性能的开源自动语音识别（ASR）模型，从OpenAI的Whisper模型移植到C/C++。它旨在实现高效的推断，无需依赖，支持包括Mac OS、iOS、Android、Linux、Windows、Raspberry Pi等多个平台。该实现非常轻量，包含在whisper.h和whisper.cpp中，可以轻松集成到不同的应用程序和平台中。
 
-## LazyVim: Neovim配置的懒人方式
+## 开源时间序列SQL数据库：PostgreSQL扩展
 
-* 创建周期：506 天
-* 开发语言：Lua
+* 创建周期：2503 天
+* 开发语言：C
+* 协议类型：Other
+* Star数量：15982 个
+* Fork数量：838 次
+* 关注人数：15982 人
+* 贡献人数：85 人
+* Open Issues数量：595 个
+* Github地址：https://github.com/timescale/timescaledb.git
+* 项目首页: https://www.timescale.com/
+
+
+一个针对快速摄入和复杂查询进行优化的开源时间序列SQL数据库，打包为PostgreSQL扩展。
+
+## Espressif物联网开发框架
+
+* 创建周期：2800 天
+* 开发语言：C
 * 协议类型：Apache License 2.0
-* Star数量：13257 个
-* Fork数量：894 次
-* 关注人数：13257 人
-* 贡献人数：152 人
-* Open Issues数量：83 个
-* Github地址：https://github.com/LazyVim/LazyVim.git
-* 项目首页: https://lazyvim.github.io/
+* Star数量：12422 个
+* Fork数量：6979 次
+* 关注人数：12422 人
+* 贡献人数：293 人
+* Open Issues数量：1646 个
+* Github地址：https://github.com/espressif/esp-idf.git
 
 
-![](/images/lazyvim-lazyvim-0.png)
+Espressif物联网开发框架是Espressif SoCs的官方开发框架，支持Windows、Linux和macOS。它提供了发布支持计划、SoC兼容性信息以及使用ESP-IDF进行开发的详细信息。
 
-LazyVim是由lazy.nvim提供支持的Neovim设置，旨在使用户轻松定制和扩展其配置。它提供了根据需要调整配置的灵活性，同时也提供了预配置设置的便利性。
+## Zephyr 项目 - 可扩展的实时操作系统（RTOS）
 
-## Transformers.js：网络上的最先进机器学习
-
-* 创建周期：482 天
-* 开发语言：JavaScript
+* 创建周期：2827 天
+* 开发语言：C
 * 协议类型：Apache License 2.0
-* Star数量：8264 个
-* Fork数量：458 次
-* 关注人数：8264 人
-* 贡献人数：28 人
-* Open Issues数量：200 个
-* Github地址：https://github.com/xenova/transformers.js.git
-* 项目首页: https://huggingface.co/docs/transformers.js
+* Star数量：9212 个
+* Fork数量：5703 次
+* 关注人数：9212 人
+* 贡献人数：391 人
+* Open Issues数量：2388 个
+* Github地址：https://github.com/zephyrproject-rtos/zephyr.git
+* 项目首页: https://docs.zephyrproject.org
 
 
-Transformers.js 是一个开源项目，可以在网络上实现最先进的机器学习。它允许在浏览器中直接运行 🤗 Transformers，无需服务器。该库在功能上等同于 Hugging Face 的 transformers python 库，并支持自然语言处理、计算机视觉、音频和多模态领域的各种任务。它使用 ONNX Runtime 在浏览器中运行模型，并提供了使用 🤗 Optimum 将预训练的 PyTorch、TensorFlow 或 JAX 模型轻松转换为 ONNX 的功能。
+Zephyr 项目是一个开源的、可扩展的实时操作系统（RTOS），专为资源受限设备设计，支持多种硬件架构，并且专注于安全性。它适用于从简单的嵌入式传感器到复杂的物联网无线网关等各种系统。
 
-## Piku: 通过git push在自己的服务器上进行部署的小型PaaS
+## HAProxy：免费、快速、可靠的反向代理
 
-* 创建周期：3000 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：4621 个
-* Fork数量：113 次
-* 关注人数：4621 人
-* 贡献人数：21 人
-* Open Issues数量：7 个
-* Github地址：https://github.com/piku/piku.git
-* 项目首页: http://piku.github.io
+* 创建周期：2256 天
+* 开发语言：C
+* 协议类型：Other
+* Star数量：4588 个
+* Fork数量：764 次
+* 关注人数：4588 人
+* 贡献人数：264 人
+* Open Issues数量：308 个
+* Github地址：https://github.com/haproxy/haproxy.git
+* 项目首页: https://git.haproxy.org/
 
 
-![](/images/piku-piku-0.png)
+HAProxy是一个免费、非常快速和可靠的反向代理，为基于TCP和HTTP的应用程序提供高可用性、负载均衡和代理。
 
-Piku是一个受Dokku启发的小型PaaS（平台即服务），可以让您通过git push在自己的服务器上进行部署，无论服务器大小如何。
+## TFT_eSPI：Arduino 和 PlatformIO IDE 兼容的 TFT 库
+
+* 创建周期：2667 天
+* 开发语言：C
+* 协议类型：Other
+* Star数量：3459 个
+* Fork数量：1007 次
+* 关注人数：3459 人
+* 贡献人数：42 人
+* Open Issues数量：91 个
+* Github地址：https://github.com/Bodmer/TFT_eSPI.git
+
+
+TFT_eSPI 是一个开源的 TFT 库，兼容 Arduino 和 PlatformIO IDE，针对 Raspberry Pi Pico (RP2040)、STM32、ESP8266 和 ESP32 等多种处理器进行了优化。它支持不同的驱动芯片，并添加了“讨论”功能以进行问答，并在“问题”选项卡中报告问题。该库已经更新，包括新的板载设置文件、用于绘制平滑图形的新功能，以及用于滑块、按钮、图表和仪表的新 GUI 示例。它还支持带有 16 位并行显示器的 RP2040，带有 DMA 的 ESP32-S2、ESP32-S3 和 ESP32-C3。此外，它还具有反锯齿字体、精灵类、触摸控制器支持，以及特定板上的 8 位并行支持。
+
+## 项目存储库和教程视频
+
+* 创建周期：1805 天
+* 开发语言：C
+* 协议类型：Apache License 2.0
+* Star数量：1739 个
+* Fork数量：905 次
+* 关注人数：1739 人
+* 贡献人数：2 人
+* Open Issues数量：5 个
+* Github地址：https://github.com/0015/ThatProject.git
+* 项目首页: https://youtube.com/thatproject
+
+
+![](/images/0015-thatproject-0.png)
+
+项目存储库提供了每个项目的源代码访问权限，并提供了项目教程视频供参考。
+
+## NGINX JavaScript (NJS)：JavaScript子集的动态模块
+
+* 创建周期：3184 天
+* 开发语言：C
+* 协议类型：BSD 2-Clause "Simplified" License
+* Star数量：764 个
+* Fork数量：112 次
+* 关注人数：764 人
+* 贡献人数：26 人
+* Open Issues数量：49 个
+* Github地址：https://github.com/nginx/njs.git
+* 项目首页: http://nginx.org/en/docs/njs/
+
+
+NGINX JavaScript，也称为NJS，是NGINX的一个动态模块，允许使用JavaScript语法扩展内置功能。它是符合ES5和一些ES6扩展的JavaScript子集。该模块使复杂的访问控制、安全检查、标头操作和异步内容处理成为可能。
 
