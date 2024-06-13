@@ -1,32 +1,32 @@
 ---
-title: Github 2024-06-14 开源项目日报 Top10
-date: 2024-06-14T07:01:43+08:00
+title: Github 2024-06-14 Java开源项目日报 Top9
+date: 2024-06-14T07:11:06+08:00
 slug: github-trendings-today-20240614
 author: 老孙正经胡说
-image: /images/codecrafters-io-build-your-own-x-0.png
+image: /images/apache-doris-0.png
 tags:
   - github
   - trendings
   - 数量
   - 和
-  - 项目
   - 人数
   - 人
+  - 项目
   - 开发
-  - 创建
   - 语言
-  - 是
-  - 周期
+  - 创建
   - 关注
+  - 周期
   - 贡献
   - 地址
+  - 是
   - 协议
   - 类型
+  - 支持
+  - 数据
+  - 库
+  - 开源
   - 中
-  - 用户
-  - 用于
-  - 任务
-  - 构建
 
 categories:
 
@@ -34,168 +34,140 @@ draft: false
 ---
 
 
-根据Github Trendings的统计，今日(2024-06-14统计)共有10个项目上榜。根据开发语言中项目的数量，汇总情况如下：
+根据Github Trendings的统计，今日(2024-06-14统计)共有9个项目上榜。根据开发语言中项目的数量，汇总情况如下：
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| JavaScript项目 | 2 |
-| Python项目 | 2 |
-| 非开发语言项目 | 2 |
-| TypeScript项目 | 1 |
-| Dart项目 | 1 |
-| Rust项目 | 1 |
-| Lua项目 | 1 |
-| Java项目 | 1 |
-| Jupyter Notebook项目 | 1 |
+| Java项目 | 9 |
+| C++项目 | 1 |
 
-## 从零开始构建你喜爱的技术
+## RuoYi-Vue Pro: 基于Spring Boot和Vue的开源后台管理系统+微信小程序
 
-* 创建周期：2156 天
-* Star数量：253338 个
-* Fork数量：24043 次
-* 关注人数：253338 人
-* 贡献人数：116 人
-* Open Issues数量：319 个
-* Github地址：https://github.com/codecrafters-io/build-your-own-x.git
-* 项目首页: https://codecrafters.io
-
-
-![](/images/codecrafters-io-build-your-own-x-0.png)
-
-这个存储库是一本精心编写的、逐步指南的汇编，可以从零开始重新创建各种技术，如3D渲染器、区块链/加密货币、游戏、操作系统、Web浏览器等。它旨在帮助用户通过理解和构建自己喜欢的技术来掌握编程。
-
-## 高性能自托管照片和视频管理解决方案
-
-* 创建周期：781 天
-* 开发语言：TypeScript, Dart
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：28083 个
-* Fork数量：1263 次
-* 关注人数：28083 人
-* 贡献人数：295 人
-* Open Issues数量：384 个
-* Github地址：https://github.com/immich-app/immich.git
-* 项目首页: https://immich.app
-
-
-![](/images/immich-app-immich-0.png)
-
-这是一个高性能的自托管照片和视频管理解决方案。然而，需要注意的是该项目正在非常积极地开发中，用户应该预期会有错误和重大变化。不建议将该应用作为存储照片和视频的唯一方式，并且用户应始终遵循 3-2-1 备份计划来保护他们珍贵的照片和视频。
-
-## CyberChef - 用于加密、编码、压缩和数据分析的开源Web应用程序
-
-* 创建周期：2755 天
-* 开发语言：JavaScript
-* 协议类型：Apache License 2.0
-* Star数量：26270 个
-* Fork数量：3018 次
-* 关注人数：26270 人
-* 贡献人数：139 人
-* Open Issues数量：427 个
-* Github地址：https://github.com/gchq/CyberChef.git
-* 项目首页: https://gchq.github.io/CyberChef
-
-
-CyberChef是一个专为加密、编码、压缩和数据分析而设计的开源Web应用程序。
-
-## 🤗 Diffusers: PyTorch和FLAX中的最先进扩散模型
-
-* 创建周期：746 天
-* 开发语言：Python
-* 协议类型：Apache License 2.0
-* Star数量：23422 个
-* Fork数量：4822 次
-* 关注人数：23422 人
-* 贡献人数：471 人
-* Open Issues数量：512 个
-* Github地址：https://github.com/huggingface/diffusers.git
-* 项目首页: https://huggingface.co/docs/diffusers
-
-
-🤗 Diffusers是一个开源项目，为PyTorch和FLAX提供了最先进的扩散模型，用于图像和音频生成。建议在PyPI或Conda的虚拟环境中安装🤗 Diffusers，并且用户可以参考PyTorch和Flax的官方文档获取更多安装细节。
-
-## Warp: 基于Rust的现代终端
-
-* 创建周期：1072 天
-* 协议类型：Other
-* Star数量：19725 个
-* Fork数量：320 次
-* 关注人数：19725 人
-* 贡献人数：13 人
-* Open Issues数量：2058 个
-* Github地址：https://github.com/warpdotdev/Warp.git
-* 项目首页: https://warp.dev
-
-
-![](/images/warpdotdev-warp-0.png)
-
-Warp是一个现代的、基于Rust的终端，内置了人工智能，让您和您的团队能够更快地构建出色的软件。
-
-## LazyVim: Neovim配置的懒人方式
-
-* 创建周期：506 天
-* 开发语言：Lua
-* 协议类型：Apache License 2.0
-* Star数量：13257 个
-* Fork数量：894 次
-* 关注人数：13257 人
-* 贡献人数：152 人
-* Open Issues数量：83 个
-* Github地址：https://github.com/LazyVim/LazyVim.git
-* 项目首页: https://lazyvim.github.io/
-
-
-![](/images/lazyvim-lazyvim-0.png)
-
-LazyVim是由lazy.nvim提供支持的Neovim设置，旨在使用户轻松定制和扩展其配置。它提供了根据需要调整配置的灵活性，同时也提供了预配置设置的便利性。
-
-## GS Quant: 量化金融的Python工具包
-
-* 创建周期：2009 天
-* 开发语言：Jupyter Notebook, Python
-* 协议类型：Apache License 2.0
-* Star数量：2954 个
-* Fork数量：515 次
-* 关注人数：2954 人
-* 贡献人数：21 人
-* Open Issues数量：32 个
-* Github地址：https://github.com/goldmansachs/gs-quant.git
-* 项目首页: https://developer.gs.com/discover/products/gs-quant/
-
-
-GS Quant是一个用于量化金融的Python工具包，旨在加速交易策略和风险管理解决方案的开发。它由高盛的量化开发人员创建和维护，利用了超过25年的全球市场经验。
-
-## Mistral.rs：快速LLM推断平台
-
-* 创建周期：109 天
-* 开发语言：Rust
+* 创建周期：1125 天
+* 开发语言：Java
 * 协议类型：MIT License
-* Star数量：2434 个
-* Fork数量：177 次
-* 关注人数：2434 人
-* 贡献人数：15 人
-* Open Issues数量：32 个
-* Github地址：https://github.com/EricLBuehler/mistral.rs.git
+* Star数量：22204 个
+* Fork数量：4662 次
+* 关注人数：22204 人
+* 贡献人数：191 人
+* Open Issues数量：11 个
+* Github地址：https://github.com/YunaiV/ruoyi-vue-pro.git
+* 项目首页: https://doc.iocoder.cn/
 
 
-![](/images/ericlbuehler-mistral.rs-0.png)
+RuoYi-Vue Pro 是 RuoYi-Vue 项目的新版本，它是基于 Spring Boot + MyBatis Plus + Vue & Element 实现的后台管理系统 + 微信小程序。它支持 RBAC 动态权限、数据权限、SaaS 多租户、Flowable 工作流、第三方登录、支付、短信、电子商务、CRM、ERP 等功能。该项目是开源的，作者欢迎大家给予关注和支持。
 
-Mistral.rs是一个用于快速LLM推断的开源平台，支持在各种设备上进行推断、量化，并具有兼容OpenAI API的HTTP服务器和Python绑定，易于使用。
+## Apache SkyWalking: 云原生架构中的开源APM系统
 
-## 抽象和推理语料库（ARC-AGI）
-
-* 创建周期：1683 天
-* 开发语言：JavaScript
+* 创建周期：3142 天
+* 开发语言：Java
 * 协议类型：Apache License 2.0
-* Star数量：2381 个
-* Fork数量：422 次
-* 关注人数：2381 人
-* 贡献人数：19 人
-* Open Issues数量：31 个
-* Github地址：https://github.com/fchollet/ARC-AGI.git
+* Star数量：23411 个
+* Fork数量：6462 次
+* 关注人数：23411 人
+* 贡献人数：389 人
+* Open Issues数量：59 个
+* Github地址：https://github.com/apache/skywalking.git
+* 项目首页: https://skywalking.apache.org/
 
 
-抽象和推理语料库（ARC-AGI）是一个存储任务数据和基于浏览器的界面的库，供人类尝试手动解决任务。它作为一项普遍人工智能、程序综合和心理测量智力测试的基准，旨在针对人类和人工智能系统。测试者被认为解决了一个任务，如果他们在首次看到任务时能够在3次尝试内为任务中的所有测试输入生成正确的输出网格。
+Apache SkyWalking是一个为微服务、云原生和基于容器的架构设计的开源APM系统。它为云原生架构中的分布式系统提供监控、跟踪和诊断能力。该系统支持分布式跟踪、多种编程语言的代理、eBPF的早期采用、扩展能力、成熟的遥测生态系统、本地APM数据库、一致的指标聚合、日志管理管道、警报和遥测管道、带有本机UI和Grafana的实时演示、官方文档和行为准则。它被数百家公司和组织用于研究、生产和商业目的。
+
+## Java数据结构和算法+面试准备bootcamp
+
+* 创建周期：1050 天
+* 开发语言：Java
+* Star数量：15749 个
+* Fork数量：10295 次
+* 关注人数：15749 人
+* 贡献人数：122 人
+* Open Issues数量：486 个
+* Github地址：https://github.com/kunal-kushwaha/DSA-Bootcamp-Java.git
+* 项目首页: https://www.youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ
+
+
+该存储库包含WeMakeDevs的Java数据结构和算法+面试准备bootcamp的代码示例，作业和笔记。它包括讲座，课程网站和作业，解决方案可以在LeetCode上找到。
+
+## Project Lombok: Java语言增强库
+
+* 创建周期：5485 天
+* 开发语言：Java
+* 协议类型：Other
+* Star数量：12674 个
+* Fork数量：2349 次
+* 关注人数：12674 人
+* 贡献人数：124 人
+* Open Issues数量：869 个
+* Github地址：https://github.com/projectlombok/lombok.git
+* 项目首页: https://projectlombok.org/
+
+
+Project Lombok是一个Java库，通过自动为常见任务生成代码，如创建getter、equals方法和构建器，增强了语言功能。它还支持记录变量等功能。
+
+## Apache Doris: 高性能实时分析数据库
+
+* 创建周期：2360 天
+* 开发语言：Java, C++
+* 协议类型：Apache License 2.0
+* Star数量：10667 个
+* Fork数量：2968 次
+* 关注人数：10667 人
+* 贡献人数：396 人
+* Open Issues数量：2332 个
+* Github地址：https://github.com/apache/doris.git
+* 项目首页: https://doris.apache.org
+
+
+![](/images/apache-doris-0.png)
+
+Apache Doris是一个基于MPP架构的易于使用、高性能和实时分析数据库。它以极高的速度和易用性而闻名，支持在海量数据下返回查询结果的亚秒响应时间。它适用于报告分析、临时查询、统一数据仓库和数据湖查询加速等场景。最新的2.0.3版本带来了超过10倍的性能改进，增强了日志分析和湖仓库场景，提高了数据更新和写入效率，支持了全面的多租户和资源隔离机制，以及企业用户的可用性功能。
+
+## Testcontainers: 为JUnit测试提供一次性实例的Java库
+
+* 创建周期：3260 天
+* 开发语言：Java
+* 协议类型：MIT License
+* Star数量：7683 个
+* Fork数量：1578 次
+* 关注人数：7683 人
+* 贡献人数：430 人
+* Open Issues数量：602 个
+* Github地址：https://github.com/testcontainers/testcontainers-java.git
+* 项目首页: https://testcontainers.org
+
+
+Testcontainers是一个Java库，支持JUnit测试，提供常见数据库、Selenium Web浏览器或其他可以在Docker容器中运行的轻量级、一次性实例。
+
+## Apache Tomcat: Java Servlet 和 Web 服务器环境
+
+* 创建周期：4640 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：7348 个
+* Fork数量：4932 次
+* 关注人数：7348 人
+* 贡献人数：115 人
+* Open Issues数量：20 个
+* Github地址：https://github.com/apache/tomcat.git
+* 项目首页: https://tomcat.apache.org
+
+
+Apache Tomcat是Java Servlet、JavaServer Pages、Java Expression Language和Java WebSocket技术的开源软件实现。它提供了一个纯Java HTTP Web服务器环境，用于运行Java代码。
+
+## Azure SDK for Java 开发存储库
+
+* 创建周期：4546 天
+* 开发语言：Java
+* 协议类型：MIT License
+* Star数量：2179 个
+* Fork数量：1894 次
+* 关注人数：2179 人
+* 贡献人数：360 人
+* Open Issues数量：976 个
+* Github地址：https://github.com/Azure/azure-sdk-for-java.git
+
+
+该存储库致力于开发 Azure SDK for Java。建议 SDK 的用户查阅公共开发人员文档或版本化的开发人员文档。
 
 ## Gravitino: 世界上最强大的开放数据目录
 
