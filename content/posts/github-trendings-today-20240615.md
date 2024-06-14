@@ -1,32 +1,32 @@
 ---
-title: Github 2024-06-15 开源项目日报 Top10
-date: 2024-06-15T07:01:50+08:00
+title: Github 2024-06-15 Rust开源项目日报 Top10
+date: 2024-06-15T07:11:20+08:00
 slug: github-trendings-today-20240615
 author: 老孙正经胡说
-image: /images/facebook-folly-0.png
+image: /images/denoland-deno-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
-  - 人
   - 人数
+  - 人
+  - 项目
   - 和
   - 开发
   - 语言
-  - 创建
-  - 贡献
   - 周期
+  - 创建
   - 协议
-  - 类型
   - 关注
+  - 贡献
   - 地址
-  - 开源
-  - 是
-  - 文档
-  - C++
+  - 用于
   - 提供
-  - 库
+  - 类型
+  - 是
+  - 运行
+  - 构建
+  - 搜索引擎
 
 categories:
 
@@ -38,174 +38,171 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| C++项目 | 3 |
-| Python项目 | 2 |
+| Rust项目 | 10 |
 | TypeScript项目 | 1 |
-| Java项目 | 1 |
-| HTML项目 | 1 |
-| Vue项目 | 1 |
-| Go项目 | 1 |
 | JavaScript项目 | 1 |
-| C项目 | 1 |
 
-## ComfyUI：强大而模块化的稳定扩散GUI
+## Deno: 现代JavaScript和TypeScript运行时
 
-* 创建周期：399 天
-* 开发语言：Python, JavaScript
-* 协议类型：GNU General Public License v3.0
-* Star数量：25663 个
-* Fork数量：2741 次
-* 关注人数：25663 人
-* 贡献人数：90 人
-* Open Issues数量：1263 个
-* Github地址：https://github.com/comfyanonymous/ComfyUI.git
-
-
-ComfyUI是一个开源项目，提供强大而模块化的稳定扩散图形用户界面（GUI）、API和后端，具有图/节点界面。它允许用户使用基于图/节点/流程图的界面设计和执行高级稳定扩散管道。
-
-## Folly: Facebook开源库
-
-* 创建周期：4397 天
-* 开发语言：C++
-* 协议类型：Apache License 2.0
-* Star数量：27346 个
-* Fork数量：5447 次
-* 关注人数：27346 人
-* 贡献人数：279 人
-* Open Issues数量：476 个
-* Github地址：https://github.com/facebook/folly.git
-* 项目首页: https://groups.google.com/forum/?fromgroups#!forum/facebook-folly
-
-
-![](/images/facebook-folly-0.png)
-
-Folly是Facebook开发和使用的开源C++库。它包含大量在Facebook广泛使用的核心库组件，并经常作为其他开源C++项目的依赖项。Folly旨在设计实用和高效，与Boost和std等产品相辅相成，同时优先考虑大规模性能。
-
-## LightGBM：快速、分布式、高性能梯度提升框架
-
-* 创建周期：2871 天
-* 开发语言：C++
+* 创建周期：2118 天
+* 开发语言：Rust, JavaScript
 * 协议类型：MIT License
-* Star数量：16240 个
-* Fork数量：3786 次
-* 关注人数：16240 人
-* 贡献人数：292 人
-* Open Issues数量：365 个
-* Github地址：https://github.com/microsoft/LightGBM.git
-* 项目首页: https://lightgbm.readthedocs.io/en/latest/
+* Star数量：92444 个
+* Fork数量：5085 次
+* 关注人数：92444 人
+* 贡献人数：438 人
+* Open Issues数量：1942 个
+* Github地址：https://github.com/denoland/deno.git
+* 项目首页: https://deno.com
 
 
-LightGBM是一个基于决策树算法的快速、分布式、高性能梯度提升框架。它提供更快的训练速度、更低的内存使用、更高的准确性，并支持并行、分布式和GPU学习。它被广泛应用于机器学习竞赛，并在效率和准确性上优于现有框架。主要文档可在https://lightgbm.readthedocs.io/找到，提供安装说明、示例、特性、算法、参数以及分布式和GPU学习的支持。LightGBM还具有自动调优库和各种非官方仓库，用于替代性使用。
+![](/images/denoland-deno-0.png)
 
-## 社区驱动的现代化Salesforce替代方案
+Deno是一个现代的JavaScript和TypeScript运行时，基于V8、Rust和Tokio构建，具有安全的默认设置和出色的开发者体验。
 
-* 创建周期：403 天
-* 开发语言：TypeScript
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：7589 个
-* Fork数量：608 次
-* 关注人数：7589 人
-* 贡献人数：128 人
-* Open Issues数量：223 个
-* Github地址：https://github.com/twentyhq/twenty.git
-* 项目首页: https://twenty.com
+## uv: 极快的Python软件包安装程序和解析器
 
-
-该项目旨在创建一个现代化的Salesforce替代方案，侧重于社区驱动的开发。它允许用户添加、过滤、排序、编辑和跟踪客户。
-
-## NVIDIA® TensorRT™: 高性能深度学习推断SDK的开源组件
-
-* 创建周期：1871 天
-* 开发语言：C++
+* 创建周期：147 天
+* 开发语言：Rust
 * 协议类型：Apache License 2.0
-* Star数量：9701 个
-* Fork数量：2045 次
-* 关注人数：9701 人
-* 贡献人数：69 人
-* Open Issues数量：301 个
-* Github地址：https://github.com/NVIDIA/TensorRT.git
-* 项目首页: https://developer.nvidia.com/tensorrt
+* Star数量：7066 个
+* Fork数量：200 次
+* 关注人数：7066 人
+* 贡献人数：45 人
+* Open Issues数量：249 个
+* Github地址：https://github.com/astral-sh/uv.git
+* 项目首页: https://astral.sh/
 
 
-NVIDIA® TensorRT™ 是用于在 NVIDIA GPU 上进行高性能深度学习推断的 SDK。该存储库包含了 TensorRT 的开源组件，包括 TensorRT 插件和 ONNX 解析器的源代码，以及演示 TensorRT 平台用法和功能的示例应用程序。
+uv是一个极快的Python软件包安装程序和解析器，用Rust编写。它被设计为pip和pip-compile的即插即用替代品。uv由Ruff的创作者Astral支持。
 
-## Janus WebRTC服务器: 开源通用服务器
+## Tantivy：用 Rust 编写的快速全文搜索引擎库
 
-* 创建周期：3777 天
-* 开发语言：C
-* 协议类型：GNU General Public License v3.0
-* Star数量：7911 个
-* Fork数量：2445 次
-* 关注人数：7911 人
-* 贡献人数：279 人
-* Open Issues数量：29 个
-* Github地址：https://github.com/meetecho/janus-gateway.git
-* 项目首页: https://janus.conf.meetecho.com
-
-
-Janus WebRTC服务器是由Meetecho设计的开源通用服务器。它专为Linux系统定制，但也可以在MacOS上编译和安装。它也能在Windows 10的“Windows子系统”中运行。这个版本是Janus多流版本的主要分支，同时也提供传统版本。想要进行演示、查阅文档或获取社区支持，请访问项目网站和GitHub。
-
-## MaxKB：基于LLM大语言模型的知识库问答系统
-
-* 创建周期：215 天
-* 开发语言：Python, Vue
-* 协议类型：GNU General Public License v3.0
-* Star数量：739 个
-* Fork数量：128 次
-* 关注人数：739 人
-* 贡献人数：32 人
-* Open Issues数量：29 个
-* Github地址：https://github.com/1Panel-dev/MaxKB.git
-
-
-![](/images/1panel-dev-maxkb-0.png)
-
-MaxKB 是基于 LLM 大语言模型的知识库问答系统。它旨在成为一种开箱即用的解决方案，支持轻松集成到第三方业务系统中。它允许直接上传文档、自动网络文档爬取、文本分割、向量化，并提供智能问答交互体验。它可以零编码快速嵌入到第三方业务系统，并支持多个大型模型，包括本地私有模型如 Llama 2、Azure OpenAI 和百度千帆大模型。
-
-## Web 平台测试项目
-
-* 创建周期：4486 天
-* 开发语言：HTML
-* 协议类型：Other
-* Star数量：4701 个
-* Fork数量：2969 次
-* 关注人数：4701 人
-* 贡献人数：335 人
-* Open Issues数量：2297 个
-* Github地址：https://github.com/web-platform-tests/wpt.git
-* 项目首页: https://web-platform-tests.org/
-
-
-web-platform-tests 项目是一个跨浏览器的 Web 平台堆栈测试套件，旨在确保不同浏览器和设备的兼容性。它提供了文档、测试套件的公共部署以及测试结果的存档。该项目鼓励每个人的贡献，以提高 Web 平台的可靠性和互操作性。
-
-## IT、安全和基础设施团队的开源平台
-
-* 创建周期：1320 天
-* 开发语言：Go
-* 协议类型：Other
-* Star数量：2411 个
-* Fork数量：364 次
-* 关注人数：2411 人
-* 贡献人数：216 人
-* Open Issues数量：1600 个
-* Github地址：https://github.com/fleetdm/fleet.git
-* 项目首页: https://fleetdm.com
-
-
-这是一个面向IT、安全和基础设施团队设计的开源平台，兼容各种操作系统和云环境。它专为管理大规模计算机系统而设计，并支持API、GitOps、webhooks、YAML和人类交互。
-
-## Azure SDK for Java 开发存储库
-
-* 创建周期：4546 天
-* 开发语言：Java
+* 创建周期：3078 天
+* 开发语言：Rust
 * 协议类型：MIT License
-* Star数量：2179 个
-* Fork数量：1894 次
-* 关注人数：2179 人
-* 贡献人数：360 人
-* Open Issues数量：976 个
-* Github地址：https://github.com/Azure/azure-sdk-for-java.git
+* Star数量：11131 个
+* Fork数量：614 次
+* 关注人数：11131 人
+* 贡献人数：137 人
+* Open Issues数量：312 个
+* Github地址：https://github.com/quickwit-oss/tantivy.git
 
 
-该存储库致力于开发 Azure SDK for Java。建议 SDK 的用户查阅公共开发人员文档或版本化的开发人员文档。
+Tantivy 是一个用 Rust 编写的快速全文搜索引擎库，受 Apache Lucene 启发。它不是现成的搜索引擎服务器，而是一个可用于构建此类搜索引擎的 crate。Quickwit 是在 Tantivy 基础上构建的分布式搜索引擎，为 Elasticsearch 或 Apache Solr 提供了替代方案。
+
+## gitoxide: 纯Rust实现的Git
+
+* 创建周期：2200 天
+* 开发语言：Rust
+* 协议类型：Apache License 2.0
+* Star数量：8237 个
+* Fork数量：265 次
+* 关注人数：8237 人
+* 贡献人数：120 人
+* Open Issues数量：97 个
+* Github地址：https://github.com/Byron/gitoxide.git
+
+
+![](/images/byron-gitoxide-0.png)
+
+gitoxide是Git的纯Rust实现，旨在开发具有正确性、性能和愉快开发体验的未来应用程序。它提供了用于关键功能（如fetch和clone）的命令行二进制文件，并旨在成为生产级服务器实现。
+
+## Rust 版本的 shadowsocks
+
+* 创建周期：3531 天
+* 开发语言：Rust
+* 协议类型：MIT License
+* Star数量：7989 个
+* Fork数量：1115 次
+* 关注人数：7989 人
+* 贡献人数：91 人
+* Open Issues数量：30 个
+* Github地址：https://github.com/shadowsocks/shadowsocks-rust.git
+* 项目首页: https://shadowsocks.org/
+
+
+这个项目是 shadowsocks 的 Rust 版本，用于快速隧道代理，用于绕过防火墙。它包括 shadowsocks 核心协议、用于提供 shadowsocks 服务的服务以及运行常见 shadowsocks 服务的二进制文件。还有一些相关项目，例如在 Linux 上使用 GTK 为 sslocal 提供 GUI 的项目，为 sslocal 提供的 OpenWRT 解决方案以及 Windows GUI 客户端。
+
+## Apache DataFusion：高速可定制的查询引擎
+
+* 创建周期：1099 天
+* 开发语言：Rust
+* 协议类型：Apache License 2.0
+* Star数量：4934 个
+* Fork数量：908 次
+* 关注人数：4934 人
+* 贡献人数：403 人
+* Open Issues数量：997 个
+* Github地址：https://github.com/apache/datafusion.git
+* 项目首页: https://arrow.apache.org/datafusion
+
+
+Apache DataFusion是一个高速、可定制的查询引擎，用于在Rust中构建高质量的数据中心系统，利用Apache Arrow内存格式。它提供了SQL和Dataframe API，出色的性能，内置对CSV、Parquet、JSON和Avro的支持，以及丰富的定制功能和强大的社区。
+
+## Solana的Anchor框架：智能合约开发工具
+
+* 创建周期：1170 天
+* 开发语言：Rust, TypeScript
+* 协议类型：Apache License 2.0
+* Star数量：3053 个
+* Fork数量：1156 次
+* 关注人数：3053 人
+* 贡献人数：237 人
+* Open Issues数量：395 个
+* Github地址：https://github.com/coral-xyz/anchor.git
+* 项目首页: https://anchor-lang.com
+
+
+![](/images/coral-xyz-anchor-0.png)
+
+Anchor框架为Solana的Sealevel运行时提供了开发人员工具，用于编写智能合约，包括Rust eDSL、IDL规范、用于生成客户端的TypeScript包以及用于应用程序开发的CLI。对于熟悉以太坊的Solidity、Truffle和web3.js的开发人员来说，这将提供一个熟悉的体验。
+
+## Mistral.rs：快速LLM推断平台
+
+* 创建周期：109 天
+* 开发语言：Rust
+* 协议类型：MIT License
+* Star数量：2434 个
+* Fork数量：177 次
+* 关注人数：2434 人
+* 贡献人数：15 人
+* Open Issues数量：32 个
+* Github地址：https://github.com/EricLBuehler/mistral.rs.git
+
+
+![](/images/ericlbuehler-mistral.rs-0.png)
+
+Mistral.rs是一个用于快速LLM推断的开源平台，支持在各种设备上进行推断、量化，并具有兼容OpenAI API的HTTP服务器和Python绑定，易于使用。
+
+## Parity Polkadot 区块链 SDK 文档和模板
+
+* 创建周期：316 天
+* 开发语言：Rust
+* Star数量：1579 个
+* Fork数量：545 次
+* 关注人数：1579 人
+* 贡献人数：376 人
+* Open Issues数量：1649 个
+* Github地址：https://github.com/paritytech/polkadot-sdk.git
+* 项目首页: https://polkadot.network/
+
+
+Parity Polkadot 区块链 SDK 提供有关 Polkadot SDK 的每个组件的文档，包括 Substrate、FRAME、Cumulus 和 XCM。它还提供了构建第一个 FRAME pallet 的指南和启动新项目的模板。
+
+## Nexus zkVM: 零知识虚拟机
+
+* 创建周期：282 天
+* 开发语言：Rust
+* 协议类型：Apache License 2.0
+* Star数量：487 个
+* Fork数量：138 次
+* 关注人数：487 人
+* 贡献人数：20 人
+* Open Issues数量：29 个
+* Github地址：https://github.com/nexus-xyz/nexus-zkvm.git
+* 项目首页: https://docs.nexus.xyz
+
+
+Nexus zkVM 是一个模块化、可扩展、开源且高度并行化的 zkVM，旨在在足够的机器性能下以每秒一万亿CPU周期运行。
 
