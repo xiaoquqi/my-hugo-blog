@@ -1,32 +1,32 @@
 ---
-title: Github 2024-06-18 开源项目日报 Top10
-date: 2024-06-18T07:00:53+08:00
+title: Github 2024-06-18 Python开源项目日报 Top10
+date: 2024-06-18T07:11:05+08:00
 slug: github-trendings-today-20240618
 author: 老孙正经胡说
-image: /images/iptv-org-iptv-0.png
+image: /images/lllyasviel-fooocus-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
-  - 人
   - 人数
+  - 人
+  - 项目
   - 和
   - 开发
   - 语言
-  - 贡献
   - 创建
   - 周期
   - 协议
   - 类型
   - 关注
+  - 贡献
   - 地址
   - 是
+  - 使用
   - 稳定
   - 扩散
-  - 开源
-  - 高性能
-  - 功能
+  - 提供
+  - 示例
 
 categories:
 
@@ -38,15 +38,10 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| JavaScript项目 | 4 |
-| Python项目 | 2 |
-| TypeScript项目 | 2 |
-| C#项目 | 2 |
-| Rust项目 | 1 |
-| C项目 | 1 |
-| C++项目 | 1 |
-| Go项目 | 1 |
-| Java项目 | 1 |
+| Python项目 | 10 |
+| JavaScript项目 | 1 |
+| Tcl项目 | 1 |
+| Jupyter Notebook项目 | 1 |
 
 ## 稳定扩散Web UI
 
@@ -63,73 +58,37 @@ draft: false
 
 稳定扩散Web UI是基于Gradio库的浏览器界面，用于稳定扩散。
 
-## 全球公开IPTV频道收集
+## youtube-dl - 从YouTube和其他网站下载视频的命令行程序
 
-* 创建周期：2042 天
-* 开发语言：JavaScript, TypeScript
+* 创建周期：4951 天
+* 开发语言：Python
 * 协议类型：The Unlicense
-* Star数量：79712 个
-* Fork数量：1923 次
-* 关注人数：79712 人
-* 贡献人数：267 人
-* Open Issues数量：88 个
-* Github地址：https://github.com/iptv-org/iptv.git
-* 项目首页: https://iptv-org.github.io
+* Star数量：128946 个
+* Fork数量：9709 次
+* 关注人数：128946 人
+* 贡献人数：388 人
+* Open Issues数量：4224 个
+* Github地址：https://github.com/ytdl-org/youtube-dl.git
+* 项目首页: http://ytdl-org.github.io/youtube-dl/
 
 
-![](/images/iptv-org-iptv-0.png)
+youtube-dl 是一个命令行程序，允许用户从YouTube.com和其他视频网站下载视频。它是平台无关的，需要Python解释器。该程序释放到公共领域，允许修改、重新分发和不受限制的使用。它提供了各种选项来定制下载，并适用于Unix、Windows和macOS用户。
 
-这个项目是一个收集来自世界各地的公开可用的IPTV（Internet Protocol television）频道的集合。
+## yt-dlp: 一个增强版的youtube-dl分支
 
-## Ollama: 本地大型语言模型设置与运行
-
-* 创建周期：248 天
-* 开发语言：Go
-* 协议类型：MIT License
-* Star数量：42421 个
-* Fork数量：2724 次
-* 关注人数：42421 人
-* 贡献人数：138 人
-* Open Issues数量：709 个
-* Github地址：https://github.com/ollama/ollama.git
-* 项目首页: https://ollama.com
+* 创建周期：1184 天
+* 开发语言：Python
+* 协议类型：The Unlicense
+* Star数量：64607 个
+* Fork数量：5309 次
+* 关注人数：64607 人
+* 贡献人数：385 人
+* Open Issues数量：1422 个
+* Github地址：https://github.com/yt-dlp/yt-dlp.git
+* 项目首页: https://discord.gg/H5MNcFW63r
 
 
-![](/images/ollama-ollama-0.png)
-
-Ollama是一个开源项目，帮助用户在本地设置和利用诸如Llama 2、Mistral和Gemma等大型语言模型。
-
-## v2rayN: 适用于Windows的GUI客户端
-
-* 创建周期：1785 天
-* 开发语言：C#
-* 协议类型：GNU General Public License v3.0
-* Star数量：63289 个
-* Fork数量：10794 次
-* 关注人数：63289 人
-* 贡献人数：55 人
-* Open Issues数量：46 个
-* Github地址：https://github.com/2dust/v2rayN.git
-* 项目首页: https://1.2345345.xyz
-
-
-v2rayN是一个适用于Windows的GUI客户端，支持Xray核心、v2fly核心和其他核心。
-
-## OBS Studio - 免费开源直播和屏幕录制软件
-
-* 创建周期：3913 天
-* 开发语言：C, C++
-* 协议类型：GNU General Public License v2.0
-* Star数量：56702 个
-* Fork数量：7663 次
-* 关注人数：56702 人
-* 贡献人数：411 人
-* Open Issues数量：711 个
-* Github地址：https://github.com/obsproject/obs-studio.git
-* 项目首页: https://obsproject.com
-
-
-OBS Studio是一款免费的开源软件，专为实时直播和屏幕录制而设计。
+yt-dlp是youtube-dl的一个分支，具有额外的功能和修复，重点是添加新功能和补丁，同时与原始项目保持最新。它包括详细的安装说明，更新/发布文件，依赖关系，编译，使用和选项，配置，格式选择，修改元数据，插件，嵌入示例等。它还集成了SponsorBlock，用于标记/删除YouTube视频中的赞助部分，并更改了默认格式排序选项，以获得更高分辨率和更好的编解码器。
 
 ## ComfyUI：强大而模块化的稳定扩散GUI
 
@@ -146,70 +105,102 @@ OBS Studio是一款免费的开源软件，专为实时直播和屏幕录制而�
 
 ComfyUI是一个开源项目，提供强大而模块化的稳定扩散图形用户界面（GUI）、API和后端，具有图/节点界面。它允许用户使用基于图/节点/流程图的界面设计和执行高级稳定扩散管道。
 
-## Zed: 由Atom和Tree-sitter的创建者开发的高性能多人代码编辑器
+## Fooocus: 图像生成软件
 
-* 创建周期：1071 天
-* 开发语言：Rust
-* 协议类型：Other
-* Star数量：9436 个
-* Fork数量：261 次
-* 关注人数：9436 人
-* 贡献人数：42 人
-* Open Issues数量：1185 个
-* Github地址：https://github.com/zed-industries/zed.git
-* 项目首页: https://zed.dev
+* 创建周期：188 天
+* 开发语言：Python
+* 协议类型：GNU General Public License v3.0
+* Star数量：30681 个
+* Fork数量：3552 次
+* 关注人数：30681 人
+* 贡献人数：33 人
+* Open Issues数量：237 个
+* Github地址：https://github.com/lllyasviel/Fooocus.git
 
 
-Zed是由Atom和Tree-sitter的创建者开发的高性能多人代码编辑器。
+![](/images/lllyasviel-fooocus-0.png)
 
-## 增强版ChatGPT克隆: 开源功能概述
+Fooocus是基于Gradio的开源图像生成软件。它重新思考了Stable Diffusion和Midjourney的设计，提供了离线、开源和免费的平台。它消除了手动调整的需求，专注于提示和图像，并包含自动优化。安装过程简化，最小GPU内存要求为4GB。
 
-* 创建周期：354 天
-* 开发语言：TypeScript, JavaScript
+## 少样本语音克隆的高质量TTS模型
+
+* 创建周期：9 天
+* 开发语言：Python
 * 协议类型：MIT License
-* Star数量：7277 个
-* Fork数量：1269 次
-* 关注人数：7277 人
-* 贡献人数：75 人
-* Open Issues数量：61 个
-* Github地址：https://github.com/danny-avila/LibreChat.git
-* 项目首页: https://docs.librechat.ai/
+* Star数量：4367 个
+* Fork数量：411 次
+* 关注人数：4367 人
+* 贡献人数：24 人
+* Open Issues数量：65 个
+* Github地址：https://github.com/RVC-Boss/GPT-SoVITS.git
 
 
-![](/images/danny-avila-librechat-0.png)
+该项目专注于使用最少的语音数据来训练高质量的文本到语音（TTS）模型，实现少样本语音克隆。该项目的GitHub页面上提供了演示视频。
 
-增强版ChatGPT克隆是一个开源项目，具有包括与ChatGPT匹配的用户界面、多模式聊天与图像分析、多语言用户界面、AI模型选择、预设、对话编辑、消息导出、插件、多用户系统和部署选项在内的功能。
+## ControlNet 1.1 WebUI扩展
 
-## Paper - Minecraft高性能服务器
-
-* 创建周期：2972 天
-* 开发语言：Java
-* 协议类型：Other
-* Star数量：8621 个
-* Fork数量：2070 次
-* 关注人数：8621 人
-* 贡献人数：350 人
-* Open Issues数量：494 个
-* Github地址：https://github.com/PaperMC/Paper.git
-* 项目首页: https://papermc.io/
+* 创建周期：394 天
+* 开发语言：Python
+* 协议类型：GNU General Public License v3.0
+* Star数量：15410 个
+* Fork数量：1807 次
+* 关注人数：15410 人
+* 贡献人数：89 人
+* Open Issues数量：65 个
+* Github地址：https://github.com/Mikubill/sd-webui-controlnet.git
 
 
-![](/images/papermc-paper-0.png)
+![](/images/mikubill-sd-webui-controlnet-0.png)
 
-Paper是一个高性能的Minecraft服务器，旨在解决游戏玩法和机制上的不一致之处。它被广泛使用，并通过论坛、Discord和文档为服务器管理员和插件开发人员提供支持。
+WebUI扩展用于ControlNet和其他基于注入的SD控制，允许Stable Diffusion Web UI将ControlNet添加到原始模型以实时生成图像，无需合并。安装过程涉及从GitHub存储库添加扩展，检查更新，并下载ControlNet 1.1模型供使用。
 
-## StableSwarmUI: 模块化稳定扩散Web用户界面
+## Ultimate Vocal Remover GUI v5.6 - 基于深度神经网络的声音去除器图形用户界面
 
-* 创建周期：402 天
-* 开发语言：C#, JavaScript
+* 创建周期：1428 天
+* 开发语言：Python, Tcl
 * 协议类型：MIT License
-* Star数量：3341 个
-* Fork数量：289 次
-* 关注人数：3341 人
-* 贡献人数：17 人
-* Open Issues数量：33 个
-* Github地址：https://github.com/Stability-AI/StableSwarmUI.git
+* Star数量：15754 个
+* Fork数量：1200 次
+* 关注人数：15754 人
+* 贡献人数：8 人
+* Open Issues数量：811 个
+* Github地址：https://github.com/Anjok07/ultimatevocalremovergui.git
 
 
-StableSwarmUI是一个模块化的Web用户界面，旨在使强大的工具易于访问，注重高性能和可扩展性。目前处于测试版状态，并计划进行进一步的开发和改进。该用户界面适用于初学者和高级用户，提供主要的生成选项卡界面和舒适的工作流选项卡等功能。该项目欢迎贡献和建议，以增强其功能和功能。
+![](/images/anjok07-ultimatevocalremovergui-0.png)
+
+Ultimate Vocal Remover GUI v5.6是一个开源项目，提供了一个使用深度神经网络的声音去除器的图形用户界面。
+
+## MLX示例：学习如何使用MLX框架的独立示例
+
+* 创建周期：42 天
+* 开发语言：Python
+* 协议类型：MIT License
+* Star数量：3434 个
+* Fork数量：510 次
+* 关注人数：3434 人
+* 贡献人数：59 人
+* Open Issues数量：44 个
+* Github地址：https://github.com/ml-explore/mlx-examples.git
+
+
+MLX示例存储库包含一些独立的示例，演示了如何使用MLX框架。MNIST示例对于初学者学习如何使用MLX非常有帮助。
+
+## Agency Swarm: 唯一可靠的代理框架
+
+* 创建周期：215 天
+* 开发语言：Python, Jupyter Notebook
+* 协议类型：MIT License
+* Star数量：1988 个
+* Fork数量：513 次
+* 关注人数：1988 人
+* 贡献人数：9 人
+* Open Issues数量：16 个
+* Github地址：https://github.com/VRSEN/agency-swarm.git
+* 项目首页: https://vrsen.github.io/agency-swarm/
+
+
+![](/images/vrsen-agency-swarm-0.png)
+
+Agency Swarm是唯一可靠的代理框架，构建在最新的OpenAI助手API之上，为开发AI助手提供了强大的工具。
 
