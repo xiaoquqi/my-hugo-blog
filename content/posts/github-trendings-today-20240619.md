@@ -1,32 +1,32 @@
 ---
-title: Github 2024-06-19 开源项目日报 Top10
-date: 2024-06-19T07:02:18+08:00
+title: Github 2024-06-19 C开源项目日报 Top9
+date: 2024-06-19T07:11:16+08:00
 slug: github-trendings-today-20240619
 author: 老孙正经胡说
-image: /images/rustdesk-rustdesk-0.png
+image: /images/netdata-netdata-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
-  - 人
   - 和
   - 人数
+  - 人
   - 开发
+  - 项目
   - 语言
-  - 贡献
-  - 是
-  - 开源
   - 创建
-  - 周期
   - 协议
   - 类型
+  - 支持
+  - 平台
+  - 周期
   - 关注
+  - 贡献
   - 地址
-  - 可
-  - 框架
-  - 高性能
-  - 提供
+  - 是
+  - 开源
+  - 环境
+  - 使用
 
 categories:
 
@@ -34,192 +34,158 @@ draft: false
 ---
 
 
-根据Github Trendings的统计，今日(2024-06-19统计)共有10个项目上榜。根据开发语言中项目的数量，汇总情况如下：
+根据Github Trendings的统计，今日(2024-06-19统计)共有9个项目上榜。根据开发语言中项目的数量，汇总情况如下：
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| TypeScript项目 | 3 |
-| Rust项目 | 2 |
-| Go项目 | 2 |
-| JavaScript项目 | 1 |
-| Python项目 | 1 |
-| Dart项目 | 1 |
-| 非开发语言项目 | 1 |
-| Ruby项目 | 1 |
-| HTML项目 | 1 |
+| C项目 | 9 |
+| C++项目 | 1 |
 
-## 项目化学习
+## Netdata: 开源实时监控平台
 
-* 创建周期：2538 天
+* 创建周期：4020 天
+* 开发语言：C
+* 协议类型：GNU General Public License v3.0
+* Star数量：68982 个
+* Fork数量：5773 次
+* 关注人数：68982 人
+* 贡献人数：407 人
+* Open Issues数量：238 个
+* Github地址：https://github.com/netdata/netdata.git
+* 项目首页: https://www.netdata.cloud
+
+
+![](/images/netdata-netdata-0.png)
+
+Netdata是一个开源的可观测平台，它收集并以低延迟的仪表板呈现实时指标。它旨在监视各种系统、容器和应用程序，跨越不同环境，从物理和虚拟服务器到云部署和边缘/IoT设备。Netdata可以从单个服务器扩展到数千台服务器，并且在有足够的磁盘空间的情况下可以保留多年的指标。
+
+![](/images/netdata-netdata-1.png)
+
+## Whisper.cpp: 高性能自动语音识别模型的C/C++移植
+
+* 创建周期：569 天
+* 开发语言：C, C++
 * 协议类型：MIT License
-* Star数量：161973 个
-* Fork数量：21345 次
-* 关注人数：161973 人
-* 贡献人数：100 人
-* Open Issues数量：109 个
-* Github地址：https://github.com/practical-tutorials/project-based-learning.git
+* Star数量：30141 个
+* Fork数量：2939 次
+* 关注人数：30141 人
+* 贡献人数：285 人
+* Open Issues数量：572 个
+* Github地址：https://github.com/ggerganov/whisper.cpp.git
 
 
-项目化学习是一个由程序开发者学习如何从零开始构建应用程序的编程教程的精选列表。这些教程涵盖了不同的主要编程语言，可能涉及多种技术和语言。要开始使用，请简单地fork这个仓库。请参考CONTRIBUTING.md以获取贡献指南。
+![](/images/ggerganov-whisper.cpp-0.png)
 
-## RustDesk: 用Rust编写的开源远程桌面软件
+Whisper.cpp是一个高性能的开源自动语音识别（ASR）模型，从OpenAI的Whisper模型移植到C/C++。它旨在实现高效的推断，无需依赖，支持包括Mac OS、iOS、Android、Linux、Windows、Raspberry Pi等多个平台。该实现非常轻量，包含在whisper.h和whisper.cpp中，可以轻松集成到不同的应用程序和平台中。
 
-* 创建周期：1218 天
-* 开发语言：Rust, Dart
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：58141 个
-* Fork数量：6255 次
-* 关注人数：58141 人
-* 贡献人数：230 人
-* Open Issues数量：49 个
-* Github地址：https://github.com/rustdesk/rustdesk.git
-* 项目首页: https://rustdesk.com
+## Lean的LEDE源码：为国产龙芯LOONGSON SoC loongarch64/飞腾Phytium腾锐2000系列架构添加支持
 
-
-![](/images/rustdesk-rustdesk-0.png)
-
-RustDesk是一款用Rust编写的开源远程桌面软件，可作为TeamViewer的替代品。它可以直接使用，无需配置，提供完全的数据控制和安全性。用户可以使用提供的会合/中继服务器，自行设置，或编写自己的服务器。该项目欢迎所有人的贡献，并提供常见问题解答、二进制下载和每夜构建。
-
-## Zed: 由Atom和Tree-sitter的创建者开发的高性能多人代码编辑器
-
-* 创建周期：1071 天
-* 开发语言：Rust
+* 创建周期：2338 天
+* 开发语言：C
 * 协议类型：Other
-* Star数量：9436 个
-* Fork数量：261 次
-* 关注人数：9436 人
-* 贡献人数：42 人
-* Open Issues数量：1185 个
-* Github地址：https://github.com/zed-industries/zed.git
-* 项目首页: https://zed.dev
+* Star数量：28149 个
+* Fork数量：19764 次
+* 关注人数：28149 人
+* 贡献人数：420 人
+* Open Issues数量：639 个
+* Github地址：https://github.com/coolsnowwolf/lede.git
 
 
-Zed是由Atom和Tree-sitter的创建者开发的高性能多人代码编辑器。
+欢迎来到 Lean 的 LEDE 源码仓库，为国产龙芯 LOONGSON SoC loongarch64 / 飞腾 Phytium 腾锐2000 系列架构添加支持
 
-## Lobe Chat: 开源ChatGPT/LLMs UI/Framework
+## raylib: 用于视频游戏编程的简单易用图形库
 
-* 创建周期：281 天
-* 开发语言：TypeScript
-* 协议类型：MIT License
-* Star数量：20641 个
-* Fork数量：4020 次
-* 关注人数：20641 人
-* 贡献人数：63 人
-* Open Issues数量：166 个
-* Github地址：https://github.com/lobehub/lobe-chat.git
-* 项目首页: https://chat-preview.lobehub.com
-
-
-![](/images/lobehub-lobe-chat-0.png)
-
-Lobe Chat是一个开源的、现代化设计的ChatGPT/LLMs UI/Framework，支持语音合成、多模态功能和可扩展的插件系统。它提供一键免费部署私人ChatGPT/Gemini/Ollama聊天应用。
-
-## 开源个人理财应用
-
-* 创建周期：21 天
-* 开发语言：TypeScript
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：12632 个
-* Fork数量：885 次
-* 关注人数：12632 人
-* 贡献人数：21 人
-* Open Issues数量：34 个
-* Github地址：https://github.com/maybe-finance/maybe.git
-* 项目首页: https://maybe.co
+* 创建周期：3821 天
+* 开发语言：C
+* 协议类型：zlib License
+* Star数量：18556 个
+* Fork数量：1939 次
+* 关注人数：18556 人
+* 贡献人数：430 人
+* Open Issues数量：37 个
+* Github地址：https://github.com/raysan5/raylib.git
+* 项目首页: http://www.raylib.com
 
 
-![](/images/maybe-finance-maybe-0.png)
+raylib是一个简单易用的图形库，用于视频游戏编程，受Borland BGI图形库和XNA框架的启发。它适用于原型设计、工具、图形应用程序、嵌入式系统和教育。它没有花哨的界面或视觉辅助工具，只有纯粹的编码。它没有外部依赖项，支持多个平台，使用纯C代码编写，并且使用OpenGL进行硬件加速。它还支持多种字体和纹理格式，具有完整的3D支持、灵活的材质系统、动画3D模型、着色器支持、强大的数学模块、音频加载和播放、VR立体渲染、大量的代码示例集合以及对70多种编程语言的绑定。它是免费开源的。
 
-这是一个开源的个人理财应用，旨在进行个人理财管理和财富管理。
+## Wazuh - 开源安全平台：统一XDR和SIEM保护
 
-## gRPC-Go: 高性能、开源的通用RPC框架的Go语言实现
-
-* 创建周期：3356 天
-* 开发语言：Go
-* 协议类型：Apache License 2.0
-* Star数量：19531 个
-* Fork数量：4256 次
-* 关注人数：19531 人
-* 贡献人数：387 人
-* Open Issues数量：133 个
-* Github地址：https://github.com/grpc/grpc-go.git
-* 项目首页: https://grpc.io
-
-
-gRPC-Go是gRPC的Go语言实现，是一个高性能、开源的通用RPC框架，将移动和HTTP/2放在首位。它设计高效，并且有很好的文档，易于采用。
-
-## Amplication: AI生成生产就绪的.NET和Node.js应用程序代码
-
-* 创建周期：1501 天
-* 开发语言：TypeScript
+* 创建周期：3116 天
+* 开发语言：C
 * 协议类型：Other
-* Star数量：13755 个
-* Fork数量：1388 次
-* 关注人数：13755 人
-* 贡献人数：252 人
-* Open Issues数量：635 个
-* Github地址：https://github.com/amplication/amplication.git
-* 项目首页: https://amplication.com
+* Star数量：8334 个
+* Fork数量：1325 次
+* 关注人数：8334 人
+* 贡献人数：223 人
+* Open Issues数量：2737 个
+* Github地址：https://github.com/wazuh/wazuh.git
+* 项目首页: https://wazuh.com/
 
 
-![](/images/amplication-amplication-0.png)
+![](/images/wazuh-wazuh-0.png)
 
-Amplication 是一个开源开发平台，利用人工智能为 .NET 和 Node.js 应用程序生成生产就绪的代码。它提供了一个用户友好的界面，实现了 API、数据模型、数据库、身份验证和授权的无缝集成。专注于协作，简化了团队导向型开发，并适用于初创企业到大型企业。
+Wazuh是一个开源安全平台，为端点和云工作负载提供统一的XDR和SIEM保护。它提供跨各种环境（包括本地、虚拟化、容器化和基于云的环境）的威胁预防、检测和响应能力。
 
-![](/images/amplication-amplication-1.png)
+## Atomic Red Team™ - 小型便携检测测试
 
-## 增强版ChatGPT克隆: 开源功能概述
-
-* 创建周期：354 天
-* 开发语言：TypeScript, JavaScript
+* 创建周期：2331 天
+* 开发语言：C
 * 协议类型：MIT License
-* Star数量：7277 个
-* Fork数量：1269 次
-* 关注人数：7277 人
-* 贡献人数：75 人
-* Open Issues数量：61 个
-* Github地址：https://github.com/danny-avila/LibreChat.git
-* 项目首页: https://docs.librechat.ai/
+* Star数量：8758 个
+* Fork数量：2613 次
+* 关注人数：8758 人
+* 贡献人数：340 人
+* Open Issues数量：9 个
+* Github地址：https://github.com/redcanaryco/atomic-red-team.git
 
 
-![](/images/danny-avila-librechat-0.png)
+Atomic Red Team是一个测试库，映射到MITRE ATT&CK框架，为安全团队提供小型和高度便携的检测测试，以便快速、便携和可重复地测试其环境。
 
-增强版ChatGPT克隆是一个开源项目，具有包括与ChatGPT匹配的用户界面、多模式聊天与图像分析、多语言用户界面、AI模型选择、预设、对话编辑、消息导出、插件、多用户系统和部署选项在内的功能。
+## Mbed TLS: 便携式的加密库和PSA加密API的参考实现
 
-## 下一代爬虫和蜘蛛框架
-
-* 创建周期：1264 天
-* 开发语言：Go
-* 协议类型：MIT License
-* Star数量：9141 个
-* Fork数量：485 次
-* 关注人数：9141 人
-* 贡献人数：31 人
-* Open Issues数量：80 个
-* Github地址：https://github.com/projectdiscovery/katana.git
-
-
-![](/images/projectdiscovery-katana-0.png)
-
-这是一个下一代爬虫和蜘蛛框架，具有快速和完全可配置的网络爬行、标准和无头模式、主动和被动模式、JavaScript解析/爬行、可自定义的自动表单填充、范围控制、可定制的输出以及支持各种输入和输出方法。
-
-![](/images/projectdiscovery-katana-1.png)
-
-## NVIDIA Warp: Python高性能模拟和图形框架
-
-* 创建周期：824 天
-* 开发语言：Python
+* 创建周期：4088 天
+* 开发语言：C
 * 协议类型：Other
-* Star数量：3115 个
-* Fork数量：185 次
-* 关注人数：3115 人
-* 贡献人数：28 人
-* Open Issues数量：44 个
-* Github地址：https://github.com/NVIDIA/warp.git
-* 项目首页: https://nvidia.github.io/warp/
+* Star数量：4712 个
+* Fork数量：2425 次
+* 关注人数：4712 人
+* 贡献人数：295 人
+* Open Issues数量：1369 个
+* Github地址：https://github.com/Mbed-TLS/mbedtls.git
+* 项目首页: https://www.trustedfirmware.org/projects/mbed-tls/
 
 
-![](/images/nvidia-warp-0.png)
+Mbed TLS是一个开源的、便携式、易于使用的C库，它实现了加密原语、X.509证书操作以及SSL/TLS和DTLS协议。它包括PSA加密API的参考实现，并由于其小的代码占用空间而适用于嵌入式系统。该库可以使用平台特定选项进行配置，并通过ReadTheDocs和GitHub提供文档。它支持GNU Make、CMake和Microsoft Visual Studio等多个构建系统，并创建了三个库：libmbedcrypto、libmbedx509和libmbedtls。
 
-NVIDIA Warp是一个用于高性能模拟和图形的Python框架，能够将常规Python函数即时编译成高效的内核代码，以在CPU或GPU上执行。它专为空间计算而设计，并包含用于物理模拟、感知、机器人技术和几何处理的基本组件。此外，其内核可微分，并可与PyTorch和JAX等框架集成到机器学习流程中。
+## EDK II项目 - 跨平台固件开发环境
+
+* 创建周期：4815 天
+* 开发语言：C
+* 协议类型：Other
+* Star数量：4337 个
+* Fork数量：2377 次
+* 关注人数：4337 人
+* 贡献人数：247 人
+* Open Issues数量：97 个
+* Github地址：https://github.com/tianocore/edk2.git
+* 项目首页: https://github.com/tianocore/tianocore.github.io/wiki/EDK-II
+
+
+EDK II项目是一个现代、功能丰富的跨平台固件开发环境，适用于UEFI和PI规范。它提供不同主机类型和工具链的核心CI构建状态，以及Microsoft Windows VS2019和Ubuntu 18.04 GCC5的平台CI构建状态。
+
+## pg_cron: PostgreSQL的简单cron作业调度程序
+
+* 创建周期：2817 天
+* 开发语言：C
+* 协议类型：PostgreSQL License
+* Star数量：2586 个
+* Fork数量：182 次
+* 关注人数：2586 人
+* 贡献人数：38 人
+* Open Issues数量：97 个
+* Github地址：https://github.com/citusdata/pg_cron.git
+
+
+pg_cron是一个简单的基于cron的作业调度程序，适用于运行在数据库内部作为扩展的PostgreSQL（10或更高版本）。它允许使用与常规cron相同的语法来调度PostgreSQL命令，并支持基于时间间隔和月末的调度。pg_cron可以并行运行多个作业，但一次最多只能运行一个作业实例。它使用标准的cron语法，并支持Paul Vixie的cron源代码中的选项。
 
