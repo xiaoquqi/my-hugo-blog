@@ -1,32 +1,32 @@
 ---
-title: Github 2024-06-20 开源项目日报 Top10
-date: 2024-06-20T07:01:55+08:00
+title: Github 2024-06-20 Go开源项目日报 Top10
+date: 2024-06-20T07:11:09+08:00
 slug: github-trendings-today-20240620
 author: 老孙正经胡说
-image: /images/rustdesk-rustdesk-0.png
+image: /images/ollama-ollama-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
-  - 人
-  - 人数
   - 和
+  - 项目
+  - 人数
+  - 人
   - 开发
   - 语言
-  - 创建
-  - 贡献
   - 是
   - 开源
-  - 周期
-  - 关注
-  - 地址
   - 协议
+  - 创建
+  - 周期
   - 类型
-  - 生成
-  - 提供
+  - 关注
+  - 贡献
+  - 地址
+  - 支持
   - 用户
-  - 代码
+  - 兼容
+  - 并
 
 categories:
 
@@ -38,47 +38,44 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 4 |
-| TypeScript项目 | 4 |
-| Rust项目 | 2 |
-| JavaScript项目 | 1 |
-| Dart项目 | 1 |
-| Java项目 | 1 |
-| Go项目 | 1 |
+| Go项目 | 10 |
+| Vue项目 | 1 |
 
-## RustDesk: 用Rust编写的开源远程桌面软件
+## Ollama: 本地大型语言模型设置与运行
 
-* 创建周期：1218 天
-* 开发语言：Rust, Dart
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：58141 个
-* Fork数量：6255 次
-* 关注人数：58141 人
-* 贡献人数：230 人
-* Open Issues数量：49 个
-* Github地址：https://github.com/rustdesk/rustdesk.git
-* 项目首页: https://rustdesk.com
+* 创建周期：248 天
+* 开发语言：Go
+* 协议类型：MIT License
+* Star数量：42421 个
+* Fork数量：2724 次
+* 关注人数：42421 人
+* 贡献人数：138 人
+* Open Issues数量：709 个
+* Github地址：https://github.com/ollama/ollama.git
+* 项目首页: https://ollama.com
 
 
-![](/images/rustdesk-rustdesk-0.png)
+![](/images/ollama-ollama-0.png)
 
-RustDesk是一款用Rust编写的开源远程桌面软件，可作为TeamViewer的替代品。它可以直接使用，无需配置，提供完全的数据控制和安全性。用户可以使用提供的会合/中继服务器，自行设置，或编写自己的服务器。该项目欢迎所有人的贡献，并提供常见问题解答、二进制下载和每夜构建。
+Ollama是一个开源项目，帮助用户在本地设置和利用诸如Llama 2、Mistral和Gemma等大型语言模型。
 
-## Zed: 由Atom和Tree-sitter的创建者开发的高性能多人代码编辑器
+## TiDB: 开源分布式MySQL兼容数据库
 
-* 创建周期：1071 天
-* 开发语言：Rust
-* 协议类型：Other
-* Star数量：9436 个
-* Fork数量：261 次
-* 关注人数：9436 人
-* 贡献人数：42 人
-* Open Issues数量：1185 个
-* Github地址：https://github.com/zed-industries/zed.git
-* 项目首页: https://zed.dev
+* 创建周期：3168 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：36205 个
+* Fork数量：5716 次
+* 关注人数：36205 人
+* 贡献人数：402 人
+* Open Issues数量：4579 个
+* Github地址：https://github.com/pingcap/tidb.git
+* 项目首页: https://pingcap.com
 
 
-Zed是由Atom和Tree-sitter的创建者开发的高性能多人代码编辑器。
+![](/images/pingcap-tidb-0.png)
+
+TiDB是一个开源的、云原生的、分布式的、与MySQL兼容的数据库，旨在实现弹性扩展和实时分析。它支持混合事务和分析处理（HTAP）工作负载，具有水平扩展、强一致性和高可用性。它还与MySQL兼容，并具有全面的架构。
 
 ## PocketBase: 开源实时后端
 
@@ -98,130 +95,124 @@ Zed是由Atom和Tree-sitter的创建者开发的高性能多人代码编辑器�
 
 PocketBase是一个开源的Go后端，包括嵌入式SQLite数据库与实时订阅，内置文件和用户管理，方便的管理面板UI，以及简单的REST-ish API。它仍在积极开发中，在达到v1.0.0之前不能保证完全向后兼容。
 
-## Open-Sora: 构建自己的视频生成模型
+## gRPC-Go: 高性能、开源的通用RPC框架的Go语言实现
 
-* 创建周期：17 天
-* 开发语言：Python
+* 创建周期：3356 天
+* 开发语言：Go
 * 协议类型：Apache License 2.0
-* Star数量：1151 个
-* Fork数量：96 次
-* 关注人数：1151 人
-* 贡献人数：6 人
-* Open Issues数量：10 个
-* Github地址：https://github.com/hpcaitech/Open-Sora.git
+* Star数量：19531 个
+* Fork数量：4256 次
+* 关注人数：19531 人
+* 贡献人数：387 人
+* Open Issues数量：133 个
+* Github地址：https://github.com/grpc/grpc-go.git
+* 项目首页: https://grpc.io
 
 
-![](/images/hpcaitech-open-sora-0.png)
+gRPC-Go是gRPC的Go语言实现，是一个高性能、开源的通用RPC框架，将移动和HTTP/2放在首位。它设计高效，并且有很好的文档，易于采用。
 
-Open-Sora是一个开源项目，允许用户构建类似于OpenAI的Sora的自己的视频生成模型。它提供了创建自定义视频生成模型所需的工具和资源。
+## 使用Gitleaks保护和发现机密信息
 
-## Amplication: AI生成生产就绪的.NET和Node.js应用程序代码
-
-* 创建周期：1501 天
-* 开发语言：TypeScript
-* 协议类型：Other
-* Star数量：13755 个
-* Fork数量：1388 次
-* 关注人数：13755 人
-* 贡献人数：252 人
-* Open Issues数量：635 个
-* Github地址：https://github.com/amplication/amplication.git
-* 项目首页: https://amplication.com
-
-
-![](/images/amplication-amplication-0.png)
-
-Amplication 是一个开源开发平台，利用人工智能为 .NET 和 Node.js 应用程序生成生产就绪的代码。它提供了一个用户友好的界面，实现了 API、数据模型、数据库、身份验证和授权的无缝集成。专注于协作，简化了团队导向型开发，并适用于初创企业到大型企业。
-
-![](/images/amplication-amplication-1.png)
-
-## 增强版ChatGPT克隆: 开源功能概述
-
-* 创建周期：354 天
-* 开发语言：TypeScript, JavaScript
+* 创建周期：2203 天
+* 开发语言：Go
 * 协议类型：MIT License
-* Star数量：7277 个
-* Fork数量：1269 次
-* 关注人数：7277 人
-* 贡献人数：75 人
-* Open Issues数量：61 个
-* Github地址：https://github.com/danny-avila/LibreChat.git
-* 项目首页: https://docs.librechat.ai/
+* Star数量：14645 个
+* Fork数量：1310 次
+* 关注人数：14645 人
+* 贡献人数：153 人
+* Open Issues数量：165 个
+* Github地址：https://github.com/gitleaks/gitleaks.git
+* 项目首页: https://gitleaks.io
 
 
-![](/images/danny-avila-librechat-0.png)
+Gitleaks是一个旨在保护和发现代码存储库中的机密信息的开源项目。它是一个用于识别和防止暴露密码、API密钥和其他凭据等敏感信息的工具。
 
-增强版ChatGPT克隆是一个开源项目，具有包括与ChatGPT匹配的用户界面、多模式聊天与图像分析、多语言用户界面、AI模型选择、预设、对话编辑、消息导出、插件、多用户系统和部署选项在内的功能。
+## Semaphore: 现代化的Ansible、Terraform和Pulumi UI
 
-## Typebot: 强大的自助聊天机器人构建工具
-
-* 创建周期：944 天
-* 开发语言：TypeScript
-* 协议类型：Other
-* Star数量：5487 个
-* Fork数量：1517 次
-* 关注人数：5487 人
-* 贡献人数：47 人
-* Open Issues数量：152 个
-* Github地址：https://github.com/baptisteArno/typebot.io.git
-* 项目首页: https://typebot.io
+* 创建周期：3589 天
+* 开发语言：Go, Vue
+* 协议类型：MIT License
+* Star数量：9588 个
+* Fork数量：991 次
+* 关注人数：9588 人
+* 贡献人数：108 人
+* Open Issues数量：501 个
+* Github地址：https://github.com/semaphoreui/semaphore.git
+* 项目首页: https://semaphoreui.com
 
 
-Typebot是一个强大的聊天机器人构建工具，可以自行托管，让用户可以创建自己的聊天机器人。
+![](/images/semaphoreui-semaphore-0.png)
 
-## OpenMetadata: 统一的平台和开源项目
+Semaphore是一个现代化的UI，适用于Ansible、Terraform/OpenTofu、Bash和Pulumi，它可以轻松运行Ansible playbooks，获取关于失败的通知，并控制部署系统的访问。
 
-* 创建周期：1054 天
-* 开发语言：TypeScript, Java, Python
+## 下一代爬虫和蜘蛛框架
+
+* 创建周期：1264 天
+* 开发语言：Go
+* 协议类型：MIT License
+* Star数量：9141 个
+* Fork数量：485 次
+* 关注人数：9141 人
+* 贡献人数：31 人
+* Open Issues数量：80 个
+* Github地址：https://github.com/projectdiscovery/katana.git
+
+
+![](/images/projectdiscovery-katana-0.png)
+
+这是一个下一代爬虫和蜘蛛框架，具有快速和完全可配置的网络爬行、标准和无头模式、主动和被动模式、JavaScript解析/爬行、可自定义的自动表单填充、范围控制、可定制的输出以及支持各种输入和输出方法。
+
+![](/images/projectdiscovery-katana-1.png)
+
+## 开源的开发环境管理器
+
+* 创建周期：41 天
+* 开发语言：Go
 * 协议类型：Apache License 2.0
-* Star数量：4556 个
-* Fork数量：895 次
-* 关注人数：4556 人
-* 贡献人数：247 人
-* Open Issues数量：548 个
-* Github地址：https://github.com/open-metadata/OpenMetadata.git
-* 项目首页: https://open-metadata.org
+* Star数量：4411 个
+* Fork数量：150 次
+* 关注人数：4411 人
+* 贡献人数：19 人
+* Open Issues数量：42 个
+* Github地址：https://github.com/daytonaio/daytona.git
+* 项目首页: https://daytona.io
 
 
-![](/images/open-metadata-openmetadata-0.png)
+![](/images/daytonaio-daytona-0.png)
 
-OpenMetadata是一个统一的平台，用于发现、可观察性和治理，由中央元数据存储库、深入的血统和无缝的团队协作驱动。它是一个增长迅速的开源项目，在各行各业广泛采用。OpenMetadata基于开放的元数据标准和API，支持与各种数据服务的连接器，实现端到端的元数据管理。
+开源的开发环境管理器允许用户通过单个命令激活完全配置的开发环境，支持各种类型和架构的计算机。它还提供配置文件支持、预构建系统、IDE支持、Git提供程序集成、多项目工作区、反向代理集成、可扩展性、安全功能和VPN连接，以确保对所有端口的安全访问。
 
-![](/images/open-metadata-openmetadata-1.png)
+## Project Calico: 容器网络和安全的开源解决方案
 
-## Argilla: AI工程师和领域专家的协作平台
-
-* 创建周期：1149 天
-* 开发语言：Python
-* Star数量：3317 个
-* Fork数量：324 次
-* 关注人数：3317 人
-* 贡献人数：81 人
-* Open Issues数量：187 个
-* Github地址：https://github.com/argilla-io/argilla.git
-* 项目首页: https://docs.argilla.io
-
-
-![](/images/argilla-io-argilla-0.png)
-
-Argilla是一个为需要高质量输出、完整数据所有权和整体效率的AI工程师和领域专家设计的协作平台。它支持监控和改进LLM管道和RAG的生成任务，以及AB测试跨度和文本分类模型等预测任务。
-
-![](/images/argilla-io-argilla-1.png)
-
-## Vision Agent: 通过代理框架生成代码简化视觉任务
-
-* 创建周期：128 天
-* 开发语言：Python
+* 创建周期：2891 天
+* 开发语言：Go
 * 协议类型：Apache License 2.0
-* Star数量：619 个
-* Fork数量：65 次
-* 关注人数：619 人
-* 贡献人数：11 人
-* Open Issues数量：5 个
-* Github地址：https://github.com/landing-ai/vision-agent.git
+* Star数量：5651 个
+* Fork数量：1262 次
+* 关注人数：5651 人
+* 贡献人数：302 人
+* Open Issues数量：389 个
+* Github地址：https://github.com/projectcalico/calico.git
+* 项目首页: https://docs.tigera.io/calico/latest/about/
 
 
-![](/images/landing-ai-vision-agent-0.png)
+![](/images/projectcalico-calico-0.png)
 
-Vision Agent 是一个库，旨在通过利用代理框架生成代码来简化解决视觉任务的过程。它通过允许用户用文字描述问题，并让代理框架为他们生成代码来解决任务，提供了快速的解决方案。
+Project Calico是一个广泛采用的开源项目，用于容器网络和安全，拥有庞大的用户社区和积极的开发。它每天在166个国家的800多万节点上运行。
+
+## 终极摄像头流应用程序
+
+* 创建周期：672 天
+* 开发语言：Go
+* 协议类型：MIT License
+* Star数量：3634 个
+* Fork数量：299 次
+* 关注人数：3634 人
+* 贡献人数：27 人
+* Open Issues数量：241 个
+* Github地址：https://github.com/AlexxIT/go2rtc.git
+* 项目首页: https://github.com/AlexxIT/Blog
+
+
+终极摄像头流应用程序，支持各种协议，如RTSP、RTMP、HTTP-FLV、WebRTC、MSE、HLS、MP4、MJPEG、HomeKit和FFmpeg。它是一个零依赖和零配置的小型应用程序，适用于所有操作系统，提供低延迟流式传输，并能够从各种来源进行流式传输，如RTSP、RTMP、DVRIP、HTTP、USB摄像头等。该项目还支持流式传输到各种目的地，包括流行的流媒体服务，如YouTube和Telegram，并且是第一个支持从HomeKit摄像头进行流式传输的项目。它提供了诸如Safari中的WebRTC的H265支持、通过FFmpeg的即时转码、多源双向编解码器协商等功能，并可与智能家居平台集成。
 
