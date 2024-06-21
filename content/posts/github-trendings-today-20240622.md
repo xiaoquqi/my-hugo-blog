@@ -1,6 +1,6 @@
 ---
-title: Github 2024-06-22 开源项目日报 Top10
-date: 2024-06-22T07:01:45+08:00
+title: Github 2024-06-22 Rust开源项目日报 Top10
+date: 2024-06-22T07:11:25+08:00
 slug: github-trendings-today-20240622
 author: 老孙正经胡说
 image: /images/rustdesk-rustdesk-0.png
@@ -9,24 +9,24 @@ tags:
   - trendings
   - 数量
   - 项目
-  - 人
   - 人数
+  - 人
   - 和
   - 开发
   - 语言
-  - 开源
-  - 创建
-  - 贡献
   - 是
+  - 贡献
+  - 创建
   - 周期
-  - 关注
-  - 地址
   - 协议
   - 类型
+  - 关注
+  - 地址
   - 提供
-  - 用户
-  - 构建
-  - 生成
+  - 并
+  - 搜索
+  - 数据
+  - 服务器
 
 categories:
 
@@ -38,16 +38,10 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| TypeScript项目 | 3 |
-| JavaScript项目 | 2 |
-| Python项目 | 2 |
-| HTML项目 | 1 |
-| Rust项目 | 1 |
+| Rust项目 | 10 |
 | Dart项目 | 1 |
-| Dockerfile项目 | 1 |
-| Shell项目 | 1 |
-| C++项目 | 1 |
-| Swift项目 | 1 |
+| Move项目 | 1 |
+| TypeScript项目 | 1 |
 
 ## RustDesk: 用Rust编写的开源远程桌面软件
 
@@ -67,158 +61,149 @@ draft: false
 
 RustDesk是一款用Rust编写的开源远程桌面软件，可作为TeamViewer的替代品。它可以直接使用，无需配置，提供完全的数据控制和安全性。用户可以使用提供的会合/中继服务器，自行设置，或编写自己的服务器。该项目欢迎所有人的贡献，并提供常见问题解答、二进制下载和每夜构建。
 
-## 程序员在家做饭指南
+## ripgrep（rg）- 递归搜索工具
 
-* 创建周期：1575 天
-* 开发语言：Dockerfile
+* 创建周期：2997 天
+* 开发语言：Rust
 * 协议类型：The Unlicense
-* Star数量：61921 个
-* Fork数量：8390 次
-* 关注人数：61921 人
-* 贡献人数：334 人
-* Open Issues数量：376 个
-* Github地址：https://github.com/Anduin2017/HowToCook.git
-* 项目首页: https://cook.aiursoft.cn
+* Star数量：45437 个
+* Fork数量：1889 次
+* 关注人数：45437 人
+* 贡献人数：370 人
+* Open Issues数量：108 个
+* Github地址：https://github.com/BurntSushi/ripgrep.git
 
 
-最近在家隔离，出不了门，作为程序员，我计划整理常见菜的做法，以方便程序员在家做饭，并希望它是一个由社区驱动和维护的开源项目。
+![](/images/burntsushi-ripgrep-0.png)
 
-## Lobe Chat: 开源ChatGPT/LLMs UI/Framework
+ripgrep（rg）是一种面向行的搜索工具，可以在当前目录中递归搜索正则表达式模式。默认情况下，ripgrep会遵守gitignore规则，并自动跳过隐藏文件/目录和二进制文件。（要禁用默认情况下的所有自动过滤，请使用rg -uuu .）ripgrep在Windows、macOS和Linux上具有一流的支持，并且类似于其他流行的搜索工具，如The Silver Searcher、ack和grep。它在MIT或UNLICENSE下具有双重许可。
 
-* 创建周期：281 天
-* 开发语言：TypeScript
+## Meilisearch: 快速搜索API，提升工作效率
+
+* 创建周期：2252 天
+* 开发语言：Rust
 * 协议类型：MIT License
-* Star数量：20641 个
-* Fork数量：4020 次
-* 关注人数：20641 人
-* 贡献人数：63 人
-* Open Issues数量：166 个
-* Github地址：https://github.com/lobehub/lobe-chat.git
-* 项目首页: https://chat-preview.lobehub.com
+* Star数量：44442 个
+* Fork数量：1667 次
+* 关注人数：44442 人
+* 贡献人数：169 人
+* Open Issues数量：175 个
+* Github地址：https://github.com/meilisearch/meilisearch.git
+* 项目首页: https://www.meilisearch.com
 
 
-![](/images/lobehub-lobe-chat-0.png)
+Meilisearch是一个快速的搜索API，可以轻松集成到应用程序、网站和工作流程中。它提供了一些开箱即用的功能，可以增强搜索体验并加快工作效率。
 
-Lobe Chat是一个开源的、现代化设计的ChatGPT/LLMs UI/Framework，支持语音合成、多模态功能和可扩展的插件系统。它提供一键免费部署私人ChatGPT/Gemini/Ollama聊天应用。
+## Rust实现的非官方Bitwarden兼容服务器
 
-## Open-Sora: 构建自己的视频生成模型
-
-* 创建周期：17 天
-* 开发语言：Python
-* 协议类型：Apache License 2.0
-* Star数量：1151 个
-* Fork数量：96 次
-* 关注人数：1151 人
-* 贡献人数：6 人
-* Open Issues数量：10 个
-* Github地址：https://github.com/hpcaitech/Open-Sora.git
-
-
-![](/images/hpcaitech-open-sora-0.png)
-
-Open-Sora是一个开源项目，允许用户构建类似于OpenAI的Sora的自己的视频生成模型。它提供了创建自定义视频生成模型所需的工具和资源。
-
-## 增强版ChatGPT克隆: 开源功能概述
-
-* 创建周期：354 天
-* 开发语言：TypeScript, JavaScript
-* 协议类型：MIT License
-* Star数量：7277 个
-* Fork数量：1269 次
-* 关注人数：7277 人
-* 贡献人数：75 人
-* Open Issues数量：61 个
-* Github地址：https://github.com/danny-avila/LibreChat.git
-* 项目首页: https://docs.librechat.ai/
-
-
-![](/images/danny-avila-librechat-0.png)
-
-增强版ChatGPT克隆是一个开源项目，具有包括与ChatGPT匹配的用户界面、多模式聊天与图像分析、多语言用户界面、AI模型选择、预设、对话编辑、消息导出、插件、多用户系统和部署选项在内的功能。
-
-## Omnivore: 开源稍后阅读解决方案
-
-* 创建周期：861 天
-* 开发语言：TypeScript, HTML
+* 创建周期：2317 天
+* 开发语言：Rust
 * 协议类型：GNU Affero General Public License v3.0
-* Star数量：10231 个
-* Fork数量：495 次
-* 关注人数：10231 人
-* 贡献人数：70 人
-* Open Issues数量：547 个
-* Github地址：https://github.com/omnivore-app/omnivore.git
-* 项目首页: https://omnivore.app
+* Star数量：34391 个
+* Fork数量：1671 次
+* 关注人数：34391 人
+* 贡献人数：137 人
+* Open Issues数量：32 个
+* Github地址：https://github.com/dani-garcia/vaultwarden.git
 
 
-![](/images/omnivore-app-omnivore-0.png)
+这是一个用Rust编写的非官方Bitwarden兼容服务器，以前被称为bitwarden_rs。这是Bitwarden服务器API的另一种实现，用Rust编写，并与上游Bitwarden客户端兼容。非常适合自托管部署，其中运行官方资源密集型服务可能不是理想的选择。该项目已更名，以避免与官方Bitwarden服务器混淆，并避免商标/品牌问题。该项目与Bitwarden项目或Bitwarden, Inc.无关。
 
-Omnivore 是一个完整的开源稍后阅读解决方案，适用于喜欢阅读的人。它提供了诸如高亮显示、笔记、搜索、分享、全键盘导航、保存长篇文章位置、通过电子邮件添加通讯稿件、PDF 支持以及各种应用和浏览器扩展等功能。该项目完全开源，鼓励分叉、扩展或部署到个人服务器上。omnivore.app 还提供了免费托管版本。
+## 后现代模态文本编辑器
 
-## GDevelop: 无代码跨平台游戏引擎
+* 创建周期：1328 天
+* 开发语言：Rust
+* 协议类型：Mozilla Public License 2.0
+* Star数量：27484 个
+* Fork数量：1993 次
+* 关注人数：27484 人
+* 贡献人数：424 人
+* Open Issues数量：1159 个
+* Github地址：https://github.com/helix-editor/helix.git
+* 项目首页: https://helix-editor.com
 
-* 创建周期：3646 天
-* 开发语言：JavaScript, C++
+
+一款用Rust编写的后现代模态文本编辑器，深受Kakoune和Neovim启发。它具有类似Vim的模态编辑、多重选择、内置语言服务器支持和智能的增量语法高亮。它主要是一个基于终端的编辑器，但旨在通过wgpu或skulpin探索自定义渲染器。
+
+## Cube - 用于构建数据应用程序的语义层
+
+* 创建周期：2106 天
+* 开发语言：Rust, TypeScript
 * 协议类型：Other
-* Star数量：6836 个
-* Fork数量：728 次
-* 关注人数：6836 人
-* 贡献人数：82 人
-* Open Issues数量：488 个
-* Github地址：https://github.com/4ian/GDevelop.git
-* 项目首页: https://gdevelop.io
+* Star数量：17425 个
+* Fork数量：1738 次
+* 关注人数：17425 人
+* 贡献人数：292 人
+* Open Issues数量：931 个
+* Github地址：https://github.com/cube-js/cube.git
+* 项目首页: https://cube.dev
 
 
-![](/images/4ian-gdevelop-0.png)
+Cube是用于构建数据应用程序的语义层。它帮助数据工程师和应用程序开发人员访问现代数据存储中的数据，将其组织成一致的定义，并将其传递给每个应用程序。
 
-GDevelop是一个面向所有人的开源跨平台游戏引擎。它是一款功能齐全的无代码游戏开发软件，允许用户为移动设备、桌面和网络构建游戏。GDevelop使用直观而强大的基于事件的系统构建游戏逻辑，操作简单快捷。
+## uutils coreutils: Rust中的GNU coreutils跨平台重写
 
-## Loop: 简化 macOS 窗口管理
-
-* 创建周期：515 天
-* 开发语言：Swift
-* 协议类型：GNU General Public License v3.0
-* Star数量：4601 个
-* Fork数量：89 次
-* 关注人数：4601 人
-* 贡献人数：9 人
-* Open Issues数量：62 个
-* Github地址：https://github.com/MrKai77/Loop.git
-
-
-Loop 是一款 macOS 应用程序，通过简单的按键触发径向菜单，让用户轻松选择窗口方向，从而简化窗口管理。它提供个性化颜色和设置的定制选项，让用户能够轻松移动、调整大小和排列窗口，仅需点击几下，最终节省时间和精力。
-
-## Argilla: AI工程师和领域专家的协作平台
-
-* 创建周期：1149 天
-* 开发语言：Python
-* Star数量：3317 个
-* Fork数量：324 次
-* 关注人数：3317 人
-* 贡献人数：81 人
-* Open Issues数量：187 个
-* Github地址：https://github.com/argilla-io/argilla.git
-* 项目首页: https://docs.argilla.io
+* 创建周期：3977 天
+* 开发语言：Rust
+* 协议类型：MIT License
+* Star数量：17049 个
+* Fork数量：1226 次
+* 关注人数：17049 人
+* 贡献人数：377 人
+* Open Issues数量：387 个
+* Github地址：https://github.com/uutils/coreutils.git
+* 项目首页: https://uutils.github.io/
 
 
-![](/images/argilla-io-argilla-0.png)
+uutils coreutils是在Rust中对GNU coreutils进行的跨平台重新实现。虽然所有程序都已实现，但可能会缺少一些选项或出现不同的行为。
 
-Argilla是一个为需要高质量输出、完整数据所有权和整体效率的AI工程师和领域专家设计的协作平台。它支持监控和改进LLM管道和RAG的生成任务，以及AB测试跨度和文本分类模型等预测任务。
+## Quickwit: 云原生搜索引擎
 
-![](/images/argilla-io-argilla-1.png)
-
-## SELKS：Suricata基础的IDS/IPS/NSM平台
-
-* 创建周期：3691 天
-* 开发语言：Shell
-* 协议类型：GNU General Public License v3.0
-* Star数量：1318 个
-* Fork数量：272 次
-* 关注人数：1318 人
-* 贡献人数：11 人
-* Open Issues数量：198 个
-* Github地址：https://github.com/StamusNetworks/SELKS.git
-* 项目首页: https://www.stamus-networks.com/open-source/#selks
+* 创建周期：1075 天
+* 开发语言：Rust
+* 协议类型：Other
+* Star数量：5652 个
+* Fork数量：263 次
+* 关注人数：5652 人
+* 贡献人数：66 人
+* Open Issues数量：559 个
+* Github地址：https://github.com/quickwit-oss/quickwit.git
+* 项目首页: https://quickwit.io
 
 
-SELKS是一个免费的开源基于Debian的IDS/IPS/网络安全监控平台，可以通过docker compose在任何Linux或Windows操作系统上安装。它包括Suricata IDPS/NSM、Elasticsearch、Logstash、Kibana、Scirius、EveBox、Arkime和CyberChef等组件，并旨在展示Suricata在生成网络协议监控日志和警报方面的能力。该平台还通过Stamus开发的Scirius具有威胁狩猎能力，提供预定义的狩猎过滤器和增强的上下文视图。
+Quickwit是一个开源的云原生搜索引擎，旨在作为Datadog、Elasticsearch、Loki和Tempo的替代品。它经过优化以提供快速搜索，并非常适用于日志管理和分布式跟踪等观察性用例。未来还计划支持度量。
+
+## RisingWave: 实时事件流处理的Postgres兼容流式数据库
+
+* 创建周期：834 天
+* 开发语言：Rust
+* 协议类型：Apache License 2.0
+* Star数量：6363 个
+* Fork数量：520 次
+* 关注人数：6363 人
+* 贡献人数：151 人
+* Open Issues数量：1163 个
+* Github地址：https://github.com/risingwavelabs/risingwave.git
+* 项目首页: https://www.risingwave.com/slack
+
+
+![](/images/risingwavelabs-risingwave-0.png)
+
+RisingWave是一个开源项目，提供SQL流处理、分析和管理。它将存储和计算解耦，提供快速引导、动态扩展、时间旅行查询和高效连接。该项目重新构想了流处理，是一个专为实时事件流数据而设计的与Postgres兼容的流式数据库。
+
+## Aptos: 通过更好的技术和用户体验支持区块链的广泛使用
+
+* 创建周期：850 天
+* 开发语言：Rust, Move
+* 协议类型：Other
+* Star数量：5878 个
+* Fork数量：3556 次
+* 关注人数：5878 人
+* 贡献人数：337 人
+* Open Issues数量：667 个
+* Github地址：https://github.com/aptos-labs/aptos-core.git
+* 项目首页: https://aptosfoundation.org
+
+
+Aptos是一个第一层的区块链，旨在通过更好的技术和用户体验支持区块链的广泛使用。它通过更好的技术和用户体验，为Web3带来了范式转变，并利用Move构建了一个为开发下一代应用程序的开发者提供家园的平台。
 
