@@ -1,32 +1,32 @@
 ---
-title: Github 2024-06-23 开源项目日报 Top10
-date: 2024-06-23T07:01:35+08:00
+title: Github 2024-06-23 php开源项目日报 Top10
+date: 2024-06-23T07:11:22+08:00
 slug: github-trendings-today-20240623
 author: 老孙正经胡说
-image: /images/codecrafters-io-build-your-own-x-0.png
+image: /images/laravel-framework-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
-  - 人
+  - 和
   - 人数
-  - 语言
-  - 开源
+  - 人
   - 开发
-  - 创建
-  - 贡献
+  - 项目
   - 是
+  - 语言
+  - 贡献
+  - 创建
   - 周期
   - 关注
   - 地址
-  - 和
   - 协议
   - 类型
-  - 构建
-  - 系统
-  - 模型
-  - 用于
+  - 开源
+  - 提供
+  - 网站
+  - 旨在
+  - 平台
 
 categories:
 
@@ -38,180 +38,177 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| TypeScript项目 | 3 |
-| C++项目 | 2 |
-| JavaScript项目 | 2 |
-| 非开发语言项目 | 2 |
-| Jupyter Notebook项目 | 1 |
-| Python项目 | 1 |
-| Vue项目 | 1 |
-| Java项目 | 1 |
-| HTML项目 | 1 |
+| PHP项目 | 10 |
+| JavaScript项目 | 1 |
 
-## 从零开始构建你喜爱的技术
+## Laravel: 以优雅语法简化Web开发
 
-* 创建周期：2156 天
-* Star数量：253338 个
-* Fork数量：24043 次
-* 关注人数：253338 人
-* 贡献人数：116 人
-* Open Issues数量：319 个
-* Github地址：https://github.com/codecrafters-io/build-your-own-x.git
-* 项目首页: https://codecrafters.io
-
-
-![](/images/codecrafters-io-build-your-own-x-0.png)
-
-这个存储库是一本精心编写的、逐步指南的汇编，可以从零开始重新创建各种技术，如3D渲染器、区块链/加密货币、游戏、操作系统、Web浏览器等。它旨在帮助用户通过理解和构建自己喜欢的技术来掌握编程。
-
-## 项目化学习
-
-* 创建周期：2538 天
+* 创建周期：4028 天
+* 开发语言：PHP
 * 协议类型：MIT License
-* Star数量：161973 个
-* Fork数量：21345 次
-* 关注人数：161973 人
-* 贡献人数：100 人
-* Open Issues数量：109 个
-* Github地址：https://github.com/practical-tutorials/project-based-learning.git
+* Star数量：30824 个
+* Fork数量：10526 次
+* 关注人数：30824 人
+* 贡献人数：383 人
+* Open Issues数量：27 个
+* Github地址：https://github.com/laravel/framework.git
+* 项目首页: https://laravel.com
 
 
-项目化学习是一个由程序开发者学习如何从零开始构建应用程序的编程教程的精选列表。这些教程涵盖了不同的主要编程语言，可能涉及多种技术和语言。要开始使用，请简单地fork这个仓库。请参考CONTRIBUTING.md以获取贡献指南。
+![](/images/laravel-framework-0.png)
 
-## Lobe Chat: 开源ChatGPT/LLMs UI/Framework
+Laravel是一个以其富有表现力和优雅的语法而闻名的Web应用程序框架。它旨在通过简化常见任务（如路由、依赖注入、会话和缓存存储、数据库模式迁移、后台作业处理和实时事件广播）使Web开发成为一种愉快和创造性的体验。它提供了平衡的易用性和功能强大性，适用于小型和大型应用。
 
-* 创建周期：281 天
-* 开发语言：TypeScript
-* 协议类型：MIT License
-* Star数量：20641 个
-* Fork数量：4020 次
-* 关注人数：20641 人
-* 贡献人数：63 人
-* Open Issues数量：166 个
-* Github地址：https://github.com/lobehub/lobe-chat.git
-* 项目首页: https://chat-preview.lobehub.com
+## PHPUnit: PHP程序员的单元测试框架
+
+* 创建周期：5141 天
+* 开发语言：PHP
+* 协议类型：BSD 3-Clause "New" or "Revised" License
+* Star数量：19460 个
+* Fork数量：2245 次
+* 关注人数：19460 人
+* 贡献人数：391 人
+* Open Issues数量：108 个
+* Github地址：https://github.com/sebastianbergmann/phpunit.git
+* 项目首页: https://phpunit.de/
 
 
-![](/images/lobehub-lobe-chat-0.png)
+PHPUnit是面向程序员的PHP测试框架，遵循xUnit架构用于单元测试。
 
-Lobe Chat是一个开源的、现代化设计的ChatGPT/LLMs UI/Framework，支持语音合成、多模态功能和可扩展的插件系统。它提供一键免费部署私人ChatGPT/Gemini/Ollama聊天应用。
+## Matomo：开源网站分析平台
 
-## DataEase: 开源数据可视化分析工具
-
-* 创建周期：1193 天
-* 开发语言：Java
+* 创建周期：4687 天
+* 开发语言：PHP
 * 协议类型：GNU General Public License v3.0
-* Star数量：15358 个
-* Fork数量：2827 次
-* 关注人数：15358 人
-* 贡献人数：48 人
-* Open Issues数量：244 个
-* Github地址：https://github.com/dataease/dataease.git
-* 项目首页: https://dataease.io/
+* Star数量：18681 个
+* Fork数量：2608 次
+* 关注人数：18681 人
+* 贡献人数：314 人
+* Open Issues数量：2279 个
+* Github地址：https://github.com/matomo-org/matomo.git
+* 项目首页: https://matomo.org/
 
 
-![](/images/dataease-dataease-0.png)
+![](/images/matomo-org-matomo-0.png)
 
-DataEase 是一个开源的数据可视化分析工具，可以帮助用户快速分析数据并洞察业务趋势，支持丰富的数据源连接，拖拉拽方式快速制作图表，并方便与他人分享。
+Matomo，前身为Piwik，是一个开源的网站分析平台，提供了与Google Analytics的替代方案。它提供完全的数据控制，方便地从网站和应用程序收集数据，可视化和隐私保护。
 
-## 增强版ChatGPT克隆: 开源功能概述
+## Filament: 加速Laravel开发的完美起点
 
-* 创建周期：354 天
-* 开发语言：TypeScript, JavaScript
+* 创建周期：1410 天
+* 开发语言：PHP
 * 协议类型：MIT License
-* Star数量：7277 个
-* Fork数量：1269 次
-* 关注人数：7277 人
-* 贡献人数：75 人
-* Open Issues数量：61 个
-* Github地址：https://github.com/danny-avila/LibreChat.git
-* 项目首页: https://docs.librechat.ai/
+* Star数量：12228 个
+* Fork数量：1990 次
+* 关注人数：12228 人
+* 贡献人数：372 人
+* Open Issues数量：66 个
+* Github地址：https://github.com/filamentphp/filament.git
+* 项目首页: https://filamentphp.com
 
 
-![](/images/danny-avila-librechat-0.png)
+![](/images/filamentphp-filament-0.png)
 
-增强版ChatGPT克隆是一个开源项目，具有包括与ChatGPT匹配的用户界面、多模式聊天与图像分析、多语言用户界面、AI模型选择、预设、对话编辑、消息导出、插件、多用户系统和部署选项在内的功能。
+Filament是一套精美设计且完全可扩展的Laravel全栈组件集合，使用Livewire、Alpine.js和Tailwind CSS。它为加速Laravel开发提供了完美的起点，消除了重复构建相同功能的需求。
 
-## Omnivore: 开源稍后阅读解决方案
+## Typecho: PHP博客平台
 
-* 创建周期：861 天
-* 开发语言：TypeScript, HTML
+* 创建周期：3994 天
+* 开发语言：PHP
+* 协议类型：GNU General Public License v2.0
+* Star数量：11094 个
+* Fork数量：2001 次
+* 关注人数：11094 人
+* 贡献人数：68 人
+* Open Issues数量：299 个
+* Github地址：https://github.com/typecho/typecho.git
+* 项目首页: http://typecho.org
+
+
+![](/images/typecho-typecho-0.png)
+
+Typecho是一种基于PHP的博客软件，旨在成为世界上最强大的博客引擎。它是根据GNU通用公共许可证2.0发布的。
+
+## MISP - 网络安全指标和威胁共享平台
+
+* 创建周期：4154 天
+* 开发语言：PHP
 * 协议类型：GNU Affero General Public License v3.0
-* Star数量：10231 个
-* Fork数量：495 次
-* 关注人数：10231 人
-* 贡献人数：70 人
-* Open Issues数量：547 个
-* Github地址：https://github.com/omnivore-app/omnivore.git
-* 项目首页: https://omnivore.app
+* Star数量：5079 个
+* Fork数量：1361 次
+* 关注人数：5079 人
+* 贡献人数：222 人
+* Open Issues数量：2485 个
+* Github地址：https://github.com/MISP/MISP.git
+* 项目首页: https://www.misp-project.org/
 
 
-![](/images/omnivore-app-omnivore-0.png)
+![](/images/misp-misp-0.png)
 
-Omnivore 是一个完整的开源稍后阅读解决方案，适用于喜欢阅读的人。它提供了诸如高亮显示、笔记、搜索、分享、全键盘导航、保存长篇文章位置、通过电子邮件添加通讯稿件、PDF 支持以及各种应用和浏览器扩展等功能。该项目完全开源，鼓励分叉、扩展或部署到个人服务器上。omnivore.app 还提供了免费托管版本。
+MISP是一个开源软件平台，旨在收集、存储、分发和共享网络安全指标和威胁。它提供了高效的IOC和指标数据库、自动相关性、灵活的数据模型、内置的共享功能、直观的用户界面以及各种导入/导出选项。MISP还提供了协作、数据共享、灵活的API、分类法、情报词汇、扩展模块、观察支持、STIX支持、通知的加密和签名，以及实时发布-订阅通道。它旨在促进安全社区内外结构化信息的共享，从而加快对有针对性攻击的检测速度，提高检测率，同时减少误报。
 
-## micrograd: 用于教育目的的微小自动微分引擎和神经网络库
+## Joomla! - 免费开源内容管理系统
 
-* 创建周期：1532 天
-* 开发语言：Jupyter Notebook
-* 协议类型：MIT License
-* Star数量：9052 个
-* Fork数量：1240 次
-* 关注人数：9052 人
-* 贡献人数：2 人
-* Open Issues数量：43 个
-* Github地址：https://github.com/karpathy/micrograd.git
-
-
-micrograd是一个微小的自动微分引擎，它实现了在动态构建的DAG上进行反向传播，并带有类似PyTorch的API的小型神经网络库。它旨在用于教育目的，并可以用于构建用于二元分类的整个深度神经网络。
-
-## MaxKB：基于LLM大语言模型的知识库问答系统
-
-* 创建周期：215 天
-* 开发语言：Python, Vue
-* 协议类型：GNU General Public License v3.0
-* Star数量：739 个
-* Fork数量：128 次
-* 关注人数：739 人
-* 贡献人数：32 人
-* Open Issues数量：29 个
-* Github地址：https://github.com/1Panel-dev/MaxKB.git
+* 创建周期：4653 天
+* 开发语言：PHP
+* 协议类型：GNU General Public License v2.0
+* Star数量：4678 个
+* Fork数量：3624 次
+* 关注人数：4678 人
+* 贡献人数：284 人
+* Open Issues数量：1067 个
+* Github地址：https://github.com/joomla/joomla-cms.git
+* 项目首页: https://www.joomla.org
 
 
-![](/images/1panel-dev-maxkb-0.png)
+Joomla!是一款免费的开源内容管理系统（CMS），可以帮助用户构建网站和在线应用程序。它需要具有PHP和MySQL或PostgreSQL的服务器才能运行。Joomla!4.x的源代码可以在其官方网站上找到，并且详细的更改记录在变更日志中列出。用户可以从Joomla!网站获取可安装的软件包。此外，该项目欢迎社区参与，提供了请求功能、报告错误以及为其开发和文档做出贡献的机会。
 
-MaxKB 是基于 LLM 大语言模型的知识库问答系统。它旨在成为一种开箱即用的解决方案，支持轻松集成到第三方业务系统中。它允许直接上传文档、自动网络文档爬取、文本分割、向量化，并提供智能问答交互体验。它可以零编码快速嵌入到第三方业务系统，并支持多个大型模型，包括本地私有模型如 Llama 2、Azure OpenAI 和百度千帆大模型。
+## WordPress Develop: 开源同步镜像
 
-## GDevelop: 无代码跨平台游戏引擎
-
-* 创建周期：3646 天
-* 开发语言：JavaScript, C++
-* 协议类型：Other
-* Star数量：6836 个
-* Fork数量：728 次
-* 关注人数：6836 人
-* 贡献人数：82 人
-* Open Issues数量：488 个
-* Github地址：https://github.com/4ian/GDevelop.git
-* 项目首页: https://gdevelop.io
+* 创建周期：2666 天
+* 开发语言：PHP
+* 协议类型：GNU General Public License v2.0
+* Star数量：2249 个
+* Fork数量：2276 次
+* 关注人数：2249 人
+* 贡献人数：81 人
+* Open Issues数量：1386 个
+* Github地址：https://github.com/WordPress/wordpress-develop.git
+* 项目首页: https://make.wordpress.org/core/handbook/contribute/git/github-pull-requests-for-code-review/
 
 
-![](/images/4ian-gdevelop-0.png)
+WordPress Develop是一个开源项目，从git://develop.git.wordpress.org同步，包括分支和标签。它作为WordPress子版本库的镜像，并要求每个拉取请求都包含指向https://core.trac.wordpress.org/上的现有工单的链接。该版本库是一个开发空间，用于贡献bug报告、补丁、测试变更、撰写文档以及参与其中。
 
-GDevelop是一个面向所有人的开源跨平台游戏引擎。它是一款功能齐全的无代码游戏开发软件，允许用户为移动设备、桌面和网络构建游戏。GDevelop使用直观而强大的基于事件的系统构建游戏逻辑，操作简单快捷。
+## Drush：Drupal网站管理的命令行工具
 
-## RTranslator: 开源实时翻译应用程序
-
-* 创建周期：1546 天
-* 开发语言：C++
-* 协议类型：Apache License 2.0
-* Star数量：1217 个
-* Fork数量：120 次
-* 关注人数：1217 人
-* 贡献人数：3 人
-* Open Issues数量：9 个
-* Github地址：https://github.com/niedev/RTranslator.git
+* 创建周期：4500 天
+* 开发语言：PHP
+* Star数量：2325 个
+* Fork数量：1073 次
+* 关注人数：2325 人
+* 贡献人数：305 人
+* Open Issues数量：424 个
+* Github地址：https://github.com/drush-ops/drush.git
+* 项目首页: https://www.drush.org
 
 
-RTranslator是世界上第一个面向Android的开源实时翻译应用程序。它允许用户通过与其他安装了该应用的用户连接，以不同语言进行对话。该应用支持各种模式，如用于长时间对话的对话模式，用于短时间对话的快速模式以及用于同时翻译的对讲机模式。它使用开源AI模型进行翻译和语音识别，确保隐私和离线可用性。该应用没有广告，代码完全开源。
+Drush是Drupal的命令行shell和Unix脚本接口，旨在简化开发人员在命令提示符下的工作。它是管理Drupal网站的瑞士军刀，支持通过各种渠道进行文档支持、错误报告、功能请求和安全漏洞报告。
+
+## EspoCRM - 开源CRM平台
+
+* 创建周期：3559 天
+* 开发语言：PHP, JavaScript
+* 协议类型：GNU Affero General Public License v3.0
+* Star数量：1586 个
+* Fork数量：536 次
+* 关注人数：1586 人
+* 贡献人数：44 人
+* Open Issues数量：50 个
+* Github地址：https://github.com/espocrm/espocrm.git
+* 项目首页: https://www.espocrm.com
+
+
+![](/images/espocrm-espocrm-0.png)
+
+EspoCRM是一个免费的开源CRM平台，旨在帮助组织建立和维护强大的客户关系。它提供了一系列工具，可以在简单直观的界面中存储、组织和管理潜在客户、联系人、销售机会、营销活动和支持案例等业务信息。
 
