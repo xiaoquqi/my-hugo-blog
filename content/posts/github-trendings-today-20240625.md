@@ -1,32 +1,32 @@
 ---
-title: Github 2024-06-25 开源项目日报 Top9
-date: 2024-06-25T07:01:10+08:00
+title: Github 2024-06-25 Python开源项目日报 Top10
+date: 2024-06-25T07:11:14+08:00
 slug: github-trendings-today-20240625
 author: 老孙正经胡说
-image: /images/codecrafters-io-build-your-own-x-0.png
+image: /images/donnemartin-system-design-primer-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
   - 人数
   - 人
   - 和
+  - 项目
   - 开发
   - 语言
   - 创建
-  - 是
   - 周期
   - 关注
   - 贡献
   - 地址
+  - 是
+  - 并
+  - 提供
   - 协议
   - 类型
-  - 免费
   - 开源
-  - 中
-  - 提供
-  - 可
+  - 设计
+  - 模型
 
 categories:
 
@@ -34,46 +34,12 @@ draft: false
 ---
 
 
-根据Github Trendings的统计，今日(2024-06-25统计)共有9个项目上榜。根据开发语言中项目的数量，汇总情况如下：
+根据Github Trendings的统计，今日(2024-06-25统计)共有10个项目上榜。根据开发语言中项目的数量，汇总情况如下：
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 4 |
-| 非开发语言项目 | 2 |
+| Python项目 | 10 |
 | TypeScript项目 | 1 |
-| Java项目 | 1 |
-| Rust项目 | 1 |
-
-## 免费编程书籍和学习资源清单
-
-* 创建周期：3762 天
-* 协议类型：Creative Commons Attribution 4.0 International
-* Star数量：309978 个
-* Fork数量：59490 次
-* 关注人数：309978 人
-* 贡献人数：432 人
-* Open Issues数量：36 个
-* Github地址：https://github.com/EbookFoundation/free-programming-books.git
-* 项目首页: https://ebookfoundation.github.io/free-programming-books/
-
-
-该项目是一个列出了多种语言中免费可用的编程书籍和学习资源的清单。它提供了一个可通过易于阅读的网站访问的可搜索数据库。
-
-## 从零开始构建你喜爱的技术
-
-* 创建周期：2156 天
-* Star数量：253338 个
-* Fork数量：24043 次
-* 关注人数：253338 人
-* 贡献人数：116 人
-* Open Issues数量：319 个
-* Github地址：https://github.com/codecrafters-io/build-your-own-x.git
-* 项目首页: https://codecrafters.io
-
-
-![](/images/codecrafters-io-build-your-own-x-0.png)
-
-这个存储库是一本精心编写的、逐步指南的汇编，可以从零开始重新创建各种技术，如3D渲染器、区块链/加密货币、游戏、操作系统、Web浏览器等。它旨在帮助用户通过理解和构建自己喜欢的技术来掌握编程。
 
 ## 系统设计指南
 
@@ -92,57 +58,52 @@ draft: false
 
 系统设计指南是一个开源项目，帮助个人学习如何设计大规模系统并为系统设计面试做准备。它还包括Anki记忆卡，以便有效学习。
 
-## Lobe Chat: 开源ChatGPT/LLMs UI/Framework
+## Home Assistant | 本地控制和隐私优先的开源家庭自动化项目
 
-* 创建周期：281 天
-* 开发语言：TypeScript
-* 协议类型：MIT License
-* Star数量：20641 个
-* Fork数量：4020 次
-* 关注人数：20641 人
-* 贡献人数：63 人
-* Open Issues数量：166 个
-* Github地址：https://github.com/lobehub/lobe-chat.git
-* 项目首页: https://chat-preview.lobehub.com
-
-
-![](/images/lobehub-lobe-chat-0.png)
-
-Lobe Chat是一个开源的、现代化设计的ChatGPT/LLMs UI/Framework，支持语音合成、多模态功能和可扩展的插件系统。它提供一键免费部署私人ChatGPT/Gemini/Ollama聊天应用。
-
-## Android开源轻量级流媒体前端
-
-* 创建周期：3158 天
-* 开发语言：Java
-* 协议类型：GNU General Public License v3.0
-* Star数量：28641 个
-* Fork数量：2896 次
-* 关注人数：28641 人
-* 贡献人数：312 人
-* Open Issues数量：1165 个
-* Github地址：https://github.com/TeamNewPipe/NewPipe.git
-* 项目首页: https://newpipe.net
+* 创建周期：3773 天
+* 开发语言：Python
+* 协议类型：Apache License 2.0
+* Star数量：65862 个
+* Fork数量：26697 次
+* 关注人数：65862 人
+* 贡献人数：402 人
+* Open Issues数量：2874 个
+* Github地址：https://github.com/home-assistant/core.git
+* 项目首页: https://www.home-assistant.io
 
 
-![](/images/teamnewpipe-newpipe-0.png)
+Home Assistant是一个开源的家庭自动化项目，它优先考虑本地控制和隐私。它由全球的爱好者和DIY爱好者社区支持，非常适合在Raspberry Pi或本地服务器上运行。
 
-一个轻量级的 Android 流媒体前端，是开源的并且免费使用。
+## 多功能桌面下载工具
 
-## uutils coreutils: Rust中的GNU coreutils跨平台重写
-
-* 创建周期：3977 天
-* 开发语言：Rust
-* 协议类型：MIT License
-* Star数量：17049 个
-* Fork数量：1226 次
-* 关注人数：17049 人
-* 贡献人数：377 人
-* Open Issues数量：387 个
-* Github地址：https://github.com/uutils/coreutils.git
-* 项目首页: https://uutils.github.io/
+* 创建周期：2403 天
+* 开发语言：Python
+* Star数量：20699 个
+* Fork数量：1935 次
+* 关注人数：20699 人
+* 贡献人数：19 人
+* Open Issues数量：3084 个
+* Github地址：https://github.com/KurtBestor/Hitomi-Downloader.git
 
 
-uutils coreutils是在Rust中对GNU coreutils进行的跨平台重新实现。虽然所有程序都已实现，但可能会缺少一些选项或出现不同的行为。
+这是一个桌面实用工具，用于从各种网站下载图片、视频、音乐和文本。它还提供额外功能，如脚本、插件和Chrome扩展。
+
+## 实时语音变声器
+
+* 创建周期：673 天
+* 开发语言：Python
+* 协议类型：Other
+* Star数量：15190 个
+* Fork数量：1629 次
+* 关注人数：15190 人
+* 贡献人数：20 人
+* Open Issues数量：213 个
+* Github地址：https://github.com/w-okada/voice-changer.git
+
+
+![](/images/w-okada-voice-changer-0.png)
+
+实时语音变声器是一个开源项目，为实时语音修改提供了VC客户端。
 
 ## SearXNG: 免费的隐私尊重型元搜索引擎
 
@@ -159,6 +120,41 @@ uutils coreutils是在Rust中对GNU coreutils进行的跨平台重新实现。�
 
 
 SearXNG是一个免费的互联网元搜索引擎，尊重用户隐私，并从各种搜索服务和数据库中聚合结果。它是一个可定制的元搜索引擎，并提供现成运行的实例。该项目还为用户、管理员和开发人员提供手册，以及AGPL许可证。SearXNG可在searx.space上获得，并提供安装指南、主页、维基和GitHub上的问题跟踪等各种资源。
+
+## RAGFlow: 基于深度文档理解的开源RAG引擎
+
+* 创建周期：115 天
+* 开发语言：Python, TypeScript
+* 协议类型：Apache License 2.0
+* Star数量：1882 个
+* Fork数量：120 次
+* 关注人数：1882 人
+* 贡献人数：10 人
+* Open Issues数量：7 个
+* Github地址：https://github.com/infiniflow/ragflow.git
+* 项目首页: https://ragflow.io
+
+
+![](/images/infiniflow-ragflow-0.png)
+
+RAGFlow是一个基于深度文档理解的开源RAG（检索增强生成）引擎。它为企业提供了简化的工作流程，整合了LLM（大型语言模型），以提供准确的问答能力，并支持来自各种复杂格式数据的充分证明。
+
+## 稳定扩散WebUI Forge
+
+* 创建周期：36 天
+* 开发语言：Python
+* 协议类型：GNU Affero General Public License v3.0
+* Star数量：1602 个
+* Fork数量：100 次
+* 关注人数：1602 人
+* 贡献人数：431 人
+* Open Issues数量：94 个
+* Github地址：https://github.com/lllyasviel/stable-diffusion-webui-forge.git
+
+
+![](/images/lllyasviel-stable-diffusion-webui-forge-0.png)
+
+稳定扩散WebUI Forge是建立在稳定扩散WebUI之上的平台，旨在简化开发、优化资源管理和加速推理。它为不同的GPU配置提供了显著的加速，并引入了Unet Patcher，可以用最少的代码实现各种方法。Forge还添加了新的采样器，并承诺保持原始WebUI界面。后端已经重新设计以处理资源管理，并删除了CMD标志的使用，建议让Forge决定如何加载模型。
 
 ## Maestro - 用Opus和Haiku智能分解和执行子代理的框架
 
@@ -192,4 +188,19 @@ Maestro是一个Python脚本，演示了使用Anthropic API进行AI辅助任务�
 DiffSynth Studio是一个开源项目，允许用户体验扩散模型的魔力。
 
 ![](/images/modelscope-diffsynth-studio-1.png)
+
+## Anthropic Python库：方便访问Anthropic REST API的途径
+
+* 创建周期：525 天
+* 开发语言：Python
+* 协议类型：MIT License
+* Star数量：1023 个
+* Fork数量：139 次
+* 关注人数：1023 人
+* 贡献人数：25 人
+* Open Issues数量：16 个
+* Github地址：https://github.com/anthropics/anthropic-sdk-python.git
+
+
+Anthropic Python库为Python 3.7+应用程序提供了方便访问Anthropic REST API的途径。它包括所有请求参数和响应字段的类型定义，并提供由httpx支持的同步和异步客户端。
 
