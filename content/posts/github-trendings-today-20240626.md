@@ -1,32 +1,32 @@
 ---
-title: Github 2024-06-26 开源项目日报 Top10
-date: 2024-06-26T07:01:09+08:00
+title: Github 2024-06-26 C开源项目日报 Top10
+date: 2024-06-26T07:10:54+08:00
 slug: github-trendings-today-20240626
 author: 老孙正经胡说
-image: /images/jwasham-coding-interview-university-0.png
+image: /images/eclipse-cyclonedds-cyclonedds-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 和
   - 人数
   - 人
+  - 开发
   - 项目
-  - 创建
+  - 和
   - 语言
+  - 创建
   - 周期
+  - 协议
+  - 类型
   - 关注
   - 贡献
   - 地址
   - 是
-  - 开发
-  - 学习
-  - 协议
-  - 类型
-  - 开源
-  - 清单
-  - 模式
-  - 编程
+  - 运行
+  - 可以
+  - 实现
+  - 进行
+  - 提供
 
 categories:
 
@@ -38,76 +38,54 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| 非开发语言项目 | 5 |
+| C项目 | 10 |
 | Python项目 | 2 |
-| C项目 | 1 |
-| C++项目 | 1 |
-| Dart项目 | 1 |
-| TypeScript项目 | 1 |
 
-## 免费编程书籍和学习资源清单
+## jq：轻量灵活的命令行JSON处理器
 
-* 创建周期：3762 天
-* 协议类型：Creative Commons Attribution 4.0 International
-* Star数量：309978 个
-* Fork数量：59490 次
-* 关注人数：309978 人
-* 贡献人数：432 人
-* Open Issues数量：36 个
-* Github地址：https://github.com/EbookFoundation/free-programming-books.git
-* 项目首页: https://ebookfoundation.github.io/free-programming-books/
-
-
-该项目是一个列出了多种语言中免费可用的编程书籍和学习资源的清单。它提供了一个可通过易于阅读的网站访问的可搜索数据库。
-
-## 编程面试大学：成为软件工程师的全面学习计划
-
-* 创建周期：2859 天
-* 协议类型：Creative Commons Attribution Share Alike 4.0 International
-* Star数量：281153 个
-* Fork数量：72155 次
-* 关注人数：281153 人
-* 贡献人数：294 人
-* Open Issues数量：56 个
-* Github地址：https://github.com/jwasham/coding-interview-university.git
-
-
-![](/images/jwasham-coding-interview-university-0.png)
-
-编程面试大学是一个全面的学习计划，旨在成为一名软件工程师，最初创建为一个简短的待办事项清单，但现在已经发展成覆盖所有必要学习主题的大清单。该计划的创建者每天学习8-12小时，持续数月，最终被亚马逊聘为软件开发工程师。该学习计划旨在为个人在各大软件公司（如亚马逊、Facebook、Google和Microsoft）的技术面试做好准备。
-
-## 从零开始构建你喜爱的技术
-
-* 创建周期：2156 天
-* Star数量：253338 个
-* Fork数量：24043 次
-* 关注人数：253338 人
-* 贡献人数：116 人
-* Open Issues数量：319 个
-* Github地址：https://github.com/codecrafters-io/build-your-own-x.git
-* 项目首页: https://codecrafters.io
-
-
-![](/images/codecrafters-io-build-your-own-x-0.png)
-
-这个存储库是一本精心编写的、逐步指南的汇编，可以从零开始重新创建各种技术，如3D渲染器、区块链/加密货币、游戏、操作系统、Web浏览器等。它旨在帮助用户通过理解和构建自己喜欢的技术来掌握编程。
-
-## 《Hello 算法》：动画图解、一键运行的数据结构与算法教程
-
-* 创建周期：476 天
+* 创建周期：4207 天
+* 开发语言：C
 * 协议类型：Other
-* Star数量：63556 个
-* Fork数量：7731 次
-* 关注人数：63556 人
-* 贡献人数：137 人
-* Open Issues数量：20 个
-* Github地址：https://github.com/krahets/hello-algo.git
-* 项目首页: https://hello-algo.com
+* Star数量：27698 个
+* Fork数量：1538 次
+* 关注人数：27698 人
+* 贡献人数：164 人
+* Open Issues数量：415 个
+* Github地址：https://github.com/jqlang/jq.git
+* 项目首页: https://jqlang.github.io/jq/
 
 
-![](/images/krahets-hello-algo-0.png)
+jq是一个轻量灵活的命令行JSON处理器，用便携式C语言编写。它类似于sed、awk、grep和其他用于JSON数据操作的命令行工具。没有运行时依赖，可以轻松地对结构化数据进行切片、过滤、映射和转换。
 
-《Hello 算法》是一本开源的、面向初学者的关于数据结构与算法的教程，采用动画图解和可运行的代码示例，支持多种编程语言。该项目旨在提供清晰易懂的内容，学习曲线平滑，引导初学者探索数据结构与算法的知识地图。鼓励读者互相学习，通常会在两天内回复问题和评论。
+## Windows工作环境改善项目
+
+* 创建周期：887 天
+* 开发语言：C
+* 协议类型：GNU General Public License v2.0
+* Star数量：18848 个
+* Fork数量：876 次
+* 关注人数：18848 人
+* 贡献人数：9 人
+* Open Issues数量：127 个
+* Github地址：https://github.com/valinet/ExplorerPatcher.git
+
+
+这个项目旨在改善Windows上的工作环境。
+
+## Llama 2 LLM 架构的全栈训练 + 推理解决方案
+
+* 创建周期：262 天
+* 开发语言：C, Python
+* 协议类型：MIT License
+* Star数量：14969 个
+* Fork数量：1640 次
+* 关注人数：14969 人
+* 贡献人数：86 人
+* Open Issues数量：143 个
+* Github地址：https://github.com/karpathy/llama2.c.git
+
+
+该项目提供了 Llama 2 LLM 的全栈训练 + 推理解决方案，注重简约和简单性。它允许在 PyTorch 中训练 Llama 2 LLM 架构，然后使用单个 700 行的 C 文件进行推理。该项目处于早期阶段，目前正在进行模型量化工作。
 
 ## Cosmopolitan Libc: 一次构建，随处运行的C库
 
@@ -124,82 +102,99 @@ draft: false
 
 Cosmopolitan Libc是一个C库，可以实现一次构建，随处运行的语言，类似于Java，但不需要解释器或虚拟机。相反，它重新配置GCC和Clang以输出符合POSIX标准的多语言格式，在Linux + Mac + Windows + FreeBSD + OpenBSD + NetBSD + BIOS上以最佳性能和最小的占用空间运行。
 
-## Ente: 开源端到端加密的照片存储平台
+## Espressif物联网开发框架
 
-* 创建周期：496 天
-* 开发语言：TypeScript, Dart
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：6019 个
-* Fork数量：385 次
-* 关注人数：6019 人
-* 贡献人数：50 人
-* Open Issues数量：97 个
-* Github地址：https://github.com/ente-io/ente.git
-* 项目首页: https://ente.io
-
-
-Ente是一个完全开源的、端到端加密的平台，为您提供了一个替代Google照片和Apple照片的选择。它提供了两个应用程序，Ente照片和Ente认证，并已经通过外部审核对其源代码和密码学进行了审核。
-
-## 软件架构、模式和原则资源清单
-
-* 创建周期：1236 天
-* 协议类型：Creative Commons Zero v1.0 Universal
-* Star数量：5023 个
-* Fork数量：437 次
-* 关注人数：5023 人
-* 贡献人数：31 人
-* Open Issues数量：10 个
-* Github地址：https://github.com/mehdihadeli/awesome-software-architecture.git
-* 项目首页: https://awesome-architecture.com
-
-
-一个精心策划的文章、视频和其他资源清单，用于学习和实践软件架构、模式和原则。该存储库将持续更新，旨在帮助个人保持信息灵通。创建者分享有价值且鼓舞人心的链接，以共同提高知识。
-
-## RTranslator: 开源实时翻译应用程序
-
-* 创建周期：1546 天
-* 开发语言：C++
+* 创建周期：2800 天
+* 开发语言：C
 * 协议类型：Apache License 2.0
-* Star数量：1217 个
-* Fork数量：120 次
-* 关注人数：1217 人
-* 贡献人数：3 人
-* Open Issues数量：9 个
-* Github地址：https://github.com/niedev/RTranslator.git
+* Star数量：12422 个
+* Fork数量：6979 次
+* 关注人数：12422 人
+* 贡献人数：293 人
+* Open Issues数量：1646 个
+* Github地址：https://github.com/espressif/esp-idf.git
 
 
-RTranslator是世界上第一个面向Android的开源实时翻译应用程序。它允许用户通过与其他安装了该应用的用户连接，以不同语言进行对话。该应用支持各种模式，如用于长时间对话的对话模式，用于短时间对话的快速模式以及用于同时翻译的对讲机模式。它使用开源AI模型进行翻译和语音识别，确保隐私和离线可用性。该应用没有广告，代码完全开源。
+Espressif物联网开发框架是Espressif SoCs的官方开发框架，支持Windows、Linux和macOS。它提供了发布支持计划、SoC兼容性信息以及使用ESP-IDF进行开发的详细信息。
 
-## Maestro - 用Opus和Haiku智能分解和执行子代理的框架
+## Janus WebRTC服务器: 开源通用服务器
 
-* 创建周期：39 天
-* 开发语言：Python
-* Star数量：867 个
-* Fork数量：118 次
-* 关注人数：867 人
-* 贡献人数：5 人
-* Open Issues数量：11 个
-* Github地址：https://github.com/Doriandarko/maestro.git
-
-
-Maestro是一个Python脚本，演示了使用Anthropic API进行AI辅助任务分解和执行工作流程。它利用了两个AI模型，Opus和Haiku，将一个目标分解成子任务，执行每个子任务，并将结果细化为一个连贯的最终输出。
-
-## DiffSynth Studio: 体验扩散模型的魔力
-
-* 创建周期：201 天
-* 开发语言：Python
-* 协议类型：Apache License 2.0
-* Star数量：1522 个
-* Fork数量：160 次
-* 关注人数：1522 人
-* 贡献人数：2 人
-* Open Issues数量：25 个
-* Github地址：https://github.com/modelscope/DiffSynth-Studio.git
+* 创建周期：3777 天
+* 开发语言：C
+* 协议类型：GNU General Public License v3.0
+* Star数量：7911 个
+* Fork数量：2445 次
+* 关注人数：7911 人
+* 贡献人数：279 人
+* Open Issues数量：29 个
+* Github地址：https://github.com/meetecho/janus-gateway.git
+* 项目首页: https://janus.conf.meetecho.com
 
 
-![](/images/modelscope-diffsynth-studio-0.png)
+Janus WebRTC服务器是由Meetecho设计的开源通用服务器。它专为Linux系统定制，但也可以在MacOS上编译和安装。它也能在Windows 10的“Windows子系统”中运行。这个版本是Janus多流版本的主要分支，同时也提供传统版本。想要进行演示、查阅文档或获取社区支持，请访问项目网站和GitHub。
 
-DiffSynth Studio是一个开源项目，允许用户体验扩散模型的魔力。
+## HAProxy：免费、快速、可靠的反向代理
 
-![](/images/modelscope-diffsynth-studio-1.png)
+* 创建周期：2256 天
+* 开发语言：C
+* 协议类型：Other
+* Star数量：4588 个
+* Fork数量：764 次
+* 关注人数：4588 人
+* 贡献人数：264 人
+* Open Issues数量：308 个
+* Github地址：https://github.com/haproxy/haproxy.git
+* 项目首页: https://git.haproxy.org/
+
+
+HAProxy是一个免费、非常快速和可靠的反向代理，为基于TCP和HTTP的应用程序提供高可用性、负载均衡和代理。
+
+## FreeSWITCH: 软件定义的电信堆栈
+
+* 创建周期：1904 天
+* 开发语言：C
+* 协议类型：Other
+* Star数量：2774 个
+* Fork数量：1259 次
+* 关注人数：2774 人
+* 贡献人数：269 人
+* Open Issues数量：858 个
+* Github地址：https://github.com/signalwire/freeswitch.git
+* 项目首页: https://freeswitch.com/#getting-started
+
+
+FreeSWITCH是一种软件定义的电信堆栈，可以实现从专有电信交换机到在任何通用硬件上运行的多功能软件实现的数字转型。它可以释放任何设备的电信潜力，从树莓派到多核服务器。结合托管的云平台SignalWire，FreeSWITCH可以与外部世界互连并实现任意规模的扩展。
+
+## ComfyUI-3D-Pack: 3D输入处理套件
+
+* 创建周期：152 天
+* 开发语言：C, Python
+* 协议类型：MIT License
+* Star数量：1590 个
+* Fork数量：158 次
+* 关注人数：1590 人
+* 贡献人数：6 人
+* Open Issues数量：83 个
+* Github地址：https://github.com/MrForExample/ComfyUI-3D-Pack.git
+
+
+ComfyUI-3D-Pack是一个广泛的节点套件，使ComfyUI能够使用尖端算法和模型处理3D输入，如Mesh和UV纹理。
+
+## Eclipse Cyclone DDS: OMG DDS规范的开源实现
+
+* 创建周期：2213 天
+* 开发语言：C
+* 协议类型：Other
+* Star数量：733 个
+* Fork数量：318 次
+* 关注人数：733 人
+* 贡献人数：81 人
+* Open Issues数量：195 个
+* Github地址：https://github.com/eclipse-cyclonedds/cyclonedds.git
+* 项目首页: https://projects.eclipse.org/projects/iot.cyclonedds
+
+
+![](/images/eclipse-cyclonedds-cyclonedds-0.png)
+
+Eclipse Cyclone DDS是OMG DDS规范的开源实现，作为Eclipse IoT项目开发。它是机器人操作系统（ROS 2）的一级中间件，并被用于各种系统，如空中交通管制、医疗系统和机器人技术。它提供了一个强大的“共享数据空间”架构，并旨在覆盖OMG规范，包括DCPS、零配置发现、发布/订阅消息、可配置的数据存储、QoS设置、DDS安全性、DDS C++ API、DDS XTypes和DDSI-RTPS。
 
