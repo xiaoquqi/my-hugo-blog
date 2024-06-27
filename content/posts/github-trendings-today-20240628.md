@@ -1,32 +1,32 @@
 ---
-title: Github 2024-06-28 开源项目日报 Top10
-date: 2024-06-28T07:00:58+08:00
+title: Github 2024-06-28 Java开源项目日报 Top9
+date: 2024-06-28T07:10:59+08:00
 slug: github-trendings-today-20240628
 author: 老孙正经胡说
-image: /images/codecrafters-io-build-your-own-x-0.png
+image: /images/krahets-hello-algo-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 和
-  - 人
   - 人数
+  - 人
+  - 和
   - 项目
-  - 开发
   - 语言
-  - 是
+  - 开发
   - 创建
   - 周期
   - 关注
   - 贡献
   - 地址
+  - 是
+  - 数据
+  - 算法
   - 协议
   - 类型
-  - 开源
   - 提供
-  - 网络安全
-  - 构建
-  - 库
+  - 中
+  - 示例
 
 categories:
 
@@ -34,172 +34,152 @@ draft: false
 ---
 
 
-根据Github Trendings的统计，今日(2024-06-28统计)共有10个项目上榜。根据开发语言中项目的数量，汇总情况如下：
+根据Github Trendings的统计，今日(2024-06-28统计)共有9个项目上榜。根据开发语言中项目的数量，汇总情况如下：
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 3 |
-| 非开发语言项目 | 3 |
-| TypeScript项目 | 2 |
-| Dart项目 | 1 |
-| PHP项目 | 1 |
-| C项目 | 1 |
+| Java项目 | 8 |
+| 非开发语言项目 | 1 |
+| HTML项目 | 1 |
 
-## 从零开始构建你喜爱的技术
+## 《Hello 算法》：动画图解、一键运行的数据结构与算法教程
 
-* 创建周期：2156 天
-* Star数量：253338 个
-* Fork数量：24043 次
-* 关注人数：253338 人
-* 贡献人数：116 人
-* Open Issues数量：319 个
-* Github地址：https://github.com/codecrafters-io/build-your-own-x.git
-* 项目首页: https://codecrafters.io
-
-
-![](/images/codecrafters-io-build-your-own-x-0.png)
-
-这个存储库是一本精心编写的、逐步指南的汇编，可以从零开始重新创建各种技术，如3D渲染器、区块链/加密货币、游戏、操作系统、Web浏览器等。它旨在帮助用户通过理解和构建自己喜欢的技术来掌握编程。
-
-## 免费课程和认证列表
-
-* 创建周期：1413 天
-* 协议类型：MIT License
-* Star数量：22797 个
-* Fork数量：1762 次
-* 关注人数：22797 人
-* 贡献人数：69 人
-* Open Issues数量：48 个
-* Github地址：https://github.com/cloudcommunity/Free-Certifications.git
-* 项目首页: https://cloudstudy.net
-
-
-这是由 Cloud Study Network 提供的免费课程和认证的精选列表，Cloud Study Network 是一个全球科技社区。列表中的顶部优惠是限时的，很快就会到期，因此建议抓紧时间利用。
-
-## 使英语普及化的开源项目
-
-* 创建周期：1767 天
-* 开发语言：TypeScript
-* Star数量：12373 个
-* Fork数量：2444 次
-* 关注人数：12373 人
-* 贡献人数：34 人
+* 创建周期：476 天
+* 协议类型：Other
+* Star数量：63556 个
+* Fork数量：7731 次
+* 关注人数：63556 人
+* 贡献人数：137 人
 * Open Issues数量：20 个
-* Github地址：https://github.com/xiaolai/everyone-can-use-english.git
+* Github地址：https://github.com/krahets/hello-algo.git
+* 项目首页: https://hello-algo.com
 
 
-一个旨在让每个人都能够使用英语的开源项目。
+![](/images/krahets-hello-algo-0.png)
 
-## Cosmopolitan Libc: 一次构建，随处运行的C库
+《Hello 算法》是一本开源的、面向初学者的关于数据结构与算法的教程，采用动画图解和可运行的代码示例，支持多种编程语言。该项目旨在提供清晰易懂的内容，学习曲线平滑，引导初学者探索数据结构与算法的知识地图。鼓励读者互相学习，通常会在两天内回复问题和评论。
 
-* 创建周期：1381 天
-* 开发语言：C
-* 协议类型：ISC License
-* Star数量：14440 个
-* Fork数量：473 次
-* 关注人数：14440 人
-* 贡献人数：70 人
-* Open Issues数量：151 个
-* Github地址：https://github.com/jart/cosmopolitan.git
+## 软件工程技术面试个人指南
 
-
-Cosmopolitan Libc是一个C库，可以实现一次构建，随处运行的语言，类似于Java，但不需要解释器或虚拟机。相反，它重新配置GCC和Clang以输出符合POSIX标准的多语言格式，在Linux + Mac + Windows + FreeBSD + OpenBSD + NetBSD + BIOS上以最佳性能和最小的占用空间运行。
-
-## Ente: 开源端到端加密的照片存储平台
-
-* 创建周期：496 天
-* 开发语言：TypeScript, Dart
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：6019 个
-* Fork数量：385 次
-* 关注人数：6019 人
-* 贡献人数：50 人
-* Open Issues数量：97 个
-* Github地址：https://github.com/ente-io/ente.git
-* 项目首页: https://ente.io
+* 创建周期：2663 天
+* 开发语言：Java
+* 协议类型：MIT License
+* Star数量：62290 个
+* Fork数量：12797 次
+* 关注人数：62290 人
+* 贡献人数：28 人
+* Open Issues数量：113 个
+* Github地址：https://github.com/kdn251/interviews.git
+* 项目首页: https://www.youtube.com/channel/UCKvwPt6BifPP54yzH99ff1g?view_as=subscriber
 
 
-Ente是一个完全开源的、端到端加密的平台，为您提供了一个替代Google照片和Apple照片的选择。它提供了两个应用程序，Ente照片和Ente认证，并已经通过外部审核对其源代码和密码学进行了审核。
+这是一个个人指南，针对软件工程技术面试，提供视频解决方案和详细解释，由Kevin Naughton Jr.维护。
 
-## Snipe-IT - 开源资产管理系统
+## Spring框架：企业级应用程序开发的基础
 
-* 创建周期：3736 天
-* 开发语言：PHP
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：9130 个
-* Fork数量：2856 次
-* 关注人数：9130 人
-* 贡献人数：253 人
-* Open Issues数量：1474 个
-* Github地址：https://github.com/snipe/snipe-it.git
-* 项目首页: https://snipeitapp.com
-
-
-![](/images/snipe-snipe-it-0.png)
-
-Snipe-IT是一个建立在Laravel 8上的免费开源IT资产和许可证管理系统。它是一个面向IT运营的基于Web的软件，用于跟踪资产、管理软件许可证和处理折旧。该项目正在积极开发，并经常发布更新，可以在Mac OSX、Linux和Windows等各种操作系统上运行，并且还提供了Docker镜像。
-
-## 软件架构、模式和原则资源清单
-
-* 创建周期：1236 天
-* 协议类型：Creative Commons Zero v1.0 Universal
-* Star数量：5023 个
-* Fork数量：437 次
-* 关注人数：5023 人
-* 贡献人数：31 人
-* Open Issues数量：10 个
-* Github地址：https://github.com/mehdihadeli/awesome-software-architecture.git
-* 项目首页: https://awesome-architecture.com
-
-
-一个精心策划的文章、视频和其他资源清单，用于学习和实践软件架构、模式和原则。该存储库将持续更新，旨在帮助个人保持信息灵通。创建者分享有价值且鼓舞人心的链接，以共同提高知识。
-
-## DiffSynth Studio: 体验扩散模型的魔力
-
-* 创建周期：201 天
-* 开发语言：Python
+* 创建周期：4860 天
+* 开发语言：Java
 * 协议类型：Apache License 2.0
-* Star数量：1522 个
-* Fork数量：160 次
-* 关注人数：1522 人
-* 贡献人数：2 人
-* Open Issues数量：25 个
-* Github地址：https://github.com/modelscope/DiffSynth-Studio.git
+* Star数量：54845 个
+* Fork数量：37378 次
+* 关注人数：54845 人
+* 贡献人数：369 人
+* Open Issues数量：296 个
+* Github地址：https://github.com/spring-projects/spring-framework.git
+* 项目首页: https://spring.io/projects/spring-framework
 
 
-![](/images/modelscope-diffsynth-studio-0.png)
+Spring框架是所有Spring项目的基础，为创建各种场景和架构的企业应用程序提供了除了Java编程语言之外所需的一切。
 
-DiffSynth Studio是一个开源项目，允许用户体验扩散模型的魔力。
+## 本地托管的PDF文件操作工具
 
-![](/images/modelscope-diffsynth-studio-1.png)
-
-## Maestro - 用Opus和Haiku智能分解和执行子代理的框架
-
-* 创建周期：39 天
-* 开发语言：Python
-* Star数量：867 个
-* Fork数量：118 次
-* 关注人数：867 人
-* 贡献人数：5 人
-* Open Issues数量：11 个
-* Github地址：https://github.com/Doriandarko/maestro.git
+* 创建周期：464 天
+* 开发语言：Java, HTML
+* 协议类型：GNU General Public License v3.0
+* Star数量：23260 个
+* Fork数量：1652 次
+* 关注人数：23260 人
+* 贡献人数：104 人
+* Open Issues数量：164 个
+* Github地址：https://github.com/Stirling-Tools/Stirling-PDF.git
 
 
-Maestro是一个Python脚本，演示了使用Anthropic API进行AI辅助任务分解和执行工作流程。它利用了两个AI模型，Opus和Haiku，将一个目标分解成子任务，执行每个子任务，并将结果细化为一个连贯的最终输出。
+![](/images/stirling-tools-stirling-pdf-0.png)
 
-## CISO助手：全面的网络安全姿态管理工具
+一个本地托管的网络应用程序，提供对PDF文件的各种操作。它是一个使用Docker的综合工具，允许进行分割、合并、转换、重新组织、添加图像、旋转和压缩PDF文件等任务。该应用程序通过不发出用于跟踪或记录的出站调用来确保隐私，并且文件在任务执行期间要么存在于客户端，要么仅暂时存在于服务器内存中。
 
-* 创建周期：281 天
-* 开发语言：Python
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：754 个
-* Fork数量：82 次
-* 关注人数：754 人
-* 贡献人数：13 人
-* Open Issues数量：76 个
-* Github地址：https://github.com/intuitem/ciso-assistant-community.git
-* 项目首页: https://intuitem.com
+## ANTLR：另一种语言识别工具
+
+* 创建周期：5258 天
+* 开发语言：Java
+* 协议类型：BSD 3-Clause "New" or "Revised" License
+* Star数量：16664 个
+* Fork数量：3227 次
+* 关注人数：16664 人
+* 贡献人数：344 人
+* Open Issues数量：945 个
+* Github地址：https://github.com/antlr/antlr4.git
+* 项目首页: http://antlr.org
 
 
-CISO助手是一款全面的治理、风险和合规（GRC）以及网络安全姿态管理工具。它支持全球46多个框架，并提供诸如将合规性与网络安全控制分离、内置标准和安全控制、风险评估和整改计划跟进、以及管理安全控制和威胁目录的功能。该工具旨在为网络安全姿态管理提供一站式服务，解决了网络安全团队在碎片化和缺乏高效工具方面所面临的挑战。它由intuitem公司开发和维护，这是一家专注于网络安全、云和数据/人工智能的法国公司。
+ANTLR（ANother Tool for Language Recognition）是一个强大的解析器生成器，用于读取、处理、执行或翻译结构化文本或二进制文件。它被广泛用于构建语言、工具和框架，从语法中生成解析器以构建解析树和监听器接口。
+
+## Java数据结构和算法+面试准备bootcamp
+
+* 创建周期：1050 天
+* 开发语言：Java
+* Star数量：15749 个
+* Fork数量：10295 次
+* 关注人数：15749 人
+* 贡献人数：122 人
+* Open Issues数量：486 个
+* Github地址：https://github.com/kunal-kushwaha/DSA-Bootcamp-Java.git
+* 项目首页: https://www.youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ
+
+
+该存储库包含WeMakeDevs的Java数据结构和算法+面试准备bootcamp的代码示例，作业和笔记。它包括讲座，课程网站和作业，解决方案可以在LeetCode上找到。
+
+## DataX: 阿里云DataWorks数据集成的开源版本
+
+* 创建周期：2290 天
+* 开发语言：Java
+* 协议类型：Other
+* Star数量：15147 个
+* Fork数量：5256 次
+* 关注人数：15147 人
+* 贡献人数：89 人
+* Open Issues数量：1225 个
+* Github地址：https://github.com/alibaba/DataX.git
+
+
+DataX是阿里云DataWorks数据集成的开源版本。它是阿里巴巴集团内广泛使用的离线数据同步工具/平台，能够高效地在MySQL、Oracle、OceanBase、SqlServer、Postgre、HDFS、Hive、ADS、HBase、TableStore(OTS)、MaxCompute(ODPS)、Hologres、DRDS、databend等各种异构数据源之间进行数据同步。商业版本的阿里云DataWorks数据集成旨在提供复杂网络环境和丰富异构数据源之间的快速稳定数据移动能力，以及复杂业务背景下的数据同步解决方案。目前，它支持50多种数据源的离线同步，包括整个数据库迁移、批量云迁移、增量同步和分片解决方案。2020年，它增加了实时同步能力，支持读写任意组合的10多种数据源。它还为多种数据源提供了一键全增量同步解决方案，如MySQL和Oracle到阿里云MaxCompute和Hologres大数据引擎。
+
+## AWS 代码示例存储库
+
+* 创建周期：2871 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：9143 个
+* Fork数量：5526 次
+* 关注人数：9143 人
+* 贡献人数：345 人
+* Open Issues数量：235 个
+* Github地址：https://github.com/awsdocs/aws-doc-sdk-examples.git
+
+
+AWS 代码示例存储库包含在 AWS 文档、AWS SDK 开发人员指南等中使用的代码示例。它演示了如何使用 AWS SDK 与 AWS 服务进行交互，许多示例都包含在 AWS 文档中。
+
+## Java基础学习路径
+
+* 创建周期：786 天
+* 开发语言：Java
+* Star数量：531 个
+* Fork数量：499 次
+* 关注人数：531 人
+* 贡献人数：1 人
+* Open Issues数量：12 个
+* Github地址：https://github.com/digitalinnovationone/trilha-java-basico.git
+
+
+Trilha Java Básico是一个开源项目，旨在为Java编程的初学者提供全面的学习路径。它涵盖了基本概念、语法和最佳实践，帮助个人在Java开发中建立坚实的基础。
 
