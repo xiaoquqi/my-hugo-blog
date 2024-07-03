@@ -1,9 +1,9 @@
 ---
-title: Github 2024-07-04 开源项目日报 Top10
-date: 2024-07-04T07:01:00+08:00
+title: Github 2024-07-04 Go开源项目日报 Top10
+date: 2024-07-04T07:11:16+08:00
 slug: github-trendings-today-20240704
 author: 老孙正经胡说
-image: /images/maybe-finance-maybe-0.png
+image: /images/slimtoolkit-slim-0.png
 tags:
   - github
   - trendings
@@ -11,22 +11,22 @@ tags:
   - 项目
   - 人数
   - 人
-  - 开发
   - 和
+  - 开发
   - 语言
+  - 协议
+  - 类型
   - 贡献
   - 创建
-  - 是
   - 周期
   - 关注
   - 地址
-  - 协议
-  - 类型
-  - 应用
-  - 设计
-  - 模板
-  - 主题
+  - 是
+  - 容器
+  - 提供
+  - 库
   - 使用
+  - 开源
 
 categories:
 
@@ -38,173 +38,169 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 3 |
-| JavaScript项目 | 3 |
-| Jupyter Notebook项目 | 2 |
-| Ruby项目 | 1 |
-| HTML项目 | 1 |
-| C++项目 | 1 |
-| Assembly项目 | 1 |
-| Rust项目 | 1 |
-| Lua项目 | 1 |
+| Go项目 | 10 |
 
-## 初学者的生成式人工智能（第2版）
+## Moby 项目 - 软件容器化的开源工具集
 
-* 创建周期：259 天
-* 开发语言：Jupyter Notebook
-* 协议类型：MIT License
-* Star数量：25764 个
-* Fork数量：16105 次
-* 关注人数：25764 人
-* 贡献人数：50 人
-* Open Issues数量：17 个
-* Github地址：https://github.com/microsoft/generative-ai-for-beginners.git
-* 项目首页: https://microsoft.github.io/generative-ai-for-beginners/
+* 创建周期：4059 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：67419 个
+* Fork数量：18497 次
+* 关注人数：67419 人
+* 贡献人数：402 人
+* Open Issues数量：3359 个
+* Github地址：https://github.com/moby/moby.git
+* 项目首页: https://mobyproject.org/
 
 
-《初学者的生成式人工智能（第2版）》是由微软云倡导者提供的一门全面的18课程，教授一切开始构建生成式人工智能应用所需的知识。
+Moby项目是Docker推出的开源项目，旨在促进和加速软件容器化。它提供了一套工具组件，用于构建定制的基于容器的系统，并为容器爱好者和专业人士提供了一个合作和创新的平台。
 
-## 30天Python编程挑战
+## restic：快速、高效和安全的备份程序
 
-* 创建周期：1616 天
-* 开发语言：Python
-* Star数量：31181 个
-* Fork数量：6392 次
-* 关注人数：31181 人
-* 贡献人数：10 人
-* Open Issues数量：156 个
-* Github地址：https://github.com/Asabeneh/30-Days-Of-Python.git
-
-
-30天的Python编程挑战是一个全面的，分步指南，旨在在30天内学习Python编程语言。它涵盖了从基本语法和数据类型到更高级概念，如网页抓取，API开发和数据库集成的各种主题。该挑战的设计灵活，允许参与者按照自己的步调前进，并提供视频等资源以支持学习过程。
-
-## SerenityOS: 面向x86-64计算机的图形化类Unix操作系统
-
-* 创建周期：1898 天
-* 开发语言：C++
+* 创建周期：3721 天
+* 开发语言：Go
 * 协议类型：BSD 2-Clause "Simplified" License
-* Star数量：27375 个
-* Fork数量：2977 次
-* 关注人数：27375 人
-* 贡献人数：427 人
-* Open Issues数量：764 个
-* Github地址：https://github.com/SerenityOS/serenity.git
-* 项目首页: https://serenityos.org
+* Star数量：24668 个
+* Fork数量：1500 次
+* 关注人数：24668 人
+* 贡献人数：366 人
+* Open Issues数量：404 个
+* Github地址：https://github.com/restic/restic.git
+* 项目首页: https://restic.net
 
 
-SerenityOS是为x86-64计算机设计的图形化类Unix操作系统。
+restic是一个快速、高效且安全的备份程序，支持Linux、macOS、Windows等主要操作系统，以及FreeBSD、OpenBSD等少数较小的操作系统。
 
-## 易采集：可视化无代码爬虫
+## Slim: 最小化容器镜像并提高安全性的开源项目
 
-* 创建周期：1383 天
-* 开发语言：JavaScript, Python
-* 协议类型：Other
-* Star数量：22289 个
-* Fork数量：2559 次
-* 关注人数：22289 人
-* 贡献人数：6 人
-* Open Issues数量：14 个
-* Github地址：https://github.com/NaiboWang/EasySpider.git
-* 项目首页: https://www.easyspider.net
-
-
-一个可视化浏览器自动化测试/数据采集/爬虫软件，可以使用图形化界面，无代码可视化的设计和执行任务。只需要在网页上选择自己想要操作的内容并根据提示框操作即可完成任务的设计和执行。同时软件还可以单独以命令行的方式进行执行，从而可以很方便的嵌入到其他系统中。
-
-## 开源个人理财应用
-
-* 创建周期：21 天
-* 开发语言：TypeScript
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：12632 个
-* Fork数量：885 次
-* 关注人数：12632 人
-* 贡献人数：21 人
-* Open Issues数量：34 个
-* Github地址：https://github.com/maybe-finance/maybe.git
-* 项目首页: https://maybe.co
-
-
-![](/images/maybe-finance-maybe-0.png)
-
-这是一个开源的个人理财应用，旨在进行个人理财管理和财富管理。
-
-## whatsapp-web.js: 通过WhatsApp Web浏览器应用连接的NodeJS客户端库
-
-* 创建周期：1877 天
-* 开发语言：JavaScript
+* 创建周期：3221 天
+* 开发语言：Go
 * 协议类型：Apache License 2.0
-* Star数量：13369 个
-* Fork数量：3208 次
-* 关注人数：13369 人
-* 贡献人数：85 人
-* Open Issues数量：118 个
-* Github地址：https://github.com/pedroslopez/whatsapp-web.js.git
-* 项目首页: https://wwebjs.dev
+* Star数量：18789 个
+* Fork数量：700 次
+* 关注人数：18789 人
+* 贡献人数：65 人
+* Open Issues数量：178 个
+* Github地址：https://github.com/slimtoolkit/slim.git
 
 
-whatsapp-web.js是一个用于NodeJS的开源WhatsApp客户端库，通过WhatsApp Web浏览器应用进行连接。它使用Puppeteer运行WhatsApp Web的真实实例，以避免被阻止，但重要的是要注意，使用非官方客户端仍可能面临被WhatsApp阻止的风险。
+![](/images/slimtoolkit-slim-0.png)
 
-## nuclei 引擎安全漏洞模板集合
+Slim 是一个旨在将容器镜像最小化多达 30 倍的开源项目，使其更加安全。它现在是一个 CNCF 沙盒项目，并得到了许多贡献者的改进。该项目得到了 Slim.AI 的支持。
 
-* 创建周期：1551 天
-* 开发语言：JavaScript
+![](/images/slimtoolkit-slim-1.png)
+
+## 基于 Go 1.18+ 泛型的 Lodash 风格的 Go 库
+
+* 创建周期：855 天
+* 开发语言：Go
 * 协议类型：MIT License
-* Star数量：8451 个
-* Fork数量：2411 次
-* 关注人数：8451 人
-* 贡献人数：363 人
-* Open Issues数量：106 个
-* Github地址：https://github.com/projectdiscovery/nuclei-templates.git
-* 项目首页: https://github.com/projectdiscovery/nuclei
+* Star数量：15943 个
+* Fork数量：721 次
+* 关注人数：15943 人
+* 贡献人数：100 人
+* Open Issues数量：196 个
+* Github地址：https://github.com/samber/lo.git
+* 项目首页: https://pkg.go.dev/github.com/samber/lo
 
 
-该项目是一个社区策划的模板集合，用于 nuclei 引擎发现安全漏洞。这些模板是 nuclei 扫描器的核心，驱动着实际的扫描引擎。该存储库包含了团队和社区贡献的各种扫描器模板。鼓励通过 pull requests 或 Github 问题贡献模板，以扩展列表。
+基于 Go 1.18+ 泛型的 Lodash 风格的 Go 库，提供了诸如 map、filter、contains 和 find 等函数，用于对切片、映射和通道进行迭代。该项目起源于对 Go 1.18 中新泛型实现的实验，旨在提供一种类型安全的替代方案，以取代使用反射的现有包如 'go-funk'。基准测试表明，基于泛型的实现比使用反射的实现快得多，并且与纯 for 循环相当。未来该库的发展包括与即将加入 Go 标准库的帮助函数重叠，这将使其成为一个具有许多抽象的有价值且合法的库。该项目命名为 'samber/lo'，以类似于 'Lodash' 的方式来区分它与现有的 Go 包。
 
-## GS Quant: 量化金融的Python工具包
+## Node Exporter - Prometheus硬件和操作系统指标的出口程序
 
-* 创建周期：2009 天
-* 开发语言：Jupyter Notebook, Python
+* 创建周期：4053 天
+* 开发语言：Go
 * 协议类型：Apache License 2.0
-* Star数量：2954 个
-* Fork数量：515 次
-* 关注人数：2954 人
+* Star数量：10412 个
+* Fork数量：2270 次
+* 关注人数：10412 人
+* 贡献人数：378 人
+* Open Issues数量：212 个
+* Github地址：https://github.com/prometheus/node_exporter.git
+* 项目首页: https://prometheus.io/
+
+
+Node exporter是一个Prometheus的出口程序，用于* NIX内核暴露的硬件和操作系统指标，使用Go编写，具有可插拔的度量收集器。它还建议Windows用户使用Windows出口程序，并使用prometheus-dcgm来暴露NVIDIA GPU指标。
+
+## Terragrunt: 用于扩展基础架构即代码的灵活编排工具
+
+* 创建周期：2964 天
+* 开发语言：Go
+* 协议类型：MIT License
+* Star数量：7773 个
+* Fork数量：959 次
+* 关注人数：7773 人
+* 贡献人数：237 人
+* Open Issues数量：717 个
+* Github地址：https://github.com/gruntwork-io/terragrunt.git
+* 项目首页: https://terragrunt.gruntwork.io/
+
+
+Terragrunt是一种灵活的编排工具，允许使用OpenTofu/Terraform编写的基础架构即代码进行扩展。
+
+## Chainlink: 去中心化的预言机网络
+
+* 创建周期：2271 天
+* 开发语言：Go
+* 协议类型：MIT License
+* Star数量：5935 个
+* Fork数量：1569 次
+* 关注人数：5935 人
+* 贡献人数：192 人
+* Open Issues数量：197 个
+* Github地址：https://github.com/smartcontractkit/chainlink.git
+* 项目首页: https://chain.link
+
+
+Chainlink 是一个去中心化的预言机网络，通过使智能合约能够访问现实世界的数据和链下计算，同时保持区块链技术固有的安全性和可靠性，扩展了智能合约的能力。该存储库包含了Chainlink核心节点和合约，可以从Chainlink dockerhub 下载预构建的docker镜像。它还提供了贡献指南、问题报告、官方文档以及Solidity开发者的资源。
+
+## Karpenter: Kubernetes节点自动缩放器
+
+* 创建周期：1288 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：5451 个
+* Fork数量：725 次
+* 关注人数：5451 人
+* 贡献人数：256 人
+* Open Issues数量：224 个
+* Github地址：https://github.com/aws/karpenter-provider-aws.git
+* 项目首页: https://karpenter.sh
+
+
+Karpenter 是一个开源的 Kubernetes 节点自动缩放器，旨在通过根据工作负载要求进行节点的预配和移除，从而提高效率和降低成本。
+
+## Doggo: 用Golang编写的现代命令行DNS客户端
+
+* 创建周期：1303 天
+* 开发语言：Go
+* 协议类型：GNU General Public License v3.0
+* Star数量：2216 个
+* Fork数量：84 次
+* 关注人数：2216 人
 * 贡献人数：21 人
-* Open Issues数量：32 个
-* Github地址：https://github.com/goldmansachs/gs-quant.git
-* 项目首页: https://developer.gs.com/discover/products/gs-quant/
+* Open Issues数量：15 个
+* Github地址：https://github.com/mr-karan/doggo.git
+* 项目首页: https://doggo.mrkaran.dev/
 
 
-GS Quant是一个用于量化金融的Python工具包，旨在加速交易策略和风险管理解决方案的开发。它由高盛的量化开发人员创建和维护，利用了超过25年的全球市场经验。
+Doggo是一个用Golang编写的现代命令行DNS客户端，灵感来自基于Rust的'dig'工具。它支持DoH、DoT、DoQ和DNSCrypt等协议，并提供整洁简明的输出。
 
-## Tokyo Night Neovim 主题
+## NVIDIA GPU Operator：自动化管理Kubernetes中的NVIDIA软件组件
 
-* 创建周期：1132 天
-* 开发语言：Lua
+* 创建周期：1955 天
+* 开发语言：Go
 * 协议类型：Apache License 2.0
-* Star数量：5411 个
-* Fork数量：355 次
-* 关注人数：5411 人
-* 贡献人数：87 人
-* Open Issues数量：54 个
-* Github地址：https://github.com/folke/tokyonight.nvim.git
+* Star数量：1581 个
+* Fork数量：271 次
+* 关注人数：1581 人
+* 贡献人数：43 人
+* Open Issues数量：259 个
+* Github地址：https://github.com/NVIDIA/gpu-operator.git
 
 
-![](/images/folke-tokyonight.nvim-0.png)
+![](/images/nvidia-gpu-operator-0.png)
 
-Tokyo Night 是一个使用 Lua 编写的清新、深色的 Neovim 主题，支持 lsp、treesitter 和许多插件。还包括适用于 Kitty、Alacritty、iTerm 和 Fish 的额外主题。
-
-## BLAKE3: 一种快速且安全的密码哈希函数
-
-* 创建周期：1698 天
-* 开发语言：Assembly, Rust
-* 协议类型：Apache License 2.0
-* Star数量：4754 个
-* Fork数量：320 次
-* 关注人数：4754 人
-* 贡献人数：52 人
-* Open Issues数量：141 个
-* Github地址：https://github.com/BLAKE3-team/BLAKE3.git
-
-
-BLAKE3是一种密码哈希函数，比其他流行的哈希函数快得多且更安全。它高度可并行化，能够进行验证流式处理和增量更新，并且可用作PRF、MAC、KDF和XOF。实现包括Rust和C的优化版本，以及一个参考实现。BLAKE3由@oconnor663、@sneves、@veorq和@zookozcash设计，并由Electric Coin Company赞助。
+NVIDIA GPU Operator自动化管理Kubernetes中的NVIDIA软件组件，以提供GPU，包括驱动程序、设备插件、容器运行时、节点标记、监控等。
 
