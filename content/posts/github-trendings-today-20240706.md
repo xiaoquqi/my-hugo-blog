@@ -1,32 +1,32 @@
 ---
-title: Github 2024-07-06 开源项目日报 Top10
-date: 2024-07-06T07:01:03+08:00
+title: Github 2024-07-06 Rust开源项目日报 Top10
+date: 2024-07-06T07:11:09+08:00
 slug: github-trendings-today-20240706
 author: 老孙正经胡说
-image: /images/supabase-supabase-0.png
+image: /images/slint-ui-slint-0.png
 tags:
   - github
   - trendings
   - 数量
+  - 人
   - 项目
   - 人数
-  - 人
-  - 和
-  - 语言
   - 开发
+  - 语言
+  - 是
   - 贡献
+  - 和
   - 创建
   - 周期
   - 协议
   - 类型
   - 关注
   - 地址
-  - 中
-  - 是
+  - 编写
+  - 并
+  - 引擎
   - 开源
-  - 提供
-  - 可
-  - 模型
+  - 中
 
 categories:
 
@@ -38,149 +38,157 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 3 |
-| TypeScript项目 | 2 |
-| Rust项目 | 2 |
-| 非开发语言项目 | 1 |
-| C++项目 | 1 |
-| QML项目 | 1 |
-| MDX项目 | 1 |
-| JavaScript项目 | 1 |
-| Assembly项目 | 1 |
+| Rust项目 | 10 |
+| CUE项目 | 1 |
+| HTML项目 | 1 |
 
-## 免费编程书籍和学习资源清单
+## Rustlings: 小练习帮助您熟悉Rust代码
 
-* 创建周期：3762 天
-* 协议类型：Creative Commons Attribution 4.0 International
-* Star数量：309978 个
-* Fork数量：59490 次
-* 关注人数：309978 人
-* 贡献人数：432 人
-* Open Issues数量：36 个
-* Github地址：https://github.com/EbookFoundation/free-programming-books.git
-* 项目首页: https://ebookfoundation.github.io/free-programming-books/
+* 创建周期：3217 天
+* 开发语言：Rust
+* 协议类型：MIT License
+* Star数量：51103 个
+* Fork数量：9861 次
+* 关注人数：51103 人
+* 贡献人数：396 人
+* Open Issues数量：63 个
+* Github地址：https://github.com/rust-lang/rustlings.git
+* 项目首页: https://rustlings.cool
 
 
-该项目是一个列出了多种语言中免费可用的编程书籍和学习资源的清单。它提供了一个可通过易于阅读的网站访问的可搜索数据库。
+Rustlings是一个项目，其中包含一些小练习，帮助用户熟悉阅读和编写Rust代码，包括理解和响应编译器消息。建议在阅读官方Rust书籍的同时进行这些练习，并使用Rust By Example进行额外练习。
 
-## 开发者职业成长指南
+## Zed: 由Atom和Tree-sitter的创建者开发的高性能多人代码编辑器
 
-* 创建周期：2670 天
-* 开发语言：TypeScript
+* 创建周期：1071 天
+* 开发语言：Rust
 * 协议类型：Other
-* Star数量：281461 个
-* Fork数量：37547 次
-* 关注人数：281461 人
-* 贡献人数：470 人
-* Open Issues数量：21 个
-* Github地址：https://github.com/kamranahmedse/developer-roadmap.git
-* 项目首页: https://roadmap.sh
+* Star数量：9436 个
+* Fork数量：261 次
+* 关注人数：9436 人
+* 贡献人数：42 人
+* Open Issues数量：1185 个
+* Github地址：https://github.com/zed-industries/zed.git
+* 项目首页: https://zed.dev
 
 
-这个开源项目提供互动式路线图、指南和教育内容，帮助开发人员在职业生涯中取得进步。它包括了各种不同专业领域的路线图、最佳实践以及用于测试和提升知识的问题。
+Zed是由Atom和Tree-sitter的创建者开发的高性能多人代码编辑器。
 
-## Supabase: 企业级开源Firebase替代方案
+## Rust实现的非官方Bitwarden兼容服务器
 
-* 创建周期：1729 天
-* 开发语言：TypeScript, MDX
+* 创建周期：2317 天
+* 开发语言：Rust
+* 协议类型：GNU Affero General Public License v3.0
+* Star数量：34391 个
+* Fork数量：1671 次
+* 关注人数：34391 人
+* 贡献人数：137 人
+* Open Issues数量：32 个
+* Github地址：https://github.com/dani-garcia/vaultwarden.git
+
+
+这是一个用Rust编写的非官方Bitwarden兼容服务器，以前被称为bitwarden_rs。这是Bitwarden服务器API的另一种实现，用Rust编写，并与上游Bitwarden客户端兼容。非常适合自托管部署，其中运行官方资源密集型服务可能不是理想的选择。该项目已更名，以避免与官方Bitwarden服务器混淆，并避免商标/品牌问题。该项目与Bitwarden项目或Bitwarden, Inc.无关。
+
+## Bevy: 一个清新简洁的基于数据驱动的游戏引擎
+
+* 创建周期：1631 天
+* 开发语言：Rust
 * 协议类型：Apache License 2.0
-* Star数量：68551 个
-* Fork数量：6488 次
-* 关注人数：68551 人
-* 贡献人数：389 人
-* Open Issues数量：424 个
-* Github地址：https://github.com/supabase/supabase.git
-* 项目首页: https://supabase.com
+* Star数量：33548 个
+* Fork数量：3262 次
+* 关注人数：33548 人
+* 贡献人数：436 人
+* Open Issues数量：2186 个
+* Github地址：https://github.com/bevyengine/bevy.git
+* 项目首页: https://bevyengine.org
 
 
-![](/images/supabase-supabase-0.png)
+Bevy 是一个清新简洁的基于数据驱动的游戏引擎，采用 Rust 构建。它永远免费且开源！
 
-Supabase是一个开源的Firebase替代品，旨在利用企业级开源工具复制Firebase的功能。它提供托管的Postgres数据库、身份验证和授权、自动生成的API、实时订阅、函数、文件存储、AI工具包和仪表板。
+## Servo：Rust编写的并行浏览器引擎项目
 
-![](/images/supabase-supabase-1.png)
-
-## GPT4All: 在边缘运行开源大型语言模型
-
-* 创建周期：395 天
-* 开发语言：C++
-* 协议类型：MIT License
-* Star数量：64201 个
-* Fork数量：7058 次
-* 关注人数：64201 人
-* 贡献人数：96 人
-* Open Issues数量：400 个
-* Github地址：https://github.com/nomic-ai/gpt4all.git
-* 项目首页: https://gpt4all.io
+* 创建周期：4532 天
+* 开发语言：Rust, HTML
+* 协议类型：Mozilla Public License 2.0
+* Star数量：26661 个
+* Fork数量：2934 次
+* 关注人数：26661 人
+* 贡献人数：409 人
+* Open Issues数量：3210 个
+* Github地址：https://github.com/servo/servo.git
+* 项目首页: https://servo.org
 
 
-![](/images/nomic-ai-gpt4all-0.png)
+Servo是一个嵌入式、独立、内存安全、模块化和并行的用Rust语言编写的网页渲染引擎。目前正在64位macOS、64位Linux、64位Windows和Android上进行开发，并欢迎社区贡献。
 
-GPT4All是一个开源生态系统，可以在消费级CPU和任何GPU上本地运行强大而定制的大型语言模型。它需要CPU支持AVX或AVX2指令，并提供3GB - 8GB的模型文件，可下载并集成到GPT4All软件中。Nomic AI支持和维护这个生态系统，确保质量和安全，并致力于为个人和企业提供便利的在边缘部署大型语言模型的训练和部署。
+## Vector：高性能可观察性数据管道
 
-## nuclei 引擎安全漏洞模板集合
-
-* 创建周期：1551 天
-* 开发语言：JavaScript
-* 协议类型：MIT License
-* Star数量：8451 个
-* Fork数量：2411 次
-* 关注人数：8451 人
-* 贡献人数：363 人
-* Open Issues数量：106 个
-* Github地址：https://github.com/projectdiscovery/nuclei-templates.git
-* 项目首页: https://github.com/projectdiscovery/nuclei
+* 创建周期：2021 天
+* 开发语言：Rust, CUE
+* 协议类型：Mozilla Public License 2.0
+* Star数量：15723 个
+* Fork数量：1341 次
+* 关注人数：15723 人
+* 贡献人数：369 人
+* Open Issues数量：1741 个
+* Github地址：https://github.com/vectordotdev/vector.git
+* 项目首页: https://vector.dev
 
 
-该项目是一个社区策划的模板集合，用于 nuclei 引擎发现安全漏洞。这些模板是 nuclei 扫描器的核心，驱动着实际的扫描引擎。该存储库包含了团队和社区贡献的各种扫描器模板。鼓励通过 pull requests 或 Github 问题贡献模板，以扩展列表。
+Vector是一个开源的高性能可观察性数据管道，允许用户收集、转换和路由日志和指标到任何供应商。它实现了成本降低、数据丰富化和数据安全，并且比空间中其他替代方案快高达10倍。
 
-## GraphRAG：模块化的基于图的检索增强生成系统
+## Slint：构建原生用户界面的声明式GUI工具包
 
-* 创建周期：100 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：3690 个
-* Fork数量：248 次
-* 关注人数：3690 人
-* 贡献人数：4 人
-* Open Issues数量：38 个
-* Github地址：https://github.com/microsoft/graphrag.git
-* 项目首页: https://microsoft.github.io/graphrag/
+* 创建周期：1370 天
+* 开发语言：Rust
+* 协议类型：Other
+* Star数量：12727 个
+* Fork数量：412 次
+* 关注人数：12727 人
+* 贡献人数：101 人
+* Open Issues数量：427 个
+* Github地址：https://github.com/slint-ui/slint.git
+* 项目首页: https://slint.dev
 
 
-GraphRAG是一个模块化的基于图的检索增强生成（RAG）系统。它提供了GraphRAG加速器解决方案，并在微软研究博客文章中进行了介绍。用户可以在GraphRAG Arxiv上访问相关的文档和研究论文。
+![](/images/slint-ui-slint-0.png)
 
-## BLAKE3: 一种快速且安全的密码哈希函数
+Slint是一个声明式的GUI工具包，用于在Rust、C++或JavaScript中构建原生用户界面，重点是可扩展性、轻量级资源使用、直观的设计工具和本地用户体验。它邀请用户加入其社区，并探索使用Slint构建的项目。
 
-* 创建周期：1698 天
-* 开发语言：Assembly, Rust
+## 现代端口扫描器
+
+* 创建周期：1456 天
+* 开发语言：Rust
+* 协议类型：GNU General Public License v3.0
+* Star数量：13237 个
+* Fork数量：878 次
+* 关注人数：13237 人
+* 贡献人数：59 人
+* Open Issues数量：25 个
+* Github地址：https://github.com/RustScan/RustScan.git
+
+
+![](/images/rustscan-rustscan-0.png)
+
+现代端口扫描器是一个开源工具，允许用户快速找到端口，并通过支持Python、Lua和Shell的脚本引擎运行脚本。它具有在3秒内扫描所有65k端口的能力，完整的脚本引擎支持，自适应学习以及对IPv6、CIDR、文件输入等的支持。
+
+![](/images/rustscan-rustscan-1.png)
+
+## Hyperswitch：用Rust编写的开源支付交换机
+
+* 创建周期：516 天
+* 开发语言：Rust
 * 协议类型：Apache License 2.0
-* Star数量：4754 个
-* Fork数量：320 次
-* 关注人数：4754 人
-* 贡献人数：52 人
-* Open Issues数量：141 个
-* Github地址：https://github.com/BLAKE3-team/BLAKE3.git
+* Star数量：9315 个
+* Fork数量：741 次
+* 关注人数：9315 人
+* 贡献人数：149 人
+* Open Issues数量：444 个
+* Github地址：https://github.com/juspay/hyperswitch.git
+* 项目首页: https://hyperswitch.io/
 
 
-BLAKE3是一种密码哈希函数，比其他流行的哈希函数快得多且更安全。它高度可并行化，能够进行验证流式处理和增量更新，并且可用作PRF、MAC、KDF和XOF。实现包括Rust和C的优化版本，以及一个参考实现。BLAKE3由@oconnor663、@sneves、@veorq和@zookozcash设计，并由Electric Coin Company赞助。
-
-## Fish Speech: 新的开源 TTS 解决方案
-
-* 创建周期：219 天
-* 开发语言：Python
-* 协议类型：BSD 3-Clause "New" or "Revised" License
-* Star数量：1525 个
-* Fork数量：125 次
-* 关注人数：1525 人
-* 贡献人数：14 人
-* Open Issues数量：41 个
-* Github地址：https://github.com/fishaudio/fish-speech.git
-* 项目首页: https://speech.fish.audio
-
-
-![](/images/fishaudio-fish-speech-0.png)
-
-Fish Speech 是一个新的开源 TTS 解决方案，根据 BSD-3-Clause 许可证发布，所有模型都根据 CC-BY-NC-SA-4.0 许可证发布。
+Hyperswitch是一个用Rust编写的开源支付交换机，旨在使支付快速、可靠且价格实惠。它旨在减少对单一处理器（如Stripe或Braintree）的依赖，减少开发工作量，提高成功率，降低处理费用，定制支付流程，并通过本地/备用支付方式扩大业务范围。
 
 ## Spotify Player: 在终端中的完整功能音乐播放器
 
@@ -196,20 +204,4 @@ Fish Speech 是一个新的开源 TTS 解决方案，根据 BSD-3-Clause 许可�
 
 
 Spotify Player是一个开源项目，允许用户在终端中以完全功能相同的方式访问Spotify。
-
-## Azure中的GraphRAG解决方案加速器
-
-* 创建周期：100 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：325 个
-* Fork数量：44 次
-* 关注人数：325 人
-* 贡献人数：6 人
-* Open Issues数量：5 个
-* Github地址：https://github.com/Azure-Samples/graphrag-accelerator.git
-* 项目首页: https://github.com/microsoft/graphrag
-
-
-GraphRAG解决方案加速器允许在Azure中一键部署由知识图驱动的RAG（GraphRAG）。它利用graphrag python包在Azure上公开API端点，从而实现索引管道和知识图的查询。
 
