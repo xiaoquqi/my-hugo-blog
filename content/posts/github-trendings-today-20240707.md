@@ -1,9 +1,9 @@
 ---
-title: Github 2024-07-07 开源项目日报 Top10
-date: 2024-07-07T07:01:06+08:00
+title: Github 2024-07-07 php开源项目日报 Top9
+date: 2024-07-07T07:11:12+08:00
 slug: github-trendings-today-20240707
 author: 老孙正经胡说
-image: /images/jackfrued-python-100-days-0.png
+image: /images/laravel-laravel-0.png
 tags:
   - github
   - trendings
@@ -11,22 +11,22 @@ tags:
   - 项目
   - 人数
   - 人
+  - 和
   - 开发
   - 语言
-  - 地址
+  - 类型
+  - 是
+  - 提供
   - 创建
   - 周期
   - 关注
   - 贡献
+  - 地址
   - 协议
-  - 类型
-  - 是
-  - 游戏
-  - 和
   - 开源
-  - 免费
-  - 中
-  - 提供
+  - 使用
+  - 管理
+  - 且
 
 categories:
 
@@ -34,175 +34,164 @@ draft: false
 ---
 
 
-根据Github Trendings的统计，今日(2024-07-07统计)共有10个项目上榜。根据开发语言中项目的数量，汇总情况如下：
+根据Github Trendings的统计，今日(2024-07-07统计)共有9个项目上榜。根据开发语言中项目的数量，汇总情况如下：
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 4 |
-| Rust项目 | 2 |
-| C项目 | 2 |
-| C++项目 | 1 |
+| PHP项目 | 9 |
+| Blade项目 | 2 |
 | JavaScript项目 | 1 |
-| HTML项目 | 1 |
-| Jupyter Notebook项目 | 1 |
-| 非开发语言项目 | 1 |
 
-## 免费编程书籍和学习资源清单
+## Laravel：表达力和优雅的 Web 应用程序框架
 
-* 创建周期：3762 天
-* 协议类型：Creative Commons Attribution 4.0 International
-* Star数量：309978 个
-* Fork数量：59490 次
-* 关注人数：309978 人
-* 贡献人数：432 人
-* Open Issues数量：36 个
-* Github地址：https://github.com/EbookFoundation/free-programming-books.git
-* 项目首页: https://ebookfoundation.github.io/free-programming-books/
+* 创建周期：4631 天
+* 开发语言：PHP, Blade
+* Star数量：75969 个
+* Fork数量：24281 次
+* 关注人数：75969 人
+* 贡献人数：399 人
+* Open Issues数量：32 个
+* Github地址：https://github.com/laravel/laravel.git
+* 项目首页: https://laravel.com
 
 
-该项目是一个列出了多种语言中免费可用的编程书籍和学习资源的清单。它提供了一个可通过易于阅读的网站访问的可搜索数据库。
+![](/images/laravel-laravel-0.png)
 
-## 免费API集合
+Laravel 是一个以其表达力和优雅的语法而闻名的 Web 应用程序框架。它旨在通过简化常见的 Web 开发任务（如路由、依赖注入、数据库管理和后台作业处理）来提供愉快且富有创造力的开发体验。
 
-* 创建周期：2900 天
-* 开发语言：Python
+## SecLists - 安全测试人员的伴侣
+
+* 创建周期：4375 天
+* 开发语言：PHP
 * 协议类型：MIT License
-* Star数量：280943 个
-* Fork数量：30691 次
-* 关注人数：280943 人
-* 贡献人数：428 人
-* Open Issues数量：243 个
-* Github地址：https://github.com/public-apis/public-apis.git
-* 项目首页: http://public-apis.org
-
-
-这个开源项目是一个集体的免费API列表，涵盖了许多类别，如动物、动漫、反恶意软件、艺术与设计、认证与授权、区块链、书籍、商业等。它提供了各种用途的可用免费API的全面索引。
-
-## Python - 100天从新手到大师
-
-* 创建周期：2234 天
-* 开发语言：Python, HTML, Jupyter Notebook
-* Star数量：149435 个
-* Fork数量：51212 次
-* 关注人数：149435 人
-* 贡献人数：12 人
-* Open Issues数量：712 个
-* Github地址：https://github.com/jackfrued/Python-100-Days.git
-
-
-![](/images/jackfrued-python-100-days-0.png)
-
-Python-100天从新手到大师是作者骆昊的一个项目。收到反馈称基础部分（前15天的内容）对新手来说比较困难，因此建议提供配套视频进行讲解。最近，作者重新制作了基础部分的内容，名为'Python-Core-50-Courses'。
-
-## Bevy: 一个清新简洁的基于数据驱动的游戏引擎
-
-* 创建周期：1631 天
-* 开发语言：Rust
-* 协议类型：Apache License 2.0
-* Star数量：33548 个
-* Fork数量：3262 次
-* 关注人数：33548 人
-* 贡献人数：436 人
-* Open Issues数量：2186 个
-* Github地址：https://github.com/bevyengine/bevy.git
-* 项目首页: https://bevyengine.org
-
-
-Bevy 是一个清新简洁的基于数据驱动的游戏引擎，采用 Rust 构建。它永远免费且开源！
-
-## GraphRAG：模块化的基于图的检索增强生成系统
-
-* 创建周期：100 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：3690 个
-* Fork数量：248 次
-* 关注人数：3690 人
-* 贡献人数：4 人
-* Open Issues数量：38 个
-* Github地址：https://github.com/microsoft/graphrag.git
-* 项目首页: https://microsoft.github.io/graphrag/
-
-
-GraphRAG是一个模块化的基于图的检索增强生成（RAG）系统。它提供了GraphRAG加速器解决方案，并在微软研究博客文章中进行了介绍。用户可以在GraphRAG Arxiv上访问相关的文档和研究论文。
-
-## Fish Speech: 新的开源 TTS 解决方案
-
-* 创建周期：219 天
-* 开发语言：Python
-* 协议类型：BSD 3-Clause "New" or "Revised" License
-* Star数量：1525 个
-* Fork数量：125 次
-* 关注人数：1525 人
-* 贡献人数：14 人
+* Star数量：52010 个
+* Fork数量：23569 次
+* 关注人数：52010 人
+* 贡献人数：249 人
 * Open Issues数量：41 个
-* Github地址：https://github.com/fishaudio/fish-speech.git
-* 项目首页: https://speech.fish.audio
+* Github地址：https://github.com/danielmiessler/SecLists.git
+* 项目首页: https://www.owasp.org/index.php/OWASP_Internet_of_Things_Project
 
 
-![](/images/fishaudio-fish-speech-0.png)
+SecLists是安全测试人员的伴侣。它是一个收集了多种类型的列表，用于安全评估，在一个地方进行收集。列表类型包括用户名、密码、URL、敏感数据模式、模糊测试负载、Web shell等等。其目标是使安全测试人员能够将此存储库拉到新的测试环境，并访问可能需要的每种类型的列表。
 
-Fish Speech 是一个新的开源 TTS 解决方案，根据 BSD-3-Clause 许可证发布，所有模型都根据 CC-BY-NC-SA-4.0 许可证发布。
+## Coolify: 开源自助云平台
 
-## Suhail-Md: WhatsApp 激动人心的伙伴
-
-* 创建周期：471 天
-* 开发语言：JavaScript
-* 协议类型：GNU General Public License v3.0
-* Star数量：3774 个
-* Fork数量：13697 次
-* 关注人数：3774 人
-* 贡献人数：4 人
-* Open Issues数量：242 个
-* Github地址：https://github.com/SuhailTechInfo/Suhail-Md.git
-* 项目首页: https://youtube.com/SuhailTechInfo
-
-
-Suhail-Md是一款全能的WhatsApp激动人心的伙伴，通过各种机器人游戏，如四子连线，井字游戏，猜数字游戏，词链游戏，隐藏卡游戏，掷骰子，猜字符游戏和找城市的首都，为您的聊天带来了无尽的快乐。
-
-## 谷歌安全研究与披露项目
-
-* 创建周期：1483 天
-* 开发语言：C
+* 创建周期：1112 天
+* 开发语言：PHP, Blade
 * 协议类型：Apache License 2.0
-* Star数量：3083 个
-* Fork数量：385 次
-* 关注人数：3083 人
-* 贡献人数：38 人
-* Open Issues数量：10 个
-* Github地址：https://github.com/google/security-research.git
-* 项目首页: https://www.google.com/about/appsecurity/
+* Star数量：10527 个
+* Fork数量：567 次
+* 关注人数：10527 人
+* 贡献人数：80 人
+* Open Issues数量：59 个
+* Github地址：https://github.com/coollabsio/coolify.git
+* 项目首页: https://coolify.io
 
 
-该项目托管了与谷歌研究影响非谷歌拥有代码的漏洞相关的安全公告和概念验证。谷歌遵循90天的披露期限，并在此期限后或供应商发布修复程序时更早向防御社区分享漏洞细节。
+![](/images/coollabsio-coolify-0.png)
 
-## Spotify Player: 在终端中的完整功能音乐播放器
+Coolify是一个开源且可自行托管的替代品，可替代Heroku、Netlify和Vercel等云平台。它可以帮助用户通过SSH连接在自己的硬件上管理服务器、应用程序和数据库，包括VPS、裸金属和树莓派。该平台旨在在使用个人服务器时提供云的便利性，确保没有供应商锁定，并使用户即使停止使用Coolify也能保留对其资源的控制。
 
-* 创建周期：1094 天
-* 开发语言：Rust
+## Filament: 加速Laravel开发的完美起点
+
+* 创建周期：1410 天
+* 开发语言：PHP
 * 协议类型：MIT License
-* Star数量：2464 个
-* Fork数量：99 次
-* 关注人数：2464 人
-* 贡献人数：49 人
-* Open Issues数量：53 个
-* Github地址：https://github.com/aome510/spotify-player.git
+* Star数量：12228 个
+* Fork数量：1990 次
+* 关注人数：12228 人
+* 贡献人数：372 人
+* Open Issues数量：66 个
+* Github地址：https://github.com/filamentphp/filament.git
+* 项目首页: https://filamentphp.com
 
 
-Spotify Player是一个开源项目，允许用户在终端中以完全功能相同的方式访问Spotify。
+![](/images/filamentphp-filament-0.png)
 
-## Keyhunt: 用于搜索加密货币私钥的开源工具
+Filament是一套精美设计且完全可扩展的Laravel全栈组件集合，使用Livewire、Alpine.js和Tailwind CSS。它为加速Laravel开发提供了完美的起点，消除了重复构建相同功能的需求。
 
-* 创建周期：1299 天
-* 开发语言：C++, C
+## Magento开源项目和Adobe Commerce
+
+* 创建周期：4435 天
+* 开发语言：PHP
+* 协议类型：Open Software License 3.0
+* Star数量：11083 个
+* Fork数量：9328 次
+* 关注人数：11083 人
+* 贡献人数：257 人
+* Open Issues数量：2518 个
+* Github地址：https://github.com/magento/magento2.git
+* 项目首页: http://www.magento.com
+
+
+![](/images/magento-magento2-0.png)
+
+Magento开源项目提供基本的电子商务功能，用于构建在线商店。建议使用Adobe Commerce作为完整的电子商务解决方案，其中包括优化的云架构、托管以及人工智能驱动的商品推广和分析。
+
+## Rector - 即时升级和自动重构
+
+* 创建周期：2381 天
+* 开发语言：PHP
 * 协议类型：MIT License
-* Star数量：445 个
-* Fork数量：265 次
-* 关注人数：445 人
-* 贡献人数：4 人
-* Open Issues数量：47 个
-* Github地址：https://github.com/albertobsd/keyhunt.git
+* Star数量：7842 个
+* Fork数量：663 次
+* 关注人数：7842 人
+* 贡献人数：181 人
+* Open Issues数量：19 个
+* Github地址：https://github.com/rectorphp/rector.git
+* 项目首页: https://getrector.com
 
 
-Keyhunt是一个用于搜索使用secp256k1椭圆曲线的加密货币的私钥的开源工具。它支持比特币和以太坊的各种功能，如地址压缩或解压缩、RMD160压缩或解压缩以及公钥压缩或解压缩。该工具可以下载和构建，并可以针对特定谜题运行，并添加选项以获得更好的速度。
+Rector是一个开源工具，为PHP 5.3+代码提供即时升级和自动重构。它帮助升级和重构应用程序的PHP代码，在两个主要领域提供帮助。
+
+## OpenCart - 免费的PHP在线电子商务解决方案
+
+* 创建周期：4723 天
+* 开发语言：PHP, JavaScript
+* 协议类型：Other
+* Star数量：7333 个
+* Fork数量：4797 次
+* 关注人数：7333 人
+* 贡献人数：336 人
+* Open Issues数量：33 个
+* Github地址：https://github.com/opencart/opencart.git
+* 项目首页: https://www.opencart.com/
+
+
+OpenCart是一个免费的、基于PHP的开源在线电子商务解决方案，为企业提供购物车系统。
+
+## Backpack: 功能丰富且易于使用的自定义管理面板
+
+* 创建周期：3041 天
+* 开发语言：PHP
+* 协议类型：MIT License
+* Star数量：2993 个
+* Fork数量：881 次
+* 关注人数：2993 人
+* 贡献人数：300 人
+* Open Issues数量：108 个
+* Github地址：https://github.com/Laravel-Backpack/CRUD.git
+* 项目首页: https://backpackforlaravel.com
+
+
+![](/images/laravel-backpack-crud-0.png)
+
+Backpack是一个开源项目，为构建自定义管理面板提供了功能丰富且易于使用的管理界面。它提供了一系列免费功能，包括列表操作、各种列和字段类型、关系、带搜索和分页的表视图、自定义按钮等。此外，它还允许轻松定制和覆盖，并提供了一个付费的附加组件Backpack PRO，用于更高级的功能。
+
+## Jetpack: WordPress专家打造的全方位工具
+
+* 创建周期：3856 天
+* 开发语言：PHP
+* 协议类型：Other
+* Star数量：1570 个
+* Fork数量：795 次
+* 关注人数：1570 人
+* 贡献人数：335 人
+* Open Issues数量：2854 个
+* Github地址：https://github.com/Automattic/jetpack.git
+* 项目首页: https://jetpack.com/
+
+
+Jetpack是由WordPress专家开发的开源项目，旨在增强WordPress站点的安全性、性能、营销和设计方面，旨在使其更安全、更快，并更具吸引力。Jetpack Monorepo包含不同Jetpack插件的源代码，插件使用的Composer和JavaScript软件包，以及其他相关元素。
 
