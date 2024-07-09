@@ -1,32 +1,32 @@
 ---
-title: Github 2024-07-10 开源项目日报 Top10
-date: 2024-07-10T07:01:16+08:00
+title: Github 2024-07-10 C开源项目日报 Top10
+date: 2024-07-10T07:11:13+08:00
 slug: github-trendings-today-20240710
 author: 老孙正经胡说
-image: /images/jwasham-coding-interview-university-0.png
+image: /images/netdata-netdata-0.png
 tags:
   - github
   - trendings
   - 数量
+  - 和
+  - 人
   - 项目
   - 人数
-  - 人
   - 开发
-  - 创建
   - 语言
+  - 类型
   - 贡献
+  - 创建
   - 周期
+  - 协议
   - 关注
   - 地址
-  - 学习
-  - 和
-  - 协议
-  - 类型
   - 是
-  - 设计
-  - 主题
+  - 可以
   - 开源
-  - 技术
+  - 提供
+  - 平台
+  - 应用程序
 
 categories:
 
@@ -38,176 +38,171 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 4 |
-| 非开发语言项目 | 3 |
-| TypeScript项目 | 1 |
-| HTML项目 | 1 |
-| SCSS项目 | 1 |
-| Go项目 | 1 |
+| C项目 | 10 |
+| Java项目 | 1 |
 
-## 免费API集合
+## Netdata: 开源实时监控平台
 
-* 创建周期：2900 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：280943 个
-* Fork数量：30691 次
-* 关注人数：280943 人
-* 贡献人数：428 人
-* Open Issues数量：243 个
-* Github地址：https://github.com/public-apis/public-apis.git
-* 项目首页: http://public-apis.org
+* 创建周期：4020 天
+* 开发语言：C
+* 协议类型：GNU General Public License v3.0
+* Star数量：68982 个
+* Fork数量：5773 次
+* 关注人数：68982 人
+* 贡献人数：407 人
+* Open Issues数量：238 个
+* Github地址：https://github.com/netdata/netdata.git
+* 项目首页: https://www.netdata.cloud
 
 
-这个开源项目是一个集体的免费API列表，涵盖了许多类别，如动物、动漫、反恶意软件、艺术与设计、认证与授权、区块链、书籍、商业等。它提供了各种用途的可用免费API的全面索引。
+![](/images/netdata-netdata-0.png)
 
-## 编程面试大学：成为软件工程师的全面学习计划
+Netdata是一个开源的可观测平台，它收集并以低延迟的仪表板呈现实时指标。它旨在监视各种系统、容器和应用程序，跨越不同环境，从物理和虚拟服务器到云部署和边缘/IoT设备。Netdata可以从单个服务器扩展到数千台服务器，并且在有足够的磁盘空间的情况下可以保留多年的指标。
 
-* 创建周期：2859 天
-* 协议类型：Creative Commons Attribution Share Alike 4.0 International
-* Star数量：281153 个
-* Fork数量：72155 次
-* 关注人数：281153 人
-* 贡献人数：294 人
-* Open Issues数量：56 个
-* Github地址：https://github.com/jwasham/coding-interview-university.git
+![](/images/netdata-netdata-1.png)
 
+## Redis - 内存数据库和数据结构服务器
 
-![](/images/jwasham-coding-interview-university-0.png)
-
-编程面试大学是一个全面的学习计划，旨在成为一名软件工程师，最初创建为一个简短的待办事项清单，但现在已经发展成覆盖所有必要学习主题的大清单。该计划的创建者每天学习8-12小时，持续数月，最终被亚马逊聘为软件开发工程师。该学习计划旨在为个人在各大软件公司（如亚马逊、Facebook、Google和Microsoft）的技术面试做好准备。
-
-## 从零开始构建你喜爱的技术
-
-* 创建周期：2156 天
-* Star数量：253338 个
-* Fork数量：24043 次
-* 关注人数：253338 人
-* 贡献人数：116 人
-* Open Issues数量：319 个
-* Github地址：https://github.com/codecrafters-io/build-your-own-x.git
-* 项目首页: https://codecrafters.io
+* 创建周期：5411 天
+* 开发语言：C
+* 协议类型：BSD 3-Clause "New" or "Revised" License
+* Star数量：62974 个
+* Fork数量：23165 次
+* 关注人数：62974 人
+* 贡献人数：385 人
+* Open Issues数量：2517 个
+* Github地址：https://github.com/redis/redis.git
+* 项目首页: http://redis.io
 
 
-![](/images/codecrafters-io-build-your-own-x-0.png)
+Redis是一种内存数据库，可以持久化到磁盘，通过一组命令提供对可变数据结构的访问。它提供了诸如复制、可调节的耐久性级别、集群和高可用性等功能。Redis支持各种数据类型，并可以在多个平台上编译和使用。它还提供了构建TLS支持、systemd支持和选择内存分配器的选项。Redis可以使用默认配置运行，也可以通过命令行参数进行修改。安装过程包括安装二进制文件和配置init脚本和配置文件的选项。
 
-这个存储库是一本精心编写的、逐步指南的汇编，可以从零开始重新创建各种技术，如3D渲染器、区块链/加密货币、游戏、操作系统、Web浏览器等。它旨在帮助用户通过理解和构建自己喜欢的技术来掌握编程。
+## jq：轻量灵活的命令行JSON处理器
 
-## 系统设计指南
-
-* 创建周期：2507 天
-* 开发语言：Python
+* 创建周期：4207 天
+* 开发语言：C
 * 协议类型：Other
-* Star数量：241693 个
-* Fork数量：42010 次
-* 关注人数：241693 人
-* 贡献人数：109 人
-* Open Issues数量：413 个
-* Github地址：https://github.com/donnemartin/system-design-primer.git
+* Star数量：27698 个
+* Fork数量：1538 次
+* 关注人数：27698 人
+* 贡献人数：164 人
+* Open Issues数量：415 个
+* Github地址：https://github.com/jqlang/jq.git
+* 项目首页: https://jqlang.github.io/jq/
 
 
-![](/images/donnemartin-system-design-primer-0.png)
+jq是一个轻量灵活的命令行JSON处理器，用便携式C语言编写。它类似于sed、awk、grep和其他用于JSON数据操作的命令行工具。没有运行时依赖，可以轻松地对结构化数据进行切片、过滤、映射和转换。
 
-系统设计指南是一个开源项目，帮助个人学习如何设计大规模系统并为系统设计面试做准备。它还包括Anki记忆卡，以便有效学习。
+## pgvector: Postgres的开源矢量相似度搜索工具
 
-## 项目化学习
+* 创建周期：1177 天
+* 开发语言：C
+* 协议类型：Other
+* Star数量：10517 个
+* Fork数量：472 次
+* 关注人数：10517 人
+* 贡献人数：14 人
+* Open Issues数量：22 个
+* Github地址：https://github.com/pgvector/pgvector.git
 
-* 创建周期：2538 天
-* 协议类型：MIT License
-* Star数量：161973 个
-* Fork数量：21345 次
-* 关注人数：161973 人
-* 贡献人数：100 人
-* Open Issues数量：109 个
-* Github地址：https://github.com/practical-tutorials/project-based-learning.git
 
+pgvector 是一个开源的矢量相似度搜索工具，适用于Postgres，允许用户将矢量与其余数据一起存储。它支持精确和近似最近邻搜索，各种类型的矢量和不同的距离度量标准。此外，它与任何具有Postgres客户端的语言兼容，并提供ACID合规性、时间点恢复、JOIN等Postgres的其他功能。
 
-项目化学习是一个由程序开发者学习如何从零开始构建应用程序的编程教程的精选列表。这些教程涵盖了不同的主要编程语言，可能涉及多种技术和语言。要开始使用，请简单地fork这个仓库。请参考CONTRIBUTING.md以获取贡献指南。
+## Zephyr 项目 - 可扩展的实时操作系统（RTOS）
 
-## Ray峰会CPF: vLLM专场和发布
-
-* 创建周期：517 天
-* 开发语言：Python
+* 创建周期：2827 天
+* 开发语言：C
 * 协议类型：Apache License 2.0
-* Star数量：22492 个
-* Fork数量：3177 次
-* 关注人数：22492 人
-* 贡献人数：390 人
-* Open Issues数量：1379 个
-* Github地址：https://github.com/vllm-project/vllm.git
-* 项目首页: https://docs.vllm.ai
+* Star数量：9212 个
+* Fork数量：5703 次
+* 关注人数：9212 人
+* 贡献人数：391 人
+* Open Issues数量：2388 个
+* Github地址：https://github.com/zephyrproject-rtos/zephyr.git
+* 项目首页: https://docs.zephyrproject.org
 
 
-Ray Summit CPF正在举办即将到来的峰会上的vLLM专场。该项目已经举办了几次聚会，并得到了各个组织的支持。它还发布了vLLM，集成了FastChat，并为LMSYS Vicuna和Chatbot Arena提供了支持。
+Zephyr 项目是一个开源的、可扩展的实时操作系统（RTOS），专为资源受限设备设计，支持多种硬件架构，并且专注于安全性。它适用于从简单的嵌入式传感器到复杂的物联网无线网关等各种系统。
 
-## Vanna: 用于SQL生成和相关功能的Python RAG框架
+## Wazuh - 开源安全平台：统一XDR和SIEM保护
 
-* 创建周期：408 天
-* 开发语言：Python
+* 创建周期：3116 天
+* 开发语言：C
+* 协议类型：Other
+* Star数量：8334 个
+* Fork数量：1325 次
+* 关注人数：8334 人
+* 贡献人数：223 人
+* Open Issues数量：2737 个
+* Github地址：https://github.com/wazuh/wazuh.git
+* 项目首页: https://wazuh.com/
+
+
+![](/images/wazuh-wazuh-0.png)
+
+Wazuh是一个开源安全平台，为端点和云工作负载提供统一的XDR和SIEM保护。它提供跨各种环境（包括本地、虚拟化、容器化和基于云的环境）的威胁预防、检测和响应能力。
+
+## Winlator - 在Android上运行Windows应用程序的应用
+
+* 创建周期：184 天
+* 开发语言：Java
 * 协议类型：MIT License
-* Star数量：8627 个
-* Fork数量：638 次
-* 关注人数：8627 人
-* 贡献人数：44 人
-* Open Issues数量：78 个
-* Github地址：https://github.com/vanna-ai/vanna.git
-* 项目首页: https://vanna.ai/docs/
+* Star数量：3136 个
+* Fork数量：116 次
+* 关注人数：3136 人
+* 贡献人数：2 人
+* Open Issues数量：30 个
+* Github地址：https://github.com/brunodev85/winlator.git
+* 项目首页: https://winlator.org
 
 
-![](/images/vanna-ai-vanna-0.png)
+Winlator是一个Android应用程序，允许用户使用Wine和Box86/Box64运行Windows（x86_64）应用程序。您可以通过从GitHub Releases下载APK和OBB文件来安装它，然后启动应用程序以完成安装过程。该项目还感谢了为其开发做出贡献的第三方应用程序和个人。
 
-Vanna是一个根据MIT许可的开源Python RAG（检索增强生成）框架，用于SQL生成和相关功能。
+## EDK II项目 - 跨平台固件开发环境
 
-![](/images/vanna-ai-vanna-1.png)
+* 创建周期：4815 天
+* 开发语言：C
+* 协议类型：Other
+* Star数量：4337 个
+* Fork数量：2377 次
+* 关注人数：4337 人
+* 贡献人数：247 人
+* Open Issues数量：97 个
+* Github地址：https://github.com/tianocore/edk2.git
+* 项目首页: https://github.com/tianocore/tianocore.github.io/wiki/EDK-II
 
-## 定制AI助手框架及Hello World模板
 
-* 创建周期：345 天
-* 开发语言：TypeScript
+EDK II项目是一个现代、功能丰富的跨平台固件开发环境，适用于UEFI和PI规范。它提供不同主机类型和工具链的核心CI构建状态，以及Microsoft Windows VS2019和Ubuntu 18.04 GCC5的平台CI构建状态。
+
+## Unity Test: 面向C语言的嵌入式单元测试框架
+
+* 创建周期：4430 天
+* 开发语言：C
 * 协议类型：MIT License
-* Star数量：6642 个
-* Fork数量：692 次
-* 关注人数：6642 人
-* 贡献人数：15 人
-* Open Issues数量：52 个
-* Github地址：https://github.com/CopilotKit/CopilotKit.git
-* 项目首页: https://copilotkit.ai
+* Star数量：3627 个
+* Fork数量：907 次
+* 关注人数：3627 人
+* 贡献人数：117 人
+* Open Issues数量：58 个
+* Github地址：https://github.com/ThrowTheSwitch/Unity.git
+* 项目首页: ThrowTheSwitch.org
 
 
-![](/images/copilotkit-copilotkit-0.png)
+Unity Test是一个面向C语言的开源单元测试框架，专为嵌入式工具链而设计。它适用于测试针对各种微控制器的代码，并可以轻松集成到现有的构建设置中。该项目在编译器和构建系统方面具有灵活性。此外，ThrowTheSwitch.org还提供了一个名为Ceedling的相关构建工具，供那些喜欢自动化的人使用。鼓励新用户探索入门指南，以及包含变更日志和已知问题的文档。
 
-这个开源项目是一个用于构建定制AI副驾驶、应用内AI聊天机器人、应用内AI代理和AI动力文本区的框架。它还包括“Hello World”模板，以便轻松实现。
+## Firedancer: Solana的新验证器客户端
 
-## Simple Bank: 使用Golang构建简单银行后端网络服务
-
-* 创建周期：1409 天
-* 开发语言：Go
-* 协议类型：MIT License
-* Star数量：3951 个
-* Fork数量：843 次
-* 关注人数：3951 人
-* 贡献人数：7 人
-* Open Issues数量：12 个
-* Github地址：https://github.com/techschool/simplebank.git
-
-
-Simple Bank是一个包含了由Tech School提供的Backend Master Class课程代码的存储库，该课程教授如何使用Golang设计、开发和部署一个简单银行的后端网络服务。该课程涵盖了数据库设计、RESTful API开发、Docker部署、高级后端主题、异步处理以及服务器稳定性和安全性等主题。
-
-## Hugo Book 主题
-
-* 创建周期：2134 天
-* 开发语言：HTML, SCSS
-* 协议类型：MIT License
-* Star数量：2988 个
-* Fork数量：1133 次
-* 关注人数：2988 人
-* 贡献人数：73 人
-* Open Issues数量：40 个
-* Github地址：https://github.com/alex-shpak/hugo-book.git
-* 项目首页: https://hugo-book-demo.netlify.app
+* 创建周期：694 天
+* 开发语言：C
+* 协议类型：Other
+* Star数量：779 个
+* Fork数量：133 次
+* 关注人数：779 人
+* 贡献人数：51 人
+* Open Issues数量：174 个
+* Github地址：https://github.com/firedancer-io/firedancer.git
+* 项目首页: https://firedancer.io
 
 
-![](/images/alex-shpak-hugo-book-0.png)
-
-Hugo Book主题是一个开源的文档主题，旨在简单如同普通书籍。
+Firedancer是Jump Crypto开发的Solana新的验证器客户端。它旨在快速、安全、独立，并专注于高性能和对供应链攻击的韧性。
 
