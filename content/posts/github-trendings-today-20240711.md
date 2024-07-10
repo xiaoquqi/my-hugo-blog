@@ -1,32 +1,32 @@
 ---
-title: Github 2024-07-11 开源项目日报 Top10
-date: 2024-07-11T07:08:00+08:00
+title: Github 2024-07-11 Go开源项目日报 Top10
+date: 2024-07-11T07:11:11+08:00
 slug: github-trendings-today-20240711
 author: 老孙正经胡说
-image: /images/codecrafters-io-build-your-own-x-0.png
+image: /images/fatedier-frp-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
+  - 开发
   - 人数
   - 人
+  - 项目
   - 和
   - 语言
-  - 开发
+  - 是
   - 创建
   - 贡献
-  - 是
-  - 类型
   - 周期
+  - 协议
+  - 类型
   - 关注
   - 地址
-  - 协议
   - 开源
-  - 构建
-  - 用于
-  - 应用
-  - 提供
+  - 应用程序
+  - 运行
+  - 证书
+  - 使用
 
 categories:
 
@@ -38,81 +38,60 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 4 |
-| Go项目 | 3 |
-| TypeScript项目 | 3 |
-| 非开发语言项目 | 1 |
+| Go项目 | 10 |
 | Solidity项目 | 1 |
-| Shell项目 | 1 |
+| Python项目 | 1 |
 
-## 从零开始构建你喜爱的技术
+## frp: 一个开源的快速反向代理
 
-* 创建周期：2156 天
-* Star数量：253338 个
-* Fork数量：24043 次
-* 关注人数：253338 人
-* 贡献人数：116 人
-* Open Issues数量：319 个
-* Github地址：https://github.com/codecrafters-io/build-your-own-x.git
-* 项目首页: https://codecrafters.io
-
-
-![](/images/codecrafters-io-build-your-own-x-0.png)
-
-这个存储库是一本精心编写的、逐步指南的汇编，可以从零开始重新创建各种技术，如3D渲染器、区块链/加密货币、游戏、操作系统、Web浏览器等。它旨在帮助用户通过理解和构建自己喜欢的技术来掌握编程。
-
-## 🤗 Transformers：PyTorch、TensorFlow 和 JAX 的最先进机器学习
-
-* 创建周期：1972 天
-* 开发语言：Python
+* 创建周期：2946 天
+* 开发语言：Go
 * 协议类型：Apache License 2.0
-* Star数量：122689 个
-* Fork数量：24333 次
-* 关注人数：122689 人
-* 贡献人数：433 人
-* Open Issues数量：1043 个
-* Github地址：https://github.com/huggingface/transformers.git
-* 项目首页: https://huggingface.co/transformers
+* Star数量：75872 个
+* Fork数量：12424 次
+* 关注人数：75872 人
+* 贡献人数：93 人
+* Open Issues数量：102 个
+* Github地址：https://github.com/fatedier/frp.git
 
 
-![](/images/huggingface-transformers-0.png)
+![](/images/fatedier-frp-0.png)
 
-🤗 Transformers 是一个开源项目，为 PyTorch、TensorFlow 和 JAX 提供了最先进的机器学习。它提供了成千上万个预训练模型，用于处理文本、视觉和音频任务，支持超过 100 种语言。这些模型可以应用于文本、图像、音频等多种模态，并提供了用于下载、微调和分享预训练模型的 API。
+frp是一个开源的快速反向代理，允许用户将位于NAT或防火墙后面的本地服务器暴露到互联网上。
 
-## Node版本管理器 - 管理多个活动的node.js版本的POSIX-compliant bash脚本
+## Ollama: 本地大型语言模型设置与运行
 
-* 创建周期：5172 天
-* 开发语言：Shell
+* 创建周期：248 天
+* 开发语言：Go
 * 协议类型：MIT License
-* Star数量：76686 个
-* Fork数量：7704 次
-* 关注人数：76686 人
-* 贡献人数：348 人
-* Open Issues数量：380 个
-* Github地址：https://github.com/nvm-sh/nvm.git
+* Star数量：42421 个
+* Fork数量：2724 次
+* 关注人数：42421 人
+* 贡献人数：138 人
+* Open Issues数量：709 个
+* Github地址：https://github.com/ollama/ollama.git
+* 项目首页: https://ollama.com
 
 
-![](/images/nvm-sh-nvm-0.png)
+![](/images/ollama-ollama-0.png)
 
-Node版本管理器是一个符合POSIX标准的bash脚本，可帮助管理多个活动的node.js版本。
+Ollama是一个开源项目，帮助用户在本地设置和利用诸如Llama 2、Mistral和Gemma等大型语言模型。
 
-## Dify.AI: 开源的LLM应用程序开发平台
+## mkcert：本地受信任的开发证书工具
 
-* 创建周期：299 天
-* 开发语言：Python, TypeScript
-* 协议类型：Other
-* Star数量：14984 个
-* Fork数量：2007 次
-* 关注人数：14984 人
-* 贡献人数：79 人
-* Open Issues数量：52 个
-* Github地址：https://github.com/langgenius/dify.git
-* 项目首页: https://dify.ai
+* 创建周期：2208 天
+* 开发语言：Go
+* 协议类型：BSD 3-Clause "New" or "Revised" License
+* Star数量：47097 个
+* Fork数量：2448 次
+* 关注人数：47097 人
+* 贡献人数：37 人
+* Open Issues数量：142 个
+* Github地址：https://github.com/FiloSottile/mkcert.git
+* 项目首页: https://mkcert.dev
 
 
-![](/images/langgenius-dify-0.png)
-
-Dify.AI是一个开源的LLM应用程序开发平台，集成了后端作为服务和LLMOps。它涵盖了构建生成式AI原生应用所需的核心技术栈，包括内置的RAG引擎。Dify已经帮助构建了超过10万个应用程序，并允许用户基于任何LLMs部署自己的助手API和GPTs版本。
+mkcert是一个简单的零配置工具，用于创建本地受信任的开发证书。它会自动在系统根证书存储中安装本地CA，并生成本地受信任的证书，无需任何配置。它旨在解决使用真实CA证书进行开发的风险以及自签名证书引起的信任错误。
 
 ## Helm：Kubernetes 资源管理工具
 
@@ -130,22 +109,6 @@ Dify.AI是一个开源的LLM应用程序开发平台，集成了后端作为服�
 
 Helm 是一个用于管理 Charts 的工具，Charts 是预配置的 Kubernetes 资源包。它允许用户查找和使用打包为 Helm Charts 的热门软件在 Kubernetes 中运行，分享他们自己的应用程序作为 Helm Charts，创建可重现的 Kubernetes 应用程序构建，智能地管理 Kubernetes 清单文件，并管理 Helm 包的发布。
 
-## Ray峰会CPF: vLLM专场和发布
-
-* 创建周期：517 天
-* 开发语言：Python
-* 协议类型：Apache License 2.0
-* Star数量：22492 个
-* Fork数量：3177 次
-* 关注人数：22492 人
-* 贡献人数：390 人
-* Open Issues数量：1379 个
-* Github地址：https://github.com/vllm-project/vllm.git
-* 项目首页: https://docs.vllm.ai
-
-
-Ray Summit CPF正在举办即将到来的峰会上的vLLM专场。该项目已经举办了几次聚会，并得到了各个组织的支持。它还发布了vLLM，集成了FastChat，并为LMSYS Vicuna和Chatbot Arena提供了支持。
-
 ## gRPC-Go: 高性能、开源的通用RPC框架的Go语言实现
 
 * 创建周期：3356 天
@@ -162,38 +125,55 @@ Ray Summit CPF正在举办即将到来的峰会上的vLLM专场。该项目已�
 
 gRPC-Go是gRPC的Go语言实现，是一个高性能、开源的通用RPC框架，将移动和HTTP/2放在首位。它设计高效，并且有很好的文档，易于采用。
 
-## Pyright：Python的静态类型检查器
+## Online Boutique: 云原生微服务演示应用程序
 
-* 创建周期：1948 天
-* 开发语言：Python, TypeScript
-* 协议类型：Other
-* Star数量：12581 个
-* Fork数量：1344 次
-* 关注人数：12581 人
-* 贡献人数：110 人
-* Open Issues数量：15 个
-* Github地址：https://github.com/microsoft/pyright.git
-
-
-Pyright是一个功能齐全、基于标准的Python静态类型检查器，旨在实现高性能，并可用于大型Python源代码库。它包括命令行工具和适用于Visual Studio Code的扩展。
-
-## 定制AI助手框架及Hello World模板
-
-* 创建周期：345 天
-* 开发语言：TypeScript
-* 协议类型：MIT License
-* Star数量：6642 个
-* Fork数量：692 次
-* 关注人数：6642 人
-* 贡献人数：15 人
-* Open Issues数量：52 个
-* Github地址：https://github.com/CopilotKit/CopilotKit.git
-* 项目首页: https://copilotkit.ai
+* 创建周期：2169 天
+* 开发语言：Go, Python
+* 协议类型：Apache License 2.0
+* Star数量：16286 个
+* Fork数量：6820 次
+* 关注人数：16286 人
+* 贡献人数：117 人
+* Open Issues数量：39 个
+* Github地址：https://github.com/GoogleCloudPlatform/microservices-demo.git
+* 项目首页: https://cymbal-shops.retail.cymbal.dev
 
 
-![](/images/copilotkit-copilotkit-0.png)
+Online Boutique是一个云原生微服务演示应用程序，展示了Kubernetes、Istio和gRPC。这是一个基于Web的电子商务应用程序，用户可以浏览商品，将其加入购物车并进行购买。Google使用此应用程序来演示如何使用Google Cloud产品现代化企业应用程序，包括Google Kubernetes Engine、Anthos Service Mesh、gRPC等。该应用程序旨在在任何Kubernetes集群上运行。
 
-这个开源项目是一个用于构建定制AI副驾驶、应用内AI聊天机器人、应用内AI代理和AI动力文本区的框架。它还包括“Hello World”模板，以便轻松实现。
+## NATS：云和边缘的高性能消息传递系统
+
+* 创建周期：4259 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：15057 个
+* Fork数量：1362 次
+* 关注人数：15057 人
+* 贡献人数：147 人
+* Open Issues数量：342 个
+* Github地址：https://github.com/nats-io/nats-server.git
+* 项目首页: https://nats.io
+
+
+NATS 是 NATS.io 的高性能服务器，是一个面向云和边缘的原生消息传递系统。它是一个简单、安全且高性能的数字系统、服务和设备通信系统。拥有超过 40 种客户端语言实现，服务器可以在本地、云端、边缘甚至树莓派上运行。NATS 可以确保并简化现代分布式系统的设计和运行。
+
+## Project Calico: 容器网络和安全的开源解决方案
+
+* 创建周期：2891 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：5651 个
+* Fork数量：1262 次
+* 关注人数：5651 人
+* 贡献人数：302 人
+* Open Issues数量：389 个
+* Github地址：https://github.com/projectcalico/calico.git
+* 项目首页: https://docs.tigera.io/calico/latest/about/
+
+
+![](/images/projectcalico-calico-0.png)
+
+Project Calico是一个广泛采用的开源项目，用于容器网络和安全，拥有庞大的用户社区和积极的开发。它每天在166个国家的800多万节点上运行。
 
 ## Optimism: 以太坊扩展开源项目
 
@@ -210,4 +190,19 @@ Pyright是一个功能齐全、基于标准的Python静态类型检查器，旨�
 
 
 Optimism是一个旨在扩展以太坊的开源项目。它提供文档、规范和社区，用于贡献和报告安全漏洞。该项目还概述了其目录结构、开发和发布流程，以及生产发布和开发分支。
+
+## Simple Bank: 使用Golang构建简单银行后端网络服务
+
+* 创建周期：1409 天
+* 开发语言：Go
+* 协议类型：MIT License
+* Star数量：3951 个
+* Fork数量：843 次
+* 关注人数：3951 人
+* 贡献人数：7 人
+* Open Issues数量：12 个
+* Github地址：https://github.com/techschool/simplebank.git
+
+
+Simple Bank是一个包含了由Tech School提供的Backend Master Class课程代码的存储库，该课程教授如何使用Golang设计、开发和部署一个简单银行的后端网络服务。该课程涵盖了数据库设计、RESTful API开发、Docker部署、高级后端主题、异步处理以及服务器稳定性和安全性等主题。
 
