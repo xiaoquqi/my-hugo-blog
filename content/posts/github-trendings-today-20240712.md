@@ -1,32 +1,32 @@
 ---
-title: Github 2024-07-12 开源项目日报 Top10
-date: 2024-07-12T07:01:28+08:00
+title: Github 2024-07-12 Java开源项目日报 Top10
+date: 2024-07-12T07:11:30+08:00
 slug: github-trendings-today-20240712
 author: 老孙正经胡说
-image: /images/jwasham-coding-interview-university-0.png
+image: /images/teamnewpipe-newpipe-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 和
-  - 项目
   - 人数
   - 人
+  - 项目
+  - 和
   - 开发
   - 语言
-  - 创建
-  - 关注
   - 贡献
-  - 是
+  - 创建
   - 周期
-  - 地址
   - 协议
   - 类型
+  - 关注
+  - 地址
+  - 是
   - 开源
+  - 提供
   - 支持
-  - 训练
-  - 学习
-  - 技术
+  - 源码
+  - 管理
 
 categories:
 
@@ -38,135 +38,59 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Go项目 | 2 |
-| 非开发语言项目 | 2 |
-| Java项目 | 1 |
-| Shell项目 | 1 |
-| Solidity项目 | 1 |
-| C++项目 | 1 |
-| Swift项目 | 1 |
-| TypeScript项目 | 1 |
-| Python项目 | 1 |
-| Dart项目 | 1 |
+| Java项目 | 10 |
 
-## 编程面试大学：成为软件工程师的全面学习计划
+## Android开源轻量级流媒体前端
 
-* 创建周期：2859 天
+* 创建周期：3158 天
+* 开发语言：Java
+* 协议类型：GNU General Public License v3.0
+* Star数量：28641 个
+* Fork数量：2896 次
+* 关注人数：28641 人
+* 贡献人数：312 人
+* Open Issues数量：1165 个
+* Github地址：https://github.com/TeamNewPipe/NewPipe.git
+* 项目首页: https://newpipe.net
+
+
+![](/images/teamnewpipe-newpipe-0.png)
+
+一个轻量级的 Android 流媒体前端，是开源的并且免费使用。
+
+## 源码猎人：挖掘互联网行业主流技术的底层实现原理
+
+* 创建周期：1600 天
+* 开发语言：Java
 * 协议类型：Creative Commons Attribution Share Alike 4.0 International
-* Star数量：281153 个
-* Fork数量：72155 次
-* 关注人数：281153 人
-* 贡献人数：294 人
-* Open Issues数量：56 个
-* Github地址：https://github.com/jwasham/coding-interview-university.git
+* Star数量：15497 个
+* Fork数量：2956 次
+* 关注人数：15497 人
+* 贡献人数：28 人
+* Open Issues数量：10 个
+* Github地址：https://github.com/doocs/source-code-hunter.git
+* 项目首页: https://doocs.github.io/source-code-hunter
 
 
-![](/images/jwasham-coding-interview-university-0.png)
+![](/images/doocs-source-code-hunter-0.png)
 
-编程面试大学是一个全面的学习计划，旨在成为一名软件工程师，最初创建为一个简短的待办事项清单，但现在已经发展成覆盖所有必要学习主题的大清单。该计划的创建者每天学习8-12小时，持续数月，最终被亚马逊聘为软件开发工程师。该学习计划旨在为个人在各大软件公司（如亚马逊、Facebook、Google和Microsoft）的技术面试做好准备。
+这个项目的目标是从源码层面剖析和挖掘互联网行业主流技术的底层实现原理，为开发者提供提升技术深度的便利。目前开放的有Spring全家桶、Mybatis、Netty、Dubbo框架，以及Redis、Tomcat中间件等。加入这个项目，一起通读互联网行业主流框架及中间件源码，成为强大的“源码猎人”。
 
-## 从零开始构建你喜爱的技术
+## Keycloak: 现代应用程序和服务的开源身份和访问管理解决方案
 
-* 创建周期：2156 天
-* Star数量：253338 个
-* Fork数量：24043 次
-* 关注人数：253338 人
-* 贡献人数：116 人
-* Open Issues数量：319 个
-* Github地址：https://github.com/codecrafters-io/build-your-own-x.git
-* 项目首页: https://codecrafters.io
-
-
-![](/images/codecrafters-io-build-your-own-x-0.png)
-
-这个存储库是一本精心编写的、逐步指南的汇编，可以从零开始重新创建各种技术，如3D渲染器、区块链/加密货币、游戏、操作系统、Web浏览器等。它旨在帮助用户通过理解和构建自己喜欢的技术来掌握编程。
-
-## Flutter：创建美观快速的跨平台应用
-
-* 创建周期：3416 天
-* 开发语言：Dart
-* 协议类型：BSD 3-Clause "New" or "Revised" License
-* Star数量：163294 个
-* Fork数量：26868 次
-* 关注人数：163294 人
-* 贡献人数：385 人
-* Open Issues数量：12717 个
-* Github地址：https://github.com/flutter/flutter.git
-* 项目首页: https://flutter.dev
-
-
-![](/images/flutter-flutter-0.png)
-
-Flutter是谷歌的开源SDK，可以让开发者使用单一代码库在移动、Web和桌面平台上创建美观快速的用户体验。它被广泛使用并且免费。
-
-![](/images/flutter-flutter-1.png)
-
-## Node版本管理器 - 管理多个活动的node.js版本的POSIX-compliant bash脚本
-
-* 创建周期：5172 天
-* 开发语言：Shell
-* 协议类型：MIT License
-* Star数量：76686 个
-* Fork数量：7704 次
-* 关注人数：76686 人
-* 贡献人数：348 人
-* Open Issues数量：380 个
-* Github地址：https://github.com/nvm-sh/nvm.git
-
-
-![](/images/nvm-sh-nvm-0.png)
-
-Node版本管理器是一个符合POSIX标准的bash脚本，可帮助管理多个活动的node.js版本。
-
-## Swift编程语言跨平台和架构支持
-
-* 创建周期：3185 天
-* 开发语言：C++, Swift
+* 创建周期：3846 天
+* 开发语言：Java
 * 协议类型：Apache License 2.0
-* Star数量：66927 个
-* Fork数量：10310 次
-* 关注人数：66927 人
-* 贡献人数：345 人
-* Open Issues数量：7439 个
-* Github地址：https://github.com/swiftlang/swift.git
-* 项目首页: https://swift.org
+* Star数量：18649 个
+* Fork数量：6018 次
+* 关注人数：18649 人
+* 贡献人数：336 人
+* Open Issues数量：2122 个
+* Github地址：https://github.com/keycloak/keycloak.git
+* 项目首页: https://www.keycloak.org
 
 
-Swift编程语言是一个开源项目，支持多个平台和架构，包括macOS、Ubuntu、CentOS、Amazon Linux、Windows和交叉编译目标。它还为各种CI平台提供支持，如Android和Windows 2019。
-
-## Rocket.Chat: 优先考虑数据保护的开源通讯平台
-
-* 创建周期：3342 天
-* 开发语言：TypeScript
-* 协议类型：Other
-* Star数量：39412 个
-* Fork数量：10100 次
-* 关注人数：39412 人
-* 贡献人数：374 人
-* Open Issues数量：3153 个
-* Github地址：https://github.com/RocketChat/Rocket.Chat.git
-* 项目首页: https://rocket.chat/
-
-
-![](/images/rocketchat-rocket.chat-0.png)
-
-Rocket.Chat是一个使用JavaScript开发的开源通讯平台，优先考虑数据保护。它为团队沟通、客户互动和定制化消息体验提供实时对话。被全球数百万用户信任，提供自托管和云端解决方案，用于安全的内部和跨公司协作、全渠道客户服务，以及用于业务沟通应用和集成的市场。
-
-## gRPC-Go: 高性能、开源的通用RPC框架的Go语言实现
-
-* 创建周期：3356 天
-* 开发语言：Go
-* 协议类型：Apache License 2.0
-* Star数量：19531 个
-* Fork数量：4256 次
-* 关注人数：19531 人
-* 贡献人数：387 人
-* Open Issues数量：133 个
-* Github地址：https://github.com/grpc/grpc-go.git
-* 项目首页: https://grpc.io
-
-
-gRPC-Go是gRPC的Go语言实现，是一个高性能、开源的通用RPC框架，将移动和HTTP/2放在首位。它设计高效，并且有很好的文档，易于采用。
+Keycloak是现代应用程序和服务的开源身份和访问管理解决方案。它包括Keycloak Server、Java适配器和JavaScript适配器的源代码。
 
 ## SmartTube - 为Android电视和电视盒子设计的高级播放器
 
@@ -184,34 +108,101 @@ gRPC-Go是gRPC的Go语言实现，是一个高性能、开源的通用RPC框架�
 
 SmartTube是一款为Android电视和电视盒子设计的高级播放器，提供诸如无广告、SponsorBlock、可调节播放速度、8k支持、HDR等功能。它不支持手机和平板电脑，稳定性、语音搜索和投射支持可能因设备而异。
 
-## LitGPT: 高度优化的LLM预训练、微调和部署工具
+## MyBatis-Mate: 企业级增强工具包
 
-* 创建周期：348 天
-* 开发语言：Python
+* 创建周期：2885 天
+* 开发语言：Java
 * 协议类型：Apache License 2.0
-* Star数量：6410 个
-* Fork数量：684 次
-* 关注人数：6410 人
-* 贡献人数：66 人
-* Open Issues数量：165 个
-* Github地址：https://github.com/Lightning-AI/litgpt.git
+* Star数量：16094 个
+* Fork数量：4253 次
+* 关注人数：16094 人
+* 贡献人数：178 人
+* Open Issues数量：49 个
+* Github地址：https://github.com/baomidou/mybatis-plus.git
+* 项目首页: https://baomidou.com
 
 
-LitGPT是一个命令行工具，允许用户使用闪电关注、FSDP、4位、LoRA等最先进的技术来预训练、微调和部署大型语言模型（LLMs）。它基于高度优化的配置和训练配方，用于训练开源LLMs，重新实现了模型架构和训练配方，以消除抽象层，确保Apache 2.0合规性，并优化性能，实现更快的训练和更低的成本。
+MyBatis-Mate 是一个增强的 MyBatis 工具包，可简化开发。它为企业提供了高级特性，不适用于非法项目。
 
-## Optimism: 以太坊扩展开源项目
+## Testcontainers: 为JUnit测试提供一次性实例的Java库
 
-* 创建周期：1617 天
-* 开发语言：Go, Solidity
+* 创建周期：3260 天
+* 开发语言：Java
 * 协议类型：MIT License
-* Star数量：5324 个
-* Fork数量：3017 次
-* 关注人数：5324 人
-* 贡献人数：296 人
-* Open Issues数量：182 个
-* Github地址：https://github.com/ethereum-optimism/optimism.git
-* 项目首页: https://optimism.io
+* Star数量：7683 个
+* Fork数量：1578 次
+* 关注人数：7683 人
+* 贡献人数：430 人
+* Open Issues数量：602 个
+* Github地址：https://github.com/testcontainers/testcontainers-java.git
+* 项目首页: https://testcontainers.org
 
 
-Optimism是一个旨在扩展以太坊的开源项目。它提供文档、规范和社区，用于贡献和报告安全漏洞。该项目还概述了其目录结构、开发和发布流程，以及生产发布和开发分支。
+Testcontainers是一个Java库，支持JUnit测试，提供常见数据库、Selenium Web浏览器或其他可以在Docker容器中运行的轻量级、一次性实例。
+
+## Kestra: 无限可扩展的事件驱动编排和调度平台
+
+* 创建周期：1714 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：6433 个
+* Fork数量：359 次
+* 关注人数：6433 人
+* 贡献人数：40 人
+* Open Issues数量：419 个
+* Github地址：https://github.com/kestra-io/kestra.git
+* 项目首页: https://kestra.io
+
+
+![](/images/kestra-io-kestra-0.png)
+
+Kestra是一个开源的、无限可扩展的、事件驱动的、语言不可知的编排和调度平台，旨在以代码声明方式管理数百万个工作流。它提供了一个实时演示供用户尝试该平台。
+
+## Apache Hudi: 分布式文件系统上的大型分析数据集存储管理系统
+
+* 创建周期：2767 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：5210 个
+* Fork数量：2383 次
+* 关注人数：5210 人
+* 贡献人数：379 人
+* Open Issues数量：978 个
+* Github地址：https://github.com/apache/hudi.git
+* 项目首页: https://hudi.apache.org/
+
+
+Apache Hudi（发音为Hoodie）是一个用于管理分布式文件系统上大型分析数据集存储的系统。它支持在各种Hadoop文件系统兼容存储上进行upserts，deletes和增量处理。
+
+## JMusicBot: 跨平台Discord音乐机器人
+
+* 创建周期：2889 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：4879 个
+* Fork数量：2439 次
+* 关注人数：4879 人
+* 贡献人数：14 人
+* Open Issues数量：190 个
+* Github地址：https://github.com/jagrosh/MusicBot.git
+* 项目首页: https://jmusicbot.com
+
+
+JMusicBot是一个跨平台的Discord音乐机器人，具有清晰的界面，旨在方便用户设置和运行。
+
+## Apache Maven - 项目管理和理解工具
+
+* 创建周期：5531 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：4229 个
+* Fork数量：2634 次
+* 关注人数：4229 人
+* 贡献人数：184 人
+* Open Issues数量：81 个
+* Github地址：https://github.com/apache/maven.git
+* 项目首页: https://maven.apache.org/ref/current
+
+
+Apache Maven是一个基于项目对象模型（POM）概念的项目管理和理解工具。它可以从一个中心信息管理项目的构建、报告和文档。该软件是开源的，鼓励贡献和捐赠以支持其发展。
 
