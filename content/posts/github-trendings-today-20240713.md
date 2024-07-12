@@ -1,32 +1,32 @@
 ---
-title: Github 2024-07-13 开源项目日报 Top10
-date: 2024-07-13T07:01:12+08:00
+title: Github 2024-07-13 Rust开源项目日报 Top10
+date: 2024-07-13T07:11:08+08:00
 slug: github-trendings-today-20240713
 author: 老孙正经胡说
-image: /images/codecrafters-io-build-your-own-x-0.png
+image: /images/typst-typst-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
-  - 人数
   - 人
-  - 语言
-  - 和
+  - 人数
+  - 项目
   - 开发
   - 是
+  - 语言
+  - 和
   - 创建
-  - 贡献
   - 周期
-  - 关注
-  - 地址
   - 协议
   - 类型
-  - 开源
+  - 关注
+  - 贡献
+  - 地址
   - 支持
   - 提供
-  - 库
-  - 从零开始
+  - 中
+  - 具有
+  - 开源
 
 categories:
 
@@ -38,84 +38,58 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 3 |
-| TypeScript项目 | 2 |
-| Go项目 | 2 |
-| Java项目 | 2 |
-| Rust项目 | 1 |
-| 非开发语言项目 | 1 |
-| Solidity项目 | 1 |
+| Rust项目 | 10 |
+| C项目 | 1 |
 
-## 从零开始构建你喜爱的技术
+## Zed: 由Atom和Tree-sitter的创建者开发的高性能多人代码编辑器
 
-* 创建周期：2156 天
-* Star数量：253338 个
-* Fork数量：24043 次
-* 关注人数：253338 人
-* 贡献人数：116 人
-* Open Issues数量：319 个
-* Github地址：https://github.com/codecrafters-io/build-your-own-x.git
-* 项目首页: https://codecrafters.io
+* 创建周期：1071 天
+* 开发语言：Rust
+* 协议类型：Other
+* Star数量：9436 个
+* Fork数量：261 次
+* 关注人数：9436 人
+* 贡献人数：42 人
+* Open Issues数量：1185 个
+* Github地址：https://github.com/zed-industries/zed.git
+* 项目首页: https://zed.dev
 
 
-![](/images/codecrafters-io-build-your-own-x-0.png)
+Zed是由Atom和Tree-sitter的创建者开发的高性能多人代码编辑器。
 
-这个存储库是一本精心编写的、逐步指南的汇编，可以从零开始重新创建各种技术，如3D渲染器、区块链/加密货币、游戏、操作系统、Web浏览器等。它旨在帮助用户通过理解和构建自己喜欢的技术来掌握编程。
+## Typst：功能强大且易学的排版系统
 
-## PaddlePaddle基础的实用轻量级OCR工具包
-
-* 创建周期：1527 天
-* 开发语言：Python
+* 创建周期：1586 天
+* 开发语言：Rust
 * 协议类型：Apache License 2.0
-* Star数量：40508 个
-* Fork数量：7488 次
-* 关注人数：40508 人
-* 贡献人数：184 人
-* Open Issues数量：166 个
-* Github地址：https://github.com/PaddlePaddle/PaddleOCR.git
+* Star数量：25342 个
+* Fork数量：654 次
+* 关注人数：25342 人
+* 贡献人数：218 人
+* Open Issues数量：592 个
+* Github地址：https://github.com/typst/typst.git
+* 项目首页: https://typst.app
 
 
-![](/images/paddlepaddle-paddleocr-0.png)
+![](/images/typst-typst-0.png)
 
-这是一个基于PaddlePaddle的开源OCR工具包，旨在成为一个实用且轻量级的系统。它支持识别80多种语言，提供数据标注和合成工具，并支持在服务器、移动设备、嵌入式设备和物联网设备上进行训练和部署。
+Typst是一个功能强大的基于标记的排版系统，旨在具有与LaTeX一样强大的功能，同时更易于学习和使用。它提供了常见格式任务的内置标记、灵活的功能、集成的脚本系统、数学排版、参考文献管理、快速编译时间和友好的错误消息。该存储库包含Typst编译器及其CLI，用于本地编译，还有一个处于公共测试阶段的协作在线编辑器。
 
-![](/images/paddlepaddle-paddleocr-1.png)
+## Firecracker: 安全快速的微型VMs
 
-## Tiptap编辑器：无头富文本编辑器套件
-
-* 创建周期：2154 天
-* 开发语言：TypeScript
-* 协议类型：MIT License
-* Star数量：25003 个
-* Fork数量：2093 次
-* 关注人数：25003 人
-* 贡献人数：320 人
-* Open Issues数量：550 个
-* Github地址：https://github.com/ueberdosis/tiptap.git
-* 项目首页: https://tiptap.dev
-
-
-![](/images/ueberdosis-tiptap-0.png)
-
-Tiptap编辑器是一个无头、框架不可知的富文本编辑器，可以通过扩展进行定制和扩展。它基于ProseMirror库，提供了完全的设计自由度，没有固定的用户界面。它由协作开源后端Hocuspocus进行补充，两者共同构成了Tiptap Suite的基础。
-
-![](/images/ueberdosis-tiptap-1.png)
-
-## gRPC-Go: 高性能、开源的通用RPC框架的Go语言实现
-
-* 创建周期：3356 天
-* 开发语言：Go
+* 创建周期：2459 天
+* 开发语言：Rust
 * 协议类型：Apache License 2.0
-* Star数量：19531 个
-* Fork数量：4256 次
-* 关注人数：19531 人
-* 贡献人数：387 人
-* Open Issues数量：133 个
-* Github地址：https://github.com/grpc/grpc-go.git
-* 项目首页: https://grpc.io
+* Star数量：24565 个
+* Fork数量：1725 次
+* 关注人数：24565 人
+* 贡献人数：218 人
+* Open Issues数量：113 个
+* Github地址：https://github.com/firecracker-microvm/firecracker.git
+* 项目首页: http://firecracker-microvm.io
 
 
-gRPC-Go是gRPC的Go语言实现，是一个高性能、开源的通用RPC框架，将移动和HTTP/2放在首位。它设计高效，并且有很好的文档，易于采用。
+Firecracker是一个为无服务器计算提供安全和快速的微型VM的开源项目。其使命是实现容器和函数工作负载的安全、多租户、最小开销执行。
 
 ## Tabby: 自托管的AI编码助手
 
@@ -135,84 +109,98 @@ gRPC-Go是gRPC的Go语言实现，是一个高性能、开源的通用RPC框架�
 
 Tabby是一款自托管的AI编码助手，提供了一个开源和本地化的GitHub Copilot替代方案。它是自包含的，无需DBMS或云服务，提供了OpenAPI接口，易于与现有基础设施（例如云IDE）集成，并支持消费级GPU。
 
-## SmartTube - 为Android电视和电视盒子设计的高级播放器
+## Tonic: Rust 中的 gRPC 异步/等待支持
 
-* 创建周期：1445 天
-* 开发语言：Java
+* 创建周期：1800 天
+* 开发语言：Rust
+* 协议类型：MIT License
+* Star数量：9394 个
+* Fork数量：965 次
+* 关注人数：9394 人
+* 贡献人数：224 人
+* Open Issues数量：227 个
+* Github地址：https://github.com/hyperium/tonic.git
+* 项目首页: https://docs.rs/tonic
+
+
+Tonic 是 gRPC 的 Rust 实现，是一个高性能、开源的通用 RPC 框架，专注于异步/等待支持。它旨在为异步/等待提供一流支持，并作为用 Rust 编写的生产系统的核心构建模块。
+
+## Quickwit: 云原生搜索引擎
+
+* 创建周期：1075 天
+* 开发语言：Rust
 * 协议类型：Other
-* Star数量：17440 个
-* Fork数量：980 次
-* 关注人数：17440 人
-* 贡献人数：104 人
-* Open Issues数量：1952 个
-* Github地址：https://github.com/yuliskov/SmartTube.git
-* 项目首页: https://www.patreon.com/smarttube
+* Star数量：5652 个
+* Fork数量：263 次
+* 关注人数：5652 人
+* 贡献人数：66 人
+* Open Issues数量：559 个
+* Github地址：https://github.com/quickwit-oss/quickwit.git
+* 项目首页: https://quickwit.io
 
 
-SmartTube是一款为Android电视和电视盒子设计的高级播放器，提供诸如无广告、SponsorBlock、可调节播放速度、8k支持、HDR等功能。它不支持手机和平板电脑，稳定性、语音搜索和投射支持可能因设备而异。
+Quickwit是一个开源的云原生搜索引擎，旨在作为Datadog、Elasticsearch、Loki和Tempo的替代品。它经过优化以提供快速搜索，并非常适用于日志管理和分布式跟踪等观察性用例。未来还计划支持度量。
 
-## RAGFlow: 基于深度文档理解的开源RAG引擎
+## Sui: 下一代智能合约平台
 
-* 创建周期：115 天
-* 开发语言：Python, TypeScript
+* 创建周期：816 天
+* 开发语言：Rust
 * 协议类型：Apache License 2.0
-* Star数量：1882 个
-* Fork数量：120 次
-* 关注人数：1882 人
-* 贡献人数：10 人
-* Open Issues数量：7 个
-* Github地址：https://github.com/infiniflow/ragflow.git
-* 项目首页: https://ragflow.io
+* Star数量：5464 个
+* Fork数量：12409 次
+* 关注人数：5464 人
+* 贡献人数：235 人
+* Open Issues数量：883 个
+* Github地址：https://github.com/MystenLabs/sui.git
+* 项目首页: https://sui.io
 
 
-![](/images/infiniflow-ragflow-0.png)
+Sui是一种具有高吞吐量、低延迟和资产导向编程模型的下一代智能合约平台，由Move编程语言驱动。
 
-RAGFlow是一个基于深度文档理解的开源RAG（检索增强生成）引擎。它为企业提供了简化的工作流程，整合了LLM（大型语言模型），以提供准确的问答能力，并支持来自各种复杂格式数据的充分证明。
+## Solana程序库（SPL）- 面向Sealevel并行运行时的链上程序集合
 
-## STORM: 利用大型语言模型从零开始撰写类似维基百科的文章
+* 创建周期：1450 天
+* 开发语言：Rust
+* 协议类型：Apache License 2.0
+* Star数量：3042 个
+* Fork数量：1878 次
+* 关注人数：3042 人
+* 贡献人数：208 人
+* Open Issues数量：62 个
+* Github地址：https://github.com/solana-labs/solana-program-library.git
+* 项目首页: https://solanalabs.com
 
-* 创建周期：22 天
-* 开发语言：HTML
+
+Solana程序库（SPL）是Solana Labs维护的一组面向Sealevel并行运行时的链上程序集合。这些程序已针对Solana的Sealevel实现进行了测试，其中一些已部署到Mainnet Beta。该库欢迎补丁，以确保这些程序在所有实现中都具有可移植性。
+
+## OpenVAS Scanner: Greenbone社区版的扫描引擎
+
+* 创建周期：2364 天
+* 开发语言：Rust, C
+* 协议类型：GNU General Public License v2.0
+* Star数量：3053 个
+* Fork数量：600 次
+* 关注人数：3053 人
+* 贡献人数：47 人
+* Open Issues数量：15 个
+* Github地址：https://github.com/greenbone/openvas-scanner.git
+* 项目首页: https://greenbone.github.io/docs/
+
+
+OpenVAS Scanner是Greenbone社区版的一个组件，用于Greenbone企业设备。它是一个功能齐全的扫描引擎，执行不断更新的漏洞测试（VTs）。
+
+## Limbo: 一个SQLite兼容的OLTP数据库管理系统
+
+* 创建周期：322 天
+* 开发语言：Rust
 * 协议类型：MIT License
-* Star数量：1070 个
-* Fork数量：101 次
-* 关注人数：1070 人
-* 贡献人数：3 人
-* Open Issues数量：6 个
-* Github地址：https://github.com/stanford-oval/storm.git
-* 项目首页: https://arxiv.org/abs/2402.14207
+* Star数量：577 个
+* Fork数量：34 次
+* 关注人数：577 人
+* 贡献人数：16 人
+* Open Issues数量：44 个
+* Github地址：https://github.com/penberg/limbo.git
 
 
-STORM是一个由LLM驱动的知识整理系统，它研究一个主题并生成带引用的全文报告。该存储库包含了一篇在NAACL 2024上发表的论文的代码，题为“利用大型语言模型从零开始撰写类似维基百科的文章”的作者是Yijia Shao，Yucheng Jiang，Theodore A. Kanell，Peter Xu，Omar Khattab和Monica S. Lam。
-
-## Optimism: 以太坊扩展开源项目
-
-* 创建周期：1617 天
-* 开发语言：Go, Solidity
-* 协议类型：MIT License
-* Star数量：5324 个
-* Fork数量：3017 次
-* 关注人数：5324 人
-* 贡献人数：296 人
-* Open Issues数量：182 个
-* Github地址：https://github.com/ethereum-optimism/optimism.git
-* 项目首页: https://optimism.io
-
-
-Optimism是一个旨在扩展以太坊的开源项目。它提供文档、规范和社区，用于贡献和报告安全漏洞。该项目还概述了其目录结构、开发和发布流程，以及生产发布和开发分支。
-
-## NewPipe Extractor: 从流媒体网站提取数据的核心库
-
-* 创建周期：2691 天
-* 开发语言：Java
-* 协议类型：GNU General Public License v3.0
-* Star数量：1209 个
-* Fork数量：404 次
-* 关注人数：1209 人
-* 贡献人数：69 人
-* Open Issues数量：149 个
-* Github地址：https://github.com/TeamNewPipe/NewPipeExtractor.git
-
-
-NewPipe Extractor是一个用于从流媒体网站提取数据的核心库。它是NewPipe的一个组件，但也可以独立使用。
+Limbo是一个正在进行中的OLTP数据库管理系统，兼容SQLite。它具有一个内部OLTP数据库引擎库，支持io_uring的异步I/O，SQLite兼容性，SQL方言支持，只读文件格式支持，SQLite C API以及JavaScript/WebAssembly绑定。
 
