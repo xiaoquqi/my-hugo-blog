@@ -1,32 +1,32 @@
 ---
-title: Github 2024-07-18 开源项目日报 Top10
-date: 2024-07-18T07:01:03+08:00
+title: Github 2024-07-18 Go开源项目日报 Top10
+date: 2024-07-18T07:11:08+08:00
 slug: github-trendings-today-20240718
 author: 老孙正经胡说
-image: /images/krahets-hello-algo-0.png
+image: /images/moond4rk-hackbrowserdata-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 和
-  - 项目
-  - 人
   - 人数
+  - 人
+  - 项目
   - 开发
-  - 创建
   - 语言
-  - 贡献
-  - 周期
+  - 和
   - 类型
   - 关注
-  - 地址
+  - 贡献
   - 是
+  - 创建
+  - 周期
   - 协议
-  - 构建
+  - 地址
+  - 库
+  - 用于
+  - 中
   - 提供
-  - 应用程序
-  - 算法
-  - 开源
+  - 支持
 
 categories:
 
@@ -38,172 +38,169 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| TypeScript项目 | 3 |
-| 非开发语言项目 | 3 |
-| Jupyter Notebook项目 | 2 |
-| Python项目 | 2 |
-| JavaScript项目 | 1 |
-| C#项目 | 1 |
-| Rust项目 | 1 |
-| MDX项目 | 1 |
-| C++项目 | 1 |
+| Go项目 | 10 |
 
-## 项目化学习
+## 云原生时代的Go微服务框架
 
-* 创建周期：2538 天
+* 创建周期：2016 天
+* 开发语言：Go
 * 协议类型：MIT License
-* Star数量：161973 个
-* Fork数量：21345 次
-* 关注人数：161973 人
+* Star数量：22819 个
+* Fork数量：3958 次
+* 关注人数：22819 人
+* 贡献人数：262 人
+* Open Issues数量：127 个
+* Github地址：https://github.com/go-kratos/kratos.git
+* 项目首页: https://go-kratos.dev
+
+
+您的终极Go微服务框架，适用于云原生时代。
+
+## Zap: Go语言中的高性能日志记录库
+
+* 创建周期：2961 天
+* 开发语言：Go
+* 协议类型：MIT License
+* Star数量：20758 个
+* Fork数量：1387 次
+* 关注人数：20758 人
+* 贡献人数：131 人
+* Open Issues数量：143 个
+* Github地址：https://github.com/uber-go/zap.git
+* 项目首页: https://pkg.go.dev/go.uber.org/zap
+
+
+Zap是一个开源项目，提供Go语言中快速、结构化、分级的日志记录。它为Go应用程序提供了高性能的日志记录库。
+
+## Sing-box: 通用代理平台
+
+* 创建周期：574 天
+* 开发语言：Go
+* 协议类型：Other
+* Star数量：11152 个
+* Fork数量：1580 次
+* 关注人数：11152 人
+* 贡献人数：43 人
+* Open Issues数量：49 个
+* Github地址：https://github.com/SagerNet/sing-box.git
+* 项目首页: https://sing-box.sagernet.org/
+
+
+Sing-box 是一个开源的通用代理平台。
+
+## 基于 Go 1.18+ 泛型的 Lodash 风格的 Go 库
+
+* 创建周期：855 天
+* 开发语言：Go
+* 协议类型：MIT License
+* Star数量：15943 个
+* Fork数量：721 次
+* 关注人数：15943 人
 * 贡献人数：100 人
-* Open Issues数量：109 个
-* Github地址：https://github.com/practical-tutorials/project-based-learning.git
+* Open Issues数量：196 个
+* Github地址：https://github.com/samber/lo.git
+* 项目首页: https://pkg.go.dev/github.com/samber/lo
 
 
-项目化学习是一个由程序开发者学习如何从零开始构建应用程序的编程教程的精选列表。这些教程涵盖了不同的主要编程语言，可能涉及多种技术和语言。要开始使用，请简单地fork这个仓库。请参考CONTRIBUTING.md以获取贡献指南。
+基于 Go 1.18+ 泛型的 Lodash 风格的 Go 库，提供了诸如 map、filter、contains 和 find 等函数，用于对切片、映射和通道进行迭代。该项目起源于对 Go 1.18 中新泛型实现的实验，旨在提供一种类型安全的替代方案，以取代使用反射的现有包如 'go-funk'。基准测试表明，基于泛型的实现比使用反射的实现快得多，并且与纯 for 循环相当。未来该库的发展包括与即将加入 Go 标准库的帮助函数重叠，这将使其成为一个具有许多抽象的有价值且合法的库。该项目命名为 'samber/lo'，以类似于 'Lodash' 的方式来区分它与现有的 Go 包。
 
-## 《Hello 算法》：动画图解、一键运行的数据结构与算法教程
+## Telegraf: 用于收集、处理和写入指标的代理程序
 
-* 创建周期：476 天
-* 协议类型：Other
-* Star数量：63556 个
-* Fork数量：7731 次
-* 关注人数：63556 人
-* 贡献人数：137 人
-* Open Issues数量：20 个
-* Github地址：https://github.com/krahets/hello-algo.git
-* 项目首页: https://hello-algo.com
-
-
-![](/images/krahets-hello-algo-0.png)
-
-《Hello 算法》是一本开源的、面向初学者的关于数据结构与算法的教程，采用动画图解和可运行的代码示例，支持多种编程语言。该项目旨在提供清晰易懂的内容，学习曲线平滑，引导初学者探索数据结构与算法的知识地图。鼓励读者互相学习，通常会在两天内回复问题和评论。
-
-## Supabase: 企业级开源Firebase替代方案
-
-* 创建周期：1729 天
-* 开发语言：TypeScript, MDX
-* 协议类型：Apache License 2.0
-* Star数量：68551 个
-* Fork数量：6488 次
-* 关注人数：68551 人
-* 贡献人数：389 人
-* Open Issues数量：424 个
-* Github地址：https://github.com/supabase/supabase.git
-* 项目首页: https://supabase.com
-
-
-![](/images/supabase-supabase-0.png)
-
-Supabase是一个开源的Firebase替代品，旨在利用企业级开源工具复制Firebase的功能。它提供托管的Postgres数据库、身份验证和授权、自动生成的API、实时订阅、函数、文件存储、AI工具包和仪表板。
-
-![](/images/supabase-supabase-1.png)
-
-## Rust编程语言的可靠异步运行时：Tokio
-
-* 创建周期：2759 天
-* 开发语言：Rust
+* 创建周期：3284 天
+* 开发语言：Go
 * 协议类型：MIT License
-* Star数量：24319 个
-* Fork数量：2213 次
-* 关注人数：24319 人
-* 贡献人数：441 人
-* Open Issues数量：275 个
-* Github地址：https://github.com/tokio-rs/tokio.git
-* 项目首页: https://tokio.rs
+* Star数量：13681 个
+* Fork数量：5457 次
+* 关注人数：13681 人
+* 贡献人数：422 人
+* Open Issues数量：331 个
+* Github地址：https://github.com/influxdata/telegraf.git
+* 项目首页: https://influxdata.com/telegraf
 
 
-Tokio是使用Rust编程语言编写可靠、异步和精简应用程序的运行时。它提供了零成本抽象，利用Rust的所有权、类型系统和并发模型，实现了快速、可靠和可扩展的性能。Tokio具有最小的占用空间，并自然地处理背压和取消。
+Telegraf是一个用于收集、处理、聚合和写入指标的代理程序，具有插件系统，可以轻松添加对额外指标收集的支持。它包括输入、处理器、聚合器和输出插件，并鼓励社区贡献新的插件。
 
-## Langflow: 人工智能应用程序的动态图构建和部署工具
+## HackBrowserData - 浏览器数据解密工具
 
-* 创建周期：432 天
-* 开发语言：JavaScript, Python
+* 创建周期：1302 天
+* 开发语言：Go
 * 协议类型：MIT License
-* Star数量：16600 个
-* Fork数量：2464 次
-* 关注人数：16600 人
-* 贡献人数：87 人
-* Open Issues数量：140 个
-* Github地址：https://github.com/langflow-ai/langflow.git
-* 项目首页: http://www.langflow.org
+* Star数量：9397 个
+* Fork数量：1448 次
+* 关注人数：9397 人
+* 贡献人数：19 人
+* Open Issues数量：42 个
+* Github地址：https://github.com/moonD4rk/HackBrowserData.git
 
 
-Langflow是一个基于动态图的工具，用于构建和部署人工智能应用程序，具有模块化和交互式设计，鼓励快速实验和原型设计。它提供文档、社区和通过pip进行简便安装。用户可以通过将组件拖放到画布上创建流程，通过编辑参数进行探索，并将流程导出为JSON文件。此外，Langflow还提供了用于管理和配置的命令行界面（CLI）。
+![](/images/moond4rk-hackbrowserdata-0.png)
 
-## OceanBase: 企业级分布式关系型数据库
+HackBrowserData是一个命令行工具，用于解密和导出浏览器数据，如密码、历史记录、Cookie、书签、信用卡信息、下载记录、本地存储和扩展。它支持市场上最流行的浏览器，并可在Windows、macOS和Linux上运行。
 
-* 创建周期：1144 天
-* 开发语言：C++
+## Evilginx: 用于绕过两因素认证的中间人攻击框架
+
+* 创建周期：2200 天
+* 开发语言：Go
+* 协议类型：BSD 3-Clause "New" or "Revised" License
+* Star数量：10329 个
+* Fork数量：1878 次
+* 关注人数：10329 人
+* 贡献人数：25 人
+* Open Issues数量：205 个
+* Github地址：https://github.com/kgretzky/evilginx2.git
+
+
+![](/images/kgretzky-evilginx2-0.png)
+
+Evilginx是一个用于钓鱼登录凭据和会话cookie的中间人攻击框架，允许绕过两因素认证。它是2017年发布的Evilginx的继任者，是一个完全由GO编写的独立应用程序，具有自己的HTTP和DNS服务器。
+
+![](/images/kgretzky-evilginx2-1.png)
+
+## Atlantis: Terraform拉取请求自动化
+
+* 创建周期：2291 天
+* 开发语言：Go
 * 协议类型：Other
-* Star数量：7874 个
-* Fork数量：1611 次
-* 关注人数：7874 人
-* 贡献人数：321 人
-* Open Issues数量：412 个
-* Github地址：https://github.com/oceanbase/oceanbase.git
-* 项目首页: https://open.oceanbase.com
+* Star数量：7362 个
+* Fork数量：999 次
+* 关注人数：7362 人
+* 贡献人数：360 人
+* Open Issues数量：635 个
+* Github地址：https://github.com/runatlantis/atlantis.git
+* 项目首页: https://www.runatlantis.io
 
 
-OceanBase是一种具有高可用性、高性能、横向可扩展性和与SQL标准兼容性的企业分布式关系型数据库。
+![](/images/runatlantis-atlantis-0.png)
 
-## GS Quant: 量化金融的Python工具包
+Atlantis是一个开源项目，用于简化Terraform拉取请求自动化。它允许用户自动化Terraform工作流程，共同处理基础架构变更，并通过版本控制管理Terraform配置。通过使用Atlantis，团队可以确保基础设施的供应流程具有一致性、安全性和效率。该项目随着时间的推移获得了越来越多的关注者，表明它在社区中的流行度和采纳率不断增加。
 
-* 创建周期：2009 天
-* 开发语言：Jupyter Notebook, Python
-* 协议类型：Apache License 2.0
-* Star数量：2954 个
-* Fork数量：515 次
-* 关注人数：2954 人
-* 贡献人数：21 人
-* Open Issues数量：32 个
-* Github地址：https://github.com/goldmansachs/gs-quant.git
-* 项目首页: https://developer.gs.com/discover/products/gs-quant/
+## franz-go - 用Go编写的完整Apache Kafka客户端
+
+* 创建周期：1942 天
+* 开发语言：Go
+* 协议类型：BSD 3-Clause "New" or "Revised" License
+* Star数量：1640 个
+* Fork数量：160 次
+* 关注人数：1640 人
+* 贡献人数：74 人
+* Open Issues数量：19 个
+* Github地址：https://github.com/twmb/franz-go.git
 
 
-GS Quant是一个用于量化金融的Python工具包，旨在加速交易策略和风险管理解决方案的开发。它由高盛的量化开发人员创建和维护，利用了超过25年的全球市场经验。
+franz-go是一个功能完备的纯Go库，用于与Kafka从版本0.8.0到3.6+进行交互。它支持生产、消费、事务处理、管理等功能。它旨在提供从版本0.8.0开始的每个Kafka功能，包括支持事务、正则主题消费、最新的分区策略、数据丢失检测、最接近的副本获取等。该库努力支持任何现有的客户端KIP，并为与Kafka交互提供直观的API。
 
-## Git凭据管理器（GCM）- 跨平台Git凭据存储
+## DiceDB: Redis的SQL实时反应性替代品
 
-* 创建周期：2067 天
-* 开发语言：C#
+* 创建周期：685 天
+* 开发语言：Go
 * 协议类型：Other
-* Star数量：6031 个
-* Fork数量：1632 次
-* 关注人数：6031 人
-* 贡献人数：63 人
-* Open Issues数量：99 个
-* Github地址：https://github.com/git-ecosystem/git-credential-manager.git
+* Star数量：766 个
+* Fork数量：185 次
+* 关注人数：766 人
+* 贡献人数：16 人
+* Open Issues数量：86 个
+* Github地址：https://github.com/DiceDB/dice.git
 
 
-Git凭据管理器（GCM）是一个安全的跨平台Git凭据存储，可用于GitHub、Azure Repos和其他流行的Git托管服务进行身份验证。它旨在为Windows、macOS和Linux提供一致且安全的身份验证体验，包括多因素认证。GCM支持Azure DevOps、Bitbucket、GitHub和GitLab，并取代了基于.NET Framework的Git凭据管理器（适用于Windows）和基于Java的Git凭据管理器（适用于Mac和Linux）。
-
-## Dev-Books存储库：开发和编程书籍精选
-
-* 创建周期：1275 天
-* Star数量：5552 个
-* Fork数量：1161 次
-* 关注人数：5552 人
-* 贡献人数：30 人
-* Open Issues数量：18 个
-* Github地址：https://github.com/free-educa/books.git
-
-
-Dev-Books存储库是一个精心策划的与开发和编程相关的书籍收藏，迎合有志成为程序员的人、经验丰富的开发人员，或者对保持最新软件变化和趋势感兴趣的任何人。
-
-## LLM图构建器
-
-* 创建周期：189 天
-* 开发语言：Jupyter Notebook, TypeScript
-* 协议类型：Apache License 2.0
-* Star数量：1075 个
-* Fork数量：162 次
-* 关注人数：1075 人
-* 贡献人数：15 人
-* Open Issues数量：75 个
-* Github地址：https://github.com/neo4j-labs/llm-graph-builder.git
-* 项目首页: https://neo4j.com/labs/genai-ecosystem/llm-graph-builder/
-
-
-LLM图构建器是一个开源项目，专注于使用语言模型模型（LLMs）从非结构化数据构建知识图。该项目旨在创建一个知识图构建应用程序，能够高效地从非结构化数据生成知识图。
+DiceDB是一个开源项目，它是Redis的一个即插即用的替代品，提供基于SQL的实时反应性。它仍在开发中，支持Redis命令的一个子集，因此不建议在生产中使用。但是，鼓励贡献者浏览开放问题并帮助加快开发进程。
 
