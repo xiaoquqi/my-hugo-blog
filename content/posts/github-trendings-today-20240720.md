@@ -1,32 +1,32 @@
 ---
-title: Github 2024-07-20 开源项目日报 Top10
-date: 2024-07-20T07:01:01+08:00
+title: Github 2024-07-20 Rust开源项目日报 Top10
+date: 2024-07-20T07:11:09+08:00
 slug: github-trendings-today-20240720
 author: 老孙正经胡说
-image: /images/actions-runner-images-0.png
+image: /images/rust-lang-rust-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 和
   - 项目
-  - 人数
   - 人
-  - 语言
+  - 人数
+  - 和
   - 开发
-  - 创建
+  - 语言
+  - 构建
   - 类型
-  - 提供
-  - 周期
-  - 关注
   - 贡献
-  - 地址
-  - 协议
   - 是
-  - 库
-  - 安全
-  - 简化
-  - 模型
+  - 创建
+  - 周期
+  - 协议
+  - 关注
+  - 地址
+  - 可靠
+  - 开源
+  - 数据
+  - 并
 
 categories:
 
@@ -38,43 +38,58 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 3 |
-| PowerShell项目 | 2 |
-| Go项目 | 2 |
-| Rust项目 | 1 |
-| C#项目 | 1 |
-| HCL项目 | 1 |
+| Rust项目 | 10 |
+| TypeScript项目 | 1 |
 
-## Vault - 开源秘密管理与加密服务
+## Rust: 构建可靠高效软件的开源项目
 
-* 创建周期：3277 天
-* 开发语言：Go
+* 创建周期：5064 天
+* 开发语言：Rust
 * 协议类型：Other
-* Star数量：29288 个
-* Fork数量：4127 次
-* 关注人数：29288 人
-* 贡献人数：392 人
-* Open Issues数量：1318 个
-* Github地址：https://github.com/hashicorp/vault.git
-* 项目首页: https://www.vaultproject.io/
+* Star数量：92978 个
+* Fork数量：12000 次
+* 关注人数：92978 人
+* 贡献人数：442 人
+* Open Issues数量：9775 个
+* Github地址：https://github.com/rust-lang/rust.git
+* 项目首页: https://www.rust-lang.org
 
 
-Vault是一个开源工具，用于秘密管理、加密服务和特权访问管理。它提供了一个统一的界面，用于安全地访问和控制各种类型的秘密，如API密钥、密码和证书。Vault提供了安全的秘密存储、动态秘密生成、数据加密、租约和续约以及撤销支持等功能。它还为安全自动化提供了文档、入门指南和认证考试。
+![](/images/rust-lang-rust-0.png)
 
-## 简化大型语言模型微调的项目
+Rust 是一个旨在赋予每个人构建可靠高效软件能力的开源项目。主要源代码库包含编译器、标准库和文档。
 
-* 创建周期：331 天
-* 开发语言：Python
+## InfluxDB Edge: 开源实时时序数据库
+
+* 创建周期：3817 天
+* 开发语言：Rust
 * 协议类型：Apache License 2.0
-* Star数量：17269 个
-* Fork数量：2074 次
-* 关注人数：17269 人
-* 贡献人数：56 人
-* Open Issues数量：60 个
-* Github地址：https://github.com/hiyouga/LLaMA-Factory.git
+* Star数量：27405 个
+* Fork数量：3468 次
+* 关注人数：27405 人
+* 贡献人数：319 人
+* Open Issues数量：1898 个
+* Github地址：https://github.com/influxdata/influxdb.git
+* 项目首页: https://influxdata.com
 
 
-该项目旨在简化大型语言模型的微调过程，使其更加高效。它为Colab和本地机器提供了资源。
+InfluxDB Edge是用Rust编写的开源时序数据库，专注于为各种类型的观测数据提供实时缓冲。最新版本（3.x）可以通过SQL或InfluxQL进行查询，并将数据批量持久化到对象存储中作为Parquet文件。它可以作为独立系统在单个进程中运行，并提供商业版本，用于具有企业安全功能的集群化、分布式时序数据库。
+
+## SurrealDB：现代应用程序的可扩展、分布式、协作数据库
+
+* 创建周期：870 天
+* 开发语言：Rust
+* 协议类型：Other
+* Star数量：25228 个
+* Fork数量：777 次
+* 关注人数：25228 人
+* 贡献人数：101 人
+* Open Issues数量：566 个
+* Github地址：https://github.com/surrealdb/surrealdb.git
+* 项目首页: https://surrealdb.com
+
+
+SurrealDB是一个可扩展的、分布式的、协作的、文档-图形数据库，专为现代应用程序设计。它简化了数据库和API基础设施，减少了开发时间，并实现了实时协作。其关键特点包括减少开发时间、实时协作API后端服务、支持多种查询语言、细粒度访问控制等。
 
 ## Rust编程语言的可靠异步运行时：Tokio
 
@@ -92,113 +107,105 @@ Vault是一个开源工具，用于秘密管理、加密服务和特权访问管
 
 Tokio是使用Rust编程语言编写可靠、异步和精简应用程序的运行时。它提供了零成本抽象，利用Rust的所有权、类型系统和并发模型，实现了快速、可靠和可扩展的性能。Tokio具有最小的占用空间，并自然地处理背压和取消。
 
-## 基于 Go 1.18+ 泛型的 Lodash 风格的 Go 库
+## Turbo：下一代前端开发工具链
 
-* 创建周期：855 天
-* 开发语言：Go
+* 创建周期：977 天
+* 开发语言：Rust
 * 协议类型：MIT License
-* Star数量：15943 个
-* Fork数量：721 次
-* 关注人数：15943 人
-* 贡献人数：100 人
-* Open Issues数量：196 个
-* Github地址：https://github.com/samber/lo.git
-* 项目首页: https://pkg.go.dev/github.com/samber/lo
+* Star数量：25308 个
+* Fork数量：1713 次
+* 关注人数：25308 人
+* 贡献人数：384 人
+* Open Issues数量：193 个
+* Github地址：https://github.com/vercel/turbo.git
+* 项目首页: https://turbo.build
 
 
-基于 Go 1.18+ 泛型的 Lodash 风格的 Go 库，提供了诸如 map、filter、contains 和 find 等函数，用于对切片、映射和通道进行迭代。该项目起源于对 Go 1.18 中新泛型实现的实验，旨在提供一种类型安全的替代方案，以取代使用反射的现有包如 'go-funk'。基准测试表明，基于泛型的实现比使用反射的实现快得多，并且与纯 for 循环相当。未来该库的发展包括与即将加入 Go 标准库的帮助函数重叠，这将使其成为一个具有许多抽象的有价值且合法的库。该项目命名为 'samber/lo'，以类似于 'Lodash' 的方式来区分它与现有的 Go 包。
+Turbo是一个用Rust编写的面向前端开发的下一代工具链。它由三个主要部分组成：Turbopack，一个增量打包工具（Webpack的继任者），Turborepo，一个增量构建系统，以及Turbo引擎，一个低级增量计算和记忆化引擎。
 
-## Mem0: 个性化人工智能的内存层
+## Cube - 用于构建数据应用程序的语义层
 
-* 创建周期：395 天
-* 开发语言：Python
-* Star数量：9645 个
-* Fork数量：1177 次
-* 关注人数：9645 人
-* 贡献人数：111 人
-* Open Issues数量：148 个
-* Github地址：https://github.com/mem0ai/mem0.git
-* 项目首页: https://docs.mem0.ai
-
-
-Mem0是用于大型语言模型的内存层，可在各种应用程序中实现个性化的人工智能体验。它提供智能、自我改进的内存层，还包括Embedchain项目。
-
-## GitHub Actions Runner Images - GitHub操作的开源runner镜像集合
-
-* 创建周期：1706 天
-* 开发语言：PowerShell
-* 协议类型：MIT License
-* Star数量：8631 个
-* Fork数量：3193 次
-* 关注人数：8631 人
-* 贡献人数：256 人
-* Open Issues数量：23 个
-* Github地址：https://github.com/actions/runner-images.git
-
-
-![](/images/actions-runner-images-0.png)
-
-GitHub Actions Runner Images是GitHub Actions的一组开源runner镜像集合。它提供了不同操作系统和软件支持的各种镜像，以及与存储库交互的指南和常见问题解答。
-
-## Win11Debloat: 简化Windows体验的轻量PowerShell脚本
-
-* 创建周期：1362 天
-* 开发语言：PowerShell
-* 协议类型：MIT License
-* Star数量：7726 个
-* Fork数量：314 次
-* 关注人数：7726 人
-* 贡献人数：5 人
-* Open Issues数量：10 个
-* Github地址：https://github.com/Raphire/Win11Debloat.git
-
-
-Win11Debloat是一个简单且轻量的PowerShell脚本，旨在移除预安装的Windows应用程序，禁用遥测功能，并通过移除侵入性元素和广告来简化用户体验。它适用于Windows 10和Windows 11，提供可定制的修改，并使用包含的注册表文件轻松恢复。
-
-## STORM: 利用大型语言模型从零开始撰写类似维基百科的文章
-
-* 创建周期：22 天
-* 开发语言：HTML
-* 协议类型：MIT License
-* Star数量：1070 个
-* Fork数量：101 次
-* 关注人数：1070 人
-* 贡献人数：3 人
-* Open Issues数量：6 个
-* Github地址：https://github.com/stanford-oval/storm.git
-* 项目首页: https://arxiv.org/abs/2402.14207
-
-
-STORM是一个由LLM驱动的知识整理系统，它研究一个主题并生成带引用的全文报告。该存储库包含了一篇在NAACL 2024上发表的论文的代码，题为“利用大型语言模型从零开始撰写类似维基百科的文章”的作者是Yijia Shao，Yucheng Jiang，Theodore A. Kanell，Peter Xu，Omar Khattab和Monica S. Lam。
-
-## Git凭据管理器（GCM）- 跨平台Git凭据存储
-
-* 创建周期：2067 天
-* 开发语言：C#
+* 创建周期：2106 天
+* 开发语言：Rust, TypeScript
 * 协议类型：Other
-* Star数量：6031 个
-* Fork数量：1632 次
-* 关注人数：6031 人
-* 贡献人数：63 人
-* Open Issues数量：99 个
-* Github地址：https://github.com/git-ecosystem/git-credential-manager.git
+* Star数量：17425 个
+* Fork数量：1738 次
+* 关注人数：17425 人
+* 贡献人数：292 人
+* Open Issues数量：931 个
+* Github地址：https://github.com/cube-js/cube.git
+* 项目首页: https://cube.dev
 
 
-Git凭据管理器（GCM）是一个安全的跨平台Git凭据存储，可用于GitHub、Azure Repos和其他流行的Git托管服务进行身份验证。它旨在为Windows、macOS和Linux提供一致且安全的身份验证体验，包括多因素认证。GCM支持Azure DevOps、Bitbucket、GitHub和GitLab，并取代了基于.NET Framework的Git凭据管理器（适用于Windows）和基于Java的Git凭据管理器（适用于Mac和Linux）。
+Cube是用于构建数据应用程序的语义层。它帮助数据工程师和应用程序开发人员访问现代数据存储中的数据，将其组织成一致的定义，并将其传递给每个应用程序。
 
-## 亚马逊弹性Kubernetes (EKS)资源Terraform模块
+## Sniffnet: 舒适监控互联网流量的开源项目
 
-* 创建周期：2235 天
-* 开发语言：HCL
+* 创建周期：720 天
+* 开发语言：Rust
 * 协议类型：Apache License 2.0
-* Star数量：4280 个
-* Fork数量：3999 次
-* 关注人数：4280 人
-* 贡献人数：337 人
-* Open Issues数量：7 个
-* Github地址：https://github.com/terraform-aws-modules/terraform-aws-eks.git
-* 项目首页: https://registry.terraform.io/modules/terraform-aws-modules/eks/aws
+* Star数量：14601 个
+* Fork数量：454 次
+* 关注人数：14601 人
+* 贡献人数：42 人
+* Open Issues数量：33 个
+* Github地址：https://github.com/GyulyVGC/sniffnet.git
+* 项目首页: https://sniffnet.net
 
 
-这是一个旨在简化创建亚马逊弹性Kubernetes (EKS)资源的 Terraform 模块。它简化了使用 Terraform 设置亚马逊 EKS (Kubernetes) 资源的过程。
+![](/images/gyulyvgc-sniffnet-0.png)
+
+Sniffnet是一个开源项目，允许用户舒适地监控其互联网流量。通过支持Sniffnet的发展，用户可以为该工具的改进做出贡献。
+
+![](/images/gyulyvgc-sniffnet-1.png)
+
+## Volta: 快速、可靠、通用的JavaScript工具链管理器
+
+* 创建周期：2490 天
+* 开发语言：Rust
+* 协议类型：Other
+* Star数量：10397 个
+* Fork数量：223 次
+* 关注人数：10397 人
+* 贡献人数：52 人
+* Open Issues数量：264 个
+* Github地址：https://github.com/volta-cli/volta.git
+* 项目首页: https://volta.sh
+
+
+![](/images/volta-cli-volta-0.png)
+
+Volta是一个开源项目，提供了一种快速、可靠和通用的方式来安装和运行JavaScript工具链。它是用Rust构建的，并确保在不干扰工作流程的情况下，在不同的项目环境中保持一致性。
+
+## Apache DataFusion：高速可定制的查询引擎
+
+* 创建周期：1099 天
+* 开发语言：Rust
+* 协议类型：Apache License 2.0
+* Star数量：4934 个
+* Fork数量：908 次
+* 关注人数：4934 人
+* 贡献人数：403 人
+* Open Issues数量：997 个
+* Github地址：https://github.com/apache/datafusion.git
+* 项目首页: https://arrow.apache.org/datafusion
+
+
+Apache DataFusion是一个高速、可定制的查询引擎，用于在Rust中构建高质量的数据中心系统，利用Apache Arrow内存格式。它提供了SQL和Dataframe API，出色的性能，内置对CSV、Parquet、JSON和Avro的支持，以及丰富的定制功能和强大的社区。
+
+## NativeLink：高性能构建缓存和远程执行系统
+
+* 创建周期：1304 天
+* 开发语言：Rust
+* 协议类型：Apache License 2.0
+* Star数量：459 个
+* Fork数量：53 次
+* 关注人数：459 人
+* 贡献人数：26 人
+* Open Issues数量：123 个
+* Github地址：https://github.com/TraceMachina/nativelink.git
+* 项目首页: https://nativelink.com
+
+
+NativeLink是一个高效的、高性能的构建缓存和远程执行系统，可以加速软件编译和测试，同时降低基础设施成本。它通过智能缓存构建产物并在多台机器间分发任务，优化各种规模项目的构建流程。
 
