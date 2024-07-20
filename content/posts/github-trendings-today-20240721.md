@@ -1,32 +1,32 @@
 ---
-title: Github 2024-07-21 开源项目日报 Top10
-date: 2024-07-21T07:01:07+08:00
+title: Github 2024-07-21 php开源项目日报 Top10
+date: 2024-07-21T07:11:09+08:00
 slug: github-trendings-today-20240721
 author: 老孙正经胡说
-image: /images/immich-app-immich-0.png
+image: /images/laravel-framework-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
-  - 人
   - 和
   - 人数
+  - 人
+  - 是
   - 开发
+  - 项目
+  - 贡献
   - 语言
   - 创建
-  - 类型
   - 周期
-  - 关注
-  - 贡献
-  - 地址
-  - 是
   - 协议
-  - 高性能
+  - 类型
+  - 关注
+  - 地址
+  - 开源
   - 提供
-  - 中
-  - 应用程序
-  - 文件
+  - 支持
+  - 并
+  - 用于
 
 categories:
 
@@ -38,169 +38,171 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| TypeScript项目 | 3 |
-| Python项目 | 2 |
-| Java项目 | 1 |
-| HTML项目 | 1 |
-| 非开发语言项目 | 1 |
-| Dart项目 | 1 |
-| Rust项目 | 1 |
-| C项目 | 1 |
-| PowerShell项目 | 1 |
+| PHP项目 | 10 |
 
-## Nuxt: 用Vue.js创建类型安全、高性能和生产级全栈Web应用程序和网站的直观框架
+## Laravel: 以优雅语法简化Web开发
 
-* 创建周期：2825 天
-* 开发语言：TypeScript
+* 创建周期：4028 天
+* 开发语言：PHP
 * 协议类型：MIT License
-* Star数量：53310 个
-* Fork数量：4884 次
-* 关注人数：53310 人
-* 贡献人数：449 人
-* Open Issues数量：808 个
-* Github地址：https://github.com/nuxt/nuxt.git
-* 项目首页: https://nuxt.com
+* Star数量：30824 个
+* Fork数量：10526 次
+* 关注人数：30824 人
+* 贡献人数：383 人
+* Open Issues数量：27 个
+* Github地址：https://github.com/laravel/framework.git
+* 项目首页: https://laravel.com
 
 
-Nuxt是一个免费且开源的框架，提供了一种直观且可扩展的方式来使用Vue.js创建类型安全、高性能和生产级全栈Web应用程序和网站。它提供了诸多功能，包括服务器端渲染、静态站点生成、自动路由、数据获取、SEO优化、TypeScript支持以及超过200个模块的可扩展性。
+![](/images/laravel-framework-0.png)
 
-## 高性能自托管照片和视频管理解决方案
+Laravel是一个以其富有表现力和优雅的语法而闻名的Web应用程序框架。它旨在通过简化常见任务（如路由、依赖注入、会话和缓存存储、数据库模式迁移、后台作业处理和实时事件广播）使Web开发成为一种愉快和创造性的体验。它提供了平衡的易用性和功能强大性，适用于小型和大型应用。
 
-* 创建周期：781 天
-* 开发语言：TypeScript, Dart
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：28083 个
-* Fork数量：1263 次
-* 关注人数：28083 人
-* 贡献人数：295 人
-* Open Issues数量：384 个
-* Github地址：https://github.com/immich-app/immich.git
-* 项目首页: https://immich.app
+## Symfony PHP框架和组件
 
-
-![](/images/immich-app-immich-0.png)
-
-这是一个高性能的自托管照片和视频管理解决方案。然而，需要注意的是该项目正在非常积极地开发中，用户应该预期会有错误和重大变化。不建议将该应用作为存储照片和视频的唯一方式，并且用户应始终遵循 3-2-1 备份计划来保护他们珍贵的照片和视频。
-
-## 本地托管的PDF文件操作工具
-
-* 创建周期：464 天
-* 开发语言：Java, HTML
-* 协议类型：GNU General Public License v3.0
-* Star数量：23260 个
-* Fork数量：1652 次
-* 关注人数：23260 人
-* 贡献人数：104 人
-* Open Issues数量：164 个
-* Github地址：https://github.com/Stirling-Tools/Stirling-PDF.git
+* 创建周期：5130 天
+* 开发语言：PHP
+* 协议类型：MIT License
+* Star数量：28999 个
+* Fork数量：9440 次
+* 关注人数：28999 人
+* 贡献人数：368 人
+* Open Issues数量：846 个
+* Github地址：https://github.com/symfony/symfony.git
+* 项目首页: https://symfony.com
 
 
-![](/images/stirling-tools-stirling-pdf-0.png)
+Symfony是用于Web和控制台应用程序的PHP框架，以及一组可重用的PHP组件。它被数千个Web应用程序和流行的PHP项目广泛使用。该框架遵循语义化版本控制，提供长期支持（LTS）版本，并具有可预测且适合业务的发布流程。Symfony 7.0得到了Shopware、Sulu和Les-Tilleuls.coop的支持。Shopware是一个由Symfony和Vue.js驱动的开放式无头商务平台，Sulu是Symfony开发人员的CMS，Les-Tilleuls.coop是一支提供专业服务的Symfony专家团队。该项目提供了全面的文档、支持性社区，并欢迎开发人员的贡献。安全漏洞可以按照特定程序进行报告，并且开发由Symfony核心团队领导并得到贡献者的支持。
 
-一个本地托管的网络应用程序，提供对PDF文件的各种操作。它是一个使用Docker的综合工具，允许进行分割、合并、转换、重新组织、添加图像、旋转和压缩PDF文件等任务。该应用程序通过不发出用于跟踪或记录的出站调用来确保隐私，并且文件在任务执行期间要么存在于客户端，要么仅暂时存在于服务器内存中。
+## BookStack: 用PHP和Laravel构建的开源文档存储平台
 
-## 简化大型语言模型微调的项目
-
-* 创建周期：331 天
-* 开发语言：Python
-* 协议类型：Apache License 2.0
-* Star数量：17269 个
-* Fork数量：2074 次
-* 关注人数：17269 人
-* 贡献人数：56 人
-* Open Issues数量：60 个
-* Github地址：https://github.com/hiyouga/LLaMA-Factory.git
-
-
-该项目旨在简化大型语言模型的微调过程，使其更加高效。它为Colab和本地机器提供了资源。
-
-## 英语无障碍化项目
-
-* 创建周期：1955 天
-* 开发语言：TypeScript
-* 协议类型：Mozilla Public License 2.0
-* Star数量：22035 个
-* Fork数量：3477 次
-* 关注人数：22035 人
-* 贡献人数：62 人
-* Open Issues数量：48 个
-* Github地址：https://github.com/ZuodaoTech/everyone-can-use-english.git
-* 项目首页: https://1000h.org
+* 创建周期：3186 天
+* 开发语言：PHP
+* 协议类型：MIT License
+* Star数量：13986 个
+* Fork数量：1756 次
+* 关注人数：13986 人
+* 贡献人数：170 人
+* Open Issues数量：495 个
+* Github地址：https://github.com/BookStackApp/BookStack.git
+* 项目首页: https://www.bookstackapp.com/
 
 
-该项目旨在使英语对每个人都更加易于访问，安装和使用说明可在文档中找到。
+![](/images/bookstackapp-bookstack-0.png)
 
-## NVIDIA Linux开源GPU内核模块源码
+BookStack是一个使用PHP和Laravel构建的开源平台，用于存储和组织信息和文档。它提供安装说明、文档、演示实例、管理员登录、屏幕截图、博客、问题列表、Discord聊天和支持选项等功能。
 
-* 创建周期：811 天
-* 开发语言：C
+## YOURLS: 自托管的PHP URL缩短器
+
+* 创建周期：4351 天
+* 开发语言：PHP
+* 协议类型：MIT License
+* Star数量：10459 个
+* Fork数量：1924 次
+* 关注人数：10459 人
+* 贡献人数：82 人
+* Open Issues数量：73 个
+* Github地址：https://github.com/YOURLS/YOURLS.git
+* 项目首页: https://yourls.org
+
+
+YOURLS是一组PHP脚本，允许用户在其服务器上运行自己的URL缩短服务，提供对数据、详细统计、分析、插件等的完全控制。它是免费和开源的。
+
+## Moloquent: Laravel中的MongoDB扩展包
+
+* 创建周期：4130 天
+* 开发语言：PHP
+* 协议类型：MIT License
+* Star数量：6968 个
+* Fork数量：1417 次
+* 关注人数：6968 人
+* 贡献人数：169 人
+* Open Issues数量：144 个
+* Github地址：https://github.com/mongodb/laravel-mongodb.git
+* 项目首页: https://www.mongodb.com/compatibility/mongodb-laravel-integration
+
+
+Moloquent是一个用于Laravel的包，它为MongoDB的Eloquent模型和查询构建器添加功能，使用原始的Laravel API。它扩展了原始的Laravel类，并兼容Laravel 10.x。该软件包因所有权转移给MongoDB，Inc.而更名为mongodb/laravel-mongodb。
+
+## Pterodactyl® - 开源游戏服务器管理面板
+
+* 创建周期：3052 天
+* 开发语言：PHP, TypeScript
 * 协议类型：Other
-* Star数量：14382 个
-* Fork数量：1190 次
-* 关注人数：14382 人
-* 贡献人数：13 人
-* Open Issues数量：168 个
-* Github地址：https://github.com/NVIDIA/open-gpu-kernel-modules.git
+* Star数量：5982 个
+* Fork数量：1469 次
+* 关注人数：5982 人
+* 贡献人数：163 人
+* Open Issues数量：403 个
+* Github地址：https://github.com/pterodactyl/panel.git
+* 项目首页: https://pterodactyl.io
 
 
-NVIDIA Linux开源GPU内核模块源码是NVIDIA Linux开源GPU内核模块版本550.100的源代码发布。
+![](/images/pterodactyl-panel-0.png)
 
-## Mem0: 个性化人工智能的内存层
+Pterodactyl®是一个使用PHP、React和Go构建的开源游戏服务器管理面板。它通过在隔离的Docker容器中运行游戏服务器，并为最终用户提供直观的用户界面，来优先考虑安全性。
 
-* 创建周期：395 天
-* 开发语言：Python
-* Star数量：9645 个
-* Fork数量：1177 次
-* 关注人数：9645 人
-* 贡献人数：111 人
-* Open Issues数量：148 个
-* Github地址：https://github.com/mem0ai/mem0.git
-* 项目首页: https://docs.mem0.ai
+## OpenAI PHP: 与OpenAI API交互的PHP API客户端
 
-
-Mem0是用于大型语言模型的内存层，可在各种应用程序中实现个性化的人工智能体验。它提供智能、自我改进的内存层，还包括Embedchain项目。
-
-## Win11Debloat: 简化Windows体验的轻量PowerShell脚本
-
-* 创建周期：1362 天
-* 开发语言：PowerShell
+* 创建周期：504 天
+* 开发语言：PHP
 * 协议类型：MIT License
-* Star数量：7726 个
-* Fork数量：314 次
-* 关注人数：7726 人
-* 贡献人数：5 人
-* Open Issues数量：10 个
-* Github地址：https://github.com/Raphire/Win11Debloat.git
+* Star数量：4071 个
+* Fork数量：415 次
+* 关注人数：4071 人
+* 贡献人数：32 人
+* Open Issues数量：16 个
+* Github地址：https://github.com/openai-php/client.git
 
 
-Win11Debloat是一个简单且轻量的PowerShell脚本，旨在移除预安装的Windows应用程序，禁用遥测功能，并通过移除侵入性元素和广告来简化用户体验。它适用于Windows 10和Windows 11，提供可定制的修改，并使用包含的注册表文件轻松恢复。
+![](/images/openai-php-client-0.png)
 
-## Dev-Books存储库：开发和编程书籍精选
+OpenAI PHP是一个由社区维护的PHP API客户端，用于与OpenAI API进行交互。支持那些为创建和维护这个有价值工具而贡献了时间和精力的开发者是非常重要的。
 
-* 创建周期：1275 天
-* Star数量：5552 个
-* Fork数量：1161 次
-* 关注人数：5552 人
-* 贡献人数：30 人
-* Open Issues数量：18 个
-* Github地址：https://github.com/free-educa/books.git
+## Pimcore - 开源数据与体验管理平台
 
-
-Dev-Books存储库是一个精心策划的与开发和编程相关的书籍收藏，迎合有志成为程序员的人、经验丰富的开发人员，或者对保持最新软件变化和趋势感兴趣的任何人。
-
-## NativeLink：高性能构建缓存和远程执行系统
-
-* 创建周期：1304 天
-* 开发语言：Rust
-* 协议类型：Apache License 2.0
-* Star数量：459 个
-* Fork数量：53 次
-* 关注人数：459 人
-* 贡献人数：26 人
-* Open Issues数量：123 个
-* Github地址：https://github.com/TraceMachina/nativelink.git
-* 项目首页: https://nativelink.com
+* 创建周期：4478 天
+* 开发语言：PHP
+* 协议类型：Other
+* Star数量：3112 个
+* Fork数量：1388 次
+* 关注人数：3112 人
+* 贡献人数：285 人
+* Open Issues数量：349 个
+* Github地址：https://github.com/pimcore/pimcore.git
+* 项目首页: http://www.pimcore.com
 
 
-NativeLink是一个高效的、高性能的构建缓存和远程执行系统，可以加速软件编译和测试，同时降低基础设施成本。它通过智能缓存构建产物并在多台机器间分发任务，优化各种规模项目的构建流程。
+Pimcore是一个开源的数据和体验管理平台，包括PIM、MDM、CDP、DAM、DXP/CMS和数字商务。它提供文档、翻译支持、问题跟踪、论坛和社区聊天以获取支持和讨论。
+
+## WordPress Develop: 开源同步镜像
+
+* 创建周期：2666 天
+* 开发语言：PHP
+* 协议类型：GNU General Public License v2.0
+* Star数量：2249 个
+* Fork数量：2276 次
+* 关注人数：2249 人
+* 贡献人数：81 人
+* Open Issues数量：1386 个
+* Github地址：https://github.com/WordPress/wordpress-develop.git
+* 项目首页: https://make.wordpress.org/core/handbook/contribute/git/github-pull-requests-for-code-review/
+
+
+WordPress Develop是一个开源项目，从git://develop.git.wordpress.org同步，包括分支和标签。它作为WordPress子版本库的镜像，并要求每个拉取请求都包含指向https://core.trac.wordpress.org/上的现有工单的链接。该版本库是一个开发空间，用于贡献bug报告、补丁、测试变更、撰写文档以及参与其中。
+
+## PHP_CodeSniffer: PHP文件标记化和编码标准检测工具
+
+* 创建周期：95 天
+* 开发语言：PHP
+* 协议类型：BSD 3-Clause "New" or "Revised" License
+* Star数量：514 个
+* Fork数量：25 次
+* 关注人数：514 人
+* 贡献人数：209 人
+* Open Issues数量：87 个
+* Github地址：https://github.com/PHPCSStandards/PHP_CodeSniffer.git
+
+
+PHP_CodeSniffer是一个工具，用于对PHP文件进行标记化，并检测指定编码标准的违规情况。它是由Squizlabs创建的已废弃的PHP_CodeSniffer包的延续。
 
