@@ -1,32 +1,32 @@
 ---
-title: Github 2024-07-25 开源项目日报 Top10
-date: 2024-07-25T07:01:28+08:00
+title: Github 2024-07-25 Go开源项目日报 Top10
+date: 2024-07-25T07:11:16+08:00
 slug: github-trendings-today-20240725
 author: 老孙正经胡说
-image: /images/hoppscotch-hoppscotch-0.png
+image: /images/grpc-ecosystem-grpc-gateway-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 人
   - 人数
+  - 人
   - 项目
   - 和
-  - 语言
-  - 开发
-  - 提供
   - 创建
-  - 是
-  - 模型
-  - 周期
+  - 开发
+  - 语言
   - 协议
+  - 是
+  - 周期
+  - 类型
   - 关注
   - 贡献
   - 地址
-  - 类型
-  - 代码
-  - 用户
-  - 免费
+  - 提供
+  - 开源
+  - 控制器
+  - 中
+  - 基础设施
 
 categories:
 
@@ -38,80 +38,7 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 4 |
-| Java项目 | 2 |
-| HTML项目 | 1 |
-| JavaScript项目 | 1 |
-| C项目 | 1 |
-| Go项目 | 1 |
-| TypeScript项目 | 1 |
-| Vue项目 | 1 |
-
-## 免费API集合
-
-* 创建周期：2900 天
-* 开发语言：Python
-* 协议类型：MIT License
-* Star数量：280943 个
-* Fork数量：30691 次
-* 关注人数：280943 人
-* 贡献人数：428 人
-* Open Issues数量：243 个
-* Github地址：https://github.com/public-apis/public-apis.git
-* 项目首页: http://public-apis.org
-
-
-这个开源项目是一个集体的免费API列表，涵盖了许多类别，如动物、动漫、反恶意软件、艺术与设计、认证与授权、区块链、书籍、商业等。它提供了各种用途的可用免费API的全面索引。
-
-## Hoppscotch: 开源API开发生态系统
-
-* 创建周期：1800 天
-* 开发语言：TypeScript, Vue
-* 协议类型：MIT License
-* Star数量：61887 个
-* Fork数量：4295 次
-* 关注人数：61887 人
-* 贡献人数：212 人
-* Open Issues数量：386 个
-* Github地址：https://github.com/hoppscotch/hoppscotch.git
-* 项目首页: https://hoppscotch.io
-
-
-![](/images/hoppscotch-hoppscotch-0.png)
-
-Hoppscotch是一个开源的API开发生态系统，提供了与Postman和Insomnia的替代方案。它提供了全面的文档，帮助用户了解更多关于该应用程序。
-
-## 本地托管的PDF文件操作工具
-
-* 创建周期：464 天
-* 开发语言：Java, HTML
-* 协议类型：GNU General Public License v3.0
-* Star数量：23260 个
-* Fork数量：1652 次
-* 关注人数：23260 人
-* 贡献人数：104 人
-* Open Issues数量：164 个
-* Github地址：https://github.com/Stirling-Tools/Stirling-PDF.git
-
-
-![](/images/stirling-tools-stirling-pdf-0.png)
-
-一个本地托管的网络应用程序，提供对PDF文件的各种操作。它是一个使用Docker的综合工具，允许进行分割、合并、转换、重新组织、添加图像、旋转和压缩PDF文件等任务。该应用程序通过不发出用于跟踪或记录的出站调用来确保隐私，并且文件在任务执行期间要么存在于客户端，要么仅暂时存在于服务器内存中。
-
-## Meta Llama 3 模型权重和分词器下载
-
-* 创建周期：37 天
-* 开发语言：Python
-* 协议类型：Other
-* Star数量：7323 个
-* Fork数量：506 次
-* 关注人数：7323 人
-* 贡献人数：19 人
-* Open Issues数量：40 个
-* Github地址：https://github.com/meta-llama/llama3.git
-
-
-Meta Llama 3 GitHub 网站提供模型权重和分词器的下载。用户需要访问 Meta Llama 网站，接受许可协议，然后通过电子邮件收到一个签名的 URL，使用提供的脚本开始下载。先决条件包括安装 wget 和 md5sum。链接在 24 小时后过期，并且有下载限制，但如果用户遇到 '403: Forbidden' 等错误，可以重新请求链接。
+| Go项目 | 10 |
 
 ## Testify - Go代码测试工具包
 
@@ -128,82 +55,150 @@ Meta Llama 3 GitHub 网站提供模型权重和分词器的下载。用户需要
 
 Testify是一个针对Go代码的开源工具包，提供了简单的断言、模拟和测试套件接口和功能。它提供了易于阅读的失败描述、断言的消息注释以及当前测试的终止功能。mock包提供了编写模拟对象的机制，suite包允许构建具有设置/拆卸方法的测试套件。Testify可以通过一行代码进行安装和更新，并支持从1.19版本开始的最新的Go主要版本。
 
-## Mem0: 个性化人工智能的内存层
+## OpenTofu: 声明性云基础设施管理工具
 
-* 创建周期：395 天
-* 开发语言：Python
-* Star数量：9645 个
-* Fork数量：1177 次
-* 关注人数：9645 人
-* 贡献人数：111 人
-* Open Issues数量：148 个
-* Github地址：https://github.com/mem0ai/mem0.git
-* 项目首页: https://docs.mem0.ai
-
-
-Mem0是用于大型语言模型的内存层，可在各种应用程序中实现个性化的人工智能体验。它提供智能、自我改进的内存层，还包括Embedchain项目。
-
-## Flipper Zero Unleashed Firmware - Flipper Zero解锁固件
-
-* 创建周期：679 天
-* 开发语言：C
-* 协议类型：GNU General Public License v3.0
-* Star数量：13585 个
-* Fork数量：1219 次
-* 关注人数：13585 人
-* 贡献人数：306 人
-* Open Issues数量：70 个
-* Github地址：https://github.com/DarkFlippers/unleashed-firmware.git
-* 项目首页: https://t.me/flipperzero_unofficial
+* 创建周期：151 天
+* 开发语言：Go
+* 协议类型：Mozilla Public License 2.0
+* Star数量：17366 个
+* Fork数量：602 次
+* 关注人数：17366 人
+* 贡献人数：360 人
+* Open Issues数量：166 个
+* Github地址：https://github.com/opentofu/opentofu.git
+* 项目首页: https://opentofu.org
 
 
-![](/images/darkflippers-unleashed-firmware-0.png)
+OpenTofu是一个开源工具，用于声明性地管理云基础设施。它支持基础设施即代码、执行计划、资源图和变更自动化，提供了高效和安全的基础设施管理。
 
-Flipper Zero Unleashed Firmware是一个旨在为Flipper Zero设备提供固件的开源项目。
+## gRPC-Gateway: 将RESTful HTTP API转换为gRPC的工具
 
-## Code Llama: 大型代码语言模型
-
-* 创建周期：241 天
-* 开发语言：Python
-* 协议类型：Other
-* Star数量：14497 个
-* Fork数量：1545 次
-* 关注人数：14497 人
-* 贡献人数：11 人
-* Open Issues数量：88 个
-* Github地址：https://github.com/meta-llama/codellama.git
-
-
-Code Llama是一系列用于代码的大型语言模型，提供了最先进的性能、填充能力、对大型输入上下文的支持，以及编程任务的零射击指令跟随能力。这些模型涵盖了多种应用程序，包括基础模型、Python专业化模型和具有不同参数的指令跟随模型。它们是在16k标记序列上进行训练的，并且在最多100k标记的输入上显示出改进。Code Llama是通过使用更高采样的代码对Llama 2进行微调而开发的，并且对模型的微调版本应用了相当多的安全缓解措施。Code Llama的最新版本现在可供各种规模的个人、创作者、研究人员和企业使用，包括预训练和微调的Llama语言模型的模型权重和起始代码。
-
-## DrawDB - 免费在线数据库设计工具和SQL生成器
-
-* 创建周期：269 天
-* 开发语言：JavaScript
-* 协议类型：MIT License
-* Star数量：2307 个
-* Fork数量：113 次
-* 关注人数：2307 人
-* 贡献人数：2 人
-* Open Issues数量：14 个
-* Github地址：https://github.com/drawdb-io/drawdb.git
-* 项目首页: https://drawdb.vercel.app
+* 创建周期：3212 天
+* 开发语言：Go
+* 协议类型：BSD 3-Clause "New" or "Revised" License
+* Star数量：16976 个
+* Fork数量：2252 次
+* 关注人数：16976 人
+* 贡献人数：345 人
+* Open Issues数量：130 个
+* Github地址：https://github.com/grpc-ecosystem/grpc-gateway.git
+* 项目首页: https://grpc-ecosystem.github.io/grpc-gateway/
 
 
-DrawDB是一个免费、简单且直观的在线数据库设计工具和SQL生成器。它允许用户创建图表、导出SQL脚本并自定义编辑器，而无需创建账户。
+![](/images/grpc-ecosystem-grpc-gateway-0.png)
 
-## Netflix的Maestro：通用工作流编排器
+gRPC-Gateway 是一个工具，用于生成反向代理服务器，将 RESTful HTTP API 转换为 gRPC。它读取协议缓冲区服务定义，并根据服务定义中的 google.api.http 注释生成服务器，从而同时以 gRPC 和 RESTful 风格提供 API。
 
-* 创建周期：99 天
-* 开发语言：Java
+## Argo CD - Kubernetes的声明性持续交付
+
+* 创建周期：2358 天
+* 开发语言：Go
 * 协议类型：Apache License 2.0
-* Star数量：1371 个
-* Fork数量：59 次
-* 关注人数：1371 人
-* 贡献人数：4 人
-* Open Issues数量：21 个
-* Github地址：https://github.com/Netflix/maestro.git
+* Star数量：16877 个
+* Fork数量：5120 次
+* 关注人数：16877 人
+* 贡献人数：445 人
+* Open Issues数量：3360 个
+* Github地址：https://github.com/argoproj/argo-cd.git
+* 项目首页: https://argo-cd.readthedocs.io
 
 
-Maestro是Netflix的通用工作流编排器，为数据平台用户提供完全托管的工作流作为服务（WAAS）。它为数千名用户提供服务，包括数据科学家、数据工程师、机器学习工程师、软件工程师、内容制作人和业务分析师，用于各种用例。它每天安排数十万个工作流，数百万个作业，即使在流量激增时也能严格满足SLO。Maestro具有高度可扩展性和可扩展性，以支持现有和新的用例，并为最终用户提供了增强的可用性。
+![](/images/argoproj-argo-cd-0.png)
+
+Argo CD是一个开源项目，为Kubernetes提供声明性的持续交付。它允许用户自动化在Kubernetes集群中部署应用程序和配置。
+
+## 高可用性 Prometheus 设置与长期存储能力的开源项目
+
+* 创建周期：2276 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：12389 个
+* Fork数量：1992 次
+* 关注人数：12389 人
+* 贡献人数：415 人
+* Open Issues数量：496 个
+* Github地址：https://github.com/thanos-io/thanos.git
+* 项目首页: https://thanos.io
+
+
+![](/images/thanos-io-thanos-0.png)
+
+该项目是一个开源的 CNCF 孵化项目，提供具有长期存储能力的高可用性 Prometheus 设置。它还宣布了 ThanosCon 将于 3 月 19 日在巴黎举行，作为 KubeCon EU 的联合半天活动，并在 12 月 3 日之前开放 CFP。
+
+## client-go: 用于与Kubernetes集群交互的Go客户端
+
+* 创建周期：2698 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：8347 个
+* Fork数量：2891 次
+* 关注人数：8347 人
+* 贡献人数：396 人
+* Open Issues数量：69 个
+* Github地址：https://github.com/kubernetes/client-go.git
+
+
+client-go是用于与Kubernetes集群交互的Go客户端。它提供了用于与集群通信的Go客户端，并建议在特定的Kubernetes版本中使用。安装说明和故障排除可以在INSTALL.md文件中找到。
+
+## GitHub Actions自托管runner的Kubernetes控制器
+
+* 创建周期：1458 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：3971 个
+* Fork数量：992 次
+* 关注人数：3971 人
+* 贡献人数：263 人
+* Open Issues数量：257 个
+* Github地址：https://github.com/actions/actions-runner-controller.git
+
+
+Actions Runner Controller (ARC)是GitHub Actions自托管runner的Kubernetes控制器，允许用户在其Kubernetes集群中管理和扩展其自托管runner基础架构。
+
+## IT、安全和基础设施团队的开源平台
+
+* 创建周期：1320 天
+* 开发语言：Go
+* 协议类型：Other
+* Star数量：2411 个
+* Fork数量：364 次
+* 关注人数：2411 人
+* 贡献人数：216 人
+* Open Issues数量：1600 个
+* Github地址：https://github.com/fleetdm/fleet.git
+* 项目首页: https://fleetdm.com
+
+
+这是一个面向IT、安全和基础设施团队设计的开源平台，兼容各种操作系统和云环境。它专为管理大规模计算机系统而设计，并支持API、GitOps、webhooks、YAML和人类交互。
+
+## Kubernetes 控制器运行时项目
+
+* 创建周期：2240 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：2390 个
+* Fork数量：1110 次
+* 关注人数：2390 人
+* 贡献人数：298 人
+* Open Issues数量：98 个
+* Github地址：https://github.com/kubernetes-sigs/controller-runtime.git
+
+
+Kubernetes 控制器运行时项目是一组用于构建控制器的 Go 库，由 Kubebuilder 和 Operator SDK 使用。它提供有关包概述、使用构建器创建基本控制器、创建管理器、创建控制器、示例和设计的文档。该项目遵循语义化版本控制，对用户和贡献者都有指南，包括代码 PR 标记和处理重大变更。
+
+## 公共后缀列表
+
+* 创建周期：3355 天
+* 开发语言：Go
+* 协议类型：Mozilla Public License 2.0
+* Star数量：1935 个
+* Fork数量：1184 次
+* 关注人数：1935 人
+* 贡献人数：432 人
+* Open Issues数量：58 个
+* Github地址：https://github.com/publicsuffix/list.git
+* 项目首页: https://publicsuffix.org/
+
+
+公共后缀列表是所有已知公共后缀的编译，这些后缀是互联网用户可以直接注册名称的域。它由志愿者维护，以确保普遍接受和弥合域名与开发人员之间的鸿沟。该列表有特定的提交指南，并且没有能力为像谷歌、Facebook或苹果这样的公司的特定问题提供客户服务或支持。
 
