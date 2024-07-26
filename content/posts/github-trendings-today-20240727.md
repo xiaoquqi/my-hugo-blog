@@ -1,32 +1,32 @@
 ---
-title: Github 2024-07-27 开源项目日报 Top10
-date: 2024-07-27T07:01:07+08:00
+title: Github 2024-07-27 Rust开源项目日报 Top10
+date: 2024-07-27T07:11:33+08:00
 slug: github-trendings-today-20240727
 author: 老孙正经胡说
-image: /images/freecodecamp-freecodecamp-0.png
+image: /images/qdrant-qdrant-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
   - 人
   - 人数
-  - 和
+  - 项目
   - 开发
+  - 和
   - 语言
-  - 协议
-  - 贡献
-  - 提供
   - 创建
+  - 贡献
+  - 用于
+  - 是
   - 周期
+  - 协议
   - 类型
   - 关注
   - 地址
-  - 是
-  - 学习
-  - C++
-  - 库
-  - 平台
+  - 提供
+  - 应用程序
+  - 具有
+  - 编写
 
 categories:
 
@@ -38,175 +38,175 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| 非开发语言项目 | 2 |
-| C++项目 | 2 |
-| C项目 | 2 |
+| Rust项目 | 10 |
 | TypeScript项目 | 1 |
 | JavaScript项目 | 1 |
-| Java项目 | 1 |
-| Python项目 | 1 |
-| C#项目 | 1 |
 
-## 免费编程学习平台：freeCodeCamp.org
+## Tauri: 构建小型、快速和安全的桌面应用程序
 
-* 创建周期：3302 天
-* 开发语言：TypeScript, JavaScript
-* 协议类型：BSD 3-Clause "New" or "Revised" License
-* Star数量：381011 个
-* Fork数量：35361 次
-* 关注人数：381011 人
-* 贡献人数：397 人
-* Open Issues数量：378 个
-* Github地址：https://github.com/freeCodeCamp/freeCodeCamp.git
-* 项目首页: http://contribute.freecodecamp.org/
-
-
-![](/images/freecodecamp-freecodecamp-0.png)
-
-freeCodeCamp.org 是一个开放源代码平台和社区，人们可以免费学习编程。它得到慈善机构的支持，旨在帮助成年人转入科技行业。该平台提供全栈网页开发和机器学习课程，并提供交互式编程挑战。
-
-## 各种有趣主题的精彩清单
-
-* 创建周期：3657 天
-* 协议类型：Creative Commons Zero v1.0 Universal
-* Star数量：311067 个
-* Fork数量：27057 次
-* 关注人数：311067 人
-* 贡献人数：437 人
-* Open Issues数量：37 个
-* Github地址：https://github.com/sindresorhus/awesome.git
-
-
-![](/images/sindresorhus-awesome-0.png)
-
-该项目是一个收集了各种有趣主题的精彩清单，包括平台、编程语言、前端和后端开发、计算机科学、大数据、理论、书籍、编辑器、游戏、开发环境、娱乐、数据库、媒体、学习资源、安全、内容管理系统、硬件、商业、工作、网络、去中心化系统、健康和社会科学、事件、测试和其他主题。
-
-![](/images/sindresorhus-awesome-1.png)
-
-## 项目化学习
-
-* 创建周期：2538 天
-* 协议类型：MIT License
-* Star数量：161973 个
-* Fork数量：21345 次
-* 关注人数：161973 人
-* 贡献人数：100 人
-* Open Issues数量：109 个
-* Github地址：https://github.com/practical-tutorials/project-based-learning.git
-
-
-项目化学习是一个由程序开发者学习如何从零开始构建应用程序的编程教程的精选列表。这些教程涵盖了不同的主要编程语言，可能涉及多种技术和语言。要开始使用，请简单地fork这个仓库。请参考CONTRIBUTING.md以获取贡献指南。
-
-## Folly: Facebook开源库
-
-* 创建周期：4397 天
-* 开发语言：C++
+* 创建周期：1673 天
+* 开发语言：Rust
 * 协议类型：Apache License 2.0
-* Star数量：27346 个
-* Fork数量：5447 次
-* 关注人数：27346 人
-* 贡献人数：279 人
-* Open Issues数量：476 个
-* Github地址：https://github.com/facebook/folly.git
-* 项目首页: https://groups.google.com/forum/?fromgroups#!forum/facebook-folly
+* Star数量：74191 个
+* Fork数量：2257 次
+* 关注人数：74191 人
+* 贡献人数：320 人
+* Open Issues数量：716 个
+* Github地址：https://github.com/tauri-apps/tauri.git
+* 项目首页: https://tauri.app
 
 
-![](/images/facebook-folly-0.png)
+Tauri是一个用于构建小型、快速和安全的桌面应用程序的框架，具有Web前端。它允许开发人员集成任何编译为HTML、JS和CSS的前端框架。后端是一个由Rust源码编写的二进制文件，具有用于前端交互的API。Tauri在各种平台上利用'tao'进行窗口处理，并使用'WRY'统一界面来渲染应用程序。
 
-Folly是Facebook开发和使用的开源C++库。它包含大量在Facebook广泛使用的核心库组件，并经常作为其他开源C++项目的依赖项。Folly旨在设计实用和高效，与Boost和std等产品相辅相成，同时优先考虑大规模性能。
+## Qdrant - 面向下一代AI的高性能向量数据库
 
-## Meta Llama 3 模型权重和分词器下载
-
-* 创建周期：37 天
-* 开发语言：Python
-* 协议类型：Other
-* Star数量：7323 个
-* Fork数量：506 次
-* 关注人数：7323 人
-* 贡献人数：19 人
-* Open Issues数量：40 个
-* Github地址：https://github.com/meta-llama/llama3.git
-
-
-Meta Llama 3 GitHub 网站提供模型权重和分词器的下载。用户需要访问 Meta Llama 网站，接受许可协议，然后通过电子邮件收到一个签名的 URL，使用提供的脚本开始下载。先决条件包括安装 wget 和 md5sum。链接在 24 小时后过期，并且有下载限制，但如果用户遇到 '403: Forbidden' 等错误，可以重新请求链接。
-
-## spdlog: 非常快速的C++日志库
-
-* 创建周期：3477 天
-* 开发语言：C++
-* 协议类型：Other
-* Star数量：22385 个
-* Fork数量：4276 次
-* 关注人数：22385 人
-* 贡献人数：340 人
-* Open Issues数量：38 个
-* Github地址：https://github.com/gabime/spdlog.git
+* 创建周期：1435 天
+* 开发语言：Rust
+* 协议类型：Apache License 2.0
+* Star数量：17997 个
+* Fork数量：1212 次
+* 关注人数：17997 人
+* 贡献人数：101 人
+* Open Issues数量：230 个
+* Github地址：https://github.com/qdrant/qdrant.git
+* 项目首页: https://qdrant.tech
 
 
-spdlog是一个非常快速的、仅包含头文件/编译的C++日志库。
+![](/images/qdrant-qdrant-0.png)
 
-## Flipper Zero Unleashed Firmware - Flipper Zero解锁固件
+Qdrant是专为下一代人工智能设计的高性能、大规模向量数据库。它是一种向量相似性搜索引擎和数据库，提供了一个生产就绪的服务，具有方便的API，用于存储、搜索和管理带有附加有效负载的向量。Qdrant采用Rust编写，提供了扩展的过滤支持，使其适用于神经网络或基于语义的匹配、分面搜索和其他应用。即使在高负载下，它也快速可靠，并且可以将嵌入或神经网络编码器转化为完整的应用程序，用于匹配、搜索、推荐等。Qdrant还提供完全托管的Qdrant Cloud，包括免费层。
 
-* 创建周期：679 天
-* 开发语言：C
+## mdBook: 用Rust创建现代在线书籍
+
+* 创建周期：3308 天
+* 开发语言：Rust
+* 协议类型：Mozilla Public License 2.0
+* Star数量：17351 个
+* Fork数量：1592 次
+* 关注人数：17351 人
+* 贡献人数：290 人
+* Open Issues数量：554 个
+* Github地址：https://github.com/rust-lang/mdBook.git
+* 项目首页: https://rust-lang.github.io/mdBook/
+
+
+mdBook是一个用Rust实现的实用工具，用于从Markdown文件创建现代在线书籍。它类似于Gitbook，并提供创建、安装和使用在线书籍的功能。用户指南作为展示书籍外观的演示，还有一个供有兴趣参与开发的人参考的贡献指南。
+
+## 现代端口扫描器
+
+* 创建周期：1456 天
+* 开发语言：Rust
 * 协议类型：GNU General Public License v3.0
-* Star数量：13585 个
-* Fork数量：1219 次
-* 关注人数：13585 人
-* 贡献人数：306 人
-* Open Issues数量：70 个
-* Github地址：https://github.com/DarkFlippers/unleashed-firmware.git
-* 项目首页: https://t.me/flipperzero_unofficial
+* Star数量：13237 个
+* Fork数量：878 次
+* 关注人数：13237 人
+* 贡献人数：59 人
+* Open Issues数量：25 个
+* Github地址：https://github.com/RustScan/RustScan.git
 
 
-![](/images/darkflippers-unleashed-firmware-0.png)
+![](/images/rustscan-rustscan-0.png)
 
-Flipper Zero Unleashed Firmware是一个旨在为Flipper Zero设备提供固件的开源项目。
+现代端口扫描器是一个开源工具，允许用户快速找到端口，并通过支持Python、Lua和Shell的脚本引擎运行脚本。它具有在3秒内扫描所有65k端口的能力，完整的脚本引擎支持，自适应学习以及对IPv6、CIDR、文件输入等的支持。
 
-## LZ4 - 极速压缩算法
+![](/images/rustscan-rustscan-1.png)
 
-* 创建周期：3776 天
-* 开发语言：C
-* 协议类型：Other
-* Star数量：9725 个
-* Fork数量：1358 次
-* 关注人数：9725 人
-* 贡献人数：155 人
-* Open Issues数量：23 个
-* Github地址：https://github.com/lz4/lz4.git
-* 项目首页: http://www.lz4.org
+## Cargo：Rust的开源软件包管理器
 
-
-LZ4是一种无损压缩算法，提供极快的压缩和解压速度，可与多核CPU扩展。它具有快速解码器、动态速度调节和高压缩衍生物。该库还兼容字典压缩，并以BSD 2-Clause许可证提供作为开源软件。
-
-## FullStackHero .NET 8 Starter Kit 🚀
-
-* 创建周期：1071 天
-* 开发语言：C#
-* 协议类型：MIT License
-* Star数量：4559 个
-* Fork数量：1385 次
-* 关注人数：4559 人
-* 贡献人数：49 人
-* Open Issues数量：39 个
-* Github地址：https://github.com/fullstackhero/dotnet-starter-kit.git
-* 项目首页: https://fullstackhero.net/dotnet-webapi-boilerplate/
-
-
-FullStackHero .NET 8 Starter Kit是一个项目，为.NET 8 Clean Architecture解决方案提供了一个起点，包括基本的包和功能，包括多租户支持。它旨在节省200多个小时的开发时间，并且使用ASP.NET Core Web API和Blazor Client，专为云就绪设计。该项目目前正在进行中，v2的NuGet包尚未推出，但可以通过fork存储库来尝试代码。
-
-## Netflix的Maestro：通用工作流编排器
-
-* 创建周期：99 天
-* 开发语言：Java
+* 创建周期：3714 天
+* 开发语言：Rust
 * 协议类型：Apache License 2.0
-* Star数量：1371 个
-* Fork数量：59 次
-* 关注人数：1371 人
-* 贡献人数：4 人
-* Open Issues数量：21 个
-* Github地址：https://github.com/Netflix/maestro.git
+* Star数量：12002 个
+* Fork数量：2266 次
+* 关注人数：12002 人
+* 贡献人数：420 人
+* Open Issues数量：1415 个
+* Github地址：https://github.com/rust-lang/cargo.git
+* 项目首页: https://doc.rust-lang.org/cargo
 
 
-Maestro是Netflix的通用工作流编排器，为数据平台用户提供完全托管的工作流作为服务（WAAS）。它为数千名用户提供服务，包括数据科学家、数据工程师、机器学习工程师、软件工程师、内容制作人和业务分析师，用于各种用例。它每天安排数十万个工作流，数百万个作业，即使在流量激增时也能严格满足SLO。Maestro具有高度可扩展性和可扩展性，以支持现有和新的用例，并为最终用户提供了增强的可用性。
+Cargo是Rust的开源软件包管理器，负责下载项目依赖并编译项目。它提供了用于使用Cargo进行Rust项目和为Cargo本身开发做贡献的资源。
+
+## Rolldown: Rust编写的JavaScript打包工具
+
+* 创建周期：176 天
+* 开发语言：Rust, JavaScript
+* 协议类型：MIT License
+* Star数量：4693 个
+* Fork数量：241 次
+* 关注人数：4693 人
+* 贡献人数：37 人
+* Open Issues数量：45 个
+* Github地址：https://github.com/rolldown/rolldown.git
+* 项目首页: https://rolldown.rs
+
+
+Rolldown是用Rust编写的JavaScript打包工具，旨在用于Vite。它提供了与Rollup兼容的API和插件接口，其范围类似于esbuild。目前正在积极开发中，尚不适合生产使用。
+
+## Solana的Anchor框架：智能合约开发工具
+
+* 创建周期：1170 天
+* 开发语言：Rust, TypeScript
+* 协议类型：Apache License 2.0
+* Star数量：3053 个
+* Fork数量：1156 次
+* 关注人数：3053 人
+* 贡献人数：237 人
+* Open Issues数量：395 个
+* Github地址：https://github.com/coral-xyz/anchor.git
+* 项目首页: https://anchor-lang.com
+
+
+![](/images/coral-xyz-anchor-0.png)
+
+Anchor框架为Solana的Sealevel运行时提供了开发人员工具，用于编写智能合约，包括Rust eDSL、IDL规范、用于生成客户端的TypeScript包以及用于应用程序开发的CLI。对于熟悉以太坊的Solidity、Truffle和web3.js的开发人员来说，这将提供一个熟悉的体验。
+
+## Solana程序库（SPL）- 面向Sealevel并行运行时的链上程序集合
+
+* 创建周期：1450 天
+* 开发语言：Rust
+* 协议类型：Apache License 2.0
+* Star数量：3042 个
+* Fork数量：1878 次
+* 关注人数：3042 人
+* 贡献人数：208 人
+* Open Issues数量：62 个
+* Github地址：https://github.com/solana-labs/solana-program-library.git
+* 项目首页: https://solanalabs.com
+
+
+Solana程序库（SPL）是Solana Labs维护的一组面向Sealevel并行运行时的链上程序集合。这些程序已针对Solana的Sealevel实现进行了测试，其中一些已部署到Mainnet Beta。该库欢迎补丁，以确保这些程序在所有实现中都具有可移植性。
+
+## Mistral.rs：快速LLM推断平台
+
+* 创建周期：109 天
+* 开发语言：Rust
+* 协议类型：MIT License
+* Star数量：2434 个
+* Fork数量：177 次
+* 关注人数：2434 人
+* 贡献人数：15 人
+* Open Issues数量：32 个
+* Github地址：https://github.com/EricLBuehler/mistral.rs.git
+
+
+![](/images/ericlbuehler-mistral.rs-0.png)
+
+Mistral.rs是一个用于快速LLM推断的开源平台，支持在各种设备上进行推断、量化，并具有兼容OpenAI API的HTTP服务器和Python绑定，易于使用。
+
+## Mako: 基于Rust的生产级Web捆绑器
+
+* 创建周期：478 天
+* 开发语言：Rust
+* 协议类型：MIT License
+* Star数量：1513 个
+* Fork数量：53 次
+* 关注人数：1513 人
+* 贡献人数：25 人
+* Open Issues数量：121 个
+* Github地址：https://github.com/umijs/mako.git
+* 项目首页: https://makojs.dev
+
+
+Mako是一个基于Rust的生产级Web捆绑器。它被蚂蚁集团等各种实体用于Web应用程序、混合应用程序、小程序（部分）、低代码和无服务器应用程序。Ant Design、Umi、Dumi和Father已经集成了Mako来满足其捆绑需求。
 
