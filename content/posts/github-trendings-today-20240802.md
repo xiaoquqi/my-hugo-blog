@@ -1,32 +1,32 @@
 ---
-title: Github 2024-08-02 开源项目日报 Top9
-date: 2024-08-02T07:01:23+08:00
+title: Github 2024-08-02 Java开源项目日报 Top9
+date: 2024-08-02T07:12:48+08:00
 slug: github-trendings-today-20240802
 author: 老孙正经胡说
-image: /images/sickcodes-docker-osx-0.png
+image: /images/iluwatar-java-design-patterns-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
-  - 人
-  - 人数
   - 开发
+  - 项目
+  - 和
+  - 人数
+  - 人
   - 语言
-  - 开源
-  - 协议
-  - 贡献
   - 创建
-  - 周期
-  - 类型
   - 关注
+  - 周期
+  - 协议
+  - 类型
+  - 贡献
   - 地址
+  - 代码
   - 是
-  - 中
-  - 并
   - 可以
-  - 支持
+  - 开发人员
   - 提供
+  - 端
 
 categories:
 
@@ -38,169 +38,163 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 4 |
-| Go项目 | 1 |
-| C项目 | 1 |
-| Rust项目 | 1 |
-| Shell项目 | 1 |
-| Dockerfile项目 | 1 |
-| TypeScript项目 | 1 |
-| Dart项目 | 1 |
+| Java项目 | 9 |
+| Vue项目 | 1 |
+| Ruby项目 | 1 |
 
-## Docker-OSX: 在Docker容器中运行Mac OS X
+## Java设计模式：提高开发效率的正规化实践
 
-* 创建周期：1520 天
-* 开发语言：Shell, Dockerfile
-* 协议类型：GNU General Public License v3.0
-* Star数量：38231 个
-* Fork数量：1866 次
-* 关注人数：38231 人
-* 贡献人数：47 人
-* Open Issues数量：355 个
-* Github地址：https://github.com/sickcodes/Docker-OSX.git
-* 项目首页: https://hub.docker.com/r/sickcodes/docker-osx
-
-
-![](/images/sickcodes-docker-osx-0.png)
-
-Docker-OSX允许在Docker容器中运行Mac OS X，并具有接近本机性能，可以实现X11转发，iMessage安全研究，iPhone USB工作，并且可以在Linux和Windows上进行对macOS的安全研究。
-
-![](/images/sickcodes-docker-osx-1.png)
-
-## Freqtrade: 免费开源的加密货币交易机器人
-
-* 创建周期：2634 天
-* 开发语言：Python
-* 协议类型：GNU General Public License v3.0
-* Star数量：27144 个
-* Fork数量：5865 次
-* 关注人数：27144 人
-* 贡献人数：290 人
-* Open Issues数量：50 个
-* Github地址：https://github.com/freqtrade/freqtrade.git
-* 项目首页: https://www.freqtrade.io
-
-
-![](/images/freqtrade-freqtrade-0.png)
-
-Freqtrade 是一个用Python编写的免费开源的加密货币交易机器人。它旨在支持所有主要交易所，并可以通过Telegram或webUI进行控制。该机器人包含回测、绘图、资金管理工具，以及通过机器学习进行策略优化。
-
-## Sniffnet: 舒适监控互联网流量的开源项目
-
-* 创建周期：720 天
-* 开发语言：Rust
-* 协议类型：Apache License 2.0
-* Star数量：14601 个
-* Fork数量：454 次
-* 关注人数：14601 人
-* 贡献人数：42 人
-* Open Issues数量：33 个
-* Github地址：https://github.com/GyulyVGC/sniffnet.git
-* 项目首页: https://sniffnet.net
-
-
-![](/images/gyulyvgc-sniffnet-0.png)
-
-Sniffnet是一个开源项目，允许用户舒适地监控其互联网流量。通过支持Sniffnet的发展，用户可以为该工具的改进做出贡献。
-
-![](/images/gyulyvgc-sniffnet-1.png)
-
-## GoodbyeDPI - 绕过深度数据包检查系统的实用程序
-
-* 创建周期：2626 天
-* 开发语言：C
-* 协议类型：Apache License 2.0
-* Star数量：10766 个
-* Fork数量：913 次
-* 关注人数：10766 人
-* 贡献人数：9 人
-* Open Issues数量：73 个
-* Github地址：https://github.com/ValdikSS/GoodbyeDPI.git
-* 项目首页: https://ntc.party/c/community-software/goodbyedpi
-
-
-GoodbyeDPI是一种旨在绕过许多因特网服务提供商中发现的阻止访问特定网站的深度数据包检查系统的实用程序。它可以处理被动DPI和主动DPI，并需要具有管理员特权的Windows 7、8、8.1、10或11。该软件为不同国家提供了特定的脚本，并提供了DNS解析器重定向到Yandex DNS的非标准端口，以防止DNS污染。
-
-## Hiddify: 开源多平台自动代理客户端
-
-* 创建周期：385 天
-* 开发语言：Dart
+* 创建周期：3572 天
+* 开发语言：Java
 * 协议类型：Other
-* Star数量：11336 个
-* Fork数量：1030 次
-* 关注人数：11336 人
-* 贡献人数：46 人
-* Open Issues数量：139 个
-* Github地址：https://github.com/hiddify/hiddify-next.git
-* 项目首页: https://hiddify.com
+* Star数量：86766 个
+* Fork数量：25959 次
+* 关注人数：86766 人
+* 贡献人数：404 人
+* Open Issues数量：188 个
+* Github地址：https://github.com/iluwatar/java-design-patterns.git
+* 项目首页: https://java-design-patterns.com
 
 
-![](/images/hiddify-hiddify-next-0.png)
+![](/images/iluwatar-java-design-patterns-0.png)
 
-Hiddify是一个开源的多平台自动代理客户端，支持Sing-box、X-ray、TUIC、Hysteria、Reality、Trojan、SSH等多种协议。它安全且无广告。
+设计模式是程序员用来解决应用程序或系统设计中常见问题的正规化实践。它们可以加快开发速度，预防问题，并提高代码可读性。该网站展示了由开源社区的经验丰富的程序员和架构师开发的Java设计模式。这些模式可以通过它们的描述或源代码示例进行浏览，这些示例可以作为编程教程。建议在深入材料之前熟悉软件设计原则。
 
-## RAGFlow: 基于深度文档理解的开源RAG引擎
+## 经验丰富的Java(后端)开发人员核心面试问题和答案 | 互联网Java工程师进阶知识完全扫盲
 
-* 创建周期：115 天
-* 开发语言：Python, TypeScript
+* 创建周期：2085 天
+* 开发语言：Java
+* 协议类型：Creative Commons Attribution Share Alike 4.0 International
+* Star数量：74924 个
+* Fork数量：18915 次
+* 关注人数：74924 人
+* 贡献人数：39 人
+* Open Issues数量：6 个
+* Github地址：https://github.com/doocs/advanced-java.git
+* 项目首页: https://doocs.github.io/advanced-java
+
+
+![](/images/doocs-advanced-java-0.png)
+
+该项目旨在为有经验的 Java（后端）开发人员提供全面的知识，涵盖高并发、分布式系统、高可用性、微服务和大数据处理等领域。内容是对各个领域知识的系统整理，旨在方便读者学习和参考。该项目还强调持续更新算法部分，并邀请开发者参与讨论。提供了项目的 Gitee 和 GitHub 页面链接以供进一步探索。
+
+![](/images/doocs-advanced-java-1.png)
+
+## JeecgBoot 企业级低代码开发平台
+
+* 创建周期：2062 天
+* 开发语言：Java, Vue
 * 协议类型：Apache License 2.0
-* Star数量：1882 个
-* Fork数量：120 次
-* 关注人数：1882 人
-* 贡献人数：10 人
-* Open Issues数量：7 个
-* Github地址：https://github.com/infiniflow/ragflow.git
-* 项目首页: https://ragflow.io
+* Star数量：38677 个
+* Fork数量：14480 次
+* 关注人数：38677 人
+* 贡献人数：15 人
+* Open Issues数量：90 个
+* Github地址：https://github.com/jeecgboot/JeecgBoot.git
+* 项目首页: http://www.jeecg.com
 
 
-![](/images/infiniflow-ragflow-0.png)
+![](/images/jeecgboot-jeecgboot-0.png)
 
-RAGFlow是一个基于深度文档理解的开源RAG（检索增强生成）引擎。它为企业提供了简化的工作流程，整合了LLM（大型语言模型），以提供准确的问答能力，并支持来自各种复杂格式数据的充分证明。
+JeecgBoot是基于代码生成器的企业级低代码开发平台。它采用了前后端分离架构，使用SpringBoot 2.x/3.x，SpringCloud，Ant Design Vue3，Mybatis-plus，Shiro和JWT。强大的代码生成器使得前后端代码可以一键生成，无需编写任何代码。它采用了新的开发模式：OnlineCoding -> 代码生成 -> 手工合并，帮助Java项目解决70%的重复工作，使开发人员能够更多关注业务逻辑。JeecgBoot提供了一系列低代码模块，实现了真正的零代码在线开发，如在线表单开发、报表和图表设计、仪表盘设计和移动配置能力。它旨在通过OnlineCoding配置实现简单功能的零代码开发，同时通过代码生成器生成的手工合并来实现复杂功能的低代码开发，确保智能和灵活性。JeecgBoot适用于任何J2EE项目的开发，尤其适合SAAS项目、MIS、OA、ERP、CRM等，其半智能手工合并的开发方式可以显著提高开发效率超过70%，大大降低开发成本。
 
-## MinerU - 开源高质量数据提取工具
+![](/images/jeecgboot-jeecgboot-1.png)
 
-* 创建周期：144 天
-* 开发语言：Python
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：849 个
-* Fork数量：81 次
-* 关注人数：849 人
-* 贡献人数：9 人
-* Open Issues数量：16 个
-* Github地址：https://github.com/opendatalab/MinerU.git
-* 项目首页: https://opendatalab.com/OpenSourceTools
+## Logstash - 服务器端数据处理管道
 
-
-MinerU是一个开源数据提取工具，为PDF、网页和电子书提供高质量的提取支持。
-
-## DiceDB: Redis的SQL实时反应性替代品
-
-* 创建周期：685 天
-* 开发语言：Go
+* 创建周期：4817 天
+* 开发语言：Java, Ruby
 * 协议类型：Other
-* Star数量：766 个
-* Fork数量：185 次
-* 关注人数：766 人
-* 贡献人数：16 人
-* Open Issues数量：86 个
-* Github地址：https://github.com/DiceDB/dice.git
+* Star数量：13868 个
+* Fork数量：3507 次
+* 关注人数：13868 人
+* 贡献人数：349 人
+* Open Issues数量：2110 个
+* Github地址：https://github.com/elastic/logstash.git
+* 项目首页: https://www.elastic.co/products/logstash
 
 
-DiceDB是一个开源项目，它是Redis的一个即插即用的替代品，提供基于SQL的实时反应性。它仍在开发中，支持Redis命令的一个子集，因此不建议在生产中使用。但是，鼓励贡献者浏览开放问题并帮助加快开发进程。
+Logstash是一个服务器端数据处理管道，可以同时从多个来源摄取数据，对其进行转换，然后发送到首选的“stash”（例如Elasticsearch）。它是Elastic Stack的一部分，拥有超过200个插件，并且您也可以轻松地编写自定义插件。
 
-## 实时交互流式数字人
+## Quarkus: 超音速亚原子级Java
 
-* 创建周期：226 天
-* 开发语言：Python
+* 创建周期：2023 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：12743 个
+* Fork数量：2460 次
+* 关注人数：12743 人
+* 贡献人数：391 人
+* Open Issues数量：2507 个
+* Github地址：https://github.com/quarkusio/quarkus.git
+* 项目首页: https://quarkus.io
+
+
+Quarkus是一个开源的Java框架，旨在实现超音速和亚原子级，为开发Java应用程序提供轻量且高性能的平台。
+
+## COLA: 清晰面向对象和分层架构
+
+* 创建周期：2369 天
+* 开发语言：Java
+* 协议类型：GNU Lesser General Public License v2.1
+* Star数量：11665 个
+* Fork数量：3034 次
+* 关注人数：11665 人
+* 贡献人数：31 人
+* Open Issues数量：61 个
+* Github地址：https://github.com/alibaba/COLA.git
+
+
+![](/images/alibaba-cola-0.png)
+
+COLA是一个专注于清晰面向对象和分层架构的开源项目。它分为两个部分：COLA架构和COLA组件。
+
+![](/images/alibaba-cola-1.png)
+
+## Spring框架核心功能和高级主题深入探讨
+
+* 创建周期：203 天
+* 开发语言：Java
 * 协议类型：MIT License
-* Star数量：1743 个
-* Fork数量：288 次
-* 关注人数：1743 人
-* 贡献人数：8 人
-* Open Issues数量：109 个
-* Github地址：https://github.com/lipku/metahuman-stream.git
-* 项目首页: https://zhuanlan.zhihu.com/p/675131165
+* Star数量：5107 个
+* Fork数量：641 次
+* 关注人数：5107 人
+* 贡献人数：1 人
+* Open Issues数量：23 个
+* Github地址：https://github.com/xuchengsheng/spring-reading.git
+* 项目首页: https://blog.csdn.net/duzhuang2399
 
 
-实时交互流式数字人使音视频同步对话成为可能，并且可以实现商用效果。
+Spring框架涵盖了核心概念和关键功能，包括控制反转（IOC）容器的使用，面向切面编程（AOP），事务管理，Spring MVC，数据访问、安全、Boot自动配置等方面的深入研究。还包含了高级主题如缓存抽象、响应式编程，以及对Spring源码的深入探讨。
+
+## Azure SDK for Java 开发存储库
+
+* 创建周期：4546 天
+* 开发语言：Java
+* 协议类型：MIT License
+* Star数量：2179 个
+* Fork数量：1894 次
+* 关注人数：2179 人
+* 贡献人数：360 人
+* Open Issues数量：976 个
+* Github地址：https://github.com/Azure/azure-sdk-for-java.git
+
+
+该存储库致力于开发 Azure SDK for Java。建议 SDK 的用户查阅公共开发人员文档或版本化的开发人员文档。
+
+## OpenTelemetry Java 自动和手动仪器化
+
+* 创建周期：1773 天
+* 开发语言：Java
+* 协议类型：Apache License 2.0
+* Star数量：1836 个
+* Fork数量：808 次
+* 关注人数：1836 人
+* 贡献人数：280 人
+* Open Issues数量：429 个
+* Github地址：https://github.com/open-telemetry/opentelemetry-java-instrumentation.git
+* 项目首页: https://opentelemetry.io
+
+
+OpenTelemetry为Java提供自动和手动的仪器化库，支持各种库、框架和应用服务器。它还允许手动仪器化、创建代理扩展和故障排除。
 
