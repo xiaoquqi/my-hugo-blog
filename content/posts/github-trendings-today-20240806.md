@@ -1,20 +1,19 @@
 ---
-title: Github 2024-08-06 开源项目日报 Top8
-date: 2024-08-06T07:01:04+08:00
+title: Github 2024-08-06 Python开源项目日报 Top10
+date: 2024-08-06T07:11:11+08:00
 slug: github-trendings-today-20240806
 author: 老孙正经胡说
-image: /images/danny-avila-librechat-0.png
+image: /images/donnemartin-system-design-primer-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
   - 人数
   - 人
   - 和
+  - 项目
   - 语言
   - 开发
-  - 是
   - 创建
   - 周期
   - 协议
@@ -22,11 +21,12 @@ tags:
   - 关注
   - 贡献
   - 地址
-  - 提供
   - 开源
-  - 中
-  - 功能
-  - 包括
+  - 是
+  - 提供
+  - 模型
+  - 使用
+  - 数据
 
 categories:
 
@@ -34,32 +34,29 @@ draft: false
 ---
 
 
-根据Github Trendings的统计，今日(2024-08-06统计)共有8个项目上榜。根据开发语言中项目的数量，汇总情况如下：
+根据Github Trendings的统计，今日(2024-08-06统计)共有10个项目上榜。根据开发语言中项目的数量，汇总情况如下：
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 3 |
-| C项目 | 2 |
-| JavaScript项目 | 2 |
-| C++项目 | 2 |
-| TypeScript项目 | 2 |
-| Kotlin项目 | 1 |
+| Python项目 | 10 |
+| JavaScript项目 | 1 |
 
-## 开发者职业成长指南
+## 系统设计指南
 
-* 创建周期：2670 天
-* 开发语言：TypeScript
+* 创建周期：2507 天
+* 开发语言：Python
 * 协议类型：Other
-* Star数量：281461 个
-* Fork数量：37547 次
-* 关注人数：281461 人
-* 贡献人数：470 人
-* Open Issues数量：21 个
-* Github地址：https://github.com/kamranahmedse/developer-roadmap.git
-* 项目首页: https://roadmap.sh
+* Star数量：241693 个
+* Fork数量：42010 次
+* 关注人数：241693 人
+* 贡献人数：109 人
+* Open Issues数量：413 个
+* Github地址：https://github.com/donnemartin/system-design-primer.git
 
 
-这个开源项目提供互动式路线图、指南和教育内容，帮助开发人员在职业生涯中取得进步。它包括了各种不同专业领域的路线图、最佳实践以及用于测试和提升知识的问题。
+![](/images/donnemartin-system-design-primer-0.png)
+
+系统设计指南是一个开源项目，帮助个人学习如何设计大规模系统并为系统设计面试做准备。它还包括Anki记忆卡，以便有效学习。
 
 ## yt-dlp: 一个增强版的youtube-dl分支
 
@@ -77,21 +74,6 @@ draft: false
 
 yt-dlp是youtube-dl的一个分支，具有额外的功能和修复，重点是添加新功能和补丁，同时与原始项目保持最新。它包括详细的安装说明，更新/发布文件，依赖关系，编译，使用和选项，配置，格式选择，修改元数据，插件，嵌入示例等。它还集成了SponsorBlock，用于标记/删除YouTube视频中的赞助部分，并更改了默认格式排序选项，以获得更高分辨率和更好的编解码器。
 
-## Magic Mask for Android: 非官方谷歌产品
-
-* 创建周期：2889 天
-* 开发语言：C++, Kotlin
-* 协议类型：GNU General Public License v3.0
-* Star数量：46165 个
-* Fork数量：11640 次
-* 关注人数：46165 人
-* 贡献人数：271 人
-* Open Issues数量：31 个
-* Github地址：https://github.com/topjohnwu/Magisk.git
-
-
-Magic Mask for Android 是一个开源项目，不是官方支持的谷歌产品。
-
 ## ComfyUI：强大而模块化的稳定扩散GUI
 
 * 创建周期：399 天
@@ -107,68 +89,113 @@ Magic Mask for Android 是一个开源项目，不是官方支持的谷歌产品
 
 ComfyUI是一个开源项目，提供强大而模块化的稳定扩散图形用户界面（GUI）、API和后端，具有图/节点界面。它允许用户使用基于图/节点/流程图的界面设计和执行高级稳定扩散管道。
 
-## GoodbyeDPI - 绕过深度数据包检查系统的实用程序
+## 少样本语音克隆的高质量TTS模型
 
-* 创建周期：2626 天
-* 开发语言：C
-* 协议类型：Apache License 2.0
-* Star数量：10766 个
-* Fork数量：913 次
-* 关注人数：10766 人
-* 贡献人数：9 人
-* Open Issues数量：73 个
-* Github地址：https://github.com/ValdikSS/GoodbyeDPI.git
-* 项目首页: https://ntc.party/c/community-software/goodbyedpi
-
-
-GoodbyeDPI是一种旨在绕过许多因特网服务提供商中发现的阻止访问特定网站的深度数据包检查系统的实用程序。它可以处理被动DPI和主动DPI，并需要具有管理员特权的Windows 7、8、8.1、10或11。该软件为不同国家提供了特定的脚本，并提供了DNS解析器重定向到Yandex DNS的非标准端口，以防止DNS污染。
-
-## Sunshine: 自托管的游戏流主机
-
-* 创建周期：901 天
-* 开发语言：C++
-* 协议类型：GNU General Public License v3.0
-* Star数量：13778 个
-* Fork数量：672 次
-* 关注人数：13778 人
-* 贡献人数：105 人
-* Open Issues数量：100 个
-* Github地址：https://github.com/LizardByte/Sunshine.git
-* 项目首页: http://app.lizardbyte.dev/Sunshine/
-
-
-Sunshine 是一个自托管的游戏流主机，为 Moonlight 提供低延迟、云游戏服务器功能，支持 AMD、Intel 和 Nvidia GPU 进行硬件编码。它还提供软件编码和 Web UI 用于配置和客户端配对。
-
-## 增强版ChatGPT克隆: 开源功能概述
-
-* 创建周期：354 天
-* 开发语言：TypeScript, JavaScript
+* 创建周期：9 天
+* 开发语言：Python
 * 协议类型：MIT License
-* Star数量：7277 个
-* Fork数量：1269 次
-* 关注人数：7277 人
-* 贡献人数：75 人
-* Open Issues数量：61 个
-* Github地址：https://github.com/danny-avila/LibreChat.git
-* 项目首页: https://docs.librechat.ai/
+* Star数量：4367 个
+* Fork数量：411 次
+* 关注人数：4367 人
+* 贡献人数：24 人
+* Open Issues数量：65 个
+* Github地址：https://github.com/RVC-Boss/GPT-SoVITS.git
 
 
-![](/images/danny-avila-librechat-0.png)
+该项目专注于使用最少的语音数据来训练高质量的文本到语音（TTS）模型，实现少样本语音克隆。该项目的GitHub页面上提供了演示视频。
 
-增强版ChatGPT克隆是一个开源项目，具有包括与ChatGPT匹配的用户界面、多模式聊天与图像分析、多语言用户界面、AI模型选择、预设、对话编辑、消息导出、插件、多用户系统和部署选项在内的功能。
+## 一键换脸项目已停止维护
 
-## sqlite-vec: 小巧高效的向量搜索 SQLite 扩展
+* 创建周期：436 天
+* 开发语言：Python
+* 协议类型：GNU General Public License v3.0
+* Star数量：25939 个
+* Fork数量：6367 次
+* 关注人数：25939 人
+* 贡献人数：20 人
+* Open Issues数量：7 个
+* Github地址：https://github.com/s0md3v/roop.git
 
-* 创建周期：106 天
-* 开发语言：C, Python
+
+这个一键换脸的开源项目已经停止维护，但软件仍然可以用于在视频中用所选图像替换面部，而无需数据集或训练。开发者对贡献者表示感谢，并提到缺乏兴趣和时间来监督进一步的开发。
+
+## 🤗 Diffusers: PyTorch和FLAX中的最先进扩散模型
+
+* 创建周期：746 天
+* 开发语言：Python
 * 协议类型：Apache License 2.0
-* Star数量：1952 个
-* Fork数量：41 次
-* 关注人数：1952 人
-* 贡献人数：3 人
-* Open Issues数量：38 个
-* Github地址：https://github.com/asg017/sqlite-vec.git
+* Star数量：23422 个
+* Fork数量：4822 次
+* 关注人数：23422 人
+* 贡献人数：471 人
+* Open Issues数量：512 个
+* Github地址：https://github.com/huggingface/diffusers.git
+* 项目首页: https://huggingface.co/docs/diffusers
 
 
-sqlite-vec 是一个开源项目，提供了一个小巧高效的向量搜索 SQLite 扩展，采用纯 C 语言编写，无任何依赖。它允许在虚拟表中存储和查询浮点、int8 和二进制向量，并可在多个平台上运行，包括 Linux、MacOS、Windows、浏览器中的 WASM 和树莓派等。它是 sqlite-vss 的后继者，但由于处于预版本 1 阶段，用户应预期可能会有重大变更。
+🤗 Diffusers是一个开源项目，为PyTorch和FLAX提供了最先进的扩散模型，用于图像和音频生成。建议在PyPI或Conda的虚拟环境中安装🤗 Diffusers，并且用户可以参考PyTorch和Flax的官方文档获取更多安装细节。
+
+## Zulip：开源团队协作工具
+
+* 创建周期：3126 天
+* 开发语言：Python
+* 协议类型：Apache License 2.0
+* Star数量：19936 个
+* Fork数量：7409 次
+* 关注人数：19936 人
+* 贡献人数：391 人
+* Open Issues数量：2518 个
+* Github地址：https://github.com/zulip/zulip.git
+* 项目首页: https://zulip.com
+
+
+Zulip是一个开源的团队协作工具，具有独特的基于主题的线程，旨在进行实时和异步对话。它被财富500强公司、领先的开源项目和成千上万其他组织所使用。Zulip由来自世界各地的分布式开发人员社区构建，每个月有1000多名贡献者合并了500多次提交。
+
+## Instaloader：从Instagram下载媒体和元数据的开源工具
+
+* 创建周期：2974 天
+* 开发语言：Python
+* 协议类型：MIT License
+* Star数量：8241 个
+* Fork数量：1124 次
+* 关注人数：8241 人
+* 贡献人数：48 人
+* Open Issues数量：84 个
+* Github地址：https://github.com/instaloader/instaloader.git
+* 项目首页: https://instaloader.github.io/
+
+
+Instaloader是一个开源工具，允许用户从Instagram下载图片、视频、标题和元数据。它可以下载公共和私人资料、标签、用户故事、动态和保存的媒体。此外，它还提供自动检测资料名称更改、过滤器的细粒度定制和恢复中断的下载迭代的功能。
+
+## torchchat: 在服务器、桌面和移动设备上运行大型语言模型
+
+* 创建周期：134 天
+* 开发语言：Python
+* 协议类型：BSD 3-Clause "New" or "Revised" License
+* Star数量：1345 个
+* Fork数量：60 次
+* 关注人数：1345 人
+* 贡献人数：40 人
+* Open Issues数量：66 个
+* Github地址：https://github.com/pytorch/torchchat.git
+
+
+torchchat项目允许在服务器、桌面和移动设备上本地运行大型语言模型（LLMs）。它提供了一个小型代码库，展示了在C/C++应用程序和iOS和Android上使用Python运行LLMs的无缝能力。
+
+## Lagent: 用于构建LLM代理的轻量级框架
+
+* 创建周期：352 天
+* 开发语言：Python
+* 协议类型：Apache License 2.0
+* Star数量：1322 个
+* Fork数量：130 次
+* 关注人数：1322 人
+* 贡献人数：26 人
+* Open Issues数量：19 个
+* Github地址：https://github.com/InternLM/lagent.git
+
+
+![](/images/internlm-lagent-0.png)
+
+Lagent是一个轻量级框架，用于构建基于LLM的代理。它提供了简单的代码快速启动，并提供详细的示例供参考。
 
