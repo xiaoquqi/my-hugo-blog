@@ -1,32 +1,32 @@
 ---
-title: Github 2024-08-08 开源项目日报 Top10
-date: 2024-08-08T07:01:14+08:00
+title: Github 2024-08-08 Go开源项目日报 Top10
+date: 2024-08-08T07:11:15+08:00
 slug: github-trendings-today-20240808
 author: 老孙正经胡说
-image: /images/freecodecamp-freecodecamp-0.png
+image: /images/fatedier-frp-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 人数
   - 人
-  - 项目
-  - 和
-  - 语言
+  - 人数
   - 开发
-  - 贡献
+  - 项目
   - 是
+  - 语言
   - 创建
-  - 周期
   - 协议
+  - 贡献
+  - 周期
   - 类型
   - 关注
   - 地址
   - 开源
-  - 提供
-  - 架构
-  - 中
   - 并
+  - 和
+  - 库
+  - 工具
+  - 用于
 
 categories:
 
@@ -38,114 +38,163 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| TypeScript项目 | 5 |
-| JavaScript项目 | 3 |
-| Python项目 | 2 |
-| C#项目 | 1 |
-| C++项目 | 1 |
-| Go项目 | 1 |
+| Go项目 | 10 |
+| Rust项目 | 1 |
 
-## 免费编程学习平台：freeCodeCamp.org
+## frp: 一个开源的快速反向代理
 
-* 创建周期：3302 天
-* 开发语言：TypeScript, JavaScript
-* 协议类型：BSD 3-Clause "New" or "Revised" License
-* Star数量：381011 个
-* Fork数量：35361 次
-* 关注人数：381011 人
-* 贡献人数：397 人
-* Open Issues数量：378 个
-* Github地址：https://github.com/freeCodeCamp/freeCodeCamp.git
-* 项目首页: http://contribute.freecodecamp.org/
-
-
-![](/images/freecodecamp-freecodecamp-0.png)
-
-freeCodeCamp.org 是一个开放源代码平台和社区，人们可以免费学习编程。它得到慈善机构的支持，旨在帮助成年人转入科技行业。该平台提供全栈网页开发和机器学习课程，并提供交互式编程挑战。
-
-## 开发者职业成长指南
-
-* 创建周期：2670 天
-* 开发语言：TypeScript
-* 协议类型：Other
-* Star数量：281461 个
-* Fork数量：37547 次
-* 关注人数：281461 人
-* 贡献人数：470 人
-* Open Issues数量：21 个
-* Github地址：https://github.com/kamranahmedse/developer-roadmap.git
-* 项目首页: https://roadmap.sh
-
-
-这个开源项目提供互动式路线图、指南和教育内容，帮助开发人员在职业生涯中取得进步。它包括了各种不同专业领域的路线图、最佳实践以及用于测试和提升知识的问题。
-
-## AFFiNE: 下一代知识库
-
-* 创建周期：649 天
-* 开发语言：TypeScript
-* 协议类型：Other
-* Star数量：31610 个
-* Fork数量：2067 次
-* 关注人数：31610 人
-* 贡献人数：141 人
-* Open Issues数量：144 个
-* Github地址：https://github.com/toeverything/AFFiNE.git
-* 项目首页: https://affine.pro
-
-
-![](/images/toeverything-affine-0.png)
-
-AFFiNE是一种下一代知识库，集规划、排序和创建于一体。它是隐私优先、开源、可定制且即可使用。
-
-## 增强版ChatGPT克隆: 开源功能概述
-
-* 创建周期：354 天
-* 开发语言：TypeScript, JavaScript
-* 协议类型：MIT License
-* Star数量：7277 个
-* Fork数量：1269 次
-* 关注人数：7277 人
-* 贡献人数：75 人
-* Open Issues数量：61 个
-* Github地址：https://github.com/danny-avila/LibreChat.git
-* 项目首页: https://docs.librechat.ai/
-
-
-![](/images/danny-avila-librechat-0.png)
-
-增强版ChatGPT克隆是一个开源项目，具有包括与ChatGPT匹配的用户界面、多模式聊天与图像分析、多语言用户界面、AI模型选择、预设、对话编辑、消息导出、插件、多用户系统和部署选项在内的功能。
-
-## 清洁架构解决方案模板
-
-* 创建周期：2869 天
-* 开发语言：C#
-* 协议类型：MIT License
-* Star数量：15645 个
-* Fork数量：2725 次
-* 关注人数：15645 人
-* 贡献人数：63 人
-* Open Issues数量：42 个
-* Github地址：https://github.com/ardalis/CleanArchitecture.git
-
-
-![](/images/ardalis-cleanarchitecture-0.png)
-
-清洁架构解决方案模板为ASP.NET Core提供了一个清洁架构的起点。它是一种松散耦合、依赖反转的架构，也被称为六边形、端口和适配器或洋葱架构。这种架构在Steve Smith和Julie Lerman的DDD基础课程中使用。NimblePros提供清洁架构或DDD培训和实施帮助。
-
-## MiniCPM-V 和 OmniLMM: 图文理解的开源多模态大模型系列
-
-* 创建周期：78 天
-* 开发语言：Python
+* 创建周期：2946 天
+* 开发语言：Go
 * 协议类型：Apache License 2.0
-* Star数量：861 个
-* Fork数量：49 次
-* 关注人数：861 人
-* 贡献人数：8 人
-* Open Issues数量：10 个
-* Github地址：https://github.com/OpenBMB/MiniCPM-V.git
+* Star数量：75872 个
+* Fork数量：12424 次
+* 关注人数：75872 人
+* 贡献人数：93 人
+* Open Issues数量：102 个
+* Github地址：https://github.com/fatedier/frp.git
 
 
-MiniCPM-V 和 OmniLMM 是面向图文理解的开源多模态大模型系列。它们接受图像和文本输入，并提供高质量的文本输出。MiniCPM-V 2.0 版本能够处理任意长宽比的图像，具有 180 万像素，实现了类似 Gemini Pro 的场景文字识别能力和与 GPT-4V 相当的低幻觉率。OmniLMM-12B 模型在多个基准测试中优于同规模的其他模型，并实现了比 GPT-4V 更低的幻觉率。
+![](/images/fatedier-frp-0.png)
+
+frp是一个开源的快速反向代理，允许用户将位于NAT或防火墙后面的本地服务器暴露到互联网上。
+
+## GORM：面向Golang的开发者友好的ORM库
+
+* 创建周期：3730 天
+* 开发语言：Go
+* 协议类型：MIT License
+* Star数量：34522 个
+* Fork数量：3830 次
+* 关注人数：34522 人
+* 贡献人数：359 人
+* Open Issues数量：312 个
+* Github地址：https://github.com/go-gorm/gorm.git
+* 项目首页: https://gorm.io
+
+
+GORM是一个面向Golang的开源ORM库，旨在使开发人员更加友好。
+
+## go-redis：与Uptrace一起监视Redis的Go客户端
+
+* 创建周期：4194 天
+* 开发语言：Go
+* 协议类型：BSD 2-Clause "Simplified" License
+* Star数量：18615 个
+* Fork数量：2240 次
+* 关注人数：18615 人
+* 贡献人数：270 人
+* Open Issues数量：204 个
+* Github地址：https://github.com/redis/go-redis.git
+* 项目首页: https://redis.uptrace.dev
+
+
+Redis Go客户端go-redis是Go编程语言的Redis客户端。它由uptrace/uptrace维护，并可与Uptrace一起使用，Uptrace是一个支持分布式跟踪、度量和日志的开源APM工具。Uptrace可以监视应用程序并设置自动警报，通过电子邮件、Slack、Telegram等渠道接收通知。有一个OpenTelemetry示例可用于演示如何使用Uptrace监视go-redis。
+
+## gRPC-Gateway: 将RESTful HTTP API转换为gRPC的工具
+
+* 创建周期：3212 天
+* 开发语言：Go
+* 协议类型：BSD 3-Clause "New" or "Revised" License
+* Star数量：16976 个
+* Fork数量：2252 次
+* 关注人数：16976 人
+* 贡献人数：345 人
+* Open Issues数量：130 个
+* Github地址：https://github.com/grpc-ecosystem/grpc-gateway.git
+* 项目首页: https://grpc-ecosystem.github.io/grpc-gateway/
+
+
+![](/images/grpc-ecosystem-grpc-gateway-0.png)
+
+gRPC-Gateway 是一个工具，用于生成反向代理服务器，将 RESTful HTTP API 转换为 gRPC。它读取协议缓冲区服务定义，并根据服务定义中的 google.api.http 注释生成服务器，从而同时以 gRPC 和 RESTful 风格提供 API。
+
+## go-github: 用于访问GitHub API v3的Go客户端库
+
+* 创建周期：3933 天
+* 开发语言：Go
+* 协议类型：BSD 3-Clause "New" or "Revised" License
+* Star数量：9975 个
+* Fork数量：1978 次
+* 关注人数：9975 人
+* 贡献人数：445 人
+* Open Issues数量：65 个
+* Github地址：https://github.com/google/go-github.git
+* 项目首页: https://pkg.go.dev/github.com/google/go-github/v59/github
+
+
+go-github是一个用于访问GitHub API v3的Go客户端库。它需要Go版本1.13或更高版本，并跟踪Go的版本支持政策。对于那些有兴趣使用GraphQL API v4的人，推荐的库是shurcooL/githubv4。
+
+## Ginkgo: 一个成熟的Go测试框架
+
+* 创建周期：3870 天
+* 开发语言：Go
+* 协议类型：MIT License
+* Star数量：7861 个
+* Fork数量：638 次
+* 关注人数：7861 人
+* 贡献人数：178 人
+* Open Issues数量：82 个
+* Github地址：https://github.com/onsi/ginkgo.git
+* 项目首页: http://onsi.github.io/ginkgo/
+
+
+![](/images/onsi-ginkgo-0.png)
+
+Ginkgo是一个成熟的Go测试框架，帮助编写表达性强的规范。它建立在Go的测试基础之上，并由Gomega匹配库补充。它易于启动并开始编写您的第一个规范。
+
+## Encore: 事件驱动分布式系统的后端开发平台
+
+* 创建周期：1268 天
+* 开发语言：Go, Rust
+* 协议类型：Mozilla Public License 2.0
+* Star数量：5641 个
+* Fork数量：253 次
+* 关注人数：5641 人
+* 贡献人数：55 人
+* Open Issues数量：64 个
+* Github地址：https://github.com/encoredev/encore.git
+* 项目首页: https://encore.dev
+
+
+![](/images/encoredev-encore-0.png)
+
+Encore是一个专为构建分布式系统和事件驱动应用程序而设计的后端开发平台。它提供了一个专门的工作流程，用于创建事件驱动和分布式系统，从本地开发到部署在AWS和GCP上。Encore包括一个适用于TypeScript和Go的后端框架，一个带有跟踪工具的本地开发环境，以及用于自动化CI/CD和云基础架构配置的云平台。
+
+![](/images/encoredev-encore-1.png)
+
+## Tau：开发人员喜爱的自托管云计算平台
+
+* 创建周期：392 天
+* 开发语言：Go
+* 协议类型：BSD 3-Clause "New" or "Revised" License
+* Star数量：2830 个
+* Fork数量：72 次
+* 关注人数：2830 人
+* 贡献人数：14 人
+* Open Issues数量：18 个
+* Github地址：https://github.com/taubyte/tau.git
+* 项目首页: https://tau.how
+
+
+Tau是一个开源的分布式平台即服务（PaaS），是Vercel、Netlify和Cloudflare的自托管替代方案。它旨在成为一个低维护且高度可扩展的云计算平台，深受开发人员喜爱。Tau是一个单一的二进制文件，除了标准系统库外几乎没有外部依赖，并且需要最少的配置。主要步骤包括安装Tau、配置它，然后启动它。有关详细说明，请参阅“部署Tau”指南。如果安装了Go，使用“go build”命令构建Tau非常简单。
+
+## Argo Rollouts - 为Kubernetes提供渐进式交付
+
+* 创建周期：2091 天
+* 开发语言：Go
+* 协议类型：Apache License 2.0
+* Star数量：2627 个
+* Fork数量：828 次
+* 关注人数：2627 人
+* 贡献人数：262 人
+* Open Issues数量：429 个
+* Github地址：https://github.com/argoproj/argo-rollouts.git
+* 项目首页: https://argo-rollouts.readthedocs.io/
+
+
+![](/images/argoproj-argo-rollouts-0.png)
+
+Argo Rollouts是一个为Kubernetes提供渐进式交付的开源项目。它允许用户逐渐发布应用程序的新版本，监视其行为，并在必要时回滚更改。
 
 ## SpoofDPI: 用Go编写的反审查工具
 
@@ -161,52 +210,4 @@ MiniCPM-V 和 OmniLMM 是面向图文理解的开源多模态大模型系列。�
 
 
 SpoofDPI是一个用Go语言编写的开源反审查工具，旨在绕过深度数据包检测。这是一个简单快速的软件，欢迎社区贡献。
-
-## Porffor: 实验性的提前编译JavaScript引擎
-
-* 创建周期：410 天
-* 开发语言：JavaScript, TypeScript
-* 协议类型：MIT License
-* Star数量：1758 个
-* Fork数量：42 次
-* 关注人数：1758 人
-* 贡献人数：10 人
-* Open Issues数量：88 个
-* Github地址：https://github.com/CanadaHonk/porffor.git
-* 项目首页: https://porffor.dev
-
-
-![](/images/canadahonk-porffor-0.png)
-
-Porffor是一个用JavaScript编写的实验性的提前编译JavaScript引擎。它旨在将JavaScript/TypeScript代码优化为WebAssembly/C，目前是一个研究项目，不适用于生产环境。
-
-## SimpleTuner：用于训练优化的实验脚本库
-
-* 创建周期：437 天
-* 开发语言：Python
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：687 个
-* Fork数量：42 次
-* 关注人数：687 人
-* 贡献人数：10 人
-* Open Issues数量：15 个
-* Github地址：https://github.com/bghira/SimpleTuner.git
-
-
-SimpleTuner是一个开源存储库，包含用于训练优化的实验脚本，针对Stable Diffusion 2.1、Stable Diffusion 3、DeepFloyd和SDXL。该项目强调代码的简单性和可读性，作为一个共享的学术练习，致力于进行贡献。
-
-## Multiplier: 提高代码审计生产力的开源工具
-
-* 创建周期：1115 天
-* 开发语言：C++
-* 协议类型：Apache License 2.0
-* Star数量：212 个
-* Fork数量：12 次
-* 关注人数：212 人
-* 贡献人数：13 人
-* Open Issues数量：116 个
-* Github地址：https://github.com/trailofbits/multiplier.git
-
-
-Multiplier是一个开源工具，通过提供精确和全面的代码理解能力，提高了代码审计的生产力。它将构建产物保存到数据库中，并使用C++或Python API使其可访问。该工具强调在构建过程中唯一识别所有实体，并提供了深入分析的广泛API。
 
