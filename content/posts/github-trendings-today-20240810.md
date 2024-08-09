@@ -1,32 +1,32 @@
 ---
-title: Github 2024-08-10 开源项目日报 Top10
-date: 2024-08-10T07:01:43+08:00
+title: Github 2024-08-10 Rust开源项目日报 Top10
+date: 2024-08-10T07:11:09+08:00
 slug: github-trendings-today-20240810
 author: 老孙正经胡说
-image: /images/goldbergyoni-nodebestpractices-0.png
+image: /images/tabbyml-tabby-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 和
   - 人数
   - 人
   - 项目
-  - 语言
-  - 创建
   - 开发
-  - 贡献
-  - 周期
+  - 语言
   - 协议
+  - 是
+  - 创建
+  - 周期
   - 类型
   - 关注
+  - 贡献
   - 地址
-  - 并
-  - 架构
-  - 是
-  - 使用
-  - 代码
-  - 模型
+  - 开源
+  - 和
+  - 构建
+  - 提供
+  - 支持
+  - 引擎
 
 categories:
 
@@ -38,181 +38,170 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Python项目 | 4 |
-| JavaScript项目 | 2 |
-| TypeScript项目 | 2 |
-| C#项目 | 1 |
-| Dockerfile项目 | 1 |
-| Rich Text Format项目 | 1 |
-| Swift项目 | 1 |
-| Jupyter Notebook项目 | 1 |
+| Rust项目 | 10 |
+| Python项目 | 1 |
 
-## Node.js最佳实践
+## Turbo：下一代前端开发工具链
 
-* 创建周期：2521 天
-* 开发语言：Dockerfile
-* 协议类型：Creative Commons Attribution Share Alike 4.0 International
-* Star数量：97981 个
-* Fork数量：9942 次
-* 关注人数：97981 人
-* 贡献人数：228 人
-* Open Issues数量：72 个
-* Github地址：https://github.com/goldbergyoni/nodebestpractices.git
-* 项目首页: https://twitter.com/nodepractices/
-
-
-![](/images/goldbergyoni-nodebestpractices-0.png)
-
-Node.js最佳实践是Node.js最佳实践内容的精选列表，包括合作者的贡献。它不断更新新的问题和拉取请求，目前包括80多个最佳实践、样式指南和架构技巧。内容包括附加信息，包括代码示例、选定博客的引用和更多信息。
-
-![](/images/goldbergyoni-nodebestpractices-1.png)
-
-## Sentry：开发者优先的错误跟踪和性能监控平台
-
-* 创建周期：5093 天
-* 开发语言：Python, TypeScript
-* 协议类型：Other
-* Star数量：37902 个
-* Fork数量：4069 次
-* 关注人数：37902 人
-* 贡献人数：341 人
-* Open Issues数量：2670 个
-* Github地址：https://github.com/getsentry/sentry.git
-* 项目首页: https://sentry.io
-
-
-![](/images/getsentry-sentry-0.png)
-
-Sentry是一个面向开发人员的错误跟踪和性能监控平台，它帮助开发人员看到真正重要的事情，更快地解决问题，并持续学习他们的应用程序。
-
-![](/images/getsentry-sentry-1.png)
-
-## 大型语言模型（LLMs）课程
-
-* 创建周期：229 天
-* 开发语言：Jupyter Notebook
-* 协议类型：Apache License 2.0
-* Star数量：22437 个
-* Fork数量：2157 次
-* 关注人数：22437 人
-* 贡献人数：2 人
-* Open Issues数量：23 个
-* Github地址：https://github.com/mlabonne/llm-course.git
-* 项目首页: https://mlabonne.github.io/blog/
-
-
-大型语言模型（LLMs）课程分为三个部分：LLM基础涵盖了数学、Python和神经网络的基本知识，LLM科学家专注于使用最新技术构建最佳的LLM，LLM工程师专注于创建基于LLM的应用程序并部署它们。
-
-## 易采集：可视化无代码爬虫
-
-* 创建周期：1383 天
-* 开发语言：JavaScript, Python
-* 协议类型：Other
-* Star数量：22289 个
-* Fork数量：2559 次
-* 关注人数：22289 人
-* 贡献人数：6 人
-* Open Issues数量：14 个
-* Github地址：https://github.com/NaiboWang/EasySpider.git
-* 项目首页: https://www.easyspider.net
-
-
-一个可视化浏览器自动化测试/数据采集/爬虫软件，可以使用图形化界面，无代码可视化的设计和执行任务。只需要在网页上选择自己想要操作的内容并根据提示框操作即可完成任务的设计和执行。同时软件还可以单独以命令行的方式进行执行，从而可以很方便的嵌入到其他系统中。
-
-## Lottie: 本地渲染矢量动画的开源库
-
-* 创建周期：2753 天
-* 开发语言：Swift
-* 协议类型：Apache License 2.0
-* Star数量：25074 个
-* Fork数量：3662 次
-* 关注人数：25074 人
-* 贡献人数：205 人
-* Open Issues数量：18 个
-* Github地址：https://github.com/airbnb/lottie-ios.git
-* 项目首页: http://airbnb.io/lottie/
-
-
-Lottie是一个开源库，可用于iOS、macOS、tvOS、watchOS、Android和Web，能够以最少的代码实现矢量动画和艺术的本地渲染。它可以加载和渲染以bodymovin JSON格式导出的动画和矢量图，使设计师能够创建并发布精美的动画，而无需工程师手工重新创建。这些由JSON支持的动画尺寸紧凑，但能够具有高复杂性，并提供广泛的交互和运行时操作。
-
-## 清洁架构解决方案模板
-
-* 创建周期：2869 天
-* 开发语言：C#
+* 创建周期：977 天
+* 开发语言：Rust
 * 协议类型：MIT License
-* Star数量：15645 个
-* Fork数量：2725 次
-* 关注人数：15645 人
-* 贡献人数：63 人
-* Open Issues数量：42 个
-* Github地址：https://github.com/ardalis/CleanArchitecture.git
+* Star数量：25308 个
+* Fork数量：1713 次
+* 关注人数：25308 人
+* 贡献人数：384 人
+* Open Issues数量：193 个
+* Github地址：https://github.com/vercel/turbo.git
+* 项目首页: https://turbo.build
 
 
-![](/images/ardalis-cleanarchitecture-0.png)
+Turbo是一个用Rust编写的面向前端开发的下一代工具链。它由三个主要部分组成：Turbopack，一个增量打包工具（Webpack的继任者），Turborepo，一个增量构建系统，以及Turbo引擎，一个低级增量计算和记忆化引擎。
 
-清洁架构解决方案模板为ASP.NET Core提供了一个清洁架构的起点。它是一种松散耦合、依赖反转的架构，也被称为六边形、端口和适配器或洋葱架构。这种架构在Steve Smith和Julie Lerman的DDD基础课程中使用。NimblePros提供清洁架构或DDD培训和实施帮助。
+## Tabby: 自托管的AI编码助手
 
-## MiniCPM-V 和 OmniLMM: 图文理解的开源多模态大模型系列
-
-* 创建周期：78 天
-* 开发语言：Python
-* 协议类型：Apache License 2.0
-* Star数量：861 个
-* Fork数量：49 次
-* 关注人数：861 人
-* 贡献人数：8 人
-* Open Issues数量：10 个
-* Github地址：https://github.com/OpenBMB/MiniCPM-V.git
-
-
-MiniCPM-V 和 OmniLMM 是面向图文理解的开源多模态大模型系列。它们接受图像和文本输入，并提供高质量的文本输出。MiniCPM-V 2.0 版本能够处理任意长宽比的图像，具有 180 万像素，实现了类似 Gemini Pro 的场景文字识别能力和与 GPT-4V 相当的低幻觉率。OmniLMM-12B 模型在多个基准测试中优于同规模的其他模型，并实现了比 GPT-4V 更低的幻觉率。
-
-## CKEditor 5: 现代JavaScript富文本编辑器
-
-* 创建周期：3502 天
-* 开发语言：JavaScript, Rich Text Format
+* 创建周期：310 天
+* 开发语言：Rust
 * 协议类型：Other
-* Star数量：9108 个
-* Fork数量：3663 次
-* 关注人数：9108 人
-* 贡献人数：153 人
-* Open Issues数量：1309 个
-* Github地址：https://github.com/ckeditor/ckeditor5.git
-* 项目首页: https://ckeditor.com/ckeditor-5
+* Star数量：15151 个
+* Fork数量：575 次
+* 关注人数：15151 人
+* 贡献人数：48 人
+* Open Issues数量：133 个
+* Github地址：https://github.com/TabbyML/tabby.git
+* 项目首页: https://tabby.tabbyml.com/
 
 
-![](/images/ckeditor-ckeditor5-0.png)
+![](/images/tabbyml-tabby-0.png)
 
-CKEditor 5是一款现代JavaScript富文本编辑器，具有模块化架构、现代集成和协作编辑等功能。它提供了广泛的所见即所得编辑解决方案，并具有出色的协作支持，适用于从Google Docs和Medium到Slack或类似Twitter的各种应用程序。
+Tabby是一款自托管的AI编码助手，提供了一个开源和本地化的GitHub Copilot替代方案。它是自包含的，无需DBMS或云服务，提供了OpenAPI接口，易于与现有基础设施（例如云IDE）集成，并支持消费级GPU。
 
-## Teable: 无代码数据库快速指南
+## AI原生开源嵌入式数据库
 
-* 创建周期：500 天
-* 开发语言：TypeScript
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：2444 个
-* Fork数量：98 次
-* 关注人数：2444 人
-* 贡献人数：7 人
-* Open Issues数量：8 个
-* Github地址：https://github.com/teableio/teable.git
-* 项目首页: https://teable.io
-
-
-Teable是一个开源的、超快速的、实时的、专业的、开发者友好的无代码数据库。用户可以从模板中选择场景，并单击“使用此模板”来获得快速体验。想要高性能？尝试100万行演示，感受Teable的速度。想要快速学习如何使用？点击本教程。有兴趣自行部署？点击Railway上的部署。
-
-## 实时换脸和一键视频深度伪造
-
-* 创建周期：320 天
-* 开发语言：Python
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：1519 个
-* Fork数量：186 次
-* 关注人数：1519 人
-* 贡献人数：6 人
-* Open Issues数量：11 个
-* Github地址：https://github.com/hacksider/Deep-Live-Cam.git
+* 创建周期：675 天
+* 开发语言：Rust, Python
+* 协议类型：Apache License 2.0
+* Star数量：14036 个
+* Fork数量：1180 次
+* 关注人数：14036 人
+* 贡献人数：114 人
+* Open Issues数量：558 个
+* Github地址：https://github.com/chroma-core/chroma.git
+* 项目首页: https://www.trychroma.com/
 
 
-这个开源项目提供实时换脸和一键视频深度伪造功能，只需一张图片即可。它旨在帮助艺术家完成诸如为自定义角色添加动画或将其用作服装模特等任务。开发人员致力于预防不道德的使用，通过内置检查来避免不适当的媒体，并鼓励在符合当地法律和伦理考虑的情况下负责任地使用。
+这个AI原生的开源嵌入式数据库提供了一个只有4个函数的核心API，并且可以通过Google Colab或Replit模板进行访问。
+
+## 现代端口扫描器
+
+* 创建周期：1456 天
+* 开发语言：Rust
+* 协议类型：GNU General Public License v3.0
+* Star数量：13237 个
+* Fork数量：878 次
+* 关注人数：13237 人
+* 贡献人数：59 人
+* Open Issues数量：25 个
+* Github地址：https://github.com/RustScan/RustScan.git
+
+
+![](/images/rustscan-rustscan-0.png)
+
+现代端口扫描器是一个开源工具，允许用户快速找到端口，并通过支持Python、Lua和Shell的脚本引擎运行脚本。它具有在3秒内扫描所有65k端口的能力，完整的脚本引擎支持，自适应学习以及对IPv6、CIDR、文件输入等的支持。
+
+![](/images/rustscan-rustscan-1.png)
+
+## ZLUDA：在AMD GPU上运行CUDA应用程序的开源项目
+
+* 创建周期：1524 天
+* 开发语言：Rust
+* 协议类型：Apache License 2.0
+* Star数量：6718 个
+* Fork数量：364 次
+* 关注人数：6718 人
+* 贡献人数：9 人
+* Open Issues数量：50 个
+* Github地址：https://github.com/vosen/ZLUDA.git
+
+
+ZLUDA是一个开源项目，它可以在AMD GPU上以接近原生性能运行未经修改的CUDA应用程序。目前处于alpha质量阶段，但已确认可以与各种本地CUDA应用程序一起使用，如Geekbench、3DF Zephyr、Blender等。
+
+## GlazeWM: Windows平铺窗口管理器
+
+* 创建周期：1504 天
+* 开发语言：Rust
+* 协议类型：GNU General Public License v3.0
+* Star数量：4455 个
+* Fork数量：134 次
+* 关注人数：4455 人
+* 贡献人数：33 人
+* Open Issues数量：226 个
+* Github地址：https://github.com/glzr-io/glazewm.git
+
+
+GlazeWM是受i3wm启发的Windows平铺窗口管理器。它具有简单的YAML配置、多监视器支持、针对特定窗口的可定制规则、简单的一键安装以及与Zebar的状态栏集成。
+
+## reth: 以太坊协议的Rust实现
+
+* 创建周期：590 天
+* 开发语言：Rust
+* 协议类型：Apache License 2.0
+* Star数量：3188 个
+* Fork数量：773 次
+* 关注人数：3188 人
+* 贡献人数：263 人
+* Open Issues数量：299 个
+* Github地址：https://github.com/paradigmxyz/reth.git
+
+
+reth是一个开源项目，提供了使用Rust的以太坊协议的模块化、友好的贡献者和高速实现。这是一个正在进行中的项目，为用户和开发人员提供安装指南。
+
+## Pixi: 简化软件包管理
+
+* 创建周期：470 天
+* 开发语言：Rust
+* 协议类型：BSD 3-Clause "New" or "Revised" License
+* Star数量：2623 个
+* Fork数量：146 次
+* 关注人数：2623 人
+* 贡献人数：82 人
+* Open Issues数量：252 个
+* Github地址：https://github.com/prefix-dev/pixi.git
+* 项目首页: https://pixi.sh
+
+
+![](/images/prefix-dev-pixi-0.png)
+
+Pixi是一个旨在简化软件包管理的开源项目。
+
+## NativeLink：高性能构建缓存和远程执行系统
+
+* 创建周期：1304 天
+* 开发语言：Rust
+* 协议类型：Apache License 2.0
+* Star数量：459 个
+* Fork数量：53 次
+* 关注人数：459 人
+* 贡献人数：26 人
+* Open Issues数量：123 个
+* Github地址：https://github.com/TraceMachina/nativelink.git
+* 项目首页: https://nativelink.com
+
+
+NativeLink是一个高效的、高性能的构建缓存和远程执行系统，可以加速软件编译和测试，同时降低基础设施成本。它通过智能缓存构建产物并在多台机器间分发任务，优化各种规模项目的构建流程。
+
+## SP1: 高性能开源零知识虚拟机
+
+* 创建周期：74 天
+* 开发语言：Rust
+* 协议类型：Apache License 2.0
+* Star数量：291 个
+* Fork数量：20 次
+* 关注人数：291 人
+* 贡献人数：15 人
+* Open Issues数量：24 个
+* Github地址：https://github.com/succinctlabs/sp1.git
+* 项目首页: https://succinctlabs.github.io/sp1
+
+
+SP1是一个高性能、100%开源、贡献者友好的零知识虚拟机（zkVM），通过允许开发人员在流行的编程语言中使用可编程真相，实现对ZKP的民主化访问。它采取协作的方式构建最佳的zkVM，用于Rollups、协处理器和其他ZKP应用。
 
