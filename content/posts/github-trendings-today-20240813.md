@@ -1,32 +1,32 @@
 ---
-title: Github 2024-08-13 开源项目日报 Top10
-date: 2024-08-13T07:01:20+08:00
+title: Github 2024-08-13 Python开源项目日报 Top10
+date: 2024-08-13T07:11:01+08:00
 slug: github-trendings-today-20240813
 author: 老孙正经胡说
-image: /images/stirling-tools-stirling-pdf-0.png
+image: /images/donnemartin-system-design-primer-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 和
-  - 项目
-  - 人数
   - 人
+  - 和
+  - 人数
+  - 项目
   - 开发
-  - 使用
   - 语言
-  - 并
-  - 创建
   - 贡献
+  - 创建
+  - 开源
+  - 并
   - 周期
   - 协议
   - 类型
   - 关注
   - 地址
   - 是
+  - 语音
   - 提供
-  - 开源
-  - 文档
+  - 设计
 
 categories:
 
@@ -38,66 +38,90 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| TypeScript项目 | 4 |
-| Python项目 | 3 |
-| Java项目 | 1 |
-| HTML项目 | 1 |
-| C++项目 | 1 |
-| Dart项目 | 1 |
-| JavaScript项目 | 1 |
-| PowerShell项目 | 1 |
-| MDX项目 | 1 |
+| Python项目 | 10 |
+| TypeScript项目 | 1 |
 
-## Electron 框架：使用 JavaScript、HTML 和 CSS 构建跨平台桌面应用
+## 系统设计指南
 
-* 创建周期：3993 天
-* 开发语言：C++, TypeScript
-* 协议类型：MIT License
-* Star数量：111447 个
-* Fork数量：14811 次
-* 关注人数：111447 人
-* 贡献人数：381 人
-* Open Issues数量：933 个
-* Github地址：https://github.com/electron/electron.git
-* 项目首页: https://electronjs.org
-
-
-Electron 框架允许开发人员使用 JavaScript、HTML 和 CSS 创建跨平台桌面应用程序。它基于 Node.js 和 Chromium，并被许多应用程序（如 Visual Studio Code）使用。该项目还遵循贡献者公约行为准则。
-
-## 本地托管的PDF文件操作工具
-
-* 创建周期：464 天
-* 开发语言：Java, HTML
-* 协议类型：GNU General Public License v3.0
-* Star数量：23260 个
-* Fork数量：1652 次
-* 关注人数：23260 人
-* 贡献人数：104 人
-* Open Issues数量：164 个
-* Github地址：https://github.com/Stirling-Tools/Stirling-PDF.git
-
-
-![](/images/stirling-tools-stirling-pdf-0.png)
-
-一个本地托管的网络应用程序，提供对PDF文件的各种操作。它是一个使用Docker的综合工具，允许进行分割、合并、转换、重新组织、添加图像、旋转和压缩PDF文件等任务。该应用程序通过不发出用于跟踪或记录的出站调用来确保隐私，并且文件在任务执行期间要么存在于客户端，要么仅暂时存在于服务器内存中。
-
-## 开源的Spotify客户端
-
-* 创建周期：1058 天
-* 开发语言：Dart
+* 创建周期：2507 天
+* 开发语言：Python
 * 协议类型：Other
-* Star数量：10580 个
-* Fork数量：483 次
-* 关注人数：10580 人
-* 贡献人数：43 人
-* Open Issues数量：209 个
-* Github地址：https://github.com/KRTirtho/spotube.git
-* 项目首页: https://spotube.krtirtho.dev/
+* Star数量：241693 个
+* Fork数量：42010 次
+* 关注人数：241693 人
+* 贡献人数：109 人
+* Open Issues数量：413 个
+* Github地址：https://github.com/donnemartin/system-design-primer.git
 
 
-![](/images/krtirtho-spotube-0.png)
+![](/images/donnemartin-system-design-primer-0.png)
 
-这是一个开源的 Spotify 客户端，不需要付费订阅，也不使用 Electron。它适用于桌面和移动平台。该客户端提供无广告收听、可下载的曲目、跨平台支持、小巧的体积、匿名/访客登录、时间同步歌词、无遥测或用户数据收集、本地性能以及开源/自由软件等功能。播放控制是在本地完成的，而不是在服务器上。尽管使用了公共和免费的 Spotify 和 YT Music API，但建议通过其他方式支持创作者。
+系统设计指南是一个开源项目，帮助个人学习如何设计大规模系统并为系统设计面试做准备。它还包括Anki记忆卡，以便有效学习。
+
+## Home Assistant | 本地控制和隐私优先的开源家庭自动化项目
+
+* 创建周期：3773 天
+* 开发语言：Python
+* 协议类型：Apache License 2.0
+* Star数量：65862 个
+* Fork数量：26697 次
+* 关注人数：65862 人
+* 贡献人数：402 人
+* Open Issues数量：2874 个
+* Github地址：https://github.com/home-assistant/core.git
+* 项目首页: https://www.home-assistant.io
+
+
+Home Assistant是一个开源的家庭自动化项目，它优先考虑本地控制和隐私。它由全球的爱好者和DIY爱好者社区支持，非常适合在Raspberry Pi或本地服务器上运行。
+
+## Payloads All The Things - 有用的Web应用程序安全负载和绕过列表
+
+* 创建周期：2639 天
+* 开发语言：Python
+* 协议类型：MIT License
+* Star数量：54334 个
+* Fork数量：13822 次
+* 关注人数：54334 人
+* 贡献人数：261 人
+* Open Issues数量：11 个
+* Github地址：https://github.com/swisskyrepo/PayloadsAllTheThings.git
+* 项目首页: https://swisskyrepo.github.io/PayloadsAllTheThings/
+
+
+![](/images/swisskyrepo-payloadsallthethings-0.png)
+
+Payloads All The Things是一个开源项目，提供了一份全面的有用的Web应用程序安全负载和绕过列表，旨在进行渗透测试和CTF挑战。该项目鼓励贡献，并为每个部分提供了文档，包括漏洞描述、利用技术和相关文件。此外，它还包括一个方法论和资源文件夹，涵盖了诸如Active Directory Attack、云渗透测试、Cobalt Strike、Linux和Windows安全、Metasploit、网络枢纽、反向Shell、子域枚举等各种主题。该项目还承认了公司的贡献和赞助。
+
+## 实时语音克隆
+
+* 创建周期：1906 天
+* 开发语言：Python
+* 协议类型：Other
+* Star数量：51803 个
+* Fork数量：8667 次
+* 关注人数：51803 人
+* 贡献人数：15 人
+* Open Issues数量：206 个
+* Github地址：https://github.com/CorentinJ/Real-Time-Voice-Cloning.git
+
+
+实时语音克隆是一个开源项目，它实现了从说话人验证到多说话人文本到语音合成（SV2TTS）的迁移学习，并配备了实时声码器。它基于作者的硕士论文，涉及一个三阶段的深度学习框架，用于创建声音的数字表示，并从任意文本生成语音。
+
+## MetaGPT: 多代理框架
+
+* 创建周期：260 天
+* 开发语言：Python
+* 协议类型：MIT License
+* Star数量：35582 个
+* Fork数量：4113 次
+* 关注人数：35582 人
+* 贡献人数：68 人
+* Open Issues数量：240 个
+* Github地址：https://github.com/geekan/MetaGPT.git
+* 项目首页: https://deepwisdom.ai/
+
+
+MetaGPT是一个旨在为满足各种需求提供多代理框架的开源项目。该项目包括PRD、设计、任务以及用于管理框架的存储库。
 
 ## 实时换脸和一键视频深度伪造
 
@@ -113,68 +137,6 @@ Electron 框架允许开发人员使用 JavaScript、HTML 和 CSS 创建跨平�
 
 
 这个开源项目提供实时换脸和一键视频深度伪造功能，只需一张图片即可。它旨在帮助艺术家完成诸如为自定义角色添加动画或将其用作服装模特等任务。开发人员致力于预防不道德的使用，通过内置检查来避免不适当的媒体，并鼓励在符合当地法律和伦理考虑的情况下负责任地使用。
-
-## GitHub文档 - 开源存储库和Markdown源文件
-
-* 创建周期：1901 天
-* 开发语言：JavaScript, TypeScript
-* 协议类型：Creative Commons Attribution 4.0 International
-* Star数量：15938 个
-* Fork数量：58923 次
-* 关注人数：15938 人
-* 贡献人数：432 人
-* Open Issues数量：51 个
-* Github地址：https://github.com/github/docs.git
-* 项目首页: https://docs.github.com
-
-
-GitHub文档是一个开源存储库，包含了docs.github.com的文档网站代码和Markdown源文件。GitHub的文档团队在一个私人存储库中处理预生产内容，并定期与这个公共存储库同步。
-
-## Win11Debloat: 简化Windows体验的轻量PowerShell脚本
-
-* 创建周期：1362 天
-* 开发语言：PowerShell
-* 协议类型：MIT License
-* Star数量：7726 个
-* Fork数量：314 次
-* 关注人数：7726 人
-* 贡献人数：5 人
-* Open Issues数量：10 个
-* Github地址：https://github.com/Raphire/Win11Debloat.git
-
-
-Win11Debloat是一个简单且轻量的PowerShell脚本，旨在移除预安装的Windows应用程序，禁用遥测功能，并通过移除侵入性元素和广告来简化用户体验。它适用于Windows 10和Windows 11，提供可定制的修改，并使用包含的注册表文件轻松恢复。
-
-## JSON-RPC 服务器测试网络
-
-* 创建周期：119 天
-* 开发语言：TypeScript
-* 协议类型：Other
-* Star数量：8569 个
-* Fork数量：156 次
-* 关注人数：8569 人
-* 贡献人数：35 人
-* Open Issues数量：39 个
-* Github地址：https://github.com/shardeum/shardeum.git
-
-
-这个开源项目是一个为测试与MetaMask提供JSON-RPC服务器的网络。它包括在本地运行网络、健康检查的功能，并提供了有关如何为项目做出贡献的说明。
-
-## Next.js 和 Tailwind CSS 博客起始模板
-
-* 创建周期：1312 天
-* 开发语言：TypeScript, MDX
-* 协议类型：MIT License
-* Star数量：7940 个
-* Fork数量：1907 次
-* 关注人数：7940 人
-* 贡献人数：148 人
-* Open Issues数量：39 个
-* Github地址：https://github.com/timlrx/tailwind-nextjs-starter-blog.git
-* 项目首页: https://tailwind-nextjs-starter-blog.vercel.app/
-
-
-这是一个预先配置了最新技术以便于技术写作的 Next.js 和 Tailwind CSS 博客起始模板。它易于定制，并可作为现有 Jekyll 和 Hugo 个人博客的替代品。第二版基于 Next App 目录，使用 React Server Component，并使用 Contentlayer 管理 Markdown 内容。它被认为是目前最功能丰富的 Next.js Markdown 博客模板之一，文档提供了入门指南、解决问题和提出功能请求。
 
 ## 稳定扩散WebUI Forge
 
@@ -192,6 +154,36 @@ Win11Debloat是一个简单且轻量的PowerShell脚本，旨在移除预安装�
 ![](/images/lllyasviel-stable-diffusion-webui-forge-0.png)
 
 稳定扩散WebUI Forge是建立在稳定扩散WebUI之上的平台，旨在简化开发、优化资源管理和加速推理。它为不同的GPU配置提供了显著的加速，并引入了Unet Patcher，可以用最少的代码实现各种方法。Forge还添加了新的采样器，并承诺保持原始WebUI界面。后端已经重新设计以处理资源管理，并删除了CMD标志的使用，建议让Forge决定如何加载模型。
+
+## 检索增强生成（RAG）：Weaviate驱动的开源聊天机器人
+
+* 创建周期：298 天
+* 开发语言：Python, TypeScript
+* 协议类型：BSD 3-Clause "New" or "Revised" License
+* Star数量：3274 个
+* Fork数量：357 次
+* 关注人数：3274 人
+* 贡献人数：12 人
+* Open Issues数量：43 个
+* Github地址：https://github.com/weaviate/Verba.git
+
+
+检索增强生成（RAG）是由Weaviate驱动的开源聊天机器人。它结合了信息检索和自然语言生成的能力，以提供更准确和具有上下文相关性的响应。该项目旨在通过整合先进的检索和生成技术，增强聊天机器人的对话能力。
+
+## Parler-TTS: 轻量级开源文本到语音模型
+
+* 创建周期：61 天
+* 开发语言：Python
+* 协议类型：Apache License 2.0
+* Star数量：1080 个
+* Fork数量：76 次
+* 关注人数：1080 人
+* 贡献人数：2 人
+* Open Issues数量：16 个
+* Github地址：https://github.com/huggingface/parler-tts.git
+
+
+Parler-TTS是一个轻量级的、完全开源的文本到语音(TTS)模型，旨在以给定说话者的风格生成高质量、自然流畅的语音。它基于 Stability AI 和 Edinburgh University 的 Dan Lyth 和 Simon King 的论文《自然语言引导的高保真文本到语音与合成注释》，该存储库包含了 Parler-TTS 的推理和训练代码，并以宽松的许可证公开发布，允许社区在此基础上构建并开发自己强大的TTS模型。他们还发布了 Parler-TTS Mini v0.1，这是一个基于1.05万小时音频数据训练的6亿参数模型，计划将数据规模扩大到5万小时，以准备v1模型。
 
 ## Power Pwn: Microsoft 365的攻击性安全工具集
 
