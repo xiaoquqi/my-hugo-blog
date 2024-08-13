@@ -1,32 +1,32 @@
 ---
-title: Github 2024-08-14 开源项目日报 Top10
-date: 2024-08-14T07:01:08+08:00
+title: Github 2024-08-14 C开源项目日报 Top10
+date: 2024-08-14T07:11:08+08:00
 slug: github-trendings-today-20240814
 author: 老孙正经胡说
-image: /images/lllyasviel-stable-diffusion-webui-forge-0.png
+image: /images/php-php-src-0.png
 tags:
   - github
   - trendings
   - 数量
-  - 项目
   - 人数
   - 人
   - 开发
-  - 和
+  - 项目
   - 语言
-  - 并
+  - 是
   - 创建
-  - 贡献
   - 周期
+  - 关注
+  - 贡献
+  - 地址
+  - 和
   - 协议
   - 类型
-  - 关注
-  - 地址
-  - 是
-  - 使用
+  - 中
   - 提供
-  - 服务器
-  - 开源
+  - 用于
+  - 工具
+  - 功能
 
 categories:
 
@@ -38,104 +38,93 @@ draft: false
 
 | 开发语言 | 项目数量 |
 |  ----  | ----  |
-| Rust项目 | 3 |
-| Python项目 | 3 |
-| TypeScript项目 | 2 |
-| PowerShell项目 | 1 |
-| C项目 | 1 |
-| C++项目 | 1 |
+| C项目 | 10 |
+| Objective-C项目 | 1 |
+| PHP项目 | 1 |
+| Python项目 | 1 |
 
-## Electron 框架：使用 JavaScript、HTML 和 CSS 构建跨平台桌面应用
+## PHP：流行的Web开发脚本语言
 
-* 创建周期：3993 天
-* 开发语言：C++, TypeScript
-* 协议类型：MIT License
-* Star数量：111447 个
-* Fork数量：14811 次
-* 关注人数：111447 人
-* 贡献人数：381 人
-* Open Issues数量：933 个
-* Github地址：https://github.com/electron/electron.git
-* 项目首页: https://electronjs.org
-
-
-Electron 框架允许开发人员使用 JavaScript、HTML 和 CSS 创建跨平台桌面应用程序。它基于 Node.js 和 Chromium，并被许多应用程序（如 Visual Studio Code）使用。该项目还遵循贡献者公约行为准则。
-
-## Rust实现的非官方Bitwarden兼容服务器
-
-* 创建周期：2317 天
-* 开发语言：Rust
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：34391 个
-* Fork数量：1671 次
-* 关注人数：34391 人
-* 贡献人数：137 人
-* Open Issues数量：32 个
-* Github地址：https://github.com/dani-garcia/vaultwarden.git
-
-
-这是一个用Rust编写的非官方Bitwarden兼容服务器，以前被称为bitwarden_rs。这是Bitwarden服务器API的另一种实现，用Rust编写，并与上游Bitwarden客户端兼容。非常适合自托管部署，其中运行官方资源密集型服务可能不是理想的选择。该项目已更名，以避免与官方Bitwarden服务器混淆，并避免商标/品牌问题。该项目与Bitwarden项目或Bitwarden, Inc.无关。
-
-## 实时换脸和一键视频深度伪造
-
-* 创建周期：320 天
-* 开发语言：Python
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：1519 个
-* Fork数量：186 次
-* 关注人数：1519 人
-* 贡献人数：6 人
-* Open Issues数量：11 个
-* Github地址：https://github.com/hacksider/Deep-Live-Cam.git
-
-
-这个开源项目提供实时换脸和一键视频深度伪造功能，只需一张图片即可。它旨在帮助艺术家完成诸如为自定义角色添加动画或将其用作服装模特等任务。开发人员致力于预防不道德的使用，通过内置检查来避免不适当的媒体，并鼓励在符合当地法律和伦理考虑的情况下负责任地使用。
-
-## Wez's Terminal: 开源GPU加速跨平台终端仿真器和多路复用器
-
-* 创建周期：2380 天
-* 开发语言：Rust
+* 创建周期：4710 天
+* 开发语言：C, PHP
 * 协议类型：Other
-* Star数量：15927 个
-* Fork数量：700 次
-* 关注人数：15927 人
-* 贡献人数：289 人
-* Open Issues数量：962 个
-* Github地址：https://github.com/wez/wezterm.git
-* 项目首页: https://wezfurlong.org/wezterm/
+* Star数量：37340 个
+* Fork数量：7657 次
+* 关注人数：37340 人
+* 贡献人数：234 人
+* Open Issues数量：968 个
+* Github地址：https://github.com/php/php-src.git
+* 项目首页: https://www.php.net
 
 
-Wez's Terminal是由@wez用Rust实现的开源GPU加速的跨平台终端仿真器和多路复用器。它在https://wezfurlong.org/wezterm/提供用户文档和指南。
+![](/images/php-php-src-0.png)
 
-## Win11Debloat: 简化Windows体验的轻量PowerShell脚本
+PHP是一种流行的用于Web开发的脚本语言，以其速度、灵活性和在各种网站中的广泛使用而闻名。它是根据PHP许可证v3.01分发的。
 
-* 创建周期：1362 天
-* 开发语言：PowerShell
+## WindTerm: 专业的跨平台SSH/SFTP/Shell/Telnet/串行终端
+
+* 创建周期：1557 天
+* 开发语言：C
+* Star数量：18515 个
+* Fork数量：1466 次
+* 关注人数：18515 人
+* 贡献人数：2 人
+* Open Issues数量：1418 个
+* Github地址：https://github.com/kingToolbox/WindTerm.git
+* 项目首页: https://kingtoolbox.github.io
+
+
+WindTerm是一个专业的跨平台SSH/SFTP/Shell/Telnet/串行终端，旨在为DevOps提供更快更好的客户端。它完全免费，无论是商业用途还是非商业用途，没有任何限制。该项目在Apache-2.0许可下提供开源代码，源代码将逐步开放。WindTerm还欢迎与SSH、Sftp、Shell、Telnet、串行以及客户端本身相关的问题、功能请求和讨论。
+
+## Mimikatz - 用于学习和实验 Windows 安全的开源工具
+
+* 创建周期：3783 天
+* 开发语言：C
+* Star数量：19153 个
+* Fork数量：3654 次
+* 关注人数：19153 人
+* 贡献人数：8 人
+* Open Issues数量：172 个
+* Github地址：https://github.com/gentilkiwi/mimikatz.git
+* 项目首页: http://blog.gentilkiwi.com/mimikatz
+
+
+Mimikatz 是一个用于学习和实验 Windows 安全的开源工具。它能够从内存中提取明文密码、哈希、PIN 码和 Kerberos 票据，还可以执行 pass-the-hash、pass-the-ticket 和构建 Golden tickets。此外，它还提供有关加密、终端服务器、事件等方面的信息。
+
+## Flipper Zero Unleashed Firmware - Flipper Zero解锁固件
+
+* 创建周期：679 天
+* 开发语言：C
+* 协议类型：GNU General Public License v3.0
+* Star数量：13585 个
+* Fork数量：1219 次
+* 关注人数：13585 人
+* 贡献人数：306 人
+* Open Issues数量：70 个
+* Github地址：https://github.com/DarkFlippers/unleashed-firmware.git
+* 项目首页: https://t.me/flipperzero_unofficial
+
+
+![](/images/darkflippers-unleashed-firmware-0.png)
+
+Flipper Zero Unleashed Firmware是一个旨在为Flipper Zero设备提供固件的开源项目。
+
+## mimalloc: 优异性能的紧凑通用分配器
+
+* 创建周期：1694 天
+* 开发语言：C
 * 协议类型：MIT License
-* Star数量：7726 个
-* Fork数量：314 次
-* 关注人数：7726 人
-* 贡献人数：5 人
-* Open Issues数量：10 个
-* Github地址：https://github.com/Raphire/Win11Debloat.git
+* Star数量：9153 个
+* Fork数量：752 次
+* 关注人数：9153 人
+* 贡献人数：72 人
+* Open Issues数量：307 个
+* Github地址：https://github.com/microsoft/mimalloc.git
 
 
-Win11Debloat是一个简单且轻量的PowerShell脚本，旨在移除预安装的Windows应用程序，禁用遥测功能，并通过移除侵入性元素和广告来简化用户体验。它适用于Windows 10和Windows 11，提供可定制的修改，并使用包含的注册表文件轻松恢复。
+![](/images/microsoft-mimalloc-0.png)
 
-## JSON-RPC 服务器测试网络
-
-* 创建周期：119 天
-* 开发语言：TypeScript
-* 协议类型：Other
-* Star数量：8569 个
-* Fork数量：156 次
-* 关注人数：8569 人
-* 贡献人数：35 人
-* Open Issues数量：39 个
-* Github地址：https://github.com/shardeum/shardeum.git
-
-
-这个开源项目是一个为测试与MetaMask提供JSON-RPC服务器的网络。它包括在本地运行网络、健康检查的功能，并提供了有关如何为项目做出贡献的说明。
+mimalloc是一个紧凑的通用分配器，性能优异。它是malloc的即插即用替代品，可用于包括Windows、macOS、Linux和BSD在内的各种系统。其设计的显著特点包括小而一致的库大小，自由列表分片以减少碎片化，急切页面清除和安全功能。在基准测试中，它的性能优于其他主要分配器，并且对大型操作系统页面有良好的支持。
 
 ## Box2D：游戏中的2D物理引擎
 
@@ -153,54 +142,63 @@ Win11Debloat是一个简单且轻量的PowerShell脚本，旨在移除预安装�
 
 Box2D是用于游戏的2D物理引擎，为在2D游戏环境中模拟物理交互提供了框架。
 
-## 稳定扩散WebUI Forge
+## littlefs: 专为微控制器设计的故障安全文件系统
 
-* 创建周期：36 天
-* 开发语言：Python
-* 协议类型：GNU Affero General Public License v3.0
-* Star数量：1602 个
-* Fork数量：100 次
-* 关注人数：1602 人
-* 贡献人数：431 人
-* Open Issues数量：94 个
-* Github地址：https://github.com/lllyasviel/stable-diffusion-webui-forge.git
-
-
-![](/images/lllyasviel-stable-diffusion-webui-forge-0.png)
-
-稳定扩散WebUI Forge是建立在稳定扩散WebUI之上的平台，旨在简化开发、优化资源管理和加速推理。它为不同的GPU配置提供了显著的加速，并引入了Unet Patcher，可以用最少的代码实现各种方法。Forge还添加了新的采样器，并承诺保持原始WebUI界面。后端已经重新设计以处理资源管理，并删除了CMD标志的使用，建议让Forge决定如何加载模型。
-
-## Verso: 探索Servo嵌入解决方案的Web浏览器
-
-* 创建周期：212 天
-* 开发语言：Rust
-* 协议类型：Apache License 2.0
-* Star数量：2355 个
-* Fork数量：85 次
-* 关注人数：2355 人
-* 贡献人数：12 人
-* Open Issues数量：24 个
-* Github地址：https://github.com/versotile-org/verso.git
+* 创建周期：2727 天
+* 开发语言：C, Python
+* 协议类型：BSD 3-Clause "New" or "Revised" License
+* Star数量：4992 个
+* Fork数量：781 次
+* 关注人数：4992 人
+* 贡献人数：54 人
+* Open Issues数量：522 个
+* Github地址：https://github.com/littlefs-project/littlefs.git
 
 
-![](/images/versotile-org-verso-0.png)
+littlefs是专为微控制器设计的开源故障安全文件系统。它具有抗断电能力，针对闪存进行动态磨损平衡，并针对有限的RAM/ROM使用进行了优化。
 
-Verso是建立在Servo Web引擎之上的Web浏览器，旨在探索Servo的嵌入解决方案，并将其发展成为成熟的浏览器。它专注于尝试多视图和多窗口功能，并完全从Servo构建UI元素。虽然仍在开发中，但目前不接受功能请求，导航工作流也尚未完善。
+## 安装clang：设置说明
 
-## Ostris的AI工具包
+* 创建周期：1581 天
+* 开发语言：C
+* 协议类型：GNU General Public License v3.0
+* Star数量：3568 个
+* Fork数量：2626 次
+* 关注人数：3568 人
+* 贡献人数：63 人
+* Open Issues数量：115 个
+* Github地址：https://github.com/fw876/helloworld.git
 
-* 创建周期：406 天
-* 开发语言：Python
+
+在进行设置说明之前，需要安装clang。必须先安装clang。
+
+## 树莓派 Pico SDK：简化开发，强大功能
+
+* 创建周期：1299 天
+* 开发语言：C
+* 协议类型：BSD 3-Clause "New" or "Revised" License
+* Star数量：3350 个
+* Fork数量：865 次
+* 关注人数：3350 人
+* 贡献人数：150 人
+* Open Issues数量：203 个
+* Github地址：https://github.com/raspberrypi/pico-sdk.git
+
+
+树莓派 Pico SDK 提供了在 C、C++ 或汇编语言中编写 RP 系列微控制器设备程序所需的工具。它为非嵌入式和嵌入式 C 开发人员提供了熟悉的编程环境，支持标准 C/C++ 库、硬件访问 API 以及用于网络、USB、多核编程等的高级库。SDK 的目标是简化开发过程，同时具备足够的功能，可构建从简单应用到低级软件的任何内容。
+
+## Dopamine: iOS 15的半无线束缚永久签名越狱工具
+
+* 创建周期：379 天
+* 开发语言：C
 * 协议类型：MIT License
-* Star数量：535 个
-* Fork数量：52 次
-* 关注人数：535 人
-* 贡献人数：2 人
-* Open Issues数量：30 个
-* Github地址：https://github.com/ostris/ai-toolkit.git
+* Star数量：1649 个
+* Fork数量：194 次
+* 关注人数：1649 人
+* 贡献人数：29 人
+* Open Issues数量：9 个
+* Github地址：https://github.com/opa334/Dopamine.git
 
 
-![](/images/ostris-ai-toolkit-0.png)
-
-Ostris的AI工具包是一个开源项目，专注于各种AI脚本，主要侧重于稳定的扩散技术。
+Dopamine是一个针对iOS 15的半无线束缚的永久签名越狱工具。它是针对iOS 15.0 - 15.4.1的无根arm64e越狱。更多详细信息请访问官方网站https://ellekit.space/dopamine/
 
