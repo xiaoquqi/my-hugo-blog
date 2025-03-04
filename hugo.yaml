@@ -8,9 +8,9 @@ enableGitInfo: true
 # enableEmoji: false
 hasCJKLanguage: true
 
-# services:
-#   googleAnalytics:
-#     ID: G-MEASUREMENT_ID
+services:
+  googleAnalytics:
+    ID: 27290906
 
 outputs:
   home: [HTML]
@@ -21,13 +21,13 @@ defaultContentLanguage: zh-cn
 languages:
   en:
     languageName: English
-    weight: 1
-    title: Hextra
+    weight: 2
+    title: Old Sun’s Straight-faced Nonsense
   zh-cn:
     languageName: 简体中文
     languageCode: zh-CN
-    weight: 4
-    title: Hextra
+    weight: 1
+    title: 老孙正经胡说
 
 module:
   hugoVersion:
@@ -66,10 +66,12 @@ menu:
       name: Blog
       pageRef: /blog
       weight: 3
-    - identifier: github_trendings
+    - identifier: githubtrendings
       name: Github Trendings
       pageRef: /github
       weight: 4
+      params:
+        tags: false
     - identifier: about
       name: About
       pageRef: /about
@@ -106,8 +108,8 @@ params:
     displayTitle: true
     displayLogo: true
     logo:
-      path: images/logo.svg
-      dark: images/logo-dark.svg
+      path: images/logo.png
+      dark: images/logo.png
       # width: 40
       # height: 20
       # link: /
@@ -130,7 +132,7 @@ params:
 
   # Display the last modification date
   displayUpdatedDate: true
-  dateFormat: "January 2, 2006"
+  dateFormat: "2026-01-02"
 
   # Search
   # flexsearch is enabled by default
@@ -155,7 +157,17 @@ params:
       # date | lastmod | publishDate | title | weight
       sortBy: date
       sortOrder: desc # or "asc"
-    
+
+    article:
+      displayPagination: true
+
+  github:
+    list:
+      displayTags: false
+      # date | lastmod | publishDate | title | weight
+      sortBy: date
+      sortOrder: desc # or "asc"
+
     article:
       displayPagination: true
 

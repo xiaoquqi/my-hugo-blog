@@ -1,0 +1,44 @@
+name: Deploy to Tecent Cloudbase # 名字自取
+
+on:
+  push:
+    branches:
+      - master  # 这里的意思是当 main分支发生push的时候，运行下面的jobs，这里先改为github-actions
+
+jobs:
+  deploy: # 任务名自取
+    runs-on: ubuntu-20.04	# 在什么环境运行任务
+    steps:
+      - uses: actions/checkout@v2	# 引用actions/checkout这个action，与所在的github仓库同名
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive) 获取submodule主题
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Install Tecent Object Storage CLI
+        run: curl -L https://github.com/tencentyun/coscli/releases/download/v0.12.0-beta/coscli-linux -o ~/coscli && chmod 755 ~/coscli
+
+      - name: Set Tecent Object Storage Auth
+        run: touch ~/.cos.yaml && ~/coscli config set --secret_id	${{secrets.SECRETID}} --secret_key ${{secrets.SECRETKEY}}
+
+      - name: Set Tecent Object Storage Bucket
+        run: ~/coscli config add -b sunqi-site-1254137673 -r ap-beijing
+
+      - name: Setup Hugo	# 步骤名自取
+        uses: peaceiris/actions-hugo@v2	# hugo官方提供的action，用于在任务环境中获取hugo
+        with:
+          hugo-version: latest	# 获取最新版本的hugo
+          extended: true
+
+      - name: Build
+        run: hugo --minify	# 使用hugo构建静态网页
+
+      - name: Upload Static files to Tencent Object Storage
+        run:  cd public && ~/coscli sync . cos://sunqi-site-1254137673 -r
+
+          #- uses: actions/setup-node@v2
+          #  with:
+          #    node-version: '14'
+          #- run: npm i -g @cloudbase/cli
+          #- run: tcb login --apiKeyId ${{secrets.secretId}} --apiKey ${{secrets.secretKey}}
+          #- run: cd public && tcb hosting deploy -e ${{secrets.envId}} --verbose
+
