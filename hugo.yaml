@@ -126,7 +126,7 @@ params:
 
   footer:
     enable: true
-    displayCopyright: true
+    displayCopyright: false
     displayPoweredBy: false
     width: full
 
@@ -184,13 +184,13 @@ params:
     # https://giscus.app/
     giscus:
       repo: xiaoquqi/my-hugo-blog
-      repoId: R_kgDOJ9fJag
+      repoId: R_kgDOGctbOQ
       category: General
-      categoryId: DIC_kwDOJ9fJas4CY7gW
+      categoryId: DIC_kwDOGctbOc4CnjFX
       # mapping: pathname
       # strict: 0
       # reactionsEnabled: 1
       # emitMetadata: 0
       # inputPosition: top
-      # lang: en
+      lang: zh-CN
       # theme: noborder_dark
