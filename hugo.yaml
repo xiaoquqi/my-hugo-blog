@@ -1,6 +1,6 @@
 # Configuration
 baseURL: "https://sunqi.site/"
-title: "老孙正经胡说"
+title: "IT技术文章分享"
 
 enableRobotsTXT: true
 # Parse Git commit
@@ -27,7 +27,7 @@ languages:
     languageName: 简体中文
     languageCode: zh-CN
     weight: 1
-    title: 老孙正经胡说
+    title: IT技术文章分享
 
 module:
   hugoVersion:
@@ -102,7 +102,7 @@ menu:
       weight: 3
 
 params:
-  description: Modern, responsive, batteries-included Hugo theme for creating beautiful static websites.
+  description: 老孙正经胡说，一名技术从业者的避风港湾。
 
   navbar:
     displayTitle: true
@@ -127,8 +127,8 @@ params:
   footer:
     enable: true
     displayCopyright: true
-    displayPoweredBy: true
-    width: wide
+    displayPoweredBy: false
+    width: full
 
   # Display the last modification date
   displayUpdatedDate: true
@@ -149,7 +149,7 @@ params:
 
   editURL:
     enable: true
-    base: "https://github.com/xiaoquqi/my-hugo-blog/edit/main/content"
+    base: "https://github.com/xiaoquqi/my-hugo-blog/edit/master/content"
 
   blog:
     list:

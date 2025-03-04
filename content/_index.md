@@ -22,9 +22,9 @@ layout: hextra-home
 </div>
 
 <div class="hx-mb-6">
-{{< hextra/hero-button text="博客" link="blogs" >}}
-{{< hextra/hero-button text="Github趋势分析" link="github_trendings" >}}
-{{< hextra/hero-button text="教学课程" link="training" >}}
+{{< hextra/hero-button text="博客" link="blog" >}}
+{{< hextra/hero-button text="Github趋势分析" link="github" >}}
+{{< hextra/hero-button text="编程开发" link="training" >}}
 </div>
 
 <div class="hx-mt-6"></div>
