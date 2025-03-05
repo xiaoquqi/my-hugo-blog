@@ -22,17 +22,18 @@ layout: hextra-home
 </div>
 
 <div class="hx-mb-6">
+{{< hextra/hero-button text="热点趋势" link="docs" >}}
+{{< hextra/hero-button text="编程开发" link="training" >}}
 {{< hextra/hero-button text="博客" link="blog" >}}
 {{< hextra/hero-button text="Github趋势分析" link="github" >}}
-{{< hextra/hero-button text="编程开发" link="training" >}}
 </div>
 
 <div class="hx-mt-6"></div>
 
 {{< hextra/feature-grid >}}
   {{< hextra/feature-card
-    title="工作文档"
-    subtitle="趋势分析、行业技术分享。"
+    title="热点趋势"
+    subtitle="趋势分析、行业技术分享，目前AI相关研究也归纳在这个目录中。"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
     image="/images/hextra-doc.webp"
     imageClass="hx-top-[40%] hx-left-[24px] hx-w-[180%] sm:hx-w-[110%] dark:hx-opacity-80"
