@@ -20,12 +20,12 @@ outputs:
 defaultContentLanguage: zh-cn
 languages:
   en:
-    languageName: English
+    label: English
     weight: 2
     title: Old Sun’s Straight-faced Nonsense
   zh-cn:
-    languageName: 简体中文
-    languageCode: zh-CN
+    label: 简体中文
+    locale: zh-CN
     weight: 1
     title: IT技术文章分享
 

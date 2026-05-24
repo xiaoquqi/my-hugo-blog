@@ -1,0 +1,22 @@
+<h1 class="hero-headline">
+  <slot />
+</h1>
+
+<style>
+  .hero-headline {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    background: linear-gradient(135deg, var(--sl-color-accent), hsl(265, 80%, 55%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  @media (max-width: 640px) {
+    .hero-headline {
+      font-size: 2.5rem;
+    }
+  }
+</style>

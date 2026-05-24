@@ -1,76 +1,109 @@
 ---
-title: Hextra Theme
+title: 老孙正经胡说
 layout: hextra-home
 ---
 
-{{< hextra/hero-badge >}}
-  <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
-  <span>Free, open source</span>
+<div class="home-hero">
+{{< hextra/hero-badge link="/about" >}}
+  <span>👋 Welcome</span>
   {{< icon name="arrow-circle-right" attributes="height=14" >}}
 {{< /hextra/hero-badge >}}
 
-<div class="hx-mt-6 hx-mb-6">
+<div class="hx:mt-6 hx:mb-4">
 {{< hextra/hero-headline >}}
-  Build modern websites&nbsp;<br class="sm:hx-block hx-hidden" />with Markdown and Hugo
+  老孙正经胡说
 {{< /hextra/hero-headline >}}
 </div>
 
-<div class="hx-mb-12">
+<div class="hx:mb-8">
 {{< hextra/hero-subtitle >}}
-  Fast, batteries-included Hugo theme&nbsp;<br class="sm:hx-block hx-hidden" />for creating beautiful static websites
+  Cloud Evangelist · Ceph China Community Co-founder · Alibaba Cloud MVP · Tencent Cloud TVP
 {{< /hextra/hero-subtitle >}}
 </div>
 
-<div class="hx-mb-6">
-{{< hextra/hero-button text="Get Started" link="docs" >}}
+<div class="hx:flex hx:flex-wrap hx:gap-3 hx:justify-center hx:mb-12">
+{{< hextra/hero-button text="Blog" link="blog" >}}
+{{< hextra/hero-button text="Tutorials" link="training" >}}
+{{< hextra/hero-button text="Github Trends" link="github" >}}
+</div>
 </div>
 
-<div class="hx-mt-6"></div>
+<!-- Stats Row -->
+<div class="home-stats hx:mb-12">
+  <div class="home-stat-item">
+    <span class="home-stat-number">36</span>
+    <span class="home-stat-label">Tech Blogs</span>
+  </div>
+  <div class="home-stat-item">
+    <span class="home-stat-number">68</span>
+    <span class="home-stat-label">Tutorials</span>
+  </div>
+  <div class="home-stat-item">
+    <span class="home-stat-number">492</span>
+    <span class="home-stat-label">Trend Analyses</span>
+  </div>
+  <div class="home-stat-item">
+    <span class="home-stat-number">10+</span>
+    <span class="home-stat-label">Hot Topics</span>
+  </div>
+</div>
 
+<!-- Section Cards -->
+<div class="hx:mb-6">
 {{< hextra/feature-grid >}}
   {{< hextra/feature-card
-    title="Fast and Full-featured"
-    subtitle="Simple and easy to use, yet powerful and feature-rich."
-    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
-    image="images/hextra-doc.webp"
-    imageClass="hx-top-[40%] hx-left-[24px] hx-w-[180%] sm:hx-w-[110%] dark:hx-opacity-80"
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));"
+    title="Tech Blog"
+    subtitle="Insights on cloud computing, storage, DevOps, AI, and practical experience in the field."
+    icon="pencil"
+    link="blog"
+    class="hx:aspect-auto md:hx:aspect-[1.1/1] max-md:hx:min-h-[340px]"
+    style="background: linear-gradient(135deg, rgba(59,130,246,0.08), rgba(147,51,234,0.06));"
   >}}
   {{< hextra/feature-card
-    title="Markdown is All You Need"
-    subtitle="Compose with just Markdown. Enrich with Shortcode components."
-    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
-    image="images/hextra-markdown.webp"
-    imageClass="hx-top-[40%] hx-left-[36px] hx-w-[180%] sm:hx-w-[110%] dark:hx-opacity-80"
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(142,53,74,0.15),hsla(0,0%,100%,0));"
+    title="Programming"
+    subtitle="Systematic tutorials from Go language basics to Python gRPC, OpenStack, and Ceph实战."
+    icon="code"
+    link="training"
+    class="hx:aspect-auto md:hx:aspect-[1.1/1] max-md:hx:min-h-[340px]"
+    style="background: linear-gradient(135deg, rgba(34,197,94,0.08), rgba(6,182,212,0.06));"
   >}}
   {{< hextra/feature-card
-    title="Full Text Search"
-    subtitle="Built-in full text search with FlexSearch, no extra setup required."
-    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
-    image="images/hextra-search.webp"
-    imageClass="hx-top-[40%] hx-left-[36px] hx-w-[110%] sm:hx-w-[110%] dark:hx-opacity-80"
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(221,210,59,0.15),hsla(0,0%,100%,0));"
-  >}}
-  {{< hextra/feature-card
-    title="Lightweight as a Feather"
-    subtitle="No dependency or Node.js is needed to use Hextra. Powered by Hugo, one of *the fastest* static site generators, building your site in just seconds with a single binary."
-  >}}
-  {{< hextra/feature-card
-    title="Responsive with Dark Mode Included"
-    subtitle="Looks great on different screen sizes. Built-in dark mode support, with auto-switching based on user's system preference."
-  >}}
-  {{< hextra/feature-card
-    title="Build and Host for Free"
-    subtitle="Build with GitHub Actions, and host for free on GitHub Pages. Alternatively it can be hosted on any static hosting service."
-  >}}
-  {{< hextra/feature-card
-    title="Multi-Language Made Easy"
-    subtitle="Create multi-language pages by just adding locales suffix to the Markdown file. Adding i18n support to your site is intuitive."
-  >}}
-  {{< hextra/feature-card
-    title="And Much More..."
-    icon="sparkles"
-    subtitle="Syntax highlighting / Table of contents / SEO / RSS / LaTeX / Mermaid / Customizable / and more..."
+    title="Github Trends"
+    subtitle="Daily updated GitHub trending projects to help you stay on top of the open-source world."
+    icon="trending-up"
+    link="github"
+    class="hx:aspect-auto md:hx:aspect-[1.1/1] max-lg:hx:min-h-[340px]"
+    style="background: linear-gradient(135deg, rgba(249,115,22,0.08), rgba(239,68,68,0.06));"
   >}}
 {{< /hextra/feature-grid >}}
+</div>
+
+<!-- Second row -->
+<div class="hx:mb-6">
+{{< hextra/feature-grid >}}
+  {{< hextra/feature-card
+    title="Hot Trends"
+    subtitle="Tracking cutting-edge trends in cloud computing and AI, with deep analysis of industry dynamics."
+    icon="sparkles"
+    link="docs"
+    class="hx:aspect-auto md:hx:aspect-[1.1/1] max-md:hx:min-h-[340px]"
+    style="background: linear-gradient(135deg, rgba(168,85,247,0.08), rgba(236,72,153,0.06));"
+  >}}
+  {{< hextra/feature-card
+    title="About Me"
+    subtitle="Co-founder & CTO of Wanbozhichi, 10+ years in software development and team leadership."
+    icon="user"
+    link="about"
+    class="hx:aspect-auto md:hx:aspect-[1.1/1] max-md:hx:min-h-[340px]"
+    style="background: linear-gradient(135deg, rgba(20,184,166,0.08), rgba(16,185,129,0.06));"
+  >}}
+  {{< hextra/feature-card
+    title="RSS Feed"
+    subtitle="Subscribe via RSS to get the latest articles delivered right to your reader."
+    icon="rss"
+    link="index.xml"
+    class="hx:aspect-auto md:hx:aspect-[1.1/1] max-lg:hx:min-h-[340px]"
+    style="background: linear-gradient(135deg, rgba(251,146,60,0.08), rgba(251,191,36,0.06));"
+  >}}
+{{< /hextra/feature-grid >}}
+</div>

@@ -1,0 +1,33 @@
+---
+interface Props {
+  link: string;
+}
+
+const { link } = Astro.props;
+---
+
+<a href={link} class="hero-badge">
+  <slot />
+</a>
+
+<style>
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.375rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--sl-color-accent);
+    background: hsla(225, 90%, 50%, 0.08);
+    border: 1px solid hsla(225, 90%, 50%, 0.15);
+    text-decoration: none;
+    transition: background 0.2s, border-color 0.2s;
+  }
+
+  .hero-badge:hover {
+    background: hsla(225, 90%, 50%, 0.14);
+    border-color: hsla(225, 90%, 50%, 0.25);
+  }
+</style>

@@ -1,13 +1,20 @@
-# Generated files by hugo
+# Astro build output
+/dist/
+.astro/
+
+# Node
+node_modules/
+
+# Hugo (legacy, to be removed)
 /public/
 /resources/_gen/
 /assets/jsconfig.json
 hugo_stats.json
-
-# Executable may be added to repository
 hugo.exe
 hugo.darwin
 hugo.linux
-
-# Temporary lock file while building
 /.hugo_build.lock
+
+# Env
+.env
+.env.*

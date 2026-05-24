@@ -1,0 +1,202 @@
+/* === Custom Color Scheme === */
+:root {
+  --primary-hue: 225deg;
+  --primary-saturation: 90%;
+  --primary-lightness: 48%;
+}
+
+.dark {
+  --primary-hue: 215deg;
+  --primary-saturation: 85%;
+  --primary-lightness: 55%;
+}
+
+/* === Smooth Scrolling === */
+html {
+  scroll-behavior: smooth;
+}
+
+/* === Hero Section Animation === */
+.home-hero > * {
+  animation: fadeInUp 0.6s ease both;
+}
+
+.home-hero > *:nth-child(1) { animation-delay: 0.05s; }
+.home-hero > *:nth-child(2) { animation-delay: 0.15s; }
+.home-hero > *:nth-child(3) { animation-delay: 0.25s; }
+.home-hero > *:nth-child(4) { animation-delay: 0.35s; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === Stats Row === */
+.home-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, hsl(var(--primary-hue) var(--primary-saturation) 50% / 0.06), hsl(var(--primary-hue) var(--primary-saturation) 50% / 0.02));
+  border: 1px solid hsl(var(--primary-hue) var(--primary-saturation) 50% / 0.08);
+}
+
+.dark .home-stats {
+  background: linear-gradient(135deg, hsl(var(--primary-hue) var(--primary-saturation) 50% / 0.1), hsl(var(--primary-hue) var(--primary-saturation) 50% / 0.04));
+  border-color: hsl(var(--primary-hue) var(--primary-saturation) 50% / 0.12);
+}
+
+.home-stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.125rem;
+}
+
+.home-stat-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: hsl(var(--primary-hue) var(--primary-saturation) var(--primary-lightness));
+  line-height: 1.2;
+}
+
+.home-stat-label {
+  font-size: 0.875rem;
+  color: hsl(var(--primary-hue) 10% 40%);
+  font-weight: 500;
+}
+
+.dark .home-stat-label {
+  color: hsl(var(--primary-hue) 10% 70%);
+}
+
+/* === Feature Cards — Hover Lift === */
+.hextra-feature-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.hextra-feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+}
+
+.dark .hextra-feature-card:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* === Blog / List Post Cards === */
+/* hx:mb-10 is the card wrapper in list layouts */
+.hx\:mb-10 {
+  border-radius: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.hx\:mb-10:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  background: hsl(var(--primary-hue) var(--primary-saturation) 50% / 0.04);
+}
+
+.dark .hx\:mb-10:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  background: hsl(var(--primary-hue) var(--primary-saturation) 50% / 0.08);
+}
+
+.hx\:mb-10 h3 {
+  margin-top: 0;
+}
+
+.hx\:mb-10 .hx\:mt-4 {
+  margin-top: 0.5rem;
+}
+
+/* === Code Blocks — macOS Style Dots + Glow === */
+.hextra-code-block {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04), 0 0 0 1px hsl(var(--primary-hue) 30% 50% / 0.06);
+  margin-top: 1.5rem;
+}
+
+.dark .hextra-code-block {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3), 0 0 0 1px hsl(var(--primary-hue) 30% 70% / 0.1);
+}
+
+/* macOS window dots above code blocks */
+.hextra-code-block > div:first-child::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ff5f56;
+  box-shadow: 18px 0 0 #ffbd2e, 36px 0 0 #27c93f;
+  position: absolute;
+  top: 0.75rem;
+  left: 1rem;
+  z-index: 10;
+}
+
+.hextra-code-block pre {
+  border-radius: 0 0 0.75rem 0.75rem;
+}
+
+/* === Inline Code === */
+.content :where(code) {
+  color: hsl(var(--primary-hue) 70% 40%);
+  font-weight: 500;
+}
+
+.dark .content :where(code) {
+  color: hsl(var(--primary-hue) 60% 70%);
+}
+
+/* === Links — Smooth Color Transition === */
+a {
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.content a:hover {
+  opacity: 0.8;
+}
+
+/* === Table Styling === */
+.content table {
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.04);
+}
+
+.dark .content table {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* === Blockquote Styling === */
+.content blockquote {
+  border-radius: 0 0.5rem 0.5rem 0;
+  background: hsl(var(--primary-hue) 40% 50% / 0.04);
+}
+
+/* === Responsive: stats row on mobile === */
+@media (max-width: 640px) {
+  .home-stats {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .home-stat-number {
+    font-size: 1.5rem;
+  }
+
+  .home-stat-label {
+    font-size: 0.75rem;
+  }
+}
