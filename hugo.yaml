@@ -66,16 +66,10 @@ menu:
       name: Blog
       pageRef: /blog
       weight: 3
-    - identifier: githubtrendings
-      name: Github Trendings
-      pageRef: /github
-      weight: 4
-      params:
-        tags: false
     - identifier: about
       name: About
       pageRef: /about
-      weight: 5
+      weight: 4
     - name: Search
       weight: 6
       params:
@@ -154,16 +148,6 @@ params:
   blog:
     list:
       displayTags: true
-      # date | lastmod | publishDate | title | weight
-      sortBy: date
-      sortOrder: desc # or "asc"
-
-    article:
-      displayPagination: true
-
-  github:
-    list:
-      displayTags: false
       # date | lastmod | publishDate | title | weight
       sortBy: date
       sortOrder: desc # or "asc"

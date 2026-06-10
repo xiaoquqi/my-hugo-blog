@@ -23,7 +23,6 @@ layout: hextra-home
 <div class="hx:flex hx:flex-wrap hx:gap-4 hx:justify-center hx:mb-16">
 {{< hextra/hero-button text="Blog" link="blog" >}}
 {{< hextra/hero-button text="Tutorials" link="training" >}}
-{{< hextra/hero-button text="Github Trends" link="github" >}}
 </div>
 
 {{< hextra/feature-grid >}}
@@ -38,12 +37,6 @@ layout: hextra-home
     subtitle="From Go basics to Python microservices with hands-on tutorials"
     icon="code"
     link="training"
-  >}}
-  {{< hextra/feature-card
-    title="Github Trends"
-    subtitle="Daily trending open-source projects at your fingertips"
-    icon="trending-up"
-    link="github"
   >}}
   {{< hextra/feature-card
     title="Hot Trends"

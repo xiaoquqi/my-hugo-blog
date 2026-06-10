@@ -23,7 +23,6 @@ layout: hextra-home
 <div class="hx:flex hx:flex-wrap hx:gap-4 hx:justify-center hx:mb-16">
 {{< hextra/hero-button text="阅读博客" link="blog" >}}
 {{< hextra/hero-button text="技术教程" link="training" >}}
-{{< hextra/hero-button text="Github 趋势" link="github" >}}
 </div>
 
 {{< hextra/feature-grid >}}
@@ -38,12 +37,6 @@ layout: hextra-home
     subtitle="从 Go 语言入门到 Python 微服务，配套实战教程"
     icon="code"
     link="training"
-  >}}
-  {{< hextra/feature-card
-    title="Github 趋势"
-    subtitle="每日自动追踪热门开源项目，把握技术风向"
-    icon="trending-up"
-    link="github"
   >}}
   {{< hextra/feature-card
     title="热点趋势"
