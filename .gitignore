@@ -10,4 +10,4 @@ hugo.linux
 
 # Env
 .env
-.env.*
+.env.*_vendor/
