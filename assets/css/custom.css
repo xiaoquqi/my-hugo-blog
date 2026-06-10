@@ -34,13 +34,204 @@ html {
   width: 19rem !important;
 }
 
-/* === Hero Intro Text === */
+/* === Home Hero Layout === */
 
 .hextra-max-navbar-width {
   max-width: 100%;
 }
 
-/* === Hero Headline — Accent Dot === */
+.home-hero {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 3.5rem;
+  padding: 2rem 0 2.5rem;
+  position: relative;
+}
+
+/* Decorative gradient blobs */
+.home-hero::before,
+.home-hero::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.home-hero::before {
+  width: 520px;
+  height: 520px;
+  top: -120px;
+  right: -80px;
+  background: radial-gradient(ellipse, hsl(225deg 80% 60% / 0.13) 0%, transparent 65%);
+}
+
+.home-hero::after {
+  width: 320px;
+  height: 320px;
+  bottom: -60px;
+  right: 60px;
+  background: radial-gradient(ellipse, hsl(270deg 70% 65% / 0.1) 0%, transparent 65%);
+}
+
+.dark .home-hero::before {
+  background: radial-gradient(ellipse, hsl(225deg 80% 60% / 0.09) 0%, transparent 65%);
+}
+
+.dark .home-hero::after {
+  background: radial-gradient(ellipse, hsl(270deg 70% 65% / 0.07) 0%, transparent 65%);
+}
+
+/* === Hero Headline — Gradient Text === */
+/* Hextra renders hero-headline as <h1> with bg-clip-text already applied;
+   we only need to override the background-image gradient colors. */
+
+.hero-headline-wrap h1 {
+  background-image: linear-gradient(to right, hsl(225deg 90% 42%), hsl(270deg 72% 58%));
+}
+
+.dark .hero-headline-wrap h1 {
+  background-image: linear-gradient(to right, hsl(215deg 85% 62%), hsl(260deg 72% 74%));
+}
+
+/* === Hero Avatar Column === */
+
+.hero-visual-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  flex-shrink: 0;
+}
+
+.hero-avatar-ring {
+  width: 176px;
+  height: 176px;
+  border-radius: 50%;
+  padding: 3px;
+  background: linear-gradient(135deg, hsl(225deg 85% 55%), hsl(270deg 72% 65%));
+  box-shadow: 0 8px 36px hsl(225deg 80% 55% / 0.22);
+}
+
+.hero-avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.dark .hero-avatar-ring {
+  box-shadow: 0 8px 36px hsl(225deg 80% 55% / 0.14);
+}
+
+/* === Hero Tag Pills === */
+
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  max-width: 220px;
+}
+
+.hero-tag {
+  font-size: 0.69rem;
+  padding: 0.22rem 0.65rem;
+  border-radius: 2rem;
+  background: hsl(225deg 60% 55% / 0.08);
+  color: hsl(225deg 55% 38%);
+  border: 1px solid hsl(225deg 55% 55% / 0.18);
+  white-space: nowrap;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.dark .hero-tag {
+  background: hsl(225deg 60% 55% / 0.12);
+  color: hsl(225deg 65% 72%);
+  border-color: hsl(225deg 55% 55% / 0.25);
+}
+
+/* === Stats Row === */
+
+.home-stats {
+  display: flex;
+  gap: 2rem;
+  padding: 0.75rem 0 0.25rem;
+  flex-wrap: wrap;
+}
+
+.home-stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-stat-number {
+  font-size: 1.35rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, hsl(225deg 85% 48%), hsl(270deg 72% 58%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+}
+
+.dark .home-stat-number {
+  background: linear-gradient(135deg, hsl(215deg 85% 62%), hsl(260deg 72% 72%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.home-stat-label {
+  font-size: 0.7rem;
+  color: hsl(225deg 12% 52%);
+  margin-top: 0.15rem;
+  white-space: nowrap;
+}
+
+.dark .home-stat-label {
+  color: hsl(225deg 12% 62%);
+}
+
+/* Mobile: single column, avatar first */
+@media (max-width: 768px) {
+  .home-hero {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .hero-visual-col {
+    order: -1;
+  }
+
+  .hero-avatar-ring {
+    width: 130px;
+    height: 130px;
+  }
+
+  .home-stats {
+    gap: 1.5rem;
+    justify-content: flex-start;
+  }
+}
+
+/* === Feature Cards === */
+
+/* Feature card lift + shadow */
+.hextra-feature-card {
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.hextra-feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.07);
+}
+
+.dark .hextra-feature-card:hover {
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.42);
+}
 
 /* === Blog / List Post Cards === */
 /* hx:mb-10 is the card wrapper in list layouts */
@@ -226,5 +417,491 @@ a {
 
 .dark .recent-post-summary {
   color: hsl(var(--primary-hue) 5% 65%);
+}
+
+/* =============================================
+   ABOUT PAGE
+   ============================================= */
+
+.about-hero {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.75rem;
+  padding: 0.25rem 0 2.5rem;
+}
+
+.about-avatar-ring {
+  flex-shrink: 0;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  padding: 3px;
+  background: linear-gradient(135deg, hsl(225deg 85% 55%), hsl(270deg 72% 65%));
+  box-shadow: 0 4px 20px hsl(225deg 80% 55% / 0.2);
+}
+
+.about-avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.about-name {
+  font-size: 1.55rem;
+  font-weight: 700;
+  background: linear-gradient(to right, hsl(225deg 85% 45%), hsl(270deg 72% 58%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 0 0.2rem;
+  line-height: 1.2;
+}
+
+.dark .about-name {
+  background: linear-gradient(to right, hsl(215deg 85% 62%), hsl(260deg 72% 74%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-role {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: hsl(225deg 15% 38%);
+  margin: 0 0 0.3rem;
+}
+
+.dark .about-role {
+  color: hsl(225deg 15% 68%);
+}
+
+.about-tagline {
+  font-size: 0.8rem;
+  color: hsl(225deg 10% 52%);
+  margin: 0 0 0.75rem;
+  line-height: 1.5;
+}
+
+.dark .about-tagline {
+  color: hsl(225deg 10% 62%);
+}
+
+.about-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.about-badge {
+  font-size: 0.68rem;
+  padding: 0.18rem 0.6rem;
+  border-radius: 2rem;
+  background: hsl(225deg 60% 55% / 0.08);
+  color: hsl(225deg 55% 38%);
+  border: 1px solid hsl(225deg 55% 55% / 0.2);
+  white-space: nowrap;
+}
+
+.dark .about-badge {
+  background: hsl(225deg 60% 55% / 0.13);
+  color: hsl(225deg 65% 72%);
+  border-color: hsl(225deg 55% 55% / 0.28);
+}
+
+/* --- Product Matrix --- */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1.25rem 0 2rem;
+}
+
+.product-card {
+  padding: 1.2rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid hsl(var(--primary-hue) 20% 88%);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dark .product-card {
+  border-color: hsl(var(--primary-hue) 20% 22%);
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.07);
+}
+
+.dark .product-card:hover {
+  box-shadow: 0 10px 28px rgba(0,0,0,0.35);
+}
+
+.product-icon { font-size: 1.8rem; margin-bottom: 0.5rem; }
+
+.product-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: hsl(225deg 80% 45%);
+  margin-bottom: 0.35rem;
+}
+
+.dark .product-name { color: hsl(215deg 80% 68%); }
+
+.product-desc {
+  font-size: 0.76rem;
+  color: hsl(225deg 5% 48%);
+  line-height: 1.5;
+}
+
+.dark .product-desc { color: hsl(225deg 5% 65%); }
+
+/* --- Globe / Case Study Grid --- */
+
+.globe-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.85rem;
+  margin: 1.25rem 0 2rem;
+}
+
+.globe-card {
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid hsl(var(--primary-hue) 20% 88%);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.dark .globe-card {
+  border-color: hsl(var(--primary-hue) 20% 22%);
+}
+
+.globe-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+  border-color: hsl(var(--primary-hue) 60% 72%);
+}
+
+.dark .globe-card:hover {
+  box-shadow: 0 8px 22px rgba(0,0,0,0.32);
+  border-color: hsl(var(--primary-hue) 60% 40%);
+}
+
+.globe-header {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 0.3rem;
+}
+
+.globe-flag { font-size: 1.2rem; line-height: 1; }
+
+.globe-country {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: hsl(225deg 20% 22%);
+}
+
+.dark .globe-country { color: hsl(225deg 20% 88%); }
+
+.globe-org {
+  font-size: 0.72rem;
+  color: hsl(225deg 10% 52%);
+  margin-bottom: 0.45rem;
+}
+
+.dark .globe-org { color: hsl(225deg 10% 62%); }
+
+.globe-metric {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: hsl(225deg 85% 46%);
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+
+.dark .globe-metric { color: hsl(215deg 85% 68%); }
+
+.globe-tag {
+  display: inline-block;
+  font-size: 0.62rem;
+  padding: 0.08rem 0.45rem;
+  border-radius: 1rem;
+  background: hsl(225deg 60% 55% / 0.09);
+  color: hsl(225deg 60% 40%);
+  border: 1px solid hsl(225deg 60% 55% / 0.2);
+}
+
+.dark .globe-tag {
+  background: hsl(225deg 60% 55% / 0.15);
+  color: hsl(225deg 65% 72%);
+  border-color: hsl(225deg 60% 55% / 0.3);
+}
+
+/* --- Career Timeline --- */
+
+.career-tl {
+  margin: 1.25rem 0 2rem;
+}
+
+.tl-item {
+  display: grid;
+  grid-template-columns: 5.5rem 28px 1fr;
+  gap: 0 0;
+  padding-bottom: 0;
+}
+
+.tl-date {
+  text-align: right;
+  padding-right: 0;
+  padding-top: 0.1rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: hsl(225deg 60% 46%);
+  line-height: 1.4;
+}
+
+.dark .tl-date { color: hsl(215deg 75% 65%); }
+
+.tl-dot-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.tl-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, hsl(225deg 85% 55%), hsl(270deg 72% 65%));
+  flex-shrink: 0;
+  margin-top: 0.12rem;
+  box-shadow: 0 0 0 3px white;
+  position: relative;
+  z-index: 1;
+}
+
+.dark .tl-dot { box-shadow: 0 0 0 3px hsl(215deg 28% 17%); }
+
+.tl-seg {
+  width: 2px;
+  flex: 1;
+  min-height: 1.5rem;
+  background: linear-gradient(to bottom, hsl(225deg 60% 65% / 0.35), transparent);
+  margin-top: 3px;
+}
+
+.tl-body {
+  padding-bottom: 1.75rem;
+}
+
+.tl-org {
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: hsl(225deg 15% 20%);
+  margin: 0 0 0.15rem;
+  line-height: 1.3;
+}
+
+.dark .tl-org { color: hsl(225deg 15% 90%); }
+
+.tl-title {
+  font-size: 0.78rem;
+  color: hsl(225deg 10% 50%);
+  margin: 0 0 0.4rem;
+}
+
+.dark .tl-title { color: hsl(225deg 10% 64%); }
+
+.tl-detail {
+  font-size: 0.8rem;
+  color: hsl(225deg 5% 42%);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.dark .tl-detail { color: hsl(225deg 5% 65%); }
+
+/* --- Honors --- */
+
+.honor-list { margin: 1rem 0 2rem; }
+
+.honor-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid hsl(var(--primary-hue) 20% 92%);
+}
+
+.dark .honor-item { border-bottom-color: hsl(var(--primary-hue) 20% 18%); }
+.honor-item:last-child { border-bottom: none; }
+
+.honor-year {
+  flex-shrink: 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: hsl(225deg 60% 48%);
+  width: 2.5rem;
+}
+
+.dark .honor-year { color: hsl(215deg 75% 65%); }
+
+.honor-desc {
+  flex: 1;
+  font-size: 0.83rem;
+  color: hsl(225deg 5% 35%);
+  line-height: 1.5;
+}
+
+.dark .honor-desc { color: hsl(225deg 5% 70%); }
+.honor-desc a { color: hsl(225deg 80% 50%); }
+.dark .honor-desc a { color: hsl(215deg 85% 68%); }
+
+/* --- Ceph Ambassador Card --- */
+
+.ceph-ambassador-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid hsl(215deg 70% 60% / 0.28);
+  background: linear-gradient(135deg, hsl(215deg 55% 98%) 0%, hsl(215deg 40% 96%) 100%);
+  border-radius: 0.875rem;
+  padding: 1.25rem 1.5rem;
+  margin: 1.25rem 0 2rem;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.dark .ceph-ambassador-card {
+  background: linear-gradient(135deg, hsl(215deg 28% 14%) 0%, hsl(215deg 22% 12%) 100%);
+  border-color: hsl(215deg 60% 55% / 0.22);
+}
+
+.ceph-ambassador-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px hsl(215deg 80% 55% / 0.13);
+  border-color: hsl(215deg 80% 58% / 0.55);
+}
+
+.dark .ceph-ambassador-card:hover {
+  box-shadow: 0 10px 28px hsl(215deg 80% 55% / 0.1);
+  border-color: hsl(215deg 80% 58% / 0.38);
+}
+
+.ceph-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.9rem;
+}
+
+.ceph-squid { font-size: 2.1rem; flex-shrink: 0; }
+
+.ceph-card-title {
+  font-weight: 700;
+  font-size: 0.98rem;
+  color: hsl(215deg 80% 40%);
+  margin-bottom: 0.15rem;
+}
+
+.dark .ceph-card-title { color: hsl(215deg 85% 68%); }
+
+.ceph-card-meta {
+  font-size: 0.73rem;
+  color: hsl(215deg 20% 50%);
+}
+
+.dark .ceph-card-meta { color: hsl(215deg 20% 65%); }
+
+.ceph-card-meta a {
+  color: hsl(215deg 80% 46%);
+  text-decoration: underline;
+  text-decoration-color: hsl(215deg 80% 46% / 0.4);
+}
+
+.dark .ceph-card-meta a { color: hsl(215deg 85% 70%); }
+
+.ceph-card-arrow {
+  margin-left: auto;
+  font-size: 1.1rem;
+  color: hsl(215deg 60% 58%);
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+.ceph-card-link {
+  margin-left: auto;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: hsl(215deg 80% 46%);
+  text-decoration: none;
+  padding: 0.25rem 0.75rem;
+  border-radius: 2rem;
+  border: 1px solid hsl(215deg 70% 55% / 0.3);
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.ceph-card-link:hover {
+  background: hsl(215deg 70% 55% / 0.1);
+  border-color: hsl(215deg 70% 55% / 0.5);
+}
+
+.dark .ceph-card-link {
+  color: hsl(215deg 85% 70%);
+  border-color: hsl(215deg 70% 55% / 0.3);
+}
+
+.dark .ceph-card-link:hover {
+  background: hsl(215deg 70% 55% / 0.15);
+}
+
+.ceph-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.ceph-ctag {
+  font-size: 0.71rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: 2rem;
+  background: hsl(215deg 70% 55% / 0.1);
+  color: hsl(215deg 70% 36%);
+  border: 1px solid hsl(215deg 70% 55% / 0.22);
+  white-space: nowrap;
+}
+
+.dark .ceph-ctag {
+  background: hsl(215deg 70% 55% / 0.15);
+  color: hsl(215deg 75% 72%);
+  border-color: hsl(215deg 70% 55% / 0.3);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about-hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .about-badges { justify-content: center; }
+  .product-grid { grid-template-columns: 1fr; }
+  .globe-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 520px) {
+  .globe-grid { grid-template-columns: 1fr; }
+  .tl-date { font-size: 0.66rem; width: 4.5rem; }
 }
 

@@ -3,12 +3,15 @@ title: 老孙正经胡说
 layout: hextra-home
 ---
 
+<div class="home-hero">
+<div class="hero-text-col">
+
 {{< hextra/hero-badge link="/about" >}}
   <span>👋 Welcome</span>
   {{< icon name="arrow-circle-right" attributes="height=14" >}}
 {{< /hextra/hero-badge >}}
 
-<div class="hx:mt-6 hx:mb-4">
+<div class="hero-headline-wrap hx:mt-6 hx:mb-4">
 {{< hextra/hero-headline >}}
   老孙正经胡说
 {{< /hextra/hero-headline >}}
@@ -16,17 +19,54 @@ layout: hextra-home
 
 <div class="hx:mb-4">
 {{< hextra/hero-subtitle >}}
-  Co-founder & CTO of Wanbozhichi · Ceph China Community Co-founder · Alibaba Cloud MVP · Tencent Cloud TVP
+  Co-founder & CTO of OneProCloud · Ceph Foundation China Ambassador · Alibaba Cloud MVP · Tencent Cloud TVP
 {{< /hextra/hero-subtitle >}}
 </div>
 
-<div class="hx:mt-6 hx:mb-12 hx:text-left hx:text-base hx:text-gray-500 hx:dark:text-gray-400 hx:leading-relaxed">
+<div class="hx:mt-6 hx:mb-6 hx:text-left hx:text-base hx:text-gray-500 hx:dark:text-gray-400 hx:leading-relaxed">
   From OpenStack to Ceph, from cloud-native to AI LLMs — over a decade at the forefront of technology.
+  As one of <strong class="hx:text-gray-700 hx:dark:text-gray-300">17 Ceph Foundation Ambassadors worldwide</strong> and co-founder of the Ceph China Community, I helped build China's distributed storage open-source ecosystem and organized Ceph's first-ever global summit, Cephalocon APAC.
   Deep expertise in <strong class="hx:text-gray-700 hx:dark:text-gray-300">To B productization</strong> and <strong class="hx:text-gray-700 hx:dark:text-gray-300">global SaaS</strong>,
-  bringing cloud migration, disaster recovery, and cross-cloud solutions to the world stage.
+  bringing cloud migration, disaster recovery, and AI operations products to the world stage.
   This is where I share my thoughts on tech, product, and what's next.
 </div>
 
+<div class="home-stats">
+  <div class="home-stat-item">
+    <div class="home-stat-number">10+</div>
+    <div class="home-stat-label">Years in Cloud</div>
+  </div>
+  <div class="home-stat-item">
+    <div class="home-stat-number">500+</div>
+    <div class="home-stat-label">Tech Articles</div>
+  </div>
+  <div class="home-stat-item">
+    <div class="home-stat-number">MVP</div>
+    <div class="home-stat-label">Alibaba & Tencent Cloud</div>
+  </div>
+  <div class="home-stat-item">
+    <div class="home-stat-number">Global</div>
+    <div class="home-stat-label">Product Expansion</div>
+  </div>
+</div>
+
+</div>
+
+<div class="hero-visual-col">
+  <div class="hero-avatar-ring">
+    <img class="hero-avatar-img" src="/images/head.png" alt="Ray Sun" />
+  </div>
+  <div class="hero-tags">
+    <span class="hero-tag">☁️ Cloud Native</span>
+    <span class="hero-tag">🤖 AI & LLM</span>
+    <span class="hero-tag">🐙 Ceph Ambassador</span>
+    <span class="hero-tag">🚀 Global SaaS</span>
+  </div>
+</div>
+
+</div>
+
+<div class="hx:mt-14">
 {{< hextra/feature-grid >}}
   {{< hextra/feature-card
     title="AI Insights"
@@ -65,5 +105,6 @@ layout: hextra-home
     link="index.xml"
   >}}
 {{< /hextra/feature-grid >}}
+</div>
 
 {{< recent-posts >}}
