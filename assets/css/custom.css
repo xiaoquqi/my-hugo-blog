@@ -36,16 +36,11 @@ html {
 
 /* === Hero Banner === */
 .hero-banner {
-  background:
-    radial-gradient(ellipse 80% 60% at 50% -20%, hsl(225deg 90% 50% / 0.08), transparent),
-    radial-gradient(ellipse 60% 50% at 80% 80%, hsl(265deg 85% 50% / 0.06), transparent),
-    var(--hextra-bg) /* fallback to page bg */;
+  background: url('/images/hero-bg.png') center/cover no-repeat;
 }
 
 .dark .hero-banner {
-  background:
-    radial-gradient(ellipse 80% 60% at 50% -20%, hsl(215deg 85% 55% / 0.12), transparent),
-    radial-gradient(ellipse 60% 50% at 80% 80%, hsl(265deg 80% 55% / 0.08), transparent);
+  background: url('/images/hero-bg.png') center/cover no-repeat;
 }
 
 .hextra-max-navbar-width {
