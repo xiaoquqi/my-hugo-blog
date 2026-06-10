@@ -3,9 +3,6 @@ title: 老孙正经胡说
 layout: hextra-home
 ---
 
-<div class="hero-banner hx:-mx-6 hx:px-6 hx:py-16 hx:md:py-24 hx:mb-12 hx:relative hx:overflow-hidden">
-
-<div class="hx:relative hx:z-10">
 {{< hextra/hero-badge link="/about" >}}
   <span>👋 Welcome</span>
   {{< icon name="arrow-circle-right" attributes="height=14" >}}
@@ -23,14 +20,11 @@ layout: hextra-home
 {{< /hextra/hero-subtitle >}}
 </div>
 
-<div class="hero-intro hx:mt-6 hx:mx-auto hx:max-w-2xl hx:text-center hx:text-base hx:text-gray-500 hx:dark:text-gray-400 hx:leading-relaxed">
+<div class="hero-intro hx:mt-6 hx:mb-12 hx:mx-auto hx:max-w-2xl hx:text-center hx:text-base hx:text-gray-500 hx:dark:text-gray-400 hx:leading-relaxed">
   From OpenStack to Ceph, from cloud-native to AI LLMs — over a decade at the forefront of technology.
   Deep expertise in <strong class="hx:text-gray-700 hx:dark:text-gray-300">To B productization</strong> and <strong class="hx:text-gray-700 hx:dark:text-gray-300">global SaaS</strong>,
   bringing cloud migration, disaster recovery, and cross-cloud solutions to the world stage.
   This is where I share my thoughts on tech, product, and what's next.
-</div>
-</div>
-
 </div>
 
 {{< hextra/feature-grid >}}
