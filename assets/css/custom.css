@@ -34,42 +34,13 @@ html {
   width: 19rem !important;
 }
 
-/* === Personal Highlight Cards === */
-.highlight-item {
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-}
-
-.highlight-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-  border-color: hsl(var(--primary-hue) 60% 75%);
-}
-
-.dark .highlight-item:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
-  border-color: hsl(var(--primary-hue) 60% 40%);
-}
-
-/* === Hero Split Layout === */
-.hero-intro {
-  font-size: 1rem;
-  line-height: 1.8;
-}
-
-@media (max-width: 768px) {
-  .hero-avatar {
-    order: -1;
-  }
-}
+/* === Hero Intro Text === */
 
 .hextra-max-navbar-width {
   max-width: 100%;
 }
 
 /* === Hero Headline — Accent Dot === */
-.hero-headline-dot {
-  color: hsl(var(--primary-hue) var(--primary-saturation) var(--primary-lightness));
-}
 
 /* === Blog / List Post Cards === */
 /* hx:mb-10 is the card wrapper in list layouts */
