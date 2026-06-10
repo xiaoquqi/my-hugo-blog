@@ -39,4 +39,4 @@ jobs:
           rsync -avz --delete \
             -e "ssh -p ${{ vars.REMOTE_PORT }}" \
             public/ \
-            ${{ vars.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ vars.REMOTE_PATH }}
+            ${{ vars.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ vars.REMOTE_PATH }}/
