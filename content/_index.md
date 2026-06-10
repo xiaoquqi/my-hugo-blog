@@ -22,27 +22,34 @@ layout: hextra-home
 
 <div class="hx:flex hx:flex-wrap hx:gap-4 hx:justify-center hx:mb-16">
 {{< hextra/hero-button text="阅读博客" link="blog" >}}
-{{< hextra/hero-button text="技术教程" link="training" >}}
+{{< hextra/hero-button text="培训课程" link="training" >}}
+{{< hextra/hero-button text="AI 洞察" link="ai" >}}
 </div>
 
 {{< hextra/feature-grid >}}
   {{< hextra/feature-card
-    title="技术博客"
-    subtitle="云计算、存储、DevOps、AI 领域的实践经验与深度思考"
-    icon="pencil"
-    link="blog"
+    title="AI 洞察"
+    subtitle="大语言模型、AI Agent、机器学习等前沿技术的研究与思考"
+    icon="sparkles"
+    link="ai"
   >}}
   {{< hextra/feature-card
-    title="编程开发"
-    subtitle="从 Go 语言入门到 Python 微服务，配套实战教程"
+    title="云迁移&容灾"
+    subtitle="云原生迁移、灾备方案设计与跨云数据交换技术实践"
+    icon="cloud"
+    link="docs"
+  >}}
+  {{< hextra/feature-card
+    title="培训课程"
+    subtitle="Go 语言、Python 微服务、OpenStack/Ceph、Serverless 实战教程"
     icon="code"
     link="training"
   >}}
   {{< hextra/feature-card
-    title="热点趋势"
-    subtitle="云计算、AI 前沿趋势分析与行业动态解读"
-    icon="sparkles"
-    link="docs"
+    title="技术博客"
+    subtitle="云计算、存储、DevOps 领域的实践经验与深度思考"
+    icon="pencil"
+    link="blog"
   >}}
   {{< hextra/feature-card
     title="关于我"

@@ -22,27 +22,34 @@ layout: hextra-home
 
 <div class="hx:flex hx:flex-wrap hx:gap-4 hx:justify-center hx:mb-16">
 {{< hextra/hero-button text="Blog" link="blog" >}}
-{{< hextra/hero-button text="Tutorials" link="training" >}}
+{{< hextra/hero-button text="Training" link="training" >}}
+{{< hextra/hero-button text="AI Insights" link="ai" >}}
 </div>
 
 {{< hextra/feature-grid >}}
+  {{< hextra/feature-card
+    title="AI Insights"
+    subtitle="LLMs, AI agents, machine learning — research and practical insights"
+    icon="sparkles"
+    link="ai"
+  >}}
+  {{< hextra/feature-card
+    title="Cloud DR"
+    subtitle="Cloud-native migration, disaster recovery, and cross-cloud data exchange"
+    icon="cloud"
+    link="docs"
+  >}}
+  {{< hextra/feature-card
+    title="Training"
+    subtitle="Go, Python microservices, OpenStack/Ceph, Serverless — hands-on tutorials"
+    icon="code"
+    link="training"
+  >}}
   {{< hextra/feature-card
     title="Tech Blog"
     subtitle="Insights on cloud computing, storage, DevOps, and AI"
     icon="pencil"
     link="blog"
-  >}}
-  {{< hextra/feature-card
-    title="Programming"
-    subtitle="From Go basics to Python microservices with hands-on tutorials"
-    icon="code"
-    link="training"
-  >}}
-  {{< hextra/feature-card
-    title="Hot Trends"
-    subtitle="Tracking cutting-edge cloud & AI trends and industry insights"
-    icon="sparkles"
-    link="docs"
   >}}
   {{< hextra/feature-card
     title="About Me"
