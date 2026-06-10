@@ -20,7 +20,7 @@ layout: hextra-home
 {{< /hextra/hero-subtitle >}}
 </div>
 
-<div class="hero-intro hx:mt-6 hx:mb-12 hx:mx-auto hx:max-w-2xl hx:text-left hx:text-base hx:text-gray-500 hx:dark:text-gray-400 hx:leading-relaxed">
+<div class="hx:mt-6 hx:mb-12 hx:text-left hx:text-base hx:text-gray-500 hx:dark:text-gray-400 hx:leading-relaxed">
   From OpenStack to Ceph, from cloud-native to AI LLMs — over a decade at the forefront of technology.
   Deep expertise in <strong class="hx:text-gray-700 hx:dark:text-gray-300">To B productization</strong> and <strong class="hx:text-gray-700 hx:dark:text-gray-300">global SaaS</strong>,
   bringing cloud migration, disaster recovery, and cross-cloud solutions to the world stage.
