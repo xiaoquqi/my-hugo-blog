@@ -3,51 +3,36 @@ title: 老孙正经胡说
 layout: hextra-home
 ---
 
-{{< hextra/hero-badge link="/about" >}}
-  <span>👋 欢迎来访</span>
-  {{< icon name="arrow-circle-right" attributes="height=14" >}}
-{{< /hextra/hero-badge >}}
+<div class="hero-split hx:flex hx:flex-wrap hx:items-center hx:gap-8 hx:mb-12">
+  <div class="hero-text hx:flex-1 hx:min-w-0">
+    {{< hextra/hero-badge link="/about" >}}
+      <span>👋 欢迎来访</span>
+      {{< icon name="arrow-circle-right" attributes="height=14" >}}
+    {{< /hextra/hero-badge >}}
 
-<div class="hx:mt-6 hx:mb-4">
-{{< hextra/hero-headline >}}
-  老孙正经胡说<span class="hero-headline-dot">.</span>
-{{< /hextra/hero-headline >}}
-</div>
+    <div class="hx:mt-6 hx:mb-4">
+    {{< hextra/hero-headline >}}
+      老孙正经胡说<span class="hero-headline-dot">.</span>
+    {{< /hextra/hero-headline >}}
+    </div>
 
-<div class="hx:mb-8">
-{{< hextra/hero-subtitle >}}
-  聊云计算、聊开源、聊技术人生。写代码也写思考，在这里认真记录每一个技术脚印 🚀
-{{< /hextra/hero-subtitle >}}
-</div>
+    <div class="hx:mb-6">
+    {{< hextra/hero-subtitle >}}
+      万博智云联合创始人 & CTO，Ceph 中国社区联合创始人，阿里云 MVP，腾讯云 TVP
+    {{< /hextra/hero-subtitle >}}
+    </div>
 
-<!-- Personal Highlights -->
-<div class="hx:mb-12 hx:flex hx:flex-wrap hx:justify-center hx:gap-6">
-  <div class="highlight-item hx:flex hx:items-center hx:gap-3 hx:px-5 hx:py-3 hx:rounded-xl hx:border hx:border-gray-200 hx:dark:border-neutral-700 hx:bg-white/60 hx:dark:bg-neutral-800/60 hx:backdrop-blur">
-    <span class="hx:text-2xl">{{< icon name="cloud" >}}</span>
-    <div>
-      <div class="hx:text-sm hx:font-semibold">云计算基础</div>
-      <div class="hx:text-xs hx:text-gray-500 hx:dark:text-gray-400">OpenStack · Ceph · AWS · 云原生</div>
-    </div>
+    <p class="hero-intro hx:text-base hx:text-gray-600 hx:dark:text-gray-400 hx:leading-relaxed hx:max-w-2xl">
+      从 OpenStack 到 Ceph，从云原生到 AI 大模型，十多年来始终站在技术浪潮的最前沿。
+      深耕 <strong class="hx:text-gray-800 hx:dark:text-gray-200">To B 产品化</strong> 与 <strong class="hx:text-gray-800 hx:dark:text-gray-200">软件出海</strong>，
+      将云迁移、灾备、跨云数据交换等产品推向全球市场。
+      这里记录着我的技术思考、产品实践和对未来的探索。
+    </p>
   </div>
-  <div class="highlight-item hx:flex hx:items-center hx:gap-3 hx:px-5 hx:py-3 hx:rounded-xl hx:border hx:border-gray-200 hx:dark:border-neutral-700 hx:bg-white/60 hx:dark:bg-neutral-800/60 hx:backdrop-blur">
-    <span class="hx:text-2xl">{{< icon name="arrow-circle-right" >}}</span>
-    <div>
-      <div class="hx:text-sm hx:font-semibold">AI 智能化转型</div>
-      <div class="hx:text-xs hx:text-gray-500 hx:dark:text-gray-400">LLM · AI Agent · 机器学习</div>
-    </div>
-  </div>
-  <div class="highlight-item hx:flex hx:items-center hx:gap-3 hx:px-5 hx:py-3 hx:rounded-xl hx:border hx:border-gray-200 hx:dark:border-neutral-700 hx:bg-white/60 hx:dark:bg-neutral-800/60 hx:backdrop-blur">
-    <span class="hx:text-2xl">{{< icon name="cube" >}}</span>
-    <div>
-      <div class="hx:text-sm hx:font-semibold">To B 产品化</div>
-      <div class="hx:text-xs hx:text-gray-500 hx:dark:text-gray-400">云迁移 · 灾备 · 跨云数据交换</div>
-    </div>
-  </div>
-  <div class="highlight-item hx:flex hx:items-center hx:gap-3 hx:px-5 hx:py-3 hx:rounded-xl hx:border hx:border-gray-200 hx:dark:border-neutral-700 hx:bg-white/60 hx:dark:bg-neutral-800/60 hx:backdrop-blur">
-    <span class="hx:text-2xl">{{< icon name="globe" >}}</span>
-    <div>
-      <div class="hx:text-sm hx:font-semibold">To B 软件出海</div>
-      <div class="hx:text-xs hx:text-gray-500 hx:dark:text-gray-400">全球化 · 合规 · 多区域部署</div>
+
+  <div class="hero-avatar hx:flex-shrink-0 hx:flex hx:justify-center">
+    <div class="hx:w-48 hx:h-48 hx:rounded-full hx:border-2 hx:border-dashed hx:border-gray-300 hx:dark:border-neutral-600 hx:flex hx:items-center hx:justify-center hx:text-gray-400 hx:dark:text-gray-500 hx:text-sm">
+      📷<br>添加头像
     </div>
   </div>
 </div>
