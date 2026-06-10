@@ -20,7 +20,7 @@ layout: hextra-home
 {{< /hextra/hero-subtitle >}}
 </div>
 
-<div class="hero-intro hx:mt-6 hx:mb-12 hx:mx-auto hx:max-w-2xl hx:text-center hx:text-base hx:text-gray-500 hx:dark:text-gray-400 hx:leading-relaxed">
+<div class="hero-intro hx:mt-6 hx:mb-12 hx:mx-auto hx:max-w-2xl hx:text-left hx:text-base hx:text-gray-500 hx:dark:text-gray-400 hx:leading-relaxed">
   从 OpenStack 到 Ceph，从云原生到 AI 大模型，十多年来始终站在技术浪潮的最前沿。
   深耕 <strong class="hx:text-gray-700 hx:dark:text-gray-300">To B 产品化</strong> 与 <strong class="hx:text-gray-700 hx:dark:text-gray-300">软件出海</strong>，
   将云迁移、灾备、跨云数据交换等产品推向全球市场。
