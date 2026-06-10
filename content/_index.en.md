@@ -3,9 +3,9 @@ title: 老孙正经胡说
 layout: hextra-home
 ---
 
-<div class="hero-banner hx:py-16 hx:md:py-24 hx:mb-12 hx:relative hx:overflow-hidden">
+<div class="hero-banner hx:-mx-6 hx:px-6 hx:py-16 hx:md:py-24 hx:mb-12 hx:relative hx:overflow-hidden">
 
-<div class="hx:relative hx:z-10 hx:px-6">
+<div class="hx:relative hx:z-10">
 {{< hextra/hero-badge link="/about" >}}
   <span>👋 Welcome</span>
   {{< icon name="arrow-circle-right" attributes="height=14" >}}

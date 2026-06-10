@@ -36,12 +36,10 @@ html {
 
 /* === Hero Banner === */
 .hero-banner {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  background: url('/images/hero-bg.png') center/cover no-repeat;
+}
+
+.dark .hero-banner {
   background: url('/images/hero-bg.png') center/cover no-repeat;
 }
 
