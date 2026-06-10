@@ -1,11 +1,4 @@
-# Astro build output
-/dist/
-.astro/
-
-# Node
-node_modules/
-
-# Hugo (legacy, to be removed)
+# Hugo build output
 /public/
 /resources/_gen/
 /assets/jsconfig.json

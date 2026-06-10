@@ -1,0 +1,27 @@
+{{ $posts := where .Site.RegularPages "Section" "blog" | first 6 }}
+{{ if $posts }}
+<div class="recent-posts-section hx:mt-16">
+  <h2 class="hx:text-2xl hx:font-bold hx:mb-8 hx:text-center">📝 近期文章</h2>
+  <div class="recent-posts-grid">
+    {{ range $posts }}
+    <a href="{{ .RelPermalink }}" class="recent-post-card">
+      <div class="recent-post-card-content">
+        <div class="recent-post-meta">
+          <span class="recent-post-date">{{ .Date.Format "2006-01-02" }}</span>
+          {{ with .Params.tags }}
+          <span class="recent-post-tag">{{ index . 0 }}</span>
+          {{ end }}
+        </div>
+        <h3 class="recent-post-title">{{ .Title }}</h3>
+        <p class="recent-post-summary">{{ .Summary | plainify | truncate 120 }}</p>
+      </div>
+    </a>
+    {{ end }}
+  </div>
+  <div class="hx:text-center hx:mt-8">
+    <a href="/blog/" class="hx:text-primary-600 dark:hx:text-primary-400 hx:font-medium hx:hover:opacity-70 hx:transition-opacity">
+      查看全部文章 →
+    </a>
+  </div>
+</div>
+{{ end }}
