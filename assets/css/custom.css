@@ -34,6 +34,22 @@ html {
   width: 19rem !important;
 }
 
+/* === Personal Highlight Cards === */
+.highlight-item {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.highlight-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  border-color: hsl(var(--primary-hue) 60% 75%);
+}
+
+.dark .highlight-item:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  border-color: hsl(var(--primary-hue) 60% 40%);
+}
+
 .hextra-max-navbar-width {
   max-width: 100%;
 }

@@ -20,10 +20,36 @@ layout: hextra-home
 {{< /hextra/hero-subtitle >}}
 </div>
 
-<div class="hx:flex hx:flex-wrap hx:gap-4 hx:justify-center hx:mb-16">
-{{< hextra/hero-button text="Blog" link="blog" >}}
-{{< hextra/hero-button text="Training" link="training" >}}
-{{< hextra/hero-button text="AI Insights" link="ai" >}}
+<!-- Personal Highlights -->
+<div class="hx:mb-12 hx:flex hx:flex-wrap hx:justify-center hx:gap-6">
+  <div class="highlight-item hx:flex hx:items-center hx:gap-3 hx:px-5 hx:py-3 hx:rounded-xl hx:border hx:border-gray-200 hx:dark:border-neutral-700 hx:bg-white/60 hx:dark:bg-neutral-800/60 hx:backdrop-blur">
+    <span class="hx:text-2xl">{{< icon name="cloud" >}}</span>
+    <div>
+      <div class="hx:text-sm hx:font-semibold">Cloud Foundation</div>
+      <div class="hx:text-xs hx:text-gray-500 hx:dark:text-gray-400">OpenStack · Ceph · AWS · Cloud-Native</div>
+    </div>
+  </div>
+  <div class="highlight-item hx:flex hx:items-center hx:gap-3 hx:px-5 hx:py-3 hx:rounded-xl hx:border hx:border-gray-200 hx:dark:border-neutral-700 hx:bg-white/60 hx:dark:bg-neutral-800/60 hx:backdrop-blur">
+    <span class="hx:text-2xl">{{< icon name="arrow-circle-right" >}}</span>
+    <div>
+      <div class="hx:text-sm hx:font-semibold">AI Transformation</div>
+      <div class="hx:text-xs hx:text-gray-500 hx:dark:text-gray-400">LLM · AI Agent · Machine Learning</div>
+    </div>
+  </div>
+  <div class="highlight-item hx:flex hx:items-center hx:gap-3 hx:px-5 hx:py-3 hx:rounded-xl hx:border hx:border-gray-200 hx:dark:border-neutral-700 hx:bg-white/60 hx:dark:bg-neutral-800/60 hx:backdrop-blur">
+    <span class="hx:text-2xl">{{< icon name="cube" >}}</span>
+    <div>
+      <div class="hx:text-sm hx:font-semibold">To B Product</div>
+      <div class="hx:text-xs hx:text-gray-500 hx:dark:text-gray-400">Cloud Migration · DR · Cross-Cloud</div>
+    </div>
+  </div>
+  <div class="highlight-item hx:flex hx:items-center hx:gap-3 hx:px-5 hx:py-3 hx:rounded-xl hx:border hx:border-gray-200 hx:dark:border-neutral-700 hx:bg-white/60 hx:dark:bg-neutral-800/60 hx:backdrop-blur">
+    <span class="hx:text-2xl">{{< icon name="globe" >}}</span>
+    <div>
+      <div class="hx:text-sm hx:font-semibold">Global SaaS</div>
+      <div class="hx:text-xs hx:text-gray-500 hx:dark:text-gray-400">Globalization · Compliance · Multi-Region</div>
+    </div>
+  </div>
 </div>
 
 {{< hextra/feature-grid >}}
@@ -42,7 +68,7 @@ layout: hextra-home
   {{< hextra/feature-card
     title="Training"
     subtitle="Go, Python microservices, OpenStack/Ceph, Serverless — hands-on tutorials"
-    icon="code"
+    icon="academic-cap"
     link="training"
   >}}
   {{< hextra/feature-card
