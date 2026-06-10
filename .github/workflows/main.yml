@@ -1,4 +1,4 @@
-name: Deploy to Tencent Cloud Object Storage
+name: Build and Deploy
 
 on:
   push:
@@ -10,30 +10,33 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
         with:
-          node-version: '22'
-          cache: 'npm'
+          fetch-depth: 0  # required for Hugo .GitInfo (last-modified dates)
 
-      - name: Install dependencies
-        run: npm ci
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.23'
+          cache: true
 
-      - name: Build with Astro
-        run: npm run build
-
-      - name: Install Tencent Object Storage CLI
+      - name: Install Hugo extended
         run: |
-          curl -L https://github.com/tencentyun/coscli/releases/download/v0.12.0-beta/coscli-linux -o ~/coscli
-          chmod 755 ~/coscli
+          wget -O /tmp/hugo.deb \
+            https://github.com/gohugoio/hugo/releases/download/v0.161.1/hugo_extended_0.161.1_linux-amd64.deb
+          sudo dpkg -i /tmp/hugo.deb
 
-      - name: Set Tencent Object Storage Auth
+      - name: Build
+        run: hugo --gc --minify
+
+      - name: Setup SSH
         run: |
-          touch ~/.cos.yaml
-          ~/coscli config set --secret_id ${{ secrets.SECRETID }} --secret_key ${{ secrets.SECRETKEY }}
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -p ${{ vars.REMOTE_PORT }} -H ${{ secrets.REMOTE_HOST }} >> ~/.ssh/known_hosts
 
-      - name: Set Tencent Object Storage Bucket
-        run: ~/coscli config add -b sunqi-site-1254137673 -r ap-beijing
-
-      - name: Upload to Tencent Object Storage
-        run: cd dist && ~/coscli sync . cos://sunqi-site-1254137673 -r
+      - name: Deploy via rsync
+        run: |
+          rsync -avz --delete \
+            -e "ssh -p ${{ vars.REMOTE_PORT }}" \
+            public/ \
+            ${{ vars.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ vars.REMOTE_PATH }}
