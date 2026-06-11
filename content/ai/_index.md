@@ -1,6 +1,8 @@
 ---
 linkTitle: "AI洞察"
 title: AI洞察
+sidebar:
+  open: true
 ---
 
 👋 你好！本模块专注于人工智能领域的前沿动态、技术分析与实践应用，涵盖大语言模型、AI Agent、机器学习等方向的研究与思考。
