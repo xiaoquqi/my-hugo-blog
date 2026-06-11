@@ -1,8 +1,4 @@
 {{ define "main" }}
-  {{- $first := index (.Pages.ByWeight) 0 -}}
-  {{- if and .IsSection $first -}}
-    <script>window.location.replace("{{ $first.RelPermalink }}");</script>
-  {{- end -}}
   <div class='hx:mx-auto hx:flex hextra-max-page-width'>
     {{ partial "sidebar.html" (dict "context" .) }}
     {{ partial "toc.html" . }}
@@ -15,6 +11,7 @@
         </div>
         <div class="hx:mt-16"></div>
         {{ partial "components/last-updated.html" . }}
+        {{ partial "components/pager.html" . }}
         {{ partial "components/comments.html" . }}
       </main>
     </article>
