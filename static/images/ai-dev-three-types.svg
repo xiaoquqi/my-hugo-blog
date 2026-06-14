@@ -1,0 +1,61 @@
+<svg width="840" height="300" viewBox="0 0 840 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>text { font-family: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', 'Helvetica Neue', Arial, sans-serif; }</style>
+  </defs>
+
+  <rect width="840" height="300" fill="#F7FAFC"/>
+
+  <!-- Card 1: AI包装型 -->
+  <g transform="translate(20,20)">
+    <rect width="253" height="260" fill="white" rx="10" stroke="#FED7D7" stroke-width="1.5"/>
+    <rect width="253" height="6" fill="#FC8181" rx="4"/>
+    <rect y="3" width="253" height="3" fill="#FC8181"/>
+    <circle cx="38" cy="44" r="20" fill="#FFF5F5"/>
+    <text x="38" y="50" text-anchor="middle" font-size="15" fill="#E53E3E" font-weight="700">01</text>
+    <text x="70" y="38" font-size="17" fill="#C53030" font-weight="700">AI 包装型</text>
+    <text x="70" y="56" font-size="12" fill="#FC8181">弱能力 × AI = 风险放大</text>
+    <line x1="22" y1="74" x2="231" y2="74" stroke="#FED7D7" stroke-width="1"/>
+    <text x="22" y="100" font-size="13" fill="#4A5568">• AI 给什么就信什么</text>
+    <text x="22" y="126" font-size="13" fill="#4A5568">• 产出多，判断质量低</text>
+    <text x="22" y="152" font-size="13" fill="#4A5568">• 出错归咎 AI</text>
+    <text x="22" y="178" font-size="13" fill="#4A5568">• 问题延后才暴露</text>
+    <rect x="22" y="220" width="104" height="26" fill="#FFF5F5" rx="13"/>
+    <text x="74" y="238" text-anchor="middle" font-size="12" fill="#E53E3E">被 AI 包装</text>
+  </g>
+
+  <!-- Card 2: AI工具型 -->
+  <g transform="translate(293,20)">
+    <rect width="253" height="260" fill="white" rx="10" stroke="#FEEBC8" stroke-width="1.5"/>
+    <rect width="253" height="6" fill="#F6AD55" rx="4"/>
+    <rect y="3" width="253" height="3" fill="#F6AD55"/>
+    <circle cx="38" cy="44" r="20" fill="#FFFBF0"/>
+    <text x="38" y="50" text-anchor="middle" font-size="15" fill="#C05621" font-weight="700">02</text>
+    <text x="70" y="38" font-size="17" fill="#B7791F" font-weight="700">AI 工具型</text>
+    <text x="70" y="56" font-size="12" fill="#F6AD55">中等能力 × AI = 效率提升</text>
+    <line x1="22" y1="74" x2="231" y2="74" stroke="#FEEBC8" stroke-width="1"/>
+    <text x="22" y="100" font-size="13" fill="#4A5568">• 能用 AI 加快执行</text>
+    <text x="22" y="126" font-size="13" fill="#4A5568">• 判断质量无明显提升</text>
+    <text x="22" y="152" font-size="13" fill="#4A5568">• 适合执行明确任务</text>
+    <text x="22" y="178" font-size="13" fill="#4A5568">• 不适合主导复杂系统</text>
+    <rect x="22" y="220" width="104" height="26" fill="#FFFBF0" rx="13"/>
+    <text x="74" y="238" text-anchor="middle" font-size="12" fill="#C05621">平庸执行层</text>
+  </g>
+
+  <!-- Card 3: AI放大型 -->
+  <g transform="translate(566,20)">
+    <rect width="253" height="260" fill="white" rx="10" stroke="#C6F6D5" stroke-width="1.5"/>
+    <rect width="253" height="6" fill="#68D391" rx="4"/>
+    <rect y="3" width="253" height="3" fill="#68D391"/>
+    <circle cx="38" cy="44" r="20" fill="#F0FFF4"/>
+    <text x="38" y="50" text-anchor="middle" font-size="15" fill="#276749" font-weight="700">03</text>
+    <text x="70" y="38" font-size="17" fill="#276749" font-weight="700">AI 放大型</text>
+    <text x="70" y="56" font-size="12" fill="#68D391">强能力 × AI = 判断放大</text>
+    <line x1="22" y1="74" x2="231" y2="74" stroke="#C6F6D5" stroke-width="1"/>
+    <text x="22" y="100" font-size="13" fill="#4A5568">• 先定义问题再使用 AI</text>
+    <text x="22" y="126" font-size="13" fill="#4A5568">• 主动质疑 AI 的结论</text>
+    <text x="22" y="152" font-size="13" fill="#4A5568">• 效率与质量同步提升</text>
+    <text x="22" y="178" font-size="13" fill="#4A5568">• 对最终结果完整负责</text>
+    <rect x="22" y="220" width="104" height="26" fill="#F0FFF4" rx="13"/>
+    <text x="74" y="238" text-anchor="middle" font-size="12" fill="#276749">判断系统放大</text>
+  </g>
+</svg>
