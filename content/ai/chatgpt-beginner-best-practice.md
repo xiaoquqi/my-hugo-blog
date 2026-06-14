@@ -3,13 +3,13 @@ title: ChatGPT初学者最佳实践
 date: 2023-05-17T07:07:40+08:00
 slug: "chatgpt-beginner-best-practice"
 author: 老孙正经胡说
+categories:
+  - 大语言模型
 tags:
   - ChatGPT
   - OpenAI
   - gpt
   - ai
-categories:
-  - ChatGPT
 draft: false
 ---
 
