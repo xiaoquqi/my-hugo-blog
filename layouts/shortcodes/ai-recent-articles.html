@@ -1,0 +1,18 @@
+{{ $aiPosts := where .Site.RegularPages "Section" "ai" }}
+{{ $posts := sort $aiPosts "Date" "desc" | first 5 }}
+{{ if $posts }}
+<div class="hx:mt-12">
+  <h2 class="hx:text-xl hx:font-bold hx:mb-6 hx:text-gray-800 dark:hx:text-gray-200">最新文章</h2>
+  <div class="hx:flex hx:flex-col hx:gap-3">
+    {{ range $posts }}
+    <a href="{{ .RelPermalink }}" class="hx:flex hx:items-start hx:gap-4 hx:p-4 hx:rounded-lg hx:border hx:border-gray-200 dark:hx:border-gray-700 hx:hover:border-primary-400 dark:hx:hover:border-primary-500 hx:transition-colors hx:no-underline">
+      <span class="hx:text-sm hx:text-gray-400 hx:whitespace-nowrap hx:mt-0.5">{{ .Date.Format "2006-01-02" }}</span>
+      <div class="hx:flex-1 hx:min-w-0">
+        <div class="hx:font-medium hx:text-gray-900 dark:hx:text-gray-100 hx:truncate">{{ .Title }}</div>
+        {{ with .Params.tags }}<span class="hx:text-xs hx:text-primary-600 dark:hx:text-primary-400">{{ index . 0 }}</span>{{ end }}
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

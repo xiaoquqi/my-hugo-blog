@@ -13,3 +13,5 @@ sidebar:
   {{< card link="llm" title="大语言模型" icon="sparkles" subtitle="LLM 技术原理、应用与实践" >}}
   {{< card link="ai-agent" title="AI Agent" icon="beaker" subtitle="智能体架构设计与开发" >}}
 {{< /cards >}}
+
+{{< ai-recent-articles >}}

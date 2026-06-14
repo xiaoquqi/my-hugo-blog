@@ -1,4 +1,7 @@
-{{ $posts := where .Site.RegularPages "Section" "blog" | first 6 }}
+{{ $blogPosts := where .Site.RegularPages "Section" "blog" }}
+{{ $aiPosts := where .Site.RegularPages "Section" "ai" }}
+{{ $all := union $blogPosts $aiPosts }}
+{{ $posts := sort $all "Date" "desc" | first 6 }}
 {{ if $posts }}
 <div class="recent-posts-section hx:mt-16">
   <h2 class="hx:text-2xl hx:font-bold hx:mb-8 hx:text-center">📝 近期文章</h2>
