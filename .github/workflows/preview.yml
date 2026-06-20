@@ -1,17 +1,17 @@
-name: Deploy to Production
+name: Deploy to Preview
 
 on:
   push:
-    tags:
-      - 'v*'
+    branches:
+      - master
 
 jobs:
-  deploy:
+  preview:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # required for Hugo .GitInfo (last-modified dates)
+          fetch-depth: 0
 
       - uses: actions/setup-go@v5
         with:
@@ -24,8 +24,8 @@ jobs:
             https://github.com/gohugoio/hugo/releases/download/v0.161.1/hugo_extended_0.161.1_linux-amd64.deb
           sudo dpkg -i /tmp/hugo.deb
 
-      - name: Build
-        run: hugo --gc --minify
+      - name: Build (preview)
+        run: hugo --gc --minify --buildDrafts
 
       - name: Setup SSH
         run: |
@@ -34,9 +34,9 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -p ${{ vars.REMOTE_PORT }} -H ${{ secrets.REMOTE_HOST }} >> ~/.ssh/known_hosts
 
-      - name: Deploy via rsync
+      - name: Deploy via rsync to preview path
         run: |
           rsync -avz --delete \
             -e "ssh -p ${{ vars.REMOTE_PORT }}" \
             public/ \
-            ${{ vars.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ vars.REMOTE_PATH }}/
+            ${{ vars.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ vars.REMOTE_PATH_PREVIEW }}/
