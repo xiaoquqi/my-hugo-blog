@@ -1,5 +1,5 @@
 ---
-title: 用 Claude Code 实现手机端远程开发：从环境搭建到最佳实践
+title: 手机能成为真正的开发终端吗？我用这个博客验证了一下
 date: 2026-06-20T08:00:00+08:00
 slug: "claude-code-remote-development"
 author: 老孙正经胡说
@@ -14,58 +14,51 @@ tags:
 draft: false
 ---
 
-真正的移动端开发，不是"在手机上看 Claude 打字"，而是**能在手机上做出决策、验证结果、推进任务**。这两者之间差了一个关键前提：你的开发结果必须能在手机上看到。
+这个问题我想了很久：手机能不能成为真正的开发终端？
 
-本文以这个博客本身的开发流程为例，讲清楚搭建一套完整手机端远程开发环境需要什么，以及如何用它实现真正的随时随地开发。
+不是"查查文档、看看监控"那种意义上的，而是完整意义上的——写代码、调试、部署、验证结果，整个研发闭环都在手机上完成。听说有 Anthropic 的工程师每天趴在沙发上，靠手机和 Claude Code 对话完成日常开发工作（来源待核实，欢迎知道的朋友补充）。
+
+这篇文章是我自己验证这个问题的记录。
 
 <!-- more -->
 
-## 为什么单靠 Claude Code Remote Control 还不够
+## 先说结论
 
-Claude Code 的 Remote Control 功能（2026 年 2 月发布）让你可以用手机接管一个正在运行的本地 Claude Code 会话——发指令、看输出、做决策。
+可以，但有几个前提条件必须提前准备好，缺一不可。本文的重点不是某个工具的使用说明，而是这套环境的搭建逻辑——把这个想清楚，无论你开发的是博客、业务系统还是 API 服务，流程都是一样的。
 
-但如果你在开发一个 Web 应用或博客，Claude 告诉你"已经修改完成"，你怎么知道改得对不对？在手机上打开 `localhost:1313`？打不开。去找代码看？还不如回到电脑前。
+## 我用来验证的场景
 
-**没有可以在手机上访问的预览环境，远程开发就是盲开发**。
+我选了一个自己日常在维护的项目：这个博客。
 
-所以，完整的手机端远程开发环境需要三层配合：
+看起来简单，但实际涉及的链路不短：Markdown 写作、Hugo 构建、Git 版本管理、SSH 部署到服务器、CI/CD 自动化、微信公众号同步发布。这个场景的复杂度足够有代表性，跑通了，其他系统开发同理。
 
-| 层 | 工具 | 作用 |
-|----|------|------|
-| **指令层** | Claude Code Remote Control | 手机上发指令、看 Claude 工作进度 |
-| **持久层** | tmux | 让 Claude Code 进程在后台持续运行 |
-| **验证层** | 预览环境（手机可访问的 URL） | 手机上看到真实的渲染结果 |
+---
 
-三层缺一不可。
+## 前提一：先把预览环境建好
 
-## 以这个博客为例：我们的完整环境
+**这是最容易被忽视、也最关键的一步。**
 
-这篇文章本身就是用这套流程写出来的，以下是整套配置的具体实现。
+很多人上来就折腾 Remote Control，结果 Claude 说"修改完成了"，你根本不知道改得对不对——手机打不开 `localhost:1313`，看不到渲染结果，等于盲开发。
 
-### 发布流程设计
+正确的做法是：**在动手之前，先搭一个手机能访问的预览环境**。
+
+我的方案是把发布流程拆成两条线：
 
 ```
-master 分支 push
-    └─→ GitHub Actions 自动部署到 preview.sunqi.site（预览环境）
-
-git tag v*
-    └─→ GitHub Actions 自动部署到 sunqi.site（生产环境）
+master 分支 push  →  自动部署到 preview.sunqi.site（预览，含草稿）
+git tag v*        →  自动部署到 sunqi.site（生产）
 ```
 
-这样每次提交后，我可以直接在手机上打开预览地址，看到真实的渲染效果——文章格式、图片、代码块、导航——和读者看到的完全一致。确认没问题，打 tag，发布生产。
+每次提交后，用手机打开预览地址，直接看到真实渲染效果。确认没问题，打 tag，发布生产。
 
-对应的 GitHub Actions 配置（两个独立的 workflow）：
-
-**预览环境（`.github/workflows/preview.yml`）**：
+对应的 GitHub Actions 配置很简单，两个独立的 workflow 文件：
 
 ```yaml
+# .github/workflows/preview.yml
 name: Deploy to Preview
-
 on:
   push:
-    branches:
-      - master
-
+    branches: [master]
 jobs:
   preview:
     runs-on: ubuntu-latest
@@ -73,189 +66,154 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: actions/setup-go@v5
-        with:
-          go-version: '1.23'
-          cache: true
-      - name: Install Hugo extended
-        run: |
-          wget -O /tmp/hugo.deb \
-            https://github.com/gohugoio/hugo/releases/download/v0.161.1/hugo_extended_0.161.1_linux-amd64.deb
-          sudo dpkg -i /tmp/hugo.deb
-      - name: Build (with drafts)
+      - name: Build
         run: hugo --gc --minify --buildDrafts
-      - name: Deploy to preview path
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          echo "StrictHostKeyChecking no" >> ~/.ssh/config
+      - name: Deploy
         run: |
           rsync -avz --delete \
-            -e "ssh -p ${{ vars.REMOTE_PORT }}" \
+            -e "ssh -p ${{ vars.REMOTE_PORT }} -o StrictHostKeyChecking=no" \
             public/ \
             ${{ vars.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ vars.REMOTE_PATH_PREVIEW }}/
 ```
 
-**生产环境（`.github/workflows/main.yml`）**：
+> **调试提示**：CI 里的 `REMOTE_HOST` 务必填服务器真实 IP，而不是域名。域名可能经过 CDN（比如 Cloudflare），SSH 请求到了 CDN 就超时了——这个坑我踩过，排查花了不少时间。
 
-```yaml
-name: Deploy to Production
+---
 
-on:
-  push:
-    tags:
-      - 'v*'
+## 前提二：把鉴权打通，这才是核心
 
-# ... 与预览相同，但不加 --buildDrafts，部署到 REMOTE_PATH
-```
+光有 Remote Control 还不够。Claude Code 在手机上能帮你干多少活，完全取决于你给了它多少权限。
 
-GitHub 仓库里需要配置的变量：
-- `REMOTE_PATH`：生产目录（已有）
-- `REMOTE_PATH_PREVIEW`：预览目录（新增）
-- `SSH_PRIVATE_KEY` / `REMOTE_HOST` / `REMOTE_PORT` / `REMOTE_USER`：已有
+**必须提前配置好的鉴权：**
 
-## 搭建 Claude Code Remote Control
-
-有了预览环境，再配合 Remote Control，就能形成完整的远程开发闭环。
-
-![Claude Code Remote Control 工作原理](/images/claude-rc-workflow.svg)
-
-### 前置检查
+**SSH Key**——让 Claude 可以直接 SSH 到你的服务器，查日志、重启服务、排查问题，不需要你手动操作。
 
 ```bash
-# 需要 v2.1.51 或更新
-claude --version
-claude update
-
-# 必须用 claude.ai 账号登录（不支持纯 API Key）
-claude auth login
+# 把公钥放到服务器
+ssh-copy-id -i ~/.ssh/id_rsa.pub user@your-server
+# 验证免密登录
+ssh user@your-server "echo ok"
 ```
 
-订阅要求：Claude Pro（$20/月）及以上均可，不需要 Max 计划。iOS / Android / 浏览器全平台支持。
-
-### 用 tmux 保持会话存活
-
-这是最常被忽略但最重要的一步。
-
-如果直接在普通终端跑 `claude`，一旦 Terminal 关闭或 SSH 断开，进程就结束了。手机上的指令没有执行环境。tmux 让会话在后台持续运行，断线重连也不丢失。
+**GitHub CLI**——让 Claude 可以直接操作 GitHub，查 Actions 日志、设置变量、管理 PR，这些在手机上自己操作非常低效。
 
 ```bash
-# 新建会话
+gh auth login
+# 验证
+gh auth status
+```
+
+这一步的重要性怎么强调都不过分。以这篇文章的调试过程为例：CI 部署失败，Claude 直接通过 `gh run view` 拉取日志、分析原因、修改 workflow、重新触发，整个过程我在手机上全程旁观，只需要在关键决策点说"可以"或"换个方案"。如果 GitHub 权限没打通，这些步骤每一步都得我手动来。
+
+---
+
+## 第三步：tmux + Claude Code Remote Control
+
+鉴权打通之后，再来配 Remote Control。
+
+**为什么需要 tmux？**
+
+如果直接在终端运行 `claude`，关掉 Terminal 窗口进程就死了，手机发的指令没有执行环境。tmux 让 Claude Code 在后台持续运行，断网重连也不丢失。
+
+```bash
+# 新建持久化会话
 tmux new-session -s dev
 
-# 进入项目目录
-cd ~/my-hugo-blog
+# 进入项目目录，启动 Remote Control
+cd ~/my-project
+claude --rc "项目名称"
 ```
 
-常用快捷键：
+常用 tmux 快捷键：
 
 | 操作 | 按键 |
 |------|------|
-| 分离会话（进程保持后台运行） | `Ctrl+B` → `D` |
-| 重新接入会话 | `tmux attach -t dev` |
+| 分离会话（后台运行） | `Ctrl+B` → `D` |
+| 重新接入 | `tmux attach -t dev` |
 | 查看所有会话 | `tmux ls` |
 
-### 开启 Remote Control
+启动后终端会显示一个会话 URL，按**空格键**显示二维码，用手机扫码即可在 Claude App 里接入。
 
-**从新会话开始**（推荐）：
+![Claude Code Remote Control 工作原理](/images/claude-rc-workflow.svg)
 
-```bash
-claude --rc "博客开发"
-```
+**平台支持**：iOS 和 Android 均已支持；VS Code 扩展输入 `/rc` 同样可以开启。需要 Claude Pro 订阅（$20/月）及以上，Claude Code v2.1.51+。
 
-**在已有会话中开启**：
+---
 
-```
-/rc 博客开发
-```
+## 让手机端体验真正好用的几个技巧
 
-**服务器模式**（支持多设备并发连接）：
+### 技巧一：用微信输入法替代 Claude 原生语音
 
-```bash
-claude remote-control --name "博客开发"
-# 终端显示 URL，按空格键显示二维码
-```
+Claude App 自带的语音识别，中文准确率相当不稳定，夹杂技术术语时问题更明显。
 
-### 手机端连接
+微信输入法的语音转文字在中文识别上要好得多——切换到微信输入法，按住语音键说完，看一眼文字确认无误，再发给 Claude。多了一步确认，但比发出去乱码再纠错省时间得多。
 
-打开 Claude App → 底部 **Code** 标签 → 找到刚建立的会话（绿点表示在线）。
+### 技巧二：复杂需求让 Claude 来问你
 
-会话在同步状态下，本机终端和手机可以同时发消息，实时互通。
+遇到需要交代大量背景的复杂任务时，不要试图一次性描述清楚——手机上打字太慢，说不清楚还容易遗漏。
 
-![Remote Control 的架构模型：本地执行，手机只是窗口](/images/claude-remote-control-how-it-works.png)
-
-### 安全说明
-
-本机不开放任何入站端口。所有消息经由 Anthropic API 中转（TLS 加密），本地文件系统、MCP 工具、项目配置全部在本机，手机端只是一个控制窗口，你的代码不会上传到 Anthropic 的服务器。
-
-## 进阶：推送通知与 CI/CD 集成
-
-### 推送通知
+换个方向：**让 Claude 一个问题一个问题地问你**。
 
 ```
-/config
+我想实现 [目标]，但情况比较复杂，请你先一个问题一个问题问我，
+把需求搞清楚再开始做。
 ```
 
-开启 **Push when Claude decides**，长任务完成或需要你决策时，Claude 会主动推送到手机。你可以把任务扔给它去做，放下手机，等通知。
+这个体验比直接给 Claude 一大段需求描述要好得多，也比 Codex 那种模式更符合移动端的交互节奏——你只需要回答，不需要组织。
 
-### 集成 CI/CD 查日志
+### 技巧三：提前安装好必要的 Skill
 
-在 Claude Code 的上下文里，可以直接让 Claude 帮你：
-- 查看 GitHub Actions 最近一次构建的失败日志
-- 检查线上服务状态
-- 分析部署后的错误
+Claude Code 支持通过 Skill 扩展能力。不需要装很多，1-2 个能覆盖你核心研发流程的就够。
 
-出差途中收到监控告警，不用回到电脑前，手机上用 Remote Control 让 Claude 帮你定位和处理。
+我自己用的：
+- **superpower**：增强 Claude Code 的基础操作能力
+- **openspecs**：处理 API 规范和接口文档相关的任务
 
-## 语音输入：最被低估的提效细节
+原则是：能覆盖你研发流程的关键环节就够了，不要为了装而装。
 
-Remote Control + 语音输入，是真正实现"不碰键盘开发"的组合。但有一个坑很多人踩过：
+### 技巧四：推送通知
 
-**Claude App 自带的语音识别，中文准确率明显不如微信输入法。**
+在 Claude Code 里运行 `/config`，开启 **Push when Claude decides**。长任务跑完或需要你决策时，Claude 会主动推送通知到手机，不用一直盯着屏幕。
 
-Claude 原生语音识别对中文夹杂技术术语时表现不稳定，误识率高；微信输入法背后积累了大量中文训练数据，识别准确度要高得多。
+---
 
-**实际推荐的用法**：
+## 一个必须说清楚的边界
 
-1. Claude App 输入框里切换到微信输入法
-2. 按住微信语音键说出需求
-3. 确认文字无误后发送
+手机上能做的事越来越多，但有一类情况我仍然建议回到电脑前处理：**涉及复杂逻辑判断、高风险操作的代码审查**。
 
-多了一步确认，但比用 Claude 原生语音说错了再纠错要快。
+AI 很强，但不会替你坐牢。数据库 migration、权限变更、支付相关逻辑——这些在手机小屏幕上草草确认，风险是你的。
 
-实际测试下来，通勤、散步等场景完全可以用语音驱动开发：描述需求、确认方向、做出决策，基本不需要打字。
+比较合适的做法：在手机上让 Claude 把方案整理成文字，自己通过对话逐步确认逻辑，真正执行前切回电脑完整审查一遍。
+
+---
 
 ## 完整环境清单
 
-想复现这套流程，需要准备以下内容：
+| 类别 | 工具 | 说明 |
+|------|------|------|
+| 持久化会话 | tmux | 防止终端关闭导致进程退出 |
+| 远程控制 | Claude Code v2.1.51+ | Pro 订阅，`claude --rc` 启动 |
+| 手机端 | Claude App（iOS / Android） | 扫码接入 |
+| 预览环境 | 公网可访问的 URL | 手机验证结果的关键 |
+| 代码托管权限 | GitHub CLI (`gh auth login`) | Claude 操作 CI/CD 的前提 |
+| 服务器权限 | SSH 免密登录 | Claude 远程操作服务器的前提 |
+| 输入法 | 微信输入法语音 | 替代 Claude 原生语音识别 |
 
-**设备与工具**
+---
 
-- Mac 或 Linux 开发机（需保持开机和网络）
-- tmux（`brew install tmux`）
-- Claude Code CLI v2.1.51+，已用 claude.ai 账号登录
-- Claude Pro 或以上订阅
-- iPhone 或 Android 安装 Claude App
+这套流程跑通之后，我的日常开发节奏有了明显变化：通勤时推进任务、等待时处理 review、出差时处理线上问题，不再需要等到坐回电脑前。
 
-**预览环境**
-
-- 一台可公网访问的服务器（或 Cloudflare Pages / Netlify 等）
-- 配置一个预览域名（如 `preview.yoursite.com`）
-- CI/CD 配置：master push → 自动部署到预览环境
-
-**可选但推荐**
-
-- 微信输入法（替代 Claude 原生语音识别）
-- 手机推送通知（`/config` 里开启）
-
-## 小结
-
-这套流程的核心逻辑是：**手机端能看到的预览 + Claude Code 的远程控制 + 语音输入**，三者缺一不可。
-
-这篇文章本身就是用这套方式完成的：在 Mac 上用 tmux 跑着 Claude Code，手机上通过 Remote Control 发指令，每次提交后在预览环境上确认效果。整个过程不需要坐在电脑前。
-
-如果你有一个正在维护的项目，把预览环境搭起来，然后试试 `claude --rc`，可能会对"在哪儿开发"这件事产生新的看法。
+手机不会完全替代电脑，但它可以把"必须坐在电脑前"这个限制，缩小到真正需要精细操作的那部分。
 
 ---
 
 **参考资料**
-
 - [Claude Code 官方文档：Remote Control](https://code.claude.com/docs/en/remote-control)
-- [Claude Code Mobile: iPhone, Android & SSH (2026) | Sealos Blog](https://sealos.io/blog/claude-code-on-phone/)
+- [Stop losing Claude Code sessions: a tmux primer for mobile devs](https://dev.to/jagafarm/stop-losing-claude-code-sessions-a-tmux-primer-for-mobile-devs-2p48)
 - [Claude Code on Your Phone | Builder.io](https://www.builder.io/blog/claude-code-mobile-phone)
