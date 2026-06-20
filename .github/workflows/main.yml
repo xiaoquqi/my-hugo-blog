@@ -32,11 +32,12 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -p ${{ vars.REMOTE_PORT }} -H ${{ secrets.REMOTE_HOST }} >> ~/.ssh/known_hosts
+          echo "StrictHostKeyChecking no" >> ~/.ssh/config
+          echo "UserKnownHostsFile /dev/null" >> ~/.ssh/config
 
       - name: Deploy via rsync
         run: |
           rsync -avz --delete \
-            -e "ssh -p ${{ vars.REMOTE_PORT }}" \
+            -e "ssh -p ${{ vars.REMOTE_PORT }} -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" \
             public/ \
             ${{ vars.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ vars.REMOTE_PATH }}/
