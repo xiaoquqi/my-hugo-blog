@@ -146,7 +146,11 @@ claude                       # 进入 Claude Code
 # tmux attach -t dev  重新接入
 ```
 
+![终端中使用 /rc 开启 Remote Control](/images/claude-rc-terminal.png)
+
 开启后，点击 Claude App 或桌面客户端顶部图标，进入 **Code** 页面，就能看到远程 session 列表，找到对应会话点进去直接接管。
+
+![Claude App 手机端 session 列表](/images/claude-mobile-session.jpg)
 
 但持久不只是"进程不死"，更重要的是**设备之间能无缝接力**。在地铁上开始的任务，到公司坐下来直接在电脑上接着做；晚上想起来，拿手机继续推进——同一个会话、同一段上下文，不用重新交代背景，不用来回登录切换。这才是真正意义上的随时随地。
 
