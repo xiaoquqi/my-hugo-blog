@@ -1,5 +1,5 @@
 ---
-title: 手机能成为真正的开发终端吗？我用这个博客验证了一下
+title: 手机能不能成为主力开发工具？一份真实的验证记录
 date: 2026-06-20T08:00:00+08:00
 slug: "claude-code-remote-development"
 author: 老孙正经胡说
