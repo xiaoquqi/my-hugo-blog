@@ -152,8 +152,6 @@ claude                       # 进入 Claude Code
 
 **平台支持**：iOS 和 Android 均已支持；VS Code 扩展输入 `/rc` 同样可以开启。需要 Claude Pro 订阅（$20/月）及以上，Claude Code v2.1.51+。
 
-![Claude Code Remote Control 工作原理](/images/claude-rc-workflow.svg)
-
 ---
 
 ## 用起来更顺手的几个技巧
@@ -194,9 +192,9 @@ Claude App 手机端有原生语音输入，但对中文的支持一直不太友
 
 **开发场景**：`superpower` 这类增强型 skill 比较值得装，能明显扩展 Claude Code 的基础操作能力。其他的按需来——不确定要装什么，直接告诉 Claude，让它帮你找到并安装就行。
 
-### 推送通知：长任务不用盯着
+### 推送通知：任务完成自动提醒你
 
-`/config` 里开启 **Push when Claude decides**，任务完成或需要你决策时 Claude 主动推通知，不用一直盯屏幕。
+在手机系统设置里允许 Claude App 发送通知，这是整个移动端体验的关键一环。Claude 跑完一个长任务、或者需要你做决策才能继续时，会主动推通知到手机——你不用一直盯着屏幕，该干嘛干嘛，通知来了再回来看就行。
 
 ---
 
