@@ -150,7 +150,7 @@ claude                       # 进入 Claude Code
 
 开启后，点击 Claude App 或桌面客户端顶部图标，进入 **Code** 页面，就能看到远程 session 列表，找到对应会话点进去直接接管。
 
-![Claude App 手机端 session 列表](/images/claude-mobile-session.jpg)
+![Claude App 手机端 session 列表](/images/claude-mobile-session.png)
 
 ![手机端 Claude Code 交互界面](/images/claude-code-mobile-interaction.png)
 
