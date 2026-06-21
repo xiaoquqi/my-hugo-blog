@@ -152,6 +152,8 @@ claude                       # 进入 Claude Code
 
 ![Claude App 手机端 session 列表](/images/claude-mobile-session.jpg)
 
+![手机端 Claude Code 交互界面](/images/claude-code-mobile-interaction.png)
+
 但持久不只是"进程不死"，更重要的是**设备之间能无缝接力**。在地铁上开始的任务，到公司坐下来直接在电脑上接着做；晚上想起来，拿手机继续推进——同一个会话、同一段上下文，不用重新交代背景，不用来回登录切换。这才是真正意义上的随时随地。
 
 **平台支持**：iOS 和 Android 均已支持；VS Code 扩展输入 `/rc` 同样可以开启。需要 Claude Pro 订阅（$20/月）及以上，Claude Code v2.1.51+。
