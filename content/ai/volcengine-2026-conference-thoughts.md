@@ -43,6 +43,8 @@ draft: true
 
 {{< figure src="/images/volcengine-2026/seedance-25.webp" alt="豆包视频生成模型 Seedance 2.5" caption="Seedance 2.5 发布现场：突破故事边界、全模态参考扩容、逐拍视频编辑、拥抱全球创作者" >}}
 
+{{< figure src="/images/volcengine-2026/seedance-demo.webp" alt="Seedance 生成的短片《渔村里的画家》在主会场演示" caption="主会场演示 Seedance 生成的短片《渔村里的画家》，舞台 FORCE 背景下效果震撼——这是中国视频生成能力的一次集中展示" >}}
+
 所以未来的格局可能是：语言模型持续竞争，但多模态——尤其是视频方向——有机会成为中国 AI 的突破口。
 
 ## 二、Agent 进入企业：最大挑战不是 AI，而是组织
@@ -70,6 +72,8 @@ draft: true
 展区中更吸引注意力的，往往是 AI 与硬件结合的产品。
 
 比如一些 AI 毛绒玩具。表面上看是"会聊天的玩具"，但本质变化在于：大模型让交互从规则驱动变成理解驱动，能力边界被重新定义。
+
+{{< figure src="/images/volcengine-2026/ai-plush-toy.webp" alt="展区 AI 毛绒玩具：发光眼睛的智能毛球" caption="展区里的 AI 毛绒玩具，发光的眼睛背后是大模型驱动的理解能力——硬件壳子没变，但交互的本质变了" >}}
 
 {{< figure src="/images/volcengine-2026/ai-hardware-booth.webp" alt="展区 AI 智能硬件：书桌反射护眼台灯配合 VR 投影交互" caption="展区里的 AI 硬件产品：护眼台灯结合 VR 投影交互，代表了大模型能力向消费硬件渗透的典型路径" >}}
 
