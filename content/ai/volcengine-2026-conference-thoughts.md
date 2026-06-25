@@ -12,7 +12,7 @@ tags:
   - 火山引擎
   - 多模态
   - AI趋势
-draft: true
+draft: false
 ---
 
 {{< figure src="/images/volcengine-2026/venue-entrance.webp" alt="2026 火山引擎原动力大会 FORCE 入场广场" caption="2026 火山引擎原动力大会（FORCE'26 Summer）入场广场，地面 Logo 和立体装置相当有气势" >}}
