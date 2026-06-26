@@ -23,6 +23,10 @@ languages:
     label: English
     weight: 2
     title: Old Sun’s Straight-faced Nonsense
+  es:
+    label: Español
+    weight: 3
+    title: Las Reflexiones de Lao Sun
   zh-cn:
     label: 简体中文
     locale: zh-CN

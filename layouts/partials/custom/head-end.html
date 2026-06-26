@@ -3,33 +3,40 @@
   var key  = 'lang-pref';
   var path = window.location.pathname;
   var onEn = path.startsWith('/en');
+  var onEs = path.startsWith('/es');
 
-  // User is browsing English pages — record preference
   if (onEn) { localStorage.setItem(key, 'en'); return; }
+  if (onEs) { localStorage.setItem(key, 'es'); return; }
 
-  // User navigated from /en/ to Chinese (manual language switch) — record preference
-  var fromEn = false;
-  try { fromEn = !!document.referrer && new URL(document.referrer).pathname.startsWith('/en'); } catch (e) {}
-  if (fromEn) { localStorage.setItem(key, 'zh'); return; }
+  // User navigated from a translated page back to Chinese — record as manual switch
+  var refPath = '';
+  try { refPath = !!document.referrer ? new URL(document.referrer).pathname : ''; } catch (e) {}
+  if (refPath.startsWith('/en') || refPath.startsWith('/es')) {
+    localStorage.setItem(key, 'zh');
+    return;
+  }
 
   var pref = localStorage.getItem(key);
 
   if (!pref) {
-    // First visit: only auto-redirect from the homepage
     if (path !== '/') { localStorage.setItem(key, 'zh'); return; }
     var lang = (navigator.languages && navigator.languages[0]) || navigator.language || '';
-    if (lang.toLowerCase().startsWith('en')) {
+    var l = lang.toLowerCase();
+    if (l.startsWith('en')) {
       localStorage.setItem(key, 'en');
       location.replace('/en/');
+    } else if (l.startsWith('es')) {
+      localStorage.setItem(key, 'es');
+      location.replace('/es/');
     } else {
       localStorage.setItem(key, 'zh');
     }
     return;
   }
 
-  // Returning user with English preference — send them to English homepage
-  if (pref === 'en' && path === '/') {
-    location.replace('/en/');
+  if (path === '/') {
+    if (pref === 'en') location.replace('/en/');
+    else if (pref === 'es') location.replace('/es/');
   }
 })();
 </script>
