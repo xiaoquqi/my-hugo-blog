@@ -11,6 +11,11 @@
   --primary-lightness: 55%;
 }
 
+/* === Language Switcher Globe Icon === */
+.hextra-language-switcher svg {
+  color: hsl(var(--primary-hue) var(--primary-saturation) var(--primary-lightness));
+}
+
 /* === Smooth Scrolling === */
 html {
   scroll-behavior: smooth;
