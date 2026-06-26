@@ -88,12 +88,17 @@ menu:
       weight: 5
       params:
         icon: user
-    - name: Search
+    - name: Language
       weight: 6
+      params:
+        type: language-switch
+        label: true
+    - name: Search
+      weight: 7
       params:
         type: search
     - name: GitHub
-      weight: 7
+      weight: 8
       url: "https://github.com/xiaoquqi/my-hugo-blog"
       params:
         icon: github
