@@ -1,5 +1,5 @@
 ---
-title: 老孙正经胡说
+title: Old Sun's Straight-faced Nonsense
 layout: hextra-home
 ---
 
@@ -13,7 +13,7 @@ layout: hextra-home
 
 <div class="hero-headline-wrap hx:mt-6 hx:mb-4">
 {{< hextra/hero-headline >}}
-  老孙正经胡说
+  Old Sun's Straight-faced Nonsense
 {{< /hextra/hero-headline >}}
 </div>
 

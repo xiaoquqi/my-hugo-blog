@@ -1,10 +1,25 @@
+{{ $lang := .Page.Language.Lang }}
 {{ $blogPosts := where .Site.RegularPages "Section" "blog" }}
 {{ $aiPosts := where .Site.RegularPages "Section" "ai" }}
 {{ $all := union $blogPosts $aiPosts }}
 {{ $posts := sort $all "Date" "desc" | first 6 }}
+
+{{ $heading := "📝 近期文章" }}
+{{ $viewAll := "查看全部文章 →" }}
+{{ $viewAllHref := "/blog/" }}
+{{ if eq $lang "en" }}
+  {{ $heading = "📝 Recent Posts" }}
+  {{ $viewAll = "View all posts →" }}
+  {{ $viewAllHref = "/en/blog/" }}
+{{ else if eq $lang "es" }}
+  {{ $heading = "📝 Artículos Recientes" }}
+  {{ $viewAll = "Ver todos los artículos →" }}
+  {{ $viewAllHref = "/es/blog/" }}
+{{ end }}
+
 {{ if $posts }}
 <div class="recent-posts-section hx:mt-16">
-  <h2 class="hx:text-2xl hx:font-bold hx:mb-8 hx:text-center">📝 近期文章</h2>
+  <h2 class="hx:text-2xl hx:font-bold hx:mb-8 hx:text-center">{{ $heading }}</h2>
   <div class="recent-posts-grid">
     {{ range $posts }}
     <a href="{{ .RelPermalink }}" class="recent-post-card">
@@ -22,8 +37,8 @@
     {{ end }}
   </div>
   <div class="hx:text-center hx:mt-8">
-    <a href="/blog/" class="hx:text-primary-600 dark:hx:text-primary-400 hx:font-medium hx:hover:opacity-70 hx:transition-opacity">
-      查看全部文章 →
+    <a href="{{ $viewAllHref }}" class="hx:text-primary-600 dark:hx:text-primary-400 hx:font-medium hx:hover:opacity-70 hx:transition-opacity">
+      {{ $viewAll }}
     </a>
   </div>
 </div>
