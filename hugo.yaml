@@ -20,15 +20,15 @@ outputs:
 defaultContentLanguage: zh-cn
 languages:
   en:
-    label: English
+    label: "🇬🇧 English"
     weight: 2
     title: Old Sun’s Straight-faced Nonsense
   es:
-    label: Español
+    label: "🇪🇸 Español"
     weight: 3
     title: Las Reflexiones de Lao Sun
   zh-cn:
-    label: 简体中文
+    label: "🇨🇳 中文"
     locale: zh-CN
     weight: 1
     title: IT技术文章分享
@@ -92,6 +92,7 @@ menu:
       weight: 6
       params:
         type: language-switch
+        icon: globe-alt
         label: true
     - name: Search
       weight: 7
