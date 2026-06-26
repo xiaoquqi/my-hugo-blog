@@ -1,3 +1,39 @@
+<script>
+(function () {
+  var key  = 'lang-pref';
+  var path = window.location.pathname;
+  var onEn = path.startsWith('/en');
+
+  // User is browsing English pages — record preference
+  if (onEn) { localStorage.setItem(key, 'en'); return; }
+
+  // User navigated from /en/ to Chinese (manual language switch) — record preference
+  var fromEn = false;
+  try { fromEn = !!document.referrer && new URL(document.referrer).pathname.startsWith('/en'); } catch (e) {}
+  if (fromEn) { localStorage.setItem(key, 'zh'); return; }
+
+  var pref = localStorage.getItem(key);
+
+  if (!pref) {
+    // First visit: only auto-redirect from the homepage
+    if (path !== '/') { localStorage.setItem(key, 'zh'); return; }
+    var lang = (navigator.languages && navigator.languages[0]) || navigator.language || '';
+    if (lang.toLowerCase().startsWith('en')) {
+      localStorage.setItem(key, 'en');
+      location.replace('/en/');
+    } else {
+      localStorage.setItem(key, 'zh');
+    }
+    return;
+  }
+
+  // Returning user with English preference — send them to English homepage
+  if (pref === 'en' && path === '/') {
+    location.replace('/en/');
+  }
+})();
+</script>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3ZB773E8H4"></script>
 <script>
