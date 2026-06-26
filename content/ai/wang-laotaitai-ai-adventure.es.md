@@ -1,5 +1,6 @@
 ---
 title: La aventura de la Señora Wang con la IA
+description: "Una historia entrañable y aleccionadora sobre una anciana que confió en Doubao para sus trámites, exponiendo los riesgos cotidianos de las alucinaciones de la IA."
 date: 2026-06-22T08:00:00+08:00
 slug: "wang-laotaitai-ai-adventure"
 author: Ray Sun

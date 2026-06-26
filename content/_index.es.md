@@ -1,5 +1,6 @@
 ---
 title: Las Reflexiones de Lao Sun
+description: Blog técnico de Ray Sun sobre computación en la nube e IA — migración a la nube, recuperación ante desastres, desarrollo de productos HyperBDR/HyperMotion, herramientas de IA y tutoriales de programación.
 layout: hextra-home
 ---
 

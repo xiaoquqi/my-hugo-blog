@@ -1,5 +1,6 @@
 ---
 title: "Why Data Flow Is the Core Capability of Hybrid Cloud?"
+description: "Why free data flow across clouds — enabled by migration and DR technology — is the critical hybrid cloud capability, examined through China's state vs. private cloud debate."
 date: 2022-07-20T08:29:00+08:00
 slug: "why-data-exchange-is-key-feature-of-hybird-cloud"
 author: Ray Sun

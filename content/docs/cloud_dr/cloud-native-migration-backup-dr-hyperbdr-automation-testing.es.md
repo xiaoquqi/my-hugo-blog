@@ -1,5 +1,6 @@
 ---
 title: "Prácticas de Pruebas Automatizadas para el Producto de Recuperación ante Desastres Cloud-Nativo HyperBDR"
+description: "Cómo el equipo de HyperBDR resolvió el reto de más de 10.000 combinaciones de casos de prueba usando Python, Terraform y pipelines de automatización."
 date: 2023-02-06T14:28:40+08:00
 slug: "cloud-native-migration-backup-dr-hyperbdr-automation-testing"
 author: Ray Sun

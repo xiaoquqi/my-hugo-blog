@@ -1,5 +1,6 @@
 ---
 title: Cuando la IA escribe el 99% del código, ¿qué valor le queda al desarrollador?
+description: "Cuando el modo Agent de Cursor redefine el desarrollo de software, un líder técnico reflexiona sobre qué habilidades de desarrollador sobreviven y cuáles desaparecen."
 author: Ray Sun
 date: 2026-06-14T08:00:00+08:00
 categories:

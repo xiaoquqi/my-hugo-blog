@@ -1,5 +1,6 @@
 ---
 title: Reflexiones sobre migración y recuperación ante desastres en la era Cloud Native
+description: "Por qué el DR tradicional falla en entornos Cloud Native y cómo construir soluciones de migración centradas en el negocio para evitar el vendor lock-in."
 slug: cloud-migration-dr-on-cloud-native
 author: Ray Sun
 tags:

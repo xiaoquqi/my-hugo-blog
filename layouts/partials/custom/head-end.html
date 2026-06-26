@@ -1,3 +1,17 @@
+{{- $allTranslations := .AllTranslations -}}
+{{- if gt (len $allTranslations) 1 -}}
+  {{- range $allTranslations -}}
+    {{- $lang := .Language.Lang -}}
+    {{- if eq $lang "zh-cn" -}}{{- $lang = "zh-CN" -}}{{- end -}}
+    <link rel="alternate" hreflang="{{ $lang }}" href="{{ .Permalink }}" />
+  {{- end -}}
+  {{- range $allTranslations -}}
+    {{- if eq .Language.Lang "zh-cn" -}}
+      <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
 <script>
 (function () {
   var key  = 'lang-pref';

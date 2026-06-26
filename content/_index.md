@@ -1,5 +1,6 @@
 ---
 title: 老孙正经胡说
+description: 老孙正经胡说——云计算与AI领域技术人的思考与实践，涵盖云迁移、容灾、HyperBDR/HyperMotion产品研发、AI工具使用与编程教学。
 layout: hextra-home
 ---
 

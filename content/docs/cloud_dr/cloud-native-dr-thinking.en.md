@@ -1,5 +1,6 @@
 ---
 title: Reflections on Migration and Disaster Recovery in the Cloud-Native Era
+description: "Why traditional DR approaches fall short in cloud-native environments, and how to build business-centric migration and DR solutions that avoid vendor lock-in."
 slug: cloud-migration-dr-on-cloud-native
 author: Ray Sun
 tags:

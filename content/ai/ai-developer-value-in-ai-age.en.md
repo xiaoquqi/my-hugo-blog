@@ -1,5 +1,6 @@
 ---
 title: When AI Writes 99% of the Code, What Value Do Developers Have Left?
+description: "As AI coding tools like Cursor's Agent mode reshape software development, a tech leader reflects on which developer skills truly survive — and which disappear."
 author: Ray Sun
 date: 2026-06-14T08:00:00+08:00
 categories:

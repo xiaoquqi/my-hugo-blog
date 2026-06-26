@@ -1,5 +1,6 @@
 ---
 title: Can Your Phone Become a Primary Development Tool? A Real-World Test
+description: "A hands-on experiment using Claude Code's Remote Control feature to write code, run tests, and deploy a real project entirely from a mobile phone."
 date: 2026-06-20T08:00:00+08:00
 slug: "claude-code-remote-development"
 author: Ray Sun

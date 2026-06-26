@@ -1,5 +1,6 @@
 ---
 title: 手机能不能成为主力开发工具？一份真实的验证记录
+description: "用 Claude Code Remote Control 功能，在手机上完成代码编写、测试、部署的全流程——一次真实项目的验证记录。"
 date: 2026-06-20T08:00:00+08:00
 slug: "claude-code-remote-development"
 author: 老孙正经胡说

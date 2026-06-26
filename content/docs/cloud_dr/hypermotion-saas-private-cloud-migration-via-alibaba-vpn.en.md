@@ -1,5 +1,6 @@
 ---
 title: Migrating Private Cloud to HyperMotion SaaS via Alibaba Cloud VPN
+description: "Step-by-step guide to connecting an on-premises private cloud to HyperMotion SaaS using an Alibaba Cloud VPN Gateway for secure, low-latency migration."
 date: 2021-02-10 10:35:16
 author: Ray Sun
 tags:

@@ -1,5 +1,6 @@
 ---
 title: Cómo cambiar el tipo de grupo de almacenamiento durante la migración
+description: "Cómo cambiar entre almacenamiento de objetos y en bloque a mitad de una migración en HyperMotion sin necesidad de reiniciar la sincronización desde cero."
 date: 2021-12-03T07:08:26+08:00
 author: Ray Sun
 tags:

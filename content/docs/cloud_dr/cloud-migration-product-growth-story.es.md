@@ -1,5 +1,6 @@
 ---
 title: La historia de crecimiento de un producto de migración a la nube
+description: "Cómo OneProCloud construyó HyperMotion, una herramienta de migración en caliente cloud-nativa, a través de proyectos bancarios y empresariales reales desde 2016."
 author: Ray Sun
 tags:
   - Análisis de tendencias

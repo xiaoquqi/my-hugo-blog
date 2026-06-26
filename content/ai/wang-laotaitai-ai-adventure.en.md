@@ -1,5 +1,6 @@
 ---
 title: Mrs. Wang's AI Adventure
+description: "A warm and cautionary story of an elderly woman who trusted Doubao for real-world errands, revealing the everyday risks of AI hallucination."
 date: 2026-06-22T08:00:00+08:00
 slug: "wang-laotaitai-ai-adventure"
 author: Ray Sun

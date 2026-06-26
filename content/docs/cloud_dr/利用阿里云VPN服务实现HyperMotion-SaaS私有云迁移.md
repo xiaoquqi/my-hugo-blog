@@ -1,5 +1,6 @@
 ---
 title: 利用阿里云VPN服务实现HyperMotion SaaS私有云迁移
+description: "如何通过阿里云 VPN 网关将内网私有云环境与 HyperMotion SaaS 打通，实现控制流与数据流的安全传输，完成私有云迁移。"
 author: 孙琦(Ray)
 date: 2021-02-10 10:35:16
 tags:

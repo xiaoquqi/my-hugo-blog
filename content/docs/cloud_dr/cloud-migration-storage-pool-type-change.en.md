@@ -1,5 +1,6 @@
 ---
 title: How to Change the Storage Pool Type During Migration
+description: "Learn how to switch between object and block storage pools mid-migration in HyperMotion without restarting synchronization from scratch."
 date: 2021-12-03T07:08:26+08:00
 author: Ray Sun
 tags:

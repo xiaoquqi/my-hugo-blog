@@ -1,5 +1,6 @@
 ---
 title: "¿Puede el móvil convertirse en tu herramienta principal de desarrollo? Un registro de verificación real"
+description: "Un experimento real usando Claude Code Remote Control para escribir código, ejecutar pruebas y desplegar un proyecto completo únicamente desde el móvil."
 date: 2026-06-20T08:00:00+08:00
 slug: "claude-code-remote-development"
 author: Ray Sun

@@ -1,5 +1,6 @@
 ---
 title: Old Sun's Straight-faced Nonsense
+description: Ray Sun's technical blog on cloud computing and AI — covering cloud migration, disaster recovery, HyperBDR/HyperMotion product development, AI tools, and programming tutorials.
 layout: hextra-home
 ---
 

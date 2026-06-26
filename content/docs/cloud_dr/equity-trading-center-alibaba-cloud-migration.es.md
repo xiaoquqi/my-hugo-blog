@@ -1,5 +1,6 @@
 ---
 title: Mejores prácticas para la migración de un centro de negociación de valores a Alibaba Cloud
+description: "Cómo un centro regional de negociación de valores migró más de 100 VMs a Alibaba Cloud con HyperMotion, sin interrupciones de negocio y cumpliendo la normativa."
 date: 2021-02-05 17:35:56 +08:00
 author: Ray Sun
 tags:

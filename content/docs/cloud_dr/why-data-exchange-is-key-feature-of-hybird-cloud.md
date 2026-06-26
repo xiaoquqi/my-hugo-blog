@@ -1,5 +1,6 @@
 ---
 title: 为什么数据流转是混合云的核心能力？
+description: "深入分析国资云与商业云之争的背景，阐述数据在多云间自由流转的能力为何是混合云的核心价值，以及迁移与容灾技术的关键作用。"
 date: 2022-07-20T08:29:00+08:00
 slug: "why-data-exchange-is-key-feature-of-hybird-cloud"
 author: 老孙正经胡说

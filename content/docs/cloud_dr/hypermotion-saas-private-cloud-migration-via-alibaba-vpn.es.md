@@ -1,5 +1,6 @@
 ---
 title: Migración de nube privada con HyperMotion SaaS mediante VPN de Alibaba Cloud
+description: "Guía paso a paso para conectar una nube privada local con HyperMotion SaaS usando Alibaba Cloud VPN Gateway y lograr una migración segura con baja latencia."
 date: 2021-02-10 10:35:16
 author: Ray Sun
 tags:

@@ -1,5 +1,6 @@
 ---
 title: "¿Por Qué el Flujo de Datos Es la Capacidad Central de la Nube Híbrida?"
+description: "Por qué el flujo libre de datos entre nubes —mediante migración y DR— es la capacidad central de la nube híbrida, analizado desde el debate nube estatal vs. privada en China."
 date: 2022-07-20T08:29:00+08:00
 slug: "why-data-exchange-is-key-feature-of-hybird-cloud"
 author: Ray Sun

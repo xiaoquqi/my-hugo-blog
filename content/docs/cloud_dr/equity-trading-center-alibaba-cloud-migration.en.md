@@ -1,5 +1,6 @@
 ---
 title: Best Practices for Migrating an Equity Trading Center to Alibaba Cloud
+description: "How a regional equity trading center used HyperMotion to migrate 100+ VMs to Alibaba Cloud with zero business interruption and full regulatory compliance."
 date: 2021-02-05 17:35:56 +08:00
 author: Ray Sun
 tags:

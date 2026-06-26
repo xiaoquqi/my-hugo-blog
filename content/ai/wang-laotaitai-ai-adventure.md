@@ -1,5 +1,6 @@
 ---
 title: 老王太太 AI 奇遇记
+description: "老王太太迷上了豆包，依赖它处理现实生活事务——这个温暖又警示的故事，揭示了 AI 幻觉在日常生活中的真实风险。"
 date: 2026-06-22T08:00:00+08:00
 slug: "wang-laotaitai-ai-adventure"
 author: 老孙正经胡说

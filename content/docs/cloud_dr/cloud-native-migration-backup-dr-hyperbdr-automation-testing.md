@@ -1,5 +1,6 @@
 ---
 title: 云原生灾备产品HyperBDR自动化测试实践 
+description: "HyperBDR 如何借助 Python 和 Terraform 构建自动化测试体系，应对多操作系统与多云平台组合下超过万个测试用例的覆盖挑战。"
 date: 2023-02-06T14:28:40+08:00
 slug: "cloud-native-migration-backup-dr-hyperbdr-automation-testing"
 author: 老孙正经胡说

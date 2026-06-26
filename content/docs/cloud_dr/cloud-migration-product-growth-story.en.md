@@ -1,5 +1,6 @@
 ---
 title: The Growth Story of a Cloud Migration Product
+description: "How OneProCloud built HyperMotion — a cloud-native live migration tool — through real-world banking and enterprise projects starting in 2016."
 author: Ray Sun
 tags:
   - Trend Analysis

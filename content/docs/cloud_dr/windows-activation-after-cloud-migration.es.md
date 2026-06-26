@@ -1,5 +1,6 @@
 ---
 title: ¿Cómo activar Windows después de migrar a la nube?
+description: "Por qué las licencias de Windows se invalidan al migrar a la nube y cómo reactivarlas de forma legítima en nubes públicas y privadas usando KMS y License Mobility."
 slug: how-to-activiate-windows-after-cloud-migration
 aliases:
   - /2021/11/19/windows%E7%B3%BB%E7%BB%9F%E8%BF%81%E7%A7%BB%E4%B8%8A%E4%BA%91%E5%90%8E%E5%A6%82%E4%BD%95%E6%BF%80%E6%B4%BB/

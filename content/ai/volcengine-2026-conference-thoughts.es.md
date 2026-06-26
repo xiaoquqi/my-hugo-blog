@@ -1,5 +1,6 @@
 ---
 title: "Del Modelo al Agent: Reflexiones sobre la próxima etapa de la IA tras la Conferencia FORCE 2026 de Volcengine"
+description: "Reflexiones tras asistir a la conferencia FORCE 2026 de Volcengine: la industria de la IA está pasando de la competencia en LLM a la implantación empresarial de Agents."
 date: 2026-06-25T08:00:00+08:00
 slug: "volcengine-2026-conference-thoughts"
 author: Ray Sun

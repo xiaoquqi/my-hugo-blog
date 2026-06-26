@@ -119,8 +119,14 @@ menu:
       url: "https://gohugo.io/documentation/"
       weight: 3
 
+sitemap:
+  changefreq: weekly
+  priority: 0.7
+
 params:
   description: 老孙正经胡说，一名技术从业者的避风港湾。
+  images:
+    - /images/logo.png
 
   navbar:
     displayTitle: true

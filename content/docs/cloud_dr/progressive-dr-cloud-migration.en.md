@@ -1,5 +1,6 @@
 ---
 title: Progressive Disaster Recovery Cloud Migration
+description: "A phased migration strategy using HyperBDR: start with disaster recovery, validate the cloud environment, then flip primary workloads — minimizing risk throughout."
 date: 2022-09-22 12:08:00
 author: Ray Sun
 tags:

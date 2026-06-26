@@ -1,5 +1,6 @@
 ---
 title: ChatGPT初学者最佳实践
+description: "从角色扮演到提示词技巧，系统介绍 ChatGPT 初学者必知的使用方法，帮你快速掌握与 AI 高效协作的核心能力。"
 date: 2023-05-17T07:07:40+08:00
 slug: "chatgpt-beginner-best-practice"
 author: 老孙正经胡说

@@ -1,5 +1,6 @@
 ---
 title: Migración progresiva a la nube con recuperación ante desastres
+description: "Estrategia de migración por fases con HyperBDR: comienza con DR, valida el entorno cloud y después conmuta las cargas de trabajo principales, minimizando el riesgo."
 date: 2022-09-22 12:08:00
 author: Ray Sun
 tags:

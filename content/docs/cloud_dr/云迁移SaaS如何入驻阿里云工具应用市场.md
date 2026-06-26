@@ -1,5 +1,6 @@
 ---
 title: 云迁移SaaS如何入驻阿里云工具应用市场
+description: "从技术角度分享 HyperMotion SaaS 入驻阿里云工具应用市场的全过程，涵盖用户体系、RAM 权限和支付系统的深度整合。"
 slug: how-to-join-cloud-migration-saas-into-aliyun-marketplace
 aliases:
   - /2021/12/01/%E4%BA%91%E8%BF%81%E7%A7%BBsaas%E5%A6%82%E4%BD%95%E5%85%A5%E9%A9%BB%E9%98%BF%E9%87%8C%E4%BA%91%E5%B7%A5%E5%85%B7%E5%BA%94%E7%94%A8%E5%B8%82%E5%9C%BA/

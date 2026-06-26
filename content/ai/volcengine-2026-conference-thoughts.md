@@ -1,5 +1,6 @@
 ---
 title: 从模型到 Agent：参加 2026 火山引擎原动力大会后，对 AI 下一阶段的几点思考
+description: "参加字节火山引擎 2026 原动力大会后的观察：AI 行业正从大模型竞争转向 Agent 落地企业，多模态和组织变革成为新焦点。"
 date: 2026-06-25T08:00:00+08:00
 slug: "volcengine-2026-conference-thoughts"
 author: 老孙正经胡说
