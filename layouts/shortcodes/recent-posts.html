@@ -5,16 +5,16 @@
 {{ $posts := sort $all "Date" "desc" | first 6 }}
 
 {{ $heading := "📝 近期文章" }}
-{{ $viewAll := "查看全部文章 →" }}
-{{ $viewAllHref := "/blog/" }}
+{{ $viewAll := "查看全部 AI 文章 →" }}
+{{ $viewAllHref := "/ai/" }}
 {{ if eq $lang "en" }}
   {{ $heading = "📝 Recent Posts" }}
-  {{ $viewAll = "View all posts →" }}
-  {{ $viewAllHref = "/en/blog/" }}
+  {{ $viewAll = "View all AI posts →" }}
+  {{ $viewAllHref = "/en/ai/" }}
 {{ else if eq $lang "es" }}
   {{ $heading = "📝 Artículos Recientes" }}
-  {{ $viewAll = "Ver todos los artículos →" }}
-  {{ $viewAllHref = "/es/blog/" }}
+  {{ $viewAll = "Ver todos los artículos de IA →" }}
+  {{ $viewAllHref = "/es/ai/" }}
 {{ end }}
 
 {{ if $posts }}
