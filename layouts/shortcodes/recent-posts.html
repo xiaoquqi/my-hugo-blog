@@ -1,6 +1,6 @@
 {{ $lang := .Page.Language.Lang }}
-{{ $blogPosts := where .Site.RegularPages "Section" "blog" }}
-{{ $aiPosts := where .Site.RegularPages "Section" "ai" }}
+{{ $blogPosts := where (where .Site.RegularPages "Section" "blog") "Lang" $lang }}
+{{ $aiPosts := where (where .Site.RegularPages "Section" "ai") "Lang" $lang }}
 {{ $all := union $blogPosts $aiPosts }}
 {{ $posts := sort $all "Date" "desc" | first 6 }}
 
