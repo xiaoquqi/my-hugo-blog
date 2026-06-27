@@ -222,6 +222,40 @@ html {
   }
 }
 
+/* Small phones: tighten hero typography and fix navbar wrapping */
+@media (max-width: 640px) {
+  /* Navbar site title: prevent word-wrap */
+  .hextra-max-navbar-width > a {
+    min-width: 0;
+    overflow: hidden;
+  }
+  .hextra-max-navbar-width > a > span {
+    font-size: 0.72rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Hero H1: reduce from 2.25rem so title fits in 2 lines max */
+  .hero-headline-wrap h1 {
+    font-size: 1.75rem !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.02em !important;
+  }
+
+  /* Hero subtitle: reduce from 1.25rem */
+  .home-hero p.not-prose {
+    font-size: 0.875rem !important;
+    line-height: 1.55 !important;
+  }
+
+  /* Language switcher: flag only, hide globe + text */
+  .hextra-language-switcher .lang-globe,
+  .hextra-language-switcher .lang-name {
+    display: none;
+  }
+}
+
 /* === Feature Cards === */
 
 /* Feature card lift + shadow */
