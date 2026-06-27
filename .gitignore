@@ -10,4 +10,7 @@ hugo.linux
 
 # Env
 .env
-.env.*_vendor/
+.env.*
+
+# Hugo module vendor directory
+_vendor/
