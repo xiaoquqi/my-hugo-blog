@@ -16,9 +16,11 @@
           {{ if and .Date .Params.tags }}<span class="hx:mx-1">·</span>{{ end -}}
           {{ partial "tags.html" (dict "context" .) }}
         </div>
+        {{ partial "custom/slides-banner.html" (dict "page" . "position" "top") }}
         <div class="content">
           {{ .Content }}
         </div>
+        {{ partial "custom/slides-banner.html" (dict "page" . "position" "bottom") }}
         {{- partial "components/last-updated.html" . -}}
         {{- if (site.Params.blog.article.displayPagination | default true) -}}
           {{- .Store.Set "reversePagination" (.Params.reversePagination | default true) -}}

@@ -13,6 +13,7 @@ tags:
   - 测试
   - 产品思维
 draft: false
+slides: "/slides/ai-era-quality-engineering/"
 ---
 
 {{< figure src="/images/ai-era-quality-engineering/hero-quality-gate.webp" alt="AI 时代的软件工程：从代码生成到质量保障" caption="AI 极大提升了生成效率，但质量关卡成了新的瓶颈——这才是 AI 时代软件工程真正的核心挑战" >}}

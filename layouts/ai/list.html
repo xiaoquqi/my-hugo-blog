@@ -13,7 +13,12 @@
         {{- $paginator := .Paginate $pages $pagerSize -}}
         {{- range $paginator.Pages }}
           <div class="hx:mb-10">
-            <h3><a style="color: inherit; text-decoration: none;" class="hx:block hx:font-semibold hx:mt-8 hx:text-2xl" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <h3>
+              <a style="color: inherit; text-decoration: none;" class="hx:inline hx:font-semibold hx:text-2xl" href="{{ .RelPermalink }}">{{ .Title }}</a>
+              {{- with .Params.slides -}}
+                <a href="{{ . }}" target="_blank" title="查看配套幻灯片" style="text-decoration:none;margin-left:0.45em;font-size:0.78em;vertical-align:middle;opacity:0.75;">🎬</a>
+              {{- end -}}
+            </h3>
             {{ if site.Params.blog.list.displayTags }}
               <div class="hx:text-sm hx:leading-7">
                 {{ partial "tags.html" (dict "context" .) }}
