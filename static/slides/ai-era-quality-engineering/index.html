@@ -4,9 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI 时代的软件工程，不再缺开发，而是缺质量</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400;1,600;1,700&family=Bebas+Neue&family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'Bebas Neue';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('fonts/bebas-neue.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Cormorant Garamond';
+      font-style: italic;
+      font-weight: 100 900;
+      font-display: swap;
+      src: url('fonts/cormorant-italic.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Cormorant Garamond';
+      font-style: normal;
+      font-weight: 600 900;
+      font-display: swap;
+      src: url('fonts/cormorant-bold.woff2') format('woff2');
+    }
+  </style>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
   <style>
@@ -33,7 +53,7 @@
       --purple-dim: rgba(155,126,223,0.12);
       --fd: 'Cormorant Garamond','Noto Serif SC',Georgia,serif;
       --fn: 'Bebas Neue','Arial Narrow',sans-serif;
-      --fb: 'Sora','PingFang SC','Microsoft YaHei',sans-serif;
+      --fb: 'PingFang SC','Microsoft YaHei','Hiragino Sans GB',sans-serif;
     }
 
     /* ── Base ── */
@@ -155,9 +175,29 @@
     .rc-desc  { font-size: 0.66em; color: var(--text2); line-height: 1.65; }
 
     @keyframes float { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-10px);} }
+
+    /* ── Portrait-mode warning ── */
+    #portrait-tip { display: none; }
+    @media (orientation: portrait) and (max-width: 1024px) {
+      #portrait-tip {
+        display: flex; position: fixed; inset: 0; z-index: 99999;
+        background: #08070D; flex-direction: column;
+        align-items: center; justify-content: center; gap: 1.6rem;
+        font-family: 'PingFang SC','Microsoft YaHei',sans-serif;
+        color: #ECE6D8; padding: 2rem; text-align: center;
+      }
+      .reveal-viewport { visibility: hidden; }
+    }
   </style>
 </head>
 <body>
+<div id="portrait-tip">
+  <div style="font-size:3.5em;line-height:1;">📱</div>
+  <div style="font-size:1.25em;font-weight:700;letter-spacing:0.04em;">请横屏查看</div>
+  <div style="font-size:0.85em;opacity:0.55;max-width:220px;line-height:1.8;">
+    本演示为 16:9 横版设计<br>请将设备旋转至横屏模式
+  </div>
+</div>
 <div class="reveal">
 <div class="slides">
 
@@ -606,10 +646,11 @@
     slideNumber: 'c/t',
     showSlideNumber: 'all',
     center: false,
+    touch: true,
     width: 1280,
     height: 720,
-    margin: 0.04,
-    minScale: 0.2,
+    margin: 0.02,
+    minScale: 0.1,
     maxScale: 2.0,
   });
 </script>
