@@ -4,181 +4,155 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI 时代的软件工程，不再缺开发，而是缺质量</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css">
   <style>
-    /* ── Self-hosted fonts ── */
-    @font-face { font-family:'Bebas Neue'; font-style:normal; font-weight:400; font-display:swap; src:url('fonts/bebas-neue.woff2') format('woff2'); }
+    @font-face { font-family:'Bebas Neue'; font-display:swap; src:url('fonts/bebas-neue.woff2') format('woff2'); }
     @font-face { font-family:'Cormorant Garamond'; font-style:italic; font-weight:100 900; font-display:swap; src:url('fonts/cormorant-italic.woff2') format('woff2'); }
     @font-face { font-family:'Cormorant Garamond'; font-style:normal; font-weight:600 900; font-display:swap; src:url('fonts/cormorant-bold.woff2') format('woff2'); }
 
     :root {
       --bg:#08070D; --surface:#12101C;
-      --border:rgba(201,168,76,0.13); --border2:rgba(201,168,76,0.28);
+      --border:rgba(201,168,76,0.14); --border2:rgba(201,168,76,0.30);
       --gold:#C9A84C; --gold-hi:#EDD07C; --gold-dim:rgba(201,168,76,0.10); --gold-glow:rgba(201,168,76,0.45);
       --text:#ECE6D8; --text2:#8C7E6A; --muted:#4A3F30;
       --red:#D94F4F; --red-dim:rgba(217,79,79,0.12); --red-glow:rgba(217,79,79,0.45);
       --green:#3FA86C; --green-dim:rgba(63,168,108,0.12);
       --orange:#D4803A; --orange-dim:rgba(212,128,58,0.12);
       --purple:#9B7EDF; --purple-dim:rgba(155,126,223,0.12);
-      --fd:'Cormorant Garamond','Noto Serif SC',Georgia,serif;
+      --fd:'Cormorant Garamond','LXGW WenKai','Noto Serif SC',Georgia,serif;
       --fn:'Bebas Neue','Arial Narrow',sans-serif;
-      --fb:'PingFang SC','Microsoft YaHei','Hiragino Sans GB',sans-serif;
-      --fs: clamp(13px, 1.15vw + 0.4vh, 17px);
+      --fb:'LXGW WenKai','PingFang SC','Microsoft YaHei','Hiragino Sans GB',sans-serif;
     }
 
     *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
-    html { font-size: var(--fs); }
+
+    /* 18px 固定基准——不再用 clamp 猜字号 */
+    html { font-size:18px; }
     body { background:var(--bg); color:var(--text); font-family:var(--fb); height:100dvh; overflow:hidden; }
 
-    /* ── Deck ── */
-    #deck {
-      height:100dvh; overflow-y:scroll;
-      scroll-snap-type:y mandatory; scroll-behavior:smooth;
-      scrollbar-width:none;
-    }
-    #deck::-webkit-scrollbar { display:none; }
-
-    /* ── Slide ── */
-    .slide {
-      height:100dvh; scroll-snap-align:start;
-      position:relative; overflow:hidden;
-      display:flex; flex-direction:column;
-      padding: clamp(1.5rem,4vh,3rem) clamp(1.8rem,5vw,4.5rem);
-    }
-    .slide-cx { align-items:center; justify-content:center; text-align:center; }
-
-    /* ── Grain ── */
+    /* 底纹 */
     body::after {
       content:''; position:fixed; inset:0; z-index:9999; pointer-events:none;
       background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
       opacity:0.042; mix-blend-mode:overlay;
     }
 
-    /* ── Progress bar ── */
-    #prog {
-      position:fixed; top:0; left:0; height:2px; z-index:1000;
-      background:linear-gradient(90deg,var(--gold),var(--gold-hi));
-      transition:width 0.3s ease; width:10%;
+    /* 滚动容器 */
+    #deck { height:100dvh; overflow-y:scroll; scroll-snap-type:y mandatory; scroll-behavior:smooth; scrollbar-width:none; }
+    #deck::-webkit-scrollbar { display:none; }
+
+    /* 每页：min-height 让内容决定高度，scroll-snap 仍然生效 */
+    .slide {
+      min-height:100dvh; scroll-snap-align:start;
+      position:relative; overflow:hidden;
+      display:flex; flex-direction:column; justify-content:center;
+      padding:5vh 7vw;
     }
 
-    /* ── Controls ── */
-    #ctrl {
-      position:fixed; bottom:1.2rem; right:1.4rem; z-index:1000;
-      display:flex; align-items:center; gap:0.5rem;
-    }
-    .cb {
-      width:1.9rem; height:1.9rem; border-radius:50%;
-      border:1px solid var(--border2); background:rgba(8,7,13,0.75);
-      color:var(--gold); cursor:pointer; font-size:0.8rem;
-      display:flex; align-items:center; justify-content:center;
-      transition:background 0.15s; line-height:1;
-    }
-    .cb:hover { background:var(--gold-dim); }
-    #ctr { font-family:var(--fn); font-size:0.65rem; letter-spacing:0.1em; color:var(--muted); min-width:2.2rem; text-align:center; }
-    #fsb {
-      position:fixed; top:0.9rem; right:1rem; z-index:1000;
-      width:1.7rem; height:1.7rem; border-radius:4px;
-      background:rgba(8,7,13,0.5); border:1px solid var(--border);
-      color:var(--muted); cursor:pointer; font-size:0.68rem;
-      display:flex; align-items:center; justify-content:center;
-      transition:border-color 0.15s, color 0.15s;
-    }
-    #fsb:hover { border-color:var(--border2); color:var(--gold); }
+    /* 版式 */
+    h1 { font-family:var(--fd); font-style:italic; font-weight:700; font-size:clamp(2.8rem,5.5vw,5.2rem); line-height:1.1; }
+    h2 { font-family:var(--fd); font-weight:700; font-size:clamp(1.8rem,3vw,2.8rem); line-height:1.2; }
+    p  { font-size:1rem; line-height:1.95; color:var(--text2); }
+    strong { color:var(--text); }
 
-    /* ── Type ── */
-    h1 { font-family:var(--fd); font-weight:700; font-size:clamp(2rem,5vw,4.6rem); line-height:1.12; color:var(--text); }
-    h2 { font-family:var(--fd); font-weight:700; font-size:clamp(1.5rem,3.2vw,3rem); line-height:1.15; color:var(--text); }
-    h3 { font-family:var(--fb); font-weight:700; font-size:clamp(0.78rem,1.1vw,1rem); color:var(--text); }
-    p  { font-size:clamp(0.72rem,0.95vw,0.9rem); line-height:1.9; color:var(--text2); }
-    strong { font-weight:700; color:var(--text); }
+    .eyebrow {
+      display:inline-flex; align-items:center; gap:0.7rem;
+      font-family:var(--fn); font-size:0.78rem; letter-spacing:0.22em; color:var(--gold);
+      margin-bottom:1.1rem;
+    }
+    .eyebrow::before,.eyebrow::after { content:''; display:inline-block; width:16px; height:1px; background:var(--gold); opacity:0.5; }
 
-    /* ── Deco ── */
-    .orb { position:absolute; border-radius:50%; filter:blur(110px); pointer-events:none; z-index:0; }
     .rule { border:none; height:1px; background:linear-gradient(90deg,transparent,var(--gold) 30%,var(--gold) 70%,transparent); }
-    .rule-v { width:1px; flex-shrink:0; background:linear-gradient(180deg,transparent,var(--gold) 20%,var(--gold) 80%,transparent); }
-    .ey {
-      display:inline-flex; align-items:center; gap:0.6rem;
-      font-family:var(--fn); font-size:clamp(0.58rem,0.75vw,0.72rem); letter-spacing:0.24em; color:var(--gold);
-    }
-    .ey::before,.ey::after { content:''; display:inline-block; width:14px; height:1px; background:var(--gold); opacity:0.5; }
+    .orb  { position:absolute; border-radius:50%; filter:blur(120px); pointer-events:none; z-index:0; }
 
-    .fi { font-style:italic; }
     .grad-gold { background:linear-gradient(115deg,var(--gold),var(--gold-hi)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
     .grad-fire { background:linear-gradient(115deg,var(--orange),var(--red)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
-    .c-gold{color:var(--gold);} .c-red{color:var(--red);} .c-green{color:var(--green);}
-    .c-orange{color:var(--orange);} .c-purple{color:var(--purple);}
 
-    .tag { display:inline-block; padding:2px 9px; border-radius:2px; font-family:var(--fb); font-size:0.6rem; font-weight:600; border:1px solid; letter-spacing:0.03em; }
-    .tg  { background:var(--gold-dim);  color:var(--gold-hi); border-color:var(--border2); }
-    .tr  { background:var(--red-dim);   color:var(--red);     border-color:rgba(217,79,79,0.3); }
-    .to  { background:var(--orange-dim);color:var(--orange);  border-color:rgba(212,128,58,0.3); }
-    .tgh { background:rgba(255,255,255,0.03); color:var(--text2); border-color:rgba(255,255,255,0.1); }
+    /* 引用块 */
+    .qb { border-left:2px solid var(--gold); padding:0.9rem 1.2rem; background:var(--gold-dim); border-radius:0 6px 6px 0; font-size:0.95rem; line-height:1.85; color:var(--text); }
+    .qb.red   { border-color:var(--red);    background:var(--red-dim); }
+    .qb.green { border-color:var(--green);  background:var(--green-dim); }
+    .qb.orange{ border-color:var(--orange); background:var(--orange-dim); }
 
-    .qb { border-left:2px solid var(--gold); border-radius:0 4px 4px 0; padding:clamp(0.55rem,1vh,0.85rem) 1rem; background:var(--gold-dim); font-size:clamp(0.72rem,0.9vw,0.88rem); color:var(--text); line-height:1.85; }
-    .qb.r { border-color:var(--red);   background:var(--red-dim); }
-    .qb.g { border-color:var(--green); background:var(--green-dim); }
-    .qb.o { border-color:var(--orange);background:var(--orange-dim); }
+    /* 卡片 */
+    .card { background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:1.6rem 1.8rem; }
+    .card-gold   { background:var(--gold-dim);   border-color:var(--border2); }
+    .card-red    { background:var(--red-dim);    border-color:rgba(217,79,79,0.25); }
+    .card-green  { background:var(--green-dim);  border-color:rgba(63,168,108,0.25); }
+    .card-orange { background:var(--orange-dim); border-color:rgba(212,128,58,0.25); }
+    .card-purple { background:var(--purple-dim); border-color:rgba(155,126,223,0.25); }
 
-    /* panels */
-    .row { display:flex; align-items:stretch; gap:clamp(0.8rem,1.5vw,1.4rem); }
-    .pan { flex:1; border-radius:9px; padding:clamp(1rem,2vh,1.8rem) clamp(1rem,2vw,2rem); display:flex; flex-direction:column; position:relative; overflow:hidden; }
-    .pan-dim  { background:rgba(255,255,255,0.025); border:1px solid rgba(255,255,255,0.07); background-image:radial-gradient(rgba(255,255,255,0.022) 1px,transparent 1px); background-size:22px 22px; }
-    .pan-gold { background:var(--gold-dim); border:1px solid var(--border2); }
-    .pan-cool { background:rgba(70,110,210,0.07); border:1px solid rgba(80,120,220,0.22); background-image:radial-gradient(rgba(80,120,220,0.06) 1px,transparent 1px); background-size:20px 20px; }
-    .pan-hot  { background:rgba(217,79,79,0.09); border:1px solid rgba(217,79,79,0.32); }
+    /* 网格 */
+    .cols2 { display:grid; grid-template-columns:1fr 1fr; gap:1.4rem; }
+    .cols3 { display:grid; grid-template-columns:repeat(3,1fr); gap:1.4rem; }
 
-    /* type cards */
-    .col3 { display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(0.7rem,1.2vw,1.1rem); flex:1; }
-    .tc { border-radius:10px; overflow:hidden; display:flex; flex-direction:column; border:1px solid; }
-    .tc1 { background:var(--red-dim);    border-color:rgba(217,79,79,0.22); }
-    .tc2 { background:var(--orange-dim); border-color:rgba(212,128,58,0.22); }
-    .tc3 { background:var(--green-dim);  border-color:rgba(63,168,108,0.22); }
-    .tc-img { flex-shrink:0; height:clamp(50px,8vh,80px); position:relative; overflow:hidden; }
-    .tc-img img { width:100%; height:100%; object-fit:cover; filter:grayscale(0.25); opacity:0.5; }
-    .tc-img .tov { position:absolute; inset:0; }
-    .tc-img .tstrip { position:absolute; top:0; left:0; right:0; height:3px; }
-    .tc-body { padding:clamp(0.7rem,1.5vh,1.1rem) clamp(0.8rem,1.5vw,1.3rem); flex:1; display:flex; flex-direction:column; gap:clamp(0.3rem,0.6vh,0.5rem); }
-    .tc-num { position:absolute; font-family:var(--fn); font-size:clamp(4rem,7vw,7.5rem); line-height:0.85; right:-0.05em; bottom:-0.08em; pointer-events:none; user-select:none; }
+    /* 角标 */
+    .tag { display:inline-block; padding:3px 10px; border-radius:3px; font-family:var(--fb); font-size:0.7rem; font-weight:600; border:1px solid; }
+    .tag-gold  { background:var(--gold-dim); color:var(--gold-hi); border-color:var(--border2); }
+    .tag-muted { background:rgba(255,255,255,0.04); color:var(--text2); border-color:rgba(255,255,255,0.12); }
 
-    /* QE */
-    .qcol { flex:1; border-radius:8px; overflow:hidden; }
-    .qcol-head { font-family:var(--fn); font-size:clamp(0.62rem,0.8vw,0.72rem); letter-spacing:0.16em; padding:clamp(0.5rem,1vh,0.7rem) 1.1rem; border-bottom:1px solid rgba(255,255,255,0.06); }
-    .qrow { font-size:clamp(0.68rem,0.85vw,0.8rem); padding:clamp(0.35rem,0.7vh,0.45rem) 1.1rem; border-bottom:1px solid rgba(255,255,255,0.05); color:var(--text2); display:flex; align-items:center; gap:0.5rem; }
-    .qrow:last-child { border:none; }
-    .qrow.hi { color:var(--text); }
-    .qrow.hi::before { content:''; width:4px; height:4px; border-radius:50%; background:var(--gold); flex-shrink:0; }
+    /* 技能行 */
+    .skill { display:flex; align-items:flex-start; gap:1rem; padding:0.9rem 1.1rem; border-radius:8px; border:1px solid var(--border); border-left-width:3px; }
+    .skill-h { border-left-color:var(--green); background:rgba(63,168,108,0.04); }
+    .skill-a { border-left-color:rgba(255,255,255,0.1); opacity:0.5; }
+    .skill-ico   { font-size:1.4rem; flex-shrink:0; margin-top:0.05rem; }
+    .skill-title { font-size:0.95rem; font-weight:700; margin-bottom:0.2rem; color:var(--text); }
+    .skill-desc  { font-size:0.82rem; color:var(--text2); line-height:1.65; }
+    .skill-badge { margin-left:auto; flex-shrink:0; font-family:var(--fn); font-size:0.66rem; letter-spacing:0.06em; padding:3px 10px; border-radius:3px; border:1px solid; white-space:nowrap; align-self:center; }
+    .badge-green { background:var(--green-dim); color:var(--green); border-color:rgba(63,168,108,0.3); }
+    .badge-red   { background:var(--red-dim);   color:var(--red);   border-color:rgba(217,79,79,0.3); }
 
-    /* skills */
-    .sk { display:flex; align-items:center; gap:0.9rem; padding:clamp(0.55rem,1.2vh,0.75rem) 1rem clamp(0.55rem,1.2vh,0.75rem) 0.85rem; border-radius:7px; background:var(--surface); border:1px solid var(--border); border-left-width:3px; }
-    .sk.sk-h { border-left-color:var(--green); }
-    .sk.sk-a { border-left-color:rgba(255,255,255,0.08); }
-    .sk .ico { font-size:1.1rem; flex-shrink:0; }
-    .sk h4 { font-size:clamp(0.75rem,0.95vw,0.88rem); margin:0 0 0.08rem; }
-    .sk p  { font-size:clamp(0.62rem,0.78vw,0.72rem); margin:0; }
-    .sk .lb { margin-left:auto; flex-shrink:0; font-family:var(--fn); letter-spacing:0.08em; font-size:0.58rem; padding:2px 9px; border-radius:2px; border:1px solid; }
-    .la { background:var(--red-dim);   color:var(--red);   border-color:rgba(217,79,79,0.3); }
-    .lh { background:var(--green-dim); color:var(--green); border-color:rgba(63,168,108,0.3); }
+    /* 进度条 */
+    #prog { position:fixed; top:0; left:0; height:2px; z-index:1000; background:linear-gradient(90deg,var(--gold),var(--gold-hi)); transition:width 0.3s ease; width:10%; }
 
-    /* role cards */
-    .rc { flex:1; border-radius:10px; padding:clamp(1rem,2vh,1.4rem) clamp(0.8rem,1.5vw,1.2rem); background:var(--surface); border:1px solid var(--border2); display:flex; flex-direction:column; align-items:center; text-align:center; gap:0.4rem; position:relative; overflow:hidden; }
-    .rc::before { content:''; position:absolute; top:0; left:0; right:0; height:3px; border-radius:10px 10px 0 0; }
-    .rc-gold::before   { background:linear-gradient(90deg,var(--gold),rgba(201,168,76,0.3)); }
-    .rc-purple::before { background:linear-gradient(90deg,var(--purple),rgba(155,126,223,0.3)); }
-    .rc-green::before  { background:linear-gradient(90deg,var(--green),rgba(63,168,108,0.3)); }
-    .rc-ico   { font-size:clamp(1.4rem,2.2vw,2rem); margin-top:0.3rem; }
-    .rc-title { font-family:var(--fd); font-size:clamp(0.85rem,1.1vw,1rem); font-weight:700; }
-    .rc-desc  { font-size:clamp(0.62rem,0.75vw,0.7rem); color:var(--text2); line-height:1.65; }
+    /* 翻页控件 */
+    #ctrl { position:fixed; bottom:1.2rem; right:1.4rem; z-index:1000; display:flex; align-items:center; gap:0.5rem; }
+    .cb { width:2rem; height:2rem; border-radius:50%; border:1px solid var(--border2); background:rgba(8,7,13,0.75); color:var(--gold); cursor:pointer; font-size:0.9rem; display:flex; align-items:center; justify-content:center; }
+    .cb:hover { background:var(--gold-dim); }
+    #ctr { font-family:var(--fn); font-size:0.7rem; letter-spacing:0.1em; color:var(--muted); min-width:2.5rem; text-align:center; }
+    #fsb { position:fixed; top:0.9rem; right:1rem; z-index:1000; width:1.8rem; height:1.8rem; border-radius:4px; background:rgba(8,7,13,0.5); border:1px solid var(--border); color:var(--muted); cursor:pointer; font-size:0.7rem; display:flex; align-items:center; justify-content:center; }
+    #fsb:hover { border-color:var(--border2); color:var(--gold); }
 
-    @keyframes float { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-10px);} }
+    @keyframes float { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-8px);} }
 
-    /* Short screens (phones in any orientation, h < 700px): free scroll */
-    @media (max-height:699px) {
-      #deck  { scroll-snap-type:none; }
-      .slide { height:auto; min-height:0; padding:2rem 5vw; }
+    /* ── 手机（竖屏 w<600px 或 横屏 h<500px）──
+       把滚动容器从 #deck 换成 body，slide 自由伸展，彻底解决裁剪问题。
+       scrollIntoView / IntersectionObserver 不依赖滚动容器，JS 无需改动。 */
+    @media (max-width:600px), (max-height:500px) {
+      body            { height:auto; overflow-y:auto; }
+      #deck           { height:auto; overflow:visible; scroll-snap-type:none; }
+      .slide          { height:auto; min-height:0; overflow:visible;
+                        padding:3rem 5vw 4rem; justify-content:flex-start;
+                        border-bottom:1px solid rgba(201,168,76,0.08); }
     }
-    /* Narrow screens (phones in portrait, w < 600px): stack columns */
-    @media (max-width:599px) {
-      .col3 { grid-template-columns:1fr; }
-      .row  { flex-direction:column; }
+
+    /* 竖屏专属：列布局 + 封面 + 流程图 + 徽章 */
+    @media (max-width:600px) {
+      .cols2, .cols3  { grid-template-columns:1fr; gap:0.9rem; }
+      h1              { font-size:clamp(1.7rem,7vw,2.8rem); }
+      h2              { font-size:clamp(1.25rem,5vw,1.8rem); }
+      .card           { padding:1.1rem 1.3rem; }
+      .eyebrow        { margin-bottom:0.7rem; }
+      .hero-img       { width:100% !important; }
+      .hero-img img   { opacity:0.18 !important; }
+      .hero-content   { max-width:100% !important; }
+      .flow-row       { flex-direction:column; }
+      .flow-arrow     { align-self:center; transform:rotate(90deg); }
+      .skill          { flex-wrap:wrap; gap:0.5rem 0.8rem; }
+      .skill-badge    { margin-left:0; }
+    }
+
+    /* 横屏专属：缩小字号和间距 */
+    @media (max-height:500px) {
+      .slide          { padding:2.5rem 7vw 3rem; }
+      .card           { padding:0.8rem 1rem; }
+      .cols2, .cols3  { gap:0.8rem; }
+      .eyebrow        { margin-bottom:0.4rem; }
+      .qb             { padding:0.6rem 1rem; font-size:0.88rem; }
+      .skill          { padding:0.55rem 0.8rem; gap:0.6rem; }
+      h1              { font-size:clamp(1.5rem,4vw,3rem); }
+      h2              { font-size:clamp(1.1rem,2.2vw,2rem); }
     }
   </style>
 </head>
@@ -187,107 +161,87 @@
 <div id="prog"></div>
 <button id="fsb" onclick="toggleFS()" title="全屏 F">⛶</button>
 <div id="ctrl">
-  <button class="cb" onclick="go(-1)" title="← 上一页">‹</button>
+  <button class="cb" onclick="go(-1)" title="上一页">‹</button>
   <span id="ctr">1/10</span>
-  <button class="cb" onclick="go(1)"  title="→ 下一页">›</button>
+  <button class="cb" onclick="go(1)"  title="下一页">›</button>
 </div>
 
 <div id="deck">
 
-<!-- ═══ 01 · COVER ═══ -->
+<!-- ══ 01 封面 ══ -->
 <section class="slide" id="s01">
-  <div class="orb" style="width:45vw;height:40vh;background:rgba(201,168,76,0.07);top:-10vh;left:-8vw;"></div>
-  <div class="orb" style="width:28vw;height:28vw;background:rgba(80,50,150,0.08);bottom:-8vh;left:5vw;"></div>
-  <!-- hero image right panel -->
-  <div style="position:absolute;right:0;top:0;width:44%;height:100%;pointer-events:none;z-index:0;overflow:hidden;">
+  <!-- 右侧配图 -->
+  <div class="hero-img" style="position:absolute;right:0;top:0;width:42%;height:100%;z-index:0;pointer-events:none;">
     <img src="../../images/ai-era-quality-engineering/hero-quality-gate.webp"
-         style="width:100%;height:100%;object-fit:cover;opacity:0.48;filter:grayscale(0.12);">
-    <div style="position:absolute;inset:0;background:linear-gradient(90deg,#08070D 0%,rgba(8,7,13,0.7) 35%,rgba(8,7,13,0.1) 100%);"></div>
-    <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,7,13,0.5) 0%,transparent 22%,transparent 72%,rgba(8,7,13,0.65) 100%);"></div>
+         style="width:100%;height:100%;object-fit:cover;opacity:0.45;filter:grayscale(0.1);">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,#08070D 0%,rgba(8,7,13,0.55) 28%,rgba(8,7,13,0.0) 100%);"></div>
   </div>
-  <!-- ghost char -->
-  <div style="position:absolute;font-family:var(--fn);font-size:clamp(12rem,25vw,28rem);line-height:0.85;color:rgba(201,168,76,0.028);pointer-events:none;user-select:none;left:-0.04em;bottom:-0.1em;z-index:0;">质</div>
-
-  <!-- content (left 55%) -->
-  <div style="position:relative;z-index:1;max-width:54%;height:100%;display:flex;flex-direction:column;justify-content:center;gap:0;">
-    <div class="ey" style="margin-bottom:clamp(0.8rem,1.8vh,1.2rem);">AI 时代 · 软件工程新范式</div>
-    <hr class="rule" style="width:48px;margin-bottom:clamp(1rem,2.2vh,1.6rem);">
-    <h1 class="fi" style="margin-bottom:clamp(1rem,2.2vh,1.5rem);">
+  <!-- 水印大字 -->
+  <div style="position:absolute;font-family:var(--fn);font-size:min(36rem,44vw);line-height:1;color:rgba(201,168,76,0.024);pointer-events:none;right:-0.03em;bottom:-0.14em;z-index:0;">质</div>
+  <!-- 主内容 -->
+  <div class="hero-content" style="position:relative;z-index:1;max-width:52%;">
+    <div class="eyebrow" style="margin-bottom:1.6rem;">AI 时代 · 软件工程新范式</div>
+    <hr class="rule" style="width:52px;margin-bottom:2rem;">
+    <h1 style="margin-bottom:2rem;">
       AI 时代的软件工程<br>
-      不再缺&thinsp;<span style="color:rgba(217,79,79,0.45);text-decoration:line-through;text-decoration-thickness:2px;font-style:normal;">开发</span>，<br>
-      而是缺&thinsp;<span class="grad-gold" style="font-style:normal;text-shadow:0 0 60px var(--gold-glow);">质量</span>
+      不再缺&thinsp;<span style="color:rgba(217,79,79,0.5);text-decoration:line-through;text-decoration-thickness:2px;font-style:normal;">开发</span>，<br>
+      而是缺&thinsp;<span class="grad-gold" style="font-style:normal;text-shadow:0 0 80px var(--gold-glow);">质量</span>
     </h1>
-    <hr class="rule" style="width:48px;margin-bottom:clamp(0.9rem,2vh,1.4rem);">
-    <p style="max-width:400px;line-height:2;">
+    <hr class="rule" style="width:52px;margin-bottom:1.8rem;">
+    <p style="max-width:380px;line-height:2.1;">
       从三类开发者的面试观察出发，<br>探讨 AI 如何重构软件工程的瓶颈、测试与产品思维
     </p>
-    <div style="margin-top:clamp(1.2rem,2.8vh,2rem);display:flex;align-items:center;gap:1.4rem;font-family:var(--fn);font-size:0.65rem;color:var(--muted);letter-spacing:0.18em;">
+    <div style="margin-top:2rem;display:flex;align-items:center;gap:1.4rem;font-family:var(--fn);font-size:0.74rem;color:var(--muted);letter-spacing:0.18em;">
       <span>老孙正经胡说</span>
-      <span style="width:1px;height:11px;background:var(--border2);display:inline-block;"></span>
+      <span style="width:1px;height:12px;background:var(--border2);display:inline-block;"></span>
       <span>2026 · 06</span>
     </div>
   </div>
 </section>
 
-<!-- ═══ 02 · 范式转变 ═══ -->
+<!-- ══ 02 范式转变 ══ -->
 <section class="slide" id="s02">
-  <div class="orb" style="width:30vw;height:30vh;background:rgba(201,168,76,0.07);top:-8vh;right:-5vw;"></div>
-  <div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;">
-    <div class="ey" style="margin-bottom:0.6rem;">范式转变</div>
-    <h2 style="margin-bottom:clamp(1rem,2.5vh,1.6rem);">软件工程的<span class="grad-gold"> 主角</span> 变了</h2>
-    <div class="row" style="flex:1;">
-      <!-- past -->
-      <div class="pan pan-dim">
-        <div style="position:absolute;font-family:var(--fn);font-size:clamp(5rem,10vw,9rem);line-height:0.85;color:rgba(255,255,255,0.03);right:-0.08em;bottom:-0.08em;pointer-events:none;">旧</div>
-        <span style="font-family:var(--fn);font-size:0.65rem;letter-spacing:0.2em;color:var(--muted);margin-bottom:clamp(0.8rem,1.8vh,1.2rem);">过去</span>
-        <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(0.35rem,0.8vh,0.55rem);">
-          <div style="font-size:clamp(2rem,3.5vw,3rem);opacity:0.36;filter:grayscale(1);">👤</div>
-          <div style="font-family:var(--fd);font-size:clamp(0.85rem,1.3vw,1.1rem);font-weight:700;color:var(--text2);">人</div>
-          <div style="font-size:0.62rem;color:var(--muted);">主导 · 执行 · 决策</div>
-          <div style="font-size:0.65rem;color:var(--muted);margin:0.3rem 0;">↓ 辅助</div>
-          <div style="font-size:clamp(1.2rem,2.2vw,1.7rem);opacity:0.2;">🤖</div>
-          <div style="font-size:0.58rem;color:var(--muted);">AI · 工具</div>
-        </div>
-        <div style="font-size:0.62rem;color:var(--muted);border-top:1px solid rgba(255,255,255,0.05);padding-top:0.65rem;margin-top:0.8rem;font-style:italic;">AI 辅助人完成工作</div>
+  <div class="orb" style="width:38vw;height:38vw;background:rgba(201,168,76,0.06);top:-12%;right:-8%;"></div>
+  <div style="position:relative;z-index:1;">
+    <div class="eyebrow">范式转变</div>
+    <h2 style="margin-bottom:2rem;">软件工程的<span class="grad-gold"> 主角</span> 变了</h2>
+    <div class="cols2" style="align-items:start;">
+      <!-- 过去 -->
+      <div class="card" style="border-top:3px solid rgba(255,255,255,0.12);">
+        <div style="font-family:var(--fn);font-size:0.74rem;letter-spacing:0.22em;color:var(--muted);margin-bottom:1.4rem;">过去</div>
+        <div style="font-size:4.5rem;opacity:0.38;filter:grayscale(1);line-height:1;margin-bottom:1rem;">👤</div>
+        <div style="font-family:var(--fd);font-size:2rem;font-weight:700;color:var(--text2);margin-bottom:0.4rem;">人</div>
+        <p style="font-size:0.92rem;margin-bottom:1.4rem;">主导 · 执行 · 决策</p>
+        <div style="font-size:0.88rem;color:var(--muted);margin-bottom:1rem;">↓ &nbsp;AI 仅作为辅助工具</div>
+        <div style="font-size:2.2rem;opacity:0.2;line-height:1;margin-bottom:1.4rem;">🤖</div>
+        <p style="font-size:0.82rem;color:var(--muted);font-style:italic;padding-top:1rem;border-top:1px solid rgba(255,255,255,0.06);">AI 辅助人完成工作</p>
       </div>
-      <!-- arrow -->
-      <div style="display:flex;align-items:center;justify-content:center;flex-shrink:0;padding:0 0.3rem;">
-        <div style="display:flex;flex-direction:column;align-items:center;gap:0.4rem;">
-          <div class="rule-v" style="height:60px;"></div>
-          <span style="color:var(--gold);font-size:1.3rem;line-height:1;">→</span>
-          <div class="rule-v" style="height:60px;"></div>
-        </div>
-      </div>
-      <!-- now -->
-      <div class="pan pan-gold">
-        <div style="position:absolute;font-family:var(--fn);font-size:clamp(5rem,10vw,9rem);line-height:0.85;color:rgba(201,168,76,0.05);right:-0.08em;bottom:-0.08em;pointer-events:none;">新</div>
-        <span style="font-family:var(--fn);font-size:0.65rem;letter-spacing:0.2em;color:var(--gold);margin-bottom:clamp(0.8rem,1.8vh,1.2rem);">现在</span>
-        <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(0.35rem,0.8vh,0.55rem);">
-          <div style="font-size:clamp(2rem,3.5vw,3rem);filter:drop-shadow(0 0 14px var(--gold-glow));">🤖</div>
-          <div style="font-family:var(--fd);font-size:clamp(0.85rem,1.3vw,1.1rem);font-weight:700;color:var(--gold);">AI</div>
-          <div style="font-size:0.62rem;color:var(--text2);">主要执行者</div>
-          <div style="font-size:0.65rem;color:var(--gold);margin:0.3rem 0;">↓ 被指挥</div>
-          <div style="font-size:clamp(1.2rem,2.2vw,1.7rem);">👤</div>
-          <div style="font-size:0.58rem;color:var(--text2);">人 · 规划 · 判断 · 质量</div>
-        </div>
-        <div style="font-size:0.62rem;color:var(--gold);border-top:1px solid var(--border2);padding-top:0.65rem;margin-top:0.8rem;font-style:italic;">AI 是主要执行者，人负责规划、判断和质量</div>
+      <!-- 现在 -->
+      <div class="card card-gold" style="border-top:3px solid var(--gold);">
+        <div style="font-family:var(--fn);font-size:0.74rem;letter-spacing:0.22em;color:var(--gold);margin-bottom:1.4rem;">现在</div>
+        <div style="font-size:4.5rem;filter:drop-shadow(0 0 22px var(--gold-glow));line-height:1;margin-bottom:1rem;">🤖</div>
+        <div style="font-family:var(--fd);font-size:2rem;font-weight:700;color:var(--gold);margin-bottom:0.4rem;">AI</div>
+        <p style="font-size:0.92rem;color:var(--text2);margin-bottom:1.4rem;">主要执行者</p>
+        <div style="font-size:0.88rem;color:var(--gold);margin-bottom:1rem;">↓ &nbsp;人负责指挥、判断与质量</div>
+        <div style="font-size:2.2rem;line-height:1;margin-bottom:1.4rem;">👤</div>
+        <p style="font-size:0.82rem;color:var(--gold);font-style:italic;padding-top:1rem;border-top:1px solid var(--border2);">人负责规划、判断和质量</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══ 03 · 核心挑战 ═══ -->
-<section class="slide slide-cx" id="s03">
-  <div class="orb" style="width:70vw;height:60vh;background:rgba(217,79,79,0.05);top:50%;left:50%;transform:translate(-50%,-50%);"></div>
-  <div class="orb" style="width:35vw;height:35vh;background:rgba(217,79,79,0.09);top:50%;left:50%;transform:translate(-50%,-50%);filter:blur(60px);"></div>
-  <div style="position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:clamp(0.7rem,1.5vh,1.1rem);">
-    <div class="ey" style="color:var(--red);">核心挑战</div>
-    <div style="font-family:var(--fn);font-size:0.85rem;letter-spacing:0.22em;color:var(--muted);text-decoration:line-through;text-decoration-color:rgba(100,80,60,0.6);">写代码</div>
-    <h1 class="fi" style="font-size:clamp(2.6rem,6.5vw,6.2rem);text-align:center;line-height:1.16;color:var(--red);text-shadow:0 0 50px rgba(217,79,79,0.5),0 0 120px rgba(217,79,79,0.2);">
+<!-- ══ 03 核心挑战 ══ -->
+<section class="slide" id="s03" style="align-items:center;text-align:center;">
+  <div class="orb" style="width:60vw;height:60vh;background:rgba(217,79,79,0.05);top:50%;left:50%;transform:translate(-50%,-50%);"></div>
+  <div class="orb" style="width:26vw;height:26vw;background:rgba(217,79,79,0.10);top:50%;left:50%;transform:translate(-50%,-50%);filter:blur(60px);"></div>
+  <div style="position:relative;z-index:1;">
+    <div class="eyebrow" style="justify-content:center;color:var(--red);">核心挑战</div>
+    <div style="font-family:var(--fn);font-size:0.92rem;letter-spacing:0.24em;color:var(--muted);text-decoration:line-through;margin-bottom:1.2rem;">写代码</div>
+    <h1 style="color:var(--red);text-shadow:0 0 60px rgba(217,79,79,0.5),0 0 140px rgba(217,79,79,0.15);margin-bottom:1.6rem;">
       你不知道<br>它写得对不对
     </h1>
-    <hr class="rule" style="width:38px;">
-    <p style="font-size:clamp(0.78rem,1vw,0.95rem);text-align:center;max-width:400px;line-height:2;">
+    <hr class="rule" style="width:52px;margin:0 auto 1.6rem;">
+    <p style="font-size:1rem;max-width:400px;line-height:2.1;">
       AI 可以一分钟生成几百行代码，<br>
       但由于其生成机制具有<strong>概率性</strong>，<br>
       它 <strong style="color:var(--red);">永远都有可能犯错</strong>。
@@ -295,42 +249,42 @@
   </div>
 </section>
 
-<!-- ═══ 04 · 瓶颈转移 ═══ -->
+<!-- ══ 04 瓶颈转移 ══ -->
 <section class="slide" id="s04">
-  <div class="orb" style="width:28vw;height:28vh;background:rgba(100,60,200,0.09);bottom:-6vh;right:-4vw;"></div>
-  <div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;">
-    <div class="ey" style="margin-bottom:0.6rem;">瓶颈迁移 &amp; 应对思路</div>
-    <h2 style="margin-bottom:clamp(1rem,2.5vh,1.5rem);">从<span class="grad-fire"> 生成</span> 转向<span class="grad-gold"> 质量</span></h2>
+  <div class="orb" style="width:30vw;height:30vw;background:rgba(100,60,200,0.08);bottom:-10%;right:-5%;"></div>
+  <div style="position:relative;z-index:1;">
+    <div class="eyebrow">瓶颈迁移 &amp; 应对思路</div>
+    <h2 style="margin-bottom:2.2rem;">从<span class="grad-fire"> 生成</span> 转向<span class="grad-gold"> 质量</span></h2>
 
-    <!-- flow diagram -->
-    <div style="display:flex;align-items:center;gap:0.8rem;margin-bottom:clamp(1rem,2.5vh,1.4rem);">
-      <div style="flex:1;border-radius:8px;padding:clamp(0.7rem,1.5vh,1rem) 1.1rem;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);text-align:center;position:relative;">
-        <div style="font-family:var(--fn);font-size:0.6rem;letter-spacing:0.14em;color:var(--muted);margin-bottom:0.3rem;">生成</div>
-        <div style="font-size:clamp(1rem,2vw,1.4rem);opacity:0.32;margin-bottom:0.25rem;">📝</div>
-        <div style="font-size:0.6rem;color:var(--muted);">AI 写代码</div>
-        <div style="position:absolute;top:-7px;right:-7px;background:var(--green-dim);border:1px solid rgba(63,168,108,0.3);border-radius:2px;font-size:0.46rem;color:var(--green);padding:1px 6px;font-family:var(--fn);letter-spacing:0.06em;">已解决</div>
+    <!-- 流程图 -->
+    <div class="flow-row" style="display:flex;align-items:stretch;gap:1rem;margin-bottom:2rem;">
+      <div class="card" style="flex:1;text-align:center;position:relative;padding:1.6rem 1.2rem;">
+        <div style="font-family:var(--fn);font-size:0.74rem;letter-spacing:0.14em;color:var(--muted);margin-bottom:0.7rem;">生成</div>
+        <div style="font-size:2.5rem;opacity:0.32;margin-bottom:0.7rem;">📝</div>
+        <div style="font-size:0.9rem;color:var(--muted);">AI 写代码</div>
+        <div style="position:absolute;top:-10px;right:-10px;background:var(--green-dim);border:1px solid rgba(63,168,108,0.32);border-radius:3px;font-size:0.62rem;color:var(--green);padding:2px 8px;font-family:var(--fn);">已解决</div>
       </div>
-      <span style="color:var(--gold);font-size:1.1rem;flex-shrink:0;">→</span>
-      <div style="flex:1.5;border-radius:8px;padding:clamp(0.7rem,1.5vh,1rem) 1.4rem;background:var(--gold-dim);border:2px solid var(--border2);text-align:center;position:relative;box-shadow:0 0 28px rgba(201,168,76,0.08);">
-        <div style="font-family:var(--fn);font-size:0.6rem;letter-spacing:0.14em;color:var(--gold);margin-bottom:0.3rem;">质量</div>
-        <div style="font-size:clamp(1rem,2vw,1.4rem);margin-bottom:0.25rem;">🔍</div>
-        <div style="font-size:0.6rem;color:var(--text);">如何保证生成结果正确</div>
-        <div style="position:absolute;top:-7px;right:-7px;background:var(--red-dim);border:1px solid rgba(217,79,79,0.3);border-radius:2px;font-size:0.46rem;color:var(--red);padding:1px 6px;font-family:var(--fn);letter-spacing:0.06em;">新瓶颈</div>
+      <div class="flow-arrow" style="display:flex;align-items:center;flex-shrink:0;font-size:1.8rem;color:var(--gold);">→</div>
+      <div class="card card-gold" style="flex:1.7;text-align:center;position:relative;padding:1.6rem 1.4rem;box-shadow:0 0 40px rgba(201,168,76,0.07);">
+        <div style="font-family:var(--fn);font-size:0.74rem;letter-spacing:0.14em;color:var(--gold);margin-bottom:0.7rem;">质量</div>
+        <div style="font-size:2.5rem;margin-bottom:0.7rem;">🔍</div>
+        <div style="font-size:0.9rem;color:var(--text);">如何保证生成结果正确</div>
+        <div style="position:absolute;top:-10px;right:-10px;background:var(--red-dim);border:1px solid rgba(217,79,79,0.32);border-radius:3px;font-size:0.62rem;color:var(--red);padding:2px 8px;font-family:var(--fn);">新瓶颈</div>
       </div>
-      <span style="color:var(--gold);font-size:1.1rem;flex-shrink:0;">→</span>
-      <div style="flex:1;border-radius:8px;padding:clamp(0.7rem,1.5vh,1rem) 1.1rem;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);text-align:center;">
-        <div style="font-family:var(--fn);font-size:0.6rem;letter-spacing:0.14em;color:var(--muted);margin-bottom:0.3rem;">交付</div>
-        <div style="font-size:clamp(1rem,2vw,1.4rem);opacity:0.4;margin-bottom:0.25rem;">🚀</div>
-        <div style="font-size:0.6rem;color:var(--muted);">高质量产品</div>
+      <div class="flow-arrow" style="display:flex;align-items:center;flex-shrink:0;font-size:1.8rem;color:var(--gold);">→</div>
+      <div class="card" style="flex:1;text-align:center;padding:1.6rem 1.2rem;">
+        <div style="font-family:var(--fn);font-size:0.74rem;letter-spacing:0.14em;color:var(--muted);margin-bottom:0.7rem;">交付</div>
+        <div style="font-size:2.5rem;opacity:0.38;margin-bottom:0.7rem;">🚀</div>
+        <div style="font-size:0.9rem;color:var(--muted);">高质量产品</div>
       </div>
     </div>
 
-    <!-- magic block -->
-    <div style="display:flex;align-items:center;gap:1.2rem;padding:clamp(0.85rem,1.8vh,1.1rem) clamp(1rem,2vw,1.4rem);border-radius:9px;background:rgba(155,126,223,0.07);border:1px solid rgba(155,126,223,0.2);border-left:3px solid var(--purple);">
-      <div style="font-size:clamp(1.5rem,2.5vw,2.2rem);flex-shrink:0;filter:drop-shadow(0 0 10px rgba(155,126,223,0.5));">⚡</div>
+    <!-- 魔法观点 -->
+    <div style="display:flex;align-items:center;gap:1.5rem;padding:1.3rem 1.7rem;border-radius:10px;background:rgba(155,126,223,0.07);border:1px solid rgba(155,126,223,0.22);border-left:3px solid var(--purple);">
+      <div style="font-size:2.8rem;flex-shrink:0;filter:drop-shadow(0 0 14px rgba(155,126,223,0.5));">⚡</div>
       <div>
-        <div style="font-family:var(--fd);font-style:italic;font-size:clamp(1rem,1.5vw,1.25rem);font-weight:600;color:var(--text);margin-bottom:0.28rem;">打败魔法的，只能是魔法本身</div>
-        <p style="font-size:clamp(0.7rem,0.9vw,0.84rem);line-height:1.88;">
+        <div style="font-family:var(--fd);font-style:italic;font-size:1.4rem;font-weight:600;color:var(--text);margin-bottom:0.5rem;">打败魔法的，只能是魔法本身</div>
+        <p style="font-size:0.95rem;line-height:1.9;">
           未来的质量同样必须依赖 AI 保证——但 AI 擅长<strong>执行</strong>，不擅长<strong>思考</strong>。<br>
           真正有价值的，是<strong style="color:var(--gold);">不断提出 AI 还没测试到的问题</strong>。
         </p>
@@ -339,229 +293,204 @@
   </div>
 </section>
 
-<!-- ═══ 05 · 三类开发者 ═══ -->
+<!-- ══ 05 三类开发者 ══ -->
 <section class="slide" id="s05">
-  <div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;">
-    <div class="ey" style="margin-bottom:0.6rem;">面试观察</div>
-    <h2 style="margin-bottom:clamp(0.8rem,2vh,1.3rem);">我看到了<span class="grad-gold"> 三类</span> 开发者</h2>
-    <div class="col3">
-
-      <!-- T1 -->
-      <div class="tc tc1">
-        <div class="tc-img">
-          <img src="../../images/ai-era-quality-engineering/engineer-type-1-resistant.webp" style="object-position:center 22%;">
-          <div class="tov" style="background:linear-gradient(180deg,rgba(20,5,5,0.2) 0%,rgba(25,8,8,0.8) 100%);"></div>
-          <div class="tstrip" style="background:linear-gradient(90deg,var(--red),rgba(217,79,79,0.3));"></div>
-        </div>
-        <div class="tc-body" style="position:relative;">
-          <div class="tc-num" style="color:rgba(217,79,79,0.07);">01</div>
-          <span style="font-family:var(--fn);font-size:0.62rem;letter-spacing:0.2em;color:var(--red);">类型 01</span>
-          <div style="font-size:clamp(1.4rem,2.2vw,2rem);">🧱</div>
-          <h3 style="color:var(--red);">仍然抗拒 AI</h3>
-          <p style="font-size:clamp(0.65rem,0.85vw,0.78rem);line-height:1.8;">否认变化已经发生，<br>认为传统开发能力仍然足够</p>
-          <div class="qb r" style="font-size:clamp(0.62rem,0.78vw,0.72rem);margin-top:auto;">
-            本质是心理惯性——<br>接受 AI 意味着多年积累<br>的工作方式需要被重建
-          </div>
-        </div>
+  <div style="position:relative;z-index:1;">
+    <div class="eyebrow">面试观察</div>
+    <h2 style="margin-bottom:2rem;">我看到了<span class="grad-gold"> 三类</span> 开发者</h2>
+    <div class="cols3">
+      <!-- T1 抗拒 -->
+      <div class="card card-red" style="border-top:3px solid var(--red);">
+        <div style="font-family:var(--fn);font-size:0.72rem;letter-spacing:0.2em;color:var(--red);margin-bottom:1.1rem;">类型 01</div>
+        <div style="font-size:3rem;line-height:1;margin-bottom:0.9rem;">🧱</div>
+        <div style="font-size:1.12rem;font-weight:700;color:var(--red);margin-bottom:0.6rem;">仍然抗拒 AI</div>
+        <p style="font-size:0.9rem;line-height:1.85;margin-bottom:1.1rem;">否认变化已经发生，认为传统开发能力仍然足够</p>
+        <div class="qb red" style="font-size:0.88rem;">本质是心理惯性——接受 AI 意味着多年积累的工作方式需要被重建</div>
       </div>
-
-      <!-- T2 -->
-      <div class="tc tc2">
-        <div class="tc-img">
-          <img src="../../images/ai-era-quality-engineering/engineer-type-2-dabbling.webp" style="object-position:center 30%;">
-          <div class="tov" style="background:linear-gradient(180deg,rgba(20,10,4,0.2) 0%,rgba(25,12,5,0.8) 100%);"></div>
-          <div class="tstrip" style="background:linear-gradient(90deg,var(--orange),rgba(212,128,58,0.3));"></div>
+      <!-- T2 浅尝 -->
+      <div class="card card-orange" style="border-top:3px solid var(--orange);">
+        <div style="font-family:var(--fn);font-size:0.72rem;letter-spacing:0.2em;color:var(--orange);margin-bottom:1.1rem;">
+          类型 02 &nbsp;<span class="tag tag-muted" style="font-size:0.66em;vertical-align:middle;">人数最多</span>
         </div>
-        <div class="tc-body" style="position:relative;">
-          <div class="tc-num" style="color:rgba(212,128,58,0.07);">02</div>
-          <span style="font-family:var(--fn);font-size:0.62rem;letter-spacing:0.2em;color:var(--orange);">类型 02&ensp;<span class="tag to" style="font-size:0.82em;vertical-align:middle;">人数最多</span></span>
-          <div style="font-size:clamp(1.4rem,2.2vw,2rem);">🔭</div>
-          <h3 style="color:var(--orange);">浅尝辄止</h3>
-          <p style="font-size:clamp(0.65rem,0.85vw,0.78rem);line-height:1.8;">体验过工具，<br>但没有真正融入工作流</p>
-          <div class="qb o" style="font-size:clamp(0.62rem,0.78vw,0.72rem);margin-top:auto;">
-            看起来在用，实际没有本质变化。<br>浅尝辄止的危险，在于<br><strong>误以为自己已经知道</strong>
-          </div>
-        </div>
+        <div style="font-size:3rem;line-height:1;margin-bottom:0.9rem;">🔭</div>
+        <div style="font-size:1.12rem;font-weight:700;color:var(--orange);margin-bottom:0.6rem;">浅尝辄止</div>
+        <p style="font-size:0.9rem;line-height:1.85;margin-bottom:1.1rem;">体验过工具，但没有真正融入工作流</p>
+        <div class="qb orange" style="font-size:0.88rem;">浅尝辄止的危险，在于<strong>误以为自己已经知道</strong></div>
       </div>
-
-      <!-- T3 -->
-      <div class="tc tc3">
-        <div class="tc-img">
-          <img src="../../images/ai-era-quality-engineering/engineer-type-3-leading.webp" style="object-position:center 25%;">
-          <div class="tov" style="background:linear-gradient(180deg,rgba(4,18,10,0.2) 0%,rgba(5,22,12,0.8) 100%);"></div>
-          <div class="tstrip" style="background:linear-gradient(90deg,var(--green),rgba(63,168,108,0.3));"></div>
-        </div>
-        <div class="tc-body" style="position:relative;">
-          <div class="tc-num" style="color:rgba(63,168,108,0.07);">03</div>
-          <span style="font-family:var(--fn);font-size:0.62rem;letter-spacing:0.2em;color:var(--green);">类型 03</span>
-          <div style="font-size:clamp(1.4rem,2.2vw,2rem);">🎯</div>
-          <h3 style="color:var(--green);">走在 AI 前面</h3>
-          <p style="font-size:clamp(0.65rem,0.85vw,0.78rem);line-height:1.8;">理解 Agent / Workflow，<br>让 AI 真正承担研发任务</p>
-          <div class="qb g" style="font-size:clamp(0.62rem,0.78vw,0.72rem);margin-top:auto;">
-            但大多数人仍未意识到：<br>AI 带来的不是工具升级，<br>而是<strong>组织角色重新定义</strong>
-          </div>
-        </div>
+      <!-- T3 领先 -->
+      <div class="card card-green" style="border-top:3px solid var(--green);">
+        <div style="font-family:var(--fn);font-size:0.72rem;letter-spacing:0.2em;color:var(--green);margin-bottom:1.1rem;">类型 03</div>
+        <div style="font-size:3rem;line-height:1;margin-bottom:0.9rem;">🎯</div>
+        <div style="font-size:1.12rem;font-weight:700;color:var(--green);margin-bottom:0.6rem;">走在 AI 前面</div>
+        <p style="font-size:0.9rem;line-height:1.85;margin-bottom:1.1rem;">理解 Agent / Workflow，让 AI 真正承担研发任务</p>
+        <div class="qb green" style="font-size:0.88rem;">但大多数人仍未意识到：AI 带来的不是工具升级，而是<strong>组织角色重新定义</strong></div>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- ═══ 06 · 水已经烧开 ═══ -->
+<!-- ══ 06 水已经烧开 ══ -->
 <section class="slide" id="s06">
-  <div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;">
-    <div class="ey" style="color:var(--red);margin-bottom:0.6rem;">紧迫性</div>
-    <h2 style="margin-bottom:clamp(0.9rem,2vh,1.4rem);">AI 的变化，已经不是<span class="grad-fire"> 温水煮青蛙</span></h2>
-    <div class="row" style="flex:1;">
-      <!-- cool -->
-      <div class="pan pan-cool" style="align-items:center;justify-content:center;text-align:center;gap:clamp(0.5rem,1.2vh,0.8rem);">
-        <div style="font-size:clamp(2rem,3.5vw,3.2rem);filter:grayscale(0.6);opacity:0.6;">🐸</div>
-        <div style="font-family:var(--fn);font-size:clamp(1.4rem,3vw,2.2rem);letter-spacing:0.12em;color:rgba(100,150,255,0.55);line-height:1;">2025</div>
-        <div style="font-family:var(--fd);font-size:clamp(1.1rem,2vw,1.6rem);font-weight:700;color:var(--text2);">温水</div>
-        <p style="font-size:clamp(0.68rem,0.88vw,0.82rem);text-align:center;line-height:1.9;max-width:160px;">感觉没关系<br>可以慢慢学<br>还有时间</p>
+  <div style="position:relative;z-index:1;">
+    <div class="eyebrow" style="color:var(--red);">紧迫性</div>
+    <h2 style="margin-bottom:2rem;">AI 的变化，已经不是<span class="grad-fire"> 温水煮青蛙</span></h2>
+    <div class="cols2">
+      <!-- 温水 -->
+      <div class="card" style="border-top:3px solid rgba(100,150,255,0.3);text-align:center;padding:2.5rem 2rem;">
+        <div style="font-size:4rem;opacity:0.45;filter:grayscale(0.7);line-height:1;margin-bottom:1.2rem;">🐸</div>
+        <div style="font-family:var(--fn);font-size:3.5rem;letter-spacing:0.08em;color:rgba(100,150,255,0.45);line-height:1;margin-bottom:0.7rem;">2025</div>
+        <div style="font-family:var(--fd);font-size:1.6rem;font-weight:700;color:var(--text2);margin-bottom:1.2rem;">温水</div>
+        <p style="font-size:0.95rem;line-height:2.1;">感觉没关系<br>可以慢慢学<br>还有时间</p>
       </div>
-      <!-- arrow -->
-      <div style="display:flex;align-items:center;flex-shrink:0;padding:0 0.25rem;">
-        <span style="color:var(--red);font-size:1.5rem;line-height:1;">→</span>
-      </div>
-      <!-- hot -->
-      <div class="pan pan-hot" style="align-items:center;justify-content:center;text-align:center;gap:clamp(0.5rem,1.2vh,0.8rem);position:relative;">
-        <div class="orb" style="width:60%;height:60%;background:rgba(217,79,79,0.12);top:50%;left:50%;transform:translate(-50%,-50%);filter:blur(50px);"></div>
-        <div style="font-size:clamp(2rem,3.5vw,3.2rem);filter:drop-shadow(0 0 16px rgba(220,80,50,0.65));position:relative;z-index:1;">🔥</div>
-        <div style="font-family:var(--fn);font-size:clamp(1.4rem,3vw,2.2rem);letter-spacing:0.12em;color:var(--red);line-height:1;position:relative;z-index:1;">2026</div>
-        <div style="font-family:var(--fd);font-size:clamp(1.1rem,2vw,1.6rem);font-weight:700;color:var(--red);position:relative;z-index:1;">水已经烧开</div>
-        <p style="font-size:clamp(0.68rem,0.88vw,0.82rem);text-align:center;line-height:1.9;max-width:200px;position:relative;z-index:1;">
-          变化<strong>不是未来</strong>才发生<br>
-          而是<strong style="color:var(--red);">已经在发生</strong><br>
-          等到意识到时，往往已经太晚
-        </p>
+      <!-- 沸腾 -->
+      <div class="card card-red" style="border-top:3px solid var(--red);text-align:center;padding:2.5rem 2rem;position:relative;overflow:hidden;">
+        <div class="orb" style="width:70%;height:70%;background:rgba(217,79,79,0.14);top:50%;left:50%;transform:translate(-50%,-50%);filter:blur(50px);z-index:0;"></div>
+        <div style="position:relative;z-index:1;">
+          <div style="font-size:4rem;filter:drop-shadow(0 0 22px rgba(220,80,50,0.72));line-height:1;margin-bottom:1.2rem;">🔥</div>
+          <div style="font-family:var(--fn);font-size:3.5rem;letter-spacing:0.08em;color:var(--red);line-height:1;margin-bottom:0.7rem;">2026</div>
+          <div style="font-family:var(--fd);font-size:1.6rem;font-weight:700;color:var(--red);margin-bottom:1.2rem;">水已经烧开</div>
+          <p style="font-size:0.95rem;line-height:2.1;">
+            变化<strong>不是未来</strong>才发生<br>
+            而是<strong style="color:var(--red);">已经在发生</strong><br>
+            等到意识到时，往往已经太晚
+          </p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══ 07 · 体验最好的模型 ═══ -->
+<!-- ══ 07 体验最好的模型 ══ -->
 <section class="slide" id="s07">
-  <div class="orb" style="width:30vw;height:28vh;background:rgba(201,168,76,0.07);top:-8vh;right:-4vw;"></div>
-  <div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;">
-    <div class="ey" style="margin-bottom:0.6rem;">给候选人的建议</div>
-    <h2 style="margin-bottom:clamp(0.8rem,1.8vh,1.2rem);">先去体验<span class="grad-gold"> 最好的模型</span></h2>
-    <div class="qb r" style="font-size:clamp(0.78rem,1vw,0.95rem);margin-bottom:clamp(0.8rem,1.8vh,1.2rem);">
+  <div class="orb" style="width:32vw;height:32vw;background:rgba(201,168,76,0.06);top:-8%;right:-6%;"></div>
+  <div style="position:relative;z-index:1;">
+    <div class="eyebrow">给候选人的建议</div>
+    <h2 style="margin-bottom:1.8rem;">先去体验<span class="grad-gold"> 最好的模型</span></h2>
+    <div class="qb red" style="font-size:1.05rem;margin-bottom:2rem;">
       "AI 也不过如此。"——这个判断，很可能来自体验了<strong>错误的模型</strong>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(0.8rem,1.5vw,1.2rem);flex:1;">
-      <div style="display:flex;flex-direction:column;padding:clamp(0.9rem,2vh,1.3rem) clamp(1rem,1.8vw,1.5rem);border-radius:9px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.07);border-top:3px solid rgba(217,79,79,0.4);">
-        <div style="font-family:var(--fn);font-size:0.62rem;letter-spacing:0.14em;color:var(--red);margin-bottom:0.8rem;">常见误区来源</div>
-        <p style="font-size:clamp(0.72rem,0.92vw,0.88rem);line-height:1.9;">各种免费模型<br>开源模型<br>国内平台低端入口</p>
-        <div style="margin-top:auto;font-size:0.62rem;color:var(--muted);border-top:1px solid rgba(255,255,255,0.05);padding-top:0.65rem;font-style:italic;">容易形成错误的"第一印象"</div>
+    <div class="cols2">
+      <div class="card" style="border-top:3px solid rgba(217,79,79,0.4);">
+        <div style="font-family:var(--fn);font-size:0.72rem;letter-spacing:0.14em;color:var(--red);margin-bottom:1rem;">常见误区来源</div>
+        <p style="font-size:0.95rem;line-height:2.05;margin-bottom:1.3rem;">各种免费模型<br>开源模型<br>国内平台低端入口</p>
+        <p style="font-size:0.82rem;color:var(--muted);font-style:italic;padding-top:0.9rem;border-top:1px solid rgba(255,255,255,0.06);">容易形成错误的"第一印象"</p>
       </div>
-      <div style="display:flex;flex-direction:column;padding:clamp(0.9rem,2vh,1.3rem) clamp(1rem,1.8vw,1.5rem);border-radius:9px;background:var(--gold-dim);border:1px solid var(--border2);border-top:3px solid var(--gold);">
-        <div style="font-family:var(--fn);font-size:0.62rem;letter-spacing:0.14em;color:var(--gold);margin-bottom:0.8rem;">真正领先的前沿模型</div>
-        <p style="font-size:clamp(0.72rem,0.92vw,0.88rem);line-height:1.9;">与普通模型之间的体验差距<br>远比大多数人想象得 <strong style="color:var(--gold-hi);">大</strong></p>
-        <div style="margin-top:auto;font-size:0.62rem;color:var(--gold);border-top:1px solid var(--border2);padding-top:0.65rem;font-style:italic;">体验过，才能真正理解 AI 会把软件工程带到哪里</div>
+      <div class="card card-gold" style="border-top:3px solid var(--gold);">
+        <div style="font-family:var(--fn);font-size:0.72rem;letter-spacing:0.14em;color:var(--gold);margin-bottom:1rem;">真正领先的前沿模型</div>
+        <p style="font-size:0.95rem;line-height:2.05;margin-bottom:1.3rem;">与普通模型之间的体验差距<br>远比大多数人想象得 <strong style="color:var(--gold-hi);">大</strong></p>
+        <p style="font-size:0.82rem;color:var(--gold);font-style:italic;padding-top:0.9rem;border-top:1px solid var(--border2);">体验过，才能真正理解 AI 会把软件工程带到哪里</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══ 08 · 变化一：质量工程 ═══ -->
+<!-- ══ 08 质量工程 ══ -->
 <section class="slide" id="s08">
-  <div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;">
-    <div class="ey" style="margin-bottom:0.6rem;">变化一</div>
-    <h2 style="margin-bottom:clamp(0.9rem,2vh,1.3rem);">测试正在变成<span class="grad-gold"> 质量工程</span></h2>
-    <div style="display:flex;flex:1;gap:1rem;">
-      <!-- comparison table -->
-      <div style="flex:1;display:flex;gap:0.6rem;align-items:stretch;">
-        <div class="qcol" style="flex:1;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.07);">
-          <div class="qcol-head" style="color:var(--muted);background:rgba(255,255,255,0.02);border-top:3px solid rgba(255,255,255,0.1);">传统测试 TESTING</div>
-          <div class="qrow">手工执行测试用例</div>
-          <div class="qrow">逐个 Case 人工验收</div>
-          <div class="qrow">发现 Bug → 反馈开发</div>
-          <div class="qrow">回归靠记忆与经验</div>
-          <div class="qrow">测试是阶段性动作</div>
-        </div>
-        <div style="display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:1.3rem;flex-shrink:0;padding:0 0.1rem;">→</div>
-        <div class="qcol" style="flex:1;background:var(--gold-dim);border:1px solid var(--border2);">
-          <div class="qcol-head" style="color:var(--gold);background:rgba(201,168,76,0.06);border-top:3px solid var(--gold);border-bottom-color:var(--border);">质量工程 QE</div>
-          <div class="qrow hi">定义验证标准 · 构建自动化体系</div>
-          <div class="qrow hi">AI 生成 + 执行 + 验证</div>
-          <div class="qrow hi">寻找 AI 没发现的问题</div>
-          <div class="qrow hi">站在产品对立面的"白帽黑客"</div>
-          <div class="qrow hi">质量是持续嵌入的能力</div>
+  <div style="position:relative;z-index:1;">
+    <div class="eyebrow">变化一</div>
+    <h2 style="margin-bottom:2rem;">测试正在变成<span class="grad-gold"> 质量工程</span></h2>
+    <div class="cols2" style="margin-bottom:1.6rem;">
+      <!-- 传统测试 -->
+      <div style="background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.08);border-top:3px solid rgba(255,255,255,0.12);border-radius:10px;overflow:hidden;">
+        <div style="font-family:var(--fn);font-size:0.74rem;letter-spacing:0.16em;color:var(--muted);padding:0.9rem 1.4rem;border-bottom:1px solid rgba(255,255,255,0.06);">传统测试 TESTING</div>
+        <div style="font-size:0.92rem;color:var(--text2);">
+          <div style="padding:0.7rem 1.4rem;border-bottom:1px solid rgba(255,255,255,0.04);">手工执行测试用例</div>
+          <div style="padding:0.7rem 1.4rem;border-bottom:1px solid rgba(255,255,255,0.04);">逐个 Case 人工验收</div>
+          <div style="padding:0.7rem 1.4rem;border-bottom:1px solid rgba(255,255,255,0.04);">发现 Bug → 反馈开发</div>
+          <div style="padding:0.7rem 1.4rem;border-bottom:1px solid rgba(255,255,255,0.04);">回归靠记忆与经验</div>
+          <div style="padding:0.7rem 1.4rem;">测试是阶段性动作</div>
         </div>
       </div>
-      <!-- white hat image -->
-      <div style="width:clamp(100px,12vw,160px);flex-shrink:0;border-radius:9px;overflow:hidden;position:relative;border:1px solid var(--border);">
-        <img src="../../images/ai-era-quality-engineering/quality-engineer-white-hat.webp"
-             style="width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(0.18);opacity:0.52;">
-        <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,7,13,0.55) 0%,transparent 45%);"></div>
-        <div style="position:absolute;bottom:0;left:0;right:0;padding:0.6rem 0.7rem;background:linear-gradient(0deg,rgba(8,7,13,0.88) 0%,transparent 100%);">
-          <div style="font-family:var(--fn);font-size:0.54rem;letter-spacing:0.14em;color:var(--gold);line-height:1.6;">白帽黑客<br>思维</div>
+      <!-- 质量工程 -->
+      <div style="background:var(--gold-dim);border:1px solid var(--border2);border-top:3px solid var(--gold);border-radius:10px;overflow:hidden;">
+        <div style="font-family:var(--fn);font-size:0.74rem;letter-spacing:0.16em;color:var(--gold);padding:0.9rem 1.4rem;border-bottom:1px solid var(--border);">质量工程 QE</div>
+        <div style="font-size:0.92rem;color:var(--text);">
+          <div style="padding:0.7rem 1.4rem;border-bottom:1px solid rgba(201,168,76,0.1);display:flex;align-items:center;gap:0.6rem;"><span style="width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0;"></span>定义验证标准 · 构建自动化体系</div>
+          <div style="padding:0.7rem 1.4rem;border-bottom:1px solid rgba(201,168,76,0.1);display:flex;align-items:center;gap:0.6rem;"><span style="width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0;"></span>AI 生成 + 执行 + 验证</div>
+          <div style="padding:0.7rem 1.4rem;border-bottom:1px solid rgba(201,168,76,0.1);display:flex;align-items:center;gap:0.6rem;"><span style="width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0;"></span>寻找 AI 没发现的问题</div>
+          <div style="padding:0.7rem 1.4rem;border-bottom:1px solid rgba(201,168,76,0.1);display:flex;align-items:center;gap:0.6rem;"><span style="width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0;"></span>站在产品对立面的"白帽黑客"</div>
+          <div style="padding:0.7rem 1.4rem;display:flex;align-items:center;gap:0.6rem;"><span style="width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0;"></span>质量是持续嵌入的能力</div>
         </div>
       </div>
     </div>
-    <div class="qb g" style="font-size:clamp(0.72rem,0.9vw,0.86rem);margin-top:clamp(0.7rem,1.5vh,1rem);">
+    <div class="qb green" style="font-size:0.95rem;">
       传统意义上的测试会减少，但<strong style="color:var(--green);">质量不会消失</strong>。这种能力，在 AI 时代反而会越来越<strong>重要</strong>。
     </div>
   </div>
 </section>
 
-<!-- ═══ 09 · 变化二：产品思维 ═══ -->
+<!-- ══ 09 产品思维 ══ -->
 <section class="slide" id="s09">
-  <div class="orb" style="width:25vw;height:25vw;background:rgba(100,60,200,0.08);bottom:-6vh;right:-3vw;"></div>
-  <div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;">
-    <div class="ey" style="margin-bottom:0.6rem;">变化二</div>
-    <h2 style="margin-bottom:0.4rem;">产品思维成为<span class="grad-gold"> 核心能力</span></h2>
-    <p style="font-size:clamp(0.72rem,0.9vw,0.85rem);margin-bottom:clamp(0.9rem,2vh,1.3rem);">AI 越来越擅长<span style="color:var(--muted);">执行</span>，真正难以替代的是——</p>
-    <div style="display:flex;flex-direction:column;gap:clamp(0.45rem,1vh,0.65rem);flex:1;justify-content:center;">
-      <div class="sk sk-h"><span class="ico">🎯</span><div><h4>理解产品与业务</h4><p>知道为什么这样设计，真正需要解决的问题是什么</p></div><span class="lb lh">人类不可替代</span></div>
-      <div class="sk sk-h"><span class="ico">🧠</span><div><h4>判断力与规划力</h4><p>在不确定信息中做出高质量决策，定义"正确的方向"</p></div><span class="lb lh">人类不可替代</span></div>
-      <div class="sk sk-h"><span class="ico">🔍</span><div><h4>系统思考 · 边界意识</h4><p>看到 AI 看不到的隐含假设与边界条件</p></div><span class="lb lh">人类不可替代</span></div>
-      <div class="sk sk-a" style="opacity:0.52;"><span class="ico">⚡</span><div><h4>重复性 · 确定性执行工作</h4><p>大量代码编写、测试执行、格式转换……</p></div><span class="lb la">AI 正在接管</span></div>
+  <div class="orb" style="width:28vw;height:28vw;background:rgba(100,60,200,0.08);bottom:-8%;right:-4%;"></div>
+  <div style="position:relative;z-index:1;">
+    <div class="eyebrow">变化二</div>
+    <h2 style="margin-bottom:0.6rem;">产品思维成为<span class="grad-gold"> 核心能力</span></h2>
+    <p style="font-size:0.95rem;margin-bottom:1.8rem;">AI 越来越擅长<span style="color:var(--muted);">执行</span>，真正难以替代的是——</p>
+    <div style="display:flex;flex-direction:column;gap:0.85rem;">
+      <div class="skill skill-h">
+        <span class="skill-ico">🎯</span>
+        <div><div class="skill-title">理解产品与业务</div><div class="skill-desc">知道为什么这样设计，真正需要解决的问题是什么</div></div>
+        <span class="skill-badge badge-green">人类不可替代</span>
+      </div>
+      <div class="skill skill-h">
+        <span class="skill-ico">🧠</span>
+        <div><div class="skill-title">判断力与规划力</div><div class="skill-desc">在不确定信息中做出高质量决策，定义"正确的方向"</div></div>
+        <span class="skill-badge badge-green">人类不可替代</span>
+      </div>
+      <div class="skill skill-h">
+        <span class="skill-ico">🔍</span>
+        <div><div class="skill-title">系统思考 · 边界意识</div><div class="skill-desc">看到 AI 看不到的隐含假设与边界条件</div></div>
+        <span class="skill-badge badge-green">人类不可替代</span>
+      </div>
+      <div class="skill skill-a">
+        <span class="skill-ico">⚡</span>
+        <div><div class="skill-title">重复性 · 确定性执行工作</div><div class="skill-desc">大量代码编写、测试执行、格式转换……</div></div>
+        <span class="skill-badge badge-red">AI 正在接管</span>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ═══ 10 · 总结 ═══ -->
+<!-- ══ 10 总结 ══ -->
 <section class="slide" id="s10">
-  <div class="orb" style="width:50vw;height:20vh;background:rgba(201,168,76,0.07);top:-5vh;left:50%;transform:translateX(-50%);"></div>
-  <div style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;">
-    <div class="ey" style="margin-bottom:0.6rem;">结论</div>
-    <h2 style="margin-bottom:0.4rem;">未来的软件工程师</h2>
-    <p style="font-size:clamp(0.72rem,0.9vw,0.85rem);margin-bottom:clamp(0.9rem,2vh,1.3rem);">不再只是代码的编写者，而是——</p>
-    <div class="row" style="margin-bottom:clamp(0.7rem,1.5vh,1rem);">
-      <div class="rc rc-gold">
-        <div class="rc-ico" style="filter:drop-shadow(0 0 12px var(--gold-glow));">🎼</div>
-        <hr class="rule" style="width:24px;">
-        <div class="rc-title c-gold">AI 的指挥者</div>
-        <div class="rc-desc">调度 AI 能力，让它承担真正的执行任务，而不是被 AI 调度</div>
+  <div class="orb" style="width:50vw;height:14vh;background:rgba(201,168,76,0.06);top:-4%;left:50%;transform:translateX(-50%);"></div>
+  <div style="position:relative;z-index:1;">
+    <div class="eyebrow">结论</div>
+    <h2 style="margin-bottom:0.5rem;">未来的软件工程师</h2>
+    <p style="font-size:0.95rem;margin-bottom:2rem;">不再只是代码的编写者，而是——</p>
+    <div class="cols3" style="margin-bottom:1.8rem;">
+      <div class="card card-gold" style="text-align:center;border-top:3px solid var(--gold);">
+        <div style="font-size:2.6rem;filter:drop-shadow(0 0 14px var(--gold-glow));line-height:1;margin-bottom:0.9rem;">🎼</div>
+        <hr class="rule" style="width:28px;margin:0 auto 0.9rem;">
+        <div style="font-family:var(--fd);font-size:1.15rem;font-weight:700;color:var(--gold);margin-bottom:0.6rem;">AI 的指挥者</div>
+        <p style="font-size:0.86rem;line-height:1.75;color:var(--text2);">调度 AI 能力，让它承担真正的执行任务，而不是被 AI 调度</p>
       </div>
-      <div class="rc rc-purple">
-        <div class="rc-ico" style="filter:drop-shadow(0 0 12px rgba(155,126,223,0.5));">🔬</div>
-        <hr class="rule" style="width:24px;">
-        <div class="rc-title c-purple">质量体系的设计者</div>
-        <div class="rc-desc">构建验证框架，定义"什么是正确"，设计 AI 无法自主完成的问题</div>
+      <div class="card card-purple" style="text-align:center;border-top:3px solid var(--purple);">
+        <div style="font-size:2.6rem;filter:drop-shadow(0 0 14px rgba(155,126,223,0.5));line-height:1;margin-bottom:0.9rem;">🔬</div>
+        <hr class="rule" style="width:28px;margin:0 auto 0.9rem;">
+        <div style="font-family:var(--fd);font-size:1.15rem;font-weight:700;color:var(--purple);margin-bottom:0.6rem;">质量体系的设计者</div>
+        <p style="font-size:0.86rem;line-height:1.75;color:var(--text2);">构建验证框架，定义"什么是正确"，设计 AI 无法自主完成的问题</p>
       </div>
-      <div class="rc rc-green">
-        <div class="rc-ico" style="filter:drop-shadow(0 0 12px rgba(63,168,108,0.48));">🛡️</div>
-        <hr class="rule" style="width:24px;">
-        <div class="rc-title c-green">高质量产品的守门人</div>
-        <div class="rc-desc">保证交付给用户的是严谨、可靠、值得信任的产品体验</div>
+      <div class="card card-green" style="text-align:center;border-top:3px solid var(--green);">
+        <div style="font-size:2.6rem;filter:drop-shadow(0 0 14px rgba(63,168,108,0.48));line-height:1;margin-bottom:0.9rem;">🛡️</div>
+        <hr class="rule" style="width:28px;margin:0 auto 0.9rem;">
+        <div style="font-family:var(--fd);font-size:1.15rem;font-weight:700;color:var(--green);margin-bottom:0.6rem;">高质量产品的守门人</div>
+        <p style="font-size:0.86rem;line-height:1.75;color:var(--text2);">保证交付给用户的是严谨、可靠、值得信任的产品体验</p>
       </div>
     </div>
     <!-- Q&A -->
-    <div style="display:flex;align-items:center;justify-content:space-between;padding:clamp(0.7rem,1.5vh,0.95rem) clamp(1rem,2vw,1.4rem);border-radius:8px;background:var(--gold-dim);border:1px solid var(--border2);margin-top:auto;">
-      <div style="display:flex;align-items:center;gap:0.75rem;">
-        <span style="font-size:1.35rem;animation:float 3.5s ease-in-out infinite;display:inline-block;">💬</span>
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.6rem;border-radius:10px;background:var(--gold-dim);border:1px solid var(--border2);">
+      <div style="display:flex;align-items:center;gap:1rem;">
+        <span style="font-size:1.6rem;animation:float 3.5s ease-in-out infinite;display:inline-block;">💬</span>
         <div>
-          <div style="font-family:var(--fd);font-style:italic;font-size:clamp(0.9rem,1.2vw,1.05rem);font-weight:700;color:var(--gold);line-height:1;">Q &amp; A</div>
-          <div style="font-size:0.58rem;color:var(--text2);margin-top:0.1rem;">欢迎讨论 · 老孙正经胡说</div>
+          <div style="font-family:var(--fd);font-style:italic;font-size:1.15rem;font-weight:700;color:var(--gold);">Q &amp; A</div>
+          <div style="font-size:0.78rem;color:var(--text2);margin-top:0.15rem;">欢迎讨论 · 老孙正经胡说</div>
         </div>
       </div>
-      <div style="display:flex;gap:0.45rem;flex-wrap:wrap;justify-content:flex-end;">
-        <span class="tag tgh">← → 翻页</span>
-        <span class="tag tgh">F 全屏</span>
-        <span class="tag tgh">Home / End</span>
+      <div style="display:flex;gap:0.5rem;flex-wrap:wrap;justify-content:flex-end;">
+        <span class="tag tag-muted">← → 翻页</span>
+        <span class="tag tag-muted">F 全屏</span>
+        <span class="tag tag-muted">Home / End</span>
       </div>
     </div>
   </div>
@@ -573,7 +502,6 @@
 const slides = [...document.querySelectorAll('.slide')];
 const N = slides.length;
 let cur = 0;
-
 const prog = document.getElementById('prog');
 const ctr  = document.getElementById('ctr');
 
@@ -589,24 +517,21 @@ function go(d) {
   slides[nx].scrollIntoView({ behavior:'smooth' });
 }
 
-// Track current slide via IntersectionObserver
 const io = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting && e.intersectionRatio >= 0.5) sync(slides.indexOf(e.target)); });
 }, { threshold: 0.5 });
 slides.forEach(s => io.observe(s));
 
-// Keyboard
 document.addEventListener('keydown', e => {
   const fwd = ['ArrowRight','ArrowDown',' ','PageDown'];
   const bwd = ['ArrowLeft','ArrowUp','PageUp'];
-  if (fwd.includes(e.key)) { e.preventDefault(); go(1); }
+  if      (fwd.includes(e.key)) { e.preventDefault(); go(1); }
   else if (bwd.includes(e.key)) { e.preventDefault(); go(-1); }
-  else if (e.key==='Home')  { e.preventDefault(); slides[0].scrollIntoView({behavior:'smooth'}); }
-  else if (e.key==='End')   { e.preventDefault(); slides[N-1].scrollIntoView({behavior:'smooth'}); }
+  else if (e.key==='Home') { e.preventDefault(); slides[0].scrollIntoView({behavior:'smooth'}); }
+  else if (e.key==='End')  { e.preventDefault(); slides[N-1].scrollIntoView({behavior:'smooth'}); }
   else if (e.key==='f'||e.key==='F') toggleFS();
 });
 
-// Touch swipe (vertical)
 let ty0 = 0;
 document.addEventListener('touchstart', e => { ty0 = e.touches[0].clientY; }, {passive:true});
 document.addEventListener('touchend',   e => {
