@@ -1,79 +1,103 @@
-<svg width="1200" height="320" viewBox="0 0 1200 320" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="360" viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bar80" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#3FA86C" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#3FA86C" stop-opacity="0.08"/>
-    </linearGradient>
-    <linearGradient id="bar20" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#C9A84C" stop-opacity="0.1"/>
-      <stop offset="100%" stop-color="#C9A84C" stop-opacity="0.28"/>
-    </linearGradient>
+    <clipPath id="lens-clip">
+      <circle cx="1020" cy="192" r="66"/>
+    </clipPath>
   </defs>
 
-  <!-- Background -->
-  <rect width="1200" height="320" fill="#0C0A14"/>
+  <rect width="1200" height="360" fill="#0C0A14"/>
 
-  <!-- Top eyebrow -->
+  <!-- eyebrow -->
   <rect width="1200" height="44" fill="rgba(201,168,76,0.04)"/>
   <text x="600" y="27" text-anchor="middle" fill="#C9A84C" font-size="11.5" letter-spacing="4" font-weight="500"
         font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">
     AI 并不让产品研发变简单，它只是让前 80% 变得更快
   </text>
 
-  <!-- Main bar track -->
-  <rect x="28" y="68" width="1144" height="110" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <!-- ====== 80% ZONE ====== -->
+  <rect x="28" y="54" width="820" height="282" rx="10" fill="rgba(63,168,108,0.05)" stroke="rgba(63,168,108,0.2)" stroke-width="1"/>
 
-  <!-- 80% section -->
-  <rect x="28" y="68" width="908" height="110" rx="8" fill="url(#bar80)" stroke="rgba(63,168,108,0.25)" stroke-width="1"/>
+  <!-- "前 80%" badge -->
+  <rect x="48" y="70" width="76" height="24" rx="4" fill="rgba(63,168,108,0.15)" stroke="rgba(63,168,108,0.3)" stroke-width="1"/>
+  <text x="86" y="86" text-anchor="middle" fill="#3FA86C" font-size="11.5" font-weight="600"
+        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">前 80%</text>
 
-  <!-- 20% section (overlaps slightly for clean join) -->
-  <rect x="920" y="68" width="252" height="110" rx="8" fill="url(#bar20)" stroke="rgba(201,168,76,0.35)" stroke-width="1"/>
-  <!-- Cover left edge of 20% to make clean join -->
-  <rect x="920" y="69" width="12" height="108" fill="url(#bar20)"/>
+  <!-- ── LIGHTNING BOLT (left side of 80% zone) ── -->
+  <!-- Centered ~x=210, spans y=90 to y=295 -->
+  <path d="M 196,90 L 262,90 L 216,192 L 256,192 L 204,296 L 190,296 L 206,192 L 164,192 Z"
+        fill="rgba(63,168,108,0.65)"/>
+  <!-- bolt glow -->
+  <path d="M 196,90 L 262,90 L 216,192 L 256,192 L 204,296 L 190,296 L 206,192 L 164,192 Z"
+        fill="none" stroke="rgba(63,168,108,0.3)" stroke-width="6" filter="url(#glow)"/>
 
-  <!-- Divider line -->
-  <line x1="928" y1="56" x2="928" y2="192" stroke="rgba(201,168,76,0.5)" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <!-- Motion lines (speed streaks) -->
+  <line x1="286" y1="158" x2="348" y2="158" stroke="rgba(63,168,108,0.45)" stroke-width="2" stroke-dasharray="9,5"/>
+  <line x1="286" y1="178" x2="364" y2="178" stroke="rgba(63,168,108,0.55)" stroke-width="2.5" stroke-dasharray="11,5"/>
+  <line x1="286" y1="198" x2="352" y2="198" stroke="rgba(63,168,108,0.4)" stroke-width="2" stroke-dasharray="8,6"/>
+  <line x1="286" y1="218" x2="340" y2="218" stroke="rgba(63,168,108,0.3)" stroke-width="1.5" stroke-dasharray="7,6"/>
 
-  <!-- 80% label -->
-  <text x="474" y="108" text-anchor="middle" fill="#3FA86C" font-size="40" font-weight="700"
-        font-family="Arial,Helvetica,sans-serif">80%</text>
-  <text x="474" y="133" text-anchor="middle" fill="#ECE6D8" font-size="14" font-weight="600"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">原型  /  流程  /  页面结构  /  接口雏形</text>
-  <text x="474" y="157" text-anchor="middle" fill="rgba(63,168,108,0.8)" font-size="12"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">AI 已大幅加速 · 执行密度 · 靠"勤奋"</text>
+  <!-- ── 3 CHECK CIRCLES (tasks being completed) ── -->
+  <!-- Circle 1 -->
+  <circle cx="428" cy="185" r="42" fill="rgba(63,168,108,0.09)" stroke="rgba(63,168,108,0.4)" stroke-width="1.5"/>
+  <polyline points="410,185 425,203 456,164" fill="none" stroke="#3FA86C" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round"/>
 
-  <!-- 20% label -->
-  <text x="1046" y="108" text-anchor="middle" fill="#EDD07C" font-size="40" font-weight="700"
-        font-family="Arial,Helvetica,sans-serif">20%</text>
-  <text x="1046" y="133" text-anchor="middle" fill="#ECE6D8" font-size="14" font-weight="600"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">判断  /  取舍  /  审美</text>
-  <text x="1046" y="157" text-anchor="middle" fill="rgba(201,168,76,0.8)" font-size="12"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">决定产品质量 · 靠"聪明"</text>
+  <!-- Circle 2 (slightly faded) -->
+  <circle cx="550" cy="185" r="42" fill="rgba(63,168,108,0.07)" stroke="rgba(63,168,108,0.3)" stroke-width="1.5" opacity="0.85"/>
+  <polyline points="532,185 547,203 578,164" fill="none" stroke="#3FA86C" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
 
-  <!-- AI加速 badge on 80% section -->
-  <rect x="144" y="80" width="90" height="24" rx="4" fill="rgba(63,168,108,0.15)" stroke="rgba(63,168,108,0.3)" stroke-width="1"/>
-  <text x="189" y="96" text-anchor="middle" fill="#3FA86C" font-size="11.5" font-weight="600"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">AI 加速</text>
+  <!-- Circle 3 (more faded, suggesting ongoing) -->
+  <circle cx="672" cy="185" r="42" fill="rgba(63,168,108,0.05)" stroke="rgba(63,168,108,0.2)" stroke-width="1.5" opacity="0.6"/>
+  <polyline points="654,185 669,203 700,164" fill="none" stroke="#3FA86C" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
 
-  <!-- Question mark badge on 20% section -->
-  <rect x="956" y="80" width="90" height="24" rx="4" fill="rgba(201,168,76,0.12)" stroke="rgba(201,168,76,0.3)" stroke-width="1"/>
-  <text x="1001" y="96" text-anchor="middle" fill="#C9A84C" font-size="11.5" font-weight="600"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">仍靠人判断</text>
+  <!-- ghost "80%" watermark number -->
+  <text x="790" y="210" text-anchor="middle" fill="rgba(63,168,108,0.12)" font-size="90" font-weight="700"
+        font-family="Arial,Helvetica,sans-serif">80</text>
 
-  <!-- Bottom comparison row -->
-  <rect x="28" y="210" width="908" height="82" rx="7" fill="rgba(63,168,108,0.04)" stroke="rgba(63,168,108,0.12)" stroke-width="1"/>
-  <text x="474" y="238" text-anchor="middle" fill="#8C7E6A" font-size="12" letter-spacing="1"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">过去更像</text>
-  <text x="474" y="264" text-anchor="middle" fill="#ECE6D8" font-size="15" font-weight="600"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">简 答 题 — 考验你能不能把问题解出来</text>
-  <text x="474" y="283" text-anchor="middle" fill="rgba(63,168,108,0.65)" font-size="11.5"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">执行能力越强，交付越好</text>
+  <!-- bottom labels -->
+  <text x="460" y="264" text-anchor="middle" fill="#ECE6D8" font-size="13.5" font-weight="600"
+        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">原型 · 流程 · 接口 · 页面</text>
+  <text x="460" y="288" text-anchor="middle" fill="rgba(63,168,108,0.7)" font-size="12"
+        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">AI 已大幅加速 · 执行密度</text>
 
-  <rect x="936" y="210" width="236" height="82" rx="7" fill="rgba(201,168,76,0.05)" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
-  <text x="1054" y="238" text-anchor="middle" fill="#8C7E6A" font-size="12" letter-spacing="1"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">现在更像</text>
-  <text x="1054" y="264" text-anchor="middle" fill="#EDD07C" font-size="15" font-weight="600"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">选 择 题</text>
-  <text x="1054" y="283" text-anchor="middle" fill="rgba(201,168,76,0.65)" font-size="11.5"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">判断力决定结果</text>
+  <!-- ====== DIVIDER ====== -->
+  <line x1="851" y1="58" x2="851" y2="330" stroke="rgba(201,168,76,0.35)" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <!-- diamond on divider -->
+  <polygon points="851,192 862,205 851,218 840,205" fill="rgba(201,168,76,0.6)"/>
+
+  <!-- ====== 20% ZONE ====== -->
+  <rect x="862" y="54" width="310" height="282" rx="10" fill="rgba(201,168,76,0.05)" stroke="rgba(201,168,76,0.28)" stroke-width="1"/>
+
+  <!-- "后 20%" badge -->
+  <rect x="882" y="70" width="76" height="24" rx="4" fill="rgba(201,168,76,0.12)" stroke="rgba(201,168,76,0.3)" stroke-width="1"/>
+  <text x="920" y="86" text-anchor="middle" fill="#C9A84C" font-size="11.5" font-weight="600"
+        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">后 20%</text>
+
+  <!-- ── MAGNIFYING GLASS ── -->
+  <!-- lens outer ring -->
+  <circle cx="1020" cy="192" r="66" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.45)" stroke-width="2"/>
+
+  <!-- target rings inside (clipped to lens) -->
+  <circle cx="1020" cy="192" r="48" fill="none" stroke="rgba(201,168,76,0.25)" stroke-width="1.5" clip-path="url(#lens-clip)"/>
+  <circle cx="1020" cy="192" r="30" fill="none" stroke="rgba(201,168,76,0.38)" stroke-width="1.5" clip-path="url(#lens-clip)"/>
+  <circle cx="1020" cy="192" r="10" fill="rgba(201,168,76,0.8)" clip-path="url(#lens-clip)"/>
+
+  <!-- crosshairs (clipped to lens) -->
+  <line x1="940" y1="192" x2="1100" y2="192" stroke="rgba(201,168,76,0.22)" stroke-width="1" clip-path="url(#lens-clip)"/>
+  <line x1="1020" y1="112" x2="1020" y2="272" stroke="rgba(201,168,76,0.22)" stroke-width="1" clip-path="url(#lens-clip)"/>
+
+  <!-- handle (thick diagonal line) -->
+  <line x1="1067" y1="240" x2="1138" y2="312" stroke="rgba(201,168,76,0.65)" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- ghost "20%" watermark -->
+  <text x="920" y="120" text-anchor="middle" fill="rgba(201,168,76,0.12)" font-size="52" font-weight="700"
+        font-family="Arial,Helvetica,sans-serif">20</text>
+
+  <!-- bottom labels -->
+  <text x="1020" y="290" text-anchor="middle" fill="#ECE6D8" font-size="13.5" font-weight="600"
+        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">判断 · 取舍 · 品味</text>
+  <text x="1020" y="314" text-anchor="middle" fill="rgba(201,168,76,0.7)" font-size="12"
+        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">决定产品质量</text>
 </svg>

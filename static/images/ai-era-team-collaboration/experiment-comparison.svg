@@ -1,133 +1,106 @@
-<svg width="1200" height="420" viewBox="0 0 1200 420" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="440" viewBox="0 0 1200 440" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <marker id="g-arr" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto">
-      <polygon points="0 0,7 2.5,0 5" fill="#3FA86C"/>
+    <marker id="arr-g" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0,8 3,0 6" fill="#3FA86C"/>
     </marker>
   </defs>
 
-  <!-- Background -->
-  <rect width="1200" height="420" fill="#0C0A14"/>
+  <rect width="1200" height="440" fill="#0C0A14"/>
 
-  <!-- Top eyebrow -->
+  <!-- eyebrow -->
   <rect width="1200" height="44" fill="rgba(201,168,76,0.04)"/>
-  <text x="600" y="27" text-anchor="middle" fill="#C9A84C"
-        font-size="11.5" letter-spacing="4" font-weight="500"
-        font-family="'PingFang SC','Microsoft YaHei','Hiragino Sans GB',system-ui,sans-serif">
+  <text x="600" y="27" text-anchor="middle" fill="#C9A84C" font-size="11.5" letter-spacing="4" font-weight="500"
+        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">
     同一产品 · 两种研发组织方式 · 内部对比实验
   </text>
 
-  <!-- ===== LEFT PANEL: Team ===== -->
-  <rect x="28" y="54" width="522" height="344" rx="10" fill="#0F0D18" stroke="rgba(155,126,223,0.2)" stroke-width="1"/>
-  <rect x="28" y="54" width="522" height="64" rx="10" fill="rgba(155,126,223,0.06)"/>
-  <rect x="28" y="96"  width="522" height="22" fill="#0F0D18"/>
+  <!-- ====== LEFT PANEL ====== -->
+  <rect x="28" y="54" width="522" height="362" rx="10" fill="#0F0D18" stroke="rgba(155,126,223,0.18)" stroke-width="1"/>
 
-  <text x="289" y="87" text-anchor="middle" fill="#ECE6D8" font-size="17" font-weight="600"
+  <!-- panel label -->
+  <text x="289" y="84" text-anchor="middle" fill="#9B7EDF" font-size="12" letter-spacing="2" font-weight="500"
         font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">传统团队协作</text>
-  <text x="289" y="112" text-anchor="middle" fill="#8C7E6A" font-size="12"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">2名前端 + 2名后端 + Lead（兼任产品经理）</text>
 
-  <line x1="68" y1="126" x2="510" y2="126" stroke="rgba(155,126,223,0.12)" stroke-width="1"/>
+  <!-- ── 4 person icons ── -->
+  <!-- Person TL: head cx=168, cy=152 -->
+  <circle cx="168" cy="150" r="18" fill="rgba(155,126,223,0.25)" stroke="rgba(155,126,223,0.5)" stroke-width="1.5"/>
+  <rect x="156" y="172" width="24" height="38" rx="8" fill="rgba(155,126,223,0.25)" stroke="rgba(155,126,223,0.4)" stroke-width="1"/>
 
-  <!-- Module boxes 2×2 -->
-  <rect x="68"  y="140" width="185" height="66" rx="7" fill="rgba(155,126,223,0.05)" stroke="rgba(155,126,223,0.22)" stroke-width="1"/>
-  <text x="160" y="165" text-anchor="middle" fill="#9B7EDF" font-size="10"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">模块 01</text>
-  <text x="160" y="190" text-anchor="middle" fill="#ECE6D8" font-size="14" font-weight="600"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">文件同步</text>
+  <!-- Person TR: cx=386, cy=148 -->
+  <circle cx="386" cy="148" r="18" fill="rgba(155,126,223,0.25)" stroke="rgba(155,126,223,0.5)" stroke-width="1.5"/>
+  <rect x="374" y="170" width="24" height="38" rx="8" fill="rgba(155,126,223,0.25)" stroke="rgba(155,126,223,0.4)" stroke-width="1"/>
 
-  <rect x="275" y="140" width="185" height="66" rx="7" fill="rgba(155,126,223,0.05)" stroke="rgba(155,126,223,0.22)" stroke-width="1"/>
-  <text x="367" y="165" text-anchor="middle" fill="#9B7EDF" font-size="10"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">模块 02</text>
-  <text x="367" y="190" text-anchor="middle" fill="#ECE6D8" font-size="14" font-weight="600"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">版本管理</text>
+  <!-- Person BL: cx=162, cy=290 -->
+  <circle cx="162" cy="288" r="18" fill="rgba(155,126,223,0.25)" stroke="rgba(155,126,223,0.5)" stroke-width="1.5"/>
+  <rect x="150" y="310" width="24" height="38" rx="8" fill="rgba(155,126,223,0.25)" stroke="rgba(155,126,223,0.4)" stroke-width="1"/>
 
-  <rect x="68"  y="232" width="185" height="66" rx="7" fill="rgba(155,126,223,0.05)" stroke="rgba(155,126,223,0.22)" stroke-width="1"/>
-  <text x="160" y="257" text-anchor="middle" fill="#9B7EDF" font-size="10"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">模块 03</text>
-  <text x="160" y="282" text-anchor="middle" fill="#ECE6D8" font-size="14" font-weight="600"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">恢复策略</text>
+  <!-- Person BR: cx=380, cy=285 -->
+  <circle cx="380" cy="284" r="18" fill="rgba(155,126,223,0.25)" stroke="rgba(155,126,223,0.5)" stroke-width="1.5"/>
+  <rect x="368" y="306" width="24" height="38" rx="8" fill="rgba(155,126,223,0.25)" stroke="rgba(155,126,223,0.4)" stroke-width="1"/>
 
-  <rect x="275" y="232" width="185" height="66" rx="7" fill="rgba(155,126,223,0.05)" stroke="rgba(155,126,223,0.22)" stroke-width="1"/>
-  <text x="367" y="257" text-anchor="middle" fill="#9B7EDF" font-size="10"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">模块 04</text>
-  <text x="367" y="282" text-anchor="middle" fill="#ECE6D8" font-size="14" font-weight="600"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">任务调度</text>
+  <!-- ── Communication web (6 lines, drawn under icons) ── -->
+  <line x1="186" y1="168" x2="368" y2="166" stroke="rgba(212,128,58,0.55)" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="173" y1="188" x2="162" y2="270" stroke="rgba(212,128,58,0.45)" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="186" y1="190" x2="362" y2="288" stroke="rgba(212,128,58,0.35)" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="368" y1="168" x2="178" y2="282" stroke="rgba(212,128,58,0.35)" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="386" y1="186" x2="380" y2="266" stroke="rgba(212,128,58,0.5)" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="180" y1="312" x2="362" y2="302" stroke="rgba(212,128,58,0.45)" stroke-width="1.5" stroke-dasharray="5,3"/>
 
-  <!-- Coupling cost dashes -->
-  <line x1="253" y1="173" x2="275" y2="173" stroke="#D4803A" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="253" y1="265" x2="275" y2="265" stroke="#D4803A" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="160" y1="206" x2="160" y2="232" stroke="#D4803A" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="367" y1="206" x2="367" y2="232" stroke="#D4803A" stroke-width="1" stroke-dasharray="3,2"/>
-  <text x="289" y="222" text-anchor="middle" fill="rgba(212,128,58,0.7)" font-size="10.5"
+  <!-- communication cost label (center of web) -->
+  <text x="277" y="237" text-anchor="middle" fill="rgba(212,128,58,0.7)" font-size="11"
         font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">⟷ 跨模块对齐沟通</text>
 
-  <!-- Left result -->
-  <rect x="68" y="316" width="394" height="62" rx="7" fill="rgba(217,79,79,0.07)" stroke="rgba(217,79,79,0.2)" stroke-width="1"/>
-  <text x="265" y="342" text-anchor="middle" fill="#D94F4F" font-size="13"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">一致性弱 · 恢复流程割裂 · 联调成本高</text>
-  <text x="265" y="363" text-anchor="middle" fill="rgba(217,79,79,0.6)" font-size="11.5"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">产品逻辑碎片化，整体体验不及预期</text>
+  <!-- ── Result ── -->
+  <!-- large X mark -->
+  <line x1="234" y1="372" x2="266" y2="404" stroke="#D94F4F" stroke-width="5" stroke-linecap="round"/>
+  <line x1="266" y1="372" x2="234" y2="404" stroke="#D94F4F" stroke-width="5" stroke-linecap="round"/>
+  <text x="295" y="394" fill="#D94F4F" font-size="13"
+        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">体验割裂 · 一致性弱</text>
 
-  <!-- ===== VS ===== -->
-  <text x="600" y="263" text-anchor="middle" fill="rgba(201,168,76,0.4)" font-size="26" font-weight="700"
+  <!-- ====== VS ====== -->
+  <text x="600" y="250" text-anchor="middle" fill="rgba(201,168,76,0.4)" font-size="28" font-weight="700"
         font-family="Arial,Helvetica,sans-serif">VS</text>
 
-  <!-- ===== RIGHT PANEL: Individual + AI ===== -->
-  <rect x="650" y="54" width="522" height="344" rx="10" fill="#0F0D18" stroke="rgba(63,168,108,0.28)" stroke-width="1"/>
-  <rect x="650" y="54" width="522" height="64" rx="10" fill="rgba(63,168,108,0.06)"/>
-  <rect x="650" y="96"  width="522" height="22" fill="#0F0D18"/>
+  <!-- ====== RIGHT PANEL ====== -->
+  <rect x="650" y="54" width="522" height="362" rx="10" fill="#0F0D18" stroke="rgba(63,168,108,0.25)" stroke-width="1"/>
 
-  <text x="911" y="87" text-anchor="middle" fill="#ECE6D8" font-size="17" font-weight="600"
+  <!-- panel label -->
+  <text x="911" y="84" text-anchor="middle" fill="#3FA86C" font-size="12" letter-spacing="2" font-weight="500"
         font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">一人 × AI</text>
-  <text x="911" y="112" text-anchor="middle" fill="#8C7E6A" font-size="12"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">客户交付背景 · 需求到交付 · 全程端到端独立负责</text>
 
-  <line x1="690" y1="126" x2="1132" y2="126" stroke="rgba(63,168,108,0.12)" stroke-width="1"/>
+  <!-- ── Single person icon (larger) ── -->
+  <circle cx="762" cy="195" r="26" fill="rgba(63,168,108,0.2)" stroke="rgba(63,168,108,0.55)" stroke-width="2"/>
+  <rect x="748" y="225" width="28" height="52" rx="10" fill="rgba(63,168,108,0.2)" stroke="rgba(63,168,108,0.45)" stroke-width="1.5"/>
 
-  <!-- Flow steps 2×2 (clockwise flow) -->
-  <!-- TL: 需求分析 -->
-  <rect x="696"  y="140" width="185" height="66" rx="7" fill="rgba(63,168,108,0.07)" stroke="rgba(63,168,108,0.28)" stroke-width="1"/>
-  <text x="788" y="170" text-anchor="middle" fill="#ECE6D8" font-size="14" font-weight="600"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">需求分析</text>
-  <text x="788" y="193" text-anchor="middle" fill="#3FA86C" font-size="11"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">统一理解目标</text>
+  <!-- ── AI hexagon badge ── -->
+  <polygon points="900,168 924,180 924,205 900,217 876,205 876,180"
+           fill="rgba(201,168,76,0.1)" stroke="rgba(201,168,76,0.5)" stroke-width="1.5"/>
+  <text x="900" y="198" text-anchor="middle" fill="#EDD07C" font-size="14" font-weight="700"
+        font-family="Arial,Helvetica,sans-serif">AI</text>
 
-  <!-- TR: 方案设计 -->
-  <rect x="905" y="140" width="185" height="66" rx="7" fill="rgba(63,168,108,0.07)" stroke="rgba(63,168,108,0.28)" stroke-width="1"/>
-  <text x="997" y="170" text-anchor="middle" fill="#ECE6D8" font-size="14" font-weight="600"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">方案设计</text>
-  <text x="997" y="193" text-anchor="middle" fill="#3FA86C" font-size="11"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">一以贯之</text>
+  <!-- ── Product/delivery icon (diamond) ── -->
+  <polygon points="1060,175 1090,200 1060,225 1030,200"
+           fill="rgba(63,168,108,0.12)" stroke="rgba(63,168,108,0.5)" stroke-width="1.5"/>
+  <text x="1060" y="205" text-anchor="middle" fill="#3FA86C" font-size="11"
+        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">交付</text>
 
-  <!-- BL: 完整交付 -->
-  <rect x="696"  y="232" width="185" height="66" rx="7" fill="rgba(63,168,108,0.07)" stroke="rgba(63,168,108,0.28)" stroke-width="1"/>
-  <text x="788" y="262" text-anchor="middle" fill="#ECE6D8" font-size="14" font-weight="600"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">完整交付</text>
-  <text x="788" y="285" text-anchor="middle" fill="#3FA86C" font-size="11"
+  <!-- ── Flow arrows (person → AI → product) ── -->
+  <line x1="792" y1="222" x2="874" y2="205" stroke="#3FA86C" stroke-width="2" marker-end="url(#arr-g)"/>
+  <line x1="926" y1="195" x2="1028" y2="198" stroke="#3FA86C" stroke-width="2" marker-end="url(#arr-g)"/>
+
+  <!-- ── Result ── -->
+  <!-- large checkmark -->
+  <polyline points="222,388 250,413 310,365" fill="none" stroke="#3FA86C" stroke-width="5"
+            stroke-linecap="round" stroke-linejoin="round"
+            transform="translate(640,0)"/>
+  <text x="970" y="394" fill="#3FA86C" font-size="13"
+        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">体验一致 · 逻辑连贯</text>
+
+  <!-- bottom labels -->
+  <text x="762" y="310" text-anchor="middle" fill="#8C7E6A" font-size="12"
+        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">全程统一理解</text>
+  <text x="900" y="310" text-anchor="middle" fill="#8C7E6A" font-size="12"
         font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">结果导向</text>
-
-  <!-- BR: 开发实现 -->
-  <rect x="905" y="232" width="185" height="66" rx="7" fill="rgba(63,168,108,0.07)" stroke="rgba(63,168,108,0.28)" stroke-width="1"/>
-  <text x="997" y="262" text-anchor="middle" fill="#ECE6D8" font-size="14" font-weight="600"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">开发实现</text>
-  <text x="997" y="285" text-anchor="middle" fill="#3FA86C" font-size="11"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">AI 主力执行</text>
-
-  <!-- Clockwise arrows -->
-  <line x1="881" y1="173" x2="905" y2="173" stroke="#3FA86C" stroke-width="1.5" marker-end="url(#g-arr)"/>
-  <line x1="997" y1="206" x2="997" y2="232" stroke="#3FA86C" stroke-width="1.5" marker-end="url(#g-arr)"/>
-  <line x1="905" y1="265" x2="881" y2="265" stroke="#3FA86C" stroke-width="1.5" marker-end="url(#g-arr)"/>
-  <line x1="788" y1="232" x2="788" y2="206" stroke="#3FA86C" stroke-width="1.5" marker-end="url(#g-arr)"/>
-
-  <!-- Center AI badge -->
-  <rect x="866" y="220" width="78" height="28" rx="5" fill="rgba(201,168,76,0.1)" stroke="rgba(201,168,76,0.3)" stroke-width="1"/>
-  <text x="905" y="238" text-anchor="middle" fill="#C9A84C" font-size="12" font-weight="600"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">AI 驱动</text>
-
-  <!-- Right result -->
-  <rect x="690" y="316" width="440" height="62" rx="7" fill="rgba(63,168,108,0.07)" stroke="rgba(63,168,108,0.22)" stroke-width="1"/>
-  <text x="910" y="342" text-anchor="middle" fill="#3FA86C" font-size="13"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">交付更快 · 一致性强 · 体验更优</text>
-  <text x="910" y="363" text-anchor="middle" fill="rgba(63,168,108,0.65)" font-size="11.5"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">统一的业务理解，产品逻辑高度连贯</text>
+  <text x="1060" y="310" text-anchor="middle" fill="#8C7E6A" font-size="12"
+        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">完整交付</text>
 </svg>
