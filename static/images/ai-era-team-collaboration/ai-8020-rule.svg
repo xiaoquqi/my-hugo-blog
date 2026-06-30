@@ -1,103 +1,119 @@
-<svg width="1200" height="360" viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <clipPath id="lens-clip">
-      <circle cx="1020" cy="192" r="66"/>
-    </clipPath>
-  </defs>
+<svg width="1200" height="380" viewBox="0 0 1200 380" xmlns="http://www.w3.org/2000/svg">
 
-  <rect width="1200" height="360" fill="#0C0A14"/>
+  <rect width="1200" height="380" fill="#0C0A14"/>
 
-  <!-- eyebrow -->
+  <!-- top strip -->
   <rect width="1200" height="44" fill="rgba(201,168,76,0.04)"/>
-  <text x="600" y="27" text-anchor="middle" fill="#C9A84C" font-size="11.5" letter-spacing="4" font-weight="500"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">
-    AI 并不让产品研发变简单，它只是让前 80% 变得更快
-  </text>
+  <text x="600" y="27" text-anchor="middle" fill="#C9A84C" font-size="11" letter-spacing="5" font-weight="500"
+        font-family="Arial,Helvetica,sans-serif">EXECUTION  vs  JUDGMENT</text>
 
-  <!-- ====== 80% ZONE ====== -->
-  <rect x="28" y="54" width="820" height="282" rx="10" fill="rgba(63,168,108,0.05)" stroke="rgba(63,168,108,0.2)" stroke-width="1"/>
+  <!-- ======================================================
+       LEFT ZONE (80%) – ROCKET: speed, execution, AI power
+       ====================================================== -->
+  <rect x="28" y="54" width="740" height="306" rx="14" fill="rgba(63,168,108,0.05)" stroke="rgba(63,168,108,0.2)" stroke-width="1.5"/>
 
-  <!-- "前 80%" badge -->
-  <rect x="48" y="70" width="76" height="24" rx="4" fill="rgba(63,168,108,0.15)" stroke="rgba(63,168,108,0.3)" stroke-width="1"/>
-  <text x="86" y="86" text-anchor="middle" fill="#3FA86C" font-size="11.5" font-weight="600"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">前 80%</text>
+  <!-- "80%" ghost watermark -->
+  <text x="600" y="290" text-anchor="middle" fill="rgba(63,168,108,0.1)" font-size="130" font-weight="900"
+        font-family="Arial,Helvetica,sans-serif">80%</text>
 
-  <!-- ── LIGHTNING BOLT (left side of 80% zone) ── -->
-  <!-- Centered ~x=210, spans y=90 to y=295 -->
-  <path d="M 196,90 L 262,90 L 216,192 L 256,192 L 204,296 L 190,296 L 206,192 L 164,192 Z"
-        fill="rgba(63,168,108,0.65)"/>
-  <!-- bolt glow -->
-  <path d="M 196,90 L 262,90 L 216,192 L 256,192 L 204,296 L 190,296 L 206,192 L 164,192 Z"
-        fill="none" stroke="rgba(63,168,108,0.3)" stroke-width="6" filter="url(#glow)"/>
+  <!-- ── ROCKET (pointing right) ── centered ~(300, 207) -->
+  <!-- Flame (behind rocket) -->
+  <path d="M 178,185 Q 116,207 178,229 Q 148,207 178,185 Z" fill="rgba(212,128,58,0.85)"/>
+  <path d="M 178,194 Q 134,207 178,220 Q 152,207 178,194 Z" fill="rgba(237,208,124,0.7)"/>
 
-  <!-- Motion lines (speed streaks) -->
-  <line x1="286" y1="158" x2="348" y2="158" stroke="rgba(63,168,108,0.45)" stroke-width="2" stroke-dasharray="9,5"/>
-  <line x1="286" y1="178" x2="364" y2="178" stroke="rgba(63,168,108,0.55)" stroke-width="2.5" stroke-dasharray="11,5"/>
-  <line x1="286" y1="198" x2="352" y2="198" stroke="rgba(63,168,108,0.4)" stroke-width="2" stroke-dasharray="8,6"/>
-  <line x1="286" y1="218" x2="340" y2="218" stroke="rgba(63,168,108,0.3)" stroke-width="1.5" stroke-dasharray="7,6"/>
+  <!-- Rocket body -->
+  <ellipse cx="290" cy="207" rx="115" ry="36" fill="#0F1E14" stroke="#3FA86C" stroke-width="4"/>
 
-  <!-- ── 3 CHECK CIRCLES (tasks being completed) ── -->
-  <!-- Circle 1 -->
-  <circle cx="428" cy="185" r="42" fill="rgba(63,168,108,0.09)" stroke="rgba(63,168,108,0.4)" stroke-width="1.5"/>
-  <polyline points="410,185 425,203 456,164" fill="none" stroke="#3FA86C" stroke-width="3"
+  <!-- Nose cone -->
+  <polygon points="405,171 480,207 405,243" fill="#0F1E14" stroke="#3FA86C" stroke-width="4"/>
+
+  <!-- Fins (top + bottom) -->
+  <polygon points="178,171 210,171 210,200" fill="#2A6644" stroke="#3FA86C" stroke-width="2.5"/>
+  <polygon points="178,243 210,243 210,214" fill="#2A6644" stroke="#3FA86C" stroke-width="2.5"/>
+
+  <!-- Porthole -->
+  <circle cx="316" cy="207" r="24" fill="rgba(201,168,76,0.12)" stroke="#C9A84C" stroke-width="3"/>
+  <circle cx="308" cy="199" r="8" fill="rgba(201,168,76,0.35)"/>
+
+  <!-- "AI" label on rocket -->
+  <text x="265" y="213" text-anchor="middle" fill="#3FA86C" font-size="16" font-weight="700"
+        font-family="Arial,Helvetica,sans-serif">AI</text>
+
+  <!-- Speed streaks after rocket -->
+  <line x1="512" y1="188" x2="600" y2="188" stroke="rgba(63,168,108,0.55)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="512" y1="207" x2="628" y2="207" stroke="rgba(63,168,108,0.65)" stroke-width="4" stroke-linecap="round"/>
+  <line x1="512" y1="226" x2="598" y2="226" stroke="rgba(63,168,108,0.55)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="522" y1="174" x2="580" y2="174" stroke="rgba(63,168,108,0.35)" stroke-width="2" stroke-linecap="round"/>
+  <line x1="522" y1="240" x2="576" y2="240" stroke="rgba(63,168,108,0.35)" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Floating checkmarks (tasks completed) -->
+  <polyline points="652,183 667,202 700,164" fill="none" stroke="#3FA86C" stroke-width="4.5"
             stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="712,199 724,215 752,185" fill="none" stroke="#3FA86C" stroke-width="4"
+            stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
 
-  <!-- Circle 2 (slightly faded) -->
-  <circle cx="550" cy="185" r="42" fill="rgba(63,168,108,0.07)" stroke="rgba(63,168,108,0.3)" stroke-width="1.5" opacity="0.85"/>
-  <polyline points="532,185 547,203 578,164" fill="none" stroke="#3FA86C" stroke-width="3"
-            stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+  <!-- ======================================================
+       DIVIDER
+       ====================================================== -->
+  <line x1="778" y1="60" x2="778" y2="352" stroke="rgba(201,168,76,0.4)" stroke-width="2" stroke-dasharray="6,4"/>
+  <polygon points="778,207 790,220 778,233 766,220" fill="rgba(201,168,76,0.7)"/>
 
-  <!-- Circle 3 (more faded, suggesting ongoing) -->
-  <circle cx="672" cy="185" r="42" fill="rgba(63,168,108,0.05)" stroke="rgba(63,168,108,0.2)" stroke-width="1.5" opacity="0.6"/>
-  <polyline points="654,185 669,203 700,164" fill="none" stroke="#3FA86C" stroke-width="3"
-            stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+  <!-- ======================================================
+       RIGHT ZONE (20%) – THINKING PERSON + LIGHTBULB
+       ====================================================== -->
+  <rect x="794" y="54" width="378" height="306" rx="14" fill="rgba(201,168,76,0.05)" stroke="rgba(201,168,76,0.25)" stroke-width="1.5"/>
 
-  <!-- ghost "80%" watermark number -->
-  <text x="790" y="210" text-anchor="middle" fill="rgba(63,168,108,0.12)" font-size="90" font-weight="700"
-        font-family="Arial,Helvetica,sans-serif">80</text>
+  <!-- "20%" ghost watermark -->
+  <text x="983" y="340" text-anchor="middle" fill="rgba(201,168,76,0.1)" font-size="100" font-weight="900"
+        font-family="Arial,Helvetica,sans-serif">20%</text>
 
-  <!-- bottom labels -->
-  <text x="460" y="264" text-anchor="middle" fill="#ECE6D8" font-size="13.5" font-weight="600"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">原型 · 流程 · 接口 · 页面</text>
-  <text x="460" y="288" text-anchor="middle" fill="rgba(63,168,108,0.7)" font-size="12"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">AI 已大幅加速 · 执行密度</text>
+  <!-- ── THINKING PERSON ── head cx=920, cy=230 -->
+  <!-- body first -->
+  <rect x="905" y="272" width="30" height="56" rx="11" fill="#1A1A0F" stroke="#C9A84C" stroke-width="3.5"/>
+  <!-- arm to chin (thinking pose) -->
+  <path d="M 905,285 Q 876,274 878,254 Q 880,235 898,222"
+        fill="none" stroke="#C9A84C" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- chin finger dot -->
+  <circle cx="898" cy="222" r="5" fill="#C9A84C" opacity="0.7"/>
 
-  <!-- ====== DIVIDER ====== -->
-  <line x1="851" y1="58" x2="851" y2="330" stroke="rgba(201,168,76,0.35)" stroke-width="1.5" stroke-dasharray="5,4"/>
-  <!-- diamond on divider -->
-  <polygon points="851,192 862,205 851,218 840,205" fill="rgba(201,168,76,0.6)"/>
+  <!-- head -->
+  <circle cx="920" cy="218" r="42" fill="#1A1A0F" stroke="#C9A84C" stroke-width="4"/>
+  <!-- thinking eyes (upward gaze) -->
+  <ellipse cx="906" cy="210" rx="7" ry="6" fill="#ECE6D8"/>
+  <ellipse cx="934" cy="210" rx="7" ry="6" fill="#ECE6D8"/>
+  <!-- pupils looking up-right -->
+  <circle cx="908" cy="208" r="3.5" fill="#1A1A0F"/>
+  <circle cx="936" cy="208" r="3.5" fill="#1A1A0F"/>
+  <!-- slight smile -->
+  <path d="M 907,234 Q 920,246 933,234" fill="none" stroke="#ECE6D8" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- raised brow (thinking) -->
+  <path d="M 899,196 Q 906,191 913,196" fill="none" stroke="#ECE6D8" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 927,196 Q 934,191 941,196" fill="none" stroke="#ECE6D8" stroke-width="2.5" stroke-linecap="round"/>
 
-  <!-- ====== 20% ZONE ====== -->
-  <rect x="862" y="54" width="310" height="282" rx="10" fill="rgba(201,168,76,0.05)" stroke="rgba(201,168,76,0.28)" stroke-width="1"/>
+  <!-- ── THOUGHT BUBBLE chain ── -->
+  <circle cx="950" cy="187" r="6" fill="rgba(201,168,76,0.45)"/>
+  <circle cx="968" cy="168" r="9" fill="rgba(201,168,76,0.5)"/>
+  <circle cx="990" cy="146" r="12" fill="rgba(201,168,76,0.55)"/>
 
-  <!-- "后 20%" badge -->
-  <rect x="882" y="70" width="76" height="24" rx="4" fill="rgba(201,168,76,0.12)" stroke="rgba(201,168,76,0.3)" stroke-width="1"/>
-  <text x="920" y="86" text-anchor="middle" fill="#C9A84C" font-size="11.5" font-weight="600"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">后 20%</text>
+  <!-- ── LIGHTBULB ── centered at cx=1042, cy=100 -->
+  <!-- glass bulb -->
+  <circle cx="1042" cy="100" r="38" fill="rgba(201,168,76,0.14)" stroke="#EDD07C" stroke-width="4"/>
+  <!-- inner glow -->
+  <circle cx="1042" cy="100" r="24" fill="rgba(237,208,124,0.4)"/>
+  <!-- filament (simple zigzag) -->
+  <path d="M 1026,108 L 1032,94 L 1038,106 L 1044,92 L 1050,104 L 1056,90 L 1058,108"
+        fill="none" stroke="#EDD07C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- base -->
+  <rect x="1028" y="138" width="28" height="8" rx="4" fill="#C9A84C"/>
+  <rect x="1031" y="148" width="22" height="7" rx="3.5" fill="#C9A84C" opacity="0.75"/>
+  <rect x="1034" y="157" width="16" height="6" rx="3" fill="#C9A84C" opacity="0.5"/>
 
-  <!-- ── MAGNIFYING GLASS ── -->
-  <!-- lens outer ring -->
-  <circle cx="1020" cy="192" r="66" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.45)" stroke-width="2"/>
-
-  <!-- target rings inside (clipped to lens) -->
-  <circle cx="1020" cy="192" r="48" fill="none" stroke="rgba(201,168,76,0.25)" stroke-width="1.5" clip-path="url(#lens-clip)"/>
-  <circle cx="1020" cy="192" r="30" fill="none" stroke="rgba(201,168,76,0.38)" stroke-width="1.5" clip-path="url(#lens-clip)"/>
-  <circle cx="1020" cy="192" r="10" fill="rgba(201,168,76,0.8)" clip-path="url(#lens-clip)"/>
-
-  <!-- crosshairs (clipped to lens) -->
-  <line x1="940" y1="192" x2="1100" y2="192" stroke="rgba(201,168,76,0.22)" stroke-width="1" clip-path="url(#lens-clip)"/>
-  <line x1="1020" y1="112" x2="1020" y2="272" stroke="rgba(201,168,76,0.22)" stroke-width="1" clip-path="url(#lens-clip)"/>
-
-  <!-- handle (thick diagonal line) -->
-  <line x1="1067" y1="240" x2="1138" y2="312" stroke="rgba(201,168,76,0.65)" stroke-width="12" stroke-linecap="round"/>
-
-  <!-- ghost "20%" watermark -->
-  <text x="920" y="120" text-anchor="middle" fill="rgba(201,168,76,0.12)" font-size="52" font-weight="700"
-        font-family="Arial,Helvetica,sans-serif">20</text>
-
-  <!-- bottom labels -->
-  <text x="1020" y="290" text-anchor="middle" fill="#ECE6D8" font-size="13.5" font-weight="600"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">判断 · 取舍 · 品味</text>
-  <text x="1020" y="314" text-anchor="middle" fill="rgba(201,168,76,0.7)" font-size="12"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">决定产品质量</text>
+  <!-- light rays -->
+  <line x1="1042" y1="56" x2="1042" y2="46" stroke="#EDD07C" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="1068" y1="64" x2="1075" y2="57" stroke="#EDD07C" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="1080" y1="90"  x2="1092" y2="90"  stroke="#EDD07C" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="1016" y1="64" x2="1009" y2="57" stroke="#EDD07C" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="1004" y1="90"  x2="992" y2="90"  stroke="#EDD07C" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="1072" y1="78" x2="1079" y2="71" stroke="#EDD07C" stroke-width="2" stroke-linecap="round"/>
+  <line x1="1012" y1="78" x2="1005" y2="71" stroke="#EDD07C" stroke-width="2" stroke-linecap="round"/>
 </svg>

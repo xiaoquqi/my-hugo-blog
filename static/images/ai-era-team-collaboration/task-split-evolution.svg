@@ -1,145 +1,134 @@
-<svg width="1200" height="360" viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="400" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <marker id="gold-arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0,10 3.5,0 7" fill="#C9A84C"/>
+      <polygon points="0 0,10 3.5,0 7" fill="#EDD07C"/>
     </marker>
-    <!-- clip for unified circle quadrants -->
-    <clipPath id="quad-tl"><rect x="480" y="80" width="110" height="110"/></clipPath>
-    <clipPath id="quad-tr"><rect x="590" y="80" width="110" height="110"/></clipPath>
-    <clipPath id="quad-bl"><rect x="480" y="190" width="110" height="110"/></clipPath>
-    <clipPath id="quad-br"><rect x="590" y="190" width="110" height="110"/></clipPath>
   </defs>
 
-  <rect width="1200" height="360" fill="#0C0A14"/>
+  <rect width="1200" height="400" fill="#0C0A14"/>
 
-  <!-- eyebrow -->
+  <!-- top strip -->
   <rect width="1200" height="44" fill="rgba(201,168,76,0.04)"/>
-  <text x="600" y="27" text-anchor="middle" fill="#C9A84C" font-size="11.5" letter-spacing="4" font-weight="500"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">
-    任务拆分的标准正在发生迁移
-  </text>
+  <text x="600" y="27" text-anchor="middle" fill="#C9A84C" font-size="11" letter-spacing="5" font-weight="500"
+        font-family="Arial,Helvetica,sans-serif">FRAGMENTED  →  UNIFIED</text>
 
-  <!-- ====== LEFT: FRAGMENTED (before) ====== -->
-  <text x="220" y="70" text-anchor="middle" fill="#9B7EDF" font-size="12" letter-spacing="2"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">过 去</text>
+  <!-- ======================================================
+       LEFT: 4 scattered puzzle-like pieces, rotated, with gaps
+       ====================================================== -->
 
-  <!-- 4 separate boxes in 2×2 with gaps -->
-  <!-- TL box -->
-  <rect x="68" y="88" width="136" height="96" rx="8" fill="rgba(155,126,223,0.06)" stroke="rgba(155,126,223,0.3)" stroke-width="1.5" stroke-dasharray="5,3"/>
-  <text x="136" y="132" text-anchor="middle" fill="#9B7EDF" font-size="11"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">文件同步</text>
-  <text x="136" y="152" text-anchor="middle" fill="#8C7E6A" font-size="10"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">模块 01</text>
+  <!-- Piece TL – rotated -18° around its center (185, 178) -->
+  <g transform="rotate(-18, 185, 178)">
+    <rect x="125" y="118" width="120" height="120" rx="14" fill="rgba(155,126,223,0.12)" stroke="#9B7EDF" stroke-width="4"/>
+    <!-- tab right -->
+    <circle cx="245" cy="178" r="18" fill="rgba(155,126,223,0.12)" stroke="#9B7EDF" stroke-width="3.5"/>
+    <!-- tab bottom -->
+    <circle cx="185" cy="238" r="18" fill="rgba(155,126,223,0.12)" stroke="#9B7EDF" stroke-width="3.5"/>
+    <text x="185" y="185" text-anchor="middle" fill="#9B7EDF" font-size="28" font-weight="700" font-family="Arial">1</text>
+  </g>
 
-  <!-- TR box -->
-  <rect x="236" y="88" width="136" height="96" rx="8" fill="rgba(155,126,223,0.06)" stroke="rgba(155,126,223,0.3)" stroke-width="1.5" stroke-dasharray="5,3"/>
-  <text x="304" y="132" text-anchor="middle" fill="#9B7EDF" font-size="11"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">版本管理</text>
-  <text x="304" y="152" text-anchor="middle" fill="#8C7E6A" font-size="10"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">模块 02</text>
+  <!-- Piece TR – rotated +14° around its center (402, 168) -->
+  <g transform="rotate(14, 402, 168)">
+    <rect x="342" y="108" width="120" height="120" rx="14" fill="rgba(201,168,76,0.1)" stroke="#C9A84C" stroke-width="4"/>
+    <!-- notch left (covered by rect offset) -->
+    <circle cx="342" cy="168" r="18" fill="#0C0A14" stroke="#C9A84C" stroke-width="3.5"/>
+    <!-- tab bottom -->
+    <circle cx="402" cy="228" r="18" fill="rgba(201,168,76,0.1)" stroke="#C9A84C" stroke-width="3.5"/>
+    <text x="402" y="175" text-anchor="middle" fill="#C9A84C" font-size="28" font-weight="700" font-family="Arial">2</text>
+  </g>
 
-  <!-- BL box -->
-  <rect x="68" y="214" width="136" height="96" rx="8" fill="rgba(155,126,223,0.06)" stroke="rgba(155,126,223,0.3)" stroke-width="1.5" stroke-dasharray="5,3"/>
-  <text x="136" y="258" text-anchor="middle" fill="#9B7EDF" font-size="11"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">恢复策略</text>
-  <text x="136" y="278" text-anchor="middle" fill="#8C7E6A" font-size="10"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">模块 03</text>
+  <!-- Piece BL – rotated -10° around its center (178, 308) -->
+  <g transform="rotate(-10, 178, 308)">
+    <rect x="118" y="248" width="120" height="120" rx="14" fill="rgba(63,168,108,0.1)" stroke="#3FA86C" stroke-width="4"/>
+    <!-- notch top -->
+    <circle cx="178" cy="248" r="18" fill="#0C0A14" stroke="#3FA86C" stroke-width="3.5"/>
+    <!-- tab right -->
+    <circle cx="238" cy="308" r="18" fill="rgba(63,168,108,0.1)" stroke="#3FA86C" stroke-width="3.5"/>
+    <text x="178" y="316" text-anchor="middle" fill="#3FA86C" font-size="28" font-weight="700" font-family="Arial">3</text>
+  </g>
 
-  <!-- BR box -->
-  <rect x="236" y="214" width="136" height="96" rx="8" fill="rgba(155,126,223,0.06)" stroke="rgba(155,126,223,0.3)" stroke-width="1.5" stroke-dasharray="5,3"/>
-  <text x="304" y="258" text-anchor="middle" fill="#9B7EDF" font-size="11"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">任务调度</text>
-  <text x="304" y="278" text-anchor="middle" fill="#8C7E6A" font-size="10"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">模块 04</text>
+  <!-- Piece BR – rotated +16° around its center (408, 305) -->
+  <g transform="rotate(16, 408, 305)">
+    <rect x="348" y="245" width="120" height="120" rx="14" fill="rgba(63,168,212,0.1)" stroke="#4BA8D8" stroke-width="4"/>
+    <!-- notch top -->
+    <circle cx="408" cy="245" r="18" fill="#0C0A14" stroke="#4BA8D8" stroke-width="3.5"/>
+    <!-- notch left -->
+    <circle cx="348" cy="305" r="18" fill="#0C0A14" stroke="#4BA8D8" stroke-width="3.5"/>
+    <text x="410" y="314" text-anchor="middle" fill="#4BA8D8" font-size="28" font-weight="700" font-family="Arial">4</text>
+  </g>
 
-  <!-- inter-module dashed arrows (communication overhead) -->
-  <line x1="204" y1="136" x2="236" y2="136" stroke="rgba(212,128,58,0.6)" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#gold-arr)"/>
-  <line x1="236" y1="145" x2="204" y2="145" stroke="rgba(212,128,58,0.4)" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#gold-arr)"/>
-  <line x1="136" y1="184" x2="136" y2="214" stroke="rgba(212,128,58,0.6)" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#gold-arr)"/>
-  <line x1="145" y1="214" x2="145" y2="184" stroke="rgba(212,128,58,0.4)" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#gold-arr)"/>
-  <line x1="204" y1="262" x2="236" y2="262" stroke="rgba(212,128,58,0.6)" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#gold-arr)"/>
-  <line x1="236" y1="271" x2="204" y2="271" stroke="rgba(212,128,58,0.4)" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#gold-arr)"/>
-  <line x1="304" y1="184" x2="304" y2="214" stroke="rgba(212,128,58,0.6)" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#gold-arr)"/>
-  <line x1="313" y1="214" x2="313" y2="184" stroke="rgba(212,128,58,0.4)" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#gold-arr)"/>
+  <!-- lightning/friction between scattered pieces -->
+  <text x="296" y="240" text-anchor="middle" fill="rgba(212,128,58,0.7)" font-size="28">⚡</text>
 
-  <!-- cost label -->
-  <text x="220" y="316" text-anchor="middle" fill="rgba(212,128,58,0.7)" font-size="12"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">高对齐成本</text>
-  <text x="220" y="336" text-anchor="middle" fill="#4A3F30" font-size="11"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">按功能边界</text>
+  <!-- ======================================================
+       CENTER ARROW
+       ====================================================== -->
+  <line x1="548" y1="212" x2="618" y2="212" stroke="#EDD07C" stroke-width="3" marker-end="url(#gold-arr)"/>
 
-  <!-- ====== CENTER ARROW ====== -->
-  <line x1="420" y1="198" x2="462" y2="198" stroke="#C9A84C" stroke-width="2.5" marker-end="url(#gold-arr)"/>
-  <text x="441" y="220" text-anchor="middle" fill="rgba(201,168,76,0.65)" font-size="10.5"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">AI 改变了前提</text>
+  <!-- ======================================================
+       RIGHT: 4 pieces clicked together perfectly
+       ====================================================== -->
+  <!-- Unified glow behind -->
+  <rect x="665" y="112" width="252" height="252" rx="18" fill="none" stroke="rgba(63,168,108,0.35)" stroke-width="6"/>
 
-  <!-- ====== RIGHT: UNIFIED (after) ====== -->
-  <text x="755" y="70" text-anchor="middle" fill="#C9A84C" font-size="12" letter-spacing="2"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">AI 时代</text>
+  <!-- TL piece (no rotation) -->
+  <g>
+    <rect x="665" y="112" width="122" height="122" rx="14" fill="rgba(155,126,223,0.15)" stroke="#9B7EDF" stroke-width="3.5"/>
+    <!-- tab right (sticks into TR slot) -->
+    <circle cx="787" cy="173" r="17" fill="rgba(155,126,223,0.15)" stroke="#9B7EDF" stroke-width="3"/>
+    <!-- tab bottom (sticks into BL slot) -->
+    <circle cx="726" cy="234" r="17" fill="rgba(155,126,223,0.15)" stroke="#9B7EDF" stroke-width="3"/>
+    <text x="726" y="180" text-anchor="middle" fill="#9B7EDF" font-size="28" font-weight="700" font-family="Arial">1</text>
+  </g>
 
-  <!-- Unified circle with 4 quadrant fills -->
-  <!-- The circle is centered at (755, 198), r=110 -->
-  <!-- 4 quadrant arcs as sectors -->
-  <!-- TL sector (top-left): green -->
-  <path d="M 755,198 L 755,88 A 110,110 0 0,0 645,198 Z"
-        fill="rgba(63,168,108,0.12)" stroke="none"/>
-  <!-- TR sector (top-right): gold -->
-  <path d="M 755,198 L 865,198 A 110,110 0 0,0 755,88 Z"
-        fill="rgba(201,168,76,0.1)" stroke="none"/>
-  <!-- BL sector (bottom-left): purple -->
-  <path d="M 755,198 L 645,198 A 110,110 0 0,0 755,308 Z"
-        fill="rgba(155,126,223,0.1)" stroke="none"/>
-  <!-- BR sector (bottom-right): blue -->
-  <path d="M 755,198 L 755,308 A 110,110 0 0,0 865,198 Z"
-        fill="rgba(63,168,212,0.08)" stroke="none"/>
+  <!-- TR piece -->
+  <g>
+    <rect x="795" y="112" width="122" height="122" rx="14" fill="rgba(201,168,76,0.13)" stroke="#C9A84C" stroke-width="3.5"/>
+    <!-- notch left (accepts TL tab) -->
+    <circle cx="795" cy="173" r="17" fill="#0C0A14"/>
+    <!-- tab bottom -->
+    <circle cx="856" cy="234" r="17" fill="rgba(201,168,76,0.13)" stroke="#C9A84C" stroke-width="3"/>
+    <text x="856" y="180" text-anchor="middle" fill="#C9A84C" font-size="28" font-weight="700" font-family="Arial">2</text>
+  </g>
 
-  <!-- outer circle border -->
-  <circle cx="755" cy="198" r="110" fill="none" stroke="rgba(63,168,108,0.45)" stroke-width="2"/>
+  <!-- BL piece -->
+  <g>
+    <rect x="665" y="242" width="122" height="122" rx="14" fill="rgba(63,168,108,0.13)" stroke="#3FA86C" stroke-width="3.5"/>
+    <!-- notch top (accepts TL bottom tab) -->
+    <circle cx="726" cy="242" r="17" fill="#0C0A14"/>
+    <!-- tab right -->
+    <circle cx="787" cy="303" r="17" fill="rgba(63,168,108,0.13)" stroke="#3FA86C" stroke-width="3"/>
+    <text x="726" y="310" text-anchor="middle" fill="#3FA86C" font-size="28" font-weight="700" font-family="Arial">3</text>
+  </g>
 
-  <!-- internal dividers (cross) -->
-  <line x1="755" y1="88" x2="755" y2="308" stroke="rgba(63,168,108,0.2)" stroke-width="1"/>
-  <line x1="645" y1="198" x2="865" y2="198" stroke="rgba(63,168,108,0.2)" stroke-width="1"/>
+  <!-- BR piece -->
+  <g>
+    <rect x="795" y="242" width="122" height="122" rx="14" fill="rgba(63,168,212,0.13)" stroke="#4BA8D8" stroke-width="3.5"/>
+    <!-- notch top -->
+    <circle cx="856" cy="242" r="17" fill="#0C0A14"/>
+    <!-- notch left -->
+    <circle cx="795" cy="303" r="17" fill="#0C0A14"/>
+    <text x="856" y="310" text-anchor="middle" fill="#4BA8D8" font-size="28" font-weight="700" font-family="Arial">4</text>
+  </g>
 
-  <!-- quadrant labels inside circle -->
-  <text x="700" y="154" text-anchor="middle" fill="rgba(63,168,108,0.85)" font-size="11"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">文件同步</text>
-  <text x="810" y="154" text-anchor="middle" fill="rgba(201,168,76,0.85)" font-size="11"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">版本管理</text>
-  <text x="700" y="248" text-anchor="middle" fill="rgba(155,126,223,0.85)" font-size="11"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">恢复策略</text>
-  <text x="810" y="248" text-anchor="middle" fill="rgba(63,168,212,0.85)" font-size="11"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">任务调度</text>
+  <!-- "perfect fit" glow lines -->
+  <rect x="660" y="107" width="264" height="264" rx="20" fill="none" stroke="rgba(63,168,108,0.5)" stroke-width="2.5"/>
 
-  <!-- center dot -->
-  <circle cx="755" cy="198" r="6" fill="#3FA86C" opacity="0.8"/>
+  <!-- ✓ badge on the unified set -->
+  <circle cx="978" cy="212" r="28" fill="rgba(63,168,108,0.15)" stroke="#3FA86C" stroke-width="3"/>
+  <polyline points="963,212 973,225 996,196" fill="none" stroke="#3FA86C" stroke-width="4"
+            stroke-linecap="round" stroke-linejoin="round"/>
 
-  <!-- benefit label -->
-  <text x="755" y="340" text-anchor="middle" fill="#3FA86C" font-size="12"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">低认知摩擦</text>
-  <text x="755" y="358" text-anchor="middle" fill="#4A3F30" font-size="11"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">按认知沟通成本</text>
-
-  <!-- ====== RIGHT SIDE COMPARISON ====== -->
-  <!-- person+AI integrated visual on far right -->
-  <text x="1060" y="70" text-anchor="middle" fill="#8C7E6A" font-size="11" letter-spacing="1"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">认知统一</text>
-
-  <!-- Single person with circle encompassing all -->
-  <circle cx="960" cy="175" r="26" fill="rgba(63,168,108,0.2)" stroke="rgba(63,168,108,0.55)" stroke-width="2"/>
-  <rect x="946" y="205" width="28" height="44" rx="9" fill="rgba(63,168,108,0.2)" stroke="rgba(63,168,108,0.45)" stroke-width="1.5"/>
-
-  <!-- Knowledge rays emanating from person -->
-  <line x1="986" y1="160" x2="1040" y2="130" stroke="rgba(201,168,76,0.4)" stroke-width="1.5"/>
-  <line x1="990" y1="175" x2="1060" y2="175" stroke="rgba(201,168,76,0.4)" stroke-width="1.5"/>
-  <line x1="986" y1="190" x2="1040" y2="218" stroke="rgba(201,168,76,0.4)" stroke-width="1.5"/>
-
-  <!-- small dots at ray ends -->
-  <circle cx="1043" cy="128" r="4" fill="rgba(201,168,76,0.55)"/>
-  <circle cx="1063" cy="175" r="4" fill="rgba(201,168,76,0.55)"/>
-  <circle cx="1043" cy="220" r="4" fill="rgba(201,168,76,0.55)"/>
-
-  <text x="960" y="276" text-anchor="middle" fill="#8C7E6A" font-size="11"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">业务理解全局统一</text>
-  <text x="960" y="296" text-anchor="middle" fill="#4A3F30" font-size="10"
-        font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">一人端到端负责</text>
+  <!-- right-side person (one person, unified view) -->
+  <g transform="translate(1110, 212)">
+    <circle r="36" fill="#101E14" stroke="#3FA86C" stroke-width="4"/>
+    <circle cx="-12" cy="-8" r="6" fill="#ECE6D8"/>
+    <circle cx="12"  cy="-8" r="6" fill="#ECE6D8"/>
+    <path d="M -14,10 Q 0,28 14,10" fill="none" stroke="#ECE6D8" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <!-- knowledge rays from right person -->
+  <line x1="1074" y1="192" x2="1042" y2="178" stroke="rgba(201,168,76,0.5)" stroke-width="2" stroke-linecap="round"/>
+  <line x1="1074" y1="212" x2="1042" y2="212" stroke="rgba(201,168,76,0.5)" stroke-width="2" stroke-linecap="round"/>
+  <line x1="1074" y1="232" x2="1042" y2="246" stroke="rgba(201,168,76,0.5)" stroke-width="2" stroke-linecap="round"/>
+  <text x="1110" y="272" text-anchor="middle" fill="rgba(63,168,108,0.6)" font-size="11" font-weight="600"
+        font-family="Arial,Helvetica,sans-serif">SOLO × AI</text>
 </svg>
