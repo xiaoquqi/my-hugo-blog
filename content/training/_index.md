@@ -10,7 +10,7 @@ title: 技术分享
 ## AI 应用开发
 
 {{< cards >}}
-  {{< card link="ai-todo" title="从 Todo 到 AI Todo（零基础）" icon="sparkles" subtitle="面向零基础用户的 AI 应用开发教程：用 AI 一步步做出可运行、可验证、可迭代的应用" >}}
+  {{< card link="ai-todo" title="AI Native 开发入门（零基础）" icon="sparkles" subtitle="面向未来的开发模式：代码是黑盒，你只管说清预期、看结果、持续修正——从 Todo 到 AI Todo" >}}
 {{< /cards >}}
 
 ## 编程语言
