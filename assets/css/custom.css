@@ -330,6 +330,13 @@ html {
   border-radius: 0 0 0.75rem 0.75rem;
 }
 
+/* Reserve space for the macOS dots so the first code line clears them.
+   Higher specificity than the theme's `.hextra-code-block pre:not(.lntable pre)`
+   (which sets padding-block) so our padding-top actually wins. */
+.content .hextra-code-block pre:not(.lntable pre) {
+  padding-top: 2.5rem;
+}
+
 /* === Inline Code === */
 .content :where(code) {
   color: hsl(var(--primary-hue) 70% 40%);
