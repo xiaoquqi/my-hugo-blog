@@ -100,7 +100,7 @@ sidebar:
 ## 课程地图
 
 {{< cards >}}
-  {{< card link="00-introduction" title="第一部分 · AI Native 开发模式" subtitle="分三集：换种方式学开发 · 人和 AI 怎么分工 · 做什么用什么做" icon="light-bulb" >}}
+  {{< card link="00-introduction" title="第一部分 · AI Native 开发模式" subtitle="五篇短文：不走老路 · 代码是黑盒 · 人机分工 · 做什么 · 用什么工具" icon="light-bulb" >}}
   {{< card link="01-environment" title="第二部分 · 环境准备" subtitle="Mac / Windows 最稳路径，跑起来 Claude Code / Codex" icon="desktop-computer" >}}
   {{< card link="02-first-todo-page" title="第三部分 · 先看到结果" subtitle="做出第一个 Todo 页面，学会验收" icon="eye" >}}
   {{< card link="03-vue-todo" title="第四部分 · 变成前端应用" subtitle="Vue + Tailwind，能增删改的 Todo" icon="template" >}}

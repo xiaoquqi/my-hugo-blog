@@ -11,7 +11,7 @@ tags:
 categories:
   - AI应用开发
 weight: 2
-prev: /training/ai-todo/00-introduction/03-project-and-tools
+prev: /training/ai-todo/00-introduction/05-tools
 ---
 
 初学者最大的拦路虎，往往不是代码，而是**环境跑不起来**。这一部分我们只有一个目标：让你的电脑能顺利运行 Claude Code / Codex，并且能创建项目、启动页面、看到结果。
