@@ -1,6 +1,6 @@
 ---
-title: 第 4 章 · 实战复盘：一个真实的上下文丢失 bug
-date: 2026-07-20T06:40:00+08:00
+title: 第 6 章 · 实战复盘：一个真实的上下文丢失 bug
+date: 2026-07-20T07:25:00+08:00
 author: Ray Sun
 tags:
   - Deep Agent
@@ -9,10 +9,10 @@ tags:
   - AI
 categories:
   - AI应用开发
-weight: 5
+weight: 7
 ---
 
-前两章讲的都是"应该怎么理解"。这一章讲一次真实发生过的故障——[SourceLens issue #60](https://github.com/HyperBDR/sourcelens/issues/60) 和修复它的 [PR #61](https://github.com/HyperBDR/sourcelens/pull/61)——团队一开始对压缩机制的理解就踩在第 2 章那两个坑上，从现象定位到修复的完整过程，比抽象讲概念更有说服力。
+第 3 章留了一个伏笔：`afac535`（2026-06-15）第一次给 harness 加上压缩安全网时，留下了一个"workspace 内容都能重新搜到"的假设；`7854b8d`（2026-06-24）又因为一次超时故障把触发阈值从 8 万调低到 4.8 万。这一章讲的就是这个伏笔一个月后是怎么兑现成一次真实故障的——[SourceLens issue #60](https://github.com/HyperBDR/sourcelens/issues/60) 和修复它的 [PR #61](https://github.com/HyperBDR/sourcelens/pull/61)，2026-07-19。团队一开始对压缩机制的理解就踩在第 4 章那两个坑上，从现象定位到修复的完整过程，比抽象讲概念更有说服力——也再次印证第 3 章的道理：harness 是被真实场景一步步逼出来、逼对的，这次修复本身也是"逼近"的一部分。
 
 ## 现象：答案变成一句空壳
 
@@ -27,13 +27,13 @@ weight: 5
 
 日志（run `b59357b1-1105-40c0-ac69-a09a4e865762`）显示 `deepagents.summarization.enabled TriggerTokens: 48000 KeepTokens: 16000`，prompt token 数一路从 `12065 → 16777 → 37606 → 69052`，一次 47496 字符的检索步骤把上下文推过了触发线，压缩被触发。
 
-根因写在 `LensSummarizationMiddleware` 当时的文档注释里："workspace 始终可以重新搜索，所以从摘要里丢掉的证据都可以再查一次"——**这个前提只对 workspace 检索出来的工具结果成立，对用户在聊天里手打/粘贴的内容不成立**。`CONTINUATION_SUMMARY_PROMPT` 当时只保证"原始问题"逐字保留，但一段 8300 字的粘贴提案不是一个简短的问题，摘要模型把它压成一句"核对这份提案"，正文就这样丢了——这正是第 2 章讲的**模式①**。
+根因写在 `LensSummarizationMiddleware` 当时的文档注释里（正是 `afac535` 那次提交留下的原话）："workspace 始终可以重新搜索，所以从摘要里丢掉的证据都可以再查一次"——**这个前提只对 workspace 检索出来的工具结果成立，对用户在聊天里手打/粘贴的内容不成立**。`CONTINUATION_SUMMARY_PROMPT` 当时只保证"原始问题"逐字保留，但一段 8300 字的粘贴提案不是一个简短的问题，摘要模型把它压成一句"核对这份提案"，正文就这样丢了——这正是第 4 章讲的**模式①**。
 
 还有一个次要因素：后端历史构建逻辑会把每条历史消息截到 `HISTORY_MAX_MESSAGE_CHARS = 2000`（总量上限 `HISTORY_MAX_TOTAL_CHARS = 8000`），所以哪怕当次压缩没触发，下一轮这段长粘贴内容也会被截断——这个问题被判定为次要因素，在这次修复里刻意推迟处理，没有一并解决。
 
 ## 修复 A：给用户输入一个"压缩豁免"
 
-对应第 2 章的模式①。`LensSummarizationMiddleware._partition_messages`（`agent_runtime.py:108-136`）覆写了基类的切分逻辑：
+对应第 4 章的模式①。`LensSummarizationMiddleware._partition_messages`（`agent_runtime.py:108-136`）覆写了基类的切分逻辑：
 
 ```python
 def _partition_messages(self, conversation_messages, cutoff_index):
@@ -99,7 +99,7 @@ def _apply_offload_thresholds(config):
 - 用锁 + 一个自定义属性标记只安装一次，因为 lensnode 在多个 worker 线程上跑运行，防止并发场景下重复包装。
 - 工具阈值默认降到 `5000`（`LENSNODE_OFFLOAD_TOOL_TOKENS`），人类消息阈值维持库默认 `50000` 不动——因为修复 A 已经把人类消息挪出压缩范围了，不需要再额外卸载它。
 
-配置知识本身在 `config.py:89-94`（第 1 章已经看过）。
+配置知识本身在 `config.py:89-94`（第 4 章提过对应的环境变量默认值）。
 
 ## A/B 实证：同一个任务，两种配置
 
@@ -115,9 +115,9 @@ def _apply_offload_thresholds(config):
 
 ## 一个刻意的决定：没有调高触发线
 
-看到"压缩太频繁"，直觉的修法是把 `summary_trigger_tokens` 从 `48000` 调高。PR 里明确说明了为什么没有这么做：
+看到"压缩太频繁"，直觉的修法是把 `summary_trigger_tokens` 调高。这个数字本身也有一段历史：`afac535`（2026-06-15）第一次引入压缩安全网时，默认值是 `80000`；`7854b8d`（2026-06-24）因为一次超时故障（一次 9K token 的调用因为模型端点响应慢、litellm 重试，拖到运行整体超时）把它调低到了 `48000`——这次调整的动机是"更早触发压缩、避免单轮拖太久"，和 issue #60 没有直接关系，但方向是一致的：**触发线只降不升**。PR #61 里明确说明了为什么这次也没有反过来调高：
 
-第 2 章讲过，SourceLens 用的近似计数器对 `LensGatewayChatModel` 走的是通用默认比例（`chars_per_token=4.0`），而且因为网关从不填充 `AIMessage.usage_metadata`，`use_usage_metadata_scaling` 的自我校准分支从未真正生效过——这两点在我们重新对照容器内实际安装的库源码核实时得到了确认。中文场景下"4 字符 = 1 token"的估算本来就偏保守（低估），也就是说 `48000` 这个计数器读数，对应的中文真实 token 消耗比表面数字要高不少——已经在逼近模型可用输入的上限附近。调高触发线换来的不是"压缩变少"，而是"距离真正的上下文溢出更近"；卸载解决的是同一个"上下文涨得太快"的问题，但它按真实内容大小卸载，不依赖这个偏差的计数器，所以是更安全的那条路。**因此触发线被刻意维持在 `48000` 不动，靠卸载去解决压缩过频的问题。**
+第 4 章讲过，SourceLens 用的近似计数器对 `LensGatewayChatModel` 走的是通用默认比例（`chars_per_token=4.0`），而且因为网关从不填充 `AIMessage.usage_metadata`，`use_usage_metadata_scaling` 的自我校准分支从未真正生效过——这两点在我们重新对照容器内实际安装的库源码核实时得到了确认。中文场景下"4 字符 = 1 token"的估算本来就偏保守（低估），也就是说 `48000` 这个计数器读数，对应的中文真实 token 消耗比表面数字要高不少——已经在逼近模型可用输入的上限附近。调高触发线换来的不是"压缩变少"，而是"距离真正的上下文溢出更近"；卸载解决的是同一个"上下文涨得太快"的问题，但它按真实内容大小卸载，不依赖这个偏差的计数器，所以是更安全的那条路。**因此触发线被刻意维持在 `48000` 不动，靠卸载去解决压缩过频的问题。**
 
 （这里多说一句：PR 描述里当时记录的判断依据是 `chars_per_token=3.3`；这次写这篇教程时对照容器内实际安装的 `deepagents 0.6.8`/`langchain 1.3.7` 源码重新核实，确认 `3.3` 只在模型 `_llm_type` 以 `anthropic-chat` 开头时才生效，`LensGatewayChatModel` 走的其实是通用默认值 `4.0`——不影响这条决策本身的结论，反而让"中文被低估"这件事更严重，但这是一个值得记下来的认知偏差：即使是刚合并不久的分析，也值得在下次改动前对照当前安装的库版本重新核实一遍，而不是照抄上一次的记忆。）
 

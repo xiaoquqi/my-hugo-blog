@@ -11,7 +11,7 @@ title: 技术分享
 
 {{< cards >}}
   {{< card link="ai-todo" title="AI Native 开发入门（零基础）" icon="sparkles" subtitle="面向未来的开发模式：代码是黑盒，你只管说清预期、看结果、持续修正——从 Todo 到 AI Todo" >}}
-  {{< card link="deep-agents" title="Deep Agent 研发使用指南" icon="puzzle" subtitle="LangChain/deepagents 深入浅出：以 SourceLens 实战为骨架，讲清概念、踩过的坑与尚未用到的高级能力" >}}
+  {{< card link="deep-agents" title="Deep Agent 研发使用指南" icon="puzzle" subtitle="用 LangChain/deepagents 封装自己的工具：从三行代码起步，一步步长成真正顶用的 Harness（SourceLens 实战举例）" >}}
 {{< /cards >}}
 
 ## 编程语言
