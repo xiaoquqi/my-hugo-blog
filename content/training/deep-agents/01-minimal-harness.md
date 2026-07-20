@@ -70,15 +70,15 @@ response = agent.invoke(
 
 ## 你什么都不配置时，库已经替你做了什么
 
-即便像上面那样只传最基本的四五个参数，`create_deep_agent` 内部依然会按固定顺序（容器内实际安装的 `deepagents 0.6.8`，`graph.py:750-813`）装好一整套中间件：
+即便像上面那样只传最基本的四五个参数，`create_deep_agent` 内部依然会按固定顺序（容器内实际安装的 `deepagents 0.6.8`，`graph.py:750-813`）装好一整套中间件。**先说清楚一件容易混淆的事**：这些中间件不是全部产自 `deepagents` 这一个包——`create_deep_agent` 实际上是从三个不同的 pip 包里把各自的中间件类导入进来，拼装成一套栈，你（以及本文后面提到 SourceLens）都还没写一行自己的代码：
 
-- **`TodoListMiddleware`** —— 给模型一个 `write_todos` 工具，可以规划、追踪多步任务。
-- **`FilesystemMiddleware`** —— 除了给 `backend` 接文件工具（`ls`/`read_file`/`write_file`/`edit`/`glob`/`grep`），还**默认**会在工具返回结果超过 `20000` token、或者人类消息超过 `50000` token 时，主动把内容卸载成文件（`filesystem.py:698-707`）——这不是你要求它做的，是库的默认行为。
-- **内建 `SummarizationMiddleware`** —— 对没有 model profile 信息的模型，默认在上下文摸到约 `170000` token 时触发一次压缩（`compute_summarization_defaults`，`deepagents/middleware/summarization.py:172-209`）。你没配置任何压缩参数，也不代表你的 agent 不会压缩——只是压缩阈值是库替你选的，而不是你自己算过的。
-- **`PatchToolCallsMiddleware`** —— 修补一些模型输出的工具调用格式问题。
-- **`AnthropicPromptCachingMiddleware`** —— 无条件装配，模型不是 Anthropic 系列时自动忽略（`unsupported_model_behavior="ignore"`）。
+- **`TodoListMiddleware`** —— 给模型一个 `write_todos` 工具，可以规划、追踪多步任务。**来自 `langchain`**（`from langchain.agents.middleware import TodoListMiddleware`，`graph.py:13`），不是 `deepagents` 自己定义的类。
+- **`FilesystemMiddleware`** —— 除了给 `backend` 接文件工具（`ls`/`read_file`/`write_file`/`edit`/`glob`/`grep`），还**默认**会在工具返回结果超过 `20000` token、或者人类消息超过 `50000` token 时，主动把内容卸载成文件（`filesystem.py:698-707`）——这不是你要求它做的，是库的默认行为。**这一个是 `deepagents` 自己的类**（`deepagents/middleware/filesystem.py`）。
+- **内建 `SummarizationMiddleware`** —— 对没有 model profile 信息的模型，默认在上下文摸到约 `170000` token 时触发一次压缩（`compute_summarization_defaults`，`deepagents/middleware/summarization.py:172-209`）。你没配置任何压缩参数，也不代表你的 agent 不会压缩——只是压缩阈值是库替你选的，而不是你自己算过的。**这是 `deepagents` 自己的一层包装**（`_DeepAgentsSummarizationMiddleware`），内部又委托给 `langchain` 的 `SummarizationMiddleware` 做实际压缩——两层都不是你要写的代码。
+- **`PatchToolCallsMiddleware`** —— 修补一些模型输出的工具调用格式问题。**`deepagents` 自己的类**（`deepagents/middleware/patch_tool_calls.py`）。
+- **`AnthropicPromptCachingMiddleware`** —— 无条件装配，模型不是 Anthropic 系列时自动忽略（`unsupported_model_behavior="ignore"`）。**这一个既不属于 `deepagents`，也不属于 `langchain`，而是来自专门的 `langchain_anthropic` 包**（`from langchain_anthropic.middleware import AnthropicPromptCachingMiddleware`，`graph.py:17`）——`deepagents` 只是把它导入进来、无条件加进栈里，本身不实现任何缓存逻辑。
 
-这几项都是**开箱即用**、不需要你写一行中间件代码的能力。它们也是这份指南第 4 章要重点拆解的对象——因为"库替你选的默认阈值"和"你的场景真正需要的阈值"往往对不上，这正是后面 SourceLens 真实踩坑的起点。
+这几项都是**开箱即用**、不需要你写一行中间件代码的能力，但它们分别来自 `deepagents`、`langchain`、`langchain_anthropic` 三个包——`create_deep_agent` 只是把它们粘在一起给你用。这个区分不是掉书袋：如果你以后要排查某个中间件的行为、或者想去查它的文档/issue，找错包会白费时间。它们也是这份指南第 4 章要重点拆解的对象——因为"库替你选的默认阈值"和"你的场景真正需要的阈值"往往对不上，这正是后面 SourceLens 真实踩坑的起点。
 
 ## 这一章的落点
 

@@ -56,20 +56,22 @@ weight: 4
 随着 harness 长出委派、场景切换、自定义压缩这些能力，一个新问题出现了：这些中间件互相之间的**装配顺序**开始变得重要。`create_deep_agent()`（容器内 `deepagents 0.6.8`，`graph.py:750-813`）内部按固定顺序组装：
 
 ```text
-TodoListMiddleware
-  → (可选) SkillsMiddleware            仅当传入 skills
-  → FilesystemMiddleware
-  → (可选) SubAgentMiddleware          仅当传入 subagents
-  → 内建 SummarizationMiddleware        create_summarization_middleware(model, backend)
-  → PatchToolCallsMiddleware
-  → (可选) AsyncSubAgentMiddleware      仅当传入 async 子代理
+TodoListMiddleware              [langchain]
+  → (可选) SkillsMiddleware            [deepagents]  仅当传入 skills
+  → FilesystemMiddleware              [deepagents]
+  → (可选) SubAgentMiddleware          [deepagents]  仅当传入 subagents
+  → 内建 SummarizationMiddleware        [deepagents 包装，内部委托 langchain]
+  → PatchToolCallsMiddleware           [deepagents]
+  → (可选) AsyncSubAgentMiddleware      [deepagents]  仅当传入 async 子代理
   → 调用方传入的 middleware（你自己的中间件插在这里）
   → harness profile 的附加中间件
-  → (可选) 工具排除中间件
-  → AnthropicPromptCachingMiddleware   无条件添加
-  → (可选) MemoryMiddleware             仅当传入 memory
-  → (可选) HumanInTheLoopMiddleware     仅当传入 interrupt_on
+  → (可选) 工具排除中间件               [deepagents]
+  → AnthropicPromptCachingMiddleware   [langchain_anthropic]  无条件添加
+  → (可选) MemoryMiddleware             [deepagents]  仅当传入 memory
+  → (可选) HumanInTheLoopMiddleware     [langchain]  仅当传入 interrupt_on
 ```
+
+方括号标的是每个中间件类真正定义在哪个 pip 包里——`create_deep_agent` 只是这条流水线的组装者，`TodoListMiddleware`/`HumanInTheLoopMiddleware` 来自 `langchain`，`AnthropicPromptCachingMiddleware` 来自专门的 `langchain_anthropic`，其余大部分才是 `deepagents` 自己实现的类。这个区分在第 1 章已经强调过一次，这里再列一遍完整顺序时同样标出来，因为**顺序图最容易让人产生"这一整条都是 deepagents 写的"的错觉**——实际上它是三个包的中间件被粘在一起。
 
 这里有个容易踩的坑，SourceLens 自己也是在加了自定义压缩中间件之后才意识到的：**`create_deep_agent` 会无条件给主 agent 装一个它自己的内建 `SummarizationMiddleware`**，出现在调用方传入的 `middleware` 之前。你通过 `kwargs["middleware"] = [...]` 追加的任何自定义压缩逻辑，都不是替换它，而是**叠加在它后面**——一次运行里会同时存在两层摘要中间件。SourceLens 的做法是把自己的触发阈值压得远低于内建阈值（约 17 万 token），保证自己的中间件总是先触发、把上下文压在内建阈值之下，让内建中间件始终保持休眠（`_build_summarization_middleware` 的 docstring，`agent_runtime.py:162-176`，明确写了"不要把触发阈值调到接近 17 万"）。
 
