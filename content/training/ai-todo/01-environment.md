@@ -11,7 +11,7 @@ tags:
 categories:
   - AI应用开发
 weight: 2
-prev: /training/ai-todo/00-introduction/05-tools
+prev: /training/ai-todo/00-introduction/03-what-we-build
 ---
 
 初学者最大的拦路虎，往往不是代码，而是**环境跑不起来**。这一部分我们只有一个目标：让你的电脑能顺利运行 Claude Code / Codex，并且能创建项目、启动页面、看到结果。
@@ -19,6 +19,12 @@ prev: /training/ai-todo/00-introduction/05-tools
 **重要原则**：这一部分不解释太多原理。你只要照着做，每一步做完都有一个「验收命令」告诉你成没成。**做完看到预期结果，就继续下一步；没看到，就把报错原封不动发给 AI。**
 
 <!--more-->
+
+## 工具已经替你选好：Claude Code / Codex
+
+这门课全程只用两款工具——**Claude Code** 和 **Codex**，目前公认最强的两款 AI 编程助手，用法几乎一样，**二选一即可**。
+
+市面上还有 Cursor、Cline、Roo Code 等一堆选择，但对初学者来说，在工具之间比来比去纯属浪费精力。这道选择题我们已经替你选好了：选定了就别回头看，把省下来的精力全部投到「做产品」上。
 
 ## 关于这一部分怎么用
 
