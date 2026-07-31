@@ -23,9 +23,9 @@ sidebar:
 分成三篇小短文，你可以一篇一篇往下读：
 
 {{< cards >}}
-  {{< card link="01-not-a-coding-course" title="1 · 这不是传统编程课" subtitle="为什么不走老路；它能做什么、边界在哪；做出来≠有人用" icon="light-bulb" >}}
-  {{< card link="02-code-as-blackbox" title="2 · AI Native：代码是黑盒" subtitle="代码是黑盒，结果是界面：说清预期 → 看结果 → 修正；人和 AI 怎么分工" icon="cube" >}}
-  {{< card link="03-what-we-build" title="3 · 我们要做什么" subtitle="全程一个项目：会拆解任务的 AI Todo 助手" icon="sparkles" >}}
+  {{< card link="01-not-a-coding-course" title="1 · 这不是传统编程课" subtitle="面向零基础：学完能做到什么、为什么不从语法开始、能力边界在哪" icon="light-bulb" >}}
+  {{< card link="02-what-we-build" title="2 · 我们要做什么" subtitle="全程一个项目：从普通 Todo 到会思考的 AI Todo 助手" icon="sparkles" >}}
+  {{< card link="03-code-as-blackbox" title="3 · AI Native：代码是黑盒" subtitle="代码是黑盒，结果是界面：说清预期 → 看结果 → 修正；人和 AI 怎么分工" icon="cube" >}}
 {{< /cards >}}
 
 从 [1 · 这不是传统编程课]({{< relref "01-not-a-coding-course.md" >}}) 开始。记住：**你不用打开代码那个黑盒，只要你会说清预期、会看结果、会让它修正。**
