@@ -238,3 +238,9 @@ docker compose up -d
 **第二步 · 配置邮件接收（IMAP）：** 进入「设置 → 邮件」，选择 IMAP 拉取方式，填写企业邮箱的服务器地址、账号、密码、SSL 端口和收件文件夹。之后系统会定时拉取邮件并自动处理。
 
 两步完成后整条链路即打通：**聊天工具 → 转发到企业邮箱 → IMAP 拉取 → AI 处理 → 结构化结果，同步到 Jira / GitHub Issues / 飞书多维表格。**
+
+### 加入 AI-My-Chats 开源交流群
+
+如果你在体验过程中遇到问题，或者想参与共建、交流开源经验，欢迎扫码加入微信群。
+
+{{< figure src="/images/why-we-built-ai-my-chats/wechat-group-qrcode.webp" alt="AI-My-Chats 开源交流群微信二维码，扫码加入技术交流、开源共建、资源共享、项目协作社区" caption="扫码加入 AI-My-Chats 开源交流群" >}}
