@@ -17,7 +17,7 @@ Hugo modules (the Hextra theme) are managed via Go modules. Run `hugo mod get -u
 
 ## Architecture
 
-This is a **Hugo static site** using the [Hextra](https://github.com/imfing/hextra) theme (v0.12.3). The site is deployed to Tencent Cloud Object Storage via GitHub Actions on push to `master`.
+This is a **Hugo static site** using the [Hextra](https://github.com/imfing/hextra) theme (v0.12.3), deployed to Tencent Cloud Object Storage via GitHub Actions. Pushing to `main` builds and deploys to **preview**; pushing a `v*` tag builds and deploys to **production**.
 
 Hextra's Tailwind classes use the `hx:` prefix (e.g. `hx:flex`, `hx:text-center`). Custom CSS lives in `assets/css/custom.css` — Hextra auto-loads this file. Override CSS custom properties (`--primary-hue`, `--primary-saturation`, `--primary-lightness`) to change the color scheme.
 

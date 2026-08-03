@@ -173,7 +173,7 @@ params:
 
   editURL:
     enable: true
-    base: "https://github.com/xiaoquqi/my-hugo-blog/edit/master/content"
+    base: "https://github.com/xiaoquqi/my-hugo-blog/edit/main/content"
 
   blog:
     list:
