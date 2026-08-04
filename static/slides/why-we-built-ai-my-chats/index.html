@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5 美元，换回一个人一周：我们如何用 AI 沉淀企业碎片化知识</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css">
+  <style>
+    @font-face { font-family:'Bebas Neue'; font-display:swap; src:url('fonts/bebas-neue.woff2') format('woff2'); }
+    @font-face { font-family:'Cormorant Garamond'; font-style:italic; font-weight:100 900; font-display:swap; src:url('fonts/cormorant-italic.woff2') format('woff2'); }
+    @font-face { font-family:'Cormorant Garamond'; font-style:normal; font-weight:600 900; font-display:swap; src:url('fonts/cormorant-bold.woff2') format('woff2'); }
+
+    :root {
+      --bg:#08070D; --surface:#12101C;
+      --border:rgba(201,168,76,0.14); --border2:rgba(201,168,76,0.30);
+      --gold:#C9A84C; --gold-hi:#EDD07C; --gold-dim:rgba(201,168,76,0.10); --gold-glow:rgba(201,168,76,0.45);
+      --text:#ECE6D8; --text2:#8C7E6A; --muted:#4A3F30;
+      --red:#D94F4F; --red-dim:rgba(217,79,79,0.12); --red-glow:rgba(217,79,79,0.45);
+      --green:#3FA86C; --green-dim:rgba(63,168,108,0.12);
+      --orange:#D4803A; --orange-dim:rgba(212,128,58,0.12);
+      --purple:#9B7EDF; --purple-dim:rgba(155,126,223,0.12);
+      --fd:'Cormorant Garamond','LXGW WenKai','Noto Serif SC',Georgia,serif;
+      --fn:'Bebas Neue','Arial Narrow',sans-serif;
+      --fb:'LXGW WenKai','PingFang SC','Microsoft YaHei','Hiragino Sans GB',sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+
+    html { font-size:18px; }
+    body { background:var(--bg); color:var(--text); font-family:var(--fb); height:100dvh; overflow:hidden; }
+
+    body::after {
+      content:''; position:fixed; inset:0; z-index:9999; pointer-events:none;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
+      opacity:0.042; mix-blend-mode:overlay;
+    }
+
+    #deck { height:100dvh; overflow-y:scroll; scroll-snap-type:y mandatory; scroll-behavior:smooth; scrollbar-width:none; }
+    #deck::-webkit-scrollbar { display:none; }
+
+    .slide {
+      min-height:100dvh; scroll-snap-align:start;
+      position:relative; overflow:hidden;
+      display:flex; flex-direction:column; justify-content:center;
+      padding:5vh 7vw;
+    }
+
+    h1 { font-family:var(--fd); font-style:italic; font-weight:700; font-size:clamp(2.8rem,5.5vw,5.2rem); line-height:1.1; }
+    h2 { font-family:var(--fd); font-weight:700; font-size:clamp(1.8rem,3vw,2.8rem); line-height:1.2; }
+    p  { font-size:1rem; line-height:1.95; color:var(--text2); }
+    strong { color:var(--text); }
+
+    .eyebrow {
+      display:inline-flex; align-items:center; gap:0.7rem;
+      font-family:var(--fn); font-size:0.78rem; letter-spacing:0.22em; color:var(--gold);
+      margin-bottom:1.1rem;
+    }
+    .eyebrow::before,.eyebrow::after { content:''; display:inline-block; width:16px; height:1px; background:var(--gold); opacity:0.5; }
+
+    .rule { border:none; height:1px; background:linear-gradient(90deg,transparent,var(--gold) 30%,var(--gold) 70%,transparent); }
+    .orb  { position:absolute; border-radius:50%; filter:blur(120px); pointer-events:none; z-index:0; }
+
+    .grad-gold { background:linear-gradient(115deg,var(--gold),var(--gold-hi)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    .grad-fire { background:linear-gradient(115deg,var(--orange),var(--red)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+
+    .qb { border-left:2px solid var(--gold); padding:0.9rem 1.2rem; background:var(--gold-dim); border-radius:0 6px 6px 0; font-size:0.95rem; line-height:1.85; color:var(--text); }
+    .qb.red   { border-color:var(--red);    background:var(--red-dim); }
+    .qb.green { border-color:var(--green);  background:var(--green-dim); }
+    .qb.orange{ border-color:var(--orange); background:var(--orange-dim); }
+
+    .card { background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:1.6rem 1.8rem; }
+    .card-gold   { background:var(--gold-dim);   border-color:var(--border2); }
+    .card-red    { background:var(--red-dim);    border-color:rgba(217,79,79,0.25); }
+    .card-green  { background:var(--green-dim);  border-color:rgba(63,168,108,0.25); }
+    .card-orange { background:var(--orange-dim); border-color:rgba(212,128,58,0.25); }
+    .card-purple { background:var(--purple-dim); border-color:rgba(155,126,223,0.25); }
+
+    .cols2 { display:grid; grid-template-columns:1fr 1fr; gap:1.4rem; }
+    .cols3 { display:grid; grid-template-columns:repeat(3,1fr); gap:1.4rem; }
+
+    .tag { display:inline-block; padding:3px 10px; border-radius:3px; font-family:var(--fb); font-size:0.7rem; font-weight:600; border:1px solid; }
+    .tag-gold  { background:var(--gold-dim); color:var(--gold-hi); border-color:var(--border2); }
+    .tag-muted { background:rgba(255,255,255,0.04); color:var(--text2); border-color:rgba(255,255,255,0.12); }
+
+    .skill { display:flex; align-items:flex-start; gap:1rem; padding:0.9rem 1.1rem; border-radius:8px; border:1px solid var(--border); border-left-width:3px; }
+    .skill-h { border-left-color:var(--green); background:rgba(63,168,108,0.04); }
+    .skill-a { border-left-color:rgba(255,255,255,0.1); opacity:0.5; }
+    .skill-ico   { font-size:1.4rem; flex-shrink:0; margin-top:0.05rem; }
+    .skill-title { font-size:0.95rem; font-weight:700; margin-bottom:0.2rem; color:var(--text); }
+    .skill-desc  { font-size:0.82rem; color:var(--text2); line-height:1.65; }
+    .skill-badge { margin-left:auto; flex-shrink:0; font-family:var(--fn); font-size:0.66rem; letter-spacing:0.06em; padding:3px 10px; border-radius:3px; border:1px solid; white-space:nowrap; align-self:center; }
+    .badge-green { background:var(--green-dim); color:var(--green); border-color:rgba(63,168,108,0.3); }
+    .badge-red   { background:var(--red-dim);   color:var(--red);   border-color:rgba(217,79,79,0.3); }
+    .badge-gold  { background:var(--gold-dim);  color:var(--gold);  border-color:var(--border2); }
+
+    #prog { position:fixed; top:0; left:0; height:2px; z-index:1000; background:linear-gradient(90deg,var(--gold),var(--gold-hi)); transition:width 0.3s ease; width:10%; }
+
+    #ctrl { position:fixed; bottom:1.2rem; right:1.4rem; z-index:1000; display:flex; align-items:center; gap:0.5rem; }
+    .cb { width:2rem; height:2rem; border-radius:50%; border:1px solid var(--border2); background:rgba(8,7,13,0.75); color:var(--gold); cursor:pointer; font-size:0.9rem; display:flex; align-items:center; justify-content:center; }
+    .cb:hover { background:var(--gold-dim); }
+    #ctr { font-family:var(--fn); font-size:0.7rem; letter-spacing:0.1em; color:var(--muted); min-width:2.5rem; text-align:center; }
+    #fsb { position:fixed; top:0.9rem; right:1rem; z-index:1000; width:1.8rem; height:1.8rem; border-radius:4px; background:rgba(8,7,13,0.5); border:1px solid var(--border); color:var(--muted); cursor:pointer; font-size:0.7rem; display:flex; align-items:center; justify-content:center; }
+    #fsb:hover { border-color:var(--border2); color:var(--gold); }
+
+    @keyframes float { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-8px);} }
+
+    @media (max-width:600px), (max-height:500px) {
+      body            { height:auto; overflow-y:auto; }
+      #deck           { height:auto; overflow:visible; scroll-snap-type:none; }
+      .slide          { height:auto; min-height:0; overflow:visible;
+                        padding:3rem 5vw 4rem; justify-content:flex-start;
+                        border-bottom:1px solid rgba(201,168,76,0.08); }
+    }
+
+    @media (max-width:600px) {
+      .cols2, .cols3  { grid-template-columns:1fr; gap:0.9rem; }
+      h1              { font-size:clamp(1.7rem,7vw,2.8rem); }
+      h2              { font-size:clamp(1.25rem,5vw,1.8rem); }
+      .card           { padding:1.1rem 1.3rem; }
+      .eyebrow        { margin-bottom:0.7rem; }
+      .hero-img       { width:100% !important; }
+      .hero-img img   { opacity:0.18 !important; }
+      .hero-content   { max-width:100% !important; }
+      .flow-row       { flex-direction:column; }
+      .flow-arrow     { align-self:center; transform:rotate(90deg); }
+      .skill          { flex-wrap:wrap; gap:0.5rem 0.8rem; }
+      .skill-badge    { margin-left:0; }
+    }
+
+    @media (max-height:500px) {
+      .slide          { padding:2.5rem 7vw 3rem; }
+      .card           { padding:0.8rem 1rem; }
+      .cols2, .cols3  { gap:0.8rem; }
+      .eyebrow        { margin-bottom:0.4rem; }
+      .qb             { padding:0.6rem 1rem; font-size:0.88rem; }
+      .skill          { padding:0.55rem 0.8rem; gap:0.6rem; }
+      h1              { font-size:clamp(1.5rem,4vw,3rem); }
+      h2              { font-size:clamp(1.1rem,2.2vw,2rem); }
+    }
+  </style>
+</head>
+<body>
+
+<div id="prog"></div>
+<button id="fsb" onclick="toggleFS()" title="全屏 F">⛶</button>
+<div id="ctrl">
+  <button class="cb" onclick="go(-1)" title="上一页">‹</button>
+  <span id="ctr">1/12</span>
+  <button class="cb" onclick="go(1)"  title="下一页">›</button>
+</div>
+
+<div id="deck">
+
+<!-- ══ 01 封面 ══ -->
+<section class="slide" id="s01">
+  <div class="hero-img" style="position:absolute;right:0;top:0;width:50%;height:100%;z-index:0;pointer-events:none;">
+    <img src="../../images/why-we-built-ai-my-chats/azure-cost-overview.webp"
+         style="width:100%;height:100%;object-fit:cover;opacity:0.62;filter:grayscale(0.05);">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,#08070D 0%,rgba(8,7,13,0.35) 22%,rgba(8,7,13,0.0) 100%);"></div>
+  </div>
+  <div style="position:absolute;font-family:var(--fn);font-size:min(30rem,40vw);line-height:1;color:rgba(201,168,76,0.024);pointer-events:none;right:-0.03em;bottom:-0.14em;z-index:0;">$</div>
+  <div class="hero-content" style="position:relative;z-index:1;max-width:56%;">
+    <div class="eyebrow" style="margin-bottom:1.6rem;">企业智能体 · AI-My-Chats</div>
+    <hr class="rule" style="width:52px;margin-bottom:2rem;">
+    <h1 style="margin-bottom:2rem;">
+      <span class="grad-gold" style="text-shadow:0 0 80px var(--gold-glow);">5&thinsp;美元</span>，<br>
+      换回一个人一周
+    </h1>
+    <hr class="rule" style="width:52px;margin-bottom:1.8rem;">
+    <p style="max-width:420px;line-height:2.1;">
+      我们如何用 AI，把碎片化的聊天、邮件、截图，<br>沉淀为企业可追踪、可复用的知识
+    </p>
+    <div style="margin-top:2rem;display:flex;align-items:center;gap:1.4rem;font-family:var(--fn);font-size:0.74rem;color:var(--muted);letter-spacing:0.18em;">
+      <span>老孙正经胡说</span>
+      <span style="width:1px;height:12px;background:var(--border2);display:inline-block;"></span>
+      <span>2026 · 08</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 02 核心数字 ══ -->
+<section class="slide" id="s02" style="align-items:center;text-align:center;">
+  <div class="orb" style="width:60vw;height:60vh;background:rgba(201,168,76,0.07);top:50%;left:50%;transform:translate(-50%,-50%);"></div>
+  <div style="position:relative;z-index:1;">
+    <div class="eyebrow" style="justify-content:center;">核心数字</div>
+    <p style="font-size:1rem;margin-bottom:0.6rem;">每个月，我们花</p>
+    <div style="display:flex;align-items:center;justify-content:center;gap:1.6rem;flex-wrap:wrap;margin-bottom:1rem;">
+      <div style="font-family:var(--fn);font-size:5rem;color:var(--gold-hi);text-shadow:0 0 60px var(--gold-glow);line-height:1;">$5</div>
+      <div style="font-family:var(--fd);font-style:italic;font-size:2rem;color:var(--muted);">=</div>
+      <div style="font-family:var(--fd);font-weight:700;font-size:2.4rem;line-height:1.15;" class="grad-gold">省下<br>一个人一周</div>
+    </div>
+    <p style="font-size:0.95rem;max-width:420px;margin:0 auto;line-height:2;">
+      每条节省 15～30 分钟，一个月处理 <strong>100+ 条</strong>碎片化知识
+    </p>
+    <hr class="rule" style="width:52px;margin:2rem auto 1.2rem;">
+    <p style="font-size:0.8rem;color:var(--muted);">切换到开源模型后，这个成本最近进一步降到了约 $3.1 / 月</p>
+  </div>
+</section>
+
+<!-- ══ 03 最新能力：GitHub Issues ══ -->
+<section class="slide" id="s03">
+  <div style="position:relative;z-index:1;">
+    <div class="eyebrow">最新更新</div>
+    <h2 style="margin-bottom:1.4rem;">一段聊天，直接变成<span class="grad-gold"> GitHub Issue</span></h2>
+    <p style="font-size:0.92rem;max-width:560px;margin-bottom:1.6rem;">转发到指定邮箱，AI 自动提炼上下文、TODO 和附件，在目标仓库创建结构化 Issue——还能指定输出语言。</p>
+    <div style="border-radius:14px;overflow:hidden;border:1px solid var(--border2);box-shadow:0 20px 60px rgba(0,0,0,0.45);">
+      <img src="../../images/why-we-built-ai-my-chats/chat-to-github-issue.webp" style="width:100%;display:block;">
+    </div>
+  </div>
+</section>
+
+<!-- ══ 04 整体架构 ══ -->
+<section class="slide" id="s04">
+  <div style="position:relative;z-index:1;">
+    <div class="eyebrow">整体架构</div>
+    <h2 style="margin-bottom:1.4rem;">多源输入 → 人工筛选 → AI 处理 → <span class="grad-gold">多出口分发</span></h2>
+    <div style="border-radius:14px;overflow:hidden;border:1px solid var(--border2);box-shadow:0 20px 60px rgba(0,0,0,0.45);background:#fff;">
+      <img src="../../images/why-we-built-ai-my-chats/knowledge-workflow.webp" style="width:100%;display:block;">
+    </div>
+  </div>
+</section>
+
+<!-- ══ 05 为什么做这件事 ══ -->
+<section class="slide" id="s05">
+  <div class="orb" style="width:32vw;height:32vw;background:rgba(201,168,76,0.06);top:-8%;right:-6%;"></div>
+  <div style="position:relative;z-index:1;">
+    <div class="eyebrow">为什么要做这件事</div>
+    <h2 style="margin-bottom:2rem;">企业知识沉淀的<span class="grad-gold"> 两个问题</span></h2>
+    <div class="cols2">
+      <div class="card" style="border-top:3px solid rgba(217,79,79,0.4);">
+        <div style="font-family:var(--fn);font-size:0.72rem;letter-spacing:0.14em;color:var(--red);margin-bottom:1rem;">问题一 · 摩擦</div>
+        <p style="font-size:0.95rem;line-height:2.05;margin-bottom:1.3rem;">邮件、聊天、截图、日志……<br>每天都在产生有价值的信息</p>
+        <p style="font-size:0.82rem;color:var(--muted);font-style:italic;padding-top:0.9rem;border-top:1px solid rgba(255,255,255,0.06);">不是没有知识，是整理成本太高</p>
+      </div>
+      <div class="card card-gold" style="border-top:3px solid var(--gold);">
+        <div style="font-family:var(--fn);font-size:0.72rem;letter-spacing:0.14em;color:var(--gold);margin-bottom:1rem;">问题二 · 数据敏感</div>
+        <p style="font-size:0.95rem;line-height:2.05;margin-bottom:1.3rem;">内部项目、技术细节、业务数据<br>能放心交给外部模型服务吗？</p>
+        <p style="font-size:0.82rem;color:var(--gold);font-style:italic;padding-top:0.9rem;border-top:1px solid var(--border2);">用户主动选择、模型自由组合，AI-My-Chats 正面回应</p>
+      </div>
+    </div>
+    <div style="margin-top:1.4rem;max-width:520px;margin-left:auto;margin-right:auto;border-radius:10px;overflow:hidden;border:1px solid var(--border);box-shadow:0 16px 40px rgba(0,0,0,0.4);">
+      <img src="../../images/why-we-built-ai-my-chats/model-configuration.webp" style="width:100%;display:block;">
+    </div>
+  </div>
+</section>
+
+<!-- ══ 06 主动提交 ══ -->
+<section class="slide" id="s06">
+  <div style="position:relative;z-index:1;">
+    <div class="eyebrow">设计选择</div>
+    <h2 style="margin-bottom:2.2rem;">不接入聊天平台，<span class="grad-gold">让用户主动提交</span></h2>
+    <div style="display:flex;flex-direction:column;gap:0.85rem;">
+      <div class="skill skill-h">
+        <span class="skill-ico">✋</span>
+        <div><div class="skill-title">不自动采集全部对话</div><div class="skill-desc">自动读取所有沟通内容并不是理想方案——噪声大，也更敏感</div></div>
+        <span class="skill-badge badge-gold">主动权在人</span>
+      </div>
+      <div class="skill skill-h">
+        <span class="skill-ico">🎯</span>
+        <div><div class="skill-title">提交本身就是一次筛选</div><div class="skill-desc">用户决定什么值得沉淀，系统只处理明确提交的内容</div></div>
+        <span class="skill-badge badge-green">数据边界清晰</span>
+      </div>
+      <div class="skill skill-h">
+        <span class="skill-ico">📧</span>
+        <div><div class="skill-title">邮件作为统一入口</div><div class="skill-desc">聊天工具本来就能转发到邮件，不用改造任何平台</div></div>
+        <span class="skill-badge badge-gold">零迁移成本</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 07 模型演进 ══ -->
+<section class="slide" id="s07">
+  <div class="orb" style="width:30vw;height:30vw;background:rgba(100,60,200,0.08);bottom:-10%;right:-5%;"></div>
+  <div style="position:relative;z-index:1;">
+    <div class="eyebrow">模型怎么选的</div>
+    <h2 style="margin-bottom:2.2rem;">模型只是<span class="grad-gold"> 可替换的组件</span></h2>
+    <div class="flow-row" style="display:flex;align-items:stretch;gap:1rem;margin-bottom:2rem;">
+      <div class="card" style="flex:1;text-align:center;padding:1.5rem 1rem;">
+        <div style="font-family:var(--fn);font-size:0.68rem;letter-spacing:0.1em;color:var(--muted);margin-bottom:0.7rem;">第一版</div>
+        <div style="font-size:0.92rem;color:var(--muted);">GPT-4.1 mini<br>+ 微软 OCR</div>
+      </div>
+      <div class="flow-arrow" style="display:flex;align-items:center;flex-shrink:0;font-size:1.6rem;color:var(--gold);">→</div>
+      <div class="card" style="flex:1;text-align:center;padding:1.5rem 1rem;">
+        <div style="font-family:var(--fn);font-size:0.68rem;letter-spacing:0.1em;color:var(--muted);margin-bottom:0.7rem;">降本</div>
+        <div style="font-size:0.92rem;color:var(--text2);">GPT-5 nano</div>
+      </div>
+      <div class="flow-arrow" style="display:flex;align-items:center;flex-shrink:0;font-size:1.6rem;color:var(--gold);">→</div>
+      <div class="card card-gold" style="flex:1.3;text-align:center;padding:1.5rem 1.2rem;box-shadow:0 0 40px rgba(201,168,76,0.07);">
+        <div style="font-family:var(--fn);font-size:0.68rem;letter-spacing:0.1em;color:var(--gold);margin-bottom:0.7rem;">现在 · 开源</div>
+        <div style="font-size:0.92rem;color:var(--text);">DeepSeek V4 Pro<br>+ 千问 3.6 Plus</div>
+      </div>
+    </div>
+    <div class="qb green" style="font-size:0.95rem;">
+      效果差距不再明显时，<strong>成本、可控性和部署灵活性</strong>就变得更重要——真正重要的是让整套流程<strong style="color:var(--green);">稳定、可控、能长期运行</strong>。
+    </div>
+  </div>
+</section>
+
+<!-- ══ 08 多模态理解 ══ -->
+<section class="slide" id="s08" style="align-items:center;text-align:center;">
+  <div class="orb" style="width:26vw;height:26vw;background:rgba(155,126,223,0.08);top:50%;left:50%;transform:translate(-50%,-50%);filter:blur(60px);"></div>
+  <div style="position:relative;z-index:1;">
+    <div class="eyebrow" style="justify-content:center;">多模态</div>
+    <h2 style="margin-bottom:1.6rem;">OCR 只认字，<br><span class="grad-gold">多模态才懂"为什么发这张图"</span></h2>
+    <div class="cols2" style="max-width:640px;margin:0 auto;">
+      <div class="card" style="text-align:left;">
+        <div style="font-family:var(--fn);font-size:0.7rem;letter-spacing:0.14em;color:var(--muted);margin-bottom:0.8rem;">纯 OCR</div>
+        <p style="font-size:0.88rem;line-height:1.9;">识别图片里有哪些字<br>但看不懂图和上下文的关系</p>
+      </div>
+      <div class="card card-purple" style="text-align:left;">
+        <div style="font-family:var(--fn);font-size:0.7rem;letter-spacing:0.14em;color:var(--purple);margin-bottom:0.8rem;">多模态模型</div>
+        <p style="font-size:0.88rem;line-height:1.9;color:var(--text);">同时理解图片内容 + 完整上下文<br>准确判断背景、意图和后续动作</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 09 可扩展知识平台 ══ -->
+<section class="slide" id="s09">
+  <div style="position:relative;z-index:1;">
+    <div class="eyebrow">从单一产品到可扩展平台</div>
+    <h2 style="margin-bottom:2.2rem;">一份信息，<span class="grad-gold">不止一个用途</span></h2>
+    <div class="flow-row" style="display:flex;align-items:center;gap:1.2rem;">
+      <div class="card card-gold" style="flex:1;text-align:center;padding:1.8rem 1.2rem;">
+        <div style="font-size:2.2rem;margin-bottom:0.6rem;">🧠</div>
+        <div style="font-family:var(--fd);font-weight:700;color:var(--gold);">AI-My-Chats</div>
+        <p style="font-size:0.82rem;margin-top:0.4rem;">理解 · 结构化 · 路由</p>
+      </div>
+      <div class="flow-arrow" style="display:flex;align-items:center;flex-shrink:0;font-size:1.6rem;color:var(--gold);">→</div>
+      <div style="flex:1.3;display:flex;flex-direction:column;gap:0.7rem;">
+        <div class="tag tag-gold" style="text-align:center;padding:6px 0;">Jira</div>
+        <div class="tag tag-gold" style="text-align:center;padding:6px 0;">GitHub Issues</div>
+        <div class="tag tag-gold" style="text-align:center;padding:6px 0;">飞书多维表格</div>
+        <div class="tag tag-gold" style="text-align:center;padding:6px 0;">知识库</div>
+      </div>
+    </div>
+    <p style="margin-top:1.8rem;font-size:0.92rem;">不是把信息固定转换到某个系统，而是先整理成有效知识，再路由到企业真正需要它的地方。</p>
+  </div>
+</section>
+
+<!-- ══ 10 越通用越没用 ══ -->
+<section class="slide" id="s10" style="align-items:center;text-align:center;">
+  <div class="orb" style="width:60vw;height:60vh;background:rgba(217,79,79,0.05);top:50%;left:50%;transform:translate(-50%,-50%);"></div>
+  <div class="orb" style="width:26vw;height:26vw;background:rgba(217,79,79,0.10);top:50%;left:50%;transform:translate(-50%,-50%);filter:blur(60px);"></div>
+  <div style="position:relative;z-index:1;">
+    <div class="eyebrow" style="justify-content:center;color:var(--red);">一个判断</div>
+    <h1 style="color:var(--red);text-shadow:0 0 60px rgba(217,79,79,0.5),0 0 140px rgba(217,79,79,0.15);margin-bottom:1.6rem;">
+      越通用<br>越没用
+    </h1>
+    <hr class="rule" style="width:52px;margin:0 auto 1.6rem;">
+    <p style="font-size:1rem;max-width:420px;line-height:2.1;">
+      企业真正需要的不是无限的组合方式，<br>
+      而是<strong>针对具体问题、经过验证、能直接使用</strong>的产品。
+    </p>
+  </div>
+</section>
+
+<!-- ══ 11 产品化交付 ══ -->
+<section class="slide" id="s11b">
+  <div style="position:relative;z-index:1;">
+    <div class="eyebrow">FDE · Forward-Deployed Engineer</div>
+    <h2 style="margin-bottom:1.4rem;">像<span class="grad-gold"> "预制菜" </span>一样交付，FDE 现场适配</h2>
+    <div style="border-radius:14px;overflow:hidden;border:1px solid var(--border2);box-shadow:0 20px 60px rgba(0,0,0,0.45);background:#fff;margin-bottom:1.2rem;">
+      <img src="../../images/why-we-built-ai-my-chats/fde-productized-delivery.webp" style="width:100%;display:block;">
+    </div>
+    <p style="font-size:0.88rem;">核心能力和主要流程已经跑通，FDE 到客户现场完成最后的配置、微调和集成——不是每次从零构建。</p>
+  </div>
+</section>
+
+<!-- ══ 12 总结 / 如何体验 ══ -->
+<section class="slide" id="s12">
+  <div class="orb" style="width:50vw;height:14vh;background:rgba(201,168,76,0.06);top:-4%;left:50%;transform:translateX(-50%);"></div>
+  <div style="position:relative;z-index:1;">
+    <div class="eyebrow">结论</div>
+    <h2 style="margin-bottom:0.5rem;">这不只是一个工具</h2>
+    <p style="font-size:0.95rem;margin-bottom:2rem;">而是企业沉淀知识的一种新方式——</p>
+    <div class="cols3" style="margin-bottom:1.8rem;">
+      <div class="card card-gold" style="text-align:center;border-top:3px solid var(--gold);">
+        <div style="font-size:2.6rem;filter:drop-shadow(0 0 14px var(--gold-glow));line-height:1;margin-bottom:0.9rem;">🔓</div>
+        <hr class="rule" style="width:28px;margin:0 auto 0.9rem;">
+        <div style="font-family:var(--fd);font-size:1.15rem;font-weight:700;color:var(--gold);margin-bottom:0.6rem;">开源可控</div>
+        <p style="font-size:0.86rem;line-height:1.75;color:var(--text2);">Devify 开源，模型、部署方式自由组合</p>
+      </div>
+      <div class="card card-purple" style="text-align:center;border-top:3px solid var(--purple);">
+        <div style="font-size:2.6rem;filter:drop-shadow(0 0 14px rgba(155,126,223,0.5));line-height:1;margin-bottom:0.9rem;">💰</div>
+        <hr class="rule" style="width:28px;margin:0 auto 0.9rem;">
+        <div style="font-family:var(--fd);font-size:1.15rem;font-weight:700;color:var(--purple);margin-bottom:0.6rem;">成本可持续</div>
+        <p style="font-size:0.86rem;line-height:1.75;color:var(--text2);">$3.1/月，验证了低成本稳定运行的可能</p>
+      </div>
+      <div class="card card-green" style="text-align:center;border-top:3px solid var(--green);">
+        <div style="font-size:2.6rem;filter:drop-shadow(0 0 14px rgba(63,168,108,0.48));line-height:1;margin-bottom:0.9rem;">📚</div>
+        <hr class="rule" style="width:28px;margin:0 auto 0.9rem;">
+        <div style="font-family:var(--fd);font-size:1.15rem;font-weight:700;color:var(--green);margin-bottom:0.6rem;">知识可复用</div>
+        <p style="font-size:0.86rem;line-height:1.75;color:var(--text2);">碎片化沟通变成可检索、可追溯的企业知识</p>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.6rem;border-radius:10px;background:var(--gold-dim);border:1px solid var(--border2);flex-wrap:wrap;gap:0.8rem;">
+      <div style="display:flex;align-items:center;gap:1rem;">
+        <span style="font-size:1.6rem;animation:float 3.5s ease-in-out infinite;display:inline-block;">💬</span>
+        <div>
+          <div style="font-family:var(--fd);font-style:italic;font-size:1.15rem;font-weight:700;color:var(--gold);">Q &amp; A</div>
+          <div style="font-size:0.78rem;color:var(--text2);margin-top:0.15rem;">github.com/cloud2ai/devify · aimychats.com</div>
+        </div>
+      </div>
+      <div style="display:flex;gap:0.5rem;flex-wrap:wrap;justify-content:flex-end;">
+        <span class="tag tag-muted">← → 翻页</span>
+        <span class="tag tag-muted">F 全屏</span>
+        <span class="tag tag-muted">老孙正经胡说</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div><!-- #deck -->
+
+<script>
+const slides = [...document.querySelectorAll('.slide')];
+const N = slides.length;
+let cur = 0;
+const prog = document.getElementById('prog');
+const ctr  = document.getElementById('ctr');
+
+function sync(n) {
+  cur = Math.max(0, Math.min(N-1, n));
+  ctr.textContent  = `${cur+1}/${N}`;
+  prog.style.width = `${(cur+1)/N*100}%`;
+}
+
+function go(d) {
+  const nx = cur + d;
+  if (nx < 0 || nx >= N) return;
+  slides[nx].scrollIntoView({ behavior:'smooth' });
+}
+
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting && e.intersectionRatio >= 0.5) sync(slides.indexOf(e.target)); });
+}, { threshold: 0.5 });
+slides.forEach(s => io.observe(s));
+
+document.addEventListener('keydown', e => {
+  const fwd = ['ArrowRight','ArrowDown',' ','PageDown'];
+  const bwd = ['ArrowLeft','ArrowUp','PageUp'];
+  if      (fwd.includes(e.key)) { e.preventDefault(); go(1); }
+  else if (bwd.includes(e.key)) { e.preventDefault(); go(-1); }
+  else if (e.key==='Home') { e.preventDefault(); slides[0].scrollIntoView({behavior:'smooth'}); }
+  else if (e.key==='End')  { e.preventDefault(); slides[N-1].scrollIntoView({behavior:'smooth'}); }
+  else if (e.key==='f'||e.key==='F') toggleFS();
+});
+
+let ty0 = 0;
+document.addEventListener('touchstart', e => { ty0 = e.touches[0].clientY; }, {passive:true});
+document.addEventListener('touchend',   e => {
+  const dy = e.changedTouches[0].clientY - ty0;
+  if (Math.abs(dy) > 45) go(dy < 0 ? 1 : -1);
+}, {passive:true});
+
+function toggleFS() {
+  if (!document.fullscreenElement) document.documentElement.requestFullscreen?.();
+  else document.exitFullscreen?.();
+}
+
+sync(0);
+</script>
+</body>
+</html>
