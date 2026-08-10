@@ -110,6 +110,8 @@ IF (C .GT. 100) GO TO 20
 
 > 机器生成的代码，能不能好到让专业程序员愿意信任它？
 
+{{< figure src="/images/history-rhymes-fortran-to-ai/we-shipped.webp" alt="1957 年程序员拿着 FORTRAN Compiler 吐出的纸带，犹豫地问'它真的能用吗？就这么发布？'；2026 年程序员看着 Codex 跑完测试，喊出'测试都过了？发布！'" caption="Then: We didn't know. But we shipped." >}}
+
 最终，他们做到了。
 
 FORTRAN I 生成代码的优化水平非常高，已经能够和优秀程序员手写的程序竞争。
