@@ -13,6 +13,8 @@ tags:
 draft: false
 ---
 
+{{< figure src="/images/history-rhymes-fortran-to-ai/cover-machine-reliable.webp" alt="1950s 程序员用放大镜检查 Compiler 输出的纸带，✓ 与 ✗ 对比；2020s 程序员看着 AI 生成的代码打问号——两个时代同一个问题：机器写的靠谱吗" caption="1950s vs 2020s：机器写的，靠谱吗？" >}}
+
 ## 01 · AI 会写代码，但我们真的敢用吗？
 
 最近程序员社区出现一种很矛盾的景象：大家一边疯狂使用 AI 写代码，一边又在抱怨越来越多没有被认真理解和验证的 AI 代码。
@@ -65,6 +67,8 @@ TPL NEXT
 这也是 FORTRAN 出现的重要经济背景。John Backus 后来回忆，当时一个计算中心的程序员成本通常已经不低于计算机本身，而计算机还有四分之一到一半的时间耗在调试程序上。
 
 计算机越来越快，但人开始成为瓶颈。
+
+{{< figure src="/images/history-rhymes-fortran-to-ai/manual-translation-to-compiler.webp" alt="1950s 程序员把 ADD A+B 手工翻译成 LOAD/ADD/STORE/JUMP 指令卡片；1960s+ 程序员只需写 C=A+B，交给 Compiler 自动吐出二进制代码" caption="从人工翻译，到交给 Compiler 自动翻译" >}}
 
 ---
 
@@ -139,6 +143,8 @@ AI 可以写，但它写出来的东西能不能被理解、被验证、被长�
 这里真正值得注意的是：推动变化的已经不只是程序员个人的选择，而是成本和效率开始进入管理决策。
 
 > **当一项技术从"好不好用"，变成"用不用会影响成本和竞争力"，组织变革就会迅速发生。**
+
+{{< figure src="/images/history-rhymes-fortran-to-ai/value-to-business-adoption-zh.webp" alt="技术出现→工程师验证→价值显现→商业决策→规模化采用→行业加速发展：1950s程序员怀疑Compiler是否真的比人工好，验证后成本下降、效率提升，推动商业决策；2020s团队看着AI Coding的开发周期-60%、人力投入-50%、交付速度+80%数据，全面采用" caption="技术创造可能，价值驱动采用，商业让未来规模化" >}}
 
 汇编没有消失，但越来越少的人需要亲手去写它。
 
