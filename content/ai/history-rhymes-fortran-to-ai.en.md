@@ -1,6 +1,6 @@
 ---
 title: "History Rhymes: 70 Years Ago, We Didn't Trust Machines to Write Good Code Either"
-description: "Seventy years ago, programmers didn't trust compilers to generate usable code either. Today's trust crisis around AI-written code is nearly the same story on repeat. From FORTRAN's origin story to the cost-driven organizational shift and the rise of software engineering itself, history has already given us the answer."
+description: "Seventy years ago, programmers didn't trust compilers to generate usable code either. Today's trust crisis around AI-written code is nearly the same story playing out again. From FORTRAN's origin story to the cost-driven organizational shift and the rise of software engineering itself, history has already given us the answer."
 author: Old Sun's Straight-faced Nonsense
 date: 2026-08-10T08:00:00+08:00
 categories:
@@ -17,7 +17,7 @@ draft: false
 
 ## 01 · AI Can Write Code, But Do We Actually Trust It?
 
-There's a strange contradiction playing out in the programmer community right now: everyone is furiously using AI to write code, while also complaining about the flood of AI-generated code that nobody has actually understood or verified.
+There's a strange contradiction playing out in the programmer community right now: everyone can't stop using AI to write code, while also complaining about the flood of AI-generated code that nobody has actually understood or verified.
 
 Open-source communities like Rust, LLVM, and Godot have all started raising the same concern, and "AI slop" has become a common term for it.
 
@@ -37,7 +37,7 @@ In the 1950s, writing a program looked nothing like it does today.
 
 Say you wanted to do something simple: add A and B, and if the result is greater than 100, move on to the next step.
 
-Today, that's trivial to write:
+Today, that's simple to write:
 
 ```
 C = A + B
@@ -102,7 +102,7 @@ Professional programmers didn't buy into it at first.
 
 And honestly, that skepticism made sense.
 
-Early automatic programming systems tended to produce code that just wasn't fast enough. On machines that expensive, if the generated code ran noticeably slower than what a skilled programmer wrote by hand, the whole idea had no real value.
+Early automatic programming systems tended to produce code that just wasn't fast enough. Computers were so expensive back then that if the generated code ran noticeably slower than what a skilled programmer wrote by hand, the whole idea had no real value.
 
 So the question the FORTRAN team actually had to answer wasn't "can we generate code automatically" — it was:
 
@@ -130,7 +130,7 @@ To a business, that wasn't just a new piece of technology anymore — it was a g
 
 A survey of 26 IBM 704 sites in April 1958 found that more than half of them were already using FORTRAN for more than half their workload — and at many sites, FORTRAN usage had already passed 80%.
 
-From the first attempt in 1954, to something actually usable in 1957, to rapid adoption by 1958 — the whole arc took just a few years.
+From the first attempt in 1954, to something actually usable in 1957, to rapid adoption by 1958 — the whole process took just a few years.
 
 What's really worth noticing here is that the thing driving the change was no longer individual programmers' preferences. Cost and efficiency had entered management's decision-making.
 
@@ -146,7 +146,7 @@ Assembly didn't disappear. But fewer and fewer people needed to write it by hand
 
 The history that followed FORTRAN already gave us one answer to this.
 
-As writing programs got easier, software didn't get simpler — it got bigger and more complex. The hard problem shifted from "how do I write this code" to how you design systems, organize collaboration, guarantee quality, and maintain things over the long run.
+As writing programs got easier, software didn't get simpler — it got bigger and more complex. The hard problem shifted from "how do I write this code" to how you design systems, organize collaboration, ensure quality, and maintain things over the long run.
 
 By 1968, software engineering had emerged as a discipline in its own right, taken seriously as an engineering problem.
 
