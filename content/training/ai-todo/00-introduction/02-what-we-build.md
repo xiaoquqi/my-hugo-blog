@@ -7,7 +7,7 @@ author: Ray Sun
 tags:
   - AI
   - 零基础
-  - Claude Code
+  - WorkBuddy
   - 软件开发
 categories:
   - AI应用开发

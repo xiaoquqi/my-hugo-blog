@@ -57,14 +57,14 @@ sidebar:
 
 - 一台电脑（Mac 或 Windows 都行，课程会分别给出最稳的路径）。
 - 网络。
-- **Claude Code 或 Codex**（二选一即可，这是我们全程唯一的主力工具）。
+- **WorkBuddy**（这是我们全程唯一的主力工具）。
 - 一点点耐心。真的只要一点点——因为不用你写代码。
 
-## 我们怎么用 Claude Code / Codex 学习
+## 我们怎么用 WorkBuddy 学习
 
 这门课的核心工作方式，就一句话：
 
-> **你负责想清楚要什么、指挥 AI 怎么做、验收结果对不对；代码由 Claude Code / Codex 来写。**
+> **你负责想清楚要什么、指挥 AI 怎么做、验收结果对不对；代码由 WorkBuddy 来写。**
 
 你会反复用到一个「任务提示词模板」，长这样：
 
@@ -101,7 +101,7 @@ sidebar:
 
 {{< cards >}}
   {{< card link="00-introduction" title="第一部分 · AI Native 开发模式" subtitle="三篇短文：不走老路 · 我们要做什么 · 代码是黑盒与人机分工" icon="light-bulb" >}}
-  {{< card link="01-environment" title="第二部分 · 环境准备" subtitle="Mac / Windows 最稳路径，跑起来 Claude Code / Codex" icon="desktop-computer" >}}
+  {{< card link="01-environment" title="第二部分 · 环境准备" subtitle="下载安装 WorkBuddy，检查好 Python / Node.js 环境" icon="desktop-computer" >}}
   {{< card link="02-first-todo-page" title="第三部分 · 先看到结果" subtitle="做出第一个 Todo 页面，学会验收" icon="eye" >}}
   {{< card link="03-vue-todo" title="第四部分 · 变成前端应用" subtitle="Vue + Tailwind，能增删改的 Todo" icon="template" >}}
   {{< card link="04-flask-api" title="第五部分 · 加入后端" subtitle="Flask，第一次前后端联调" icon="server" >}}
