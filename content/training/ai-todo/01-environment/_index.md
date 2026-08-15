@@ -25,7 +25,9 @@ sidebar:
 
 <!--more-->
 
-## 工具已经替你选好：WorkBuddy
+## 2.1 选择 AI 开发工具
+
+### 本课程使用 WorkBuddy
 
 本课程统一使用 **WorkBuddy**。
 
@@ -71,14 +73,18 @@ WorkBuddy 不一定是能力最强的工具，但足以完成本课程。
 
 > 「提出需求 → 智能体执行 → 检查结果 → 继续修改」
 
-## 关于这一部分怎么用
+## 2.2 安装并准备开发环境
 
-分成五个小节，一节一节跟着做：
+这一节只完成三件事：
+
+> 下载 WorkBuddy → 完成安装 → 提前检查运行环境
+
+对应下面第 6~8 节；装好之后，第 9、10 节再带你完成「第一次运行」和「第一次创建项目」：
 
 {{< cards >}}
-  {{< card link="01-download-workbuddy" title="6 · 下载 WorkBuddy" subtitle="根据系统选对下载入口" icon="cloud-download" >}}
-  {{< card link="02-install-workbuddy" title="7 · 安装并登录 WorkBuddy" subtitle="Windows / macOS 安装步骤" icon="desktop-computer" >}}
-  {{< card link="03-check-environment" title="8 · 检查 Python 和 Node.js 环境" subtitle="用运行环境检测提前排雷" icon="check-circle" >}}
+  {{< card link="01-download-workbuddy" title="6 · 下载 WorkBuddy" subtitle="第 1 步：根据系统选对下载入口" icon="cloud-download" >}}
+  {{< card link="02-install-workbuddy" title="7 · 安装并登录 WorkBuddy" subtitle="第 2 步：Windows / macOS 安装步骤" icon="desktop-computer" >}}
+  {{< card link="03-check-environment" title="8 · 检查 Python 和 Node.js 环境" subtitle="第 3 步：用运行环境检测提前排雷" icon="check-circle" >}}
   {{< card link="04-first-run" title="9 · 第一次运行 WorkBuddy" subtitle="打个招呼，验证环境真的通了" icon="play" >}}
   {{< card link="05-first-project" title="10 · 第一次让 AI 创建项目" subtitle="搭出项目骨架，浏览器里见结果" icon="sparkles" >}}
 {{< /cards >}}
