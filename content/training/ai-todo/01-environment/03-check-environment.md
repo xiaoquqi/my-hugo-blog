@@ -55,4 +55,4 @@ Python 或 Node.js 环境安装失败。
 
 ### 本章小结
 
-Python、Node.js 这两样系统依赖，交给 WorkBuddy 自带的运行环境检测就够了，不用再手动装 Homebrew、WSL 这些东西。三项都绿了，下一节我们正式和 AI 打第一次招呼。
+Python、Node.js 这两样系统依赖，交给 WorkBuddy 自带的运行环境检测就够了，不用再手动装 Homebrew、WSL 这些东西。三项都绿了，下一节我们简单认识一下 WorkBuddy 的界面。
