@@ -1,6 +1,6 @@
 ---
-title: 8 · 检查 Python 和 Node.js 环境
-linkTitle: 8 · 检查 Python 和 Node.js 环境
+title: 2.4 · 检查 Python 和 Node.js 环境
+linkTitle: 2.4 · 检查 Python 和 Node.js 环境
 date: 2026-07-08T00:13:00+08:00
 draft: false
 author: Ray Sun
@@ -11,7 +11,7 @@ tags:
   - 环境准备
 categories:
   - AI应用开发
-weight: 3
+weight: 4
 ---
 
 第 3 步：提前检查 Python 和 Node.js。后续课程会用到这两个运行环境，提前确认好，避免运行项目时才发现缺失。

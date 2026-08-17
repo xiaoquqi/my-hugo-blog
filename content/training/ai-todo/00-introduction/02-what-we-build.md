@@ -1,6 +1,6 @@
 ---
-title: 2 · 我们要做什么：AI Todo 助手
-linkTitle: 2 · 我们要做什么
+title: 1.2 · 我们要做什么：AI Todo 助手
+linkTitle: 1.2 · 我们要做什么
 date: 2026-07-08T00:06:00+08:00
 draft: false
 author: Ray Sun

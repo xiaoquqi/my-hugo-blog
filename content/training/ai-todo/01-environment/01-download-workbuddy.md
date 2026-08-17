@@ -1,6 +1,6 @@
 ---
-title: 6 · 下载 WorkBuddy
-linkTitle: 6 · 下载 WorkBuddy
+title: 2.2 · 下载 WorkBuddy
+linkTitle: 2.2 · 下载 WorkBuddy
 date: 2026-07-08T00:11:00+08:00
 draft: false
 author: Ray Sun
@@ -11,7 +11,7 @@ tags:
   - 环境准备
 categories:
   - AI应用开发
-weight: 1
+weight: 2
 ---
 
 第 1 步：下载 WorkBuddy。根据操作系统选对安装包。

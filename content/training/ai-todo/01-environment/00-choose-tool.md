@@ -11,7 +11,7 @@ tags:
   - 环境准备
 categories:
   - AI应用开发
-weight: 0
+weight: 1
 ---
 
 本课程使用 WorkBuddy。

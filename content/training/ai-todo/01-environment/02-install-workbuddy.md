@@ -1,6 +1,6 @@
 ---
-title: 7 · 安装并登录 WorkBuddy
-linkTitle: 7 · 安装并登录 WorkBuddy
+title: 2.3 · 安装并登录 WorkBuddy
+linkTitle: 2.3 · 安装并登录 WorkBuddy
 date: 2026-07-08T00:12:00+08:00
 draft: false
 author: Ray Sun
@@ -11,7 +11,7 @@ tags:
   - 环境准备
 categories:
   - AI应用开发
-weight: 2
+weight: 3
 ---
 
 第 2 步：完成安装。Windows 和 macOS 步骤不同，分开说。

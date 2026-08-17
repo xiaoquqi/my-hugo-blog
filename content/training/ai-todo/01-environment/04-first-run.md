@@ -1,6 +1,6 @@
 ---
-title: 9 · 认识 WorkBuddy 的界面
-linkTitle: 9 · 认识 WorkBuddy 的界面
+title: 2.5 · 认识 WorkBuddy 的界面
+linkTitle: 2.5 · 认识 WorkBuddy 的界面
 date: 2026-07-08T00:14:00+08:00
 draft: false
 author: Ray Sun
@@ -11,7 +11,7 @@ tags:
   - 环境准备
 categories:
   - AI应用开发
-weight: 4
+weight: 5
 ---
 
 环境装好了。这一节过一遍 WorkBuddy 界面上常用的几个区域和它们的作用，不涉及任何开发操作。

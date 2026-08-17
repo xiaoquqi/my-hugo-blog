@@ -1,6 +1,6 @@
 ---
-title: 3 · AI Native：代码是黑盒
-linkTitle: 3 · 代码是黑盒
+title: 1.3 · AI Native：代码是黑盒
+linkTitle: 1.3 · 代码是黑盒
 date: 2026-07-08T00:02:00+08:00
 draft: false
 author: Ray Sun

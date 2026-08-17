@@ -1,6 +1,6 @@
 ---
-title: 1 · 这不是传统编程课
-linkTitle: 1 · 这不是传统编程课
+title: 1.1 · 这不是传统编程课
+linkTitle: 1.1 · 这不是传统编程课
 date: 2026-07-08T00:00:00+08:00
 draft: false
 author: Ray Sun
