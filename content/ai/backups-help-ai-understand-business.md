@@ -175,3 +175,11 @@ HyperFileLens 还不是一个完整的 Ontology 平台，但它正在验证一�
 而 AI 时代，备份中的数据可能还有另一种价值：
 
 帮助企业重新发现隐藏在数据中的知识和洞察。
+
+---
+
+## 加入 OneProLabs 开源交流群
+
+如果你在体验过程中遇到问题，或者想参与共建、交流开源经验，欢迎扫码加入微信群。
+
+{{< figure src="/images/backups-help-ai-understand-business/wechat-group-qrcode.webp" alt="OneProLabs 开源交流群微信二维码，扫码加入技术交流、开源共建、资源共享、项目协作社区" caption="扫码加入 OneProLabs 开源交流群" >}}
