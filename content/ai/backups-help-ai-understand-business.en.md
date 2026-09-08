@@ -1,5 +1,5 @@
 ---
-title: "Your Backups Don't Just Store Data — They Help AI Understand Your Business"
+title: "Help AI Understand Your Business Data, Starting With Your Backups"
 description: "From recovering data to rediscovering its value — the open-source HyperFileLens skips Embedding, Vector DB, and pre-indexing entirely, letting an agent search, read, and reason over raw files directly. It's already running in production across HyperBDR and AGIOne's global sales support, product support, and engineering analysis."
 author: Old Sun's Straight-faced Nonsense
 date: 2026-09-07T08:00:00+08:00
