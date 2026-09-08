@@ -30,7 +30,7 @@ But CDM's value mostly comes from structured data. Tables, fields, and relations
 
 The information that actually matters most to a business, though, tends to live in unstructured data — documents, emails, chat logs, meeting notes, code, images. That's where the real context and history live, and it's exactly the kind of information that doesn't fit neatly into a fixed structure.
 
-Traditional RAG usually means chunking, embedding, and indexing everything up front — and that process tends to strip away the original context along the way.
+Traditional RAG pipelines typically require chunking, embedding, and indexing the data up front — a process that tends to lose some of the original context along the way.
 
 Agents like Codex and Claude Code point to a different approach: they don't need the whole codebase restructured ahead of time. They just search, understand context on the fly, and get complex work done.
 
@@ -54,7 +54,7 @@ You can't just dump all of that into one place, and you definitely can't leave i
 
 What a business actually needs is a way to let AI understand this scattered information while still keeping data boundaries and access control intact.
 
-{{< figure src="/images/backups-help-ai-understand-business/data-access-boundary-en.webp" alt="Enterprise data scattered across employee computers, shared folders, Office 365, Feishu, DingTalk, WeCom, and code repositories passes through a permission boundary and access control layer (which data can be accessed, who can access it) before authorized data reaches the enterprise AI assistant, which uses it to understand enterprise knowledge, answer business questions, and support decision-making — safely, compliantly, without overreach or leaks." caption="Define the permissions first, then let AI understand the data" >}}
+{{< figure src="/images/backups-help-ai-understand-business/data-access-boundary-en.webp" alt="Enterprise data scattered across employee computers, shared folders, Office 365, Feishu, DingTalk, WeCom, and code repositories passes through a permission boundary and access control layer (which data can be accessed, who can access it) before authorized data reaches the enterprise AI assistant, which draws on it to answer business questions and support decision-making — safely, compliantly, without overreach or leaks." caption="Define the permissions first, then let AI understand the data" >}}
 
 ---
 
@@ -156,7 +156,7 @@ The whole flow, from install to daily use, comes down to this:
 
 ---
 
-## AI Is Changing How We Understand Data
+## AI Is Changing How We Work With Data
 
 In the past, a company usually had to define a structure before it could analyze anything.
 
