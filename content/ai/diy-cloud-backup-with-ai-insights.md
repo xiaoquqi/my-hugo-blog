@@ -1,5 +1,5 @@
 ---
-title: 把本地文件备份到自己的对象存储，还能随时问 AI：HyperFileLens 实操全流程
+title: "AI 你的备份数据：HyperFileLens 保护实战"
 description: "在家里找一台机器部署 HyperFileLens，把本地目录备份到阿里云 OSS，再接入 DeepSeek 和 Qwen 模型——一份普通用户视角的完整实操记录，附全部命令和配置字段。"
 author: 老孙正经胡说
 date: 2026-09-09T08:00:00+08:00
