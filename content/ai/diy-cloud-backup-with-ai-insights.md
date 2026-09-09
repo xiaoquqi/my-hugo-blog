@@ -1,6 +1,6 @@
 ---
 title: 把本地文件备份到自己的对象存储，还能随时问 AI：HyperFileLens 实操全流程
-description: "从买一台阿里云轻量应用服务器开始，到装 HyperFileLens、接入阿里云 OSS、配置 DeepSeek 和 Qwen 模型，再到用 AI Copilot 直接问自己的备份文件——一份普通用户视角的完整实操记录，附全部命令和配置字段。"
+description: "在家里找一台机器部署 HyperFileLens，用 Tailscale 打通远程访问，把本地目录备份到阿里云 OSS，再接入 DeepSeek 和 Qwen 模型——一份普通用户视角的完整实操记录，附全部命令和配置字段。"
 author: 老孙正经胡说
 date: 2026-09-09T08:00:00+08:00
 categories:
@@ -16,53 +16,72 @@ draft: true
 
 我本地攒了不少工作文件：技术方案、项目资料、会议记录、截图。之前一直用 iCloud 和百度网盘同步，问题很直接——空间贵，格式还被网盘厂商锁死，只能靠它自带的那点搜索功能翻旧文件。
 
-后来开始用 Obsidian 管理笔记，习惯了把仓库同步到自己的存储上，而不是交给某个网盘 App。我想把这套思路用到全部工作文件上：自己买一块对象存储，把数据放进去，成本自己算，不受网盘套餐限制。
+后来开始用 Obsidian 管理笔记，习惯了把仓库同步到自己的存储上，而不是交给某个网盘 App。我想把这套思路用到全部工作文件上：自己攒一块对象存储，把数据放进去，成本自己算，不受网盘套餐限制。
 
 但只是把文件搬过去还不够。这些文件躺在存储里，我该翻旧方案的时候还是得自己一个一个打开找。我想要的是：数据在我自己的存储里，同时有 AI 能直接读这些文件，帮我查东西、写新方案、定位问题。
 
-这篇文章记录的就是这一整套实操：买一台阿里云轻量应用服务器，装开源项目 [HyperFileLens](https://github.com/HyperBDR/hyperfilelens)，把本地目录备份到阿里云 OSS，再接入 AI 模型，最后直接对着自己的备份文件提问。全程用到的命令和配置字段都会列出来，跟着做就能跑通。
+这篇文章记录的就是这一整套实操：在家里找一台机器部署开源项目 [HyperFileLens](https://github.com/HyperBDR/hyperfilelens)，用 Tailscale 打通远程访问，把本地目录备份到阿里云 OSS，再接入 AI 模型，最后直接对着自己的备份文件提问。全程不用买云服务器，全程用到的命令和配置字段都会列出来，跟着做就能跑通。
 
 ## 需要准备什么
 
-- 一台阿里云账号，能买轻量应用服务器和开通 OSS；
+- 一台家里能长期开机的机器（闲置电脑、NAS 上开的虚拟机都行，配置要求见下文）；
+- 一个 Tailscale 账号，免费额度对个人使用完全够；
+- 一个阿里云账号，开通 OSS 就够，不需要再买服务器；
 - 一台需要备份的本机（这里用 macOS 举例，HyperFileLens 的 Agent 同时支持 Linux、macOS、Windows）；
 - 一个阿里云百炼（DashScope）的 API Key，用来接入 DeepSeek 和 Qwen 模型。
 
-流程分两部分：先把 HyperFileLens 部署起来、把数据备份好，再接入模型、开始用 AI 查数据。
+流程分三部分：先把机器和远程访问打通，再把 HyperFileLens 部署起来、把数据备份好，最后接入模型、开始用 AI 查数据。
 
-## 第一步：买一台轻量应用服务器
+## 第一步：在家里跑一台虚拟机
 
 HyperFileLens Community 版官方给出的最低配置是 4 核 8GB，推荐 8 核 16GB，系统用 Ubuntu 20.04 / 22.04 / 24.04（amd64），`/opt` 目录至少留 20GB 空闲空间。
 
-在阿里云控制台买一台轻量应用服务器，选 Ubuntu 24.04 镜像，规格按官方推荐的 8 核 16GB 走。买完之后在防火墙规则里放行 `11442–11445/TCP`，这四个端口是 HyperFileLens 各个服务的入口，装完之后要用到。
+用 Proxmox、VMware 或者 UTM 起一台 Ubuntu 24.04 的虚拟机就行，配置按官方推荐的 8 核 16GB 分；家里如果正好有台闲置的物理机，直接装 Ubuntu 也一样，不一定非要走虚拟化。这台机器接进家里的路由器，能上网就行，不需要公网 IP。
 
-> **[待补截图]** 阿里云轻量应用服务器购买页，展示镜像选择 Ubuntu 24.04 和规格选择
+> **[待补截图]** 虚拟化软件里新建虚拟机的配置页，展示 CPU/内存/磁盘规格
 
-## 第二步：一条命令装好 HyperFileLens
+## 第二步：装 Tailscale，把它变成随时能连回去的私有节点
 
-SSH 登录到刚买的服务器，装 Docker（HyperFileLens 依赖 Docker Engine 24.0.0+ 和 Docker Compose V2 2.20.0+），确认好之后跑安装脚本：
+家用宽带大概率没有公网 IP，就算有，也不该把管理后台直接暴露在公网上。用 Tailscale 组一个私有网络更省心：
+
+```bash
+curl -fsSL https://tailscale.com/install.sh | sh
+sudo tailscale up
+```
+
+按提示登录账号，把这台机器加进自己的 tailnet。再在手机和笔记本上装好 Tailscale App，登录同一个账号。之后不管人在不在家，都能用这台机器的 Tailscale IP（`100.x.x.x`）直接访问 HyperFileLens 的控制台，跟在本地访问没区别。
+
+如果不想装 Tailscale，也可以在路由器上把端口直接做 NAT 转发到这台机器，配上公网 IP 或者 DDNS 域名照样能远程访问。但这样管理后台就挂在整个互联网上了，至少得自己再套一层 HTTPS 反向代理和访问白名单，麻烦事一下子多起来。图省事的话，个人场景还是 Tailscale 更合适。
+
+> **[待补截图]** Tailscale 管理后台，展示这台机器和手机、笔记本同在一个 tailnet 下
+
+## 第三步：一条命令装好 HyperFileLens
+
+SSH 登录到这台机器，装好 Docker（HyperFileLens 依赖 Docker Engine 24.0.0+ 和 Docker Compose V2 2.20.0+），确认好之后跑安装脚本：
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/oneprolabs/hyperfilelens/main/deploy/online/install.sh \
   | sudo bash -s -- --mirror cn
 ```
 
-服务器在国内，用 `--mirror cn` 走国内镜像，速度快很多。装完用这条命令确认状态：
+家庭网络访问 GitHub 一般不太稳定，用 `--mirror cn` 走国内镜像更稳。装完用这条命令确认状态：
 
 ```bash
 sudo /opt/hyperfilelens/install.sh status
 ```
+
+如果这台机器开了 ufw 之类的本地防火墙，记得放行 `11442–11445/TCP` 这几个端口——只对内网和 Tailscale 网段开放就够，不用也不要对公网开放。
 
 安装脚本跑完会打印出两个访问地址：
 
 - `HyperFileLens · 11443`：备份、恢复、Insights 和管理控制台；
 - `Platform Ops · 11444`：AI 模型配置和平台管理。
 
-同时会打印一个初始邮箱和密码，记下来，登录用得到。
+同时会打印一个初始邮箱和密码，记下来，登录用得到。地址默认是这台机器的内网 IP，出门在外就换成它的 Tailscale IP 访问。
 
 > **[待补截图]** 安装脚本执行完成后的终端输出，展示两个访问地址和初始邮箱密码
 
-## 第三步：登录控制台，改掉默认密码
+## 第四步：登录控制台，改掉默认密码
 
 浏览器打开 `HyperFileLens · 11443` 对应的地址，语言切到简体中文，选密码登录方式，输入安装输出里的邮箱和密码，登录进去。
 
@@ -70,7 +89,7 @@ sudo /opt/hyperfilelens/install.sh status
 
 > **[待补截图]** 登录页，展示邮箱密码登录表单
 
-## 第四步：把要备份的电脑接进来
+## 第五步：把要备份的电脑接进来
 
 进入 **Protection → Backup Wizard**，点 **Add Source**，选 **Source Host**，操作系统选 macOS（如果是 Windows 或 Linux 机器，这里选对应系统）。
 
@@ -78,7 +97,7 @@ sudo /opt/hyperfilelens/install.sh status
 
 > **[待补截图]** Backup Wizard 里数据源列表，展示新增主机的类型、注册状态和在线状态
 
-## 第五步：配置阿里云 OSS 作为备份目标
+## 第六步：配置阿里云 OSS 作为备份目标
 
 在阿里云控制台建一个 OSS Bucket，另外建一个 RAM 子账号，只授予这个 Bucket 的读写和列举权限，拿到 AccessKey ID 和 AccessKey Secret——不要用主账号的 AK/SK。
 
@@ -96,7 +115,7 @@ Secret Key 只在创建时显示一次，截图、聊天记录、代码仓库里
 
 > **[待补截图]** Add Repository 表单，展示 Alibaba Cloud OSS 的 Endpoint/Region/Bucket 配置字段（AK/SK 已打码）
 
-## 第六步：选路径，跑第一次备份
+## 第七步：选路径，跑第一次备份
 
 回到数据源列表，点刚才注册的这台机器的编辑图标，把目标仓库指定成上一步建好的 OSS Repository，确认目标列显示出仓库名、存储类型和在线状态。
 
@@ -108,7 +127,7 @@ Review 页面会把源目录、目标仓库、压缩方式、策略、过滤规�
 
 > **[待补截图]** Backup Setup 目录树选择页，以及任务列表中状态为 Succeeded 的备份任务
 
-## 第七步：确认真的备份成功了
+## 第八步：确认真的备份成功了
 
 进这台机器的详情页，切到 **Snapshot Points** 标签，确认状态是 **Available**，能看到这次快照的大小、还原后大小、文件和目录数量。
 
@@ -116,7 +135,7 @@ Review 页面会把源目录、目标仓库、压缩方式、策略、过滤规�
 
 > **[待补截图]** Snapshot Points 列表和文件浏览器展示的目录结构
 
-## 第八步：顺手验证一下能不能恢复
+## 第九步：顺手验证一下能不能恢复
 
 备份和能恢复是两回事，光看快照状态是 Available 不代表数据真的完整。挑一个文件测一下：
 
@@ -128,7 +147,7 @@ Review 页面会把源目录、目标仓库、压缩方式、策略、过滤规�
 
 > **[待补截图]** Restore 任务的参数配置页和最终 Succeeded 状态
 
-## 第九步：接入 AI 模型
+## 第十步：接入 AI 模型
 
 浏览器打开 `Platform Ops · 11444` 对应的地址，用管理员账号登录，进 **AI Engine → AI Models**，点 **Add AI Model**。
 
@@ -139,11 +158,9 @@ Review 页面会把源目录、目标仓库、压缩方式、策略、过滤规�
 
 两个模型的 API Base URL 都填百炼的兼容模式地址，Model ID 分别填对应的模型名，API Key 用百炼账号下申请的 Key。保存后点击 **Test Connection**，测通了再把其中一个设成 **Default Agent**（默认用文本模型 DeepSeek-V3，图片类任务会按需调用 Qwen-VL-Plus）。
 
-用同一个阿里云账号打通轻量服务器、OSS 存储和百炼模型，账单都在一个地方看，成本算得清楚。
-
 > **[待补截图]** AI Models 列表，展示 DeepSeek-V3 和 Qwen-VL-Plus 两条记录，状态均为 Active
 
-## 第十步：真正开始"问"自己的数据
+## 第十一步：真正开始"问"自己的数据
 
 回到 `HyperFileLens · 11443`，进 **Insights → AI Copilot**，点 **New Chat**。
 
@@ -155,7 +172,7 @@ Review 页面会把源目录、目标仓库、压缩方式、策略、过滤规�
 - "这几张报销截图里，金额加起来一共多少？"
 - "去年那次线上问题的复盘记录里，根因是什么，当时怎么解决的？"
 
-AI 会基于备份里的原始文件直接回答，答案会带上引用来源，能追溯到具体是哪个文件、哪一段内容，不是凭空生成的。
+AI 会基于备份里的原始文件直接回答，答案会带上引用来源，能追溯到具体是哪个文件、哪一段内容，不是凭空生成的。这一步会把相关文件内容从 OSS 读回这台机器处理，跨公网的下行流量 OSS 是按量计费的，个人这点数据量基本感觉不到，问得比较勤的话留意一下账单就行。
 
 > **[待补截图]** AI Copilot 对话界面，展示一次真实提问和带引用来源的回答
 
@@ -163,12 +180,13 @@ AI 会基于备份里的原始文件直接回答，答案会带上引用来源�
 
 对比一下之前用 iCloud、百度网盘的方式：
 
-- **存储成本自己定**：用 OSS 按量付费，不用被网盘的套餐容量绑死；
+- **不用给任何云厂商交服务器月租**：机器就是家里现成的这台，只有 OSS 存储按量付费；
 - **数据在自己手里**：备份数据在自己的 Bucket 里，账号、权限、生命周期规则都是自己管；
+- **走到哪都能连回去**：靠 Tailscale，出差在外也能访问家里这套系统，备份和 Insights 照常用；
 - **AI 直接读原始文件**：不需要提前做 Embedding、建向量库、搭一套 RAG 流水线，SourceLens（HyperFileLens 背后的 AI 引擎）直接搜索、阅读、推理原始文件；
 - **模型按需换**：文本用 DeepSeek，图片用 Qwen，哪个模型合适用哪个，不绑定单一供应商。
 
-这套流程从买服务器到能用 AI 提问，一次跑下来大概花一到两个小时，之后的备份可以设成定时任务，自己不用再管。
+这套流程从装虚拟机到能用 AI 提问，一次跑下来大概花一到两个小时，之后的备份可以设成定时任务，自己不用再管。
 
 ## 开源地址
 
@@ -178,7 +196,7 @@ HyperFileLens 采用 Apache 2.0 协议开源：
 - AI 引擎 SourceLens：<https://github.com/HyperBDR/sourcelens>
 - 遇到问题提 Issue：<https://github.com/HyperBDR/hyperfilelens/issues>
 
-如果不想自己部署，也可以直接用 <https://hyperfilelens.com> 的免费 SaaS 版本，跳过买服务器和装软件这两步，直接从加数据源开始。
+如果不想自己部署，也可以直接用 <https://hyperfilelens.com> 的免费 SaaS 版本，跳过装机器这一步，直接从加数据源开始。
 
 ## 加入 OneProLabs 开源交流群
 
