@@ -1,5 +1,5 @@
 ---
-title: "给 Kopia 装上 AI：HyperFileLens 实战"
+title: "给 Kopia 装上 AI 大脑"
 description: "Kopia 的去重、加密、增量备份是硬功夫，但备份完的数据就进了黑箱——想找东西得手动 mount 出来翻。HyperFileLens 的 Agent 直接构建在 Kopia 之上，加了统一管理和 AI 引擎 SourceLens，本文是一份从部署到用 AI 提问的完整实操记录。"
 author: 老孙正经胡说
 date: 2026-09-09T08:00:00+08:00
@@ -21,41 +21,39 @@ draft: true
 
 HyperFileLens 解决的正是这一层：它的 Agent 本身就是用 Go 和 Kopia 写的，备份、去重、加密这套硬核能力原封不动继承自 Kopia。上面这层交互，沿用的是我们做 HyperBDR（云灾备产品）时验证过的抽象逻辑——加数据源、加存储、点 Backup Now，三步跑完一次完整备份，不用去啃 Kopia 的 repository connect 参数和策略命令，也不用在几个 KopiaUI 之间来回切；再加一个 AI 引擎 SourceLens——不用再手动 mount 出来翻，直接在快照里搜索、阅读、推理原始文件，回答"这份文件里说了什么""这两个版本差在哪"这类问题。
 
-这篇文章记录的就是这一整套实操：在家里找一台机器部署开源项目 [HyperFileLens](https://github.com/HyperBDR/hyperfilelens)，把本地目录备份到阿里云 OSS，再接入 AI 模型，最后直接对着自己的备份文件提问。全程不用买云服务器，用到的命令和配置字段都会列出来，跟着做就能跑通。
+这篇文章记录的就是这一整套实操：部署开源项目 [HyperFileLens](https://github.com/HyperBDR/hyperfilelens)，把本地目录备份到阿里云 OSS，再接入 AI 模型，最后直接对着自己的备份文件提问。每一步用到的命令、配置字段和实际界面截图都会列出来。
 
 ## 需要准备什么
 
-- 一台家里能长期开机的机器（闲置电脑、NAS 上开的虚拟机都行，配置要求见下文）；
-- 一个阿里云账号，开通 OSS 就够，不需要再买服务器；
-- 一台需要备份的本机（这里用 macOS 举例，HyperFileLens 的 Agent 同时支持 Linux、macOS、Windows）；
+- 一台能跑 Docker 的 Linux 主机（物理机、虚拟机都行，配置要求见下文）；
+- 一个阿里云账号，开通 OSS；
+- 一台需要备份的机器（本文用 macOS 举例，HyperFileLens 的 Agent 同时支持 Linux、macOS、Windows）；
 - 一个阿里云百炼（DashScope）的 API Key，用来接入 DeepSeek 和 Qwen 模型。
 
 流程分两部分：先把 HyperFileLens 部署起来、把数据备份好，再接入模型、开始用 AI 查数据。
 
-## 第一步：在家里跑一台虚拟机
+## 第一步：准备一台主机
 
-HyperFileLens Community 版官方给出的最低配置是 4 核 8GB，推荐 8 核 16GB，系统用 Ubuntu 20.04 / 22.04 / 24.04（amd64），`/opt` 目录至少留 20GB 空闲空间。
+官方给出的最低配置是 4 核 8GB，推荐 8 核 16GB，系统用 Ubuntu 20.04 / 22.04 / 24.04（amd64），`/opt` 目录至少留 20GB 空闲空间。物理机、虚拟机都行，能跑 Docker、能访问公网即可，不需要公网 IP。
 
-用 Proxmox、VMware 或者 UTM 起一台 Ubuntu 24.04 的虚拟机就行，配置按官方推荐的 8 核 16GB 分；家里如果正好有台闲置的物理机，直接装 Ubuntu 也一样，不一定非要走虚拟化。这台机器接进家里的路由器，能上网就行，不需要公网 IP；要在外面也能访问，装个 Tailscale 之类的内网穿透工具打通一下就行，网上教程很多，这里不展开。
-
-> **[待补截图]** 虚拟化软件里新建虚拟机的配置页，展示 CPU/内存/磁盘规格
+> **[待补截图]** 主机的 CPU/内存/磁盘规格
 
 ## 第二步：一条命令装好 HyperFileLens
 
-SSH 登录到这台机器，装好 Docker（HyperFileLens 依赖 Docker Engine 24.0.0+ 和 Docker Compose V2 2.20.0+），确认好之后跑安装脚本：
+SSH 登录到这台主机，装好 Docker（HyperFileLens 依赖 Docker Engine 24.0.0+ 和 Docker Compose V2 2.20.0+），确认好之后跑安装脚本：
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/oneprolabs/hyperfilelens/main/deploy/online/install.sh \
   | sudo bash -s -- --mirror cn
 ```
 
-家庭网络访问 GitHub 一般不太稳定，用 `--mirror cn` 走国内镜像更稳。装完用这条命令确认状态：
+国内网络访问 GitHub 不稳定，用 `--mirror cn` 走国内镜像。装完用这条命令确认状态：
 
 ```bash
 sudo /opt/hyperfilelens/install.sh status
 ```
 
-如果这台机器开了 ufw 之类的本地防火墙，记得放行 `11442–11445/TCP` 这几个端口，只对内网开放就够。
+如果这台主机开了 ufw 之类的本地防火墙，记得放行 `11442–11445/TCP` 这几个端口，只对内网开放就够。
 
 安装脚本跑完会打印出两个访问地址：
 
@@ -170,9 +168,9 @@ AI 会基于备份里的原始文件直接回答，答案会带上引用来源�
 - **多机器多仓库有了统一视图**：不用再对着命令行和几个 KopiaUI 分别看状态；
 - **AI 直接读原始文件**：不需要提前做 Embedding、建向量库、搭一套 RAG 流水线，SourceLens 直接搜索、阅读、推理 Kopia 快照里的原始文件；
 - **模型按需换**：文本用 DeepSeek，图片用 Qwen，哪个模型合适用哪个，不绑定单一供应商；
-- **不用给任何云厂商交服务器月租**：机器就是家里现成的这台，只有 OSS 存储按量付费。
+- **不用给任何云厂商交服务器月租**：只有 OSS 存储按量付费。
 
-这套流程从装虚拟机到能用 AI 提问，一次跑下来大概花一到两个小时，之后的备份可以设成定时任务，自己不用再管。
+这套流程从部署到能用 AI 提问，一次跑下来大概花一到两个小时，之后的备份可以设成定时任务，自己不用再管。
 
 ## 开源地址
 
@@ -182,7 +180,7 @@ HyperFileLens 采用 Apache 2.0 协议开源：
 - AI 引擎 SourceLens：<https://github.com/HyperBDR/sourcelens>
 - 遇到问题提 Issue：<https://github.com/HyperBDR/hyperfilelens/issues>
 
-如果不想自己部署，也可以直接用 <https://hyperfilelens.com> 的免费 SaaS 版本，跳过装机器这一步，直接从加数据源开始。
+如果不想自己部署，也可以直接用 <https://hyperfilelens.com> 的免费 SaaS 版本，跳过部署这一步，直接从加数据源开始。
 
 ## 加入 OneProLabs 开源交流群
 
