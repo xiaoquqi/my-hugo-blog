@@ -1,6 +1,6 @@
 ---
 title: "给 Kopia 装上 AI 大脑"
-description: "Kopia 的去重、加密、增量备份是硬功夫，但备份完的数据就进了黑箱——想找东西得手动 mount 出来翻。HyperFileLens 的 Agent 直接构建在 Kopia 之上，加了统一管理和 AI 引擎 SourceLens，本文是一份从部署到用 AI 提问的完整实操记录。"
+description: "Kopia 的去重、加密是硬功夫，但 CLI 靠背参数、KopiaUI 也不好用，备份完的数据基本就进了黑箱。HyperFileLens 的 Agent 直接构建在 Kopia 之上，把配置流程收成三步，还接了 AI 引擎 SourceLens 直接读快照——本文是一份从部署到用 AI 提问的完整实操记录。"
 author: 老孙正经胡说
 date: 2026-09-09T08:00:00+08:00
 categories:
@@ -15,13 +15,17 @@ tags:
 draft: true
 ---
 
-我一直用 Kopia 做本地文件的增量备份，看中的就是它的内容寻址去重、端到端加密，还有不锁定存储厂商这几点——S3、OSS、本地盘随便换，数据格式不跟着某一家厂商走。
+Kopia 在自建备份圈子里名气不小，硬指标也确实过硬：
 
-但 Kopia 只管备份和恢复，备份完之后这些数据基本就进了黑箱。想找一份半年前的方案，得先 `kopia mount` 或者 `kopia restore` 出来，自己一个个翻，运气不好还得再 grep 一遍。手头有好几台机器、好几个 repository 的话，命令行和 KopiaUI 也不够看——今天备份到哪个仓库、哪台机器的策略是什么，全靠自己记。
+- 内容寻址去重，重复数据不重复占空间；
+- 端到端加密，数据在离开本机之前就已经加密好；
+- 不锁定存储后端，S3、OSS、本地盘、SFTP 随便换，数据格式不跟着某一家厂商走。
 
-HyperFileLens 解决的正是这一层：它的 Agent 本身就是用 Go 和 Kopia 写的，备份、去重、加密这套硬核能力原封不动继承自 Kopia。上面这层交互，沿用的是我们做 HyperBDR（云灾备产品）时验证过的抽象逻辑——加数据源、加存储、点 Backup Now，三步跑完一次完整备份，不用去啃 Kopia 的 repository connect 参数和策略命令，也不用在几个 KopiaUI 之间来回切；再加一个 AI 引擎 SourceLens——不用再手动 mount 出来翻，直接在快照里搜索、阅读、推理原始文件，回答"这份文件里说了什么""这两个版本差在哪"这类问题。
+但吐槽也是真吐槽：CLI 全靠背参数，官方 KopiaUI 是个能用但界面简陋、体验也就那样的 Electron 壳，这么多年也没见哪个方案把"备份好用"这件事真正做透。手头有好几台机器、好几个 repository 的话，今天备份到哪个仓库、哪台机器的策略是什么，全靠自己记；想找一份半年前的文件，还得先 `kopia mount` 或者 `kopia restore` 出来，自己一个个翻，运气不好还得再 grep 一遍。
 
-这篇文章记录的就是这一整套实操：部署开源项目 [HyperFileLens](https://github.com/HyperBDR/hyperfilelens)，把本地目录备份到阿里云 OSS，再接入 AI 模型，最后直接对着自己的备份文件提问。每一步用到的命令、配置字段和实际界面截图都会列出来。
+HyperFileLens 解决的正是这一层：它的 Agent 本身就是用 Go 和 Kopia 写的，去重、加密这套硬核能力原封不动继承自 Kopia，交互上把整个配置流程收成三步——加数据源、加存储、点 Backup Now，不用再去啃 repository connect 参数和策略命令。上面再挂一个 AI 引擎 SourceLens：备份数据私有部署、不出边界，可以直接在快照里搜索、阅读、推理原始文件，不用再手动 mount 出来翻，直接问"这份文件里说了什么""这两个版本差在哪"就有答案。
+
+这篇文章记录的就是这一整套实操：部署开源项目 [HyperFileLens](https://github.com/HyperBDR/hyperfilelens)，把本地目录备份起来，再接入 AI 模型，最后直接对着自己的备份文件提问。用什么主机、存储用哪家不重要，讲清楚的是这一整套怎么装、怎么配、怎么用——每一步用到的命令、配置字段和实际界面截图都会列出来。
 
 ## 需要准备什么
 
