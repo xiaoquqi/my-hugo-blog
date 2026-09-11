@@ -30,22 +30,37 @@ Kopia 是一个成熟的开源备份引擎，目前 GitHub 约 **14.1k Stars**�
 - 一台能跑 Docker 的 Linux 主机（x86，8 核 16GB，磁盘 100GB），能连公网访问模型，不需要公网 IP；
 - 对象存储账号，比如阿里云 OSS；
 - 要备份的主机，支持 Linux、Windows、macOS；
-- 大语言模型鉴权信息，推荐 DeepSeek-V4-Flash；需要识别图像的话，直接用 DeepSeek 最新的多模态模型。
+- 大语言模型鉴权信息，推荐 DeepSeek-V4-Flash；需要识别图像的话，直接用 DeepSeek 最新的多模态模型 **DeepSeek-V4-Flash-Vision-Exp**（Model ID：`deepseek-v4-flash-vision-exp`）。
 
 整个流程：**部署 HyperFileLens → 备份数据 → 洞察数据**。
 
 ## 第一步：准备主机并装好 HyperFileLens
 
-主机用 **x86 的 Ubuntu 24.04，8 核 16GB，磁盘 100GB**，需要装 Docker，能访问公网（主要用来访问模型），不需要配公网 IP。100GB 空间主要用于 AI 洞察时的文件转换，数据量更大就相应扩容。
+| 项目 | 要求 |
+| --- | --- |
+| 操作系统 | Ubuntu 24.04（x86_64） |
+| CPU / 内存 | 8 核 / 16GB |
+| 磁盘 | 100GB（AI 洞察时的文件转换空间，数据量更大就相应扩容） |
+| 网络 | 能访问公网（用于访问模型 API），不需要公网 IP |
+| 依赖 | Docker Engine 24.0.0+、Docker Compose V2 2.20.0+ |
 
-SSH 上去装好 Docker（依赖 Docker Engine 24.0.0+ 和 Docker Compose V2 2.20.0+），跑安装脚本：
+SSH 上去装好 Docker，跑安装脚本——国内网络和海外网络访问 GitHub 的稳定性不一样，走对应的镜像：
+
+国内网络（推荐）：
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/oneprolabs/hyperfilelens/main/deploy/online/install.sh \
   | sudo bash -s -- --mirror cn
 ```
 
-国内网络访问 GitHub 不稳定，用 `--mirror cn` 走国内镜像。装完用这条命令确认状态：
+海外网络：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/oneprolabs/hyperfilelens/main/deploy/online/install.sh \
+  | sudo bash -s -- --mirror global
+```
+
+装完用这条命令确认状态：
 
 ```bash
 sudo /opt/hyperfilelens/install.sh status
@@ -85,7 +100,7 @@ sudo /opt/hyperfilelens/install.sh status
 
 ## 第五步：接入 AI 模型，开始提问
 
-打开 `Platform Ops · 11444`，管理员登录，进 **AI Engine → AI Models**，加 **DeepSeek-V4-Flash** 处理文本问答；需要识别图片就再加一个 DeepSeek 最新的多模态模型。都用 DeepSeek 官方 API，Base URL 填 `https://api.deepseek.com`，配好 Model ID 和 API Key，**Test Connection** 通过后设成 **Default Agent**。
+打开 `Platform Ops · 11444`，管理员登录，进 **AI Engine → AI Models**，加 **DeepSeek-V4-Flash**（Model ID：`deepseek-v4-flash`）处理文本问答；需要识别图片就再加一个 **DeepSeek-V4-Flash-Vision-Exp**（Model ID：`deepseek-v4-flash-vision-exp`）。都用 DeepSeek 官方 API，Base URL 填 `https://api.deepseek.com`，配好 API Key，**Test Connection** 通过后设成 **Default Agent**。
 
 回到 `HyperFileLens · 11443`，进 **Insights → AI Copilot**，点 **New Chat**，选数据源和快照，把要分析的文件加进来，分析类型选 **Knowledge Q&A**，数据处理方式选 **Public Data Gateway**，点 **Start Chat**。准备好之后直接提问，比如：
 
