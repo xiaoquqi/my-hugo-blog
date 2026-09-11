@@ -28,7 +28,7 @@ Kopia 是一个成熟的开源备份引擎，目前 GitHub 约 **14.1k Stars**�
 ## 需要准备什么
 
 - 一台能跑 Docker 的 Linux 主机（x86，8 核 16GB，磁盘 100GB），能连公网访问模型，不需要公网 IP；
-- 对象存储账号，比如阿里云 OSS；
+- 对象存储账号，S3 兼容的都行（阿里云 OSS、华为云 OBS、AWS S3 等）；
 - 要备份的主机，支持 Linux、Windows、macOS；
 - 大语言模型鉴权信息，推荐 DeepSeek-V4-Flash；需要识别图像的话，直接用 DeepSeek 最新的多模态模型 **DeepSeek-V4-Flash-Vision-Exp**（Model ID：`deepseek-v4-flash-vision-exp`）。
 
@@ -74,49 +74,59 @@ sudo /opt/hyperfilelens/install.sh status
 - `HyperFileLens · http://192.168.8.182:11443`
 - `Platform Ops · http://192.168.8.182:11444`
 
+{{< figure src="/images/diy-cloud-backup-with-ai-insights/install-complete-terminal.webp" alt="安装脚本执行完成的终端输出，展示 HyperFileLens 和 Platform Ops 两个访问地址以及初始邮箱密码" caption="安装脚本跑完打印的访问地址和初始密码" >}}
+
 浏览器打开 `11443` 这个地址，用邮箱密码登录，第一件事改掉初始密码，顺手确认时区和系统时间一致。
 
-> **[待补截图]** 安装脚本执行完成后的终端输出（两个访问地址 + 初始邮箱密码）；登录后的控制台首页
+{{< figure src="/images/diy-cloud-backup-with-ai-insights/console-overview.webp" alt="登录后的 HyperFileLens 控制台首页，展示生产源端、目标存储、恢复演练三个环节的数据保护链路概览" caption="登录后的控制台首页" >}}
 
 ## 第二步：把要备份的电脑接进来
 
-进入 **Protection → Backup Wizard**，点 **Add Source**，选 **Source Host**，操作系统选 macOS（如果是 Windows 或 Linux 机器，这里选对应系统）。
+进入 **Protection → Backup Wizard**，点 **Add Source**，选 **Source Host**，操作系统选 Linux（Windows、macOS 同样支持）。
 
-界面会给出一段安装命令，复制到本机终端里执行，等它提示安装完成。回到 Backup Wizard 刷新数据源列表，确认新加的这台机器状态是 **Registered**（已注册）、**Online**（在线）。
+{{< figure src="/images/diy-cloud-backup-with-ai-insights/add-source-select-os.webp" alt="Add Backup Source 页面，选择 Source Host，目标操作系统选中 Linux" caption="选主机操作系统，复制安装命令" >}}
 
-> **[待补截图]** Backup Wizard 里数据源列表，展示新增主机的类型、注册状态和在线状态
+界面会给出一段安装命令，复制到目标主机终端里执行，等它提示安装完成。回到 Backup Wizard 刷新数据源列表，确认新加的这台机器状态是 **Registered**（已注册）、**Online**（在线）。
+
+{{< figure src="/images/diy-cloud-backup-with-ai-insights/backup-source-registered.webp" alt="Backup Wizard 数据源列表，新注册的 Linux 主机状态显示在线、已注册" caption="主机注册成功，状态在线" >}}
 
 ## 第三步：配置对象存储，跑通第一次备份
 
-在阿里云控制台建一个 OSS Bucket，另外建一个 RAM 子账号，只授予这个 Bucket 的读写和列举权限，拿到 AccessKey ID 和 AccessKey Secret——不要用主账号的 AK/SK。
+在存储控制台建一个 Bucket，另外建一个子账号，只授予这个 Bucket 的读写和列举权限，拿到 Access Key 和 Secret Key——不要用主账号的 AK/SK。
 
-回到 HyperFileLens，点 **Add Repository**，选 **Alibaba Cloud OSS**，填 Endpoint、Region、Access Key / Secret Key、Bucket 名称、Object Prefix（比如 `hfl/`），保存后验证，等状态变成 **Status: Created**、**Connectivity: Online**。Secret Key 只在创建时显示一次，截图、聊天记录、代码仓库里都不要留底。
+回到 HyperFileLens，点 **Add Repository**，选自己的存储平台——阿里云、华为云、AWS 都有预设，其他 S3 兼容存储直接选 **S3-Compatible Storage**，填 Endpoint、Region、Access Key / Secret Key、Bucket 名称、Object Prefix（比如 `hfl/`），保存后验证，等状态变成连通。Secret Key 只在创建时显示一次，截图、聊天记录、代码仓库里都不要留底。
 
-回到数据源列表，把目标仓库指定成这个 Repository，进 Backup Setup 展开目录树，勾选要备份的文件夹，第一次先不设 Backup Policy 和 File Filter，跑通流程要紧。Review 页面确认无误后创建，点 **Backup Now**，等任务状态变成 **Succeeded**——过程中不要关掉本机的 Agent，也不要改 OSS 的 AK/SK。
+{{< figure src="/images/diy-cloud-backup-with-ai-insights/add-object-storage-repository.webp" alt="Add Object Storage Repository 表单，展示 Huawei Cloud、Alibaba Cloud、AWS、S3-Compatible Storage 四个预设平台，以及 Endpoint、Region、Access Key、Secret Key 等连接字段" caption="对象存储平台随便选，字段都差不多" >}}
 
-> **[待补截图]** Add Repository 配置表单（AK/SK 已打码）；备份任务状态为 Succeeded 的任务列表
+回到数据源列表，把目标仓库指定成这个 Repository，勾选要备份的目录，第一次先不设 Backup Policy 和 File Filter，跑通流程要紧。确认无误后点 **Backup Now**，等任务状态变成 **Succeeded**。
 
-## 第四步：确认备份成功，顺手验证能不能恢复
+{{< figure src="/images/diy-cloud-backup-with-ai-insights/backup-task-succeeded.webp" alt="Backup Wizard 第三步开始备份，两台主机的备份任务状态均为 Succeeded" caption="备份任务跑完，状态 Succeeded" >}}
 
-进这台机器的详情页，切到 **Snapshot Points** 标签，确认状态是 **Available**，能看到快照大小、还原后大小、文件和目录数量；再用 **File and Directory Browser** 看一眼，确认具体文件名和目录结构跟本机对得上。
+## 第四步：确认备份成功
 
-备份和能恢复是两回事，挑一个文件测一下：点 **Restore**，选 **Create New Restore Task**，选中这个快照，冲突策略选 **Skip**，源路径填想恢复的文件，目标目录填一个新目录（比如 `~/HFL-Restore-Test`），提交后等状态变成 **Succeeded**，核对恢复出来的文件内容和哈希值。这一步过了，说明备份不是摆设，真的能在需要的时候取回数据。
+进主机详情页看 **Snapshot Points**，状态 **Available** 就说明这次快照没问题。顺手展开文件浏览器看一眼去重率和压缩率——这就是 Kopia 增量备份的真实效果。
 
-> **[待补截图]** Snapshot Points 列表和文件浏览器；Restore 任务最终 Succeeded 状态
+{{< figure src="/images/diy-cloud-backup-with-ai-insights/snapshot-browser-efficiency.webp" alt="快照文件浏览器，展示恢复大小、新增数据、快照大小、复用率 99.9%、压缩节省率 75.9%、缩减比 6234.74:1 等存储效率指标，以及目录结构" caption="快照可用，去重和压缩效果一目了然" >}}
+
+备份和能恢复是两回事，找个文件测一下：进 **Restore**，选这个快照，冲突策略选 **Skip**，源路径填想恢复的文件，目标目录填个新路径，等状态变成 **Succeeded**，核对内容一致。这一步过了，备份才算真的能用，不是摆设。
 
 ## 第五步：接入 AI 模型，开始提问
 
-打开 `Platform Ops · 11444`，管理员登录，进 **AI Engine → AI Models**，加 **DeepSeek-V4-Flash**（Model ID：`deepseek-v4-flash`）处理文本问答；需要识别图片就再加一个 **DeepSeek-V4-Flash-Vision-Exp**（Model ID：`deepseek-v4-flash-vision-exp`）。都用 DeepSeek 官方 API，Base URL 填 `https://api.deepseek.com`，配好 API Key，**Test Connection** 通过后设成 **Default Agent**。
+打开 `Platform Ops · 11444`，管理员登录，进 **AI Engine → AI Models**，点 **Add AI Model**。Provider 里直接能选到 **DeepSeek**，不用绕道其他网关。
 
-回到 `HyperFileLens · 11443`，进 **Insights → AI Copilot**，点 **New Chat**，选数据源和快照，把要分析的文件加进来，分析类型选 **Knowledge Q&A**，数据处理方式选 **Public Data Gateway**，点 **Start Chat**。准备好之后直接提问，比如：
+{{< figure src="/images/diy-cloud-backup-with-ai-insights/add-ai-model-provider.webp" alt="Add AI Model 页面的 Provider 选择列表，OpenAI、DeepSeek、DashScope (Qwen)、Anthropic 等主流供应商都在其中" caption="Provider 列表里直接有 DeepSeek" >}}
 
-- "把这份 2025 年的方案和现在这份对比一下，接口设计上改了哪些地方？"
-- "这几张报销截图里，金额加起来一共多少？"
-- "去年那次线上问题的复盘记录里，根因是什么，当时怎么解决的？"
+加 **DeepSeek-V4-Flash**（Model ID：`deepseek-v4-flash`）处理文本问答；需要识别图片就再加一个 **DeepSeek-V4-Flash-Vision-Exp**（Model ID：`deepseek-v4-flash-vision-exp`）。Base URL 填 `https://api.deepseek.com`，配好 API Key，**Test Connection** 通过后设成 **Default Agent**。
 
-AI 会基于备份里的原始文件直接回答，答案带引用来源，能追溯到具体文件和段落。这一步会把相关文件内容从 OSS 读回主机处理，跨公网的下行流量按量计费，个人这点数据量基本感觉不到，问得比较勤的话留意一下账单就行。
+回到 `HyperFileLens · 11443`，进 **Insights → AI Copilot**，点 **New Chat**，选数据源和快照，把要分析的文件加进来，分析类型选 **Knowledge Q&A**，数据处理方式选 **Public Data Gateway**。
 
-> **[待补截图]** AI Models 列表（DeepSeek-V4-Flash 等模型均为 Active）；AI Copilot 对话界面，展示一次真实提问和带引用来源的回答
+{{< figure src="/images/diy-cloud-backup-with-ai-insights/ai-copilot-new-chat-analysis.webp" alt="AI Copilot 新建对话，分析类型选择 Knowledge Q&A（推荐），数据隐私选择 Public Data Gateway" caption="分析类型选 Knowledge Q&A，数据隐私选公共网关" >}}
+
+点 **Start Chat**，等数据准备完就能直接提问。比如问一份小说文档："这份文档的结局是什么，几个主要角色最后都是什么结果？" AI 会基于备份里的原始文件直接回答，带引用来源，能追溯到具体文件和段落。
+
+{{< figure src="/images/diy-cloud-backup-with-ai-insights/ai-copilot-answer.webp" alt="AI Copilot 对话界面，针对备份文件中的一份文档提问，AI 给出结构化的中文回答，并标注来源文件和创建时间" caption="直接对着备份文件提问，答案带来源" >}}
+
+这一步会把相关文件内容从对象存储读回主机处理，跨公网的下行流量对象存储厂商通常按量计费，个人这点数据量基本感觉不到，问得比较勤的话留意一下账单就行。
 
 ## 跑完这一圈，到底省下了什么
 
@@ -127,7 +137,7 @@ AI 会基于备份里的原始文件直接回答，答案带引用来源，能�
 - **多机器多仓库有了统一视图**：不用再对着命令行和几个 KopiaUI 分别看状态；
 - **AI 直接读原始文件**：不需要提前做 Embedding、建向量库、搭一套 RAG 流水线，SourceLens 直接搜索、阅读、推理 Kopia 快照里的原始文件；
 - **模型按需换**：这里全用 DeepSeek，文本和多模态各配一个，实际接哪家 API、用哪个模型完全自定义，不绑定单一供应商；
-- **不用给任何云厂商交服务器月租**：只有 OSS 存储按量付费。
+- **不用给任何云厂商交服务器月租**：只有对象存储按量付费。
 
 这套流程从部署到能用 AI 提问，一次跑下来大概花一到两个小时，之后的备份可以设成定时任务，自己不用再管。
 
