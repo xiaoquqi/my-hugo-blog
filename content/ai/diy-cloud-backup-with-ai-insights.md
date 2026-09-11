@@ -100,17 +100,15 @@ curl -fsSL \
 
 ## 第四步：配置对象存储，跑通第一次备份
 
-在存储控制台建一个 Bucket，另外建一个子账号，只授予这个 Bucket 的读写和列举权限，拿到 Access Key 和 Secret Key——不要用主账号的 AK/SK。
-
-回到 HyperFileLens，点 **Add Repository**，选自己的存储平台——阿里云、华为云、AWS 都有预设，其他 S3 兼容存储直接选 **S3-Compatible Storage**，填 Endpoint、Region、Access Key / Secret Key、Bucket 名称、Object Prefix（比如 `hfl/`），保存后验证，等状态变成连通。Secret Key 只在创建时显示一次，截图、聊天记录、代码仓库里都不要留底。
-
-{{< figure src="/images/diy-cloud-backup-with-ai-insights/add-object-storage-repository.webp" alt="Add Object Storage Repository 表单，展示 Huawei Cloud、Alibaba Cloud、AWS、S3-Compatible Storage 四个预设平台，以及 Endpoint、Region、Access Key、Secret Key 等连接字段" caption="对象存储平台随便选，字段都差不多" >}}
-
-回到数据源列表，点 **创建备份配置**，这是一个多步向导：备份源（选路径）→ 备份策略 → 目标端 → 恢复计划 → 确认信息。第一次先把路径选好、目标端指定成这个 Repository，备份策略和恢复计划先用默认值，跑通流程要紧，后面再回来调。
+回到数据源列表，点 **创建备份配置**，这是一个多步向导：备份源（选路径）→ 备份策略 → 目标端 → 恢复计划 → 确认信息，先把整条链路走一遍心里有数。
 
 {{< figure src="/images/diy-cloud-backup-with-ai-insights/create-backup-configuration.webp" alt="创建备份配置向导，左侧是备份源、备份策略、目标端、恢复计划、确认信息五个步骤，右侧展示主机目录树和路径选择" caption="创建备份配置：备份源 → 备份策略 → 目标端 → 恢复计划 → 确认信息" >}}
 
-确认信息无误后保存，回到数据源列表点 **Backup Now**，等任务状态变成 **Succeeded**。
+路径选好之后到"目标端"这一步，需要一个对象存储 Repository。在存储控制台建一个 Bucket，另外建一个子账号，只授予这个 Bucket 的读写和列举权限，拿到 Access Key 和 Secret Key——不要用主账号的 AK/SK。回到 HyperFileLens 点 **Add Repository**，选自己的存储平台——阿里云、华为云、AWS 都有预设，其他 S3 兼容存储直接选 **S3-Compatible Storage**，填 Endpoint、Region、Access Key / Secret Key、Bucket 名称、Object Prefix（比如 `hfl/`），保存后验证，等状态变成连通。Secret Key 只在创建时显示一次，截图、聊天记录、代码仓库里都不要留底。
+
+{{< figure src="/images/diy-cloud-backup-with-ai-insights/add-object-storage-repository.webp" alt="Add Object Storage Repository 表单，展示 Huawei Cloud、Alibaba Cloud、AWS、S3-Compatible Storage 四个预设平台，以及 Endpoint、Region、Access Key、Secret Key 等连接字段" caption="对象存储平台随便选，字段都差不多" >}}
+
+回到备份配置向导，目标端指定成这个 Repository，备份策略和恢复计划先用默认值，跑通流程要紧，后面再回来调。确认信息无误后保存，回到数据源列表点 **Backup Now**，等任务状态变成 **Succeeded**。
 
 {{< figure src="/images/diy-cloud-backup-with-ai-insights/backup-task-succeeded.webp" alt="Backup Wizard 第三步开始备份，两台主机的备份任务状态均为 Succeeded" caption="备份任务跑完，状态 Succeeded" >}}
 
