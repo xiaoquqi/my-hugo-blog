@@ -34,15 +34,11 @@ Kopia 是一个成熟的开源备份引擎，目前 GitHub 约 **14.1k Stars**�
 
 流程分两部分：先把 HyperFileLens 部署起来、把数据备份好，再接入模型、开始用 AI 查数据。
 
-## 第一步：准备一台主机
+## 第一步：准备主机并装好 HyperFileLens
 
-官方给出的最低配置是 4 核 8GB，推荐 8 核 16GB，系统用 Ubuntu 20.04 / 22.04 / 24.04（amd64），`/opt` 目录至少留 20GB 空闲空间。物理机、虚拟机都行，能跑 Docker、能访问公网即可，不需要公网 IP。
+主机就用 **Ubuntu 24.04（amd64）、8 核 16GB、磁盘预留 100GB**，物理机、虚拟机都行，能跑 Docker、能访问公网即可，不需要公网 IP。官方给的磁盘最低要求只有 20GB，但这块空间存的是 Repository 数据和 AI 要读的快照内容，跟你打算洞察的文档体量直接挂钩，100GB 打底，多了不心疼。
 
-> **[待补截图]** 主机的 CPU/内存/磁盘规格
-
-## 第二步：一条命令装好 HyperFileLens
-
-SSH 登录到这台主机，装好 Docker（HyperFileLens 依赖 Docker Engine 24.0.0+ 和 Docker Compose V2 2.20.0+），确认好之后跑安装脚本：
+SSH 上去装好 Docker（依赖 Docker Engine 24.0.0+ 和 Docker Compose V2 2.20.0+），跑安装脚本：
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/oneprolabs/hyperfilelens/main/deploy/online/install.sh \
@@ -55,26 +51,13 @@ curl -fsSL https://raw.githubusercontent.com/oneprolabs/hyperfilelens/main/deplo
 sudo /opt/hyperfilelens/install.sh status
 ```
 
-如果这台主机开了 ufw 之类的本地防火墙，记得放行 `11442–11445/TCP` 这几个端口，只对内网开放就够。
+如果开了 ufw 之类的本地防火墙，记得放行 `11442–11445/TCP`，只对内网开放就够。安装脚本跑完会打印两个访问地址——`HyperFileLens · 11443`（备份、恢复、Insights、管理控制台）和 `Platform Ops · 11444`（AI 模型配置），以及一个初始邮箱和密码。
 
-安装脚本跑完会打印出两个访问地址：
+浏览器打开 `HyperFileLens · 11443` 对应的地址，用邮箱密码登录，第一件事改掉初始密码，顺手确认时区和系统时间一致。
 
-- `HyperFileLens · 11443`：备份、恢复、Insights 和管理控制台；
-- `Platform Ops · 11444`：AI 模型配置和平台管理。
+> **[待补截图]** 安装脚本执行完成后的终端输出（两个访问地址 + 初始邮箱密码）；登录后的控制台首页
 
-同时会打印一个初始邮箱和密码，记下来，登录用得到。地址默认是这台机器的内网 IP。
-
-> **[待补截图]** 安装脚本执行完成后的终端输出，展示两个访问地址和初始邮箱密码
-
-## 第三步：登录控制台，改掉默认密码
-
-浏览器打开 `HyperFileLens · 11443` 对应的地址，语言切到简体中文，选密码登录方式，输入安装输出里的邮箱和密码，登录进去。
-
-登录成功后第一件事：改掉初始密码。顺手确认一下时区设置和系统时间一致，避免后面备份任务的时间戳对不上。
-
-> **[待补截图]** 登录页，展示邮箱密码登录表单
-
-## 第四步：把要备份的电脑接进来
+## 第二步：把要备份的电脑接进来
 
 进入 **Protection → Backup Wizard**，点 **Add Source**，选 **Source Host**，操作系统选 macOS（如果是 Windows 或 Linux 机器，这里选对应系统）。
 
@@ -82,84 +65,37 @@ sudo /opt/hyperfilelens/install.sh status
 
 > **[待补截图]** Backup Wizard 里数据源列表，展示新增主机的类型、注册状态和在线状态
 
-## 第五步：配置阿里云 OSS 作为备份目标
+## 第三步：配置对象存储，跑通第一次备份
 
 在阿里云控制台建一个 OSS Bucket，另外建一个 RAM 子账号，只授予这个 Bucket 的读写和列举权限，拿到 AccessKey ID 和 AccessKey Secret——不要用主账号的 AK/SK。
 
-回到 HyperFileLens，在备份配置里点 **Add Repository**，选 **Alibaba Cloud OSS**，依次填：
+回到 HyperFileLens，点 **Add Repository**，选 **Alibaba Cloud OSS**，填 Endpoint、Region、Access Key / Secret Key、Bucket 名称、Object Prefix（比如 `hfl/`），保存后验证，等状态变成 **Status: Created**、**Connectivity: Online**。Secret Key 只在创建时显示一次，截图、聊天记录、代码仓库里都不要留底。
 
-- Endpoint（按 Bucket 所在地域自动带出）；
-- Region；
-- Access Key / Secret Key；
-- Bucket 名称；
-- Object Prefix（比如填 `hfl/`，方便后续在 Bucket 里区分这批数据）。
+回到数据源列表，把目标仓库指定成这个 Repository，进 Backup Setup 展开目录树，勾选要备份的文件夹，第一次先不设 Backup Policy 和 File Filter，跑通流程要紧。Review 页面确认无误后创建，点 **Backup Now**，等任务状态变成 **Succeeded**——过程中不要关掉本机的 Agent，也不要改 OSS 的 AK/SK。
 
-保存后点验证，等状态变成 **Status: Created**、**Connectivity: Online** 就说明这一步通了。
+> **[待补截图]** Add Repository 配置表单（AK/SK 已打码）；备份任务状态为 Succeeded 的任务列表
 
-Secret Key 只在创建时显示一次，截图、聊天记录、代码仓库里都不要留底。
+## 第四步：确认备份成功，顺手验证能不能恢复
 
-> **[待补截图]** Add Repository 表单，展示 Alibaba Cloud OSS 的 Endpoint/Region/Bucket 配置字段（AK/SK 已打码）
+进这台机器的详情页，切到 **Snapshot Points** 标签，确认状态是 **Available**，能看到快照大小、还原后大小、文件和目录数量；再用 **File and Directory Browser** 看一眼，确认具体文件名和目录结构跟本机对得上。
 
-## 第六步：选路径，跑第一次备份
+备份和能恢复是两回事，挑一个文件测一下：点 **Restore**，选 **Create New Restore Task**，选中这个快照，冲突策略选 **Skip**，源路径填想恢复的文件，目标目录填一个新目录（比如 `~/HFL-Restore-Test`），提交后等状态变成 **Succeeded**，核对恢复出来的文件内容和哈希值。这一步过了，说明备份不是摆设，真的能在需要的时候取回数据。
 
-回到数据源列表，点刚才注册的这台机器的编辑图标，把目标仓库指定成上一步建好的 OSS Repository，确认目标列显示出仓库名、存储类型和在线状态。
+> **[待补截图]** Snapshot Points 列表和文件浏览器；Restore 任务最终 Succeeded 状态
 
-进入 Backup Setup，展开这台机器的目录树，勾选要备份的工作文件夹，确认它出现在 **Selected Paths** 里。第一次先不设 Backup Policy 和 File Filter，跑通流程要紧，定时策略和排除规则等确认没问题了再加。
+## 第五步：接入 AI 模型，开始提问
 
-Review 页面会把源目录、目标仓库、压缩方式、策略、过滤规则汇总展示一遍，确认无误后创建。回到数据源，确认在线状态没问题，点 **Backup Now**，等任务状态变成 **Succeeded**。
+打开 `Platform Ops · 11444`，管理员登录，进 **AI Engine → AI Models**，加两个模型：**DeepSeek-V3** 处理文本问答，**Qwen-VL-Plus** 处理截图和图片，都走阿里云百炼（DashScope）的 OpenAI 兼容接口，填好 Base URL、Model ID、API Key，**Test Connection** 通过后把其中一个设成 **Default Agent**。
 
-任务跑的过程中不要关掉本机的 Agent，也不要改 OSS 的 AK/SK。
-
-> **[待补截图]** Backup Setup 目录树选择页，以及任务列表中状态为 Succeeded 的备份任务
-
-## 第七步：确认真的备份成功了
-
-进这台机器的详情页，切到 **Snapshot Points** 标签，确认状态是 **Available**，能看到这次快照的大小、还原后大小、文件和目录数量。
-
-再用 **File and Directory Browser** 展开看一下，确认里面能看到具体的文件名和目录结构，跟本机实际内容对得上。
-
-> **[待补截图]** Snapshot Points 列表和文件浏览器展示的目录结构
-
-## 第八步：顺手验证一下能不能恢复
-
-备份和能恢复是两回事，光看快照状态是 Available 不代表数据真的完整。挑一个文件测一下：
-
-进这台机器点 **Restore**，选 **Create New Restore Task**，选中刚才验证过的快照，目标还是这台机器，冲突策略选 **Skip**（避免覆盖本机现有文件），源路径填想恢复的那个文件，目标目录填一个新目录，比如 `~/HFL-Restore-Test`。
-
-确认还原路径无误后提交，等任务状态变成 **Succeeded**，打开恢复出来的文件，跟原文件内容和哈希值核对一致。
-
-这一步过了，说明这套备份不是摆设，真的能在需要的时候取回数据。
-
-> **[待补截图]** Restore 任务的参数配置页和最终 Succeeded 状态
-
-## 第九步：接入 AI 模型
-
-浏览器打开 `Platform Ops · 11444` 对应的地址，用管理员账号登录，进 **AI Engine → AI Models**，点 **Add AI Model**。
-
-这里加两个模型，分工不同：
-
-- **DeepSeek-V3**：处理文本类的问答和推理，走阿里云百炼（DashScope）的 OpenAI 兼容接口；
-- **Qwen-VL-Plus**：处理截图、图片这类多模态内容，同样走百炼的兼容接口。
-
-两个模型的 API Base URL 都填百炼的兼容模式地址，Model ID 分别填对应的模型名，API Key 用百炼账号下申请的 Key。保存后点击 **Test Connection**，测通了再把其中一个设成 **Default Agent**（默认用文本模型 DeepSeek-V3，图片类任务会按需调用 Qwen-VL-Plus）。
-
-> **[待补截图]** AI Models 列表，展示 DeepSeek-V3 和 Qwen-VL-Plus 两条记录，状态均为 Active
-
-## 第十步：真正开始"问"自己的数据
-
-回到 `HyperFileLens · 11443`，进 **Insights → AI Copilot**，点 **New Chat**。
-
-选之前配置好的数据源和对应的快照（默认用最新快照），把要分析的文件加进来——可以是某份技术方案，也可以是一批带截图的资料。分析类型选 **Knowledge Q&A**，数据处理方式选 **Public Data Gateway**，确认这次分析基于的是受保护的快照数据，点 **Start Chat**，等数据准备完。
-
-准备好之后就可以直接提问了，比如：
+回到 `HyperFileLens · 11443`，进 **Insights → AI Copilot**，点 **New Chat**，选数据源和快照，把要分析的文件加进来，分析类型选 **Knowledge Q&A**，数据处理方式选 **Public Data Gateway**，点 **Start Chat**。准备好之后直接提问，比如：
 
 - "把这份 2025 年的方案和现在这份对比一下，接口设计上改了哪些地方？"
 - "这几张报销截图里，金额加起来一共多少？"
 - "去年那次线上问题的复盘记录里，根因是什么，当时怎么解决的？"
 
-AI 会基于备份里的原始文件直接回答，答案会带上引用来源，能追溯到具体是哪个文件、哪一段内容，不是凭空生成的。这一步会把相关文件内容从 OSS 读回这台机器处理，跨公网的下行流量 OSS 是按量计费的，个人这点数据量基本感觉不到，问得比较勤的话留意一下账单就行。
+AI 会基于备份里的原始文件直接回答，答案带引用来源，能追溯到具体文件和段落。这一步会把相关文件内容从 OSS 读回主机处理，跨公网的下行流量按量计费，个人这点数据量基本感觉不到，问得比较勤的话留意一下账单就行。
 
-> **[待补截图]** AI Copilot 对话界面，展示一次真实提问和带引用来源的回答
+> **[待补截图]** AI Models 列表（DeepSeek-V3、Qwen-VL-Plus 均为 Active）；AI Copilot 对话界面，展示一次真实提问和带引用来源的回答
 
 ## 跑完这一圈，到底省下了什么
 
