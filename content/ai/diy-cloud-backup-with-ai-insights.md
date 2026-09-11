@@ -42,6 +42,7 @@ Kopia 是一个成熟的开源备份引擎，目前 GitHub 约 **14.1k Stars**�
 | CPU / 内存 | 8 核 / 16GB |
 | 磁盘 | 100GB（AI 洞察时的文件转换空间，数据量更大就相应扩容） |
 | 网络 | 能访问公网（用于访问模型 API），不需要公网 IP |
+| 端口 | 11442–11445/TCP（`11443` 主控制台，`11444` 模型管理后台），对内网开放即可 |
 | 依赖 | Docker Engine 24.0.0+、Docker Compose V2 2.20.0+ |
 
 SSH 上去装好 Docker，跑安装脚本——国内网络和海外网络访问 GitHub 的稳定性不一样，走对应的镜像：
@@ -66,9 +67,7 @@ curl -fsSL https://raw.githubusercontent.com/oneprolabs/hyperfilelens/main/deplo
 sudo /opt/hyperfilelens/install.sh status
 ```
 
-如果开了 ufw 之类的本地防火墙，记得放行 `11442–11445/TCP`，只对内网开放就够。安装脚本跑完会打印两个访问地址——`HyperFileLens · 11443`（备份、恢复、Insights、管理控制台）和 `Platform Ops · 11444`（AI 模型配置），以及一个初始邮箱和密码。
-
-浏览器打开 `HyperFileLens · 11443` 对应的地址，用邮箱密码登录，第一件事改掉初始密码，顺手确认时区和系统时间一致。
+安装脚本跑完会打印两个访问地址和一个初始邮箱密码。浏览器打开 `HyperFileLens · 11443` 对应的地址，用邮箱密码登录，第一件事改掉初始密码，顺手确认时区和系统时间一致。
 
 > **[待补截图]** 安装脚本执行完成后的终端输出（两个访问地址 + 初始邮箱密码）；登录后的控制台首页
 
