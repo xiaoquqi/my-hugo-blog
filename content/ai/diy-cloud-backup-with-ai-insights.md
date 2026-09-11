@@ -27,12 +27,12 @@ Kopia 是一个成熟的开源备份引擎，目前 GitHub 约 **14.1k Stars**�
 
 ## 需要准备什么
 
-- 一台能跑 Docker 的 Linux 主机（物理机、虚拟机都行，配置要求见下文）；
-- 一个阿里云账号，开通 OSS；
-- 一台需要备份的机器（本文用 macOS 举例，HyperFileLens 的 Agent 同时支持 Linux、macOS、Windows）；
-- 一个阿里云百炼（DashScope）的 API Key，用来接入 DeepSeek 和 Qwen 模型。
+- 一台能跑 Docker 的 Linux 主机（x86，8 核 16GB，磁盘 100GB），能连公网访问模型，不需要公网 IP；
+- 对象存储账号，比如阿里云 OSS；
+- 要备份的主机，支持 Linux、Windows、macOS；
+- 大语言模型鉴权信息，推荐 DeepSeek-V4-Flash；需要识别图像的话，直接用 DeepSeek 最新的多模态模型。
 
-流程分两部分：先把 HyperFileLens 部署起来、把数据备份好，再接入模型、开始用 AI 查数据。
+整个流程：**部署 HyperFileLens → 备份数据 → 洞察数据**。
 
 ## 第一步：准备主机并装好 HyperFileLens
 
@@ -85,7 +85,7 @@ sudo /opt/hyperfilelens/install.sh status
 
 ## 第五步：接入 AI 模型，开始提问
 
-打开 `Platform Ops · 11444`，管理员登录，进 **AI Engine → AI Models**，加两个模型：**DeepSeek-V3** 处理文本问答，**Qwen-VL-Plus** 处理截图和图片，都走阿里云百炼（DashScope）的 OpenAI 兼容接口，填好 Base URL、Model ID、API Key，**Test Connection** 通过后把其中一个设成 **Default Agent**。
+打开 `Platform Ops · 11444`，管理员登录，进 **AI Engine → AI Models**，加 **DeepSeek-V4-Flash** 处理文本问答；需要识别图片就再加一个 DeepSeek 最新的多模态模型。都用 DeepSeek 官方 API，Base URL 填 `https://api.deepseek.com`，配好 Model ID 和 API Key，**Test Connection** 通过后设成 **Default Agent**。
 
 回到 `HyperFileLens · 11443`，进 **Insights → AI Copilot**，点 **New Chat**，选数据源和快照，把要分析的文件加进来，分析类型选 **Knowledge Q&A**，数据处理方式选 **Public Data Gateway**，点 **Start Chat**。准备好之后直接提问，比如：
 
@@ -95,7 +95,7 @@ sudo /opt/hyperfilelens/install.sh status
 
 AI 会基于备份里的原始文件直接回答，答案带引用来源，能追溯到具体文件和段落。这一步会把相关文件内容从 OSS 读回主机处理，跨公网的下行流量按量计费，个人这点数据量基本感觉不到，问得比较勤的话留意一下账单就行。
 
-> **[待补截图]** AI Models 列表（DeepSeek-V3、Qwen-VL-Plus 均为 Active）；AI Copilot 对话界面，展示一次真实提问和带引用来源的回答
+> **[待补截图]** AI Models 列表（DeepSeek-V4-Flash 等模型均为 Active）；AI Copilot 对话界面，展示一次真实提问和带引用来源的回答
 
 ## 跑完这一圈，到底省下了什么
 
@@ -105,7 +105,7 @@ AI 会基于备份里的原始文件直接回答，答案带引用来源，能�
 - **配置流程从背命令变成点几下**：加数据源、加存储、点 Backup Now，三步跑完，不用记 Kopia 的 repository connect 参数和策略命令；
 - **多机器多仓库有了统一视图**：不用再对着命令行和几个 KopiaUI 分别看状态；
 - **AI 直接读原始文件**：不需要提前做 Embedding、建向量库、搭一套 RAG 流水线，SourceLens 直接搜索、阅读、推理 Kopia 快照里的原始文件；
-- **模型按需换**：文本用 DeepSeek，图片用 Qwen，哪个模型合适用哪个，不绑定单一供应商；
+- **模型按需换**：这里全用 DeepSeek，文本和多模态各配一个，实际接哪家 API、用哪个模型完全自定义，不绑定单一供应商；
 - **不用给任何云厂商交服务器月租**：只有 OSS 存储按量付费。
 
 这套流程从部署到能用 AI 提问，一次跑下来大概花一到两个小时，之后的备份可以设成定时任务，自己不用再管。
