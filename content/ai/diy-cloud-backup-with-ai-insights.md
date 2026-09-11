@@ -63,16 +63,10 @@ curl -fsSL \
   | sudo bash -s -- --mirror global --yes
 ```
 
-装完用这条命令确认状态：
+安装脚本跑完会打印两个访问地址和一个初始邮箱密码，地址用的是这台主机的内网 IP。比如内网 IP 是 `172.30.164.250`，打印出来就是：
 
-```bash
-sudo /opt/hyperfilelens/install.sh status
-```
-
-安装脚本跑完会打印两个访问地址和一个初始邮箱密码，地址用的是这台主机的内网 IP。比如内网 IP 是 `192.168.8.182`，打印出来就是：
-
-- `HyperFileLens · http://192.168.8.182:11443`
-- `Platform Ops · http://192.168.8.182:11444`
+- `HyperFileLens · http://172.30.164.250:11443`
+- `Platform Ops · http://172.30.164.250:11444`
 
 {{< figure src="/images/diy-cloud-backup-with-ai-insights/install-complete-terminal.webp" alt="安装脚本执行完成的终端输出，展示 HyperFileLens 和 Platform Ops 两个访问地址以及初始邮箱密码" caption="安装脚本跑完打印的访问地址和初始密码" >}}
 
@@ -80,7 +74,7 @@ sudo /opt/hyperfilelens/install.sh status
 
 {{< figure src="/images/diy-cloud-backup-with-ai-insights/console-overview.webp" alt="登录后的 HyperFileLens 控制台首页，展示生产源端、目标存储、恢复演练三个环节的数据保护链路概览" caption="登录后的控制台首页" >}}
 
-## 第二步：把两件预配置的事做掉——外部访问和 AI 模型
+## 第二步：配置 NAT 访问地址和 AI 模型
 
 后面注册主机、加存储、生成 Agent 安装命令，都要用到这台主机对外的访问地址；AI Copilot 也得先有模型才能用。这两件事跟具体的备份流程没关系，但都得在动手加数据源之前配好，不然中途改了还得回头重新注册。
 
@@ -112,7 +106,11 @@ sudo /opt/hyperfilelens/install.sh status
 
 {{< figure src="/images/diy-cloud-backup-with-ai-insights/add-object-storage-repository.webp" alt="Add Object Storage Repository 表单，展示 Huawei Cloud、Alibaba Cloud、AWS、S3-Compatible Storage 四个预设平台，以及 Endpoint、Region、Access Key、Secret Key 等连接字段" caption="对象存储平台随便选，字段都差不多" >}}
 
-回到数据源列表，把目标仓库指定成这个 Repository，勾选要备份的目录，第一次先不设 Backup Policy 和 File Filter，跑通流程要紧。确认无误后点 **Backup Now**，等任务状态变成 **Succeeded**。
+回到数据源列表，点 **创建备份配置**，这是一个多步向导：备份源（选路径）→ 备份策略 → 目标端 → 恢复计划 → 确认信息。第一次先把路径选好、目标端指定成这个 Repository，备份策略和恢复计划先用默认值，跑通流程要紧，后面再回来调。
+
+{{< figure src="/images/diy-cloud-backup-with-ai-insights/create-backup-configuration.webp" alt="创建备份配置向导，左侧是备份源、备份策略、目标端、恢复计划、确认信息五个步骤，右侧展示主机目录树和路径选择" caption="创建备份配置：备份源 → 备份策略 → 目标端 → 恢复计划 → 确认信息" >}}
+
+确认信息无误后保存，回到数据源列表点 **Backup Now**，等任务状态变成 **Succeeded**。
 
 {{< figure src="/images/diy-cloud-backup-with-ai-insights/backup-task-succeeded.webp" alt="Backup Wizard 第三步开始备份，两台主机的备份任务状态均为 Succeeded" caption="备份任务跑完，状态 Succeeded" >}}
 
