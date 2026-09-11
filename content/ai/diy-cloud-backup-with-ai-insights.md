@@ -80,7 +80,21 @@ sudo /opt/hyperfilelens/install.sh status
 
 {{< figure src="/images/diy-cloud-backup-with-ai-insights/console-overview.webp" alt="登录后的 HyperFileLens 控制台首页，展示生产源端、目标存储、恢复演练三个环节的数据保护链路概览" caption="登录后的控制台首页" >}}
 
-## 第二步：把要备份的电脑接进来
+## 第二步：把两件预配置的事做掉——外部访问和 AI 模型
+
+后面注册主机、加存储、生成 Agent 安装命令，都要用到这台主机对外的访问地址；AI Copilot 也得先有模型才能用。这两件事跟具体的备份流程没关系，但都得在动手加数据源之前配好，不然中途改了还得回头重新注册。
+
+**外部访问地址**：如果这台主机买在公有云上，安装脚本打印的是内网 IP，但实际对外能访问到的是云厂商的 NAT 或公网地址，这里要先改一下。打开 `Platform Ops`，进 **External Access**，把外部访问地址改成真正能连到的那个公网地址。
+
+{{< figure src="/images/diy-cloud-backup-with-ai-insights/platform-external-access.webp" alt="Platform Ops 外部访问配置页面，展示访问配置输入框、当前生效地址和建议的公网访问地址" caption="主机在公有云上，要把外部访问地址改成公网 IP" >}}
+
+**AI 模型**：还在 `Platform Ops`，进 **AI Engine → AI Models**，点 **Add AI Model**。Provider 里直接能选到 **DeepSeek**，不用绕道其他网关。
+
+{{< figure src="/images/diy-cloud-backup-with-ai-insights/add-ai-model-provider.webp" alt="Add AI Model 页面的 Provider 选择列表，OpenAI、DeepSeek、DashScope (Qwen)、Anthropic 等主流供应商都在其中" caption="Provider 列表里直接有 DeepSeek" >}}
+
+加 **DeepSeek-V4-Flash**（Model ID：`deepseek-v4-flash`）处理文本问答；需要识别图片就再加一个 **DeepSeek-V4-Flash-Vision-Exp**（Model ID：`deepseek-v4-flash-vision-exp`）。Base URL 填 `https://api.deepseek.com`，配好 API Key，**Test Connection** 通过后设成 **Default Agent**。
+
+## 第三步：把要备份的电脑接进来
 
 进入 **Protection → Backup Wizard**，点 **Add Source**，选 **Source Host**，操作系统选 Linux（Windows、macOS 同样支持）。
 
@@ -90,7 +104,7 @@ sudo /opt/hyperfilelens/install.sh status
 
 {{< figure src="/images/diy-cloud-backup-with-ai-insights/backup-source-registered.webp" alt="Backup Wizard 数据源列表，新注册的 Linux 主机状态显示在线、已注册" caption="主机注册成功，状态在线" >}}
 
-## 第三步：配置对象存储，跑通第一次备份
+## 第四步：配置对象存储，跑通第一次备份
 
 在存储控制台建一个 Bucket，另外建一个子账号，只授予这个 Bucket 的读写和列举权限，拿到 Access Key 和 Secret Key——不要用主账号的 AK/SK。
 
@@ -102,7 +116,7 @@ sudo /opt/hyperfilelens/install.sh status
 
 {{< figure src="/images/diy-cloud-backup-with-ai-insights/backup-task-succeeded.webp" alt="Backup Wizard 第三步开始备份，两台主机的备份任务状态均为 Succeeded" caption="备份任务跑完，状态 Succeeded" >}}
 
-## 第四步：确认备份成功
+## 第五步：确认备份成功
 
 进主机详情页看 **Snapshot Points**，状态 **Available** 就说明这次快照没问题。顺手展开文件浏览器看一眼去重率和压缩率——这就是 Kopia 增量备份的真实效果。
 
@@ -110,15 +124,9 @@ sudo /opt/hyperfilelens/install.sh status
 
 备份和能恢复是两回事，找个文件测一下：进 **Restore**，选这个快照，冲突策略选 **Skip**，源路径填想恢复的文件，目标目录填个新路径，等状态变成 **Succeeded**，核对内容一致。这一步过了，备份才算真的能用，不是摆设。
 
-## 第五步：接入 AI 模型，开始提问
+## 第六步：用 AI 提问
 
-打开 `Platform Ops · 11444`，管理员登录，进 **AI Engine → AI Models**，点 **Add AI Model**。Provider 里直接能选到 **DeepSeek**，不用绕道其他网关。
-
-{{< figure src="/images/diy-cloud-backup-with-ai-insights/add-ai-model-provider.webp" alt="Add AI Model 页面的 Provider 选择列表，OpenAI、DeepSeek、DashScope (Qwen)、Anthropic 等主流供应商都在其中" caption="Provider 列表里直接有 DeepSeek" >}}
-
-加 **DeepSeek-V4-Flash**（Model ID：`deepseek-v4-flash`）处理文本问答；需要识别图片就再加一个 **DeepSeek-V4-Flash-Vision-Exp**（Model ID：`deepseek-v4-flash-vision-exp`）。Base URL 填 `https://api.deepseek.com`，配好 API Key，**Test Connection** 通过后设成 **Default Agent**。
-
-回到 `HyperFileLens · 11443`，进 **Insights → AI Copilot**，点 **New Chat**，选数据源和快照，把要分析的文件加进来，分析类型选 **Knowledge Q&A**，数据处理方式选 **Public Data Gateway**。
+AI 模型第二步已经配好了，这里直接用。回到 `HyperFileLens · 11443`，进 **Insights → AI Copilot**，点 **New Chat**，选数据源和快照，把要分析的文件加进来，分析类型选 **Knowledge Q&A**，数据处理方式选 **Public Data Gateway**。
 
 {{< figure src="/images/diy-cloud-backup-with-ai-insights/ai-copilot-new-chat-analysis.webp" alt="AI Copilot 新建对话，分析类型选择 Knowledge Q&A（推荐），数据隐私选择 Public Data Gateway" caption="分析类型选 Knowledge Q&A，数据隐私选公共网关" >}}
 
