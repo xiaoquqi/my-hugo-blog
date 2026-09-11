@@ -36,7 +36,7 @@ Kopia 是一个成熟的开源备份引擎，目前 GitHub 约 **14.1k Stars**�
 
 ## 第一步：准备主机并装好 HyperFileLens
 
-主机用 **Ubuntu 24.04（amd64）、8 核 16GB、磁盘 100GB**，物理机、虚拟机都行，能跑 Docker、能访问公网即可，不需要公网 IP。这 100GB 是 AI 洞察时的文件转换空间，备份的文件量大就相应扩容。
+主机用 **x86 的 Ubuntu 24.04，8 核 16GB，磁盘 100GB**，需要装 Docker，能访问公网（主要用来访问模型），不需要配公网 IP。100GB 空间主要用于 AI 洞察时的文件转换，数据量更大就相应扩容。
 
 SSH 上去装好 Docker（依赖 Docker Engine 24.0.0+ 和 Docker Compose V2 2.20.0+），跑安装脚本：
 
