@@ -67,7 +67,12 @@ curl -fsSL https://raw.githubusercontent.com/oneprolabs/hyperfilelens/main/deplo
 sudo /opt/hyperfilelens/install.sh status
 ```
 
-安装脚本跑完会打印两个访问地址和一个初始邮箱密码。浏览器打开 `HyperFileLens · 11443` 对应的地址，用邮箱密码登录，第一件事改掉初始密码，顺手确认时区和系统时间一致。
+安装脚本跑完会打印两个访问地址和一个初始邮箱密码，地址用的是这台主机的内网 IP。比如内网 IP 是 `192.168.8.182`，打印出来就是：
+
+- `HyperFileLens · http://192.168.8.182:11443`
+- `Platform Ops · http://192.168.8.182:11444`
+
+浏览器打开 `11443` 这个地址，用邮箱密码登录，第一件事改掉初始密码，顺手确认时区和系统时间一致。
 
 > **[待补截图]** 安装脚本执行完成后的终端输出（两个访问地址 + 初始邮箱密码）；登录后的控制台首页
 
