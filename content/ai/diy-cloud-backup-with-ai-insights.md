@@ -45,12 +45,12 @@ Kopia 是一个成熟的开源备份引擎，目前 GitHub 约 **14.1k Stars**�
 | 端口 | 11442–11445/TCP（`11443` 主控制台，`11444` 模型管理后台），对内网开放即可 |
 | 依赖 | Docker Engine 24.0.0+、Docker Compose V2 2.20.0+ |
 
-SSH 上去装好 Docker，跑安装脚本——国内网络和海外网络访问 GitHub 的稳定性不一样，走对应的镜像：
+SSH 上去装好 Docker，跑安装脚本。国内网络访问 GitHub 本身就不稳定，`curl` 这一步就得换成 Gitee，不是靠后面的 `--mirror` 参数能解决的：
 
 国内网络（推荐）：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/oneprolabs/hyperfilelens/main/deploy/online/install.sh \
+curl -fsSL https://gitee.com/oneprolabs/hyperfilelens/raw/main/deploy/online/install.sh \
   | sudo bash -s -- --mirror cn
 ```
 
