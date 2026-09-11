@@ -17,11 +17,11 @@ draft: true
 
 Kopia 是一个成熟的开源备份引擎，目前 GitHub 约 **14.1k Stars**，采用 **Apache License 2.0**。它支持内容寻址、增量快照、去重、端到端加密，以及 S3、NAS、本地文件系统等多种存储后端。简单说，**如何安全、高效地把文件备份下来，Kopia 已经解决得很好。**
 
-但 Kopia 更像 **backup engine**，而不是完整的备份管理产品：多 Repository 的统一管理需求从 2023 年提出至今仍未解决（[kopia/kopia#2976](https://github.com/kopia/kopia/issues/2976)），找文件也还是 **snapshot-first**——先选中一个快照，再到目录树里翻，才能定位到具体文件。
+但 Kopia 更像 **backup engine**，而不是完整的备份管理产品：它没有"多台主机"的概念，每台机器各跑各的 CLI 或 KopiaUI，互相看不到彼此；就算在一台机器上，想在一个界面里管理多个 Repository，这个需求从 2023 年提出至今也仍未解决（[kopia/kopia#2976](https://github.com/kopia/kopia/issues/2976)）。
 
-**HyperFileLens 没有重新发明备份引擎，而是在 Kopia 之上补了一层产品化能力。** Kopia 继续负责备份、去重、加密、Snapshot 和 Restore；HyperFileLens 统一管理主机、存储、任务和快照，把配置流程收敛成"注册主机 → 配置备份与恢复 → 开始备份"三步，10 分钟左右就能上手，不用碰 Repository、Policy 和命令行参数。
+**HyperFileLens 没有重新发明备份引擎，而是在 Kopia 之上补了一层产品化能力。** Kopia 继续负责备份、去重、加密、Snapshot 和 Restore；HyperFileLens 把多台主机、多个存储、任务和快照收进同一个 Web 控制台，配置流程收敛成"注册主机 → 配置备份与恢复 → 开始备份"三步，10 分钟左右就能上手，不用碰 Repository、Policy 和命令行参数。
 
-这套快照优先的浏览模型本身没有变，但 HyperFileLens 在上面接了一层 AI，把链路从 **File → Snapshot** 延伸到 **File → Snapshot → Search / Read / Reason → Answer**——不用先手动定位快照和目录，直接用自然语言提问，AI 就能在快照里检索、阅读、推理原始文件（文档、表格、PPT、图片、代码都行），给出答案并标注来源，读取的始终是备份副本，不碰生产环境里的实时文件。
+在这之上，HyperFileLens 还接了一层 Kopia 本身没有的能力——AI。把链路从 **File → Snapshot** 延伸到 **File → Snapshot → Search / Read / Reason → Answer**：不用手动定位快照和目录，直接用自然语言提问，AI 就能在快照里检索、阅读、推理原始文件（文档、表格、PPT、图片、代码都行），给出答案并标注来源，读取的始终是备份副本，不碰生产环境里的实时文件。
 
 所以 HyperFileLens 做的事情可以概括成两层：**用 Kopia 解决可靠备份，用 AI 让备份数据重新产生价值。** 这篇文章就从零把这条链路跑一遍：注册主机、完成备份与恢复配置、生成 Snapshot，再接入 AI，最后直接对备份中的数据提问。
 
