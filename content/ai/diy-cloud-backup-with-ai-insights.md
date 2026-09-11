@@ -88,7 +88,7 @@ curl -fsSL \
 
 加 **DeepSeek-V4-Flash**（Model ID：`deepseek-v4-flash`）处理文本问答；需要识别图片就再加一个 **DeepSeek-V4-Flash-Vision-Exp**（Model ID：`deepseek-v4-flash-vision-exp`）。Base URL 填 `https://api.deepseek.com`，配好 API Key，**Test Connection** 通过后设成 **Default Agent**。
 
-## 第三步：把要备份的电脑接进来
+## 第三步：备份数据
 
 进入 **Protection → Backup Wizard**，点 **Add Source**，选 **Source Host**，操作系统选 Linux（Windows、macOS 同样支持）。
 
@@ -108,6 +108,8 @@ curl -fsSL \
 
 {{< figure src="/images/diy-cloud-backup-with-ai-insights/add-object-storage-repository.webp" alt="Add Object Storage Repository 表单，展示 Huawei Cloud、Alibaba Cloud、AWS、S3-Compatible Storage 四个预设平台，以及 Endpoint、Region、Access Key、Secret Key 等连接字段" caption="对象存储平台随便选，字段都差不多" >}}
 
+对象存储怎么收费，心里得有个数。以阿里云 OSS 标准存储为例：存储 0.12 元/GB/月，算下来一年大概 1.5 元/GB；下行流量（下载、恢复、AI 洞察读取都算在内）按量付费是 0.25～0.5 元/GB（闲时/忙时），上传和内网流量免费。华为云 OBS、AWS S3 这些价格量级都差不多，具体以官网当前价格为准。备份这点数据存储费基本可以忽略，真正要留意的是下行流量——平时不怎么恢复、不怎么问 AI 的话感觉不到，用得频繁了才会体现在账单上。
+
 回到备份配置向导，目标端指定成这个 Repository，备份策略和恢复计划先用默认值，跑通流程要紧，后面再回来调。确认信息无误后保存，回到数据源列表点 **Backup Now**，等任务状态变成 **Succeeded**。
 
 {{< figure src="/images/diy-cloud-backup-with-ai-insights/backup-task-succeeded.webp" alt="Backup Wizard 第三步开始备份，两台主机的备份任务状态均为 Succeeded" caption="备份任务跑完，状态 Succeeded" >}}
@@ -122,15 +124,19 @@ curl -fsSL \
 
 ## 第六步：用 AI 提问
 
-AI 模型第二步已经配好了，这里直接用。回到 `HyperFileLens · 11443`，进 **Insights → AI Copilot**，点 **New Chat**，选数据源和快照，把要分析的文件加进来，分析类型选 **Knowledge Q&A**，数据处理方式选 **Public Data Gateway**。
+AI 模型第二步已经配好了，这里直接用。回到 `HyperFileLens · 11443`，进 **Insights → AI Copilot**，左侧能看到历史对话列表，点 **New Chat** 新建一个。
+
+先选数据源、快照，把要分析的文件加进来——支持 PDF、DOCX、PPTX、XLSX，处理的是备份快照里的副本，不动生产环境的实时数据。
+
+{{< figure src="/images/diy-cloud-backup-with-ai-insights/ai-copilot-new-chat-source.webp" alt="AI Copilot 新建对话，选择备份源、快照、要分析的文件和文件夹" caption="新建对话：选数据源、快照、要分析的文件" >}}
+
+再选分析类型和数据隐私：分析类型选 **Knowledge Q&A**，数据处理方式选 **Public Data Gateway**（用平台的公共数据网关，不用额外部署）。
 
 {{< figure src="/images/diy-cloud-backup-with-ai-insights/ai-copilot-new-chat-analysis.webp" alt="AI Copilot 新建对话，分析类型选择 Knowledge Q&A（推荐），数据隐私选择 Public Data Gateway" caption="分析类型选 Knowledge Q&A，数据隐私选公共网关" >}}
 
-点 **Start Chat**，等数据准备完就能直接提问。比如问一份小说文档："这份文档的结局是什么，几个主要角色最后都是什么结果？" AI 会基于备份里的原始文件直接回答，带引用来源，能追溯到具体文件和段落。
+点 **Start Chat**，等数据准备完就能直接提问。比如问一份小说文档："这份文档的结局是什么，几个主要角色最后都是什么结果？" AI 会基于备份里的原始文件直接回答，带引用来源，能追溯到具体文件和段落。这一步会把文件内容读回主机处理，产生的下行流量按第四步说的那个价格算。
 
 {{< figure src="/images/diy-cloud-backup-with-ai-insights/ai-copilot-answer.webp" alt="AI Copilot 对话界面，针对备份文件中的一份文档提问，AI 给出结构化的中文回答，并标注来源文件和创建时间" caption="直接对着备份文件提问，答案带来源" >}}
-
-这一步会把相关文件内容从对象存储读回主机处理，跨公网的下行流量对象存储厂商通常按量计费，个人这点数据量基本感觉不到，问得比较勤的话留意一下账单就行。
 
 ## 跑完这一圈，到底省下了什么
 
