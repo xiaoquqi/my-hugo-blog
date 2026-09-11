@@ -50,15 +50,17 @@ SSH 上去装好 Docker，跑安装脚本。国内网络访问 GitHub 本身就�
 国内网络（推荐）：
 
 ```bash
-curl -fsSL https://gitee.com/oneprolabs/hyperfilelens/raw/main/deploy/online/install.sh \
-  | sudo bash -s -- --mirror cn
+curl -fsSL \
+  https://gitee.com/oneprolabs/hyperfilelens/raw/main/deploy/online/install.sh \
+  | sudo bash -s -- --mirror cn --yes
 ```
 
 海外网络：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/oneprolabs/hyperfilelens/main/deploy/online/install.sh \
-  | sudo bash -s -- --mirror global
+curl -fsSL \
+  https://raw.githubusercontent.com/oneprolabs/hyperfilelens/main/deploy/online/install.sh \
+  | sudo bash -s -- --mirror global --yes
 ```
 
 装完用这条命令确认状态：
