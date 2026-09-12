@@ -100,19 +100,21 @@ curl -fsSL \
 
 ## 第四步：备份设置
 
-回到数据源列表，点 **创建备份配置**，这是一个多步向导：备份源（选路径）→ 备份策略 → 目标端 → 恢复计划 → 确认信息，先把整条链路走一遍心里有数。
+1. 点 **创建备份配置**，五步向导：备份源 → 备份策略 → 目标端 → 恢复计划 → 确认信息。
 
 {{< figure src="/images/diy-cloud-backup-with-ai-insights/create-backup-configuration.webp" alt="创建备份配置向导，左侧是备份源、备份策略、目标端、恢复计划、确认信息五个步骤，右侧展示主机目录树和路径选择" caption="创建备份配置：备份源 → 备份策略 → 目标端 → 恢复计划 → 确认信息" >}}
 
-路径选好之后到"目标端"这一步，需要一个对象存储仓库。在存储控制台建一个 Bucket，另外建一个子账号，只授予这个 Bucket 的读写和列举权限，拿到 Access Key 和 Secret Key——不要用主账号的 AK/SK。回到 HyperFileLens 点 **添加对象存储仓库**，选自己的存储平台——Huawei Cloud、Alibaba Cloud、AWS 都有预设，其他 S3 兼容存储直接选 **S3 兼容存储**，填鉴权地址、Region、Access Key / Secret Key、Bucket 名称、Object Prefix（比如 `hfl/`），保存后验证，等状态变成连通。Secret Key 只在创建时显示一次，截图、聊天记录、代码仓库里都不要留底。
+2. 目标端需要一个对象存储仓库：存储控制台建 Bucket、建子账号（只给这个 Bucket 读写列举权限），拿 Access Key / Secret Key。回 HyperFileLens 点 **添加对象存储仓库**，选平台（Huawei Cloud / Alibaba Cloud / AWS 有预设，其他选 **S3 兼容存储**），填鉴权地址、Region、AK/SK、Bucket、Object Prefix，保存验证。Secret Key 只显示一次，别截图留底。
 
 {{< figure src="/images/diy-cloud-backup-with-ai-insights/add-object-storage-repository.webp" alt="添加对象存储仓库表单，展示 Huawei Cloud、Alibaba Cloud、AWS、S3 兼容存储四个预设平台，以及鉴权地址、Region、Access Key、Secret Key 等连接字段" caption="对象存储平台随便选，字段都差不多" >}}
 
-对象存储怎么收费，心里得有个数。以阿里云 OSS 标准存储为例：存储 0.12 元/GB/月，算下来一年大概 1.5 元/GB；下行流量（下载、恢复、AI 洞察读取都算在内）按量付费是 0.25～0.5 元/GB（闲时/忙时），上传和内网流量免费。华为云 OBS、AWS S3 这些价格量级都差不多，具体以官网当前价格为准。存储费基本可以忽略，下行流量这笔钱其实也基本花不到——恢复和 AI 洞察针对的都是某份文件的一次性动作，恢复一次、问一次就完了，不会对着同一份文件反复触发下行流量，谈不上"用得越多账单越高"。
+3. 目标端选这个仓库，备份策略、恢复计划先用默认值，确认信息保存。
 
-回到备份配置向导，目标端指定成这个仓库，备份策略和恢复计划先用默认值，跑通流程要紧，后面再回来调。确认信息无误后保存，回到数据源列表点 **立即备份**，等任务状态变成 **成功**。
+4. 点 **立即备份**，等状态变成 **成功**。
 
 {{< figure src="/images/diy-cloud-backup-with-ai-insights/backup-task-succeeded.webp" alt="备份向导第三步开始备份，两台主机的备份任务状态均为成功" caption="备份任务跑完，状态成功" >}}
+
+存储费可以忽略（阿里云 OSS 标准存储约 0.12 元/GB/月）。下行流量按次收（0.25～0.5 元/GB），恢复一次、问一次 AI 就扣一次，不会反复扣费。增量数据的同步和洞察，后续会往只读变化部分的方向优化，流量开销还能再压一压。
 
 ## 第五步：用 AI 提问，看效果
 
