@@ -76,27 +76,27 @@ curl -fsSL \
 
 ## 第二步：配置 NAT 访问地址和 AI 模型
 
-后面注册主机、加存储、生成 Agent 安装命令，都要用到这台主机对外的访问地址；AI Copilot 也得先有模型才能用。这两件事跟具体的备份流程没关系，但都得在动手加数据源之前配好，不然中途改了还得回头重新注册。
+后面注册主机、加存储、生成 Agent 安装命令，都要用到这台主机对外的访问地址；AI 助手也得先有模型才能用。这两件事跟具体的备份流程没关系，但都得在动手加数据源之前配好，不然中途改了还得回头重新注册。
 
-**外部访问地址**：如果这台主机买在公有云上，安装脚本打印的是内网 IP，但实际对外能访问到的是云厂商的 NAT 或公网地址，这里要先改一下。打开 `Platform Ops`，进 **External Access**，把外部访问地址改成真正能连到的那个公网地址。
+**外部访问地址**：如果这台主机买在公有云上，安装脚本打印的是内网 IP，但实际对外能访问到的是云厂商的 NAT 或公网地址，这里要先改一下。打开 `Platform Ops`，进 **外部访问**，把外部访问地址改成真正能连到的那个公网地址。
 
-{{< figure src="/images/diy-cloud-backup-with-ai-insights/platform-external-access.webp" alt="Platform Ops 外部访问配置页面，展示访问配置输入框、当前生效地址和建议的公网访问地址" caption="主机在公有云上，要把外部访问地址改成公网 IP" >}}
+{{< figure src="/images/diy-cloud-backup-with-ai-insights/platform-external-access.webp" alt="外部访问配置页面，展示访问配置输入框、当前生效地址和建议的公网访问地址" caption="主机在公有云上，要把外部访问地址改成公网 IP" >}}
 
-**AI 模型**：还在 `Platform Ops`，进 **AI Engine → AI Models**，点 **Add AI Model**。Provider 里直接能选到 **DeepSeek**，不用绕道其他网关。
+**AI 模型**：还在 `Platform Ops`，进 **AI 引擎 → AI 模型**，点 **添加 AI 模型**。供应商里直接能选到 **DeepSeek**，不用绕道其他网关。
 
-{{< figure src="/images/diy-cloud-backup-with-ai-insights/add-ai-model-provider.webp" alt="Add AI Model 页面的 Provider 选择列表，OpenAI、DeepSeek、DashScope (Qwen)、Anthropic 等主流供应商都在其中" caption="Provider 列表里直接有 DeepSeek" >}}
+{{< figure src="/images/diy-cloud-backup-with-ai-insights/add-ai-model-provider.webp" alt="添加 AI 模型页面的供应商选择列表，OpenAI、DeepSeek、DashScope (Qwen)、Anthropic 等主流供应商都在其中" caption="供应商列表里直接有 DeepSeek" >}}
 
-加 **DeepSeek-V4-Flash**（Model ID：`deepseek-v4-flash`）处理文本问答；需要识别图片就再加一个 **DeepSeek-V4-Flash-Vision-Exp**（Model ID：`deepseek-v4-flash-vision-exp`）。Base URL 填 `https://api.deepseek.com`，配好 API Key，**Test Connection** 通过后设成 **Default Agent**。
+加 **DeepSeek-V4-Flash**（Model ID：`deepseek-v4-flash`）处理文本问答；需要识别图片就再加一个 **DeepSeek-V4-Flash-Vision-Exp**（Model ID：`deepseek-v4-flash-vision-exp`）。Base URL 填 `https://api.deepseek.com`，配好 API Key，**测试连接** 通过后保存。
 
 ## 第三步：备份数据
 
-进入 **Protection → Backup Wizard**，点 **Add Source**，选 **Source Host**，操作系统选 Linux（Windows、macOS 同样支持）。
+进入 **数据保护 → 备份向导**，点 **添加源**，选 **源端主机**，操作系统选 Linux（Windows、macOS 同样支持）。
 
-{{< figure src="/images/diy-cloud-backup-with-ai-insights/add-source-select-os.webp" alt="Add Backup Source 页面，选择 Source Host，目标操作系统选中 Linux" caption="选主机操作系统，复制安装命令" >}}
+{{< figure src="/images/diy-cloud-backup-with-ai-insights/add-source-select-os.webp" alt="添加备份源页面，选择源端主机，目标操作系统选中 Linux" caption="选主机操作系统，复制安装命令" >}}
 
-界面会给出一段安装命令，复制到目标主机终端里执行，等它提示安装完成。回到 Backup Wizard 刷新数据源列表，确认新加的这台机器状态是 **Registered**（已注册）、**Online**（在线）。
+界面会给出一段安装命令，复制到目标主机终端里执行，等它提示安装完成。回到备份向导刷新数据源列表，确认新加的这台机器状态是 **已注册**、**在线**。
 
-{{< figure src="/images/diy-cloud-backup-with-ai-insights/backup-source-registered.webp" alt="Backup Wizard 数据源列表，新注册的 Linux 主机状态显示在线、已注册" caption="主机注册成功，状态在线" >}}
+{{< figure src="/images/diy-cloud-backup-with-ai-insights/backup-source-registered.webp" alt="备份向导数据源列表，新注册的 Linux 主机状态显示在线、已注册" caption="主机注册成功，状态在线" >}}
 
 ## 第四步：配置对象存储，跑通第一次备份
 
@@ -104,46 +104,46 @@ curl -fsSL \
 
 {{< figure src="/images/diy-cloud-backup-with-ai-insights/create-backup-configuration.webp" alt="创建备份配置向导，左侧是备份源、备份策略、目标端、恢复计划、确认信息五个步骤，右侧展示主机目录树和路径选择" caption="创建备份配置：备份源 → 备份策略 → 目标端 → 恢复计划 → 确认信息" >}}
 
-路径选好之后到"目标端"这一步，需要一个对象存储 Repository。在存储控制台建一个 Bucket，另外建一个子账号，只授予这个 Bucket 的读写和列举权限，拿到 Access Key 和 Secret Key——不要用主账号的 AK/SK。回到 HyperFileLens 点 **Add Repository**，选自己的存储平台——阿里云、华为云、AWS 都有预设，其他 S3 兼容存储直接选 **S3-Compatible Storage**，填 Endpoint、Region、Access Key / Secret Key、Bucket 名称、Object Prefix（比如 `hfl/`），保存后验证，等状态变成连通。Secret Key 只在创建时显示一次，截图、聊天记录、代码仓库里都不要留底。
+路径选好之后到"目标端"这一步，需要一个对象存储仓库。在存储控制台建一个 Bucket，另外建一个子账号，只授予这个 Bucket 的读写和列举权限，拿到 Access Key 和 Secret Key——不要用主账号的 AK/SK。回到 HyperFileLens 点 **添加对象存储仓库**，选自己的存储平台——Huawei Cloud、Alibaba Cloud、AWS 都有预设，其他 S3 兼容存储直接选 **S3 兼容存储**，填鉴权地址、Region、Access Key / Secret Key、Bucket 名称、Object Prefix（比如 `hfl/`），保存后验证，等状态变成连通。Secret Key 只在创建时显示一次，截图、聊天记录、代码仓库里都不要留底。
 
-{{< figure src="/images/diy-cloud-backup-with-ai-insights/add-object-storage-repository.webp" alt="Add Object Storage Repository 表单，展示 Huawei Cloud、Alibaba Cloud、AWS、S3-Compatible Storage 四个预设平台，以及 Endpoint、Region、Access Key、Secret Key 等连接字段" caption="对象存储平台随便选，字段都差不多" >}}
+{{< figure src="/images/diy-cloud-backup-with-ai-insights/add-object-storage-repository.webp" alt="添加对象存储仓库表单，展示 Huawei Cloud、Alibaba Cloud、AWS、S3 兼容存储四个预设平台，以及鉴权地址、Region、Access Key、Secret Key 等连接字段" caption="对象存储平台随便选，字段都差不多" >}}
 
 对象存储怎么收费，心里得有个数。以阿里云 OSS 标准存储为例：存储 0.12 元/GB/月，算下来一年大概 1.5 元/GB；下行流量（下载、恢复、AI 洞察读取都算在内）按量付费是 0.25～0.5 元/GB（闲时/忙时），上传和内网流量免费。华为云 OBS、AWS S3 这些价格量级都差不多，具体以官网当前价格为准。备份这点数据存储费基本可以忽略，真正要留意的是下行流量——平时不怎么恢复、不怎么问 AI 的话感觉不到，用得频繁了才会体现在账单上。
 
-回到备份配置向导，目标端指定成这个 Repository，备份策略和恢复计划先用默认值，跑通流程要紧，后面再回来调。确认信息无误后保存，回到数据源列表点 **Backup Now**，等任务状态变成 **Succeeded**。
+回到备份配置向导，目标端指定成这个仓库，备份策略和恢复计划先用默认值，跑通流程要紧，后面再回来调。确认信息无误后保存，回到数据源列表点 **立即备份**，等任务状态变成 **成功**。
 
-{{< figure src="/images/diy-cloud-backup-with-ai-insights/backup-task-succeeded.webp" alt="Backup Wizard 第三步开始备份，两台主机的备份任务状态均为 Succeeded" caption="备份任务跑完，状态 Succeeded" >}}
+{{< figure src="/images/diy-cloud-backup-with-ai-insights/backup-task-succeeded.webp" alt="备份向导第三步开始备份，两台主机的备份任务状态均为成功" caption="备份任务跑完，状态成功" >}}
 
 ## 第五步：确认备份成功
 
-进主机详情页看 **Snapshot Points**，状态 **Available** 就说明这次快照没问题。顺手展开文件浏览器看一眼去重率和压缩率——这就是 Kopia 增量备份的真实效果。
+点 **浏览备份数据**，选一个快照，状态 **可用** 就说明这次没问题。顺手展开文件浏览器看一眼去重率和压缩率——这就是 Kopia 增量备份的真实效果。
 
 {{< figure src="/images/diy-cloud-backup-with-ai-insights/snapshot-browser-efficiency.webp" alt="快照文件浏览器，展示恢复大小、新增数据、快照大小、复用率 99.9%、压缩节省率 75.9%、缩减比 6234.74:1 等存储效率指标，以及目录结构" caption="快照可用，去重和压缩效果一目了然" >}}
 
-备份和能恢复是两回事，找个文件测一下：进 **Restore**，选这个快照，冲突策略选 **Skip**，源路径填想恢复的文件，目标目录填个新路径，等状态变成 **Succeeded**，核对内容一致。这一步过了，备份才算真的能用，不是摆设。
+备份和能恢复是两回事，找个文件测一下：点 **恢复**，选这个快照和要恢复的文件，目标路径填一个新目录避免覆盖，跑完之后核对内容一致。这一步过了，备份才算真的能用，不是摆设。
 
 ## 第六步：用 AI 提问
 
-AI 模型第二步已经配好了，这里直接用。回到 `HyperFileLens · 11443`，进 **Insights → AI Copilot**，左侧能看到历史对话列表，点 **New Chat** 新建一个。
+AI 模型第二步已经配好了，这里直接用。回到 `HyperFileLens · 11443`，进 **洞察 → AI 助手**，左侧能看到历史对话列表，点 **新建对话**。
 
 先选数据源、快照，把要分析的文件加进来——支持 PDF、DOCX、PPTX、XLSX，处理的是备份快照里的副本，不动生产环境的实时数据。
 
-{{< figure src="/images/diy-cloud-backup-with-ai-insights/ai-copilot-new-chat-source.webp" alt="AI Copilot 新建对话，选择备份源、快照、要分析的文件和文件夹" caption="新建对话：选数据源、快照、要分析的文件" >}}
+{{< figure src="/images/diy-cloud-backup-with-ai-insights/ai-copilot-new-chat-source.webp" alt="AI 助手新建对话，选择备份源、快照、要分析的文件和文件夹" caption="新建对话：选数据源、快照、要分析的文件" >}}
 
-再选分析类型和数据隐私：分析类型选 **Knowledge Q&A**，数据处理方式选 **Public Data Gateway**（用平台的公共数据网关，不用额外部署）。
+再选分析类型和数据隐私：分析类型选 **知识问答（推荐）**，数据隐私选 **公共数据网关**（用平台提供的网关，不用额外部署）。
 
-{{< figure src="/images/diy-cloud-backup-with-ai-insights/ai-copilot-new-chat-analysis.webp" alt="AI Copilot 新建对话，分析类型选择 Knowledge Q&A（推荐），数据隐私选择 Public Data Gateway" caption="分析类型选 Knowledge Q&A，数据隐私选公共网关" >}}
+{{< figure src="/images/diy-cloud-backup-with-ai-insights/ai-copilot-new-chat-analysis.webp" alt="AI 助手新建对话，分析类型选择知识问答（推荐），数据隐私选择公共数据网关" caption="分析类型选知识问答，数据隐私选公共数据网关" >}}
 
-点 **Start Chat**，等数据准备完就能直接提问。比如问一份小说文档："这份文档的结局是什么，几个主要角色最后都是什么结果？" AI 会基于备份里的原始文件直接回答，带引用来源，能追溯到具体文件和段落。这一步会把文件内容读回主机处理，产生的下行流量按第四步说的那个价格算。
+点 **开始对话**，等数据准备完就能直接提问。比如问一份小说文档："这份文档的结局是什么，几个主要角色最后都是什么结果？" AI 会基于备份里的原始文件直接回答，带引用来源，能追溯到具体文件和段落。这一步会把文件内容读回主机处理，产生的下行流量按第四步说的那个价格算。
 
-{{< figure src="/images/diy-cloud-backup-with-ai-insights/ai-copilot-answer.webp" alt="AI Copilot 对话界面，针对备份文件中的一份文档提问，AI 给出结构化的中文回答，并标注来源文件和创建时间" caption="直接对着备份文件提问，答案带来源" >}}
+{{< figure src="/images/diy-cloud-backup-with-ai-insights/ai-copilot-answer.webp" alt="AI 助手对话界面，针对备份文件中的一份文档提问，AI 给出结构化的中文回答，并标注来源文件和创建时间" caption="直接对着备份文件提问，答案带来源" >}}
 
 ## 跑完这一圈，到底省下了什么
 
 对比一下直接用 Kopia 命令行或者 KopiaUI 的方式：
 
 - **备份引擎没换**：去重、端到端加密这些 Kopia 自带的硬核能力原样保留，没有推倒重做；
-- **配置流程从背命令变成点几下**：加数据源、加存储、点 Backup Now，三步跑完，不用记 Kopia 的 repository connect 参数和策略命令；
+- **配置流程从背命令变成点几下**：加数据源、加存储、点立即备份，三步跑完，不用记 Kopia 的 repository connect 参数和策略命令；
 - **多机器多仓库有了统一视图**：不用再对着命令行和几个 KopiaUI 分别看状态；
 - **AI 直接读原始文件**：不需要提前做 Embedding、建向量库、搭一套 RAG 流水线，SourceLens 直接搜索、阅读、推理 Kopia 快照里的原始文件；
 - **模型按需换**：这里全用 DeepSeek，文本和多模态各配一个，实际接哪家 API、用哪个模型完全自定义，不绑定单一供应商；
