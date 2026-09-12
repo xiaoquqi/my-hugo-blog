@@ -12,7 +12,7 @@ tags:
   - Object Storage
   - Open Source
   - HyperFileLens
-draft: true
+draft: false
 ---
 
 Kopia is a mature open-source backup engine — about **14.1k GitHub stars**, **Apache 2.0** licensed. It does content-addressed storage, incremental snapshots, dedup, end-to-end encryption, and backs up to S3, NAS, or local disk. Put simply: **backing up files safely and efficiently is a problem Kopia already solved.**

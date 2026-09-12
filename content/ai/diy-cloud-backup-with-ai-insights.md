@@ -12,7 +12,7 @@ tags:
   - 对象存储
   - 开源
   - HyperFileLens
-draft: true
+draft: false
 ---
 
 Kopia 是一个成熟的开源备份引擎，目前 GitHub 约 **14.1k Stars**，采用 **Apache License 2.0**。它支持内容寻址、增量快照、去重、端到端加密，以及 S3、NAS、本地文件系统等多种存储后端。简单说，**如何安全、高效地把文件备份下来，Kopia 已经解决得很好。**

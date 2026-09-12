@@ -12,7 +12,7 @@ tags:
   - Almacenamiento de Objetos
   - Código Abierto
   - HyperFileLens
-draft: true
+draft: false
 ---
 
 Kopia es un motor de copias de seguridad de código abierto ya maduro: unas **14.1k estrellas en GitHub** y licencia **Apache 2.0**. Ofrece almacenamiento direccionado por contenido, instantáneas incrementales, deduplicación, cifrado de extremo a extremo, y puede respaldar en S3, NAS o disco local. En pocas palabras: **hacer copias de seguridad de archivos de forma segura y eficiente es un problema que Kopia ya resolvió.**
