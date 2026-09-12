@@ -27,7 +27,7 @@ So HyperFileLens does two things: **use Kopia for reliable backup, use AI to mak
 
 ## What you'll need
 
-- A Linux host that can run Docker (x86, 8 cores, 16GB RAM, 100GB disk), with outbound internet access to reach the model API — no public IP needed;
+- A Linux host that can run Docker (x86; 4 cores / 8GB RAM is enough for small-scale use, 8 cores / 16GB RAM recommended for larger teams; 100GB disk), with outbound internet access to reach the model API — no public IP needed;
 - An object storage account — anything S3-compatible works (Alibaba Cloud OSS, Huawei Cloud OBS, AWS S3, etc.);
 - A host to back up — Linux, Windows, and macOS are all supported;
 - Credentials for a language model. DeepSeek-V4-Flash is a good default; for image recognition, add DeepSeek's latest multimodal model, **DeepSeek-V4-Flash-Vision-Exp** (model ID: `deepseek-v4-flash-vision-exp`).
@@ -39,7 +39,7 @@ The whole flow: **deploy HyperFileLens → back up your data → get insights fr
 | Item | Requirement |
 | --- | --- |
 | OS | Ubuntu 24.04 (x86_64) |
-| CPU / RAM | 8 cores / 16GB |
+| CPU / RAM | 4 cores / 8GB for small-scale use; 8 cores / 16GB recommended for larger teams |
 | Disk | 100GB (working space AI uses when processing files during Insights — scale up if you're backing up more) |
 | Network | Outbound internet access (to reach the model API); no public IP required |
 | Ports | 11442–11445/TCP (`11443` is the main console, `11444` is the model admin panel) — internal network only |
@@ -142,9 +142,9 @@ Start to finish — deploy, back up, ask AI a question — this takes about an h
 
 HyperFileLens is Apache 2.0 licensed:
 
-- Main project: <https://github.com/HyperBDR/hyperfilelens>
-- AI engine, SourceLens: <https://github.com/HyperBDR/sourcelens>
-- Issues: <https://github.com/HyperBDR/hyperfilelens/issues>
+- Main project: <https://github.com/oneprolabs/hyperfilelens>
+- AI engine, SourceLens: <https://github.com/oneprolabs/sourcelens>
+- Issues: <https://github.com/oneprolabs/hyperfilelens/issues>
 
 Don't want to self-host? The free SaaS version at <https://hyperfilelens.com> skips deployment entirely — just add a data source and go.
 
@@ -152,5 +152,9 @@ Don't want to self-host? The free SaaS version at <https://hyperfilelens.com> sk
 
 Running into issues, want to contribute, or just want to talk shop about the project — find us here:
 
-- GitHub: <https://github.com/HyperBDR/hyperfilelens>
+- GitHub: <https://github.com/oneprolabs/hyperfilelens>
 - Twitter/X: [@oneprolabs](https://twitter.com/oneprolabs)
+
+If you use WeChat, you're also welcome to join our WeChat group — just scan the QR code below with WeChat.
+
+{{< figure src="/images/backups-help-ai-understand-business/wechat-group-qrcode-only.webp" alt="QR code for the OneProLabs open-source WeChat group" caption="Scan with WeChat to join the OneProLabs group" >}}

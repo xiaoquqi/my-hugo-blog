@@ -27,7 +27,7 @@ Kopia 是一个成熟的开源备份引擎，目前 GitHub 约 **14.1k Stars**�
 
 ## 需要准备什么
 
-- 一台能跑 Docker 的 Linux 主机（x86，8 核 16GB，磁盘 100GB），能连公网访问模型，不需要公网 IP；
+- 一台能跑 Docker 的 Linux 主机（x86，小规模使用 4 核 8GB 即可，企业人数较多推荐 8 核 16GB；磁盘 100GB），能连公网访问模型，不需要公网 IP；
 - 对象存储账号，S3 兼容的都行（阿里云 OSS、华为云 OBS、AWS S3 等）；
 - 要备份的主机，支持 Linux、Windows、macOS；
 - 大语言模型鉴权信息，推荐 DeepSeek-V4-Flash；需要识别图像的话，直接用 DeepSeek 最新的多模态模型 **DeepSeek-V4-Flash-Vision-Exp**（Model ID：`deepseek-v4-flash-vision-exp`）。
@@ -39,7 +39,7 @@ Kopia 是一个成熟的开源备份引擎，目前 GitHub 约 **14.1k Stars**�
 | 项目 | 要求 |
 | --- | --- |
 | 操作系统 | Ubuntu 24.04（x86_64） |
-| CPU / 内存 | 8 核 / 16GB |
+| CPU / 内存 | 小规模使用 4 核 / 8GB 即可；企业人数较多推荐 8 核 / 16GB |
 | 磁盘 | 100GB（AI 洞察时的文件转换空间，数据量更大就相应扩容） |
 | 网络 | 能访问公网（用于访问模型 API），不需要公网 IP |
 | 端口 | 11442–11445/TCP（`11443` 主控制台，`11444` 模型管理后台），对内网开放即可 |
@@ -144,9 +144,9 @@ Kopia 本身没有被改造，去重、加密、增量备份这些硬功夫照�
 
 HyperFileLens 采用 Apache 2.0 协议开源：
 
-- 主项目：<https://github.com/HyperBDR/hyperfilelens>
-- AI 引擎 SourceLens：<https://github.com/HyperBDR/sourcelens>
-- 遇到问题提 Issue：<https://github.com/HyperBDR/hyperfilelens/issues>
+- 主项目：<https://github.com/oneprolabs/hyperfilelens>
+- AI 引擎 SourceLens：<https://github.com/oneprolabs/sourcelens>
+- 遇到问题提 Issue：<https://github.com/oneprolabs/hyperfilelens/issues>
 
 如果不想自己部署，也可以直接用 <https://hyperfilelens.com> 的免费 SaaS 版本，跳过部署这一步，直接从加数据源开始。
 

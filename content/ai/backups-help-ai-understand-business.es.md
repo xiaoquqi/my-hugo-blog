@@ -133,8 +133,7 @@ Está bajo licencia Apache 2.0, y puedes configurar:
 Configuración recomendada:
 
 - Ubuntu 24.04
-- 4 núcleos de CPU
-- 8GB de RAM
+- CPU / RAM: 4 núcleos / 8GB para uso a pequeña escala; 8 núcleos / 16GB recomendado para equipos más grandes
 
 China continental:
 

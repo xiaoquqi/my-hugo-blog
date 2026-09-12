@@ -133,8 +133,7 @@ It's Apache 2.0 licensed, and you can configure:
 Recommended setup:
 
 - Ubuntu 24.04
-- 4 CPU cores
-- 8GB RAM
+- CPU / RAM: 4 cores / 8GB for small-scale use; 8 cores / 16GB recommended for larger teams
 
 Mainland China:
 

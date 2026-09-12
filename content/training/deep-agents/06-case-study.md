@@ -12,7 +12,7 @@ categories:
 weight: 7
 ---
 
-第 3 章留了一个伏笔：`afac535`（2026-06-15）第一次给 harness 加上压缩安全网时，留下了一个"workspace 内容都能重新搜到"的假设；`7854b8d`（2026-06-24）又因为一次超时故障把触发阈值从 8 万调低到 4.8 万。这一章讲的就是这个伏笔一个月后是怎么兑现成一次真实故障的——[SourceLens issue #60](https://github.com/HyperBDR/sourcelens/issues/60) 和修复它的 [PR #61](https://github.com/HyperBDR/sourcelens/pull/61)，2026-07-19。团队一开始对压缩机制的理解就踩在第 4 章那两个坑上，从现象定位到修复的完整过程，比抽象讲概念更有说服力——也再次印证第 3 章的道理：harness 是被真实场景一步步逼出来、逼对的，这次修复本身也是"逼近"的一部分。
+第 3 章留了一个伏笔：`afac535`（2026-06-15）第一次给 harness 加上压缩安全网时，留下了一个"workspace 内容都能重新搜到"的假设；`7854b8d`（2026-06-24）又因为一次超时故障把触发阈值从 8 万调低到 4.8 万。这一章讲的就是这个伏笔一个月后是怎么兑现成一次真实故障的——[SourceLens issue #60](https://github.com/oneprolabs/sourcelens/issues/60) 和修复它的 [PR #61](https://github.com/oneprolabs/sourcelens/pull/61)，2026-07-19。团队一开始对压缩机制的理解就踩在第 4 章那两个坑上，从现象定位到修复的完整过程，比抽象讲概念更有说服力——也再次印证第 3 章的道理：harness 是被真实场景一步步逼出来、逼对的，这次修复本身也是"逼近"的一部分。
 
 ## 现象：答案变成一句空壳
 
