@@ -26,7 +26,11 @@ SourceLens 是一个开源项目：不需要向量数据库，就能直接把企
 
 这里真正重要的不是 AI 能不能回答，而是答案有没有依据。企业场景里，我们更希望系统明确告诉用户它参考了哪些资料、为什么得出这个结论；如果证据不足，就直接说无法确认，而不是依赖模型原有知识自由发挥。
 
+{{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-overview.webp" alt="SourceLens 整体架构图：左侧是 Word、PDF、PowerPoint、Excel、图片、Markdown、文档、代码等多模态输入，中间是沙箱化的 AI 编码 Agent Harness，直接对文件系统做读取、搜索、导航、推理，无需预构建索引、直接文件访问、支持技能和 MCP，右侧输出自由提问、基于源数据的答案、跨文件理解、可执行洞察，底部标注开源" caption="SourceLens 的整体思路：不预处理、不建索引，让 Agent 直接进入原始文件搜索、阅读、推理" >}}
+
 ## 从传统 RAG 到 SourceLens：我们为什么换了一条路
+
+{{< figure src="/images/sourcelens-enterprise-knowledge-base/from-rag-to-sourcelens.webp" alt="从传统 RAG 到 SourceLens 对比图：左侧传统 RAG 把企业文档解析切分成碎片化内容块，再做 Embedding 存入向量库才能得到答案，上下文在切分中容易丢失，本质是先替 AI 切好世界；右侧 SourceLens 保持企业文档完整，Agent 自己搜索、阅读、再搜索、推理，把找到的证据关联起来，直接基于证据给出答案，本质是让 Agent 自己去理解" caption="传统 RAG 先替 AI 切好世界；SourceLens 让 Agent 自己去理解" >}}
 
 我们最早做企业知识问答时，走的也是当时最主流的 RAG 路线。表面上看，这件事并不复杂：拖拉拽搭一个工作流，把知识库接到大模型上，很快就能跑起来。但真正做过之后会发现，最难的根本不是后面的流程，而是前面那一步——怎么把企业原始文档变成一个真正可用的向量知识库。
 
@@ -90,7 +94,7 @@ SourceLens 会根据问题主动搜索、阅读相关资料，并沿着新的线
 
 这里真正值得看的，不只是最终答案，而是它查了哪些资料、为什么这样判断、证据在哪里。
 
-> **[待补截图]** 提问 + 回答 + 证据 的完整界面
+{{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-answer.webp" alt="SourceLens 对话界面：用户提问 HyperBDR 网络通讯矩阵是什么，Agent activity 面板显示已完成 7 项活动、耗时 1 分 18 秒，回答里按来源存储、目标存储、方向、端口、类型分类列出网络通讯矩阵的具体表格，并区分代理模式和无代理模式" caption="提问之后，Agent 会先搜索、阅读，再给出带来源依据的结构化回答" >}}
 
 整个过程就是：**安装并配置模型 → 上传数据并创建助手 → 提问并查看证据。**
 
