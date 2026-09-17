@@ -20,13 +20,15 @@ SourceLens 是一个开源项目：不需要向量数据库，就能直接把企
 
 以 HyperBDR 为例，售前、交付和售后每天都会遇到大量类似问题：某个 Linux 版本是否支持，某个 VMware 环境迁移到目标云平台应该采用 Agent 还是 Agentless，某个限制来自产品本身还是项目配置。这些答案通常已经存在，只是分散在产品文档、Wiki、PPT、Word、PDF、FAQ、项目资料、会议纪要甚至代码里。
 
+{{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-overview.webp" alt="SourceLens 整体架构图：左侧是 Word、PDF、PowerPoint、Excel、图片、Markdown、文档、代码等多模态输入，中间是沙箱化的 AI 编码 Agent Harness，直接对文件系统做读取、搜索、导航、推理，无需预构建索引、直接文件访问、支持技能和 MCP，右侧输出自由提问、基于源数据的答案、跨文件理解、可执行洞察，底部标注开源" caption="SourceLens 的整体思路：不预处理、不建索引，让 Agent 直接进入原始文件搜索、阅读、推理" >}}
+
 对于做了很多年的资深工程师来说，很多问题并不难，他知道该去哪里找，也知道哪些文档需要组合起来看。但这种能力往往依赖长期积累的经验，新人很难在短时间内建立同样完整的知识体系，而且产品、版本和项目经验还在持续变化，靠培训和人工传递很难一直跟上。我们真正想解决的，其实是怎么把这种原本依赖个人经验的能力，变成所有人都能直接使用的企业能力。
 
 我们现在的做法很直接：把这些资料同步到 SourceLens，建立面向特定业务的助手（Assistant），用户直接提问。比如"HyperBDR 是否支持 Ubuntu 24.04"，或者"客户是 VMware 7、Windows 和 Linux 混合环境，要迁移到目标云平台，应该采用什么方案，有哪些限制"。SourceLens 会自己搜索相关资料、读取上下文、继续沿线索查找，再基于找到的关键证据给出结论，主打一个有理有据不胡说八道。
 
 这里真正重要的不是 AI 能不能回答，而是答案有没有依据。企业场景里，我们更希望系统明确告诉用户它参考了哪些资料、为什么得出这个结论；如果证据不足，就直接说无法确认，而不是依赖模型原有知识自由发挥。
 
-{{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-overview.webp" alt="SourceLens 整体架构图：左侧是 Word、PDF、PowerPoint、Excel、图片、Markdown、文档、代码等多模态输入，中间是沙箱化的 AI 编码 Agent Harness，直接对文件系统做读取、搜索、导航、推理，无需预构建索引、直接文件访问、支持技能和 MCP，右侧输出自由提问、基于源数据的答案、跨文件理解、可执行洞察，底部标注开源" caption="SourceLens 的整体思路：不预处理、不建索引，让 Agent 直接进入原始文件搜索、阅读、推理" >}}
+{{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-answer.webp" alt="SourceLens 对话界面：用户提问 HyperBDR 网络通讯矩阵是什么，Agent activity 面板显示已完成 7 项活动、耗时 1 分 18 秒，回答里按来源存储、目标存储、方向、端口、类型分类列出网络通讯矩阵的具体表格，并区分代理模式和无代理模式" caption="实际效果：一次提问，SourceLens 搜索、阅读之后给出带证据的结构化回答" >}}
 
 ## 从传统 RAG 到 SourceLens：我们为什么换了一条路
 
