@@ -71,15 +71,31 @@ SourceLens 最终形成的设计也很简单：**数据 → 预处理 / 治理 �
 
 ### 第一步：安装并配置模型
 
-建议准备一台 Ubuntu 24.04、4 核 CPU、8 GB 内存、100 GB 磁盘空间的机器，并提前安装好 Docker。
+建议准备一台 4 核 CPU、8 GB 内存、100 GB 磁盘空间的机器（Linux、macOS 或装了 Docker Desktop 的 Windows 都行），并提前装好 Docker Compose V2。
 
-执行官方安装命令：
+国内网络（推荐）：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/oneprolabs/sourcelens/main/install.sh | sudo bash
+curl -fsSL \
+  https://gitee.com/oneprolabs/sourcelens/raw/main/install.sh \
+  | sudo bash -s -- --channel cn --download-source gitee
 ```
 
-安装完成后进入 Web 界面，配置好可用的大模型即可。
+海外网络：
+
+```bash
+curl -fsSL \
+  https://raw.githubusercontent.com/oneprolabs/sourcelens/main/install.sh \
+  | sudo bash
+```
+
+装完用这条命令确认服务已经起来：
+
+```bash
+curl -f http://<host>:10083/health
+```
+
+浏览器打开 `http://<host>:10083`，用户名 `admin`，密码在安装目录下的 `install-info.env` 里，登录后进入 Web 界面配置模型——这里需要两个模型的 API Key：一个负责聊天和检索（比如 DeepSeek-V4-Flash），一个负责识别图片等视觉输入。
 
 > **[待补截图]** SourceLens 安装完成后的 Web 首页
 
