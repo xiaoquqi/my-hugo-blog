@@ -28,7 +28,16 @@ SourceLens 是一个开源项目：不需要向量数据库，就能直接把企
 
 这里真正重要的不是 AI 能不能回答，而是答案有没有依据。企业场景里，我们更希望系统明确告诉用户它参考了哪些资料、为什么得出这个结论；如果证据不足，就直接说无法确认，而不是依赖模型原有知识自由发挥。
 
-{{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-answer.webp" alt="SourceLens 对话界面：用户提问 HyperBDR 网络通讯矩阵是什么，Agent activity 面板显示已完成 7 项活动、耗时 1 分 18 秒，回答里按来源存储、目标存储、方向、端口、类型分类列出网络通讯矩阵的具体表格，并区分代理模式和无代理模式" caption="实际效果：一次提问，SourceLens 搜索、阅读之后给出带证据的结构化回答" >}}
+<div style="display:flex;gap:16px;margin:20px 0;flex-wrap:wrap">
+  <div style="flex:1;min-width:280px">
+    <img src="/images/sourcelens-enterprise-knowledge-base/sourcelens-answer.webp" style="width:100%;border-radius:8px" alt="SourceLens 对话界面：用中文提问 HyperBDR 网络通讯矩阵是什么，Agent activity 面板显示已完成 7 项活动，回答按来源存储、目标存储、方向、端口、类型分类给出结构化表格"/>
+    <p style="text-align:center;color:#888;font-size:0.9em;margin-top:6px">中文提问，中文回答</p>
+  </div>
+  <div style="flex:1;min-width:280px">
+    <img src="/images/sourcelens-enterprise-knowledge-base/sourcelens-answer-zh-to-en.webp" style="width:100%;border-radius:8px" alt="SourceLens 对话界面：用中文提问同一个问题并要求用英语回答，Agent activity 面板显示已完成活动，回答自动切换成英文的结构化表格"/>
+    <p style="text-align:center;color:#888;font-size:0.9em;margin-top:6px">中文提问，指定用英文回答</p>
+  </div>
+</div>
 
 ## 从传统 RAG 到 SourceLens：我们为什么换了一条路
 
