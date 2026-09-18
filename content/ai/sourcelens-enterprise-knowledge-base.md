@@ -102,6 +102,8 @@ SourceLens 会根据问题主动搜索、阅读相关资料，并沿着新的线
 
 ## 我们真正相信的，是 Harness Agent 这条路
 
+{{< figure src="/images/sourcelens-enterprise-knowledge-base/from-db-to-ai.webp" alt="从 Database-Centric 到 Agent-Centric Applications 对比图：左侧数据库时代的应用围绕业务应用、应用逻辑、数据库、通用计算这套数据模型构建；右侧 AI 时代的应用变成 AI Native 应用（问答助手、分析助手、开发助手），底层由 Agent Runtime（Context、Tools、Reasoning、Workflow）、基础模型、加速计算支撑，围绕 Agent 能力构建" caption="数据库时代围绕数据模型构建应用；AI 时代围绕 Agent 能力构建应用" >}}
+
 做 SourceLens 这一路，我们越来越相信，Harness Agent 会成为一种通用的 AI 工作模式。随着模型能力持续增强、推理成本逐步下降，系统设计的重点会越来越从"少调用一次模型"，转向"给 Agent 足够完整的 Context、工具和行动空间，让它把问题真正做对"。Codex、Work Buddy 这类产品已经很好地证明了这种模式：给 Agent 一个工作环境，它可以自己搜索、阅读、调用工具并完成任务。它们更多从个人工作和任务执行出发，而 SourceLens 更关注的是如何把企业数据本身变成一套长期可管理、可授权、可复用的 AI Context，让不同的人、不同的助手，甚至不同的 Harness 都能持续使用。
 
 另外一个我们越来越明确的判断是：如果过去几十年是数据库的时代，那么 AI 之后，会是非结构化数据真正被重新发现的时代。Word、PPT、PDF、邮件、会议纪要、图片和代码过去更多只是被存储和搜索，而 AI 第一次让机器具备了直接阅读、关联和推理这些数据的能力。所以我们并不急着先把所有数据整理成一套完美的 Ontology，很多时候更有效的方式是先让 Agent 进入真实数据，先 Search、Read、Reason，再决定哪些知识值得结构化和长期沉淀。数据库时代，人先把世界结构化，再让机器计算；AI 时代，机器开始可以直接从非结构化数据中寻找关系、建立 Context，并形成知识。
