@@ -103,21 +103,37 @@ curl -f http://<host>:10083/health
 
 ### 第二步：上传数据并创建助手
 
-先建一个数据源：起个名字，选类型——手动上传、飞书、GitHub、GitLab 都支持，再配置同步和处理策略。用户不需要自己先研究 Chunk 怎么切，也不需要单独搭建 Vector Database；SourceLens 会在内部完成必要的解析和标准化。
+这一步用一个具体例子走一遍：从贵州茅台官网的财报专区下载了几份年度报告 PDF，作为数据源传进 SourceLens，再完整走一遍建数据源、建助手的过程。
+
+先建数据源：起个名字，选类型——手动上传、飞书、GitHub、GitLab 都支持，这里选手动上传，把下载好的年报 PDF 传上去，再配置同步和处理策略。用户不需要自己先研究 Chunk 怎么切，也不需要单独搭建 Vector Database；SourceLens 会在内部完成必要的解析和标准化。
 
 {{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-datasource.webp" alt="SourceLens 新建数据源向导，三步：来源（设置数据源名称和类型）、手动上传、同步与处理策略，类型下拉列表展示飞书、手动上传、GitHub、GitLab" caption="新建数据源：起名字、选类型、配同步策略" >}}
 
-数据准备好之后，创建一个助手：先定名称和 Agent 模型，再选分析类型（知识问答 / 代码分析 / 通用对话）、关联要访问的数据源、设置检索时要排除的目录和文件类型。Skills、MCP、可见性这些留到用的时候再调也不迟。
+数据源建好之后，创建一个助手，一共四步。第一步定名称和 Agent 模型：
 
-{{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-create-assistant-step1.webp" alt="新建 Assistant 向导第一步，设置名称、描述、助手模式、Slug、Agent 模型和多模态模型" caption="新建助手第一步：起名字，选 Agent 模型" >}}
+{{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-create-assistant-step1.webp" alt="新建 Assistant 向导第一步，设置名称、描述、助手模式、Slug、Agent 模型和多模态模型" caption="第一步：起名字，选 Agent 模型" >}}
+
+第二步选分析类型（知识问答 / 代码分析 / 通用对话），关联刚才建好的数据源，再设置检索时要排除的目录和文件类型：
 
 {{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-create-assistant-step2.webp" alt="新建 Assistant 向导第二步执行配置，类型选择通用对话、代码分析、知识问答，数据访问关联指定数据源，检索策略里设置排除扩展名和排除目录" caption="第二步：选分析类型，关联数据源，设排除规则" >}}
 
+第三步是技能与工作区，可选：可以写一段工作区指引告诉 Agent 业务背景和检索优先级，也可以绑定内置插件、Skills、MCP Server，都不填也能往下走：
+
+{{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-create-assistant-step3.webp" alt="新建 Assistant 向导第三步技能与工作区，展示工作区指引文本框（可填写项目说明、检索优先级）、内置插件工具、Skills、MCP Servers 四个可选配置区" caption="第三步：技能与工作区，全部可选" >}}
+
+第四步设可见性，公开还是私有，管理员始终能访问全部助手；点完成创建，助手就建好了：
+
+{{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-create-assistant-step4.webp" alt="新建 Assistant 向导第四步授权，可见性选择公开或私有，公开表示所有已登录用户均可访问该助手及其问答，私有表示仅被授权的用户或组可访问" caption="第四步：设可见性，完成创建" >}}
+
 ### 第三步：提问并查看回答
 
-最后进入助手直接问。比如给一个"财报专家"助手喂了几份年报 PDF，问"贵州茅台 2021—2025 年营收情况和驱动力是什么"，它会自己去年报里翻数据、算同比、做归因，输出一份带表格的分析。
+助手建好，进去直接问。这次问的是"贵州茅台 2021—2025 年营收情况和驱动力是什么"，SourceLens 会自己去传上去的年报 PDF 里翻数据、算同比、做归因，输出一份带表格的分析：
 
 {{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-assistant-answer.webp" alt="SourceLens 财报专家助手回答界面，展示贵州茅台2021-2025年营收情况表格，包含年度、营业收入、同比增速三列数据" caption="提问之后，Agent 自己去翻年报、算数据，给出结构化分析" >}}
+
+往下翻，答案会继续给出驱动力分析——产品结构、渠道结构、价格因素、产量销量逐条拆开讲，也是直接从 PDF 里读出来再归纳的，不是模型自己编的：
+
+{{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-answer-evidence2.webp" alt="SourceLens 回答继续展示驱动力分析，包含产品结构驱动、渠道结构驱动、价格因素、产量与销量、2025年下滑原因等分条列出的具体数据和结论" caption="答案往下翻，是分条列出的驱动力分析" >}}
 
 这里真正值得看的，不只是最终答案，而是答案下面折叠着的"内容依据"——具体引用了哪份 PDF 的哪几页，点开就能跳过去核对。
 
