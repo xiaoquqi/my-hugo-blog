@@ -103,7 +103,7 @@ curl -f http://<host>:10083/health
 
 ### 第二步：上传数据并创建助手
 
-这一步用一个具体例子走一遍：从贵州茅台官网的财报专区下载了几份年度报告 PDF，作为数据源传进 SourceLens，再完整走一遍建数据源、建助手的过程。
+这一步用一个具体例子走一遍：数据源是茅台官网公开的[财务报告专区](https://www.moutaichina.com/mtgf/tzzgx/cwbg/index.html)，从这里下载了几份年度报告 PDF，作为数据源传进 SourceLens，再完整走一遍建数据源、建助手的过程。
 
 先建数据源：起个名字，选类型——手动上传、飞书、GitHub、GitLab 都支持，这里选手动上传，把下载好的年报 PDF 传上去，再配置同步和处理策略。用户不需要自己先研究 Chunk 怎么切，也不需要单独搭建 Vector Database；SourceLens 会在内部完成必要的解析和标准化。
 
