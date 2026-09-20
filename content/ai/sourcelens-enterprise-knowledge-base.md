@@ -159,6 +159,12 @@ curl -f http://<host>:10083/health
 
 ## 加入 SourceLens 开源交流群
 
-如果你在体验过程中遇到问题，或者想参与共建、交流开源经验，欢迎扫码加入微信群。
+如果你在体验过程中遇到问题，或者想参与共建、交流开源经验，欢迎通过以下方式找到我们：
+
+- GitHub：<https://github.com/oneprolabs/sourcelens>
+- Twitter/X：[@oneprolabs](https://twitter.com/oneprolabs)
+- 微信公众号：搜索"老孙正经胡说"关注
+
+也欢迎扫码加入 SourceLens 微信交流群。
 
 {{< figure src="/images/sourcelens-enterprise-knowledge-base/wechat-group-qrcode.webp" alt="SourceLens 开源交流群微信二维码，扫码加入技术交流、开源共建、资源共享、项目协作社区" caption="扫码加入 SourceLens 开源交流群" >}}
