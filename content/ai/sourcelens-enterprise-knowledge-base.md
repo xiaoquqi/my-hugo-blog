@@ -16,6 +16,8 @@ tags:
 draft: true
 ---
 
+企业里其实从来不缺文档，缺的是一种让 AI 真正“读懂”这些文档的方法。产品手册、项目方案、FAQ、交付记录都已经存在，但一旦要让 AI 准确回答真实业务问题，传统知识库的搭建往往又绕回切片、向量化和向量数据库。
+
 SourceLens 是一个开源项目：不需要向量数据库，就能直接把企业文档变成可问答的知识库。它最早解决的，是一个非常具体的问题：如何让 AI 更准确地回答企业内部真实的产品和项目问题。
 
 以 HyperBDR 为例，售前、交付和售后每天都会遇到大量类似问题：某个 Linux 版本是否支持，某个 VMware 环境迁移到目标云平台应该采用 Agent 还是 Agentless，某个限制来自产品本身还是项目配置。这些答案通常已经存在，只是分散在产品文档、Wiki、PPT、Word、PDF、FAQ、项目资料、会议纪要甚至代码里。
@@ -111,19 +113,19 @@ curl -f http://<host>:10083/health
 
 数据源建好之后，创建一个助手，一共四步。第一步定名称和 Agent 模型：
 
-{{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-create-assistant-step1.webp" alt="新建 Assistant 向导第一步，设置名称、描述、助手模式、Slug、Agent 模型和多模态模型" caption="第一步：起名字，选 Agent 模型" >}}
+{{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-create-assistant-step1.webp" alt="新建助手向导第一步，设置名称、描述、助手模式、Slug、Agent 模型和多模态模型" caption="第一步：起名字，选 Agent 模型" >}}
 
 第二步选分析类型（知识问答 / 代码分析 / 通用对话），关联刚才建好的数据源，再设置检索时要排除的目录和文件类型：
 
-{{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-create-assistant-step2.webp" alt="新建 Assistant 向导第二步执行配置，类型选择通用对话、代码分析、知识问答，数据访问关联指定数据源，检索策略里设置排除扩展名和排除目录" caption="第二步：选分析类型，关联数据源，设排除规则" >}}
+{{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-create-assistant-step2.webp" alt="新建助手向导第二步执行配置，类型选择通用对话、代码分析、知识问答，数据访问关联指定数据源，检索策略里设置排除扩展名和排除目录" caption="第二步：选分析类型，关联数据源，设排除规则" >}}
 
 第三步是技能与工作区，可选：可以写一段工作区指引告诉 Agent 业务背景和检索优先级，也可以绑定内置插件、Skills、MCP Server，都不填也能往下走：
 
-{{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-create-assistant-step3.webp" alt="新建 Assistant 向导第三步技能与工作区，展示工作区指引文本框（可填写项目说明、检索优先级）、内置插件工具、Skills、MCP Servers 四个可选配置区" caption="第三步：技能与工作区，全部可选" >}}
+{{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-create-assistant-step3.webp" alt="新建助手向导第三步技能与工作区，展示工作区指引文本框（可填写项目说明、检索优先级）、内置插件工具、Skills、MCP Servers 四个可选配置区" caption="第三步：技能与工作区，全部可选" >}}
 
 第四步设可见性，公开还是私有，管理员始终能访问全部助手；点完成创建，助手就建好了：
 
-{{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-create-assistant-step4.webp" alt="新建 Assistant 向导第四步授权，可见性选择公开或私有，公开表示所有已登录用户均可访问该助手及其问答，私有表示仅被授权的用户或组可访问" caption="第四步：设可见性，完成创建" >}}
+{{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-create-assistant-step4.webp" alt="新建助手向导第四步授权，可见性选择公开或私有，公开表示所有已登录用户均可访问该助手及其问答，私有表示仅被授权的用户或组可访问" caption="第四步：设可见性，完成创建" >}}
 
 ### 第三步：提问并查看回答
 
