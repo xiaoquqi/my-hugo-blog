@@ -156,3 +156,9 @@ curl -f http://<host>:10083/health
 {{< figure src="/images/sourcelens-enterprise-knowledge-base/from-db-to-ai.webp" alt="从 Database-Centric 到 Agent-Centric Applications 对比图：左侧数据库时代的应用围绕业务应用、应用逻辑、数据库、通用计算这套数据模型构建；右侧 AI 时代的应用变成 AI Native 应用（问答助手、分析助手、开发助手），底层由 Agent Runtime（Context、Tools、Reasoning、Workflow）、基础模型、加速计算支撑，围绕 Agent 能力构建" caption="数据库时代围绕数据模型构建应用；AI 时代围绕 Agent 能力构建应用" >}}
 
 另外一个我们越来越明确的判断是：如果过去几十年是数据库的时代，那么 AI 之后，会是非结构化数据真正被重新发现的时代。Word、PPT、PDF、邮件、会议纪要、图片和代码，过去只是被存储和搜索，AI 第一次让机器能直接阅读、关联、推理这些数据。我们也不急着先把数据整理成一套完美的 Ontology——更有效的方式是先让 Agent 进入真实数据，Search、Read、Reason，再决定哪些值得沉淀。数据库时代，人先把世界结构化，再让机器计算；AI 时代，机器开始可以直接从非结构化数据中寻找关系、建立 Context，并形成知识。
+
+## 加入 SourceLens 开源交流群
+
+如果你在体验过程中遇到问题，或者想参与共建、交流开源经验，欢迎扫码加入微信群。
+
+{{< figure src="/images/sourcelens-enterprise-knowledge-base/wechat-group-qrcode.webp" alt="SourceLens 开源交流群微信二维码，扫码加入技术交流、开源共建、资源共享、项目协作社区" caption="扫码加入 SourceLens 开源交流群" >}}
