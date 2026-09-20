@@ -67,7 +67,9 @@ SourceLens 最终形成的设计也很简单：**数据 → 预处理 / 治理 �
 
 ## 快速体验
 
-真正使用 SourceLens，可以压缩成三步：安装并配置模型、上传数据并创建助手、提问并查看回答。
+真正使用 SourceLens，可以压缩成三步：安装并配置模型、上传数据并创建助手、提问并查看回答——SourceLens 自己的引导页也是这么设计的。
+
+{{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-guide.webp" alt="首次登录 SourceLens 的引导页，展示配置数据源、配置并发布助手、开始聊天三个步骤卡片，以及进入管理控制台的按钮" caption="首次登录会看到这个引导页，三步上线第一个助手" >}}
 
 ### 第一步：安装并配置模型
 
@@ -95,33 +97,31 @@ curl -fsSL \
 curl -f http://<host>:10083/health
 ```
 
-浏览器打开 `http://<host>:10083`，用户名 `admin`，密码在安装目录下的 `install-info.env` 里，登录后进入 Web 界面配置模型——这里需要两个模型的 API Key：一个负责聊天和检索（比如 DeepSeek-V4-Flash），一个负责识别图片等视觉输入。
+浏览器打开 `http://<host>:10083`，用户名 `admin`，密码在安装目录下的 `install-info.env` 里，登录后进入模型配置——这里需要两个模型的 API Key：一个负责聊天和检索（比如 DeepSeek），一个负责识别图片等视觉输入。
 
-> **[待补截图]** SourceLens 安装完成后的 Web 首页
-
-> **[待补截图]** 模型配置页面
+{{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-llm-config.webp" alt="SourceLens 模型配置弹窗，提供商下拉列表展示 OpenAI、OpenAI Compatible、Azure OpenAI、Google Gemini、Anthropic、Mistral、Dashscope(Qwen)、DeepSeek、xAI(Grok) 等选项，下方是 API Base、API Key 和高级选项字段" caption="模型配置：主流供应商都在，一个界面管所有模型" >}}
 
 ### 第二步：上传数据并创建助手
 
-接下来直接上传真实业务资料，比如产品文档、PPT、Word、PDF、FAQ、Release Notes、项目资料、图片和代码。用户不需要自己先研究 Chunk 怎么切，也不需要单独搭建 Vector Database；SourceLens 会在内部完成必要的解析和标准化，让这些数据成为 Agent 可以搜索和阅读的 Context。
+先建一个数据源：起个名字，选类型——手动上传、飞书、GitHub、GitLab 都支持，再配置同步和处理策略。用户不需要自己先研究 Chunk 怎么切，也不需要单独搭建 Vector Database；SourceLens 会在内部完成必要的解析和标准化。
 
-数据准备完成后，创建一个助手，并指定它可以访问的数据范围。比如创建一个产品支持助手，关联产品文档、FAQ、版本说明和历史项目资料。
+{{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-datasource.webp" alt="SourceLens 新建数据源向导，三步：来源（设置数据源名称和类型）、手动上传、同步与处理策略，类型下拉列表展示飞书、手动上传、GitHub、GitLab" caption="新建数据源：起名字、选类型、配同步策略" >}}
 
-> **[待补截图]** 上传数据 / 数据列表
+数据准备好之后，创建一个助手：先定名称和 Agent 模型，再选分析类型（知识问答 / 代码分析 / 通用对话）、关联要访问的数据源、设置检索时要排除的目录和文件类型。Skills、MCP、可见性这些留到用的时候再调也不迟。
 
-> **[待补截图]** 创建助手并选择数据范围
+{{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-create-assistant-step1.webp" alt="新建 Assistant 向导第一步，设置名称、描述、助手模式、Slug、Agent 模型和多模态模型" caption="新建助手第一步：起名字，选 Agent 模型" >}}
+
+{{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-create-assistant-step2.webp" alt="新建 Assistant 向导第二步执行配置，类型选择通用对话、代码分析、知识问答，数据访问关联指定数据源，检索策略里设置排除扩展名和排除目录" caption="第二步：选分析类型，关联数据源，设排除规则" >}}
 
 ### 第三步：提问并查看回答
 
-最后进入助手，直接问一个真实问题，例如：
+最后进入助手直接问。比如给一个"财报专家"助手喂了几份年报 PDF，问"贵州茅台 2021—2025 年营收情况和驱动力是什么"，它会自己去年报里翻数据、算同比、做归因，输出一份带表格的分析。
 
-> "某个 Linux 版本是否支持？当前环境还有哪些限制？"
+{{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-assistant-answer.webp" alt="SourceLens 财报专家助手回答界面，展示贵州茅台2021-2025年营收情况表格，包含年度、营业收入、同比增速三列数据" caption="提问之后，Agent 自己去翻年报、算数据，给出结构化分析" >}}
 
-SourceLens 会根据问题主动搜索、阅读相关资料，并沿着新的线索继续查找，最后基于证据给出结论。
+这里真正值得看的，不只是最终答案，而是答案下面折叠着的"内容依据"——具体引用了哪份 PDF 的哪几页，点开就能跳过去核对。
 
-这里真正值得看的，不只是最终答案，而是它查了哪些资料、为什么这样判断、证据在哪里。
-
-{{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-answer.webp" alt="SourceLens 对话界面：用户提问 HyperBDR 网络通讯矩阵是什么，Agent activity 面板显示已完成 7 项活动、耗时 1 分 18 秒，回答里按来源存储、目标存储、方向、端口、类型分类列出网络通讯矩阵的具体表格，并区分代理模式和无代理模式" caption="提问之后，Agent 会先搜索、阅读，再给出带来源依据的结构化回答" >}}
+{{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-answer-evidence.webp" alt="SourceLens 回答下方的内容依据区块，展示5处代码引用，每条引用具体到财报专家/贵州茅台2025年年度报告.pdf的页码范围，可点击跳转查阅" caption="答案下面挂着具体引用了哪份文件、哪几页，点开就能核对" >}}
 
 整个过程就是：**安装并配置模型 → 上传数据并创建助手 → 提问并查看证据。**
 
