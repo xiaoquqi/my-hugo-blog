@@ -163,7 +163,6 @@ curl -f http://<host>:10083/health
 
 - GitHub：<https://github.com/oneprolabs/sourcelens>
 - Twitter/X：[@oneprolabs](https://twitter.com/oneprolabs)
-- 微信公众号：搜索"老孙正经胡说"关注
 
 也欢迎扫码加入 SourceLens 微信交流群。
 
