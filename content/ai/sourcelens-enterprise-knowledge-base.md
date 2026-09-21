@@ -22,7 +22,7 @@ SourceLens 是一个开源项目：不需要向量数据库，就能直接把企
 
 以 HyperBDR 为例，售前、交付和售后每天都会遇到大量类似问题：某个 Linux 版本是否支持，某个 VMware 环境迁移到目标云平台应该采用 Agent 还是 Agentless，某个限制来自产品本身还是项目配置。这些答案通常已经存在，只是分散在产品文档、Wiki、PPT、Word、PDF、FAQ、项目资料、会议纪要甚至代码里。
 
-{{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-overview.webp" alt="SourceLens 整体架构图：左侧是 Word、PDF、PowerPoint、Excel、图片、Markdown、文档、代码等多模态输入，中间是沙箱化的 AI 编码 Agent Harness，直接对文件系统做读取、搜索、导航、推理，无需预构建索引、直接文件访问、支持技能和 MCP，右侧输出自由提问、基于源数据的答案、跨文件理解、可执行洞察，底部标注开源" caption="SourceLens 的整体思路：不预处理、不建索引，让 Agent 直接进入原始文件搜索、阅读、推理" >}}
+{{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-overview.webp" alt="SourceLens 整体架构图：左侧是 Word、PDF、PowerPoint、Excel、图片、Markdown、文档、代码等多模态输入，中间是沙箱化的 AI 编码 Agent Harness，直接对文件系统做读取、搜索、导航、推理，无需预构建索引、直接文件访问、支持技能和 MCP，右侧输出自由提问、基于源数据的答案、跨文件理解、可执行洞察，底部标注开源" caption="SourceLens 的整体思路：不用提前切分建索引，预处理由系统内部完成，Agent 直接进入处理后的内容搜索、阅读、推理" >}}
 
 对于做了很多年的资深工程师来说，很多问题并不难，他知道该去哪里找，也知道哪些文档需要组合起来看。但这种能力往往依赖长期积累的经验，新人很难在短时间内建立同样完整的知识体系，而且产品、版本和项目经验还在持续变化，靠培训和人工传递很难一直跟上。我们真正想解决的，其实是怎么把这种原本依赖个人经验的能力，变成所有人都能直接使用的企业能力。
 
@@ -129,9 +129,9 @@ curl -f http://<host>:10083/health
 
 ### 第三步：提问并查看回答
 
-助手建好，进去直接问。这次问的是"贵州茅台 2021—2025 年营收情况和驱动力是什么"，SourceLens 会自己去传上去的年报 PDF 里翻数据、算同比、做归因，输出一份带表格的分析：
+助手建好，进去直接问。这次问的是"贵州茅台 2021—2025 年营收情况和驱动力是什么"，年报上传时已经完成预处理，SourceLens 直接在处理后的内容里查数据、算同比、做归因，输出一份带表格的分析：
 
-{{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-assistant-answer.webp" alt="SourceLens 财报专家助手回答界面，展示贵州茅台2021-2025年营收情况表格，包含年度、营业收入、同比增速三列数据" caption="提问之后，Agent 自己去翻年报、算数据，给出结构化分析" >}}
+{{< figure src="/images/sourcelens-enterprise-knowledge-base/sourcelens-assistant-answer.webp" alt="SourceLens 财报专家助手回答界面，展示贵州茅台2021-2025年营收情况表格，包含年度、营业收入、同比增速三列数据" caption="提问之后，Agent 在处理好的年报内容里查数据、算数据，给出结构化分析" >}}
 
 往下翻，答案会继续给出驱动力分析——产品结构、渠道结构、价格因素、产量销量逐条拆开讲，也是直接从 PDF 里读出来再归纳的，不是模型自己编的：
 
