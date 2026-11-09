@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480">
+<defs><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".8" fill="#cbd7ee"/></pattern></defs>
+<rect width="640" height="480" fill="#edf2fd"/><rect x="210" y="70" width="390" height="360" fill="url(#grid)"/>
+<g fill="none" stroke="#bccbea" stroke-width="1.5"><path d="M70 360h400V124"/><path d="M215 360V255h255"/><path d="M336 360V195h134"/></g>
+<path d="M70 360h145V255h121V195h134v-71" fill="none" stroke="#2856dc" stroke-width="3"/>
+<g fill="#edf2fd" stroke="#2856dc" stroke-width="2"><circle cx="215" cy="255" r="5"/><circle cx="336" cy="195" r="5"/><circle cx="470" cy="124" r="7"/></g>
+<g font-family="Avenir Next,Hiragino Sans GB,PingFang SC,sans-serif"><text x="56" y="119" fill="#18263e" font-size="52" font-weight="600" letter-spacing="-1">制高点</text><text x="58" y="150" fill="#7889a6" font-size="12" letter-spacing="1.3">THE COMMANDING HEIGHTS</text><text x="58" y="409" fill="#7385a4" font-size="11" letter-spacing="2">CAPABILITY → VALUE → CONTROL</text><text x="492" y="129" fill="#2856dc" font-size="11">控制权</text><text x="353" y="185" fill="#64789b" font-size="11">收益</text><text x="231" y="245" fill="#64789b" font-size="11">活动</text><text x="70" y="344" fill="#64789b" font-size="11">能力</text></g>
+</svg>

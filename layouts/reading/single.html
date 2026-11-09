@@ -1,0 +1,19 @@
+{{ define "main" }}
+{{ partial "sidebar.html" (dict "context" . "disableSidebar" true) }}
+<main class="reading-shell reading-article" id="content">
+  <a class="reading-back" href="{{ .Parent.RelPermalink }}">← {{ T "readingBack" }}</a>
+  <header class="reading-article-header">
+    <div class="reading-kicker">CLOSE READING <span class="reading-kicker-rule"></span>{{ with .Params.reading_label }}<span>{{ . }}</span>{{ end }}{{ range .Params.topics }}<span>{{ . }}</span>{{ end }}</div>
+    <h1>{{ .Params.heading | default .Title }}</h1><p class="reading-deck">{{ .Description }}</p>
+    <div class="reading-article-meta"><span>{{ T "readingPublished" }} <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006.01.02" }}</time></span>{{ with .Params.reviewed_at }}<span>{{ T "readingReviewed" }} {{ time.Format "2006.01.02" . }}</span>{{ end }}<span>{{ .Params.reading_minutes | default .ReadingTime }} {{ T "readingMinutes" }}</span></div>
+    {{ with .Params.source }}<div class="reading-source-strip"><div><b>{{ .title }}</b><p>{{ delimit .authors " & " }}{{ with .date }} · {{ time.Format "2006.01.02" . }}{{ end }}{{ with .pages }} · {{ . }} 页{{ end }}</p></div><a href="{{ .url }}" target="_blank" rel="noopener">{{ T "readingSource" }} ↗</a></div>{{ end }}
+    {{ with .Params.interactive }}<a class="reading-explore" href="{{ . | relURL }}"><div><span>INTERACTIVE EDITION</span><strong>{{ T "readingExplore" }}</strong><p>论证地图、双语精读、原图放大与可调节的教学模型。</p></div><span class="reading-explore-arrow" aria-hidden="true">↗</span></a>{{ end }}
+    <div class="reading-stats">{{ range .Params.stats }}<div><strong>{{ .value }}</strong><span>{{ .label }}</span></div>{{ end }}</div>
+  </header>
+  <div class="reading-article-grid">
+    <article class="content reading-prose">{{ .Content }}</article>
+    <aside class="reading-outline"><details open><summary>{{ T "readingContents" }}</summary>{{ .TableOfContents }}</details></aside>
+  </div>
+  <footer class="reading-article-footer"><a href="{{ .Parent.RelPermalink }}">← {{ T "readingBack" }}</a>{{ with .Site.GetPage "/reading" }}{{ with .OutputFormats.Get "RSS" }}<a href="{{ .RelPermalink }}">{{ T "readingSubscribe" }} ↗</a>{{ end }}{{ end }}</footer>
+</main>
+{{ end }}

@@ -1,0 +1,6 @@
+{{ with .Site.GetPage "/reading" }}
+<section class="reading-shell reading-home-promo">
+  <div><p class="reading-kicker">NEW · CLOSE READING</p><h2>{{ .Title }}</h2><p>{{ .Params.subtitle }}</p><a class="reading-primary" href="{{ .RelPermalink }}">{{ T "readingBrowse" }} <span aria-hidden="true">↗</span></a></div>
+  {{ with first 1 .RegularPages.ByDate.Reverse }}{{ range . }}<a class="reading-promo-latest" href="{{ .RelPermalink }}"><span>{{ T "readingLatest" }}</span><strong>{{ .Title }}</strong><p>{{ .Description }}</p><i aria-hidden="true">↗</i></a>{{ end }}{{ end }}
+</section>
+{{ end }}

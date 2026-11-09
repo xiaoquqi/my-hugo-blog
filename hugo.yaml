@@ -82,24 +82,30 @@ menu:
       weight: 4
       params:
         icon: pencil
+    - identifier: reading
+      name: Close Reading
+      pageRef: /reading
+      weight: 5
+      params:
+        icon: book-open
     - identifier: about
       name: About
       pageRef: /about
-      weight: 5
+      weight: 6
       params:
         icon: user
     - name: Language
-      weight: 6
+      weight: 7
       params:
         type: language-switch
         icon: globe-alt
         label: true
     - name: Search
-      weight: 7
+      weight: 8
       params:
         type: search
     - name: GitHub
-      weight: 8
+      weight: 9
       url: "https://github.com/xiaoquqi/my-hugo-blog"
       params:
         icon: github
