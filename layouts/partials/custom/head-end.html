@@ -71,3 +71,9 @@
     quicklink.listen();
   });
 </script>
+
+{{ if or (eq .Section "reading") .IsHome }}
+  {{ with resources.Get "css/reading.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" />
+  {{ end }}
+{{ end }}

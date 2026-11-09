@@ -1,0 +1,13 @@
+{{ $id := .Get "id" }}
+{{ $resource := .Page.Resources.GetMatch "quotes.json" }}
+{{ if not $resource }}{{ errorf "reading-quote requires quotes.json in %s" .Page.File.Path }}{{ end }}
+{{ $quotes := $resource.Content | transform.Unmarshal }}
+{{ $found := false }}
+{{ range where $quotes "id" $id }}
+{{ $found = true }}
+<figure class="reading-bilingual" id="passage-{{ .id }}">
+  <figcaption><strong>{{ .title }}</strong><a href="{{ $.Page.Params.source.pdf }}#page={{ .page }}" target="_blank" rel="noopener">原文 p.{{ .page }} ↗</a></figcaption>
+  <blockquote lang="en"><span>EN / ORIGINAL</span><p>{{ .en }}</p></blockquote><div lang="zh-CN"><span>中 / 校译</span><p>{{ .zh }}</p></div>
+</figure>
+{{ end }}
+{{ if not $found }}{{ errorf "Unknown reading quote %s in %s" $id .Page.File.Path }}{{ end }}

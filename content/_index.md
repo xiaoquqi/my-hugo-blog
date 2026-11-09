@@ -108,4 +108,6 @@ layout: hextra-home
 {{< /hextra/feature-grid >}}
 </div>
 
+{{< reading-promo >}}
+
 {{< recent-posts >}}
