@@ -1,0 +1,16 @@
+[
+  {
+    "id": "scale",
+    "title": "规模定律的适用范围",
+    "page": 112,
+    "en": "Scaling laws remain empirically useful within constrained regimes",
+    "zh": "在有限的条件范围内，规模定律仍有实证价值。"
+  },
+  {
+    "id": "jagged",
+    "title": "能力的锯齿性",
+    "page": 114,
+    "en": "on one prompt they perform at expert level, on the next they exhibit factual errors",
+    "zh": "面对一条提示，它们能达到专家水平。换一条提示，却可能出现事实错误。"
+  }
+]
