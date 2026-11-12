@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="640" height="480">
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0v32" fill="none" stroke="#fff" opacity=".11"/>
+    </pattern>
+    <linearGradient id="background" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#09162e"/>
+      <stop offset="1" stop-color="#183965"/>
+    </linearGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#6ce4ce" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#6ce4ce" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="480" fill="url(#background)"/>
+  <rect x="32" y="32" width="576" height="416" fill="url(#grid)" stroke="#b3d4ff" stroke-opacity=".22"/>
+  <path d="M32 390 118 340 156 367 209 282 248 325 296 222 341 278 394 159 442 218 506 99 550 154 608 59V448H32Z" fill="url(#area)"/>
+  <path d="M32 390 118 340 156 367 209 282 248 325 296 222 341 278 394 159 442 218 506 99 550 154 608 59" fill="none" stroke="#8af6dc" stroke-width="3"/>
+  <g fill="#b2ffe9">
+    <circle cx="209" cy="282" r="4"/><circle cx="296" cy="222" r="4"/><circle cx="394" cy="159" r="4"/><circle cx="506" cy="99" r="4"/><circle cx="608" cy="59" r="4"/>
+  </g>
+  <g font-family="Helvetica, Arial, sans-serif">
+    <text x="64" y="92" fill="#a5e8df" font-size="18" letter-spacing="4">AI100 · 2026</text>
+    <text x="62" y="167" fill="#fff" font-size="66" font-weight="700" letter-spacing="-3">AI Goes</text>
+    <text x="62" y="233" fill="#fff" font-size="66" font-weight="700" letter-spacing="-3">Mainstream</text>
+    <text x="64" y="424" fill="#d7edff" font-size="15" letter-spacing="3">THE SCALING ERA</text>
+  </g>
+</svg>
